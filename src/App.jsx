@@ -48,8 +48,7 @@ import ChecklistAuditoriaCampanasPage from "./pages/blog/ChecklistAuditoriaCampa
 import GuiaMetaAdsEcommerceD2CEspana2026Page from "./pages/blog/GuiaMetaAdsEcommerceD2CEspana2026Page";
 import CasoExitoEcommerceROASPage from "./pages/blog/CasoExitoEcommerceROASPage";
 import BenchmarkROASSectorEspanaPage from "./pages/blog/BenchmarkROASSectorEspanaPage";
-import CasosDeExitoPage from "./pages/CasosDeExitoPage";
-import ComoMejorarROASMetaAdsPage from "./pages/blog/ComoMejorarROASMetaAdsPage";
+import CreativeTestingMetaAdsPage from "./pages/blog/CreativeTestingMetaAdsPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -227,8 +226,7 @@ const App = () => {
         <Route path="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" element={<GuiaMetaAdsEcommerceD2CEspana2026Page openCalendly={openCalendly} />} />
         <Route path="/blog/caso-exito-ecommerce-d2c-roas-meta-ads" element={<CasoExitoEcommerceROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/benchmark-roas-sector-espana-2026" element={<BenchmarkROASSectorEspanaPage openCalendly={openCalendly} />} />
-        <Route path="/casos-de-exito" element={<CasosDeExitoPage openCalendly={openCalendly} />} />
-        <Route path="/blog/como-mejorar-roas-meta-ads-7-palancas" element={<ComoMejorarROASMetaAdsPage openCalendly={openCalendly} />} />
+        <Route path="/blog/creative-testing-meta-ads" element={<CreativeTestingMetaAdsPage openCalendly={openCalendly} />} />
       </Routes>
       <WhatsAppButton />
       <Analytics />
