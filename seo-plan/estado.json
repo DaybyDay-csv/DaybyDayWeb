@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-07",
+  "last_updated": "2026-04-07T12:00:00",
   "current_week": 4,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -43,7 +43,8 @@
     "caso-exito-ecommerce-d2c-roas-meta-ads",
     "benchmark-roas-sector-espana-2026",
     "como-mejorar-roas-meta-ads-7-palancas",
-    "escalar-campanas-meta-ads-sin-romper-roas"
+    "escalar-campanas-meta-ads-sin-romper-roas",
+    "advantage-plus-shopping-cuando-usarlo-no"
   ],
   "phases": [
     {
@@ -219,14 +220,15 @@
         {
           "id": "T12",
           "week": 12,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
           "title": "Advantage+ Shopping: cuándo usarlo y cuándo no",
           "keyword": "advantage+ shopping meta ads",
           "slug": "advantage-plus-shopping-cuando-usarlo-no",
           "words": 900,
-          "intent": "TOFU-MOFU"
+          "intent": "TOFU-MOFU",
+          "note": "Publicado 2026-04-07. Tabla de decisión por volumen de conversiones, 4 ventajas reales vs campañas manuales, límites de ASC y protocolo de transición en 4 pasos."
         },
         {
           "id": "T13",

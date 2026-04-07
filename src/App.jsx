@@ -51,6 +51,7 @@ import BenchmarkROASSectorEspanaPage from "./pages/blog/BenchmarkROASSectorEspan
 import CreativeTestingMetaAdsPage from "./pages/blog/CreativeTestingMetaAdsPage";
 import ComoMejorarROASMetaAdsPage from "./pages/blog/ComoMejorarROASMetaAdsPage";
 import EscalarCampanasMetaAdsSinRomperROASPage from "./pages/blog/EscalarCampanasMetaAdsSinRomperROASPage";
+import AdvantagePlusShoppingPage from "./pages/blog/AdvantagePlusShoppingPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -231,6 +232,7 @@ const App = () => {
         <Route path="/blog/creative-testing-meta-ads" element={<CreativeTestingMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/como-mejorar-roas-meta-ads-7-palancas" element={<ComoMejorarROASMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/escalar-campanas-meta-ads-sin-romper-roas" element={<EscalarCampanasMetaAdsSinRomperROASPage openCalendly={openCalendly} />} />
+        <Route path="/blog/advantage-plus-shopping-cuando-usarlo-no" element={<AdvantagePlusShoppingPage openCalendly={openCalendly} />} />
       </Routes>
       <WhatsAppButton />
       <Analytics />
