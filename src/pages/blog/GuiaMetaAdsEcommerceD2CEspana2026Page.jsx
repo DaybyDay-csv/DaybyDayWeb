@@ -311,6 +311,9 @@ const GuiaMetaAdsEcommerceD2CEspana2026Page = ({ openCalendly }) => (
       o la{" "}
       <Link to="/blog/estrategia-full-funnel-meta-ads-d2c" className="text-white underline underline-offset-2 hover:text-white/80">
         estrategia full-funnel para D2C con Meta Ads
+      </Link>. Para saber si tu cuenta está lista para migrar a Advantage+ Shopping, lee{" "}
+      <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white underline underline-offset-2 hover:text-white/80">
+        cuándo usar Advantage+ Shopping y cuándo no
       </Link>.
       Para benchmarks de ROAS por sector, consulta{" "}
       <Link to="/blog/buen-roas-por-nicho-benchmarks-2026" className="text-white underline underline-offset-2 hover:text-white/80">

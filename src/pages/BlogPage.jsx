@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "advantage-plus-shopping-cuando-usarlo-no",
+    title: "Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no",
+    excerpt: "Guía práctica de Advantage+ Shopping Campaigns (ASC) para ecommerce D2C: tabla de decisión por volumen de conversiones, ventajas reales vs campañas manuales, límites del formato y protocolo de transición sin perder ROAS.",
+    category: "Meta Ads",
+    date: "7 abr 2026",
+    readingTime: "6 min",
+  },
+  {
     slug: "escalar-campanas-meta-ads-sin-romper-roas",
     title: "Cómo escalar campañas Meta Ads sin que se rompa el ROAS",
     excerpt: "Protocolo para escalar Meta Ads sin perder rentabilidad: umbrales de decisión, regla de los 7 días, tabla de subida de presupuesto y el sistema que usamos en DayByDay para llevar cuentas de 5K a 80K€/mes sin sacrificar ROAS.",

@@ -261,6 +261,12 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Verificar que tracking, estructura y creatividades están listos antes de escalar</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
+          Advantage+ Shopping: cuándo usarlo y cuándo no →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo estructura ASC la distribución presupuesto/audiencia y por qué protege mejor el ROAS en fase de escala</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
