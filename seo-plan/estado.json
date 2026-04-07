@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-07T12:00:00",
+  "last_updated": "2026-04-07T14:00:00",
   "current_week": 4,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -44,7 +44,8 @@
     "benchmark-roas-sector-espana-2026",
     "como-mejorar-roas-meta-ads-7-palancas",
     "escalar-campanas-meta-ads-sin-romper-roas",
-    "advantage-plus-shopping-cuando-usarlo-no"
+    "advantage-plus-shopping-cuando-usarlo-no",
+    "metricas-meta-ads-importantes-ecommerce"
   ],
   "phases": [
     {
@@ -233,14 +234,15 @@
         {
           "id": "T13",
           "week": 13,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
           "title": "Métricas Meta Ads que importan de verdad (y las que no)",
           "keyword": "métricas meta ads importantes",
           "slug": "metricas-meta-ads-importantes-ecommerce",
           "words": 900,
-          "intent": "TOFU"
+          "intent": "TOFU",
+          "note": "Publicado 2026-04-07. MER vs ROAS de plataforma, CPA real, CPNC, tabla de prioridad por métrica y cadencia de revisión. 2 tablas comparativas, 6 FAQs."
         },
         {
           "id": "T14",

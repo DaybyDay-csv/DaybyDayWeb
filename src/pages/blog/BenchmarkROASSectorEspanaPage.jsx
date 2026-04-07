@@ -229,6 +229,12 @@ const BenchmarkROASSectorEspanaPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Las 7 palancas ordenadas por impacto para mejorar el ROAS — tracking, estructura, creatividades y más</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Métricas Meta Ads que importan de verdad (y las que no) →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo interpretar el ROAS de plataforma vs el ROAS real y qué métricas usar para evaluar benchmarks</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
