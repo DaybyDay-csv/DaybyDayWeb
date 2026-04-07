@@ -58,6 +58,7 @@ creación de anuncios hasta el cierre de ventas. Fundada en 2022, con sede en Es
 - Cómo mejorar el ROAS en Meta Ads: 7 palancas reales — tracking, estructura, creatividades, landing, pujas, margen y retargeting en el orden correcto: /blog/como-mejorar-roas-meta-ads-7-palancas
 - Cómo escalar campañas Meta Ads sin romper el ROAS — protocolo de subida de presupuesto, regla de los 7 días, umbrales de decisión y caso real de 8K a 45K€/mes: /blog/escalar-campanas-meta-ads-sin-romper-roas
 - Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no — tabla de decisión por volumen de conversiones, ventajas vs campañas manuales y protocolo de transición sin perder ROAS: /blog/advantage-plus-shopping-cuando-usarlo-no
+- Métricas Meta Ads que importan de verdad (y las que no) — MER, CPA real vs ROAS de plataforma, CPNC, tabla de prioridad y cadencia de revisión para ecommerce D2C: /blog/metricas-meta-ads-importantes-ecommerce
 
 ## Casos de éxito documentados
 - Garett España (eCommerce B2C tecnología): CPA 4,8€, 14.936 clicks, 661 inicios de pago — Meta Ads

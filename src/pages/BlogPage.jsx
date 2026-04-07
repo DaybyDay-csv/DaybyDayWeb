@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "metricas-meta-ads-importantes-ecommerce",
+    title: "Métricas Meta Ads que importan de verdad (y las que no)",
+    excerpt: "Guía práctica sobre qué métricas de Meta Ads usar para tomar decisiones en ecommerce D2C: MER, CPA real, CPNC, y por qué el ROAS de plataforma sobreestima el rendimiento real entre un 20-35%. Con tabla de prioridad y cadencia de revisión.",
+    category: "Meta Ads",
+    date: "7 abr 2026",
+    readingTime: "6 min",
+  },
+  {
     slug: "advantage-plus-shopping-cuando-usarlo-no",
     title: "Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no",
     excerpt: "Guía práctica de Advantage+ Shopping Campaigns (ASC) para ecommerce D2C: tabla de decisión por volumen de conversiones, ventajas reales vs campañas manuales, límites del formato y protocolo de transición sin perder ROAS.",

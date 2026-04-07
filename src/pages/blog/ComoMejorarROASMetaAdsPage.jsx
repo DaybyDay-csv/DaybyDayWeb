@@ -224,6 +224,12 @@ const ComoMejorarROASMetaAdsPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El siguiente paso: protocolo de subida de presupuesto una vez el ROAS está estabilizado</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Métricas Meta Ads que importan de verdad (y las que no) →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">MER, CPA real y CPNC — las métricas con las que medir el ROAS sin depender de la atribución de Meta</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
