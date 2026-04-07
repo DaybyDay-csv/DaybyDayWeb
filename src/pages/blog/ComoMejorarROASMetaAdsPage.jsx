@@ -218,6 +218,12 @@ const ComoMejorarROASMetaAdsPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Advantage+ Shopping, API de Conversiones, estrategia creativa y ciclo de optimización semanal</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white font-semibold hover:text-white/80">
+          Cómo escalar campañas Meta Ads sin que se rompa el ROAS →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El siguiente paso: protocolo de subida de presupuesto una vez el ROAS está estabilizado</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

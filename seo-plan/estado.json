@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23",
+  "last_updated": "2026-04-07",
   "current_week": 4,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -42,7 +42,8 @@
     "guia-meta-ads-ecommerce-d2c-espana-2026",
     "caso-exito-ecommerce-d2c-roas-meta-ads",
     "benchmark-roas-sector-espana-2026",
-    "como-mejorar-roas-meta-ads-7-palancas"
+    "como-mejorar-roas-meta-ads-7-palancas",
+    "escalar-campanas-meta-ads-sin-romper-roas"
   ],
   "phases": [
     {
@@ -206,14 +207,15 @@
         {
           "id": "T11",
           "week": 11,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
           "title": "Cómo escalar campañas Meta Ads sin que se rompa el ROAS",
           "keyword": "escalar campañas meta ads",
           "slug": "escalar-campanas-meta-ads-sin-romper-roas",
           "words": 1200,
-          "intent": "MOFU"
+          "intent": "MOFU",
+          "note": "Publicado 2026-04-07. Protocolo de escala: prerequisitos, tabla de decisión, regla 7 días, Advantage+ Shopping, métricas de monitorización y caso real 8K→45K€/mes."
         },
         {
           "id": "T12",

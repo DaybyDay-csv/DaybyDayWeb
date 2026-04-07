@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "escalar-campanas-meta-ads-sin-romper-roas",
+    title: "Cómo escalar campañas Meta Ads sin que se rompa el ROAS",
+    excerpt: "Protocolo para escalar Meta Ads sin perder rentabilidad: umbrales de decisión, regla de los 7 días, tabla de subida de presupuesto y el sistema que usamos en DayByDay para llevar cuentas de 5K a 80K€/mes sin sacrificar ROAS.",
+    category: "Meta Ads",
+    date: "25 mar 2026",
+    readingTime: "8 min",
+  },
+  {
     slug: "como-mejorar-roas-meta-ads-7-palancas",
     title: "Cómo mejorar el ROAS en Meta Ads: 7 palancas reales",
     excerpt: "Las 7 palancas que realmente mueven el ROAS en Meta Ads para ecommerce: tracking, estructura de campañas, creatividades, landing page, pujas, segmentación por margen y retargeting. Con el orden correcto para aplicarlas.",
