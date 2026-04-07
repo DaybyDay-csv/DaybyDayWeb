@@ -18,6 +18,7 @@ import ResultadosPage from "./pages/ResultadosPage";
 import FAQPage from "./pages/FAQPage";
 import GlosarioPage from "./pages/GlosarioPage";
 import ComoTrabajamosPage from "./pages/ComoTrabajamosPage";
+import CasosDeExitoPage from "./pages/CasosDeExitoPage";
 import ROASPage from "./pages/blog/ROASPage";
 import MetaVsGooglePage from "./pages/blog/MetaVsGooglePage";
 import CPAPage from "./pages/blog/CPAPage";
@@ -53,6 +54,7 @@ import ComoMejorarROASMetaAdsPage from "./pages/blog/ComoMejorarROASMetaAdsPage"
 import EscalarCampanasMetaAdsSinRomperROASPage from "./pages/blog/EscalarCampanasMetaAdsSinRomperROASPage";
 import AdvantagePlusShoppingPage from "./pages/blog/AdvantagePlusShoppingPage";
 import MetricasMetaAdsPage from "./pages/blog/MetricasMetaAdsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -200,6 +202,7 @@ const App = () => {
         <Route path="/faq" element={<FAQPage openCalendly={openCalendly} />} />
         <Route path="/glosario" element={<GlosarioPage openCalendly={openCalendly} />} />
         <Route path="/como-trabajamos" element={<ComoTrabajamosPage openCalendly={openCalendly} />} />
+        <Route path="/casos-de-exito" element={<CasosDeExitoPage openCalendly={openCalendly} />} />
         <Route path="/blog/que-es-roas-meta-ads" element={<ROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/meta-ads-vs-google-ads" element={<MetaVsGooglePage openCalendly={openCalendly} />} />
         <Route path="/blog/como-reducir-cpa-ecommerce" element={<CPAPage openCalendly={openCalendly} />} />
@@ -235,6 +238,7 @@ const App = () => {
         <Route path="/blog/escalar-campanas-meta-ads-sin-romper-roas" element={<EscalarCampanasMetaAdsSinRomperROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/advantage-plus-shopping-cuando-usarlo-no" element={<AdvantagePlusShoppingPage openCalendly={openCalendly} />} />
         <Route path="/blog/metricas-meta-ads-importantes-ecommerce" element={<MetricasMetaAdsPage openCalendly={openCalendly} />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
       <Analytics />
