@@ -196,14 +196,15 @@
         {
           "id": "T10",
           "week": 10,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
           "title": "Cómo mejorar el ROAS en Meta Ads: 7 palancas reales",
           "keyword": "cómo mejorar ROAS Meta Ads",
           "slug": "como-mejorar-roas-meta-ads-7-palancas",
           "words": 1000,
-          "intent": "MOFU"
+          "intent": "MOFU",
+          "note": "Publicado 2026-03-23. 7 palancas: tracking, estructura, creatividades, landing, pujas, segmentación por margen y retargeting."
         },
         {
           "id": "T11",
