@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /assets/
 
 # Bots de IA — acceso completo
 User-agent: GPTBot
