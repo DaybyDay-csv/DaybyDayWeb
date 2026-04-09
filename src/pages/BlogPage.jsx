@@ -28,6 +28,14 @@ const posts = [
     readingTime: "8 min",
   },
   {
+    slug: "creative-testing-meta-ads",
+    title: "Creative Testing en Meta Ads: el framework que usamos para encontrar creativos ganadores",
+    excerpt: "Framework paso a paso para hacer creative testing en Meta Ads: estructura de campañas, métricas de evaluación (Hook Rate, CVR, CTR), cuándo declarar un ganador y cómo construir un sistema de creatividades que escale.",
+    category: "Meta Ads",
+    date: "25 mar 2026",
+    readingTime: "7 min",
+  },
+  {
     slug: "como-mejorar-roas-meta-ads-7-palancas",
     title: "Cómo mejorar el ROAS en Meta Ads: 7 palancas reales",
     excerpt: "Las 7 palancas que realmente mueven el ROAS en Meta Ads para ecommerce: tracking, estructura de campañas, creatividades, landing page, pujas, segmentación por margen y retargeting. Con el orden correcto para aplicarlas.",

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-07T14:00:00",
+  "last_updated": "2026-04-09T11:00:00",
   "current_week": 4,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -43,6 +43,7 @@
     "caso-exito-ecommerce-d2c-roas-meta-ads",
     "benchmark-roas-sector-espana-2026",
     "como-mejorar-roas-meta-ads-7-palancas",
+    "creative-testing-meta-ads",
     "escalar-campanas-meta-ads-sin-romper-roas",
     "advantage-plus-shopping-cuando-usarlo-no",
     "metricas-meta-ads-importantes-ecommerce"
@@ -612,7 +613,7 @@
       "type": "article",
       "title": "Creative testing en Meta Ads: framework paso a paso",
       "keyword": "creative testing meta ads framework",
-      "slug": "creative-testing-meta-ads-framework",
+      "slug": "creative-testing-meta-ads",
       "volume": "200-450",
       "completed_date": "2026-03-25"
     },
