@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "escalar-ecommerce-d2c-100k-1m-paid-media",
+    title: "Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media",
+    excerpt: "Sistema completo para escalar un D2C de 100K a 1M€ de facturación con paid media: validación de hipótesis, métricas de escala (MER, nCPA, LTV/CAC 90/180d), motor de creatividades, protocolo de subida de presupuesto y cuándo activar un segundo canal sin romper rentabilidad.",
+    category: "Estrategia",
+    date: "27 abr 2026",
+    readingTime: "14 min",
+  },
+  {
     slug: "metricas-meta-ads-importantes-ecommerce",
     title: "Métricas Meta Ads que importan de verdad (y las que no)",
     excerpt: "Guía práctica sobre qué métricas de Meta Ads usar para tomar decisiones en ecommerce D2C: MER, CPA real, CPNC, y por qué el ROAS de plataforma sobreestima el rendimiento real entre un 20-35%. Con tabla de prioridad y cadencia de revisión.",

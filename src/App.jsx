@@ -54,6 +54,7 @@ import ComoMejorarROASMetaAdsPage from "./pages/blog/ComoMejorarROASMetaAdsPage"
 import EscalarCampanasMetaAdsSinRomperROASPage from "./pages/blog/EscalarCampanasMetaAdsSinRomperROASPage";
 import AdvantagePlusShoppingPage from "./pages/blog/AdvantagePlusShoppingPage";
 import MetricasMetaAdsPage from "./pages/blog/MetricasMetaAdsPage";
+import EscalarEcommerceD2C100K1MPage from "./pages/blog/EscalarEcommerceD2C100K1MPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -238,6 +239,7 @@ const App = () => {
         <Route path="/blog/escalar-campanas-meta-ads-sin-romper-roas" element={<EscalarCampanasMetaAdsSinRomperROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/advantage-plus-shopping-cuando-usarlo-no" element={<AdvantagePlusShoppingPage openCalendly={openCalendly} />} />
         <Route path="/blog/metricas-meta-ads-importantes-ecommerce" element={<MetricasMetaAdsPage openCalendly={openCalendly} />} />
+        <Route path="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" element={<EscalarEcommerceD2C100K1MPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

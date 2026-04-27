@@ -26,6 +26,7 @@ creación de anuncios hasta el cierre de ventas. Fundada en 2022, con sede en Es
 - Estado del Paid Media D2C en España 2026 — CPMs 2023-2026, ROAS por canal y sector, tendencias IA: /blog/estado-paid-media-d2c-espana-2026
 - Benchmarks de ROAS por nicho en Meta Ads y Google Ads 2026 — tabla comparativa 10 sectores: /blog/buen-roas-por-nicho-benchmarks-2026
 - Metodología DayByDay: IA + Automatización + Paid Media full-funnel — proceso en 4 fases: /blog/metodologia-daybyday-ia-automatizacion-paid-media
+- [PILAR] Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media — sistema en 5 fases, validación de hipótesis, métricas de escala (MER, nCPA, LTV/CAC 90/180d), motor de creatividades y protocolo de subida de presupuesto sin romper rentabilidad: /blog/escalar-ecommerce-d2c-100k-1m-paid-media
 
 ## Artículos técnicos destacados
 - Estrategia full-funnel Meta Ads para D2C (TOFU/MOFU/BOFU): /blog/estrategia-full-funnel-meta-ads-d2c

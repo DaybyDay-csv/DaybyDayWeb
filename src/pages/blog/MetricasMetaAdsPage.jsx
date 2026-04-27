@@ -197,6 +197,12 @@ const MetricasMetaAdsPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" className="text-white font-semibold hover:text-white/80">
+          [PILAR] Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo cruzamos MER, nCPA y LTV/CAC en cuentas en fase de escala — el sistema completo</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white font-semibold hover:text-white/80">
           Cómo mejorar el ROAS en Meta Ads: 7 palancas reales →
         </Link>
