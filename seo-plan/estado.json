@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T12:40:28",
+  "last_updated": "2026-04-28T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -47,7 +47,8 @@
     "escalar-campanas-meta-ads-sin-romper-roas",
     "advantage-plus-shopping-cuando-usarlo-no",
     "metricas-meta-ads-importantes-ecommerce",
-    "escalar-ecommerce-d2c-100k-1m-paid-media"
+    "escalar-ecommerce-d2c-100k-1m-paid-media",
+    "por-que-anuncios-meta-no-convierten"
   ],
   "phases": [
     {
@@ -250,14 +251,15 @@
         {
           "id": "T14",
           "week": 14,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
           "title": "Por qué tus anuncios de Meta no convierten (y cómo solucionarlo)",
           "keyword": "anuncios meta no funcionan",
           "slug": "por-que-anuncios-meta-no-convierten",
           "words": 1000,
-          "intent": "MOFU-BOFU"
+          "intent": "MOFU-BOFU",
+          "note": "Publicado 2026-04-28. Diagnóstico en 5 capas (tracking, landing, audiencia, creatividad, estructura), tabla de causas reales con frecuencia, protocolo de auditoría 5 días y 8 FAQs."
         }
       ]
     },

@@ -226,6 +226,12 @@ const MetricasMetaAdsPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El proceso completo para diagnosticar qué está fallando usando las métricas correctas</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/por-que-anuncios-meta-no-convierten" className="text-white font-semibold hover:text-white/80">
+          Por qué tus anuncios de Meta no convierten (y cómo solucionarlo) →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Las 5 capas a auditar (tracking, landing, audiencia, creatividad, estructura) cuando las métricas dicen que algo va mal</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

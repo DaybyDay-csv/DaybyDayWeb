@@ -166,7 +166,8 @@ const ComoMejorarROASMetaAds7PalancasPage = ({ openCalendly }) => (
       <Link to="/blog/que-es-roas-meta-ads" className="text-white/70 hover:text-white underline">Qué es el ROAS en Meta Ads</Link>{" "}·{" "}
       <Link to="/blog/checklist-auditoria-campanas-paid-media" className="text-white/70 hover:text-white underline">Checklist auditoría campañas paid media</Link>{" "}·{" "}
       <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white/70 hover:text-white underline">Benchmark ROAS por sector España 2026</Link>{" "}·{" "}
-      <Link to="/blog/caso-exito-ecommerce-d2c-roas-meta-ads" className="text-white/70 hover:text-white underline">Caso de éxito: +156% ROAS en 90 días</Link>
+      <Link to="/blog/caso-exito-ecommerce-d2c-roas-meta-ads" className="text-white/70 hover:text-white underline">Caso de éxito: +156% ROAS en 90 días</Link>{" "}·{" "}
+      <Link to="/blog/por-que-anuncios-meta-no-convierten" className="text-white/70 hover:text-white underline">Por qué tus anuncios de Meta no convierten</Link>
     </p>
   </BlogPostLayout>
 );

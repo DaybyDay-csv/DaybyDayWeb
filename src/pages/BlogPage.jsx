@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "por-que-anuncios-meta-no-convierten",
+    title: "Por qué tus anuncios de Meta no convierten (y cómo solucionarlo)",
+    excerpt: "Diagnóstico paso a paso para entender por qué tus anuncios de Meta no convierten: 5 capas (tracking, landing, audiencia, creatividad, estructura), métricas de diagnóstico y protocolo de intervención sin romper el aprendizaje del algoritmo.",
+    category: "Meta Ads",
+    date: "28 abr 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "escalar-ecommerce-d2c-100k-1m-paid-media",
     title: "Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media",
     excerpt: "Sistema completo para escalar un D2C de 100K a 1M€ de facturación con paid media: validación de hipótesis, métricas de escala (MER, nCPA, LTV/CAC 90/180d), motor de creatividades, protocolo de subida de presupuesto y cuándo activar un segundo canal sin romper rentabilidad.",
