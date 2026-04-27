@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12",
+  "last_updated": "2026-04-27",
   "market_context": {
     "spain_digital_ad_market_rank": 5,
     "total_investment_2025_eur": 6211000000,
@@ -13,7 +13,10 @@
       "difficulty": "Alta",
       "intent": "BOFU",
       "priority": 5,
-      "channel": ["SEO", "GEO"],
+      "channel": [
+        "SEO",
+        "GEO"
+      ],
       "slug_target": "mejores-agencias-paid-media-espana-ecommerce-d2c",
       "status": "published"
     },
@@ -23,7 +26,10 @@
       "difficulty": "Media-Alta",
       "intent": "BOFU",
       "priority": 5,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "elegir-agencia-anuncios-meta-ads-d2c",
       "status": "published"
     },
@@ -33,7 +39,11 @@
       "difficulty": "Baja-Media",
       "intent": "TOFU-AEO",
       "priority": 5,
-      "channel": ["SEO", "AEO", "GEO"],
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
       "slug_target": "que-es-un-media-buyer",
       "status": "pending"
     },
@@ -43,7 +53,10 @@
       "difficulty": "Media",
       "intent": "BOFU",
       "priority": 5,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "cuanto-cobra-media-buyer-freelance-espana",
       "status": "pending"
     },
@@ -53,7 +66,10 @@
       "difficulty": "Baja",
       "intent": "BOFU",
       "priority": 5,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "cuanto-cobra-media-buyer-freelance-espana",
       "status": "pending"
     },
@@ -63,7 +79,9 @@
       "difficulty": "Baja-Media",
       "intent": "BOFU",
       "priority": 5,
-      "channel": ["SEO"],
+      "channel": [
+        "SEO"
+      ],
       "slug_target": "cuanto-cobra-media-buyer-freelance-espana",
       "status": "pending"
     },
@@ -73,7 +91,10 @@
       "difficulty": "Media",
       "intent": "BOFU",
       "priority": 5,
-      "channel": ["SEO", "GEO"],
+      "channel": [
+        "SEO",
+        "GEO"
+      ],
       "slug_target": "que-es-un-media-buyer",
       "status": "pending"
     },
@@ -83,7 +104,11 @@
       "difficulty": "Media",
       "intent": "TOFU-AEO",
       "priority": 4,
-      "channel": ["SEO", "AEO", "GEO"],
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
       "slug_target": "que-es-paid-media-guia-completa",
       "status": "published"
     },
@@ -93,7 +118,9 @@
       "difficulty": "Alta",
       "intent": "TOFU-MOFU",
       "priority": 4,
-      "channel": ["SEO"],
+      "channel": [
+        "SEO"
+      ],
       "slug_target": "que-es-un-media-buyer",
       "status": "pending"
     },
@@ -103,7 +130,10 @@
       "difficulty": "Media",
       "intent": "MOFU",
       "priority": 4,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "como-mejorar-roas-meta-ads-7-palancas",
       "status": "pending_plan_T10"
     },
@@ -113,7 +143,10 @@
       "difficulty": "Baja",
       "intent": "BOFU",
       "priority": 4,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "senales-agencia-publicidad-no-rinde",
       "status": "pending"
     },
@@ -123,7 +156,10 @@
       "difficulty": "Baja",
       "intent": "BOFU",
       "priority": 4,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "checklist-auditoria-campanas-paid-media",
       "status": "pending"
     },
@@ -133,7 +169,10 @@
       "difficulty": "Alta",
       "intent": "BOFU",
       "priority": 5,
-      "channel": ["SEO", "GEO"],
+      "channel": [
+        "SEO",
+        "GEO"
+      ],
       "slug_target": "mejores-agencias-paid-media-espana-ecommerce-d2c",
       "status": "published"
     },
@@ -143,7 +182,9 @@
       "difficulty": "Media-Alta",
       "intent": "MOFU-BOFU",
       "priority": 4,
-      "channel": ["SEO"],
+      "channel": [
+        "SEO"
+      ],
       "slug_target": "top-agencias-marketing-digital-espana-que-mirar",
       "status": "published"
     },
@@ -153,7 +194,10 @@
       "difficulty": "Baja-Media",
       "intent": "BOFU",
       "priority": 4,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "cuanto-cuesta-agencia-paid-media-espana-precios-2026",
       "status": "published"
     },
@@ -163,7 +207,9 @@
       "difficulty": "Media",
       "intent": "TOFU-MOFU",
       "priority": 3,
-      "channel": ["SEO"],
+      "channel": [
+        "SEO"
+      ],
       "slug_target": "guia-meta-ads-ecommerce-d2c-espana-2026",
       "status": "pending_plan_T07"
     },
@@ -173,7 +219,10 @@
       "difficulty": "Media",
       "intent": "MOFU",
       "priority": 3,
-      "channel": ["SEO", "AEO"],
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
       "slug_target": "escalar-campanas-meta-ads-sin-romper-roas",
       "status": "pending_plan_T11"
     },
@@ -183,7 +232,11 @@
       "difficulty": "Baja",
       "intent": "TOFU-MOFU",
       "priority": 3,
-      "channel": ["SEO", "AEO", "GEO"],
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
       "slug_target": "benchmark-roas-sector-espana-2026",
       "status": "pending_plan_T09"
     },
@@ -193,7 +246,9 @@
       "difficulty": "Alta",
       "intent": "BOFU",
       "priority": 4,
-      "channel": ["SEO"],
+      "channel": [
+        "SEO"
+      ],
       "slug_target": "elegir-agencia-anuncios-meta-ads-d2c",
       "status": "published"
     },
@@ -203,9 +258,395 @@
       "difficulty": "Media",
       "intent": "MOFU-BOFU",
       "priority": 3,
-      "channel": ["SEO"],
+      "channel": [
+        "SEO"
+      ],
       "slug_target": "agencia-paid-media-vs-agencia-marketing-generalista",
       "status": "published"
+    },
+    {
+      "keyword": "cac blended ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "TOFU-MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
+      "slug_target": "cac-blended-vs-cac-canal-ecommerce",
+      "status": "pending",
+      "task_id": "T25"
+    },
+    {
+      "keyword": "cohort analysis ecommerce d2c",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "cohort-analysis-ecommerce-d2c",
+      "status": "pending",
+      "task_id": "T26"
+    },
+    {
+      "keyword": "modelos atribución ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "modelos-atribucion-ecommerce-d2c",
+      "status": "pending",
+      "task_id": "T27"
+    },
+    {
+      "keyword": "mmm ecommerce d2c",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU-BOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "marketing-mix-modeling-ecommerce-d2c",
+      "status": "pending",
+      "task_id": "T28"
+    },
+    {
+      "keyword": "server side tracking shopify conversions api",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 5,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "server-side-tracking-shopify-conversions-api",
+      "status": "pending",
+      "task_id": "T29"
+    },
+    {
+      "keyword": "ios atribución meta ads 2026",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "TOFU-MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
+      "slug_target": "ios-atribucion-meta-ads-2026-d2c",
+      "status": "pending",
+      "task_id": "T30"
+    },
+    {
+      "keyword": "email marketing meta ads ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "email-marketing-meta-ads-ltv-d2c",
+      "status": "pending",
+      "task_id": "T31"
+    },
+    {
+      "keyword": "black friday meta ads d2c",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "BOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "black-friday-meta-ads-d2c-preparacion",
+      "status": "pending",
+      "task_id": "T32"
+    },
+    {
+      "keyword": "performance max ecommerce d2c",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU-BOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "performance-max-ecommerce-d2c-cuando-usar",
+      "status": "pending",
+      "task_id": "T33"
+    },
+    {
+      "keyword": "tiktok ads ecommerce españa",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "TOFU-MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
+      "slug_target": "tiktok-ads-ecommerce-d2c-espana-2026",
+      "status": "pending",
+      "task_id": "T34"
+    },
+    {
+      "keyword": "cro landing meta ads",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "cro-landing-page-meta-ads-d2c",
+      "status": "pending",
+      "task_id": "T35"
+    },
+    {
+      "keyword": "margen contribución roas ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "TOFU-MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
+      "slug_target": "margen-contribucion-vs-roas-ecommerce",
+      "status": "pending",
+      "task_id": "T36"
+    },
+    {
+      "keyword": "aumentar aov ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 3,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "aumentar-aov-ecommerce-d2c-palancas",
+      "status": "pending",
+      "task_id": "T37"
+    },
+    {
+      "keyword": "suscripciones ecommerce ltv cac",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 3,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "suscripciones-ecommerce-ltv-cac-d2c",
+      "status": "pending",
+      "task_id": "T38"
+    },
+    {
+      "keyword": "meta ads library competencia",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "TOFU-MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
+      "slug_target": "meta-ads-library-analisis-competencia",
+      "status": "pending",
+      "task_id": "T39"
+    },
+    {
+      "keyword": "ad fatigue meta ads",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "ad-fatigue-meta-ads-rotacion-creativa",
+      "status": "pending",
+      "task_id": "T40"
+    },
+    {
+      "keyword": "cbo abo meta ads 2026",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "cbo-vs-abo-meta-ads-2026-d2c",
+      "status": "pending",
+      "task_id": "T41"
+    },
+    {
+      "keyword": "framework creatividades meta ads",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "framework-hipotesis-creatividades-meta-ads",
+      "status": "pending",
+      "task_id": "T42"
+    },
+    {
+      "keyword": "adquisición vs retención ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 3,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "adquisicion-vs-retencion-paid-media-d2c",
+      "status": "pending",
+      "task_id": "T43"
+    },
+    {
+      "keyword": "meta ads internacionalización ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU-BOFU",
+      "priority": 3,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "internacionalizar-d2c-espanol-meta-ads-eu",
+      "status": "pending",
+      "task_id": "T44"
+    },
+    {
+      "keyword": "ga4 meta ads ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "ga4-meta-ads-eventos-custom-d2c",
+      "status": "pending",
+      "task_id": "T45"
+    },
+    {
+      "keyword": "dashboard paid media d2c",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU-BOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "dashboard-paid-media-founder-d2c",
+      "status": "pending",
+      "task_id": "T46"
+    },
+    {
+      "keyword": "whatsapp meta ads ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU-BOFU",
+      "priority": 3,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "whatsapp-meta-ads-funnel-bofu-d2c",
+      "status": "pending",
+      "task_id": "T47"
+    },
+    {
+      "keyword": "smart bidding google ads ecommerce",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 3,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "smart-bidding-google-ads-d2c",
+      "status": "pending",
+      "task_id": "T48"
+    },
+    {
+      "keyword": "customer journey d2c",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "TOFU-MOFU",
+      "priority": 3,
+      "channel": [
+        "SEO",
+        "AEO",
+        "GEO"
+      ],
+      "slug_target": "customer-journey-d2c-primer-impacto-repeticion",
+      "status": "pending",
+      "task_id": "T49"
+    },
+    {
+      "keyword": "pixel meta ads híbrido server side",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "MOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "pixel-meta-hibrido-cliente-servidor-implementacion",
+      "status": "pending",
+      "task_id": "T50"
+    },
+    {
+      "keyword": "kpis paid media cfo ceo",
+      "monthly_volume": "100-500",
+      "difficulty": "Media",
+      "intent": "BOFU",
+      "priority": 4,
+      "channel": [
+        "SEO",
+        "AEO"
+      ],
+      "slug_target": "kpis-paid-media-cfo-ceo-d2c",
+      "status": "pending",
+      "task_id": "T51"
     }
   ],
   "long_tail_high_conversion": [
