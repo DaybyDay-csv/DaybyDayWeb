@@ -351,6 +351,12 @@ const EscalarEcommerceD2C100K1MPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El proceso completo en 4 fases que aplicamos en cuentas en fase de escala</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
+          CAC vs LTV: la métrica que define si tu D2C es escalable →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo calcular LTV-180d y CAC blended para saber si el negocio aguanta la siguiente subida de presupuesto</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

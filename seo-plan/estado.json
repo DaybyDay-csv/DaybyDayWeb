@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28T09:00:00",
+  "last_updated": "2026-04-28T10:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -48,7 +48,8 @@
     "advantage-plus-shopping-cuando-usarlo-no",
     "metricas-meta-ads-importantes-ecommerce",
     "escalar-ecommerce-d2c-100k-1m-paid-media",
-    "por-que-anuncios-meta-no-convierten"
+    "por-que-anuncios-meta-no-convierten",
+    "cac-vs-ltv-ecommerce-escalable"
   ],
   "phases": [
     {
@@ -285,14 +286,15 @@
         {
           "id": "T16",
           "week": 16,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
           "title": "CAC vs LTV: la métrica que define si tu D2C es escalable",
           "keyword": "cac ltv ecommerce",
           "slug": "cac-vs-ltv-ecommerce-escalable",
           "words": 1000,
-          "intent": "TOFU-MOFU"
+          "intent": "TOFU-MOFU",
+          "note": "Publicado 2026-04-28. LTV-180d, CAC blended vs nCPA, tabla LTV/CAC, payback period, 5 palancas, FAQs."
         },
         {
           "id": "T17",

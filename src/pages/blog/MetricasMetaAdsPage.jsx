@@ -203,6 +203,12 @@ const MetricasMetaAdsPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Cómo cruzamos MER, nCPA y LTV/CAC en cuentas en fase de escala — el sistema completo</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
+          CAC vs LTV: la métrica que define si tu D2C es escalable →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El ratio LTV/CAC, payback period y por qué el ROAS de plataforma no es suficiente para decidir inversión</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white font-semibold hover:text-white/80">
           Cómo mejorar el ROAS en Meta Ads: 7 palancas reales →
         </Link>

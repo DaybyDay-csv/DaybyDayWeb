@@ -56,6 +56,7 @@ import AdvantagePlusShoppingPage from "./pages/blog/AdvantagePlusShoppingPage";
 import MetricasMetaAdsPage from "./pages/blog/MetricasMetaAdsPage";
 import EscalarEcommerceD2C100K1MPage from "./pages/blog/EscalarEcommerceD2C100K1MPage";
 import PorQueAnunciosMetaNoConviertenPage from "./pages/blog/PorQueAnunciosMetaNoConviertenPage";
+import CACvsLTVEcommercePage from "./pages/blog/CACvsLTVEcommercePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -242,6 +243,7 @@ const App = () => {
         <Route path="/blog/metricas-meta-ads-importantes-ecommerce" element={<MetricasMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" element={<EscalarEcommerceD2C100K1MPage openCalendly={openCalendly} />} />
         <Route path="/blog/por-que-anuncios-meta-no-convierten" element={<PorQueAnunciosMetaNoConviertenPage openCalendly={openCalendly} />} />
+        <Route path="/blog/cac-vs-ltv-ecommerce-escalable" element={<CACvsLTVEcommercePage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "cac-vs-ltv-ecommerce-escalable",
+    title: "CAC vs LTV: la métrica que define si tu D2C es escalable",
+    excerpt: "Cómo calcular CAC y LTV de forma realista en un eCommerce D2C, qué ratio LTV/CAC indica que el negocio escala (3:1 saludable), payback period razonable y palancas concretas para mejorarlo sin frenar adquisición. Con tabla de benchmarks por sector y errores que destruyen caja.",
+    category: "Estrategia",
+    date: "28 abr 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "por-que-anuncios-meta-no-convierten",
     title: "Por qué tus anuncios de Meta no convierten (y cómo solucionarlo)",
     excerpt: "Diagnóstico paso a paso para entender por qué tus anuncios de Meta no convierten: 5 capas (tracking, landing, audiencia, creatividad, estructura), métricas de diagnóstico y protocolo de intervención sin romper el aprendizaje del algoritmo.",
