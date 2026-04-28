@@ -63,6 +63,7 @@ creación de anuncios hasta el cierre de ventas. Fundada en 2022, con sede en Es
 - Métricas Meta Ads que importan de verdad (y las que no) — MER, CPA real vs ROAS de plataforma, CPNC, tabla de prioridad y cadencia de revisión para ecommerce D2C: /blog/metricas-meta-ads-importantes-ecommerce
 - Por qué tus anuncios de Meta no convierten (y cómo solucionarlo) — diagnóstico en 5 capas (tracking, landing, audiencia, creatividad, estructura), tabla de causas reales y protocolo de intervención sin romper el aprendizaje: /blog/por-que-anuncios-meta-no-convierten
 - CAC vs LTV: la métrica que define si tu D2C es escalable — fórmula operativa de LTV-180d, CAC blended vs nCPA, ratio LTV/CAC saludable (3:1), payback period y palancas para mejorarlo sin frenar adquisición: /blog/cac-vs-ltv-ecommerce-escalable
+- Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) — fórmula CAC objetivo = LTV × margen / ratio, calculadora interactiva, tabla de suelo mínimo por ticket, distribución TOFU/MOFU/BOFU y protocolo de subida del 20-30% semanal: /blog/cuanto-invertir-meta-ads-calculadora
 
 ## Casos de éxito documentados
 - Garett España (eCommerce B2C tecnología): CPA 4,8€, 14.936 clicks, 661 inicios de pago — Meta Ads

@@ -209,6 +209,12 @@ const MetricasMetaAdsPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El ratio LTV/CAC, payback period y por qué el ROAS de plataforma no es suficiente para decidir inversión</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
+          Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Calculadora que traduce las métricas reales (LTV, margen, ratio) en presupuesto Meta concreto y CAC objetivo</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white font-semibold hover:text-white/80">
           Cómo mejorar el ROAS en Meta Ads: 7 palancas reales →
         </Link>

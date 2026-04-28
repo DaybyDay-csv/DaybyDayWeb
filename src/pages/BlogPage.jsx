@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "cuanto-invertir-meta-ads-calculadora",
+    title: "Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora)",
+    excerpt: "Fórmula operativa para fijar inversión Meta según ticket, margen, LTV y ratio LTV/CAC objetivo. Con calculadora interactiva, suelo mínimo realista por tipo de D2C, distribución TOFU/MOFU/BOFU y protocolo de subida sin reiniciar la fase de aprendizaje.",
+    category: "Estrategia",
+    date: "28 abr 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "cac-vs-ltv-ecommerce-escalable",
     title: "CAC vs LTV: la métrica que define si tu D2C es escalable",
     excerpt: "Cómo calcular CAC y LTV de forma realista en un eCommerce D2C, qué ratio LTV/CAC indica que el negocio escala (3:1 saludable), payback period razonable y palancas concretas para mejorarlo sin frenar adquisición. Con tabla de benchmarks por sector y errores que destruyen caja.",

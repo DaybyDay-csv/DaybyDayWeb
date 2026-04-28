@@ -240,6 +240,12 @@ const CACvsLTVEcommercePage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
+          Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Aplica tu LTV y margen en la calculadora para obtener CAC objetivo y presupuesto Meta recomendado</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" className="text-white font-semibold hover:text-white/80">
           Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media →
         </Link>
