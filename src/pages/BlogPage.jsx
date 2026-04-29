@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "estrategia-full-funnel-d2c",
+    title: "Estrategia full funnel D2C: del frío al cliente recurrente",
+    excerpt: "Cómo montar un full funnel real para un eCommerce D2C en España: paid media (Meta + Google), email/WhatsApp y retención. Suelo de presupuesto, distribución por canal según fase de madurez, KPIs blended (MER, CAC blended) y orden operativo de implementación.",
+    category: "Estrategia",
+    date: "29 abr 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "cuanto-invertir-meta-ads-calculadora",
     title: "Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora)",
     excerpt: "Fórmula operativa para fijar inversión Meta según ticket, margen, LTV y ratio LTV/CAC objetivo. Con calculadora interactiva, suelo mínimo realista por tipo de D2C, distribución TOFU/MOFU/BOFU y protocolo de subida sin reiniciar la fase de aprendizaje.",

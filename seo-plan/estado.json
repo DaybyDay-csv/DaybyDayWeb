@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28T12:00:00",
+  "last_updated": "2026-04-29T12:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -50,7 +50,8 @@
     "escalar-ecommerce-d2c-100k-1m-paid-media",
     "por-que-anuncios-meta-no-convierten",
     "cac-vs-ltv-ecommerce-escalable",
-    "cuanto-invertir-meta-ads-calculadora"
+    "cuanto-invertir-meta-ads-calculadora",
+    "estrategia-full-funnel-d2c"
   ],
   "phases": [
     {
@@ -313,14 +314,15 @@
         {
           "id": "T18",
           "week": 18,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
           "title": "Estrategia full funnel para D2C: del frío al cliente recurrente",
           "keyword": "estrategia full funnel D2C",
           "slug": "estrategia-full-funnel-d2c",
           "words": 1200,
-          "intent": "MOFU"
+          "intent": "MOFU",
+          "note": "Publicado 2026-04-29. Full funnel multi-canal (Meta+Google+email/WhatsApp), orden operativo, distribución por madurez y KPIs blended (MER, CAC blended)."
         },
         {
           "id": "T19",
