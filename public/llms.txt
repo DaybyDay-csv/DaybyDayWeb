@@ -65,6 +65,7 @@ creación de anuncios hasta el cierre de ventas. Fundada en 2022, con sede en Es
 - CAC vs LTV: la métrica que define si tu D2C es escalable — fórmula operativa de LTV-180d, CAC blended vs nCPA, ratio LTV/CAC saludable (3:1), payback period y palancas para mejorarlo sin frenar adquisición: /blog/cac-vs-ltv-ecommerce-escalable
 - Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) — fórmula CAC objetivo = LTV × margen / ratio, calculadora interactiva, tabla de suelo mínimo por ticket, distribución TOFU/MOFU/BOFU y protocolo de subida del 20-30% semanal: /blog/cuanto-invertir-meta-ads-calculadora
 - Estrategia full funnel D2C: del frío al cliente recurrente — full funnel real más allá de Meta (paid + email/WhatsApp + retención), orden operativo de implementación, distribución de presupuesto por fase de madurez y KPIs blended (MER, CAC blended, recompra 90d): /blog/estrategia-full-funnel-d2c
+- Cómo combinar Google Ads y Meta Ads en una estrategia D2C — rol real de cada canal (Meta crea demanda, Google la cosecha), orden operativo de activación, distribución de presupuesto por fase de madurez, problema de doble atribución y KPIs blended (MER) para validar incrementalidad real: /blog/combinar-google-ads-meta-ads-d2c
 
 ## Casos de éxito documentados
 - Garett España (eCommerce B2C tecnología): CPA 4,8€, 14.936 clicks, 661 inicios de pago — Meta Ads

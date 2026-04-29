@@ -59,6 +59,7 @@ import PorQueAnunciosMetaNoConviertenPage from "./pages/blog/PorQueAnunciosMetaN
 import CACvsLTVEcommercePage from "./pages/blog/CACvsLTVEcommercePage";
 import CuantoInvertirMetaAdsCalculadoraPage from "./pages/blog/CuantoInvertirMetaAdsCalculadoraPage";
 import EstrategiaFullFunnelD2CPage from "./pages/blog/EstrategiaFullFunnelD2CPage";
+import CombinarGoogleAdsMetaAdsD2CPage from "./pages/blog/CombinarGoogleAdsMetaAdsD2CPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -248,6 +249,7 @@ const App = () => {
         <Route path="/blog/cac-vs-ltv-ecommerce-escalable" element={<CACvsLTVEcommercePage openCalendly={openCalendly} />} />
         <Route path="/blog/cuanto-invertir-meta-ads-calculadora" element={<CuantoInvertirMetaAdsCalculadoraPage openCalendly={openCalendly} />} />
         <Route path="/blog/estrategia-full-funnel-d2c" element={<EstrategiaFullFunnelD2CPage openCalendly={openCalendly} />} />
+        <Route path="/blog/combinar-google-ads-meta-ads-d2c" element={<CombinarGoogleAdsMetaAdsD2CPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

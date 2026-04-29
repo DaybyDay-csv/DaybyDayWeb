@@ -259,6 +259,12 @@ const EstrategiaFullFunnelD2CPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Fórmula operativa para fijar presupuesto Meta y suelo mínimo realista por ticket medio</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/combinar-google-ads-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          Cómo combinar Google Ads y Meta Ads en una estrategia D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Rol de cada canal, orden de activación y reparto de presupuesto entre Meta y Google por fase de madurez</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

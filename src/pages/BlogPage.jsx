@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "combinar-google-ads-meta-ads-d2c",
+    title: "Cómo combinar Google Ads y Meta Ads en una estrategia D2C",
+    excerpt: "Cómo combinar Google Ads y Meta Ads en un eCommerce D2C: rol de cada canal, distribución de presupuesto según madurez, qué activar primero, doble atribución y KPIs blended para validar incrementalidad real. Con tabla operativa por fase.",
+    category: "Estrategia",
+    date: "29 abr 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "estrategia-full-funnel-d2c",
     title: "Estrategia full funnel D2C: del frío al cliente recurrente",
     excerpt: "Cómo montar un full funnel real para un eCommerce D2C en España: paid media (Meta + Google), email/WhatsApp y retención. Suelo de presupuesto, distribución por canal según fase de madurez, KPIs blended (MER, CAC blended) y orden operativo de implementación.",
