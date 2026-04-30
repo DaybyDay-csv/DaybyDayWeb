@@ -61,6 +61,7 @@ import CuantoInvertirMetaAdsCalculadoraPage from "./pages/blog/CuantoInvertirMet
 import EstrategiaFullFunnelD2CPage from "./pages/blog/EstrategiaFullFunnelD2CPage";
 import CombinarGoogleAdsMetaAdsD2CPage from "./pages/blog/CombinarGoogleAdsMetaAdsD2CPage";
 import ComoElegirAgenciaMetaAdsEcommercePage from "./pages/blog/ComoElegirAgenciaMetaAdsEcommercePage";
+import GuiaApiConversionesMetaShopifyPage from "./pages/blog/GuiaApiConversionesMetaShopifyPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -252,6 +253,7 @@ const App = () => {
         <Route path="/blog/estrategia-full-funnel-d2c" element={<EstrategiaFullFunnelD2CPage openCalendly={openCalendly} />} />
         <Route path="/blog/combinar-google-ads-meta-ads-d2c" element={<CombinarGoogleAdsMetaAdsD2CPage openCalendly={openCalendly} />} />
         <Route path="/blog/como-elegir-agencia-meta-ads-ecommerce" element={<ComoElegirAgenciaMetaAdsEcommercePage openCalendly={openCalendly} />} />
+        <Route path="/blog/guia-api-conversiones-meta-ads-shopify" element={<GuiaApiConversionesMetaShopifyPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

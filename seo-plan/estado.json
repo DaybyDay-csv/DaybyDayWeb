@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T03:04:35",
+  "last_updated": "2026-04-30T12:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -53,7 +53,8 @@
     "cuanto-invertir-meta-ads-calculadora",
     "estrategia-full-funnel-d2c",
     "combinar-google-ads-meta-ads-d2c",
-    "como-elegir-agencia-meta-ads-ecommerce"
+    "como-elegir-agencia-meta-ads-ecommerce",
+    "guia-api-conversiones-meta-ads-shopify"
   ],
   "phases": [
     {
@@ -342,14 +343,15 @@
         {
           "id": "T20",
           "week": 20,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
           "title": "[PILAR] Guía API de Conversiones de Meta: configuración y beneficios",
           "keyword": "api conversiones meta ads",
           "slug": "guia-api-conversiones-meta-ads-shopify",
           "words": 2000,
-          "intent": "TOFU-MOFU"
+          "intent": "TOFU-MOFU",
+          "note": "Publicado 2026-04-30. Qué es CAPI, impacto real (+15-25% eventos), 3 rutas Shopify (nativa/app partner/custom), eventos críticos, deduplicación, RGPD, 3 chequeos verificación (EMQ, dedup, coverage)."
         },
         {
           "id": "T21",

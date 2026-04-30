@@ -272,6 +272,12 @@ const PorQueAnunciosMetaNoConviertenPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Si el problema es creativo, el sistema de validación que produce ganadores en menos de 14 días</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/guia-api-conversiones-meta-ads-shopify" className="text-white font-semibold hover:text-white/80">
+          Guía API de Conversiones de Meta (CAPI) en Shopify →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El primer diagnóstico de tracking — sin CAPI deduplicada, Meta optimiza con datos parciales</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

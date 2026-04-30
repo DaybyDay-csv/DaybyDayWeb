@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "guia-api-conversiones-meta-ads-shopify",
+    title: "Guía API de Conversiones de Meta: configuración y beneficios para eCommerce",
+    excerpt: "Guía completa de la API de Conversiones de Meta (CAPI) para eCommerce D2C: qué es, impacto real en rendimiento, cómo se implementa en Shopify (3 rutas), eventos críticos, deduplicación con el píxel, RGPD y verificación en Events Manager.",
+    category: "Tracking",
+    date: "30 abr 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "como-elegir-agencia-meta-ads-ecommerce",
     title: "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce en España",
     excerpt: "Guía operativa para identificar la mejor agencia de Meta Ads para un eCommerce D2C en España: 6 criterios que pesan de verdad, scorecard comparativo en una hoja, modelos de pricing alineados, banderas rojas y cómo evaluar resultados reales en los primeros 90 días.",

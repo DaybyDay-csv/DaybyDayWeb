@@ -208,6 +208,7 @@ const ChecklistAuditoriaCampanasPage = ({ openCalendly }) => (
         ["/blog/como-elegir-agencia-meta-ads-ecommerce", "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce en España"],
         ["/blog/buen-roas-por-nicho-benchmarks-2026", "¿Qué es un buen ROAS? Benchmarks por nicho para 2026"],
         ["/blog/caso-exito-ecommerce-d2c-roas-meta-ads", "Caso de éxito: eCommerce D2C +156% ROAS en 90 días"],
+        ["/blog/guia-api-conversiones-meta-ads-shopify", "Guía API de Conversiones de Meta (CAPI) en Shopify"],
       ].map(([to, label]) => (
         <li key={to}>
           <Link to={to} className="text-[#de0015] hover:text-red-400 text-sm underline">
