@@ -149,6 +149,7 @@ const ElegirAgenciaMetaAdsPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <ul className="space-y-2 mb-4">
       {[
+        ["/blog/como-elegir-agencia-meta-ads-ecommerce", "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce en España"],
         ["/blog/estrategia-full-funnel-meta-ads-d2c", "Estrategia Full-Funnel de Meta Ads para marcas D2C — Guía completa"],
         ["/blog/estrategias-puja-meta-ads", "Estrategias de puja en Meta Ads 2026: cuál elegir según tu objetivo"],
         ["/blog/ugc-meta-ads", "Cómo usar UGC para potenciar tus Meta Ads y reducir el CPM"],

@@ -181,6 +181,7 @@ const SenalesAgenciaNoRindePage = ({ openCalendly }) => (
         ["/blog/checklist-auditoria-campanas-paid-media", "Checklist completo para auditar tus campañas de paid media"],
         ["/blog/preguntas-contratar-agencia-paid-media", "10 preguntas que hacer antes de contratar una agencia paid media"],
         ["/blog/media-buyer-vs-agencia-ecommerce-d2c", "Media buyer vs agencia de publicidad: qué necesita tu D2C"],
+        ["/blog/como-elegir-agencia-meta-ads-ecommerce", "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce"],
         ["/blog/buen-roas-por-nicho-benchmarks-2026", "¿Qué es un buen ROAS? Benchmarks por nicho para 2026"],
       ].map(([to, label]) => (
         <li key={to}>

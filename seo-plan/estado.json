@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T18:00:00",
+  "last_updated": "2026-04-30T03:04:35",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -52,7 +52,8 @@
     "cac-vs-ltv-ecommerce-escalable",
     "cuanto-invertir-meta-ads-calculadora",
     "estrategia-full-funnel-d2c",
-    "combinar-google-ads-meta-ads-d2c"
+    "combinar-google-ads-meta-ads-d2c",
+    "como-elegir-agencia-meta-ads-ecommerce"
   ],
   "phases": [
     {
@@ -988,12 +989,13 @@
     },
     {
       "id": "T36",
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "title": "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce",
       "keyword": "mejor agencia meta ads ecommerce espana",
       "slug": "como-elegir-agencia-meta-ads-ecommerce",
-      "volume": "300-600"
+      "volume": "300-600",
+      "completed_at": "2026-04-30"
     },
     {
       "id": "T37",

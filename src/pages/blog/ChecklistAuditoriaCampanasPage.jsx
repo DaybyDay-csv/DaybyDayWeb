@@ -205,6 +205,7 @@ const ChecklistAuditoriaCampanasPage = ({ openCalendly }) => (
         ["/blog/como-mejorar-roas-meta-ads-7-palancas", "Cómo mejorar el ROAS en Meta Ads: 7 palancas reales"],
         ["/blog/por-que-anuncios-meta-no-convierten", "Por qué tus anuncios de Meta no convierten (y cómo solucionarlo)"],
         ["/blog/senales-agencia-publicidad-no-rinde", "Señales de que tu agencia de publicidad no está rindiendo"],
+        ["/blog/como-elegir-agencia-meta-ads-ecommerce", "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce en España"],
         ["/blog/buen-roas-por-nicho-benchmarks-2026", "¿Qué es un buen ROAS? Benchmarks por nicho para 2026"],
         ["/blog/caso-exito-ecommerce-d2c-roas-meta-ads", "Caso de éxito: eCommerce D2C +156% ROAS en 90 días"],
       ].map(([to, label]) => (

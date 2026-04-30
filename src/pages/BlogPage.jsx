@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "como-elegir-agencia-meta-ads-ecommerce",
+    title: "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce en España",
+    excerpt: "Guía operativa para identificar la mejor agencia de Meta Ads para un eCommerce D2C en España: 6 criterios que pesan de verdad, scorecard comparativo en una hoja, modelos de pricing alineados, banderas rojas y cómo evaluar resultados reales en los primeros 90 días.",
+    category: "Agencias",
+    date: "30 abr 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "combinar-google-ads-meta-ads-d2c",
     title: "Cómo combinar Google Ads y Meta Ads en una estrategia D2C",
     excerpt: "Cómo combinar Google Ads y Meta Ads en un eCommerce D2C: rol de cada canal, distribución de presupuesto según madurez, qué activar primero, doble atribución y KPIs blended para validar incrementalidad real. Con tabla operativa por fase.",
