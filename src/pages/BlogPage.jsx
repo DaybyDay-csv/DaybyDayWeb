@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "remarketing-dinamico-ecommerce-guia-practica",
+    title: "Remarketing dinámico para ecommerce: guía práctica (2026)",
+    excerpt: "Guía operativa de remarketing dinámico para eCommerce D2C: qué es y cuándo merece la pena, requisitos técnicos en Meta y Google, ventanas óptimas por ticket, distribución de presupuesto vs prospecting, plantillas creativas que rinden y cómo evitar fatiga.",
+    category: "Estrategia",
+    date: "1 may 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "performance-max-vs-meta-ads-espana",
     title: "Performance Max vs Meta Ads: ¿cuál funciona mejor en España? (2026)",
     excerpt: "Comparativa operativa Performance Max vs Meta Ads para eCommerce D2C en España: rol real de cada canal, cuándo usar cada uno, presupuesto mínimo, CPA y ROAS reales por fase, errores frecuentes (canibalización de marca) y estrategia combinada con MER blended.",

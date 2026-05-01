@@ -254,6 +254,12 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El pilar completo: tracking, estructura, creatividades y escalado para D2C</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/remarketing-dinamico-ecommerce-guia-practica" className="text-white font-semibold hover:text-white/80">
+          Remarketing dinámico para ecommerce: guía práctica →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué CAPI server-side es requisito para que el DPA recupere ROAS post-iOS</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

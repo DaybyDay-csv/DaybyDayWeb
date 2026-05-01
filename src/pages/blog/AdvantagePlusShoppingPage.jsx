@@ -229,6 +229,12 @@ const AdvantagePlusShoppingPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El equivalente de Advantage+ Shopping en Google y cómo combinarlos sin canibalización</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/remarketing-dinamico-ecommerce-guia-practica" className="text-white font-semibold hover:text-white/80">
+          Remarketing dinámico para ecommerce: guía práctica →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo conviven Advantage+ Shopping y DPA sin solapar audiencias ni quemar frecuencia</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

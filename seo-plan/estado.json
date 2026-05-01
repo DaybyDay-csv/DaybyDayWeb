@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T12:00:00",
+  "last_updated": "2026-05-01T13:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -55,7 +55,8 @@
     "combinar-google-ads-meta-ads-d2c",
     "como-elegir-agencia-meta-ads-ecommerce",
     "guia-api-conversiones-meta-ads-shopify",
-    "performance-max-vs-meta-ads-espana"
+    "performance-max-vs-meta-ads-espana",
+    "remarketing-dinamico-ecommerce-guia-practica"
   ],
   "phases": [
     {
@@ -357,14 +358,15 @@
         {
           "id": "T21",
           "week": 21,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
           "title": "Remarketing dinámico para ecommerce: guía práctica",
           "keyword": "remarketing dinámico ecommerce",
           "slug": "remarketing-dinamico-ecommerce-guia-practica",
           "words": 1000,
-          "intent": "MOFU"
+          "intent": "MOFU",
+          "note": "Publicado 2026-05-01"
         },
         {
           "id": "T22",

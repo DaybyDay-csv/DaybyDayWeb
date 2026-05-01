@@ -250,6 +250,12 @@ const MetricasMetaAdsPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Por qué CAPI cambia los números reportados (eventos, CPA, EMQ) y cómo verificar que está bien configurada</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/remarketing-dinamico-ecommerce-guia-practica" className="text-white font-semibold hover:text-white/80">
+          Remarketing dinámico para ecommerce: guía práctica →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué el ROAS del DPA aislado engaña sin mirar MER blended y métricas de incrementalidad</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
