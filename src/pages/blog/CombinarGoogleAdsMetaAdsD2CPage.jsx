@@ -253,6 +253,12 @@ const CombinarGoogleAdsMetaAdsD2CPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Comparativa profunda canal a canal cuando todavía estás eligiendo, no combinando</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/performance-max-vs-meta-ads-espana" className="text-white font-semibold hover:text-white/80">
+          Performance Max vs Meta Ads: ¿cuál funciona mejor en España? →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Rol real de PMax en el mix Google + Meta, presupuesto mínimo y canibalización de marca</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
           Cuánto invertir en Meta Ads según tu ticket y margen →
         </Link>

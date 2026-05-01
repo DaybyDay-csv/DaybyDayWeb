@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "performance-max-vs-meta-ads-espana",
+    title: "Performance Max vs Meta Ads: ¿cuál funciona mejor en España? (2026)",
+    excerpt: "Comparativa operativa Performance Max vs Meta Ads para eCommerce D2C en España: rol real de cada canal, cuándo usar cada uno, presupuesto mínimo, CPA y ROAS reales por fase, errores frecuentes (canibalización de marca) y estrategia combinada con MER blended.",
+    category: "Estrategia",
+    date: "1 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "guia-api-conversiones-meta-ads-shopify",
     title: "Guía API de Conversiones de Meta: configuración y beneficios para eCommerce",
     excerpt: "Guía completa de la API de Conversiones de Meta (CAPI) para eCommerce D2C: qué es, impacto real en rendimiento, cómo se implementa en Shopify (3 rutas), eventos críticos, deduplicación con el píxel, RGPD y verificación en Events Manager.",
