@@ -64,6 +64,7 @@ import ComoElegirAgenciaMetaAdsEcommercePage from "./pages/blog/ComoElegirAgenci
 import GuiaApiConversionesMetaShopifyPage from "./pages/blog/GuiaApiConversionesMetaShopifyPage";
 import PerformanceMaxVsMetaAdsEspanaPage from "./pages/blog/PerformanceMaxVsMetaAdsEspanaPage";
 import RemarketingDinamicoEcommerceGuiaPracticaPage from "./pages/blog/RemarketingDinamicoEcommerceGuiaPracticaPage";
+import RetargetingMetaAdsEcommerce2026Page from "./pages/blog/RetargetingMetaAdsEcommerce2026Page";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -258,6 +259,7 @@ const App = () => {
         <Route path="/blog/guia-api-conversiones-meta-ads-shopify" element={<GuiaApiConversionesMetaShopifyPage openCalendly={openCalendly} />} />
         <Route path="/blog/performance-max-vs-meta-ads-espana" element={<PerformanceMaxVsMetaAdsEspanaPage openCalendly={openCalendly} />} />
         <Route path="/blog/remarketing-dinamico-ecommerce-guia-practica" element={<RemarketingDinamicoEcommerceGuiaPracticaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/retargeting-meta-ads-ecommerce-2026" element={<RetargetingMetaAdsEcommerce2026Page openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

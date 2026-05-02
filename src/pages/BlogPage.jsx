@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "retargeting-meta-ads-ecommerce-2026",
+    title: "Retargeting en Meta Ads para eCommerce: guía completa 2026",
+    excerpt: "Guía completa de retargeting en Meta Ads para eCommerce D2C en 2026: cómo construir la escalera de audiencias (4 peldaños), ventanas óptimas por ticket, exclusiones cruzadas obligatorias, distribución 15-25% del spend vs prospecting, sequenciado creativo y errores que matan el ROAS.",
+    category: "Estrategia",
+    date: "2 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "remarketing-dinamico-ecommerce-guia-practica",
     title: "Remarketing dinámico para ecommerce: guía práctica (2026)",
     excerpt: "Guía operativa de remarketing dinámico para eCommerce D2C: qué es y cuándo merece la pena, requisitos técnicos en Meta y Google, ventanas óptimas por ticket, distribución de presupuesto vs prospecting, plantillas creativas que rinden y cómo evitar fatiga.",
