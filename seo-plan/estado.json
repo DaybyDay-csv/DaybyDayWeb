@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T13:00:00",
+  "last_updated": "2026-05-02T18:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -57,7 +57,8 @@
     "guia-api-conversiones-meta-ads-shopify",
     "performance-max-vs-meta-ads-espana",
     "remarketing-dinamico-ecommerce-guia-practica",
-    "retargeting-meta-ads-ecommerce-2026"
+    "retargeting-meta-ads-ecommerce-2026",
+    "audiencias-lookalike-meta-alta-calidad"
   ],
   "phases": [
     {
@@ -372,14 +373,15 @@
         {
           "id": "T22",
           "week": 22,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
           "title": "Cómo crear audiencias lookalike de alta calidad en Meta",
           "keyword": "audiencias lookalike meta",
           "slug": "audiencias-lookalike-meta-alta-calidad",
-          "words": 900,
-          "intent": "TOFU-MOFU"
+          "words": 1500,
+          "intent": "TOFU-MOFU",
+          "note": "Publicado 2026-05-02"
         },
         {
           "id": "T23",

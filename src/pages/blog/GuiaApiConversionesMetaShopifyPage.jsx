@@ -261,6 +261,12 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Por qué CAPI server-side es requisito para que el DPA recupere ROAS post-iOS</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/audiencias-lookalike-meta-alta-calidad" className="text-white font-semibold hover:text-white/80">
+          Audiencias lookalike en Meta de alta calidad: guía 2026 D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Sin CAPI con EMQ &gt;7, la semilla del lookalike pierde la mitad de su match rate</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/retargeting-meta-ads-ecommerce-2026" className="text-white font-semibold hover:text-white/80">
           Retargeting en Meta Ads para eCommerce: guía completa 2026 →
         </Link>

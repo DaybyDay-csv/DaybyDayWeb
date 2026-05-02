@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "audiencias-lookalike-meta-alta-calidad",
+    title: "Audiencias lookalike en Meta de alta calidad: guía 2026 D2C",
+    excerpt: "Cómo crear audiencias lookalike de alta calidad en Meta Ads para eCommerce D2C: jerarquía de semillas (compradores LTV alto, AddToCart, engagement), tamaño semilla mínimo, qué porcentaje (1-10%) usar según tamaño de cuenta, exclusiones obligatorias y cuándo Advantage+ los sustituye.",
+    category: "Estrategia",
+    date: "2 may 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "retargeting-meta-ads-ecommerce-2026",
     title: "Retargeting en Meta Ads para eCommerce: guía completa 2026",
     excerpt: "Guía completa de retargeting en Meta Ads para eCommerce D2C en 2026: cómo construir la escalera de audiencias (4 peldaños), ventanas óptimas por ticket, exclusiones cruzadas obligatorias, distribución 15-25% del spend vs prospecting, sequenciado creativo y errores que matan el ROAS.",

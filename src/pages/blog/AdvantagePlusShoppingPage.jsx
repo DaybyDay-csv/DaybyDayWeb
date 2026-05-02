@@ -230,6 +230,12 @@ const AdvantagePlusShoppingPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El equivalente de Advantage+ Shopping en Google y cómo combinarlos sin canibalización</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/audiencias-lookalike-meta-alta-calidad" className="text-white font-semibold hover:text-white/80">
+          Audiencias lookalike en Meta de alta calidad: guía 2026 D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cuándo migrar de un stack de lookalikes a Advantage+ Shopping y la convivencia entre ambos</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/remarketing-dinamico-ecommerce-guia-practica" className="text-white font-semibold hover:text-white/80">
           Remarketing dinámico para ecommerce: guía práctica →
         </Link>

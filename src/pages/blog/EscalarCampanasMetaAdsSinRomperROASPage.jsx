@@ -274,6 +274,12 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Verificar que tracking, estructura y creatividades están listos antes de escalar</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/audiencias-lookalike-meta-alta-calidad" className="text-white font-semibold hover:text-white/80">
+          Audiencias lookalike en Meta de alta calidad: guía 2026 D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo evitar saturar lookalikes al subir presupuesto y qué stack mantener al escalar</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
           Advantage+ Shopping: cuándo usarlo y cuándo no →
         </Link>
