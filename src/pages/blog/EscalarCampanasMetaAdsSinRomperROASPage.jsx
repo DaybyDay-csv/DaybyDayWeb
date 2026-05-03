@@ -285,6 +285,12 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cómo estructura ASC la distribución presupuesto/audiencia y por qué protege mejor el ROAS en fase de escala</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-white font-semibold hover:text-white/80">
+          A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Antes de escalar, prioriza tests por impacto: pirámide en 7 niveles del creativo a la estructura</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

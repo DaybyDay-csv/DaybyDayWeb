@@ -344,6 +344,10 @@ const CreativeTestingMetaAdsPage = ({ openCalendly }) => (
       <Link to="/blog/meta-ads-vs-google-ads" className="text-[#e63946] hover:underline">
         tienes el análisis completo aquí
       </Link>
+      . Para priorizar qué testar más allá del creativo (audiencia, puja, estructura),{" "}
+      <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-[#e63946] hover:underline">
+        revisa la pirámide de impacto del A/B testing en Meta Ads
+      </Link>
       .
     </p>
   </BlogPostLayout>

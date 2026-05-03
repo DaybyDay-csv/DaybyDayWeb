@@ -244,6 +244,12 @@ const AudienciasLookalikeMetaAltaCalidadPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cómo escalar lookalikes sin saturar el público y disparar el frequency</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-white font-semibold hover:text-white/80">
+          A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cuándo testar audiencias y lookalikes vs cuándo el creativo aún manda — pirámide de impacto</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

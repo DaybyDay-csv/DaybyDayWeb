@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "ab-testing-meta-ads-que-testar-primero",
+    title: "A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje",
+    excerpt: "Cómo priorizar A/B tests en Meta Ads para eCommerce D2C: pirámide de impacto (creativo → hook → oferta → audiencia → puja → estructura), volumen mínimo de conversiones por variante, duración óptima del test, A/B nativo vs comparación manual, y cómo evitar contaminación por audience overlap.",
+    category: "Estrategia",
+    date: "3 may 2026",
+    readingTime: "8 min",
+  },
+  {
     slug: "audiencias-lookalike-meta-alta-calidad",
     title: "Audiencias lookalike en Meta de alta calidad: guía 2026 D2C",
     excerpt: "Cómo crear audiencias lookalike de alta calidad en Meta Ads para eCommerce D2C: jerarquía de semillas (compradores LTV alto, AddToCart, engagement), tamaño semilla mínimo, qué porcentaje (1-10%) usar según tamaño de cuenta, exclusiones obligatorias y cuándo Advantage+ los sustituye.",

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T18:00:00",
+  "last_updated": "2026-05-03T10:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -58,7 +58,8 @@
     "performance-max-vs-meta-ads-espana",
     "remarketing-dinamico-ecommerce-guia-practica",
     "retargeting-meta-ads-ecommerce-2026",
-    "audiencias-lookalike-meta-alta-calidad"
+    "audiencias-lookalike-meta-alta-calidad",
+    "ab-testing-meta-ads-que-testar-primero"
   ],
   "phases": [
     {
@@ -386,14 +387,15 @@
         {
           "id": "T23",
           "week": 23,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
           "title": "A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje",
           "keyword": "ab testing meta ads",
           "slug": "ab-testing-meta-ads-que-testar-primero",
           "words": 900,
-          "intent": "MOFU"
+          "intent": "MOFU",
+          "note": "Publicado 2026-05-03"
         },
         {
           "id": "T24",
