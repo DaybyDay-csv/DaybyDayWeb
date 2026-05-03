@@ -200,6 +200,12 @@ const AdvantagePlusShoppingPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/presupuesto-minimo-meta-ads-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué Advantage+ Shopping rinde mejor en presupuestos pequeños y cuándo no activarlo desde día 0</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white font-semibold hover:text-white/80">
           Cómo escalar campañas Meta Ads sin que se rompa el ROAS →
         </Link>

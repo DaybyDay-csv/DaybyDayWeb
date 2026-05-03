@@ -238,6 +238,12 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/presupuesto-minimo-meta-ads-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Suelo operativo por debajo del cual ningún protocolo de escalado funciona porque el algoritmo no estabiliza</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
           Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) →
         </Link>

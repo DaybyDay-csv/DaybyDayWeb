@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T10:00:00",
+  "last_updated": "2026-05-03T11:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -10,7 +10,9 @@
   "app_routes_file": "src/App.jsx",
   "sitemap_file": "public/sitemap.xml",
   "llms_txt_file": "public/llms.txt",
-  "completed_tasks": [],
+  "completed_tasks": [
+    "T40"
+  ],
   "published_posts": [
     "que-es-roas-meta-ads",
     "meta-ads-vs-google-ads",
@@ -59,7 +61,8 @@
     "remarketing-dinamico-ecommerce-guia-practica",
     "retargeting-meta-ads-ecommerce-2026",
     "audiencias-lookalike-meta-alta-calidad",
-    "ab-testing-meta-ads-que-testar-primero"
+    "ab-testing-meta-ads-que-testar-primero",
+    "presupuesto-minimo-meta-ads-ecommerce"
   ],
   "phases": [
     {
@@ -1039,7 +1042,7 @@
     },
     {
       "id": "T40",
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "title": "Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir?",
       "keyword": "presupuesto minimo meta ads",

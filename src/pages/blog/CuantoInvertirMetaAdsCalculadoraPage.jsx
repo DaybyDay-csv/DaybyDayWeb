@@ -306,6 +306,12 @@ const CuantoInvertirMetaAdsCalculadoraPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/presupuesto-minimo-meta-ads-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? (D2C 2026) →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Antes de la calculadora: el suelo operativo por debajo del cual Meta no aprende y por qué el "mínimo" no es lo que la plataforma deja activar</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/estrategia-full-funnel-d2c" className="text-white font-semibold hover:text-white/80">
           Estrategia full funnel D2C: del frío al cliente recurrente →
         </Link>

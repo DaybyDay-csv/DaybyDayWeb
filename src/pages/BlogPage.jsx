@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "presupuesto-minimo-meta-ads-ecommerce",
+    title: "Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? (D2C 2026)",
+    excerpt: "Cuánto presupuesto mínimo necesitas para que Meta Ads funcione en eCommerce D2C en 2026: suelo operativo realista (30-50€/día), por qué el algoritmo necesita 50 conversiones/semana para estabilizar, mínimos por ticket (40€ a 200€+), distribución prospecting/retargeting según presupuesto, Advantage+ vs tradicional y reglas de escalado sin romper el aprendizaje.",
+    category: "Estrategia",
+    date: "3 may 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "ab-testing-meta-ads-que-testar-primero",
     title: "A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje",
     excerpt: "Cómo priorizar A/B tests en Meta Ads para eCommerce D2C: pirámide de impacto (creativo → hook → oferta → audiencia → puja → estructura), volumen mínimo de conversiones por variante, duración óptima del test, A/B nativo vs comparación manual, y cómo evitar contaminación por audience overlap.",

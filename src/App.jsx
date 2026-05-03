@@ -67,6 +67,7 @@ import RemarketingDinamicoEcommerceGuiaPracticaPage from "./pages/blog/Remarketi
 import RetargetingMetaAdsEcommerce2026Page from "./pages/blog/RetargetingMetaAdsEcommerce2026Page";
 import AudienciasLookalikeMetaAltaCalidadPage from "./pages/blog/AudienciasLookalikeMetaAltaCalidadPage";
 import ABTestingMetaAdsQueTestarPrimeroPage from "./pages/blog/ABTestingMetaAdsQueTestarPrimeroPage";
+import PresupuestoMinimoMetaAdsEcommercePage from "./pages/blog/PresupuestoMinimoMetaAdsEcommercePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -264,6 +265,7 @@ const App = () => {
         <Route path="/blog/retargeting-meta-ads-ecommerce-2026" element={<RetargetingMetaAdsEcommerce2026Page openCalendly={openCalendly} />} />
         <Route path="/blog/audiencias-lookalike-meta-alta-calidad" element={<AudienciasLookalikeMetaAltaCalidadPage openCalendly={openCalendly} />} />
         <Route path="/blog/ab-testing-meta-ads-que-testar-primero" element={<ABTestingMetaAdsQueTestarPrimeroPage openCalendly={openCalendly} />} />
+        <Route path="/blog/presupuesto-minimo-meta-ads-ecommerce" element={<PresupuestoMinimoMetaAdsEcommercePage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
