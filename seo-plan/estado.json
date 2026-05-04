@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T11:00:00",
+  "last_updated": "2026-05-04T12:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -11,7 +11,8 @@
   "sitemap_file": "public/sitemap.xml",
   "llms_txt_file": "public/llms.txt",
   "completed_tasks": [
-    "T40"
+    "T40",
+    "T26"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -64,7 +65,8 @@
     "ab-testing-meta-ads-que-testar-primero",
     "presupuesto-minimo-meta-ads-ecommerce",
     "automatizaciones-reglas-meta-ads-manager",
-    "cac-blended-vs-cac-canal-ecommerce"
+    "cac-blended-vs-cac-canal-ecommerce",
+    "cohort-analysis-ecommerce-d2c"
   ],
   "phases": [
     {
@@ -447,7 +449,7 @@
           "words": 1300,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "note": ""
         },

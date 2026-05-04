@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "cohort-analysis-ecommerce-d2c",
+    title: "Cohort analysis para eCommerce D2C: la métrica que predice si tu negocio escala",
+    excerpt: "Cómo usar cohort analysis para detectar si tu D2C escala con clientes de calidad o se degrada en silencio: métricas clave (retención, LTV acumulado, payback period), patrones rojos por canal y cohorte BFCM, payback saludable por sector y cómo cruzar cohortes con decisiones de paid media.",
+    category: "Métricas",
+    date: "4 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "cac-blended-vs-cac-canal-ecommerce",
     title: "CAC blended vs CAC por canal: qué métrica usar para escalar un D2C",
     excerpt: "Diferencias entre CAC blended y CAC por canal en eCommerce D2C: cuándo usar cada uno, cómo calcularlos sin inflar resultados, ratios LTV:CAC saludables, por qué la suma de CAC por canal no cuadra con el blended y cuándo merece la pena saltar a Marketing Mix Modeling.",
