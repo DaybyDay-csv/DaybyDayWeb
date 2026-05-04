@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T11:00:00",
+  "last_updated": "2026-05-04T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -62,7 +62,8 @@
     "retargeting-meta-ads-ecommerce-2026",
     "audiencias-lookalike-meta-alta-calidad",
     "ab-testing-meta-ads-que-testar-primero",
-    "presupuesto-minimo-meta-ads-ecommerce"
+    "presupuesto-minimo-meta-ads-ecommerce",
+    "automatizaciones-reglas-meta-ads-manager"
   ],
   "phases": [
     {
@@ -403,14 +404,15 @@
         {
           "id": "T24",
           "week": 24,
-          "status": "pending",
+          "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
           "title": "Automatizaciones y reglas en Meta Ads Manager para escalar",
           "keyword": "automatizaciones meta ads",
           "slug": "automatizaciones-reglas-meta-ads-manager",
           "words": 800,
-          "intent": "MOFU"
+          "intent": "MOFU",
+          "note": "Publicado 2026-05-04"
         }
       ]
     },

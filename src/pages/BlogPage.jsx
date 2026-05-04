@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "automatizaciones-reglas-meta-ads-manager",
+    title: "Automatizaciones y reglas en Meta Ads Manager para escalar (D2C 2026)",
+    excerpt: "Cómo usar reglas automáticas y automatizaciones en Meta Ads Manager para escalar campañas D2C sin romper el learning phase: tipos de reglas (control, escalado, notificación), umbrales realistas, niveles correctos (campaña/ad set/anuncio), errores que rompen el algoritmo y cuándo conviene saltar a Marketing API con scripts externos.",
+    category: "Operaciones",
+    date: "4 may 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "presupuesto-minimo-meta-ads-ecommerce",
     title: "Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? (D2C 2026)",
     excerpt: "Cuánto presupuesto mínimo necesitas para que Meta Ads funcione en eCommerce D2C en 2026: suelo operativo realista (30-50€/día), por qué el algoritmo necesita 50 conversiones/semana para estabilizar, mínimos por ticket (40€ a 200€+), distribución prospecting/retargeting según presupuesto, Advantage+ vs tradicional y reglas de escalado sin romper el aprendizaje.",
