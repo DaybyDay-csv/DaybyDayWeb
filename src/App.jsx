@@ -69,6 +69,7 @@ import AudienciasLookalikeMetaAltaCalidadPage from "./pages/blog/AudienciasLooka
 import ABTestingMetaAdsQueTestarPrimeroPage from "./pages/blog/ABTestingMetaAdsQueTestarPrimeroPage";
 import PresupuestoMinimoMetaAdsEcommercePage from "./pages/blog/PresupuestoMinimoMetaAdsEcommercePage";
 import AutomatizacionesReglasMetaAdsManagerPage from "./pages/blog/AutomatizacionesReglasMetaAdsManagerPage";
+import CacBlendedVsCacCanalEcommercePage from "./pages/blog/CacBlendedVsCacCanalEcommercePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -268,6 +269,7 @@ const App = () => {
         <Route path="/blog/ab-testing-meta-ads-que-testar-primero" element={<ABTestingMetaAdsQueTestarPrimeroPage openCalendly={openCalendly} />} />
         <Route path="/blog/presupuesto-minimo-meta-ads-ecommerce" element={<PresupuestoMinimoMetaAdsEcommercePage openCalendly={openCalendly} />} />
         <Route path="/blog/automatizaciones-reglas-meta-ads-manager" element={<AutomatizacionesReglasMetaAdsManagerPage openCalendly={openCalendly} />} />
+        <Route path="/blog/cac-blended-vs-cac-canal-ecommerce" element={<CacBlendedVsCacCanalEcommercePage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

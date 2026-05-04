@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "cac-blended-vs-cac-canal-ecommerce",
+    title: "CAC blended vs CAC por canal: qué métrica usar para escalar un D2C",
+    excerpt: "Diferencias entre CAC blended y CAC por canal en eCommerce D2C: cuándo usar cada uno, cómo calcularlos sin inflar resultados, ratios LTV:CAC saludables, por qué la suma de CAC por canal no cuadra con el blended y cuándo merece la pena saltar a Marketing Mix Modeling.",
+    category: "Métricas",
+    date: "4 may 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "automatizaciones-reglas-meta-ads-manager",
     title: "Automatizaciones y reglas en Meta Ads Manager para escalar (D2C 2026)",
     excerpt: "Cómo usar reglas automáticas y automatizaciones en Meta Ads Manager para escalar campañas D2C sin romper el learning phase: tipos de reglas (control, escalado, notificación), umbrales realistas, niveles correctos (campaña/ad set/anuncio), errores que rompen el algoritmo y cuándo conviene saltar a Marketing API con scripts externos.",

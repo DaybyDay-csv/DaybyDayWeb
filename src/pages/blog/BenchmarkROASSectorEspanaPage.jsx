@@ -200,6 +200,12 @@ const BenchmarkROASSectorEspanaPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
+          CAC blended vs CAC por canal: qué métrica usar para escalar →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo derivar tu ROAS objetivo desde el CAC blended real, no del CAC plataforma</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/buen-roas-por-nicho-benchmarks-2026" className="text-white font-semibold hover:text-white/80">
           ¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads 2026 →
         </Link>
