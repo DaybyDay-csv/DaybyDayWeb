@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "marketing-mix-modeling-ecommerce-d2c",
+    title: "Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve",
+    excerpt: "Guía práctica de Marketing Mix Modeling (MMM) para eCommerce D2C en España: qué es, cuándo aplicarlo según tamaño de spend, qué datos necesita, diferencias frente a MTA, herramientas reales (Robyn, LightweightMMM, Recast, Northbeam), cómo se valida con holdout y geo-experiments, y cómo decide DayByDay si MMM tiene sentido para tu cuenta.",
+    category: "Métricas",
+    date: "5 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "modelos-atribucion-ecommerce-d2c",
     title: "Modelos de atribución para D2C: last-click, data-driven y MMM explicados",
     excerpt: "Guía práctica de modelos de atribución en eCommerce D2C: diferencias reales entre last-click, first-click, lineal, position-based, data-driven y Marketing Mix Modeling; por qué Meta Ads sobreatribuye 20-35% frente al ROAS real; qué modelo conviene según tamaño de cuenta; impacto de iOS 17/18 y pérdida de cookies; herramientas (GA4, Triple Whale, Northbeam) y cómo decide DayByDay qué modelo aplicar.",
