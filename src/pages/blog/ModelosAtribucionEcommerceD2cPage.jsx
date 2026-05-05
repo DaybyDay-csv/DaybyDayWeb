@@ -238,6 +238,12 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/marketing-mix-modeling-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
+          Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cuándo MMM tiene sentido como capa independiente de validación</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
           CAC blended vs CAC por canal: qué métrica usar para escalar un D2C →
         </Link>

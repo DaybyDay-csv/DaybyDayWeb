@@ -213,6 +213,12 @@ const CohortAnalysisEcommerceD2cPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El modelo que asigna a cada cohorte el canal de adquisición correcto</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/marketing-mix-modeling-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
+          Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo MMM valida el LTV agregado por canal sin depender de cookies</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

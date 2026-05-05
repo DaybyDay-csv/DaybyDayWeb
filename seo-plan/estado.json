@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05T08:00:00",
+  "last_updated": "2026-05-05T10:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -68,7 +68,8 @@
     "automatizaciones-reglas-meta-ads-manager",
     "cac-blended-vs-cac-canal-ecommerce",
     "cohort-analysis-ecommerce-d2c",
-    "modelos-atribucion-ecommerce-d2c"
+    "modelos-atribucion-ecommerce-d2c",
+    "marketing-mix-modeling-ecommerce-d2c"
   ],
   "phases": [
     {
@@ -479,9 +480,9 @@
           "words": 1300,
           "intent": "MOFU-BOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-05."
         },
         {
           "id": "T29",
