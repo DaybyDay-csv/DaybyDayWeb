@@ -210,6 +210,7 @@ const ChecklistAuditoriaCampanasPage = ({ openCalendly }) => (
         ["/blog/caso-exito-ecommerce-d2c-roas-meta-ads", "Caso de éxito: eCommerce D2C +156% ROAS en 90 días"],
         ["/blog/guia-api-conversiones-meta-ads-shopify", "Guía API de Conversiones de Meta (CAPI) en Shopify"],
         ["/blog/automatizaciones-reglas-meta-ads-manager", "Automatizaciones y reglas en Meta Ads Manager para escalar"],
+        ["/blog/modelos-atribucion-ecommerce-d2c", "Modelos de atribución para D2C: last-click, data-driven y MMM explicados"],
       ].map(([to, label]) => (
         <li key={to}>
           <Link to={to} className="text-[#de0015] hover:text-red-400 text-sm underline">

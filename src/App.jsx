@@ -71,6 +71,7 @@ import PresupuestoMinimoMetaAdsEcommercePage from "./pages/blog/PresupuestoMinim
 import AutomatizacionesReglasMetaAdsManagerPage from "./pages/blog/AutomatizacionesReglasMetaAdsManagerPage";
 import CacBlendedVsCacCanalEcommercePage from "./pages/blog/CacBlendedVsCacCanalEcommercePage";
 import CohortAnalysisEcommerceD2cPage from "./pages/blog/CohortAnalysisEcommerceD2cPage";
+import ModelosAtribucionEcommerceD2cPage from "./pages/blog/ModelosAtribucionEcommerceD2cPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -272,6 +273,7 @@ const App = () => {
         <Route path="/blog/automatizaciones-reglas-meta-ads-manager" element={<AutomatizacionesReglasMetaAdsManagerPage openCalendly={openCalendly} />} />
         <Route path="/blog/cac-blended-vs-cac-canal-ecommerce" element={<CacBlendedVsCacCanalEcommercePage openCalendly={openCalendly} />} />
         <Route path="/blog/cohort-analysis-ecommerce-d2c" element={<CohortAnalysisEcommerceD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/modelos-atribucion-ecommerce-d2c" element={<ModelosAtribucionEcommerceD2cPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
