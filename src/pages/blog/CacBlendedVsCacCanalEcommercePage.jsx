@@ -221,6 +221,12 @@ const CacBlendedVsCacCanalEcommercePage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cómo detectar problemas de atribución que inflan el CAC plataforma frente al blended</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/modelos-atribucion-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
+          Modelos de atribución para D2C: last-click, data-driven y MMM explicados →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué el CAC por canal nunca cuadra: el modelo de atribución que hay detrás</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
