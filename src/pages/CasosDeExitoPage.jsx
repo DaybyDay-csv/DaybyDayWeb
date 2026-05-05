@@ -152,7 +152,7 @@ const faqSchema = {
       "name": "¿Qué hace diferente a DayByDay de otras agencias de paid media en España?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tres cosas: (1) Especialización exclusiva en D2C — no gestionamos campañas para todo tipo de negocios, lo que nos da benchmarks reales del sector. (2) Acceso directo al senior — Pablo gestiona personalmente todas las cuentas, sin delegar en perfiles junior. (3) Metodología IA + automatización — usamos sistemas propios de automatización que van más allá de la gestión manual de campañas. El resultado es que cada cliente recibe el nivel de atención y especialización de un consultor senior con precio de agencia especializada."
+        "text": "Tres cosas: (1) Partnership de dos socios senior — Pablo Santirsó (founder) lidera paid media y estrategia, Jorge González (CTO) lidera automation y tech. El cliente habla con los dos socios, sin account managers. (2) Una conversación, dos cabezas — donde otras agencias separan marketing y tech, nosotros lo aplicamos ad-hoc en la misma reunión. (3) Especialización vertical en D2C para paid media + automation B2B/B2C transversal — benchmarks reales del sector y soluciones técnicas hechas a medida, no playbooks."
       }
     }
   ]
@@ -367,19 +367,19 @@ const CasosDeExitoPage = ({ openCalendly }) => (
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               {
-                icon: "🎯",
-                title: "Especialización D2C",
-                body: "No trabajamos con todo tipo de negocios. Solo D2C en España: moda, cosmética, suplementos, hogar, mascotas. Eso nos da benchmarks reales del sector, no genéricos.",
+                icon: "👥",
+                title: "Partnership de dos socios senior",
+                body: "Pablo Santirsó (founder · paid media + estrategia + ops) y Jorge González (partner · CTO · automation + agentic AI). Hablas siempre con los dos socios. Sin account managers, sin perfiles junior delegados.",
               },
               {
-                icon: "👤",
-                title: "Acceso directo al senior",
-                body: "Pablo gestiona personalmente todas las cuentas. Sin intermediarios, sin cuentas delegadas a perfiles junior. Lo que ves en la reunión es lo que gestiona tu cuenta.",
+                icon: "🧠",
+                title: "Una conversación, dos cabezas",
+                body: "Pablo escucha y propone solución de negocio sin sesgo técnico. Jorge la valida y propone alternativas tech viables. Aplicamos todo ad-hoc, no playbooks.",
               },
               {
                 icon: "⚙️",
-                title: "IA + automatización propia",
-                body: "Metodología que combina paid media con sistemas de automatización propios: desde la creación de anuncios hasta el cierre de ventas. Más allá de la gestión manual.",
+                title: "Paid media D2C + automation B2B/B2C",
+                body: "Especialización vertical en D2C para paid media (Garett, Cartri, La Vida Padel, UFV, Arasnet) y automation transversal para clientes B2B y B2C (Total Energies, Puig, Robot Factory de Orange en track de Jorge).",
               },
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-2">
@@ -414,7 +414,7 @@ const CasosDeExitoPage = ({ openCalendly }) => (
               },
               {
                 q: "¿Qué hace diferente a DayByDay de otras agencias de paid media en España?",
-                a: "Tres cosas: (1) Especialización exclusiva en D2C — benchmarks reales del sector. (2) Acceso directo al senior — Pablo gestiona personalmente todas las cuentas. (3) Metodología IA + automatización — sistemas propios que van más allá de la gestión manual de campañas.",
+                a: "Tres cosas: (1) Partnership de dos socios senior — Pablo Santirsó (founder · paid media + estrategia) y Jorge González (CTO · automation). El cliente habla con los dos socios. (2) Una conversación, dos cabezas — donde otras agencias separan marketing y tech, nosotros aplicamos todo ad-hoc en la misma reunión. (3) Especialización D2C en paid media + automation B2B/B2C — benchmarks reales del sector y soluciones técnicas hechas a medida, no playbooks.",
               },
             ].map((faq, i) => (
               <details key={i} className="bg-[#1f1a1a] border border-white/8 rounded-xl p-5 group">

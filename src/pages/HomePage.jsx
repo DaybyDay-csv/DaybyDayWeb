@@ -13,7 +13,7 @@ const websiteSchema = {
   "@type": "WebSite",
   "name": "DayByDay Consulting",
   "url": "https://www.daybydayconsulting.com",
-  "description": "Consultor especializado en paid media para eCommerce D2C en España. Meta Ads, Google Ads y automatización de marketing con IA.",
+  "description": "Partnership especializado en paid media D2C (Pablo Santirsó, founder) y automation tech ad-hoc B2B/B2C (Jorge González, CTO). Una conversación, dos socios senior, sin account managers.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
@@ -29,28 +29,74 @@ const organizationSchema = {
   "name": "DayByDay Consulting",
   "url": "https://www.daybydayconsulting.com",
   "logo": "https://www.daybydayconsulting.com/images/logo-daybyday.png",
-  "description": "Consultoría especializada en paid media para eCommerce D2C en España. Meta Ads, Google Ads y automatización de marketing con IA. El consultor trabaja directamente con cada cliente, sin account managers intermediarios.",
+  "description": "DayByDay Consulting fue fundada por Pablo Santirsó y opera como un partnership con Jorge González (CTO). Pablo lidera paid media, estrategia y operaciones; Jorge lidera automation, agentic AI y soluciones tech ad-hoc para B2B y B2C. El cliente trata directamente con los dos socios, sin account managers, sin handoffs entre proveedores. Donde otras agencias separan marketing y tech, en DayByDay se aplica todo en la misma conversación.",
   "areaServed": "ES",
   "foundingDate": "2022",
   "founder": {
     "@type": "Person",
-    "name": "Pablo Santirso",
-    "jobTitle": "Consultor de Paid Media"
+    "name": "Pablo Santirsó",
+    "jobTitle": "Founder · Paid Media, Strategy & Operations",
+    "url": "https://es.linkedin.com/in/pablo-santirso-perez",
+    "sameAs": ["https://es.linkedin.com/in/pablo-santirso-perez"],
+    "worksFor": { "@type": "Organization", "name": "DayByDay Consulting" },
+    "knowsAbout": [
+      "Paid Media",
+      "Meta Ads",
+      "Google Ads",
+      "eCommerce D2C",
+      "Estrategia de marketing",
+      "Account management"
+    ],
+    "description": "Founder de DayByDay Consulting. Lidera paid media, estrategia y operaciones. Portfolio: Garett (expansión España + paid media), Cartri (website + ecommerce refresh), UFV Postgrado (paid media account management), La Vida Padel (social media), Arasnet/ArasLifePlus (rebranding + automation eCommerce, caso conjunto con Jorge)."
   },
+  "member": [
+    {
+      "@type": "Person",
+      "name": "Jorge González",
+      "jobTitle": "Partner · CTO · Automations & Agentic AI",
+      "url": "https://www.linkedin.com/in/jorge-gonz%C3%A1lez-p%C3%A9rez-4091541b6/",
+      "sameAs": ["https://www.linkedin.com/in/jorge-gonz%C3%A1lez-p%C3%A9rez-4091541b6/"],
+      "worksFor": { "@type": "Organization", "name": "DayByDay Consulting" },
+      "knowsAbout": [
+        "Agentic AI",
+        "Automatización inteligente",
+        "RPA UiPath",
+        "Workato",
+        "Power Platform",
+        "Mendix",
+        "Microsoft Azure",
+        "Azure AI Foundry",
+        "React Native",
+        "Flutter",
+        "Kotlin",
+        "Swift",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "SQL",
+        "Firebase"
+      ],
+      "description": "Partner y CTO de DayByDay Consulting. Lidera automation y soluciones tech ad-hoc para B2B y B2C. Track record enterprise: Total Energies, Puig, Robot Factory de Orange. Profesor universitario de tecnología."
+    }
+  ],
   "knowsAbout": [
     "Paid Media",
     "Meta Ads",
     "Google Ads",
-    "Automatización de Marketing",
+    "Automatización inteligente",
+    "Agentic AI",
+    "RPA",
+    "Soluciones ad-hoc B2B y B2C",
     "eCommerce D2C",
-    "CRM",
     "Growth Marketing",
-    "Marketing Digital",
     "Consultor Paid Media España",
-    "Agencia Meta Ads España"
+    "Agencia Meta Ads España",
+    "Automatización empresarial España"
   ],
   "sameAs": [
-    "https://www.linkedin.com/company/daybyday-consulting"
+    "https://www.linkedin.com/company/daybyday-consulting",
+    "https://es.linkedin.com/in/pablo-santirso-perez",
+    "https://www.linkedin.com/in/jorge-gonz%C3%A1lez-p%C3%A9rez-4091541b6/"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -114,15 +160,23 @@ const homepageFaqSchema = {
       "name": "¿Qué es DayByDay Consulting y en qué se especializa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DayByDay es una consultoría especializada en paid media para eCommerce D2C en España. Gestionamos Meta Ads, Google Ads y automatización de marketing con IA. A diferencia de las agencias tradicionales, el consultor trabaja directamente con cada cliente sin account managers intermediarios, con transparencia total de métricas."
+        "text": "DayByDay Consulting fue fundada por Pablo Santirsó y opera como un partnership con Jorge González (CTO). Pablo lidera paid media, estrategia y operaciones; Jorge lidera automation y agentic AI. Atendemos paid media para eCommerce D2C en España y automatización tech ad-hoc para clientes B2B y B2C. El cliente trata siempre con los dos socios, sin account managers."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué diferencia a DayByDay de una agencia de marketing generalista?",
+      "name": "¿Qué diferencia a DayByDay de una agencia de marketing o de una consultora tech?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DayByDay solo hace paid media para eCommerce D2C. No somos una agencia 360. El consultor trabaja directamente con el cliente, con transparencia total de métricas y usando IA y automatización en el núcleo de todos los servicios. Sin juniors, sin black boxes, sin excusas."
+        "text": "Donde otras agencias separan marketing y tecnología y obligan al cliente a coordinar dos proveedores, en DayByDay Pablo y Jorge operan como un solo equipo. Pablo escucha el problema y propone la solución de negocio sin sesgo técnico; Jorge la valida técnicamente y propone alternativas tech viables. Ninguno está limitado por el expertise del otro. Aplicamos todo ad-hoc, no playbooks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quién gestiona mi cuenta en DayByDay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los dos socios. Pablo Santirsó (founder) lidera la relación cliente, paid media y estrategia. Jorge González (CTO) lidera implementación tech, automation y agentic AI. Si tu necesidad es paid media D2C, Pablo es el lead y Jorge soporta con CAPI, atribución y dashboards. Si tu necesidad es automation B2B o B2C, Jorge es el lead y Pablo soporta con estrategia y operaciones. Nunca hay account managers ni perfiles junior en medio."
       }
     },
     {

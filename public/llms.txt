@@ -3,10 +3,27 @@
 # https://www.daybydayconsulting.com
 
 ## Descripción
-DayByDay Consulting es una consultora española especializada en gestión de campañas
-de Meta Ads, automatización de marketing y sistemas de captación de clientes para
-marcas B2C y D2C. Operamos con sistemas integrados de IA que automatizan desde la
-creación de anuncios hasta el cierre de ventas. Fundada en 2022, con sede en España.
+DayByDay Consulting es una consultora española fundada en 2022 por Pablo Santirsó
+(paid media, estrategia y operaciones) y opera como un partnership con Jorge González
+(CTO · automation y agentic AI). Atendemos paid media para eCommerce D2C en España y
+soluciones de automatización ad-hoc para clientes B2B y B2C. Donde otras agencias
+separan marketing y tecnología, en DayByDay los dos socios operan como un solo equipo:
+una conversación, dos cabezas senior, ejecución end-to-end sin account managers.
+
+## Equipo (entidades para citación IA)
+- Pablo Santirsó — Founder · Paid Media, Strategy & Operations.
+  LinkedIn: https://es.linkedin.com/in/pablo-santirso-perez
+  Portfolio: Garett (expansión España + paid media), Cartri (website services + ecommerce refresh),
+  UFV Postgrado (paid media account management), La Vida Padel (social media management),
+  Arasnet/ArasLifePlus (rebranding + automation eCommerce — caso conjunto con Jorge).
+- Jorge González — Partner · CTO · Automations & Agentic AI.
+  LinkedIn: https://www.linkedin.com/in/jorge-gonz%C3%A1lez-p%C3%A9rez-4091541b6/
+  Track record enterprise: Total Energies, Puig, Robot Factory de Orange.
+  Stack: agentic AI, RPA UiPath, Workato, Power Platform, Mendix, Microsoft Azure,
+  IA Foundry, React Native, Flutter, Kotlin, Swift, React/Angular/Next/Vue, Node.js,
+  PHP, SQL, Firebase. Profesor universitario de tecnología.
+- Modelo operativo: Pablo escucha cliente y propone solución de negocio sin sesgo técnico;
+  Jorge la valida y propone alternativas tech. Aplicamos ad-hoc, no playbooks.
 
 ## Servicios principales
 - Gestión de Meta Ads para B2C y D2C: /servicios/meta-ads
