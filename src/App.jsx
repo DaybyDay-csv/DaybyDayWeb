@@ -73,6 +73,7 @@ import CacBlendedVsCacCanalEcommercePage from "./pages/blog/CacBlendedVsCacCanal
 import CohortAnalysisEcommerceD2cPage from "./pages/blog/CohortAnalysisEcommerceD2cPage";
 import ModelosAtribucionEcommerceD2cPage from "./pages/blog/ModelosAtribucionEcommerceD2cPage";
 import MarketingMixModelingEcommerceD2cPage from "./pages/blog/MarketingMixModelingEcommerceD2cPage";
+import ServerSideTrackingShopifyConversionsApiPage from "./pages/blog/ServerSideTrackingShopifyConversionsApiPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -276,6 +277,7 @@ const App = () => {
         <Route path="/blog/cohort-analysis-ecommerce-d2c" element={<CohortAnalysisEcommerceD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/modelos-atribucion-ecommerce-d2c" element={<ModelosAtribucionEcommerceD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/marketing-mix-modeling-ecommerce-d2c" element={<MarketingMixModelingEcommerceD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/server-side-tracking-shopify-conversions-api" element={<ServerSideTrackingShopifyConversionsApiPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

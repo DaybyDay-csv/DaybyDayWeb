@@ -278,6 +278,12 @@ const PorQueAnunciosMetaNoConviertenPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El primer diagnóstico de tracking — sin CAPI deduplicada, Meta optimiza con datos parciales</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/server-side-tracking-shopify-conversions-api" className="text-white font-semibold hover:text-white/80">
+          Tracking server-side completo para Shopify con Conversions API →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El paso técnico que resuelve "Meta no convierte" cuando el problema real es matching y deduplicación</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
