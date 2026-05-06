@@ -275,6 +275,12 @@ const ServerSideTrackingShopifyConversionsApiPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El paso anterior: qué es CAPI, por qué es no negociable y las 3 rutas básicas en Shopify</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ios-atribucion-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
+          iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué el server-side completo es ahora obligatorio en cuentas con tráfico iOS &gt;35%</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/modelos-atribucion-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
           Modelos de atribución para D2C: last-click, data-driven y MMM explicados →
         </Link>

@@ -237,6 +237,12 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El siguiente paso: arquitectura sGTM/Stape, deduplicación cliente-servidor y EMQ &gt;8,5</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ios-atribucion-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
+          iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué la CAPI básica ya no basta y cuánto matching pierde una cuenta D2C con tráfico iOS</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
           Métricas Meta Ads que importan de verdad (y las que no) →
         </Link>
