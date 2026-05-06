@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T10:00:00",
+  "last_updated": "2026-05-06T12:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -13,7 +13,8 @@
   "completed_tasks": [
     "T40",
     "T26",
-    "T27"
+    "T27",
+    "T30"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -70,7 +71,8 @@
     "cohort-analysis-ecommerce-d2c",
     "modelos-atribucion-ecommerce-d2c",
     "marketing-mix-modeling-ecommerce-d2c",
-    "server-side-tracking-shopify-conversions-api"
+    "server-side-tracking-shopify-conversions-api",
+    "ios-atribucion-meta-ads-2026-d2c"
   ],
   "phases": [
     {
@@ -506,12 +508,12 @@
           "title": "iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026",
           "keyword": "ios atribución meta ads 2026",
           "slug": "ios-atribucion-meta-ads-2026-d2c",
-          "words": 1100,
+          "words": 1500,
           "intent": "TOFU-MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-06. iOS 17 LTP + iOS 18 Private Relay/ITP, pérdida medida por tipo de cuenta D2C (-12 a -40% según ticket), AEM 8 web events priorizados, qué resuelve CAPI server-side (60-85%) y qué no, impacto algoritmo y lookalike, plan operativo en 6 pasos, enfoque DayByDay con auditoría iOS-aware."
         },
         {
           "id": "T31",

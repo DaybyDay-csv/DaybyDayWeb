@@ -272,6 +272,12 @@ const MarketingMixModelingEcommerceD2cPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El marco general donde MMM se sitúa como capa independiente macro</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ios-atribucion-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
+          iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué el modelado complementario tipo MMM se hace más necesario con iOS 17/18</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
           CAC blended vs CAC por canal: qué métrica usar para escalar un D2C →
         </Link>

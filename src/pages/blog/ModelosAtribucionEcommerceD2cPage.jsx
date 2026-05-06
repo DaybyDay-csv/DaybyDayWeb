@@ -244,6 +244,12 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Cuándo MMM tiene sentido como capa independiente de validación</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ios-atribucion-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
+          iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El motor real detrás de la sobreatribución de Meta y la pérdida de matching iOS</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
           CAC blended vs CAC por canal: qué métrica usar para escalar un D2C →
         </Link>
