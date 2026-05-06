@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "server-side-tracking-shopify-conversions-api",
+    title: "Tracking server-side completo para Shopify con Conversions API: guía 2026",
+    excerpt: "Guía técnica completa de tracking server-side para Shopify con Meta Conversions API en 2026: arquitectura sGTM vs Stape vs apps Shopify, eventos críticos y enriquecimiento de datos, deduplicación cliente-servidor, Consent Mode v2 y RGPD, errores frecuentes que rompen el matching, impacto real en EMQ/CPA/ROAS y enfoque DayByDay para migrar cuentas D2C.",
+    category: "Tracking",
+    date: "6 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "marketing-mix-modeling-ecommerce-d2c",
     title: "Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve",
     excerpt: "Guía práctica de Marketing Mix Modeling (MMM) para eCommerce D2C en España: qué es, cuándo aplicarlo según tamaño de spend, qué datos necesita, diferencias frente a MTA, herramientas reales (Robyn, LightweightMMM, Recast, Northbeam), cómo se valida con holdout y geo-experiments, y cómo decide DayByDay si MMM tiene sentido para tu cuenta.",

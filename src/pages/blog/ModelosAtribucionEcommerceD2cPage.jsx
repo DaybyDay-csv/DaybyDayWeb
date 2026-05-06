@@ -267,6 +267,12 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Marco financiero que da sentido a cualquier número de atribución</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/server-side-tracking-shopify-conversions-api" className="text-white font-semibold hover:text-white/80">
+          Tracking server-side completo para Shopify con Conversions API →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El suelo técnico sin el cual cualquier modelo de atribución trabaja con datos rotos</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

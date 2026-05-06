@@ -231,6 +231,12 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/server-side-tracking-shopify-conversions-api" className="text-white font-semibold hover:text-white/80">
+          Tracking server-side completo para Shopify con Conversions API: guía 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El siguiente paso: arquitectura sGTM/Stape, deduplicación cliente-servidor y EMQ &gt;8,5</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
           Métricas Meta Ads que importan de verdad (y las que no) →
         </Link>
