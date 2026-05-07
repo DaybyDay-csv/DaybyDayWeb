@@ -75,6 +75,7 @@ import ModelosAtribucionEcommerceD2cPage from "./pages/blog/ModelosAtribucionEco
 import MarketingMixModelingEcommerceD2cPage from "./pages/blog/MarketingMixModelingEcommerceD2cPage";
 import ServerSideTrackingShopifyConversionsApiPage from "./pages/blog/ServerSideTrackingShopifyConversionsApiPage";
 import IosAtribucionMetaAds2026D2cPage from "./pages/blog/IosAtribucionMetaAds2026D2cPage";
+import EmailMarketingMetaAdsLtvD2cPage from "./pages/blog/EmailMarketingMetaAdsLtvD2cPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -280,6 +281,7 @@ const App = () => {
         <Route path="/blog/marketing-mix-modeling-ecommerce-d2c" element={<MarketingMixModelingEcommerceD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/server-side-tracking-shopify-conversions-api" element={<ServerSideTrackingShopifyConversionsApiPage openCalendly={openCalendly} />} />
         <Route path="/blog/ios-atribucion-meta-ads-2026-d2c" element={<IosAtribucionMetaAds2026D2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/email-marketing-meta-ads-ltv-d2c" element={<EmailMarketingMetaAdsLtvD2cPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

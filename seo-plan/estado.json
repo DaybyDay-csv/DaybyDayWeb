@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T12:00:00",
+  "last_updated": "2026-05-07T12:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -14,7 +14,8 @@
     "T40",
     "T26",
     "T27",
-    "T30"
+    "T30",
+    "T31"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -72,7 +73,8 @@
     "modelos-atribucion-ecommerce-d2c",
     "marketing-mix-modeling-ecommerce-d2c",
     "server-side-tracking-shopify-conversions-api",
-    "ios-atribucion-meta-ads-2026-d2c"
+    "ios-atribucion-meta-ads-2026-d2c",
+    "email-marketing-meta-ads-ltv-d2c"
   ],
   "phases": [
     {
@@ -525,9 +527,9 @@
           "words": 1200,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-07. Combina paid+owned: 5 flujos email obligatorios, sincronización Klaviyo↔Meta, jerarquía CA/LAL, % revenue por madurez, MER blended + holdout test."
         },
         {
           "id": "T32",
