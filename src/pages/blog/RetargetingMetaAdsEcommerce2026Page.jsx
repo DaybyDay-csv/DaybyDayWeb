@@ -249,6 +249,12 @@ const RetargetingMetaAdsEcommerce2026Page = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">La cara prospecting del retargeting: cómo construir lookalikes de calidad y separar TOFU/MOFU de BOFU</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/email-marketing-meta-ads-ltv-d2c" className="text-white font-semibold hover:text-white/80">
+          Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo retargeting Meta y flujos Klaviyo se cruzan sin canibalizarse en abandono y winback</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/remarketing-dinamico-ecommerce-guia-practica" className="text-white font-semibold hover:text-white/80">
           Remarketing dinámico para ecommerce: guía práctica (2026) →
         </Link>

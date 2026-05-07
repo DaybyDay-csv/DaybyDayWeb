@@ -246,6 +246,12 @@ const CACvsLTVEcommercePage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Por qué el CAC plataforma y el CAC financiero nunca cuadran y cuál usar para cada decisión</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/email-marketing-meta-ads-ltv-d2c" className="text-white font-semibold hover:text-white/80">
+          Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Los 5 flujos email obligatorios que disparan la segunda compra y elevan LTV sobre el CAC Meta</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/estrategia-full-funnel-d2c" className="text-white font-semibold hover:text-white/80">
           Estrategia full funnel D2C: del frío al cliente recurrente →
         </Link>

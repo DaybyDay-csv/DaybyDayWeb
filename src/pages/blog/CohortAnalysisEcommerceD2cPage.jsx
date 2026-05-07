@@ -190,6 +190,12 @@ const CohortAnalysisEcommerceD2cPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El CAC que se cruza con cohortes para calcular payback period real</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/email-marketing-meta-ads-ltv-d2c" className="text-white font-semibold hover:text-white/80">
+          Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo los flujos email construyen el LTV que las cohortes proyectan</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
           CAC vs LTV: cómo construir un eCommerce escalable →
         </Link>

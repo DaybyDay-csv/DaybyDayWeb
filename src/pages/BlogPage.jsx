@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "email-marketing-meta-ads-ltv-d2c",
+    title: "Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV en D2C",
+    excerpt: "Guía operativa de cómo combinar email marketing (Klaviyo) y Meta Ads en una D2C española para escalar LTV: 5 flujos email obligatorios (welcome, carrito, browse, post-purchase, winback), sincronización bidireccional Klaviyo↔Meta, jerarquía de Custom Audiences y lookalike, % revenue saludable email vs paid por madurez de la base, casos donde subir lista a Meta sí compensa, medición incremental con MER blended y enfoque DayByDay.",
+    category: "Estrategia",
+    date: "7 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "ios-atribucion-meta-ads-2026-d2c",
     title: "iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026",
     excerpt: "Análisis técnico del impacto de iOS 17 e iOS 18 en la atribución de Meta Ads para eCommerce D2C: Link Tracking Protection, Private Relay e ITP de Safari, pérdida medida de matching por tipo de cuenta (-15 a -40%), papel de Aggregated Event Measurement, qué resuelve CAPI server-side y qué no, impacto en lookalike y algoritmo de pujas, y plan operativo en 6 pasos para D2C de 50-150K€/mes.",
