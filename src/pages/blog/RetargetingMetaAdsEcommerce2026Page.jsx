@@ -243,6 +243,12 @@ const RetargetingMetaAdsEcommerce2026Page = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/black-friday-meta-ads-d2c-preparacion" className="text-white font-semibold hover:text-white/80">
+          Black Friday Meta Ads para D2C: preparar Q4 con 90 días de antelación →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo cambia la escalera de retargeting durante el peak BF (pesa el 50% del spend con ROAS 4-7x)</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/audiencias-lookalike-meta-alta-calidad" className="text-white font-semibold hover:text-white/80">
           Audiencias lookalike en Meta de alta calidad: guía 2026 D2C →
         </Link>

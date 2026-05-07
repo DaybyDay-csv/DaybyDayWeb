@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "black-friday-meta-ads-d2c-preparacion",
+    title: "Black Friday Meta Ads para D2C: cómo preparar Q4 con 90 días de antelación",
+    excerpt: "Guía operativa para preparar Black Friday y Q4 en Meta Ads para eCommerce D2C en España: calendario de 90 días con fases foundation/warm-up/peak/post-peak, presupuestos escalonados, qué creatividades funcionan y cuáles matan la cuenta, estructura 50/30/20 durante el peak, auditoría tracking y CAPI obligatoria 6 semanas antes y enfoque DayByDay.",
+    category: "Estacional",
+    date: "8 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "email-marketing-meta-ads-ltv-d2c",
     title: "Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV en D2C",
     excerpt: "Guía operativa de cómo combinar email marketing (Klaviyo) y Meta Ads en una D2C española para escalar LTV: 5 flujos email obligatorios (welcome, carrito, browse, post-purchase, winback), sincronización bidireccional Klaviyo↔Meta, jerarquía de Custom Audiences y lookalike, % revenue saludable email vs paid por madurez de la base, casos donde subir lista a Meta sí compensa, medición incremental con MER blended y enfoque DayByDay.",
