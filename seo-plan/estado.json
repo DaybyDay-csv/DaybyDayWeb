@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T12:00:00",
+  "last_updated": "2026-05-08T08:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -15,7 +15,8 @@
     "T26",
     "T27",
     "T30",
-    "T31"
+    "T31",
+    "T32"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -74,7 +75,8 @@
     "marketing-mix-modeling-ecommerce-d2c",
     "server-side-tracking-shopify-conversions-api",
     "ios-atribucion-meta-ads-2026-d2c",
-    "email-marketing-meta-ads-ltv-d2c"
+    "email-marketing-meta-ads-ltv-d2c",
+    "black-friday-meta-ads-d2c-preparacion"
   ],
   "phases": [
     {
@@ -541,9 +543,9 @@
           "words": 1500,
           "intent": "BOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-08. Calendario 90 días con 4 fases (Foundation/Warm-up/Peak/Post-peak/Cooldown), CPM +35-55% durante BF, distribución Q4 escalonada, estructura peak 50/30/20 (retargeting/prospecting/Advantage+), 4 creatividades winner vs anti-patrones, checklist semanal sept-ene, auditoría EMQ obligatoria 6 semanas antes."
         },
         {
           "id": "T33",

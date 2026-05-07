@@ -215,6 +215,12 @@ const EmailMarketingMetaAdsLtvD2cPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/black-friday-meta-ads-d2c-preparacion" className="text-white font-semibold hover:text-white/80">
+          Black Friday Meta Ads para D2C: preparar Q4 con 90 días de antelación →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo monetizar la cohorte adquirida en BF con flujos email + retargeting Meta los 60-90 días siguientes</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
           CAC vs LTV: la métrica que define si tu D2C es escalable →
         </Link>
