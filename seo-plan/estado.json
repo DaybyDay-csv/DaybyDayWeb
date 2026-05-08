@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T14:00:00",
+  "last_updated": "2026-05-08T16:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -17,7 +17,8 @@
     "T30",
     "T31",
     "T32",
-    "T33"
+    "T33",
+    "T34"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -78,7 +79,8 @@
     "ios-atribucion-meta-ads-2026-d2c",
     "email-marketing-meta-ads-ltv-d2c",
     "black-friday-meta-ads-d2c-preparacion",
-    "performance-max-ecommerce-d2c-cuando-usar"
+    "performance-max-ecommerce-d2c-cuando-usar",
+    "tiktok-ads-ecommerce-d2c-espana-2026"
   ],
   "phases": [
     {
@@ -573,9 +575,9 @@
           "words": 1500,
           "intent": "TOFU-MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-08. 3 condiciones activación (Meta saturado >15-20K€/mes, pipeline UGC 4-6 creatives/mes, TikTok Pixel+Events API EMQ ≥7/10), presupuesto mínimo 2.000-3.000€/mes, perfil comprador 2026 (edad media 34, 22M MAU España), CPM/CPC/CPA reales vs Meta, formatos por rendimiento (Spark UGC, In-Feed nativo, Collection, TopView), métrica Hook Rate, setup TikTok Pixel+Events API server-side compartido sGTM con Meta CAPI, decisión TikTok Shop por unit economics, 5 métodos medición incremental (MER blended, holdout geo, Conversion Lift, post-purchase survey, % New Customers)."
         },
         {
           "id": "T35",
