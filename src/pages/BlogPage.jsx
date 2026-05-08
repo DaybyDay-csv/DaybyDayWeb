@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "performance-max-ecommerce-d2c-cuando-usar",
+    title: "Performance Max para D2C: cuándo activarla y cómo medir si funciona en 2026",
+    excerpt: "Guía operativa para activar Performance Max en un eCommerce D2C en España: las 3 condiciones obligatorias antes de activarla (30+ conversiones/mes, feed Merchant Center limpio, baseline Search Brand+non-brand), cómo detectar canibalización con Search Brand y remarketing dinámico, ROAS objetivo por sector, modelo híbrido Standard Shopping + PMax, novedades 2026 (channel-level reporting, brand exclusions, GA4 cohorts, Customer Match) y enfoque DayByDay con holdout geo trimestral.",
+    category: "Google Ads",
+    date: "8 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "black-friday-meta-ads-d2c-preparacion",
     title: "Black Friday Meta Ads para D2C: cómo preparar Q4 con 90 días de antelación",
     excerpt: "Guía operativa para preparar Black Friday y Q4 en Meta Ads para eCommerce D2C en España: calendario de 90 días con fases foundation/warm-up/peak/post-peak, presupuestos escalonados, qué creatividades funcionan y cuáles matan la cuenta, estructura 50/30/20 durante el peak, auditoría tracking y CAPI obligatoria 6 semanas antes y enfoque DayByDay.",
