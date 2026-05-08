@@ -265,6 +265,12 @@ const CombinarGoogleAdsMetaAdsD2CPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Condiciones mínimas (>30 conv/mes, feed limpio), modelo híbrido y holdout geo trimestral</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/tiktok-ads-ecommerce-d2c-espana-2026" className="text-white font-semibold hover:text-white/80">
+          TikTok Ads para D2C en España 2026: guía completa de activación →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cuándo añadir TikTok como tercer canal sobre Meta+Google sin canibalizar el mix</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
           Cuánto invertir en Meta Ads según tu ticket y margen →
         </Link>

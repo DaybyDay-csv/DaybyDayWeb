@@ -269,6 +269,12 @@ const ServerSideTrackingShopifyConversionsApiPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/tiktok-ads-ecommerce-d2c-espana-2026" className="text-white font-semibold hover:text-white/80">
+          TikTok Ads para D2C en España 2026: guía completa de activación →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Misma arquitectura sGTM/Stape sirviendo Meta CAPI, TikTok Events API, Google y Pinterest en paralelo</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/black-friday-meta-ads-d2c-preparacion" className="text-white font-semibold hover:text-white/80">
           Black Friday Meta Ads para D2C: preparar Q4 con 90 días de antelación →
         </Link>

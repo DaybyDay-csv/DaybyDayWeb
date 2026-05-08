@@ -78,6 +78,7 @@ import IosAtribucionMetaAds2026D2cPage from "./pages/blog/IosAtribucionMetaAds20
 import EmailMarketingMetaAdsLtvD2cPage from "./pages/blog/EmailMarketingMetaAdsLtvD2cPage";
 import BlackFridayMetaAdsD2cPreparacionPage from "./pages/blog/BlackFridayMetaAdsD2cPreparacionPage";
 import PerformanceMaxEcommerceD2CCuandoUsarPage from "./pages/blog/PerformanceMaxEcommerceD2CCuandoUsarPage";
+import TikTokAdsEcommerceD2cEspana2026Page from "./pages/blog/TikTokAdsEcommerceD2cEspana2026Page";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -286,6 +287,7 @@ const App = () => {
         <Route path="/blog/email-marketing-meta-ads-ltv-d2c" element={<EmailMarketingMetaAdsLtvD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/black-friday-meta-ads-d2c-preparacion" element={<BlackFridayMetaAdsD2cPreparacionPage openCalendly={openCalendly} />} />
         <Route path="/blog/performance-max-ecommerce-d2c-cuando-usar" element={<PerformanceMaxEcommerceD2CCuandoUsarPage openCalendly={openCalendly} />} />
+        <Route path="/blog/tiktok-ads-ecommerce-d2c-espana-2026" element={<TikTokAdsEcommerceD2cEspana2026Page openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

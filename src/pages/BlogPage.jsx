@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "tiktok-ads-ecommerce-d2c-espana-2026",
+    title: "TikTok Ads para D2C en España 2026: guía completa de activación",
+    excerpt: "Guía operativa para activar TikTok Ads en un eCommerce D2C en España: cuándo abrir el canal sobre Meta Ads (saturación >15-20K€/mes), 3 condiciones obligatorias, presupuesto mínimo realista (2.000-3.000€/mes), formatos que mejor rinden (Spark Ads UGC, In-Feed nativo, Collection), CPM/CPC/CPA reales 2026 vs Meta, configuración TikTok Pixel + Events API server-side compartido con Meta CAPI, decisión TikTok Shop sí/no según unit economics, medición incremental con MER blended y holdout geo, y enfoque DayByDay.",
+    category: "TikTok Ads",
+    date: "8 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "performance-max-ecommerce-d2c-cuando-usar",
     title: "Performance Max para D2C: cuándo activarla y cómo medir si funciona en 2026",
     excerpt: "Guía operativa para activar Performance Max en un eCommerce D2C en España: las 3 condiciones obligatorias antes de activarla (30+ conversiones/mes, feed Merchant Center limpio, baseline Search Brand+non-brand), cómo detectar canibalización con Search Brand y remarketing dinámico, ROAS objetivo por sector, modelo híbrido Standard Shopping + PMax, novedades 2026 (channel-level reporting, brand exclusions, GA4 cohorts, Customer Match) y enfoque DayByDay con holdout geo trimestral.",
