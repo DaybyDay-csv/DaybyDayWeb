@@ -259,6 +259,12 @@ const CombinarGoogleAdsMetaAdsD2CPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Rol real de PMax en el mix Google + Meta, presupuesto mínimo y canibalización de marca</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/performance-max-ecommerce-d2c-cuando-usar" className="text-white font-semibold hover:text-white/80">
+          Performance Max para D2C: cuándo activarla y cómo medir si funciona →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Condiciones mínimas (>30 conv/mes, feed limpio), modelo híbrido y holdout geo trimestral</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
           Cuánto invertir en Meta Ads según tu ticket y margen →
         </Link>

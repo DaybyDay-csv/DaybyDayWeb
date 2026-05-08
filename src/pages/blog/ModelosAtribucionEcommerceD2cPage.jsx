@@ -244,6 +244,12 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Cuándo MMM tiene sentido como capa independiente de validación</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/performance-max-ecommerce-d2c-cuando-usar" className="text-white font-semibold hover:text-white/80">
+          Performance Max para D2C: cuándo activarla y cómo medir si funciona →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo PMax sobreatribuye 25-45% y por qué medir con MER blended es obligatorio</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/ios-atribucion-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
           iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 →
         </Link>

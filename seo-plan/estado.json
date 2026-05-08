@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T08:00:00",
+  "last_updated": "2026-05-08T14:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -16,7 +16,8 @@
     "T27",
     "T30",
     "T31",
-    "T32"
+    "T32",
+    "T33"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -76,7 +77,8 @@
     "server-side-tracking-shopify-conversions-api",
     "ios-atribucion-meta-ads-2026-d2c",
     "email-marketing-meta-ads-ltv-d2c",
-    "black-friday-meta-ads-d2c-preparacion"
+    "black-friday-meta-ads-d2c-preparacion",
+    "performance-max-ecommerce-d2c-cuando-usar"
   ],
   "phases": [
     {
@@ -557,9 +559,9 @@
           "words": 1300,
           "intent": "MOFU-BOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-08. 3 condiciones activación (>30 conv/mes, feed GMC limpio, Search Brand baseline), 6 métodos detección canibalización (brand search test, channel-level reporting, % New Customers, MER blended, search query report, holdout geo), ROAS por sector, modelo híbrido Standard Shopping+PMax, novedades 2026 (channel reporting, brand exclusions, GA4 LTV cohorts, Customer Match), 5 intervenciones feed Merchant Center."
         },
         {
           "id": "T34",

@@ -257,6 +257,12 @@ const PerformanceMaxVsMetaAdsEspanaPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/performance-max-ecommerce-d2c-cuando-usar" className="text-white font-semibold hover:text-white/80">
+          Performance Max para D2C: cuándo activarla y cómo medir si funciona →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">3 condiciones obligatorias antes de activar PMax y 6 métodos para detectar canibalización</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/combinar-google-ads-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
           Cómo combinar Google Ads y Meta Ads en una estrategia D2C →
         </Link>
