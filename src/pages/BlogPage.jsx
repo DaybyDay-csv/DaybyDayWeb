@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "margen-contribucion-vs-roas-ecommerce",
+    title: "Margen de contribución vs ROAS: la métrica que media buyers olvidan",
+    excerpt: "Por qué el ROAS de Meta/Google es insuficiente para decidir spend en eCommerce D2C España: definición de margen de contribución, fórmula operativa por pedido (AOV − COGS − fulfilment − comisión − devoluciones − CAC), rangos saludables por sector D2C 2026 (moda 18-28%, belleza 30-45%, suplementos 40-55%, hogar 25-40%, mascotas 25-35%, alimentación 20-30%, tech 15-25%), por qué ROAS in-platform engaña (atribución last-click sobreatribuida 1,3-1,8x vs MER blended, no descuenta devoluciones del 25-30% en moda, no descuenta descuentos checkout 8-15%, ignora LTV), CAC objetivo derivado del margen × ratio LTV/CAC 3:1, dashboard mínimo viable y enfoque DayByDay (Pablo + Jorge).",
+    category: "Unit Economics",
+    date: "9 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "cro-landing-page-meta-ads-d2c",
     title: "CRO de landing page para Meta Ads: qué cambia respecto a SEO",
     excerpt: "Guía operativa de CRO (Conversion Rate Optimization) de landing pages para Meta Ads en eCommerce D2C España: por qué tráfico paid social necesita landing distinta a SEO, conversion rate saludable por sector 2026 (CR landing→purchase y top decile), 7 errores que matan conversión, PDP Shopify vs landing dedicada (Replo/Shogun/GemPages), impacto de Core Web Vitals (LCP/CLS/INP) en CPA, cuántas landings mantener activas, protocolo de A/B testing con disciplina y enfoque DayByDay.",

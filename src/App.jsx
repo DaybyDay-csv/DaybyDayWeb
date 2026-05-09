@@ -80,6 +80,7 @@ import BlackFridayMetaAdsD2cPreparacionPage from "./pages/blog/BlackFridayMetaAd
 import PerformanceMaxEcommerceD2CCuandoUsarPage from "./pages/blog/PerformanceMaxEcommerceD2CCuandoUsarPage";
 import TikTokAdsEcommerceD2cEspana2026Page from "./pages/blog/TikTokAdsEcommerceD2cEspana2026Page";
 import CroLandingPageMetaAdsD2cPage from "./pages/blog/CroLandingPageMetaAdsD2cPage";
+import MargenContribucionVsRoasEcommercePage from "./pages/blog/MargenContribucionVsRoasEcommercePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -290,6 +291,7 @@ const App = () => {
         <Route path="/blog/performance-max-ecommerce-d2c-cuando-usar" element={<PerformanceMaxEcommerceD2CCuandoUsarPage openCalendly={openCalendly} />} />
         <Route path="/blog/tiktok-ads-ecommerce-d2c-espana-2026" element={<TikTokAdsEcommerceD2cEspana2026Page openCalendly={openCalendly} />} />
         <Route path="/blog/cro-landing-page-meta-ads-d2c" element={<CroLandingPageMetaAdsD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/margen-contribucion-vs-roas-ecommerce" element={<MargenContribucionVsRoasEcommercePage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

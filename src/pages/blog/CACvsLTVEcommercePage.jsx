@@ -240,6 +240,12 @@ const CACvsLTVEcommercePage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Margen de contribución vs ROAS: la métrica que media buyers olvidan →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo derivar el CAC objetivo desde el margen de contribución y por qué el ROAS in-platform engaña</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
           CAC blended vs CAC por canal: qué métrica usar para escalar →
         </Link>
