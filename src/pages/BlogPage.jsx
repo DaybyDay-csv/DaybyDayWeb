@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "cro-landing-page-meta-ads-d2c",
+    title: "CRO de landing page para Meta Ads: qué cambia respecto a SEO",
+    excerpt: "Guía operativa de CRO (Conversion Rate Optimization) de landing pages para Meta Ads en eCommerce D2C España: por qué tráfico paid social necesita landing distinta a SEO, conversion rate saludable por sector 2026 (CR landing→purchase y top decile), 7 errores que matan conversión, PDP Shopify vs landing dedicada (Replo/Shogun/GemPages), impacto de Core Web Vitals (LCP/CLS/INP) en CPA, cuántas landings mantener activas, protocolo de A/B testing con disciplina y enfoque DayByDay.",
+    category: "CRO",
+    date: "9 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "tiktok-ads-ecommerce-d2c-espana-2026",
     title: "TikTok Ads para D2C en España 2026: guía completa de activación",
     excerpt: "Guía operativa para activar TikTok Ads en un eCommerce D2C en España: cuándo abrir el canal sobre Meta Ads (saturación >15-20K€/mes), 3 condiciones obligatorias, presupuesto mínimo realista (2.000-3.000€/mes), formatos que mejor rinden (Spark Ads UGC, In-Feed nativo, Collection), CPM/CPC/CPA reales 2026 vs Meta, configuración TikTok Pixel + Events API server-side compartido con Meta CAPI, decisión TikTok Shop sí/no según unit economics, medición incremental con MER blended y holdout geo, y enfoque DayByDay.",

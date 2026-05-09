@@ -238,6 +238,12 @@ const ABTestingMetaAdsQueTestarPrimeroPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Sin CAPI bien implementada los datos de tus tests son ruido — la base técnica antes que el roadmap</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cro-landing-page-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          CRO de landing page para Meta Ads: qué cambia respecto a SEO →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cuando termines de testear creative, el siguiente test que más mueve la aguja en CR está en la landing</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

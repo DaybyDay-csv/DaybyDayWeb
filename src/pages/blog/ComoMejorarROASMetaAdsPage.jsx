@@ -230,6 +230,12 @@ const ComoMejorarROASMetaAdsPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">MER, CPA real y CPNC — las métricas con las que medir el ROAS sin depender de la atribución de Meta</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cro-landing-page-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          CRO de landing page para Meta Ads: qué cambia respecto a SEO →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">La palanca de ROAS más infravalorada — por qué la landing optimizada para SEO suele dejar 30-60% de CR en la mesa</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

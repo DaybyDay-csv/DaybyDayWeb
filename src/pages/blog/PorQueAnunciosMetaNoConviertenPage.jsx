@@ -284,6 +284,12 @@ const PorQueAnunciosMetaNoConviertenPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El paso técnico que resuelve "Meta no convierte" cuando el problema real es matching y deduplicación</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cro-landing-page-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          CRO de landing page para Meta Ads: qué cambia respecto a SEO →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Si la landing convierte poco frente a tráfico Meta, el problema no es el creative — es la página de aterrizaje</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
