@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "growth-partner-vs-agencia-paid-media",
+    title: "Growth partner vs agencia paid media: cuándo cada uno tiene sentido para un D2C",
+    excerpt: "Diferencia operativa entre growth partner y agencia de paid media para eCommerce D2C en España: alcance de decisión (toda la cuenta de resultados vs Meta+Google), métricas reportadas (margen de contribución, payback CAC, LTV/CAC cohorte vs ROAS plataforma), coste y modelo (retainer + variable sobre margen vs honorarios fijos), fase D2C ideal (500K€-5M€/año vs 0-500K€/año), 5 señales de que necesitas partner y no agencia, cuándo SÍ tiene sentido contratar agencia, 3 errores frecuentes y enfoque DayByDay con Pablo + Jorge en cada conversación.",
+    category: "Decisiones de negocio",
+    date: "10 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "aumentar-aov-ecommerce-d2c-palancas",
     title: "Cómo subir el AOV en D2C: 7 palancas reales para ecommerce",
     excerpt: "Guía operativa para aumentar el AOV (ticket medio) en un eCommerce D2C en España: definición y cálculo correcto (AOV bruto vs neto vs mediano), AOV saludable por sector D2C 2026 (moda 45-75€, belleza 35-65€, suplementos 40-70€, hogar 60-150€, tech 80-200€), las 7 palancas con mayor ROI ordenadas por impacto (bundles +18-35%, free shipping threshold +8-15%, cross-sell +10-20%, tier descuento +12-22%, upsell post-purchase +5-12%, suscripción, edición limitada), cómo medir si funcionan sin canibalizar conversion rate y enfoque DayByDay (Pablo + Jorge).",
