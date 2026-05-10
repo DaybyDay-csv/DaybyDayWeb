@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T14:00:00",
+  "last_updated": "2026-05-10T08:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -20,7 +20,8 @@
     "T33",
     "T34",
     "T35",
-    "T36"
+    "T36",
+    "T37"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -84,7 +85,8 @@
     "performance-max-ecommerce-d2c-cuando-usar",
     "tiktok-ads-ecommerce-d2c-espana-2026",
     "cro-landing-page-meta-ads-d2c",
-    "margen-contribucion-vs-roas-ecommerce"
+    "margen-contribucion-vs-roas-ecommerce",
+    "aumentar-aov-ecommerce-d2c-palancas"
   ],
   "phases": [
     {
@@ -618,12 +620,12 @@
           "title": "Cómo subir el AOV en D2C: 7 palancas reales para ecommerce",
           "keyword": "aumentar aov ecommerce",
           "slug": "aumentar-aov-ecommerce-d2c-palancas",
-          "words": 1100,
+          "words": 1500,
           "intent": "MOFU",
           "priority": "MEDIA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-10. Definición y cálculo correcto del AOV (bruto vs neto vs mediano), AOV saludable por sector D2C España 2026 con tabla 7 sectores (moda 45-75€ top 90-130€, belleza 35-65€ top 80-120€, suplementos 40-70€ top 90-150€, hogar 60-150€ top 200-350€, mascotas 35-65€, alimentación 30-55€, tech 80-200€ top 350-700€), 7 palancas ordenadas por impacto (bundles +18-35%, free shipping threshold dinámico 110-115% AOV mediano +8-15%, cross-sell automatizado +10-20%, tier descuento volumen +12-22%, upsell post-purchase one-click +5-12% conversión 8-18%, suscripción -10/-15% +15-30% LTV, edición limitada +20-40%), fórmula free shipping threshold óptimo + dato Statista 64% compradores, 6 métodos para medir si funcionan sin canibalizar conversion (AOV bruto vs mediano, CR pre/post, margen contribución, A/B test 50/50 con 1.500 pedidos/variante, % devoluciones, reporting cuadro completo), 7 errores frecuentes y enfoque DayByDay con caso real cuenta suplementos AOV 42€→58€ y margen contribución 14%→27% en 90 días."
         },
         {
           "id": "T38",

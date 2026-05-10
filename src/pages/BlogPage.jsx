@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "aumentar-aov-ecommerce-d2c-palancas",
+    title: "Cómo subir el AOV en D2C: 7 palancas reales para ecommerce",
+    excerpt: "Guía operativa para aumentar el AOV (ticket medio) en un eCommerce D2C en España: definición y cálculo correcto (AOV bruto vs neto vs mediano), AOV saludable por sector D2C 2026 (moda 45-75€, belleza 35-65€, suplementos 40-70€, hogar 60-150€, tech 80-200€), las 7 palancas con mayor ROI ordenadas por impacto (bundles +18-35%, free shipping threshold +8-15%, cross-sell +10-20%, tier descuento +12-22%, upsell post-purchase +5-12%, suscripción, edición limitada), cómo medir si funcionan sin canibalizar conversion rate y enfoque DayByDay (Pablo + Jorge).",
+    category: "Unit Economics",
+    date: "10 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "margen-contribucion-vs-roas-ecommerce",
     title: "Margen de contribución vs ROAS: la métrica que media buyers olvidan",
     excerpt: "Por qué el ROAS de Meta/Google es insuficiente para decidir spend en eCommerce D2C España: definición de margen de contribución, fórmula operativa por pedido (AOV − COGS − fulfilment − comisión − devoluciones − CAC), rangos saludables por sector D2C 2026 (moda 18-28%, belleza 30-45%, suplementos 40-55%, hogar 25-40%, mascotas 25-35%, alimentación 20-30%, tech 15-25%), por qué ROAS in-platform engaña (atribución last-click sobreatribuida 1,3-1,8x vs MER blended, no descuenta devoluciones del 25-30% en moda, no descuenta descuentos checkout 8-15%, ignora LTV), CAC objetivo derivado del margen × ratio LTV/CAC 3:1, dashboard mínimo viable y enfoque DayByDay (Pablo + Jorge).",
