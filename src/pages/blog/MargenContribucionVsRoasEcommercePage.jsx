@@ -264,6 +264,12 @@ const MargenContribucionVsRoasEcommercePage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Definición, fórmula y por qué el ROAS in-platform no es la métrica final de rentabilidad</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/aumentar-aov-ecommerce-d2c-palancas" className="text-white font-semibold hover:text-white/80">
+          Cómo subir el AOV en D2C: 7 palancas reales →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">La palanca con mejor ROI sobre el margen de contribución sin tocar el spend de adquisición</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

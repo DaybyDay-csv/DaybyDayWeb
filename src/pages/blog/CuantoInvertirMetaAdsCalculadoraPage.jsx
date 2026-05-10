@@ -341,6 +341,12 @@ const CuantoInvertirMetaAdsCalculadoraPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">MER, nCPA y CAC blended: las métricas que validan si la subida de presupuesto está siendo realmente productiva</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/aumentar-aov-ecommerce-d2c-palancas" className="text-white font-semibold hover:text-white/80">
+          Cómo subir el AOV en D2C: 7 palancas reales →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Subir el AOV antes que escalar spend sube el suelo de inversión y mejora el CAC objetivo automáticamente</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
