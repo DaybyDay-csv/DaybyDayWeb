@@ -6,6 +6,7 @@ import React, {
   forwardRef,
   useImperativeHandle,
 } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import {
@@ -154,6 +155,10 @@ const NavBar = forwardRef(({ onNavScroll }, ref) => {
         >
           Servicios
         </a>
+
+        <Link to="/servicios/growth-partner" className="nav-link">
+          Growth Partner
+        </Link>
 
         {/* Logo en medio solo en móvil */}
         {isMobile && <LogoBlock />}

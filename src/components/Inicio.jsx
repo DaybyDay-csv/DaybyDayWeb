@@ -1,7 +1,8 @@
 // /components/Inicio.jsx
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useVariant, EXPERIMENTS } from "../lib/ab";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,7 +71,7 @@ const inicioLogoHangingAnimation = (logoElement) => {
   });
 };
 
-const heroPhases = [
+const heroPhasesControl = [
   {
     id: "phase-1",
     title: "El Contexto del Mercado",
@@ -101,7 +102,44 @@ const heroPhases = [
   },
 ];
 
+const heroPhasesPivot = [
+  {
+    id: "phase-1",
+    title: "El problema real en D2C",
+    lines: [
+      "El ROAS de plataforma sube. La caja del negocio no acompaña.",
+      "El problema no es la creatividad ni la puja. Es leer margen real, no métricas de ad account.",
+      "Para crecer con control en un D2C necesitas operar tres palancas reales:",
+      "Margen de contribución, payback de CAC y LTV por cohorte.",
+    ],
+  },
+  {
+    id: "phase-2",
+    title: "Cómo entramos como growth partner",
+    lines: [
+      "Diagnóstico de negocio, no de cuenta publicitaria.",
+      "Leemos tu P&L, cohortes y cash-conversion en RAW, no las métricas que te enseña la plataforma.",
+      "Y te devolvemos qué decisión-negocio mueve más caja en los próximos 90 días: pricing, mix, canal o ritmo.",
+    ],
+  },
+  {
+    id: "phase-3",
+    title: "Nuestra propuesta",
+    lines: [
+      "Operamos contigo las palancas: producto, paid media, automation, retención.",
+      "Paid media es palanca, no producto. Automation es palanca, no producto.",
+      "Decisión-negocio → palanca activada → caja real.",
+    ],
+  },
+];
+
 const Inicio = () => {
+  const variant = useVariant(EXPERIMENTS.HOMEPAGE_HEADLINE_PIVOT);
+  const heroPhases = useMemo(
+    () => (variant === "B" ? heroPhasesPivot : heroPhasesControl),
+    [variant],
+  );
+
   const logoRef = useRef(null);
   const sectionRef = useRef(null);
   const metricsRef = useRef(null);
@@ -627,7 +665,9 @@ const Inicio = () => {
       >
         {/* SEO H1 — visually hidden, fully readable by search engines */}
         <h1 className="sr-only">
-          Agencia de Marketing con IA y Automatización — DayByDay Consulting
+          {variant === "B"
+            ? "Growth Partner para D2C — Socios de crecimiento, no agencia"
+            : "Agencia de Marketing con IA y Automatización — DayByDay Consulting"}
         </h1>
 
         {/* Day by Day Logo */}
