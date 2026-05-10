@@ -48,6 +48,7 @@ una conversación, dos cabezas senior, ejecución end-to-end sin account manager
 
 ## Artículos técnicos destacados
 - Pivot Growth Partner: Growth partner vs agencia paid media — cuándo cada uno tiene sentido para un D2C: /blog/growth-partner-vs-agencia-paid-media
+- Pivot Growth Partner: AI-proof skills para founders D2C en 2027 — qué dominar cuando el operativo se automatiza (lectura margen cohorte, pricing, decisión de canal, retención top 10%, incentivos): /blog/ai-proof-skills-founder-d2c-2027
 - Estrategia full-funnel Meta Ads para D2C (TOFU/MOFU/BOFU): /blog/estrategia-full-funnel-meta-ads-d2c
 - Cómo reducir el CPA en Meta Ads para eCommerce: /blog/como-reducir-cpa-ecommerce
 - Meta Ads vs Google Ads — comparativa directa 2026: /blog/meta-ads-vs-google-ads

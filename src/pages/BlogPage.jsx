@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "ai-proof-skills-founder-d2c-2027",
+    title: "AI-proof skills para founders D2C en 2027: qué dominar cuando el operativo se automatiza",
+    excerpt: "Qué skills debe construir un founder D2C en 2026-2027 cuando la IA absorbe la ejecución operativa: lectura de margen de contribución cohorte, criterio de pricing, decisión de apertura/cierre de canal, gestión de clientes alto LTV (top 5-10% del revenue) y arquitectura de incentivos del equipo. Qué bloques operativos van a desaparecer (creatividades, bidding, reporting, atención cliente nivel 1-2), 5 AI-proof skills ordenadas por impacto en margen, marco para decidir dónde invertir tu próxima hora de aprendizaje y enfoque DayByDay (Pablo + Jorge en cada conversación).",
+    category: "Decisiones de negocio",
+    date: "10 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "growth-partner-vs-agencia-paid-media",
     title: "Growth partner vs agencia paid media: cuándo cada uno tiene sentido para un D2C",
     excerpt: "Diferencia operativa entre growth partner y agencia de paid media para eCommerce D2C en España: alcance de decisión (toda la cuenta de resultados vs Meta+Google), métricas reportadas (margen de contribución, payback CAC, LTV/CAC cohorte vs ROAS plataforma), coste y modelo (retainer + variable sobre margen vs honorarios fijos), fase D2C ideal (500K€-5M€/año vs 0-500K€/año), 5 señales de que necesitas partner y no agencia, cuándo SÍ tiene sentido contratar agencia, 3 errores frecuentes y enfoque DayByDay con Pablo + Jorge en cada conversación.",

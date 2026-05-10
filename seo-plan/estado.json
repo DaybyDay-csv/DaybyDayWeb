@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T13:21:38",
+  "last_updated": "2026-05-10T13:45:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -87,7 +87,8 @@
     "cro-landing-page-meta-ads-d2c",
     "margen-contribucion-vs-roas-ecommerce",
     "aumentar-aov-ecommerce-d2c-palancas",
-    "growth-partner-vs-agencia-paid-media"
+    "growth-partner-vs-agencia-paid-media",
+    "ai-proof-skills-founder-d2c-2027"
   ],
   "phases": [
     {
@@ -852,10 +853,11 @@
       "intent": "MOFU-GEO",
       "priority": "ALTO",
       "week": 16,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-10T13:45:00"
     },
     {
       "id": "P03",
