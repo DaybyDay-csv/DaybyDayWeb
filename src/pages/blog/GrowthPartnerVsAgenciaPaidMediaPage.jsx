@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto cobra un growth partner senior vs una agencia de paid media en España?",
-    a: "Una agencia de paid media para D2C en España cobra entre 800€ y 2.500€/mes de honorarios fijos, con foco en gestión Meta+Google. Un growth partner senior trabaja con fee mixto: retainer mensual de 2.500-6.000€/mes según volumen + alineación variable sobre margen de contribución incremental o LTV cohorte. La diferencia económica importa menos que el alcance: la agencia entrega ejecución de campañas; el growth partner entrega decisiones de inversión sobre toda la cuenta de resultados — paid es solo una de las palancas que se discute.",
+    a: "Una agencia de paid media para D2C en España cobra entre 800€ y 2.500€/mes de honorarios fijos, con foco en gestión Meta+Google. Un growth partner senior trabaja con fee mixto: fee mensual recurrente de 2.500-6.000€/mes según volumen + componente variable indexado a margen de contribución incremental o LTV cohorte. La diferencia económica importa menos que el alcance: la agencia entrega ejecución de campañas; el growth partner entrega decisiones de inversión sobre toda la cuenta de resultados — paid es solo una de las palancas que se discute.",
   },
   {
     q: "¿Puede un D2C de menos de 500K€/año contratar un growth partner?",
@@ -120,7 +120,7 @@ const GrowthPartnerVsAgenciaPaidMediaPage = ({ openCalendly }) => (
             ["Alcance de decisión", "Meta + Google + TikTok", "Toda la cuenta de resultados (paid + retención + pricing + AOV + producto)"],
             ["KPI principal reportado", "ROAS de plataforma + CPA", "Margen de contribución, payback CAC, LTV/CAC cohorte"],
             ["Periodicidad de revisión", "Mensual táctico (campañas)", "Trimestral estratégico + diario operativo"],
-            ["Coste mensual típico", "800-2.500€ honorarios fijos", "2.500-6.000€ retainer + variable sobre margen"],
+            ["Coste mensual típico", "800-2.500€ honorarios fijos", "2.500-6.000€ fee + variable indexado a margen"],
             ["Fase D2C ideal", "0-500K€/año facturación", "500K€-5M€/año facturación"],
             ["Nivel del interlocutor", "Account manager + operador táctico", "Socios senior (founders del partner) en cada conversación"],
             ["Decide pricing/AOV/threshold", "No (fuera de scope)", "Sí (con datos cohorte y margen)"],
