@@ -11,6 +11,7 @@ import HomePage from "./pages/HomePage";
 import MetaAdsPage from "./pages/services/MetaAdsPage";
 import AutomatizacionPage from "./pages/services/AutomatizacionPage";
 import PaidMediaPage from "./pages/services/PaidMediaPage";
+import GrowthPartnerPage from "./pages/services/GrowthPartnerPage";
 import CaptacionPage from "./pages/services/CaptacionPage";
 import EcommercePage from "./pages/services/EcommercePage";
 import BlogPage from "./pages/BlogPage";
@@ -224,6 +225,7 @@ const App = () => {
         <Route path="/servicios/meta-ads" element={<MetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/servicios/automatizacion" element={<AutomatizacionPage openCalendly={openCalendly} />} />
         <Route path="/servicios/paid-media" element={<PaidMediaPage openCalendly={openCalendly} />} />
+        <Route path="/servicios/growth-partner" element={<GrowthPartnerPage openCalendly={openCalendly} />} />
         <Route path="/servicios/captacion-clientes" element={<CaptacionPage openCalendly={openCalendly} />} />
         <Route path="/servicios/ecommerce" element={<EcommercePage openCalendly={openCalendly} />} />
         <Route path="/blog" element={<BlogPage openCalendly={openCalendly} />} />

@@ -30,6 +30,7 @@ una conversación, dos cabezas senior, ejecución end-to-end sin account manager
 - Automatización de marketing con IA: /servicios/automatizacion
 - Sistemas de captación de clientes: /servicios/captacion-clientes
 - Estrategia de Paid Media (Meta + Google): /servicios/paid-media
+- Growth Partner para D2C — socio de crecimiento, no agencia: /servicios/growth-partner
 - Growth marketing para eCommerce: /servicios/ecommerce
 
 ## Contenido más relevante para IA

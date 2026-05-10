@@ -210,8 +210,8 @@ const HomePage = ({ onNavScroll, openCalendly }) => {
   return (
     <>
       <SEOHead
-        title="Consultor Paid Media para eCommerce D2C en España | Meta Ads y Google Ads"
-        description="DayByDay: consultor especializado en paid media para eCommerce D2C en España. Meta Ads, Google Ads y automatización con IA. El consultor trabaja directamente contigo, sin intermediarios. Consulta gratuita."
+        title="Growth Partner para D2C en España — Socios de crecimiento, no agencia"
+        description="Socios de crecimiento para D2C que ya facturan. Operamos con criterio sobre margen de contribución, payback de CAC, LTV por cohorte y cash-conversion. Paid media es solo una palanca, no el producto."
         canonical="/"
         schema={{
           "@context": "https://schema.org",
