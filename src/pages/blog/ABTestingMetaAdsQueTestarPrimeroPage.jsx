@@ -244,6 +244,12 @@ const ABTestingMetaAdsQueTestarPrimeroPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cuando termines de testear creative, el siguiente test que más mueve la aguja en CR está en la landing</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/meta-ads-library-analisis-competencia" className="text-white font-semibold hover:text-white/80">
+          Análisis de competencia en Meta Ads Library →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">De dónde sacar hipótesis testables antes de gastar en producción: ángulos ganadores del mercado</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
