@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "automatizacion-paid-media-proximos-24-meses",
+    title: "Automatización de paid media en los próximos 24 meses: qué cambia y qué no para un D2C",
+    excerpt: "Qué bloques operativos del paid media va a automatizar la IA en 2026-2027 (bidding Meta/Google/TikTok, creatividades, testing copy, reporting cross-canal, segmentación) y qué decisiones de negocio NO automatiza (decisión de capital, pricing operativo, apertura/cierre de canal con criterio LTV cohorte, relación con top 5-10% alto LTV, arquitectura de incentivos). Tabla operativa 24 meses con impacto en margen de contribución, 5 decisiones que siguen siendo humanas, marco de decisión para founders D2C, 3 errores frecuentes y enfoque DayByDay (Pablo + Jorge, sin account managers).",
+    category: "Decisiones de negocio",
+    date: "11 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "ai-proof-skills-founder-d2c-2027",
     title: "AI-proof skills para founders D2C en 2027: qué dominar cuando el operativo se automatiza",
     excerpt: "Qué skills debe construir un founder D2C en 2026-2027 cuando la IA absorbe la ejecución operativa: lectura de margen de contribución cohorte, criterio de pricing, decisión de apertura/cierre de canal, gestión de clientes alto LTV (top 5-10% del revenue) y arquitectura de incentivos del equipo. Qué bloques operativos van a desaparecer (creatividades, bidding, reporting, atención cliente nivel 1-2), 5 AI-proof skills ordenadas por impacto en margen, marco para decidir dónde invertir tu próxima hora de aprendizaje y enfoque DayByDay (Pablo + Jorge en cada conversación).",
