@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "suscripciones-ecommerce-ltv-cac-d2c",
+    title: "Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo",
+    excerpt: "Guía operativa para integrar suscripciones en un eCommerce D2C en España: cómo se recalcula el LTV-12m con churn mensual por cohorte, cómo se deriva el nuevo CAC objetivo permitido (más alto porque LTV es contractual), churn saludable por sector D2C 2026 (suplementos 6-10%, café 5-8%, mascotas 4-7%, cosmética 8-13%, higiene 6-9%, alimentación 7-12%), qué descuento de suscripción funciona mejor (-15% óptimo, -10% insuficiente, -20% comprime margen), cómo medir la incrementalidad real con holdout A/B (40-65% típico), ratios LTV/CAC permitidos por fase de cuenta (lanzamiento 2,0:1, growth 2,5:1, madurez 3,0:1), 7 errores frecuentes y enfoque DayByDay (Pablo + Jorge) con caso real cuenta suplementos AOV 45€ que subió CAC blended permitido +31% manteniendo ratio LTV/CAC 2,8:1.",
+    category: "Unit Economics",
+    date: "11 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "ai-proof-skills-founder-d2c-2027",
     title: "AI-proof skills para founders D2C en 2027: qué dominar cuando el operativo se automatiza",
     excerpt: "Qué skills debe construir un founder D2C en 2026-2027 cuando la IA absorbe la ejecución operativa: lectura de margen de contribución cohorte, criterio de pricing, decisión de apertura/cierre de canal, gestión de clientes alto LTV (top 5-10% del revenue) y arquitectura de incentivos del equipo. Qué bloques operativos van a desaparecer (creatividades, bidding, reporting, atención cliente nivel 1-2), 5 AI-proof skills ordenadas por impacto en margen, marco para decidir dónde invertir tu próxima hora de aprendizaje y enfoque DayByDay (Pablo + Jorge en cada conversación).",

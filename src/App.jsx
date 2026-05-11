@@ -85,6 +85,7 @@ import MargenContribucionVsRoasEcommercePage from "./pages/blog/MargenContribuci
 import AumentarAovEcommerceD2cPalancasPage from "./pages/blog/AumentarAovEcommerceD2cPalancasPage";
 import GrowthPartnerVsAgenciaPaidMediaPage from "./pages/blog/GrowthPartnerVsAgenciaPaidMediaPage";
 import AiProofSkillsFounderD2c2027Page from "./pages/blog/AiProofSkillsFounderD2c2027Page";
+import SuscripcionesEcommerceLtvCacD2cPage from "./pages/blog/SuscripcionesEcommerceLtvCacD2cPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -300,6 +301,7 @@ const App = () => {
         <Route path="/blog/aumentar-aov-ecommerce-d2c-palancas" element={<AumentarAovEcommerceD2cPalancasPage openCalendly={openCalendly} />} />
         <Route path="/blog/growth-partner-vs-agencia-paid-media" element={<GrowthPartnerVsAgenciaPaidMediaPage openCalendly={openCalendly} />} />
         <Route path="/blog/ai-proof-skills-founder-d2c-2027" element={<AiProofSkillsFounderD2c2027Page openCalendly={openCalendly} />} />
+        <Route path="/blog/suscripciones-ecommerce-ltv-cac-d2c" element={<SuscripcionesEcommerceLtvCacD2cPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

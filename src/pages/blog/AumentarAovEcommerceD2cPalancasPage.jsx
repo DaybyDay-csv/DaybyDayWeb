@@ -242,6 +242,12 @@ const AumentarAovEcommerceD2cPalancasPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cómo el bundle/upsell se integra en la landing sin romper la conversion rate</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/suscripciones-ecommerce-ltv-cac-d2c" className="text-white font-semibold hover:text-white/80">
+          Suscripciones en D2C: cómo cambia LTV y CAC objetivo →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Suscripción como palanca con mayor impacto sobre LTV contractual y CAC objetivo permitido</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
