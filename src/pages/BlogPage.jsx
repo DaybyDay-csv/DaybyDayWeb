@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "meta-ads-library-analisis-competencia",
+    title: "Análisis de competencia en Meta Ads Library: cómo extraer creatividades ganadoras",
+    excerpt: "Guía operativa para usar Meta Ads Library en eCommerce D2C España: qué es y qué se ve gratis (creatividad, copy, formato, longevidad, plataformas), método paso a paso para detectar creatividades ganadoras (filtros, longevidad >30-45 días, variantes en paralelo, cobertura multi-país), legalidad y ética del análisis competitivo bajo DSA, herramientas complementarias (Foreplay 49$, AdSpy 149$, Minea, BigSpy), 4-6 competidores directos + 3-5 internacionales como rango operativo, cadencia semanal/mensual/trimestral, patrones de creatividad ganadora D2C España 2026 (UGC voz on-camera 6-15s, Reels 9-25s, hooks texto seg 0-2, anti-patrón MotionGraphics), método para convertir ángulos prestados en hipótesis testables sin copiar al competidor, 7 errores frecuentes y enfoque DayByDay Pablo + Jorge con workflow n8n + agente IA que automatiza scraping y tagging de la librería.",
+    category: "Creatividades",
+    date: "11 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "suscripciones-ecommerce-ltv-cac-d2c",
     title: "Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo",
     excerpt: "Guía operativa para integrar suscripciones en un eCommerce D2C en España: cómo se recalcula el LTV-12m con churn mensual por cohorte, cómo se deriva el nuevo CAC objetivo permitido (más alto porque LTV es contractual), churn saludable por sector D2C 2026 (suplementos 6-10%, café 5-8%, mascotas 4-7%, cosmética 8-13%, higiene 6-9%, alimentación 7-12%), qué descuento de suscripción funciona mejor (-15% óptimo, -10% insuficiente, -20% comprime margen), cómo medir la incrementalidad real con holdout A/B (40-65% típico), ratios LTV/CAC permitidos por fase de cuenta (lanzamiento 2,0:1, growth 2,5:1, madurez 3,0:1), 7 errores frecuentes y enfoque DayByDay (Pablo + Jorge) con caso real cuenta suplementos AOV 45€ que subió CAC blended permitido +31% manteniendo ratio LTV/CAC 2,8:1.",

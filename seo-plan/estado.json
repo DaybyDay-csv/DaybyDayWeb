@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T08:00:00",
+  "last_updated": "2026-05-11T14:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -22,7 +22,8 @@
     "T35",
     "T36",
     "T37",
-    "T38"
+    "T38",
+    "T39"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -90,7 +91,8 @@
     "aumentar-aov-ecommerce-d2c-palancas",
     "growth-partner-vs-agencia-paid-media",
     "ai-proof-skills-founder-d2c-2027",
-    "suscripciones-ecommerce-ltv-cac-d2c"
+    "suscripciones-ecommerce-ltv-cac-d2c",
+    "meta-ads-library-analisis-competencia"
   ],
   "phases": [
     {
@@ -655,9 +657,9 @@
           "words": 1300,
           "intent": "TOFU-MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-11. Qué es Meta Ads Library y qué expone gratis, método paso a paso para detectar winners (longevidad >30-45d, variantes en paralelo, cobertura multi-país), legalidad bajo DSA, herramientas complementarias con tabla coste/uso (Foreplay 49-149$, AdSpy 149$, Minea, BigSpy), 4-6 competidores directos + 3-5 referentes internacionales con marcas D2C España por vertical, cadencia semanal/mensual/trimestral, patrones de creatividad ganadora D2C España 2026 (UGC voz dominante, Reels 9-25s, hooks seg 0-2, anti-patrón MotionGraphics), método para convertir análisis en hipótesis testables sin copiar al competidor, 7 errores frecuentes y enfoque DayByDay Pablo+Jorge con workflow n8n + agente IA que automatiza scraping y tagging."
         },
         {
           "id": "T40",

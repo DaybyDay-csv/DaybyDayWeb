@@ -290,6 +290,12 @@ const PorQueAnunciosMetaNoConviertenPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Si la landing convierte poco frente a tráfico Meta, el problema no es el creative — es la página de aterrizaje</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/meta-ads-library-analisis-competencia" className="text-white font-semibold hover:text-white/80">
+          Análisis de competencia en Meta Ads Library →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Si tus creatividades no convierten, qué llevan meses activo en el nicho que sí está funcionando</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
