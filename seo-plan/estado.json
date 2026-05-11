@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T08:00:00",
+  "last_updated": "2026-05-11T08:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -21,7 +21,8 @@
     "T34",
     "T35",
     "T36",
-    "T37"
+    "T37",
+    "T38"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -86,7 +87,8 @@
     "tiktok-ads-ecommerce-d2c-espana-2026",
     "cro-landing-page-meta-ads-d2c",
     "margen-contribucion-vs-roas-ecommerce",
-    "aumentar-aov-ecommerce-d2c-palancas"
+    "aumentar-aov-ecommerce-d2c-palancas",
+    "suscripciones-ecommerce-ltv-cac-d2c"
   ],
   "phases": [
     {
@@ -634,12 +636,12 @@
           "title": "Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo",
           "keyword": "suscripciones ecommerce ltv cac",
           "slug": "suscripciones-ecommerce-ltv-cac-d2c",
-          "words": 1200,
+          "words": 1500,
           "intent": "MOFU",
           "priority": "MEDIA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-11. Fórmula LTV-12m con churn por cohorte y CAC objetivo derivado con ajuste por tasa adopción; churn saludable por sector D2C (suplementos 6-10%, mascotas 4-7%, café 5-8%, cosmética 8-13%, higiene 6-9%, alimentación 7-12%, moda 12-18%, hogar 15-25%); descuento óptimo -15% vs -10%/-20%, 5 métodos medición incrementalidad (holdout A/B 60-90d, cohort pre/post 6m, análisis comportamental, encuesta, % cancelados vuelven one-time) con rango incrementalidad real 40-65%; ratios LTV/CAC por fase (lanzamiento 2,0:1, growth 2,5:1, madurez 3,0:1) con payback 60-180d; 7 errores frecuentes y caso real cuenta D2C suplementos +31% CAC blended permitido manteniendo ratio LTV/CAC 2,8:1."
         },
         {
           "id": "T39",

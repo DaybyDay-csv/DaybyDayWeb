@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "suscripciones-ecommerce-ltv-cac-d2c",
+    title: "Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo",
+    excerpt: "Guía operativa para integrar suscripciones en un eCommerce D2C en España: cómo se recalcula el LTV-12m con churn mensual por cohorte, cómo se deriva el nuevo CAC objetivo permitido (más alto porque LTV es contractual), churn saludable por sector D2C 2026 (suplementos 6-10%, café 5-8%, mascotas 4-7%, cosmética 8-13%, higiene 6-9%, alimentación 7-12%), qué descuento de suscripción funciona mejor (-15% óptimo, -10% insuficiente, -20% comprime margen), cómo medir la incrementalidad real con holdout A/B (40-65% típico), ratios LTV/CAC permitidos por fase de cuenta (lanzamiento 2,0:1, growth 2,5:1, madurez 3,0:1), 7 errores frecuentes y enfoque DayByDay (Pablo + Jorge) con caso real cuenta suplementos AOV 45€ que subió CAC blended permitido +31% manteniendo ratio LTV/CAC 2,8:1.",
+    category: "Unit Economics",
+    date: "11 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "aumentar-aov-ecommerce-d2c-palancas",
     title: "Cómo subir el AOV en D2C: 7 palancas reales para ecommerce",
     excerpt: "Guía operativa para aumentar el AOV (ticket medio) en un eCommerce D2C en España: definición y cálculo correcto (AOV bruto vs neto vs mediano), AOV saludable por sector D2C 2026 (moda 45-75€, belleza 35-65€, suplementos 40-70€, hogar 60-150€, tech 80-200€), las 7 palancas con mayor ROI ordenadas por impacto (bundles +18-35%, free shipping threshold +8-15%, cross-sell +10-20%, tier descuento +12-22%, upsell post-purchase +5-12%, suscripción, edición limitada), cómo medir si funcionan sin canibalizar conversion rate y enfoque DayByDay (Pablo + Jorge).",
