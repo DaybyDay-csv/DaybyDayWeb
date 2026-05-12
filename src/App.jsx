@@ -84,6 +84,7 @@ import MargenContribucionVsRoasEcommercePage from "./pages/blog/MargenContribuci
 import AumentarAovEcommerceD2cPalancasPage from "./pages/blog/AumentarAovEcommerceD2cPalancasPage";
 import SuscripcionesEcommerceLtvCacD2cPage from "./pages/blog/SuscripcionesEcommerceLtvCacD2cPage";
 import MetaAdsLibraryAnalisisCompetenciaPage from "./pages/blog/MetaAdsLibraryAnalisisCompetenciaPage";
+import AdFatigueMetaAdsRotacionCreativaPage from "./pages/blog/AdFatigueMetaAdsRotacionCreativaPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -298,6 +299,7 @@ const App = () => {
         <Route path="/blog/aumentar-aov-ecommerce-d2c-palancas" element={<AumentarAovEcommerceD2cPalancasPage openCalendly={openCalendly} />} />
         <Route path="/blog/suscripciones-ecommerce-ltv-cac-d2c" element={<SuscripcionesEcommerceLtvCacD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/meta-ads-library-analisis-competencia" element={<MetaAdsLibraryAnalisisCompetenciaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/ad-fatigue-meta-ads-rotacion-creativa" element={<AdFatigueMetaAdsRotacionCreativaPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

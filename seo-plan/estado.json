@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T14:00:00",
+  "last_updated": "2026-05-12T08:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -90,7 +90,8 @@
     "margen-contribucion-vs-roas-ecommerce",
     "aumentar-aov-ecommerce-d2c-palancas",
     "suscripciones-ecommerce-ltv-cac-d2c",
-    "meta-ads-library-analisis-competencia"
+    "meta-ads-library-analisis-competencia",
+    "ad-fatigue-meta-ads-rotacion-creativa"
   ],
   "phases": [
     {
@@ -669,9 +670,9 @@
           "words": 1100,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-12. Definición ad fatigue + por qué se manifiesta rápido (sesión media Instagram España 33-45 min/día DataReportal), 4 señales tempranas con tabla de umbrales y margen vs CPA (Frecuencia >2,2 prospecting, Hook Rate <22-25%, CPM +20% rolling 7d, coste add-to-cart +30%, Hold Rate <35%), ciclo de vida por audiencia y formato (prospecting >500K-1M: 30-60d, audiencias medias: 21-35d, retargeting 7-30d: 10-21d, UGC +30-50% vida útil, ASC 8-15 creatividades), protocolo de rotación en 5 reglas (pipeline 4-8 variantes/mes 80-200€/creative, slot fijo 4-6 creatividades, refresco semanal 1-2 variantes, máximo 30% creative renovado/semana, retiro suave no del ad set), dashboard 6 métricas 3 ventanas (Hook Rate, Hold Rate, CTR outbound, Frecuencia, CPM, CTR-to-CPA ratio), versión 2.0 del winner para extender 60-120d, 7 errores frecuentes y caso real cuenta suplementos 18K€/mes CPA 41€→22€ en 60d. Cobertura GEO: agencia paid media España, rotación creatividades meta ads, dashboard Looker Studio paid media."
         },
         {
           "id": "T41",

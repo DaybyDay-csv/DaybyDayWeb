@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "ad-fatigue-meta-ads-rotacion-creativa",
+    title: "Ad fatigue en Meta Ads: señales tempranas y protocolo de rotación creativa",
+    excerpt: "Guía operativa para detectar y prevenir ad fatigue en eCommerce D2C España: 4 señales tempranas (frecuencia, Hook Rate, CPM, coste add-to-cart) que adelantan 5-7 días al CPA, ciclo de vida típico por audiencia y formato (prospecting 30-60d, audiencias medias 21-35d, retargeting 10-21d, UGC +30-50%), 6 métricas a monitorizar por creative en 3 ventanas (1d/3d/7d), protocolo de rotación escalonada sin romper aprendizaje (4-6 creatividades activas, refresco semanal 1-2 variantes, máximo 30% rotado/semana), diferencia entre refresh y retiro definitivo, versiones 2.0 del ángulo ganador para extender vida 60-120d, impacto de Advantage+ Shopping (8-15 creatividades mínimas) y enfoque DayByDay con dashboard Looker Studio + alertas Slack.",
+    category: "Creatividades",
+    date: "12 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "meta-ads-library-analisis-competencia",
     title: "Análisis de competencia en Meta Ads Library: cómo extraer creatividades ganadoras",
     excerpt: "Guía operativa para usar Meta Ads Library en eCommerce D2C España: qué es y qué se ve gratis (creatividad, copy, formato, longevidad, plataformas), método paso a paso para detectar creatividades ganadoras (filtros, longevidad >30-45 días, variantes en paralelo, cobertura multi-país), legalidad y ética del análisis competitivo bajo DSA, herramientas complementarias (Foreplay 49$, AdSpy 149$, Minea, BigSpy), 4-6 competidores directos + 3-5 internacionales como rango operativo, cadencia semanal/mensual/trimestral, patrones de creatividad ganadora D2C España 2026 (UGC voz on-camera 6-15s, Reels 9-25s, hooks texto seg 0-2, anti-patrón MotionGraphics), método para convertir ángulos prestados en hipótesis testables sin copiar al competidor, 7 errores frecuentes y enfoque DayByDay Pablo + Jorge con workflow n8n + agente IA que automatiza scraping y tagging de la librería.",
