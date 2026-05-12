@@ -270,6 +270,12 @@ const MetaAdsLibraryAnalisisCompetenciaPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Diagnóstico en 5 capas para detectar dónde está el problema antes de cambiar creatividad</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ad-fatigue-meta-ads-rotacion-creativa" className="text-white font-semibold hover:text-white/80">
+          Ad fatigue en Meta Ads: señales tempranas y protocolo de rotación creativa →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo convertir el pipeline de ángulos extraídos en flujo de rotación semanal sin romper aprendizaje</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
