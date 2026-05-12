@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "incrementality-testing-meta-ads-d2c",
+    title: "Incrementality testing en Meta Ads: cómo medir el lift real en eCommerce D2C",
+    excerpt: "Guía operativa de incrementality testing para Meta Ads en eCommerce D2C España: qué es y por qué importa, diferencia con atribución y MMM, los 3 tipos de test (Meta Conversion Lift, geo holdout, pre/post holistic), cuándo aplicar cada uno según volumen y spend, coste real y duración esperada (4-6 semanas), lift incremental realista por tipo de campaña en D2C España 2026 (prospecting 60-85%, retargeting 7-30d 20-45%, retargeting 30-180d 10-30%), protocolo paso a paso para diseñar un geo holdout test (regiones, baseline 28d, duración 14-28d, significancia), 7 errores frecuentes y enfoque DayByDay Pablo+Jorge con pipeline Python + Shopify Admin + Meta Marketing API.",
+    category: "Medición",
+    date: "12 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "ad-fatigue-meta-ads-rotacion-creativa",
     title: "Ad fatigue en Meta Ads: señales tempranas y protocolo de rotación creativa",
     excerpt: "Guía operativa para detectar y prevenir ad fatigue en eCommerce D2C España: 4 señales tempranas (frecuencia, Hook Rate, CPM, coste add-to-cart) que adelantan 5-7 días al CPA, ciclo de vida típico por audiencia y formato (prospecting 30-60d, audiencias medias 21-35d, retargeting 10-21d, UGC +30-50%), 6 métricas a monitorizar por creative en 3 ventanas (1d/3d/7d), protocolo de rotación escalonada sin romper aprendizaje (4-6 creatividades activas, refresco semanal 1-2 variantes, máximo 30% rotado/semana), diferencia entre refresh y retiro definitivo, versiones 2.0 del ángulo ganador para extender vida 60-120d, impacto de Advantage+ Shopping (8-15 creatividades mínimas) y enfoque DayByDay con dashboard Looker Studio + alertas Slack.",

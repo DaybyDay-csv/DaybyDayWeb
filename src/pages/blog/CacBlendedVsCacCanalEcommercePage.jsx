@@ -210,6 +210,12 @@ const CacBlendedVsCacCanalEcommercePage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Marco completo para usar la relación CAC:LTV en decisiones de inversión y precio</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/incrementality-testing-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          Incrementality testing en Meta Ads: cómo medir el lift real →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El test causal que detecta cuánto del gap MER vs ROAS por canal es sobreatribución</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white font-semibold hover:text-white/80">
           Benchmark ROAS por sector en España 2026 →
         </Link>

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T08:00:00",
+  "last_updated": "2026-05-12T12:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -91,7 +91,8 @@
     "aumentar-aov-ecommerce-d2c-palancas",
     "suscripciones-ecommerce-ltv-cac-d2c",
     "meta-ads-library-analisis-competencia",
-    "ad-fatigue-meta-ads-rotacion-creativa"
+    "ad-fatigue-meta-ads-rotacion-creativa",
+    "incrementality-testing-meta-ads-d2c"
   ],
   "phases": [
     {

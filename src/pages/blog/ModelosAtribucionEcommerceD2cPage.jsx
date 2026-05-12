@@ -250,6 +250,12 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Cuándo MMM tiene sentido como capa independiente de validación</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/incrementality-testing-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          Incrementality testing en Meta Ads: cómo medir el lift real →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El experimento causal que valida cuánto sobreatribuye el modelo elegido</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/performance-max-ecommerce-d2c-cuando-usar" className="text-white font-semibold hover:text-white/80">
           Performance Max para D2C: cuándo activarla y cómo medir si funciona →
         </Link>
