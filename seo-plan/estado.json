@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T09:00:00",
+  "last_updated": "2026-05-12T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -89,7 +89,8 @@
     "aumentar-aov-ecommerce-d2c-palancas",
     "growth-partner-vs-agencia-paid-media",
     "ai-proof-skills-founder-d2c-2027",
-    "automatizacion-paid-media-proximos-24-meses"
+    "automatizacion-paid-media-proximos-24-meses",
+    "que-no-automatiza-ia-d2c"
   ],
   "phases": [
     {
@@ -884,10 +885,11 @@
       "intent": "MOFU-GEO",
       "priority": "ALTO",
       "week": 16,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-12T09:00:00"
     },
     {
       "id": "P05",

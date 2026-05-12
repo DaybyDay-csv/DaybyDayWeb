@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "que-no-automatiza-ia-d2c",
+    title: "Qué NO automatiza la IA (Claude, Andromeda, agentes) en un D2C en 2026: el mapa más allá del paid media",
+    excerpt: "Las 6 áreas operativas de un eCommerce D2C que la IA no automatiza en 2026-2027 más allá del paid media: decisión de capital trimestral (paid vs retención vs producto vs inventario), pricing operativo (subida de precio, suscripción, free shipping threshold, bundling), relación con el top 5-10% de clientes alto LTV (30-50% del revenue), decisión de producto y roadmap, selección y relación con proveedores e inventario crítico, arquitectura de incentivos del equipo y partners externos. Tabla operativa con impacto en margen de contribución y payback CAC, 6 áreas ordenadas por impacto, 3 errores frecuentes del founder D2C, marco de auditoría en 4 pasos y enfoque DayByDay (Pablo + Jorge en cada conversación).",
+    category: "Decisiones de negocio",
+    date: "12 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "automatizacion-paid-media-proximos-24-meses",
     title: "Automatización de paid media en los próximos 24 meses: qué cambia y qué no para un D2C",
     excerpt: "Qué bloques operativos del paid media va a automatizar la IA en 2026-2027 (bidding Meta/Google/TikTok, creatividades, testing copy, reporting cross-canal, segmentación) y qué decisiones de negocio NO automatiza (decisión de capital, pricing operativo, apertura/cierre de canal con criterio LTV cohorte, relación con top 5-10% alto LTV, arquitectura de incentivos). Tabla operativa 24 meses con impacto en margen de contribución, 5 decisiones que siguen siendo humanas, marco de decisión para founders D2C, 3 errores frecuentes y enfoque DayByDay (Pablo + Jorge, sin account managers).",

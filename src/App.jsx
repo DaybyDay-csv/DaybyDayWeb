@@ -85,6 +85,7 @@ import AumentarAovEcommerceD2cPalancasPage from "./pages/blog/AumentarAovEcommer
 import GrowthPartnerVsAgenciaPaidMediaPage from "./pages/blog/GrowthPartnerVsAgenciaPaidMediaPage";
 import AiProofSkillsFounderD2c2027Page from "./pages/blog/AiProofSkillsFounderD2c2027Page";
 import AutomatizacionPaidMediaProximos24MesesPage from "./pages/blog/AutomatizacionPaidMediaProximos24MesesPage";
+import QueNoAutomatizaIaD2cPage from "./pages/blog/QueNoAutomatizaIaD2cPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -300,6 +301,7 @@ const App = () => {
         <Route path="/blog/growth-partner-vs-agencia-paid-media" element={<GrowthPartnerVsAgenciaPaidMediaPage openCalendly={openCalendly} />} />
         <Route path="/blog/ai-proof-skills-founder-d2c-2027" element={<AiProofSkillsFounderD2c2027Page openCalendly={openCalendly} />} />
         <Route path="/blog/automatizacion-paid-media-proximos-24-meses" element={<AutomatizacionPaidMediaProximos24MesesPage openCalendly={openCalendly} />} />
+        <Route path="/blog/que-no-automatiza-ia-d2c" element={<QueNoAutomatizaIaD2cPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
