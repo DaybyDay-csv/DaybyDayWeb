@@ -274,6 +274,12 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Guía completa de escala vertical y horizontal con Advantage+ Shopping</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cbo-vs-abo-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
+          CBO vs ABO en Meta Ads 2026: qué estructura usar para escalar D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">La decisión estructural previa al protocolo de escala y cómo repartir spend entre CBO, ABO y ASC</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/automatizaciones-reglas-meta-ads-manager" className="text-white font-semibold hover:text-white/80">
           Automatizaciones y reglas en Meta Ads Manager para escalar →
         </Link>

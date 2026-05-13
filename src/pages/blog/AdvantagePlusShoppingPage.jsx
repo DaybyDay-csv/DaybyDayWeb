@@ -236,6 +236,12 @@ const AdvantagePlusShoppingPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Por qué ASC necesita 8-15 creatividades activas y cómo mantener el pipeline para que el algoritmo no se quede sin material</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/cbo-vs-abo-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
+          CBO vs ABO en Meta Ads 2026: qué estructura usar para escalar D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo distribuir el spend entre Advantage+ Shopping, CBO clásico y ABO en cuentas D2C escaladas</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/performance-max-vs-meta-ads-espana" className="text-white font-semibold hover:text-white/80">
           Performance Max vs Meta Ads: ¿cuál funciona mejor en España? →
         </Link>
