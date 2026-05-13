@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "juicio-cross-funcional-founder-d2c",
+    title: "Juicio cross-funcional: por qué un founder D2C no puede delegar la decisión, solo la ejecución",
+    excerpt: "Por qué el juicio cross-funcional de un founder D2C — decisión de capital, pricing, mix de canal, top 5-10% alto LTV, producto, incentivos — no se delega ni a un perfil mono-funcional ni a un agente de IA. Tabla operativa de qué se delega (ejecución) vs qué se decide (juicio cross-funcional), 6 zonas intransferibles ordenadas por impacto en margen de contribución y payback CAC, 3 patrones de delegación destructiva (delegar capital al responsable de paid, delegar pricing a A/B test, abdicar al stack de IA), marco de auditoría en 4 pasos y enfoque DayByDay (Pablo + Jorge en cada conversación, sin handoffs).",
+    category: "Decisiones de negocio",
+    date: "13 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "que-no-automatiza-ia-d2c",
     title: "Qué NO automatiza la IA (Claude, Andromeda, agentes) en un D2C en 2026: el mapa más allá del paid media",
     excerpt: "Las 6 áreas operativas de un eCommerce D2C que la IA no automatiza en 2026-2027 más allá del paid media: decisión de capital trimestral (paid vs retención vs producto vs inventario), pricing operativo (subida de precio, suscripción, free shipping threshold, bundling), relación con el top 5-10% de clientes alto LTV (30-50% del revenue), decisión de producto y roadmap, selección y relación con proveedores e inventario crítico, arquitectura de incentivos del equipo y partners externos. Tabla operativa con impacto en margen de contribución y payback CAC, 6 áreas ordenadas por impacto, 3 errores frecuentes del founder D2C, marco de auditoría en 4 pasos y enfoque DayByDay (Pablo + Jorge en cada conversación).",
