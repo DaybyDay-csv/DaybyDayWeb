@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T12:00:00",
+  "last_updated": "2026-05-13T08:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -12,6 +12,7 @@
   "llms_txt_file": "public/llms.txt",
   "completed_tasks": [
     "T40",
+    "T41",
     "T26",
     "T27",
     "T30",
@@ -92,7 +93,8 @@
     "suscripciones-ecommerce-ltv-cac-d2c",
     "meta-ads-library-analisis-competencia",
     "ad-fatigue-meta-ads-rotacion-creativa",
-    "incrementality-testing-meta-ads-d2c"
+    "incrementality-testing-meta-ads-d2c",
+    "cbo-vs-abo-meta-ads-2026-d2c"
   ],
   "phases": [
     {
@@ -685,9 +687,9 @@
           "words": 1200,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-13. CBO (Advantage Campaign Budget) vs ABO operativa en 6 dimensiones, 4 escenarios ABO + 3 escenarios CBO, papel ASC 60-75% spend en cuentas D2C >15K€/mes, distribución óptima 3 estructuras, fórmula presupuesto mínimo CBO ≥ (CPA × 50 × ad sets)/7, 7 errores y enfoque DayByDay Pablo+Jorge con auditoría EMQ + dashboard Looker Studio. Caso real cosmética 28K€/mes MER 2,1x→2,8x en 45d."
         },
         {
           "id": "T42",

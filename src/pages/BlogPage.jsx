@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "cbo-vs-abo-meta-ads-2026-d2c",
+    title: "CBO vs ABO en Meta Ads 2026: qué estructura usar para escalar D2C",
+    excerpt: "Guía operativa para decidir entre CBO (Advantage Campaign Budget) y ABO en Meta Ads para eCommerce D2C España 2026: diferencia operativa real (control de spend, velocidad de aprendizaje, riesgo de concentración con tracking flojo), cuándo conviene ABO (presupuestos <4-5K€/mes, validación de audiencias nuevas, retargeting con audiencias <50K, protección de spend por colección), cuándo conviene CBO (escala >8-10K€/mes con 2-4 audiencias compitiendo y tracking server-side sólido EMQ ≥7/10), papel de Advantage+ Shopping Campaigns (ASC) como capa que absorbe 60-75% del spend en cuentas D2C >15K€/mes, distribución óptima del presupuesto entre las 3 estructuras (60-75% ASC + 15-25% CBO + 5-15% ABO), fórmula de presupuesto mínimo CBO ≥ (CPA × 50 × nº ad sets)/7, 7 errores frecuentes al migrar estructura y enfoque DayByDay Pablo+Jorge con auditoría EMQ + dashboard Looker Studio previo.",
+    category: "Estructura de cuenta",
+    date: "13 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "incrementality-testing-meta-ads-d2c",
     title: "Incrementality testing en Meta Ads: cómo medir el lift real en eCommerce D2C",
     excerpt: "Guía operativa de incrementality testing para Meta Ads en eCommerce D2C España: qué es y por qué importa, diferencia con atribución y MMM, los 3 tipos de test (Meta Conversion Lift, geo holdout, pre/post holistic), cuándo aplicar cada uno según volumen y spend, coste real y duración esperada (4-6 semanas), lift incremental realista por tipo de campaña en D2C España 2026 (prospecting 60-85%, retargeting 7-30d 20-45%, retargeting 30-180d 10-30%), protocolo paso a paso para diseñar un geo holdout test (regiones, baseline 28d, duración 14-28d, significancia), 7 errores frecuentes y enfoque DayByDay Pablo+Jorge con pipeline Python + Shopify Admin + Meta Marketing API.",
