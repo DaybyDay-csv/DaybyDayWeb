@@ -224,6 +224,12 @@ const AdvantagePlusShoppingPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El contexto completo de Meta Ads donde encaja Advantage+ Shopping</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/dynamic-product-ads-meta-shopify-d2c" className="text-white font-semibold hover:text-white/80">
+          Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El primo cercano de Advantage+ Catalog: catálogo, CAPI, product sets y estructura DPA completa</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/estrategias-puja-meta-ads" className="text-white font-semibold hover:text-white/80">
           Estrategias de puja en Meta Ads: cuál elegir según tu objetivo →
         </Link>

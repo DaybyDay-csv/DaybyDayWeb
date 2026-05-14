@@ -235,6 +235,12 @@ const RemarketingDinamicoEcommerceGuiaPracticaPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/dynamic-product-ads-meta-shopify-d2c" className="text-white font-semibold hover:text-white/80">
+          Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Configuración técnica completa de DPA: catálogo, CAPI, product sets segmentados y feeds Shopify</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/retargeting-meta-ads-ecommerce-2026" className="text-white font-semibold hover:text-white/80">
           Retargeting en Meta Ads para eCommerce: guía completa 2026 →
         </Link>

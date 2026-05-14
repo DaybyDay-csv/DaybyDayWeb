@@ -293,6 +293,12 @@ const ServerSideTrackingShopifyConversionsApiPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Por qué el server-side completo es ahora obligatorio en cuentas con tráfico iOS &gt;35%</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/dynamic-product-ads-meta-shopify-d2c" className="text-white font-semibold hover:text-white/80">
+          Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El caso donde el server-side decide CPA: content_ids correctos para el algoritmo DPA</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/modelos-atribucion-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
           Modelos de atribución para D2C: last-click, data-driven y MMM explicados →
         </Link>
