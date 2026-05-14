@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "framework-hipotesis-creatividades-meta-ads",
+    title: "Framework de hipótesis creativas Meta Ads: cómo briefar antes de gastar en producción",
+    excerpt: "Framework operativo para escribir hipótesis creativas testables antes de producir cualquier pieza Meta Ads en eCommerce D2C España: las 5 dimensiones obligatorias del brief (audiencia objetivo, ángulo emocional, formato/duración, hook seg 0-2, prueba), anatomía de hipótesis falsable con métrica de éxito numérica, 7 ángulos canónicos D2C España 2026 (dolor físico, miedo social, aspiracional, comodidad, ahorro tiempo, transformación, ahorro económico) con Hook Rate esperado por vertical, plantilla DayByDay de brief de 1 página, regla 3-4 variantes/hipótesis con 200-400€/variante y 5-7 días, priorización por impacto × coste × señal previa, criterios para descartar hipótesis con datos y enfoque DayByDay Pablo+Jorge con pipeline n8n + agente IA para ranking semanal de hipótesis.",
+    category: "Creatividades",
+    date: "14 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "cbo-vs-abo-meta-ads-2026-d2c",
     title: "CBO vs ABO en Meta Ads 2026: qué estructura usar para escalar D2C",
     excerpt: "Guía operativa para decidir entre CBO (Advantage Campaign Budget) y ABO en Meta Ads para eCommerce D2C España 2026: diferencia operativa real (control de spend, velocidad de aprendizaje, riesgo de concentración con tracking flojo), cuándo conviene ABO (presupuestos <4-5K€/mes, validación de audiencias nuevas, retargeting con audiencias <50K, protección de spend por colección), cuándo conviene CBO (escala >8-10K€/mes con 2-4 audiencias compitiendo y tracking server-side sólido EMQ ≥7/10), papel de Advantage+ Shopping Campaigns (ASC) como capa que absorbe 60-75% del spend en cuentas D2C >15K€/mes, distribución óptima del presupuesto entre las 3 estructuras (60-75% ASC + 15-25% CBO + 5-15% ABO), fórmula de presupuesto mínimo CBO ≥ (CPA × 50 × nº ad sets)/7, 7 errores frecuentes al migrar estructura y enfoque DayByDay Pablo+Jorge con auditoría EMQ + dashboard Looker Studio previo.",

@@ -213,6 +213,12 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/framework-hipotesis-creatividades-meta-ads" className="text-white font-semibold hover:text-white/80">
+          Framework de hipótesis creativas Meta Ads: cómo briefar antes de gastar en producción →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo alimentar el pipeline con hipótesis testables en lugar de "haz un UGC" para que cada variante salga del horno con métrica de éxito</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/creative-testing-meta-ads" className="text-white font-semibold hover:text-white/80">
           Creative testing en Meta Ads: framework paso a paso →
         </Link>
