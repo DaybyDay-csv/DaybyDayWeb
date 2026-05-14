@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T08:00:00",
+  "last_updated": "2026-05-14T08:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -24,7 +24,8 @@
     "T36",
     "T37",
     "T38",
-    "T39"
+    "T39",
+    "T42"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -94,7 +95,8 @@
     "meta-ads-library-analisis-competencia",
     "ad-fatigue-meta-ads-rotacion-creativa",
     "incrementality-testing-meta-ads-d2c",
-    "cbo-vs-abo-meta-ads-2026-d2c"
+    "cbo-vs-abo-meta-ads-2026-d2c",
+    "framework-hipotesis-creatividades-meta-ads"
   ],
   "phases": [
     {
@@ -701,9 +703,9 @@
           "words": 1300,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-14. Framework con 5 dimensiones obligatorias del brief (audiencia, ángulo, formato, hook, prueba), anatomía de hipótesis falsable en 5 bloques, 7 ángulos canónicos D2C España 2026 con Hook Rate esperado por vertical, plantilla brief 1 página, regla 3-4 variantes con 200-400€/variante y 5-7d, priorización backlog 70/30 iteración/exploración <15K€ y 50/50 >20K€, 7 errores y enfoque DayByDay con pipeline n8n+agente IA + caso real cosmética 22K€/mes %winners 7%→19% en 90d."
         },
         {
           "id": "T43",
