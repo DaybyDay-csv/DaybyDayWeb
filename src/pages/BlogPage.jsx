@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "dynamic-product-ads-meta-shopify-d2c",
+    title: "Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026",
+    excerpt: "Guía técnica completa de Dynamic Product Ads (DPA / Advantage+ Catalog Ads) en Meta Ads para tiendas Shopify D2C España 2026: qué son y cómo funcionan internamente, diferencias entre DPA retargeting y DPA prospecting (DABA), configuración paso a paso del catálogo Shopify + Conversions API + Event Match Quality, requisitos técnicos del feed (imagen, título, GTIN, condition), product sets segmentados por colección/margen/stock, presupuesto mínimo para salir de learning (80-120€/día prospecting, 40-70€/día retargeting), 7 errores frecuentes con catálogos D2C españoles y enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify Admin API + Meta Marketing API para sincronización catálogo + product sets dinámicos.",
+    category: "Meta Ads",
+    date: "14 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "framework-hipotesis-creatividades-meta-ads",
     title: "Framework de hipótesis creativas Meta Ads: cómo briefar antes de gastar en producción",
     excerpt: "Framework operativo para escribir hipótesis creativas testables antes de producir cualquier pieza Meta Ads en eCommerce D2C España: las 5 dimensiones obligatorias del brief (audiencia objetivo, ángulo emocional, formato/duración, hook seg 0-2, prueba), anatomía de hipótesis falsable con métrica de éxito numérica, 7 ángulos canónicos D2C España 2026 (dolor físico, miedo social, aspiracional, comodidad, ahorro tiempo, transformación, ahorro económico) con Hook Rate esperado por vertical, plantilla DayByDay de brief de 1 página, regla 3-4 variantes/hipótesis con 200-400€/variante y 5-7 días, priorización por impacto × coste × señal previa, criterios para descartar hipótesis con datos y enfoque DayByDay Pablo+Jorge con pipeline n8n + agente IA para ranking semanal de hipótesis.",

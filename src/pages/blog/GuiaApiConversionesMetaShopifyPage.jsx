@@ -261,6 +261,12 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">Auditoría operativa con CAPI, EMQ y cobertura server-side incluidos</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/dynamic-product-ads-meta-shopify-d2c" className="text-white font-semibold hover:text-white/80">
+          Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El caso de uso #1 donde CAPI determina el rendimiento real: content_ids, product sets y estructura DPA</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white font-semibold hover:text-white/80">
           Guía Meta Ads para eCommerce D2C en España 2026 →
         </Link>

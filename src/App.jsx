@@ -88,6 +88,7 @@ import AdFatigueMetaAdsRotacionCreativaPage from "./pages/blog/AdFatigueMetaAdsR
 import IncrementalityTestingMetaAdsPage from "./pages/blog/IncrementalityTestingMetaAdsPage";
 import CboVsAboMetaAds2026D2cPage from "./pages/blog/CboVsAboMetaAds2026D2cPage";
 import FrameworkHipotesisCreatividadesMetaAdsPage from "./pages/blog/FrameworkHipotesisCreatividadesMetaAdsPage";
+import DynamicProductAdsMetaShopifyPage from "./pages/blog/DynamicProductAdsMetaShopifyPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -306,6 +307,7 @@ const App = () => {
         <Route path="/blog/incrementality-testing-meta-ads-d2c" element={<IncrementalityTestingMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/cbo-vs-abo-meta-ads-2026-d2c" element={<CboVsAboMetaAds2026D2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/framework-hipotesis-creatividades-meta-ads" element={<FrameworkHipotesisCreatividadesMetaAdsPage openCalendly={openCalendly} />} />
+        <Route path="/blog/dynamic-product-ads-meta-shopify-d2c" element={<DynamicProductAdsMetaShopifyPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
