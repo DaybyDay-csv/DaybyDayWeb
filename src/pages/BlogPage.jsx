@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "internacionalizar-d2c-espanol-meta-ads-eu",
+    title: "Internacionalizar un D2C español con Meta Ads: pasos y errores en EU",
+    excerpt: "Guía operativa para internacionalizar un D2C español a EU con Meta Ads en 2026: 4 prerrequisitos antes de salir de España (MER blended ≥2,2x, pipeline creativo, logística cross-border, CAPI EMQ ≥7), orden recomendado de mercados (PT→IT→FR→DE) con CPMs comparativos vs España, arquitectura Meta Ads multi-país (BM único con naming convention [ES]/[PT]/[IT]/[FR]/[DE], pixel compartido, Conversions API con campo país), política de creatividades por mercado (reutilización solo en PT, UGC nativo obligatorio en FR/DE), 3 bloques no negociables (régimen OSS IVA, Consent Mode v2 multi-país, atención al cliente local), 7 errores específicos en D2C españoles, presupuesto mínimo viable 18-30K€ por mercado con horizonte 90 días y enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify Markets + Meta Marketing API multi-feed para CAC adquisición específico por país.",
+    category: "Internacionalización",
+    date: "15 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "adquisicion-vs-retencion-paid-media-d2c",
     title: "Adquisición vs retención: cómo separar presupuestos de paid media en D2C",
     excerpt: "Guía operativa para separar presupuestos de adquisición y retención en paid media para eCommerce D2C España 2026: definición operativa, splits recomendados por madurez de marca (joven 80-90/10-20, escala 65-75/25-35, maduro 45-60/40-55), estructura Meta Ads con campañas ADQ/RET separadas y naming convention, por qué CAC blended esconde la economía real del negocio, fórmula CAC adquisición específico vs LTV90 ajustado por margen contribución, 4 señales para rebalancear hacia retención, encaje de Google Ads brand y email/SMS en el split, dashboard Looker Studio con 4 buckets de gasto/ingresos y enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify + Meta/Google Ads APIs para reporting blended automatizado.",

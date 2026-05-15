@@ -90,6 +90,7 @@ import CboVsAboMetaAds2026D2cPage from "./pages/blog/CboVsAboMetaAds2026D2cPage"
 import FrameworkHipotesisCreatividadesMetaAdsPage from "./pages/blog/FrameworkHipotesisCreatividadesMetaAdsPage";
 import DynamicProductAdsMetaShopifyPage from "./pages/blog/DynamicProductAdsMetaShopifyPage";
 import AdquisicionVsRetencionPaidMediaD2cPage from "./pages/blog/AdquisicionVsRetencionPaidMediaD2cPage";
+import InternacionalizarD2cEspanolMetaAdsEuPage from "./pages/blog/InternacionalizarD2cEspanolMetaAdsEuPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -310,6 +311,7 @@ const App = () => {
         <Route path="/blog/framework-hipotesis-creatividades-meta-ads" element={<FrameworkHipotesisCreatividadesMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/dynamic-product-ads-meta-shopify-d2c" element={<DynamicProductAdsMetaShopifyPage openCalendly={openCalendly} />} />
         <Route path="/blog/adquisicion-vs-retencion-paid-media-d2c" element={<AdquisicionVsRetencionPaidMediaD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/internacionalizar-d2c-espanol-meta-ads-eu" element={<InternacionalizarD2cEspanolMetaAdsEuPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

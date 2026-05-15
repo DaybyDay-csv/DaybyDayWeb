@@ -267,6 +267,12 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El caso de uso #1 donde CAPI determina el rendimiento real: content_ids, product sets y estructura DPA</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/internacionalizar-d2c-espanol-meta-ads-eu" className="text-white font-semibold hover:text-white/80">
+          Internacionalizar un D2C español con Meta Ads en EU →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo configurar Conversions API multi-país con campo país en custom_data para discriminar EMQ por mercado y reporting localizado</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white font-semibold hover:text-white/80">
           Guía Meta Ads para eCommerce D2C en España 2026 →
         </Link>
