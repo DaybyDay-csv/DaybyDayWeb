@@ -243,6 +243,12 @@ const RetargetingMetaAdsEcommerce2026Page = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/adquisicion-vs-retencion-paid-media-d2c" className="text-white font-semibold hover:text-white/80">
+          Adquisición vs retención: cómo separar presupuestos de paid media en D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo encaja el retargeting Meta dentro del bucket retención y qué % del presupuesto le corresponde por madurez de marca</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/black-friday-meta-ads-d2c-preparacion" className="text-white font-semibold hover:text-white/80">
           Black Friday Meta Ads para D2C: preparar Q4 con 90 días de antelación →
         </Link>

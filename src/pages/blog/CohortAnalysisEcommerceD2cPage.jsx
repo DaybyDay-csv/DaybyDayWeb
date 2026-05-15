@@ -184,6 +184,12 @@ const CohortAnalysisEcommerceD2cPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/adquisicion-vs-retencion-paid-media-d2c" className="text-white font-semibold hover:text-white/80">
+          Adquisición vs retención: cómo separar presupuestos de paid media en D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El bucket que aplica directamente la lectura cohorte para decidir cuándo recortar adquisición y meter más en retención</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
           CAC blended vs CAC por canal: qué métrica usar para escalar un D2C →
         </Link>

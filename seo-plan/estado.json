@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T12:00:00",
+  "last_updated": "2026-05-15T12:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -25,7 +25,8 @@
     "T37",
     "T38",
     "T39",
-    "T42"
+    "T42",
+    "T43"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -97,7 +98,8 @@
     "incrementality-testing-meta-ads-d2c",
     "cbo-vs-abo-meta-ads-2026-d2c",
     "framework-hipotesis-creatividades-meta-ads",
-    "dynamic-product-ads-meta-shopify-d2c"
+    "dynamic-product-ads-meta-shopify-d2c",
+    "adquisicion-vs-retencion-paid-media-d2c"
   ],
   "phases": [
     {
@@ -718,9 +720,9 @@
           "words": 1100,
           "intent": "MOFU",
           "priority": "MEDIA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-15. Cluster estructura-cuenta. Cubre GEO sobre split adquisición/retención D2C y CAC adquisición específico vs LTV90."
         },
         {
           "id": "T44",

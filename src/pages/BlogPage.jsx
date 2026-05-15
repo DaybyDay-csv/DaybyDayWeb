@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "adquisicion-vs-retencion-paid-media-d2c",
+    title: "Adquisición vs retención: cómo separar presupuestos de paid media en D2C",
+    excerpt: "Guía operativa para separar presupuestos de adquisición y retención en paid media para eCommerce D2C España 2026: definición operativa, splits recomendados por madurez de marca (joven 80-90/10-20, escala 65-75/25-35, maduro 45-60/40-55), estructura Meta Ads con campañas ADQ/RET separadas y naming convention, por qué CAC blended esconde la economía real del negocio, fórmula CAC adquisición específico vs LTV90 ajustado por margen contribución, 4 señales para rebalancear hacia retención, encaje de Google Ads brand y email/SMS en el split, dashboard Looker Studio con 4 buckets de gasto/ingresos y enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify + Meta/Google Ads APIs para reporting blended automatizado.",
+    category: "Estructura de cuenta",
+    date: "15 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "dynamic-product-ads-meta-shopify-d2c",
     title: "Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026",
     excerpt: "Guía técnica completa de Dynamic Product Ads (DPA / Advantage+ Catalog Ads) en Meta Ads para tiendas Shopify D2C España 2026: qué son y cómo funcionan internamente, diferencias entre DPA retargeting y DPA prospecting (DABA), configuración paso a paso del catálogo Shopify + Conversions API + Event Match Quality, requisitos técnicos del feed (imagen, título, GTIN, condition), product sets segmentados por colección/margen/stock, presupuesto mínimo para salir de learning (80-120€/día prospecting, 40-70€/día retargeting), 7 errores frecuentes con catálogos D2C españoles y enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify Admin API + Meta Marketing API para sincronización catálogo + product sets dinámicos.",
