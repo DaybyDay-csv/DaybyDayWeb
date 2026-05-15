@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "moat-real-d2c-era-ia",
+    title: "Moat real para D2C en la era de la IA: por qué el playbook de paid no es defendible",
+    excerpt: "Qué es un moat real para un eCommerce D2C en 2026-2027 cuando la IA absorbe la ejecución operativa de paid media. Por qué el playbook táctico (estructura campañas, bidding, creatividades, reporting, segmentación) deja de ser ventaja sostenible. Los 4 activos defendibles que sí componen margen de contribución (top 5-10% clientes alto LTV, datos cohorte propios, control vertical sobre producto/supply, arquitectura de incentivos), tabla operativa moat real vs falso moat, 5 patrones de erosión, marco de auditoría en 4 pasos y enfoque DayByDay (Pablo + Jorge en cada conversación, sin handoffs).",
+    category: "Decisiones de negocio",
+    date: "14 may 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "juicio-cross-funcional-founder-d2c",
     title: "Juicio cross-funcional: por qué un founder D2C no puede delegar la decisión, solo la ejecución",
     excerpt: "Por qué el juicio cross-funcional de un founder D2C — decisión de capital, pricing, mix de canal, top 5-10% alto LTV, producto, incentivos — no se delega ni a un perfil mono-funcional ni a un agente de IA. Tabla operativa de qué se delega (ejecución) vs qué se decide (juicio cross-funcional), 6 zonas intransferibles ordenadas por impacto en margen de contribución y payback CAC, 3 patrones de delegación destructiva (delegar capital al responsable de paid, delegar pricing a A/B test, abdicar al stack de IA), marco de auditoría en 4 pasos y enfoque DayByDay (Pablo + Jorge en cada conversación, sin handoffs).",
