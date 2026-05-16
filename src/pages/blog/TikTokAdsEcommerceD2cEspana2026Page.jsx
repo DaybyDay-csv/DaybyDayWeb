@@ -289,6 +289,12 @@ const TikTokAdsEcommerceD2cEspana2026Page = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Distribución óptima de presupuesto cuando se añade TikTok como tercer canal</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/partnership-ads-meta-ugc-creators-d2c" className="text-white font-semibold hover:text-white/80">
+          Partnership Ads en Meta para D2C con cuentas de creators →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Hermano operativo de Spark Ads en Meta: misma pieza UGC cross-channel para máximo retorno de producción</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

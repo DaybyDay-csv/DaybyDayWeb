@@ -264,6 +264,12 @@ const FrameworkHipotesisCreatividadesMetaAdsPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Estructura de cuenta para testar hipótesis sin canibalizar campañas evergreen</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/partnership-ads-meta-ugc-creators-d2c" className="text-white font-semibold hover:text-white/80">
+          Partnership Ads en Meta para D2C con cuentas de creators →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo aplicar el framework de hipótesis al brief con creator y servirlo como Partnership Ad para subir Hook Rate 25-40%</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
