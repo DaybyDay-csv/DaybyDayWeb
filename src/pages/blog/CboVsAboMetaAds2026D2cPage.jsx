@@ -128,9 +128,9 @@ const CboVsAboMetaAds2026D2cPage = ({ openCalendly }) => (
       Para entender el prerequisito de tracking que hace que CBO rinda bien, ver la <Link to="/blog/guia-api-conversiones-meta-ads-shopify" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de Conversions API en Meta Ads + Shopify</Link> y la <Link to="/blog/server-side-tracking-shopify-conversions-api" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de server-side tracking con Conversions API</Link>.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Distribución óptima en cuentas D2C >15K€/mes (CBO + ABO + ASC)</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Distribución óptima en cuentas D2C de más de 15K€/mes (CBO + ABO + ASC)</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      La pregunta real en 2026 no es "CBO o ABO", sino cómo repartir el presupuesto entre las 3 estructuras (CBO clásico, ABO y Advantage+ Shopping). Distribución observada en cuentas D2C España >15K€/mes auditadas en DayByDay (2024-2026):
+      La pregunta real en 2026 no es "CBO o ABO", sino cómo repartir el presupuesto entre las 3 estructuras (CBO clásico, ABO y Advantage+ Shopping). Distribución observada en cuentas D2C España de más de 15K€/mes auditadas en DayByDay (2024-2026):
     </p>
     <ul className="space-y-2 mb-6">
       {[

@@ -63,7 +63,7 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
       <p className="text-white font-bold text-sm mb-2">📊 Dato de referencia</p>
       <p className="text-white/70 text-sm leading-relaxed">
-        Según <a href="https://www.facebook.com/business/help/229311094776616" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Business</a>, el rendimiento de un anuncio empieza a degradarse de forma medible cuando la frecuencia supera 2,0 en prospecting 7 días, y el efecto es más severo en audiencias <2M usuarios. En cuentas D2C España auditadas por DayByDay (2024-2026), el 38% de las caídas mensuales >20% en ROAS están directamente vinculadas a fatigue creativo no detectado a tiempo.
+        Según <a href="https://www.facebook.com/business/help/229311094776616" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Business</a>, el rendimiento de un anuncio empieza a degradarse de forma medible cuando la frecuencia supera 2,0 en prospecting 7 días, y el efecto es más severo en audiencias menores de 2M usuarios. En cuentas D2C España auditadas por DayByDay (2024-2026), el 38% de las caídas mensuales superiores al 20% en ROAS están directamente vinculadas a fatigue creativo no detectado a tiempo.
       </p>
     </div>
 
