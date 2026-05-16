@@ -369,6 +369,12 @@ const EscalarEcommerceD2C100K1MPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cómo calcular LTV-180d y CAC blended para saber si el negocio aguanta la siguiente subida de presupuesto</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/internacionalizar-d2c-espanol-meta-ads-eu" className="text-white font-semibold hover:text-white/80">
+          Internacionalizar un D2C español con Meta Ads en EU →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cuando España ya está en MER ≥2,2x, el siguiente vector de escala es Portugal, Italia, Francia y Alemania con plan secuencial</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

@@ -220,6 +220,12 @@ const DynamicProductAdsMetaShopifyPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Estrategia warm con DPA retargeting: ventanas, exclusiones y secuencias post-AddToCart</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/internacionalizar-d2c-espanol-meta-ads-eu" className="text-white font-semibold hover:text-white/80">
+          Internacionalizar un D2C español con Meta Ads en EU →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Catálogo Shopify Markets multi-currency con feeds DPA separados por país: requisitos para escalar DPA fuera de España</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

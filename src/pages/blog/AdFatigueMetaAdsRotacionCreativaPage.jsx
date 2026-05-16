@@ -242,6 +242,12 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cómo ASC cambia el protocolo de rotación y por qué necesita 8-15 creatividades activas</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/partnership-ads-meta-ugc-creators-d2c" className="text-white font-semibold hover:text-white/80">
+          Partnership Ads en Meta para D2C con cuentas de creators →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo escalar UGC con creators distintos para multiplicar variantes y diferir el fatigue por audiencia</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
