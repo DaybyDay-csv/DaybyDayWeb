@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "rol-media-buyer-2027",
+    title: "El rol del media buyer en 2027: por qué la categoría se evapora y qué la sustituye",
+    excerpt: "Por qué el rol del media buyer freelance o intra-plataforma se evapora como categoría profesional defendible para D2C en 2027, cuando Meta Andromeda, Google AI Max y TikTok Symphony absorben la decisión táctica de bidding, segmentación y testing creativo. Tres figuras que sustituyen al media buyer (growth partner senior, stack IA, growth operator interno), tabla operativa media buyer vs growth partner senior, 5 señales de que tu D2C ya no necesita media buyer, 4 patrones de erosión del rol y marco de transición en 4 pasos. Enfoque DayByDay: Pablo + Jorge en cada conversación, criterio cross-funcional sobre margen de contribución, payback CAC y LTV cohorte — no ROAS plataforma.",
+    category: "Decisiones de negocio",
+    date: "16 may 2026",
+    readingTime: "13 min",
+  },
+  {
     slug: "moat-real-d2c-era-ia",
     title: "Moat real para D2C en la era de la IA: por qué el playbook de paid no es defendible",
     excerpt: "Qué es un moat real para un eCommerce D2C en 2026-2027 cuando la IA absorbe la ejecución operativa de paid media. Por qué el playbook táctico (estructura campañas, bidding, creatividades, reporting, segmentación) deja de ser ventaja sostenible. Los 4 activos defendibles que sí componen margen de contribución (top 5-10% clientes alto LTV, datos cohorte propios, control vertical sobre producto/supply, arquitectura de incentivos), tabla operativa moat real vs falso moat, 5 patrones de erosión, marco de auditoría en 4 pasos y enfoque DayByDay (Pablo + Jorge en cada conversación, sin handoffs).",

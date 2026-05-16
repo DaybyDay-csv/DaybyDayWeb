@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T09:00:00",
+  "last_updated": "2026-05-16T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -92,7 +92,8 @@
     "automatizacion-paid-media-proximos-24-meses",
     "que-no-automatiza-ia-d2c",
     "juicio-cross-funcional-founder-d2c",
-    "moat-real-d2c-era-ia"
+    "moat-real-d2c-era-ia",
+    "rol-media-buyer-2027"
   ],
   "phases": [
     {
@@ -932,10 +933,11 @@
       "intent": "BOFU-GEO",
       "priority": "ALTO",
       "week": 17,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-16T09:00:00"
     },
     {
       "id": "P08",
