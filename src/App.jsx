@@ -96,6 +96,11 @@ import AdquisicionVsRetencionPaidMediaD2cPage from "./pages/blog/AdquisicionVsRe
 import InternacionalizarD2cEspanolMetaAdsEuPage from "./pages/blog/InternacionalizarD2cEspanolMetaAdsEuPage";
 import PartnershipAdsMetaCreatorsD2cPage from "./pages/blog/PartnershipAdsMetaCreatorsD2cPage";
 import Ga4MetaAdsEventosCustomD2cPage from "./pages/blog/Ga4MetaAdsEventosCustomD2cPage";
+import AutomatizacionPaidMediaProximos24MesesPage from "./pages/blog/AutomatizacionPaidMediaProximos24MesesPage";
+import QueNoAutomatizaIaD2cPage from "./pages/blog/QueNoAutomatizaIaD2cPage";
+import JuicioCrossFuncionalFounderD2cPage from "./pages/blog/JuicioCrossFuncionalFounderD2cPage";
+import MoatRealD2cEraIaPage from "./pages/blog/MoatRealD2cEraIaPage";
+import RolMediaBuyer2027Page from "./pages/blog/RolMediaBuyer2027Page";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -322,6 +327,11 @@ const App = () => {
         <Route path="/blog/internacionalizar-d2c-espanol-meta-ads-eu" element={<InternacionalizarD2cEspanolMetaAdsEuPage openCalendly={openCalendly} />} />
         <Route path="/blog/partnership-ads-meta-ugc-creators-d2c" element={<PartnershipAdsMetaCreatorsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/ga4-meta-ads-eventos-custom-d2c" element={<Ga4MetaAdsEventosCustomD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/automatizacion-paid-media-proximos-24-meses" element={<AutomatizacionPaidMediaProximos24MesesPage openCalendly={openCalendly} />} />
+        <Route path="/blog/que-no-automatiza-ia-d2c" element={<QueNoAutomatizaIaD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/juicio-cross-funcional-founder-d2c" element={<JuicioCrossFuncionalFounderD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/moat-real-d2c-era-ia" element={<MoatRealD2cEraIaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/rol-media-buyer-2027" element={<RolMediaBuyer2027Page openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

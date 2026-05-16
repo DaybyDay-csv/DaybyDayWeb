@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T16:00:00",
+  "last_updated": "2026-05-16T17:30:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -106,7 +106,12 @@
     "adquisicion-vs-retencion-paid-media-d2c",
     "internacionalizar-d2c-espanol-meta-ads-eu",
     "partnership-ads-meta-ugc-creators-d2c",
-    "ga4-meta-ads-eventos-custom-d2c"
+    "ga4-meta-ads-eventos-custom-d2c",
+    "automatizacion-paid-media-proximos-24-meses",
+    "que-no-automatiza-ia-d2c",
+    "juicio-cross-funcional-founder-d2c",
+    "moat-real-d2c-era-ia",
+    "rol-media-buyer-2027"
   ],
   "phases": [
     {
@@ -886,10 +891,11 @@
       "intent": "MOFU-GEO",
       "priority": "ALTO",
       "week": 16,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-11T09:00:00"
     },
     {
       "id": "P04",
@@ -900,10 +906,11 @@
       "intent": "MOFU-GEO",
       "priority": "ALTO",
       "week": 16,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-12T09:00:00"
     },
     {
       "id": "P05",
@@ -914,10 +921,11 @@
       "intent": "MOFU-GEO",
       "priority": "MEDIO",
       "week": 17,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-13T09:00:00"
     },
     {
       "id": "P06",
@@ -928,10 +936,11 @@
       "intent": "MOFU-GEO",
       "priority": "ALTO",
       "week": 17,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-14T09:00:00"
     },
     {
       "id": "P07",
@@ -942,10 +951,11 @@
       "intent": "BOFU-GEO",
       "priority": "ALTO",
       "week": 17,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-16T09:00:00"
     },
     {
       "id": "P08",

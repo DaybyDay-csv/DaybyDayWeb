@@ -1,0 +1,271 @@
+import { Link } from "react-router-dom";
+import BlogPostLayout from "../../components/BlogPostLayout";
+
+const faqs = [
+  {
+    q: "¿Qué NO automatiza la IA (Claude, Andromeda, agentes) en un D2C en 2026?",
+    a: "Seis áreas operativas resisten la automatización en este horizonte: (1) decisión de capital — a qué palanca va el siguiente euro entre paid, retención, producto, inventario y contratación; (2) pricing operativo — cuándo subir precio, lanzar suscripción, bundlear o mover free shipping threshold; (3) relación con el top 5-10% de clientes alto LTV que aporta 30-50% del revenue; (4) decisión de producto y roadmap — qué SKU lanzar, descontinuar o reformular; (5) selección y relación con proveedores e inventario crítico; (6) arquitectura de incentivos del equipo interno y los partners externos. Ningún agente toma estas decisiones por un founder D2C porque combinan datos cohorte con contexto de mercado, dinámicas de equipo y criterio de operador.",
+  },
+  {
+    q: "¿Por qué un founder D2C debería invertir en entender qué NO automatiza la IA, en lugar de adoptar más herramientas?",
+    a: "Porque el cuello de botella de un D2C que ya factura ≥500K€/año no es la ejecución táctica — los agentes la absorben — sino la calidad de la decisión de inversión. Adoptar 20 herramientas de IA mejora la productividad operativa un 20-30%, pero una sola decisión correcta de pricing o de cierre de canal puede recomponer 5-15 puntos de margen de contribución. La diferenciación competitiva en 2026-2027 se mueve del operativo a la decisión: identificar qué decisiones siguen siendo humanas es identificar dónde está el margen defendible del negocio.",
+  },
+  {
+    q: "¿Qué pasa con la atención al cliente y customer success en un D2C — se automatiza por completo?",
+    a: "Nivel 1 (FAQs, tracking, devoluciones estándar) se automatiza prácticamente entero en 2026 con LLMs conectados al stack del D2C (Shopify, Klaviyo, Zendesk). Nivel 2 (incidencias técnicas, casos atípicos) se automatiza asistido — el agente resuelve el 60-80% y escala el resto. Lo que NO se automatiza es la relación con el top 5-10% de clientes alto LTV: el cliente recurrente que aporta 30-50% del revenue espera que la marca lo conozca, recuerde su contexto y responda con criterio humano. Esa capa de relación es decisión humana, no proceso automatizable — y compone más margen que cualquier optimización de ticketing.",
+  },
+  {
+    q: "¿Puede la IA decidir qué producto lanzar o descontinuar en un D2C?",
+    a: "No en este horizonte. La IA puede analizar datos de ventas, cohortes y tendencias y proponer escenarios. La decisión combina señales que viven fuera del dataset: conversación con el cliente real, contexto del posicionamiento, capacidad del proveedor, ciclo de caja, riesgo reputacional y visión de marca. Un agente sin acceso a esa información cross-funcional propone optimizaciones locales que destruyen margen a 12-24 meses — descontinuar el SKU menos rentable a corto plazo puede ser el SKU que retiene al cohorte más alto. Decidir producto sigue siendo trabajo del founder o del growth partner senior, con datos como input, no como autoridad final.",
+  },
+  {
+    q: "¿Qué decisiones de pricing siguen siendo humanas en 2026-2027?",
+    a: "Las cinco más impactantes: (1) subida de precio base con segmentación por LTV; (2) decisión de lanzar o no suscripción y a qué descuento; (3) mover el free shipping threshold para mejorar AOV sin matar conversión; (4) bundling y cross-sell con margen incremental real; (5) descuentos estacionales con criterio de no canibalizar margen anual. Cada una de estas decisiones combina elasticidad real, posicionamiento de marca y dinámicas competitivas — los tests A/B pueden ayudar a calibrar magnitud, pero la decisión de dirección la toma un operador con criterio. Una subida del 7% bien ejecutada puede recomponer el margen mejor que 6 meses de optimización táctica.",
+  },
+  {
+    q: "¿Sigue teniendo sentido un partner externo si los agentes ejecutan casi todo el operativo?",
+    a: "Sí, pero el modelo cambia. En 2024 un proveedor externo se pagaba por ejecución; en 2027 se paga por decisión. El modelo growth partner — operador con criterio, no proveedor de ejecución — es el que tiene sentido para un D2C que ya factura ≥500K€/año: reporta margen de contribución cohorte, payback de CAC y LTV/CAC, no métricas de plataforma; participa en decisiones de pricing, mix de canal y producto; alinea su fee a margen incremental. Si tu proveedor sigue vendiéndote 'optimización de Meta' como entregable estrella, está vendiendo una capa que en 24 meses tenderá a coste cero.",
+  },
+  {
+    q: "¿Qué señales indican que un D2C está sobreinvirtiendo en automatización y subinvirtiendo en decisión?",
+    a: "Cuatro señales claras: (1) el founder dedica más de 5 horas semanales a configurar agentes y dashboards y menos de 2 a leer margen cohorte y conversar con clientes alto LTV; (2) el equipo crece en perfiles técnicos de stack y se mantiene plano en operadores con criterio de negocio; (3) los reportes son cada vez más detallados pero la decisión trimestral de pricing, canal y producto sigue sin tomarse; (4) el fee con el partner externo está indexado a ejecución (campañas, creatividades, dashboards) y no a margen de contribución incremental. Si tres de cuatro aplican, el D2C está optimizando el operativo y descuidando la decisión — exactamente al revés de lo que el mercado va a premiar en 2027.",
+  },
+];
+
+const QueNoAutomatizaIaD2cPage = ({ openCalendly }) => (
+  <BlogPostLayout
+    title="Qué NO automatiza la IA (Claude, Andromeda, agentes) en un D2C en 2026: el mapa más allá del paid media"
+    description="Las 6 áreas operativas de un eCommerce D2C que la IA no automatiza en 2026-2027: decisión de capital, pricing, relación con clientes alto LTV (top 5-10%), producto/roadmap, supply chain crítico, incentivos del equipo. Tabla operativa con impacto en margen de contribución y payback CAC, marco de decisión para founders D2C que ya facturan."
+    slug="que-no-automatiza-ia-d2c"
+    datePublished="2026-05-12"
+    dateModified="2026-05-12"
+    keywords={[
+      "que no automatiza ia ecommerce d2c",
+      "limites ia ecommerce d2c",
+      "decisiones humanas vs automatizadas d2c",
+      "growth partner era ia",
+      "claude andromeda agentes d2c",
+    ]}
+    readingTime="12 min"
+    category="Decisiones de negocio"
+    faqs={faqs}
+    openCalendly={openCalendly}
+  >
+    <p className="text-white/70 leading-relaxed mb-6">
+      La pregunta táctica — "¿qué herramienta de IA debo adoptar este trimestre?" — es la pregunta equivocada para un founder D2C en 2026. La pregunta correcta es esta: <strong className="text-white">¿qué decisiones de mi eCommerce D2C NO va a automatizar la IA (Claude, Andromeda, agentes, plataformas) en los próximos 24-36 meses, y por tanto definen dónde está el margen defendible del negocio?</strong>. Es una decisión de negocio, no de productividad — y condiciona dónde inviertes tu tiempo de founder, cómo escoges partner externo y qué capa de la operación pagas en serio.
+    </p>
+
+    <p className="text-white/70 leading-relaxed mb-6">
+      Esta guía está escrita para founders D2C que ya facturan ≥500K€/año, llevan 18-48 meses operando paid media, retención, producto y supply chain, y ven cómo cada trimestre los agentes absorben una capa más de ejecución táctica. No es un listado de herramientas. Es el mapa más amplio: qué áreas de un negocio D2C resisten la automatización en este horizonte — más allá del paid media — y cómo organizar la operación, el equipo y la relación con cualquier socio de crecimiento externo en consecuencia.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Definición operativa: qué significa "lo que NO automatiza la IA" en un D2C en 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Cuando hablamos de <strong className="text-white">qué no automatiza la IA en un eCommerce D2C</strong>, no nos referimos a tareas técnicamente irrealizables por una máquina. Nos referimos a decisiones cuya combinación de inputs, riesgo y dinámica de equipo hace que delegarlas en un agente destruye margen a 12-24 meses, aunque la decisión local parezca correcta a corto plazo. Marco Iansiti y Karim Lakhani lo formulan bien en <a href="https://hbr.org/2020/01/competing-in-the-age-of-ai" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Competing in the Age of AI (HBR)</a>: el valor estratégico se concentra en las decisiones que combinan datos estructurados, contexto no estructurado y juicio cross-funcional — no en la ejecución táctica que un modelo absorbe con datos limpios.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Una decisión de un D2C es <em>no-automatizable</em> en este horizonte si cumple tres condiciones:
+    </p>
+    <ul className="space-y-2 mb-6">
+      {[
+        "Combina datasets estructurados (ventas, cohortes, márgenes, atribución) con información que vive fuera del stack (conversación con cliente, dinámica del proveedor, posicionamiento competitivo, visión de marca).",
+        "El criterio de éxito no se reduce a una función objetivo única — exige trade-off explícito entre margen, marca, runway y relación con equipo o partners.",
+        "El coste del error es asimétrico y lento de revertir: una mala decisión de pricing o de supply rompe 6-12 meses de margen, no se corrige al día siguiente como una puja.",
+      ].map((item, i) => (
+        <li key={i} className="flex items-start gap-3">
+          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
+          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Mapa por bloques: qué automatiza la IA en un D2C y qué NO (impacto en margen y payback)</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Tabla operativa por áreas del negocio D2C, con estado 2026, estado esperado 2028 e impacto sobre margen de contribución y payback de CAC. Es lo que vemos operando cuentas españolas D2C entre 500K€ y 8M€/año:
+    </p>
+
+    <div className="overflow-x-auto mb-8">
+      <table className="w-full text-sm border-collapse">
+        <thead>
+          <tr className="border-b border-white/10">
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Área del D2C</th>
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Estado 2026</th>
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Estado esperado 2028</th>
+            <th className="text-left py-3 text-[#de0015] font-semibold text-xs uppercase tracking-wide w-1/4">Impacto en margen / payback CAC</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            ["Ejecución táctica paid media (bidding, audiencias, creatividades, reporting)", "Asistida por plataforma + agentes; humano todavía supervisa", "Agentes operan ciclo completo con guardrails de margen cohorte", "Operativo deja de ser diferenciador; tenderá a coste cero"],
+            ["Customer service nivel 1 (FAQs, tracking, devoluciones estándar)", "LLM conectado a Shopify/Zendesk resuelve 70-85%", "Agentes resuelven 90%+ con escalado humano para casos complejos", "Coste por ticket cae 60-80%; CSAT estable si guardrails están bien"],
+            ["Email/CRM táctico (flows, segmentación, asuntos, copy)", "Klaviyo + agentes generan flows y variantes con feedback loop", "Orquestación cross-canal totalmente asistida con regla de LTV cohorte", "Ingresos por email/CRM suben 10-20% sin más headcount"],
+            ["Decisión de capital: paid vs retención vs producto vs inventario", "Founder + growth partner deciden con datos cohorte trimestrales", "Igual — humano; agentes alimentan datos pero no deciden", "NO se automatiza; aquí está el margen defendible del negocio"],
+            ["Pricing operativo (subida, suscripción, bundles, free shipping threshold)", "Founder decide con datos cohorte + criterio de operador con criterio", "Igual — humano; tests A/B asistidos por agente para calibrar magnitud", "NO se automatiza; +10-25% en margen contribución bien ejecutado"],
+            ["Decisión de producto y roadmap (SKU a lanzar, descontinuar, reformular)", "Founder decide con datos de venta + conversación con cliente real", "Igual — humano; agentes proponen escenarios y simulan demanda", "NO se automatiza; define el cohorte de cliente a 24-36 meses"],
+            ["Relación con top 5-10% clientes alto LTV (30-50% del revenue)", "Founder + customer team operan protocolo manual o semi-manual", "Asistida con tono de marca aprendido; decisión sigue siendo humana", "NO se automatiza; impacto desproporcionado en LTV/CAC"],
+            ["Selección y relación con proveedores e inventario crítico", "Founder + ops deciden con contexto de calidad, capacidad y riesgo geopolítico", "Asistida por agentes que monitorizan señales; decisión humana", "NO se automatiza; un proveedor mal escogido rompe margen 6-18 meses"],
+            ["Posicionamiento de marca y narrativa diferenciada", "Founder + equipo creativo con criterio cross-funcional", "Asistida por LLMs en producción; criterio sigue siendo humano", "NO se automatiza; define el coste de adquisición a 24-48 meses"],
+            ["Arquitectura de incentivos del equipo interno + partners externos", "Founder diseña fee, variables y métrica de éxito por función", "Igual — humano; intentos de automatizar generan comportamientos perversos", "NO se automatiza; define comportamiento de todo el sistema"],
+          ].map(([bloque, hoy, manana, impacto], i) => (
+            <tr key={i} className="border-b border-white/5">
+              <td className="py-3 pr-4 text-white/70 align-top font-medium">{bloque}</td>
+              <td className="py-3 pr-4 text-white/70 align-top">{hoy}</td>
+              <td className="py-3 pr-4 text-white/70 align-top">{manana}</td>
+              <td className="py-3 text-white align-top">{impacto}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p className="text-white/70 leading-relaxed mb-4">
+      La lectura operativa es directa: los tres primeros bloques se automatizan en este horizonte; los siete restantes no. Si tu modelo mental de founder D2C asigna la mayor parte de tu tiempo y de tu fee externo a los tres primeros, estás invirtiendo en una capa que tenderá a commoditizarse. La defensa competitiva real — y el margen — vive en los siete últimos.
+    </p>
+
+    <div className="bg-[#1a1616] border-l-2 border-[#de0015] p-5 mb-8">
+      <p className="text-white/80 text-sm leading-relaxed">
+        <strong className="text-white">Dato sectorial:</strong> Según el informe <a href="https://www.iabspain.es/estudio/estudio-de-ecommerce-2025/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">IAB Spain — Estudio de eCommerce 2025</a>, el 78% de los compradores online españoles declara que recomprará en marcas donde tuvo experiencia personalizada, y el ticket medio del comprador recurrente es entre 1,8x y 2,4x el del nuevo cliente. Para un D2C que ya factura, esto significa que <strong className="text-white">la palanca con mayor impacto compuesto en margen de contribución no está en la capa táctica que la IA automatiza — bidding, creatividades, reporting — sino en la capa de relación, producto y pricing que sigue siendo decisión humana</strong>. Reducir el coste operativo del email/CRM en un 30% con agentes es bueno; tomar mal la decisión de pricing o de cierre de canal cuesta 5-15 puntos de margen anual. La asimetría es brutal.
+      </p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Las 6 áreas que NO se automatizan en un D2C en 2026-2027 (ordenadas por impacto en margen)</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estas son las decisiones donde el founder D2C — o su growth partner senior — sigue siendo insustituible en este horizonte. Cada una compone más margen de contribución a 12 meses que cualquier optimización táctica:
+    </p>
+    <ol className="space-y-3 mb-6 list-decimal list-inside">
+      {[
+        "Decisión de capital trimestral. A qué palanca va el siguiente euro: paid, retención, producto, inventario, contratación. La decisión combina datos cohorte (margen, payback CAC, LTV/CAC), contexto de mercado (estacionalidad, competencia, dinámica de plataforma), runway y visión de marca. Ningún agente la toma por ti porque mezcla datasets no estructurados con criterio de operador con criterio.",
+        "Pricing operativo. Cuándo subir precio antes que invertir más en paid; cuándo lanzar suscripción y a qué descuento; cuándo mover el free shipping threshold; cuándo bundlear con margen incremental real. Una subida del 7% bien ejecutada puede recomponer el margen mejor que 6 meses de optimización táctica — y esa decisión la toma un operador, leyendo datos cohorte y conversación con cliente real.",
+        "Relación con el top 5-10% de clientes alto LTV. Ese segmento aporta típicamente 30-50% del revenue. Conocer ese cohorte por nombre o por segmento, tener protocolo personal de retención, diseñar producto/oferta para él e identificar a tiempo señales de churn es decisión humana. Esta capa compone más margen que toda la optimización táctica del paid junta.",
+        "Decisión de producto y roadmap. Qué SKU lanzar, descontinuar, reformular, escalar o limitar. La decisión combina datos de venta, conversación con cliente, capacidad del proveedor, ciclo de caja y posicionamiento competitivo. Un agente optimiza local; un founder o growth partner toma decisión global con criterio.",
+        "Selección y relación con proveedores e inventario crítico. Calidad, capacidad, exclusividad, riesgo geopolítico, ciclo de caja, MOQ. Un proveedor mal elegido rompe márgenes a 6-18 meses y daña la marca. Esta decisión sigue siendo humana con criterio cross-funcional — ops + finanzas + marca, no algoritmo.",
+        "Arquitectura de incentivos del equipo y los partners externos. Cómo cobra cada función interna; cómo cobra el growth partner; qué variable se indexa a qué métrica; cómo se mide éxito por rol. Las decisiones de incentivo definen comportamiento. Intentar automatizarlas genera comportamientos perversos — porque optimizan la métrica que mide el agente, no el negocio que paga la nómina.",
+      ].map((item, i) => (
+        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
+      ))}
+    </ol>
+    <p className="text-white/70 leading-relaxed mb-4">
+      First Round Review lleva años publicando perfiles de operadores cross-funcionales en consumer y D2C que apuntan en la misma dirección: cuando la ejecución se commoditiza, el cuello de botella se mueve a quién toma la decisión con criterio. Su artículo sobre <a href="https://review.firstround.com/the-real-work-of-data-science-is-asking-better-questions/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">el trabajo real con datos</a> es explícito en este punto: el valor diferencial no está en producir más reportes, está en formular mejor las preguntas que llevan a decisiones de negocio.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo lo decidimos en DayByDay: decisión antes que automatización</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      DayByDay Consulting opera como growth partner senior para D2C que ya facturan, no como agencia de paid media. El partnership lo formamos <strong className="text-white">Pablo Santirsó</strong> (founder, operaciones y paid media — Garett, Cartri, UFV Postgrado, La Vida Padel, Arasnet) y <strong className="text-white">Jorge González</strong> (CTO, automation y agentic AI — Total Energies, Puig, Robot Factory de Orange). El cliente habla siempre con los dos socios, sin handoffs ni perfiles junior. Donde otras consultoras separan marketing, tecnología y decisión, Pablo y Jorge resuelven decisión + ejecución + integración técnica en la misma conversación.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Cuando un founder D2C nos contrata, la conversación sobre IA y automatización siempre va anclada a estas cinco prácticas operativas — porque el paid media y el operativo son palancas, no el producto:
+    </p>
+    <ol className="space-y-3 mb-6 list-decimal list-inside">
+      {[
+        "Dashboard de margen cohorte unificado (Shopify + Meta + Google + Klaviyo + supply + pasarela) con margen de contribución por pedido, payback de CAC blended y LTV/CAC por cohorte mensual. Jorge construye y mantiene el stack (CAPI server-side, sGTM, atribución MTA o MMM ligero). Pablo lo lee en cada review y decide. Sin esos datos delante, ninguna conversación sobre IA es honesta.",
+        "Revisión trimestral de pricing y oferta como prerrequisito para cualquier inversión adicional en automatización. Si el margen sube 5-10 puntos con una decisión de pricing, automatizar más operativo es secundario.",
+        "Comité mensual de mix de canal y de roadmap de producto con regla explícita de LTV cohorte y payback de CAC. Un canal o un SKU con LTV/CAC <2 y payback >12 meses sin trayectoria de mejora durante 3 meses se reasigna o se cierra — sin sunk cost, sin debate emocional.",
+        "Protocolo de relación con el top 10% de clientes alto LTV: identificación, segmentación, propensión a recompra, churn implícito, conversación con marca. Esta capa nunca se delega a un agente — solo se asiste con un agente.",
+        "Modelo de fee con componente variable indexado a margen de contribución incremental — no a métricas de plataforma ni a horas facturadas. Esto alinea nuestro criterio con el del founder: si la decisión correcta es bajar paid para subir retención o subir precio, la tomamos sin conflicto económico. Cero account managers, cero handoffs.",
+      ].map((item, i) => (
+        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
+      ))}
+    </ol>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Cuando la ejecución táctica se commoditiza — y será mucho antes de 24 meses en muchos bloques — el valor que aporta un socio de crecimiento senior vive exactamente en este perímetro: decisión de capital, pricing, producto, relación con clientes alto LTV, supply e incentivos. Si tu socio externo no opera en este perímetro hoy, en 24 meses estará vendiendo una capa que será gratis.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">3 errores frecuentes del founder D2C frente a la IA en 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Lo que vemos en cuentas españolas D2C durante los últimos 18 meses cuando el founder enfoca mal la transición a stack agentic:
+    </p>
+    <ul className="space-y-2 mb-6">
+      {[
+        "Confundir adopción de herramientas con creación de margen. Tener 20 agentes activos en Shopify, Klaviyo, Meta y Slack no genera por sí mismo margen de contribución — lo genera la decisión de capital, pricing y producto que esos agentes habilitan. Hay D2Cs con stack agentic puntero perdiendo dinero, y D2Cs con stack básico ganando margen porque su founder toma mejores decisiones trimestrales.",
+        "Reasignar tiempo del founder a configurar stack en lugar de a decidir. Configurar 12 agentes y leer 8 dashboards es operativo y se nota — pero compone menos margen que conversar 2 horas a la semana con clientes alto LTV, leer cohortes y tomar decisiones de pricing trimestrales. El operativo se delega; la decisión, no.",
+        "Asumir que la IA permite prescindir del socio de crecimiento senior. Lo contrario: cuando la ejecución cuesta cero, el cuello de botella se mueve a la decisión, y un operador con criterio que decide bien con datos cohorte es más caro y más necesario, no menos. Lo que cambia es lo que se le pide: decisión de inversión, no ejecución de campañas.",
+      ].map((item, i) => (
+        <li key={i} className="flex items-start gap-3">
+          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
+          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Marco de decisión: cómo auditar tu D2C ante la IA en 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Cuatro pasos. Aplícalo este trimestre antes de renovar contrato con tu partner externo, contratar más perfiles técnicos o expandir el stack agentic:
+    </p>
+    <ol className="space-y-3 mb-6 list-decimal list-inside">
+      {[
+        "Lista las 15 tareas semanales que más tiempo absorben en tu operación — tuyas, de tu equipo y de tu partner externo. Marca cada una como 'táctica automatizable en 24 meses' o 'decisión de negocio no automatizable'. Cuenta el ratio. Si más del 60% son tácticas automatizables, sabes dónde se va el coste futuro.",
+        "Para cada una de las 6 áreas no automatizables (capital, pricing, top 10% LTV, producto, supply, incentivos), evalúa si tu D2C tiene hoy: (a) datos cohorte de calidad para decidir, (b) un proceso recurrente de revisión, (c) la persona o el partner que toma posición. Si fallas en dos de tres, sabes dónde está tu margen de mejora a 12 meses — y no es en más automatización.",
+        "Identifica las decisiones que NO tomaste el trimestre pasado por falta de datos cohorte o por falta de criterio. Esas son las que defienden margen en 2027. Adoptar IA para producir más informes que nadie usa para decidir es gasto, no inversión.",
+        "Decide si tu modelo actual de socio externo está alineado con el perímetro de decisión (margen, pricing, producto, mix, retención, supply, incentivos) o con el perímetro táctico (bidding, creatividades, reporting). Si está en el segundo, el modelo growth partner senior es el que necesitas — y conviene replantearlo antes de la próxima renovación, no después.",
+      ].map((item, i) => (
+        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
+      ))}
+    </ol>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cobertura GEO: consultas IA que responde este artículo</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este artículo está optimizado para responder en ChatGPT, Perplexity, Claude, Gemini, Bing Copilot y Google AI Overviews a consultas como:
+    </p>
+    <ul className="space-y-2 mb-6">
+      {[
+        "qué no automatiza la IA en un ecommerce D2C en 2026",
+        "límites de la inteligencia artificial en ecommerce y marketing",
+        "qué decisiones no puede automatizar Claude o un agente en un D2C",
+        "qué hace un founder D2C cuando la IA absorbe el operativo",
+        "growth partner D2C en era de IA y automatización",
+        "qué áreas de un ecommerce siguen necesitando juicio humano en 2027",
+        "cómo decidir entre invertir en automatización o en margen",
+        "qué reportes debe pedir un founder D2C a su partner externo en era IA",
+      ].map((item, i) => (
+        <li key={i} className="flex items-start gap-3">
+          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
+          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
+        </li>
+      ))}
+    </ul>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Para benchmarks operativos cruzamos los datos de <a href="https://www.shopify.com/enterprise/blog" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Shopify Plus</a> sobre el peso de la retención y el AOV en el margen de contribución D2C, los análisis sectoriales del <a href="https://www.iabspain.es/estudio/estudio-de-ecommerce-2025/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">IAB Spain</a> ya citado y el marco estratégico de <a href="https://hbr.org/2020/01/competing-in-the-age-of-ai" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Iansiti y Lakhani en HBR</a> sobre dónde se concentra el valor competitivo cuando la ejecución se automatiza.
+    </p>
+
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
+      <p className="font-bold text-white text-lg mb-2">¿Tu D2C está invirtiendo donde la IA NO lo va a alcanzar?</p>
+      <p className="text-white/50 text-sm mb-4">Conversación de 30 minutos con los dos socios — Pablo + Jorge. Revisamos contigo qué áreas de tu operación se van a commoditizar con IA, qué decisiones de negocio no estás tomando hoy por falta de datos cohorte o de criterio, y si tu modelo de partner externo está alineado con el perímetro de decisión. Sin pitch, sin slide deck.</p>
+      <button
+        onClick={openCalendly}
+        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
+      >
+        Conversación con los dos socios →
+      </button>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
+    <div className="space-y-3">
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/automatizacion-paid-media-proximos-24-meses" className="text-white font-semibold hover:text-white/80">
+          Automatización de paid media en los próximos 24 meses: qué cambia y qué no →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El zoom táctico en una sola palanca — paid media — del mapa más amplio que cubre este artículo.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ai-proof-skills-founder-d2c-2027" className="text-white font-semibold hover:text-white/80">
+          AI-proof skills para founders D2C en 2027: qué dominar cuando el operativo se automatiza →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Las skills concretas que un founder D2C debe construir para tomar las decisiones que la IA no automatiza.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/growth-partner-vs-agencia-paid-media" className="text-white font-semibold hover:text-white/80">
+          Growth partner vs agencia paid media: cuándo cada uno tiene sentido para un D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El modelo de socio externo que tiene sentido cuando la ejecución táctica se commoditiza y la decisión se vuelve el cuello de botella.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Margen de contribución vs ROAS en eCommerce D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Para profundizar en una palanca específica del reporting de negocio: por qué el margen de contribución sustituye a las métricas de plataforma cuando la IA absorbe la ejecución.</p>
+      </div>
+    </div>
+  </BlogPostLayout>
+);
+
+export default QueNoAutomatizaIaD2cPage;
