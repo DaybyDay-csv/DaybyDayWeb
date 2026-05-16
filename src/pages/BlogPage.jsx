@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "ga4-meta-ads-eventos-custom-d2c",
+    title: "GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso (2026)",
+    excerpt: "Guía técnica completa de implementación GA4 + Meta Ads para eCommerce D2C España 2026: por qué GA4 sigue siendo el dashboard cross-channel obligatorio aunque tengas pixel + CAPI, los 10 eventos enhanced ecommerce estándar más 5-8 eventos custom específicos para D2C (lead_magnet_download, wishlist_add, high_intent_scroll_pdp, coupon_applied, video_pdp_played, chat_started, shipping_calculated, post_purchase_review), las 3 implementaciones técnicas comparadas (gtag.js, GTM web client-side, GTM server-side / sGTM con cobertura 92-98%), 3 rutas de sincronización GA4 → audiencias Meta (Customer Match, sGTM eventos simultáneos a CAPI, pipeline reverse ETL n8n/Hightouch), las 5 métricas obligatorias para cruzar GA4 vs Meta Ads Manager cada semana (Purchases con dedup, Revenue vs Shopify, % New Users por canal, Sessions facebook/cpc vs clicks Meta, Engagement rate por landing), Consent Mode v2 según AEPD con modelado, 7 errores frecuentes en cuentas D2C españolas y enfoque DayByDay Pablo+Jorge con pipeline n8n + GA4 BigQuery + Meta Marketing API + dashboard Looker Studio cross-channel.",
+    category: "Tracking",
+    date: "16 may 2026",
+    readingTime: "13 min",
+  },
+  {
     slug: "partnership-ads-meta-ugc-creators-d2c",
     title: "Partnership Ads en Meta para D2C: cómo escalar UGC con cuentas de creators (2026)",
     excerpt: "Guía operativa de Partnership Ads en Meta Ads (antes Branded Content Ads / whitelisting) para eCommerce D2C España 2026: qué son y diferencias con Branded Content Ads anteriores y Spark Ads de TikTok, perfil de creator que escala en D2C (micro 10K-80K seguidores con ER ≥3,5%, audiencia ES ≥60%), criterios de shortlist y método para identificar piezas orgánicas con Hook Rate ≥20%, configuración técnica paso a paso en Partnerships Hub + Ads Manager (Branded Content opt-in, invitación, post como paid partnership, use existing post ID), presupuesto mínimo viable 2.500-6.000€ con 4-6 creators × 1-2 piezas durante 10-14 días, por qué Hook Rate sube 25-40% y CPA baja 15-30% vs misma pieza servida desde cuenta marca, 4 tipos de Partnership Ads operativos (UGC product demo, testimonial, before/after, tutorial), 7 errores frecuentes en D2C españoles y enfoque DayByDay Pablo+Jorge con pipeline n8n + Meta Marketing API + Airtable para gestión y ranking semanal de creators.",
