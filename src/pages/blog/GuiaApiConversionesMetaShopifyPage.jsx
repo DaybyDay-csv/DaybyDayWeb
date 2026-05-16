@@ -237,6 +237,12 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El siguiente paso: arquitectura sGTM/Stape, deduplicación cliente-servidor y EMQ &gt;8,5</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ga4-meta-ads-eventos-custom-d2c" className="text-white font-semibold hover:text-white/80">
+          GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cómo extender la CAPI con eventos custom (wishlist, scroll PDP) compartidos a GA4 para audiencias BOFU</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/ios-atribucion-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
           iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 →
         </Link>

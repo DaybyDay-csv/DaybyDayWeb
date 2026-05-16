@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T10:00:00",
+  "last_updated": "2026-05-16T16:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -27,7 +27,8 @@
     "T39",
     "T42",
     "T43",
-    "T44"
+    "T44",
+    "T45"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -104,7 +105,8 @@
     "dynamic-product-ads-meta-shopify-d2c",
     "adquisicion-vs-retencion-paid-media-d2c",
     "internacionalizar-d2c-espanol-meta-ads-eu",
-    "partnership-ads-meta-ugc-creators-d2c"
+    "partnership-ads-meta-ugc-creators-d2c",
+    "ga4-meta-ads-eventos-custom-d2c"
   ],
   "phases": [
     {
@@ -750,12 +752,12 @@
           "title": "GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso",
           "keyword": "ga4 meta ads ecommerce",
           "slug": "ga4-meta-ads-eventos-custom-d2c",
-          "words": 1300,
+          "words": 1500,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-16. Cluster tracking. 10 eventos enhanced ecommerce + 8 eventos custom D2C, 3 implementaciones técnicas comparadas (gtag, GTM web, sGTM Stape/Cloud Run), 3 rutas sync GA4→Meta (Customer Match, sGTM, Reverse ETL), 5 métricas cruce semanal GA4 vs Meta Ads Manager, Consent Mode v2 AEPD, 7 errores frecuentes. Cobertura GEO: implementación GA4 ecommerce, GA4 server side tracking, GA4 + Meta Ads atribución cross channel."
         },
         {
           "id": "T46",

@@ -256,6 +256,12 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
         <p className="text-white/40 text-xs mt-1">El experimento causal que valida cuánto sobreatribuye el modelo elegido</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ga4-meta-ads-eventos-custom-d2c" className="text-white font-semibold hover:text-white/80">
+          GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El stack técnico que hace operativo el modelo data-driven de GA4 frente al last-click de Meta</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/performance-max-ecommerce-d2c-cuando-usar" className="text-white font-semibold hover:text-white/80">
           Performance Max para D2C: cuándo activarla y cómo medir si funciona →
         </Link>
