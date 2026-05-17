@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "decision-cuando-subir-precio-d2c",
+    title: "Cuándo subir precio antes que invertir más en paid: framework de decisión para D2C",
+    excerpt: "Framework de decisión para founders D2C que ya facturan ≥500K€/año: cuándo la siguiente palanca correcta es subir precio en lugar de escalar paid media. Tres condiciones operativas que disparan la decisión (margen contribución bajo umbral, elasticidad-precio baja, paid cerca de breakeven contributivo), tabla comparativa subir precio vs escalar paid en margen, payback CAC y LTV cohorte, rango sin caída de conversión por categoría (4-12%), protocolo de calibración y comunicación en 6 pasos, 5 señales de que tu D2C está subiendo paid cuando debería subir precio y enfoque DayByDay (Pablo + Jorge en cada conversación, sin handoffs).",
+    category: "Decisiones de negocio",
+    date: "17 may 2026",
+    readingTime: "13 min",
+  },
+  {
     slug: "rol-media-buyer-2027",
     title: "El rol del media buyer en 2027: por qué la categoría se evapora y qué la sustituye",
     excerpt: "Por qué el rol del media buyer freelance o intra-plataforma se evapora como categoría profesional defendible para D2C en 2027, cuando Meta Andromeda, Google AI Max y TikTok Symphony absorben la decisión táctica de bidding, segmentación y testing creativo. Tres figuras que sustituyen al media buyer (growth partner senior, stack IA, growth operator interno), tabla operativa media buyer vs growth partner senior, 5 señales de que tu D2C ya no necesita media buyer, 4 patrones de erosión del rol y marco de transición en 4 pasos. Enfoque DayByDay: Pablo + Jorge en cada conversación, criterio cross-funcional sobre margen de contribución, payback CAC y LTV cohorte — no ROAS plataforma.",
