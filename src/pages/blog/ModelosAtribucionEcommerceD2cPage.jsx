@@ -238,6 +238,12 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/dashboard-paid-media-founder-d2c" className="text-white font-semibold hover:text-white/80">
+          Dashboard de paid media: qué métricas debe ver un founder D2C cada lunes →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué el MER blended es la única métrica neutral del founder y supera a ROAS in-platform sobreatribuido</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
           Margen de contribución vs ROAS: la métrica que media buyers olvidan →
         </Link>

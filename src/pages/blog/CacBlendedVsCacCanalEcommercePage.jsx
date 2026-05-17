@@ -198,6 +198,12 @@ const CacBlendedVsCacCanalEcommercePage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/dashboard-paid-media-founder-d2c" className="text-white font-semibold hover:text-white/80">
+          Dashboard de paid media: qué métricas debe ver un founder D2C cada lunes →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Las 3 capas del dashboard del founder con MER blended y CAC adquisición específico como métricas north star</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/adquisicion-vs-retencion-paid-media-d2c" className="text-white font-semibold hover:text-white/80">
           Adquisición vs retención: cómo separar presupuestos de paid media en D2C →
         </Link>

@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "dashboard-paid-media-founder-d2c",
+    title: "Dashboard de paid media: qué métricas debe ver un founder D2C cada lunes (2026)",
+    excerpt: "Guía operativa del dashboard de paid media para founders D2C España 2026: por qué el founder necesita un cuadro de 8-10 métricas semanal (no 40-60 diarias), las 3 capas obligatorias (negocio MER blended + margen contribución + CAC blended vs LTV90, adquisición paid CAC adquisición específico + % New Customers + CPM rolling, eficiencia operativa Hook Rate + % spend creatividades >7d + campañas en learning), diferencia entre dashboard estratégico del founder y dashboard táctico del media buyer, comparativa Looker Studio gratis vs Triple Whale 199-799$ vs Northbeam 1.000-3.000$ vs Sheets manual por tramo de spend, cómo construir MER blended como métrica north star y por qué supera a ROAS in-platform, sistema de alertas Slack para umbrales críticos (MER<1,8x 3 días, CPA adquisición +35% baseline 7d, % spend learning >15%), cadencia semanal 4-6 min de lectura + 15-25 min conversación con media buyer, 5 errores frecuentes en cuentas D2C españolas y enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify Admin + Meta/Google/TikTok Marketing APIs + GA4 BigQuery + dashboard Looker Studio cross-channel cada lunes 8am con cohortes LTV-30/60/90.",
+    category: "Reporting",
+    date: "17 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "ga4-meta-ads-eventos-custom-d2c",
     title: "GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso (2026)",
     excerpt: "Guía técnica completa de implementación GA4 + Meta Ads para eCommerce D2C España 2026: por qué GA4 sigue siendo el dashboard cross-channel obligatorio aunque tengas pixel + CAPI, los 10 eventos enhanced ecommerce estándar más 5-8 eventos custom específicos para D2C (lead_magnet_download, wishlist_add, high_intent_scroll_pdp, coupon_applied, video_pdp_played, chat_started, shipping_calculated, post_purchase_review), las 3 implementaciones técnicas comparadas (gtag.js, GTM web client-side, GTM server-side / sGTM con cobertura 92-98%), 3 rutas de sincronización GA4 → audiencias Meta (Customer Match, sGTM eventos simultáneos a CAPI, pipeline reverse ETL n8n/Hightouch), las 5 métricas obligatorias para cruzar GA4 vs Meta Ads Manager cada semana (Purchases con dedup, Revenue vs Shopify, % New Users por canal, Sessions facebook/cpc vs clicks Meta, Engagement rate por landing), Consent Mode v2 según AEPD con modelado, 7 errores frecuentes en cuentas D2C españolas y enfoque DayByDay Pablo+Jorge con pipeline n8n + GA4 BigQuery + Meta Marketing API + dashboard Looker Studio cross-channel.",

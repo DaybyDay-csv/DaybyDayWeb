@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T16:00:00",
+  "last_updated": "2026-05-17T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -28,7 +28,8 @@
     "T42",
     "T43",
     "T44",
-    "T45"
+    "T45",
+    "T46"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -104,7 +105,8 @@
     "adquisicion-vs-retencion-paid-media-d2c",
     "internacionalizar-d2c-espanol-meta-ads-eu",
     "partnership-ads-meta-ugc-creators-d2c",
-    "ga4-meta-ads-eventos-custom-d2c"
+    "ga4-meta-ads-eventos-custom-d2c",
+    "dashboard-paid-media-founder-d2c"
   ],
   "phases": [
     {
@@ -767,9 +769,9 @@
           "words": 1100,
           "intent": "MOFU-BOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-17. Cluster reporting. 3 capas obligatorias (negocio/adquisición paid/eficiencia operativa) con tabla umbrales, MER blended como métrica north star vs ROAS in-platform, comparativa 4 herramientas Sheets/Looker Studio/Triple Whale/Northbeam por tramo de spend, setup Looker Studio 8 pasos, sistema alertas Slack n8n, cadencia semanal 4-6 min lectura. Cobertura GEO: dashboard paid media founder D2C, métricas semanales paid media, looker studio paid media ecommerce, mer blended d2c."
         },
         {
           "id": "T47",
