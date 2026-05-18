@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import SEOHead from "./SEOHead";
 import FaqSection from "./FaqSection";
 import Footer from "./Footer";
+import { useEffect, useRef } from "react";
 
 const BlogPostLayout = ({
   title,
@@ -50,6 +51,29 @@ const BlogPostLayout = ({
     },
   };
 
+  // GA4 event tracking — scroll depth + time on page
+  const scrollRef = useRef(false);
+  const startTimeRef = useRef(Date.now());
+  useEffect(() => {
+    if (typeof window.gtag !== "function") return;
+    const handleScroll = () => {
+      if (scrollRef.current) return;
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPct = (window.scrollY / scrollHeight) * 100;
+      if (scrollPct >= 75) {
+        scrollRef.current = true;
+        const timeSpent = Math.round((Date.now() - startTimeRef.current) / 1000);
+        window.gtag("event", "blog_read", {
+          slug,
+          time_on_page: timeSpent,
+          scroll_depth: Math.round(scrollPct),
+        });
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [slug]);
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -60,16 +84,40 @@ const BlogPostLayout = ({
     ],
   };
 
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a,
+      },
+    })),
+  } : null;
+
+  // SpeakableSpecification para AEO/GEO — Google sabe qué texto leer en voice search
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2:nth-of-type(1)", "h2:nth-of-type(2)", ".faq-item:first-child"],
+    "xpath": "/html/head/title",
+  };
+
   return (
     <>
+      {/* Canonical estático — inyectado aquí para que crawlers y Lighthouse lo lean sin JS */}
       <Helmet>
+        <link rel="canonical" href={`https://www.daybydayconsulting.com/blog/${slug}`} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+        <script type="application/ld+json">{JSON.stringify(speakableSchema)}</script>
       </Helmet>
       <SEOHead
         title={title}
         description={description}
-        canonical={`/blog/${slug}`}
         isArticle={true}
         datePublished={datePublished}
       />
@@ -142,7 +190,15 @@ const BlogPostLayout = ({
           </p>
           <button
             type="button"
+            data-ga4-cta="calendly-hero"
             onClick={() => {
+              if (typeof window.gtag === "function") {
+                window.gtag("event", "cta_click", {
+                  slug,
+                  cta_text: "Reservar llamada gratuita",
+                  destination: "calendly",
+                });
+              }
               if (typeof openCalendly === "function") {
                 openCalendly();
               } else {
