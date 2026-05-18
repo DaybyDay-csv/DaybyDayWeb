@@ -47,7 +47,12 @@ const CACvsLTVEcommercePage = ({ openCalendly }) => (
     category="Estrategia"
     keywords={["cac ltv ecommerce", "ltv cac d2c", "customer acquisition cost ecommerce", "lifetime value d2c", "payback period ecommerce"]}
     faqs={faqs}
-    openCalendly={openCalendly}
+    
+    relatedPosts=[
+    { slug: "cac-blended-vs-cac-canal-ecommerce", title: "CAC por canal: blended vs canal", description: "Cómo distinguir el coste real de adquisición por fuente" },
+    { slug: "cohort-analysis-ecommerce-d2c", title: "Cohort analysis para D2C", description: "Cómo leer cohorts para tomar decisiones de inversión" },
+    { slug: "suscripciones-ecommerce-ltv-cac-d2c", title: "Suscripciones: LTV y recurrencia", description: "Modelo de recurrencia para maximizar LTV en D2C" },
+  ]openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">
       <strong className="text-white">La relación CAC/LTV es la métrica que decide si un eCommerce D2C es escalable o solo parece rentable</strong>. Hemos auditado decenas de cuentas con ROAS de plataforma por encima de 3 que estaban perdiendo dinero — y otras con ROAS 2 que escalaban con caja sana. La diferencia siempre estuvo en el mismo sitio: cuánto cuesta de verdad un cliente nuevo y cuánto devuelve antes de que la caja se rompa.

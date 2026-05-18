@@ -34,7 +34,12 @@ const ChecklistAuditoriaCampanasPage = ({ openCalendly }) => (
     readingTime="7 min"
     category="Estrategia"
     faqs={faqs}
-    openCalendly={openCalendly}
+    
+    relatedPosts=[
+    { slug: "senales-agencia-no-rinde", title: "Señales de agencia que no rinde", description: "Diagnóstico antes de cambiar de proveedor" },
+    { slug: "como-elegir-agencia-meta-ads-ecommerce", title: "Cómo elegir agencia de Meta Ads", description: "Framework de evaluación de partners" },
+    { slug: "agencia-vs-inhouse", title: "Agencia vs equipo interno", description: "Pros, contras y cuándo cada modelo tiene sentido" },
+  ]openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-6">
       Una <strong>auditoría de campañas de paid media</strong> es la herramienta más eficaz para diagnosticar por qué tu inversión publicitaria no está dando el resultado esperado. Este checklist cubre los 6 bloques críticos que revisamos en DayByDay cuando auditamos una cuenta nueva — con preguntas concretas y valores de referencia para cada punto.

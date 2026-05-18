@@ -33,7 +33,12 @@ const GuiaMetaAdsEcommerceD2CEspana2026Page = ({ openCalendly }) => (
     readingTime="14 min"
     category="Meta Ads"
     faqs={faqs}
-    openCalendly={openCalendly}
+    
+    relatedPosts=[
+    { slug: "ab-testing-meta-ads-que-testar-primero", title: "A/B testing en Meta Ads: qué testear primero", description: "Framework de priorización para testear con rigor y velocidad" },
+    { slug: "como-mejorar-roas-meta-ads-7-palancas", title: "7 palancas para mejorar ROAS", description: "Framework completo de optimización de retorno publicitario" },
+    { slug: "caso-exito-ecommerce-d2c-roas-meta-ads", title: "Caso de éxito ROAS D2C", description: "Resultado real con metodología de growth partner" },
+  ]openCalendly={openCalendly}
   >
     <h2 className="text-2xl font-black mt-10 mb-4">Meta Ads ecommerce en España: lo que funcionaba en 2024 ya no funciona igual</h2>
     <p className="text-white/70 leading-relaxed mb-5">
