@@ -62,14 +62,15 @@ const BlogPostLayout = ({
 
   return (
     <>
+      {/* Canonical estático — inyectado aquí para que crawlers y Lighthouse lo lean sin JS */}
       <Helmet>
+        <link rel="canonical" href={`https://www.daybydayconsulting.com/blog/${slug}`} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       <SEOHead
         title={title}
         description={description}
-        canonical={`/blog/${slug}`}
         isArticle={true}
         datePublished={datePublished}
       />
