@@ -86,7 +86,19 @@ async function prerender() {
         timeout: 30000,
       });
       await page.waitForFunction(() => document.title && document.title.length > 0, { timeout: 5000 }).catch(() => {});
-      const html = await page.content();
+      let html = await page.content();
+      // Dedupe canonical tags: keep only the last one per page
+      const canonicalMatches = html.matchAll(/<link rel="canonical"[^>]*>/g);
+      const canonicals = [...canonicalMatches];
+      if (canonicals.length > 1) {
+        // Remove ALL canonicals first, then re-add the correct one for this route
+        html = html.replace(/<link rel="canonical"[^>]*>/g, '');
+        // Find the canonical that matches this route
+        const routeCanonical = canonicals.find(c => c.includes(route === '/' ? 'daybydayconsulting.com' : route));
+        const insertCanonical = routeCanonical ? routeCanonical[0] : canonicals[canonicals.length - 1][0];
+        // Inject canonical right after the first <head>
+        html = html.replace('<head>', `<head>${insertCanonical}`);
+      }
       const outDir = route === "/" ? DIST : join(DIST, route.replace(/^\//, ""));
       await mkdir(outDir, { recursive: true });
       await writeFile(join(outDir, "index.html"), html);
