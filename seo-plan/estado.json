@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18T09:00:00",
+  "last_updated": "2026-05-19T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -30,7 +30,8 @@
     "T44",
     "T45",
     "T46",
-    "T47"
+    "T47",
+    "T48"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -108,7 +109,8 @@
     "partnership-ads-meta-ugc-creators-d2c",
     "ga4-meta-ads-eventos-custom-d2c",
     "dashboard-paid-media-founder-d2c",
-    "whatsapp-meta-ads-funnel-bofu-d2c"
+    "whatsapp-meta-ads-funnel-bofu-d2c",
+    "smart-bidding-google-ads-d2c"
   ],
   "phases": [
     {
@@ -799,9 +801,9 @@
           "words": 1100,
           "intent": "MOFU",
           "priority": "MEDIA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-19. Cluster google-ads. 5 estrategias Smart Bidding con tabla decisión por volumen conv/mes y vertical D2C, prerrequisito Enhanced Conversions + GA4 Consent Mode v2 + sGTM (match rate 50-65%→80-90%, CPA real -12-22%), protocolo intervención manual 5 reglas (±15% cada 7-10d, no tocar presupuesto en learning, exclusiones antes de bajar puja, una intervención semanal, cambios estructurales solo con diagnóstico), Performance Max 100% Smart Bidding obligatorio con ≥30 conv/mes y CPA×50-60 + product groups por margen + brand standalone, presupuesto mínimo CPA×30 Search/Shopping, importar offline conversions Shopify devoluciones+segunda compra+LTV60 vía Customer Match, 6 errores frecuentes D2C españoles. Caso real cosmética AOV 78€ 22K€/mes spend Google CPA blended -19% %spend learning 24%→6% margen contribución +4 pts en 90d. Cobertura GEO: smart bidding google ads ecommerce, target roas google ads d2c, enhanced conversions google ads shopify, performance max smart bidding."
         },
         {
           "id": "T49",

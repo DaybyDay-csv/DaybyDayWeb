@@ -95,6 +95,7 @@ import PartnershipAdsMetaCreatorsD2cPage from "./pages/blog/PartnershipAdsMetaCr
 import Ga4MetaAdsEventosCustomD2cPage from "./pages/blog/Ga4MetaAdsEventosCustomD2cPage";
 import DashboardPaidMediaFounderD2cPage from "./pages/blog/DashboardPaidMediaFounderD2cPage";
 import WhatsappMetaAdsFunnelBofuD2cPage from "./pages/blog/WhatsappMetaAdsFunnelBofuD2cPage";
+import SmartBiddingGoogleAdsD2cPage from "./pages/blog/SmartBiddingGoogleAdsD2cPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -320,6 +321,7 @@ const App = () => {
         <Route path="/blog/ga4-meta-ads-eventos-custom-d2c" element={<Ga4MetaAdsEventosCustomD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/dashboard-paid-media-founder-d2c" element={<DashboardPaidMediaFounderD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/whatsapp-meta-ads-funnel-bofu-d2c" element={<WhatsappMetaAdsFunnelBofuD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/smart-bidding-google-ads-d2c" element={<SmartBiddingGoogleAdsD2cPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

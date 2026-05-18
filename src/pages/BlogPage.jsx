@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "smart-bidding-google-ads-d2c",
+    title: "Smart Bidding en Google Ads para D2C: cuándo confiar y cuándo intervenir (2026)",
+    excerpt: "Guía operativa de Smart Bidding en Google Ads para eCommerce D2C España 2026: qué es y diferencias con pujas manuales, las 5 estrategias (Maximize Conversions, Maximize Conversion Value, Target CPA, Target ROAS, Enhanced CPC) con tabla decisión por volumen de conversiones y vertical D2C, periodo de aprendizaje real 14-21 días, presupuesto mínimo CPA×30 Search/Shopping y CPA×50-60 Performance Max, prerrequisito crítico Enhanced Conversions + GA4 Consent Mode v2 + sGTM (sube match rate 50-65%→80-90%, baja CPA real 12-22%), protocolo de intervención manual segura (cambios máximo ±15% cada 7-10 días, no tocar presupuesto en learning, exclusiones antes de bajar puja), Performance Max como caso especial 100% Smart Bidding con channel-level reporting + holdout geo test, 6 errores frecuentes en cuentas D2C españolas (tROAS sin volumen, conversiones mezcladas, tROAS exacto sin colchón, cambios diarios, sin Enhanced Conversions, PMax sin product groups por margen), enfoque DayByDay Pablo+Jorge con pipeline n8n + Google Ads API + Shopify Admin + GA4 BigQuery + offline conversions feed que cruza Smart Bidding × cohorte LTV90 × CAC adquisición específico por estrategia y caso real cosmética 22K€/mes CPA blended -19% y margen contribución +4 pts en 90d.",
+    category: "Google Ads",
+    date: "19 may 2026",
+    readingTime: "10 min",
+  },
+  {
     slug: "whatsapp-meta-ads-funnel-bofu-d2c",
     title: "WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que más escalan (2026)",
     excerpt: "Guía operativa del funnel Click-to-WhatsApp (CTWA) + Meta Ads para eCommerce D2C España 2026: qué es un funnel WhatsApp + Meta Ads y cuándo activarlo (AOV ≥80€, margen ≥30%, ticket consultivo), CR conversación→pedido realista 18-32% vs 1,5-3,5% landing tradicional, comparativa coste-beneficio 4 BSPs (Twilio, 360dialog, Respond.io, MessageBird) con tarifas Meta por país, arquitectura técnica end-to-end (CTWA + WhatsApp Business Platform + Shopify checkout pre-llenado + CAPI for WhatsApp), 4 plantillas de flujo conversacional por intent (cold educativo, warm cierre directo, abandono carrito, post-purchase recurrencia), tabla decisión AOV vs flujo automatizado vs operador humano por vertical D2C, por qué CTWA es palanca defensiva contra la pérdida de señal iOS 17/18 (atribución 82-92% vs 55-65% web), 6 errores frecuentes en cuentas D2C españolas (sin respuesta <5min, sin sync CAPI, sin opt-in AEPD, mensaje genérico), enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify Admin API + Meta Marketing API + Twilio/Respond.io que cruza conversación × pedido × cohorte LTV90 y atribuye CAC adquisición específico por flujo WhatsApp.",
