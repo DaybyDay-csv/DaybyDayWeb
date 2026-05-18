@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "whatsapp-meta-ads-funnel-bofu-d2c",
+    title: "WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que más escalan (2026)",
+    excerpt: "Guía operativa del funnel Click-to-WhatsApp (CTWA) + Meta Ads para eCommerce D2C España 2026: qué es un funnel WhatsApp + Meta Ads y cuándo activarlo (AOV ≥80€, margen ≥30%, ticket consultivo), CR conversación→pedido realista 18-32% vs 1,5-3,5% landing tradicional, comparativa coste-beneficio 4 BSPs (Twilio, 360dialog, Respond.io, MessageBird) con tarifas Meta por país, arquitectura técnica end-to-end (CTWA + WhatsApp Business Platform + Shopify checkout pre-llenado + CAPI for WhatsApp), 4 plantillas de flujo conversacional por intent (cold educativo, warm cierre directo, abandono carrito, post-purchase recurrencia), tabla decisión AOV vs flujo automatizado vs operador humano por vertical D2C, por qué CTWA es palanca defensiva contra la pérdida de señal iOS 17/18 (atribución 82-92% vs 55-65% web), 6 errores frecuentes en cuentas D2C españolas (sin respuesta <5min, sin sync CAPI, sin opt-in AEPD, mensaje genérico), enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify Admin API + Meta Marketing API + Twilio/Respond.io que cruza conversación × pedido × cohorte LTV90 y atribuye CAC adquisición específico por flujo WhatsApp.",
+    category: "Canales emergentes",
+    date: "18 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "dashboard-paid-media-founder-d2c",
     title: "Dashboard de paid media: qué métricas debe ver un founder D2C cada lunes (2026)",
     excerpt: "Guía operativa del dashboard de paid media para founders D2C España 2026: por qué el founder necesita un cuadro de 8-10 métricas semanal (no 40-60 diarias), las 3 capas obligatorias (negocio MER blended + margen contribución + CAC blended vs LTV90, adquisición paid CAC adquisición específico + % New Customers + CPM rolling, eficiencia operativa Hook Rate + % spend creatividades >7d + campañas en learning), diferencia entre dashboard estratégico del founder y dashboard táctico del media buyer, comparativa Looker Studio gratis vs Triple Whale 199-799$ vs Northbeam 1.000-3.000$ vs Sheets manual por tramo de spend, cómo construir MER blended como métrica north star y por qué supera a ROAS in-platform, sistema de alertas Slack para umbrales críticos (MER<1,8x 3 días, CPA adquisición +35% baseline 7d, % spend learning >15%), cadencia semanal 4-6 min de lectura + 15-25 min conversación con media buyer, 5 errores frecuentes en cuentas D2C españolas y enfoque DayByDay Pablo+Jorge con pipeline n8n + Shopify Admin + Meta/Google/TikTok Marketing APIs + GA4 BigQuery + dashboard Looker Studio cross-channel cada lunes 8am con cohortes LTV-30/60/90.",

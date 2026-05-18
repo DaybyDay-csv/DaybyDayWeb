@@ -229,6 +229,12 @@ const IosAtribucionMetaAds2026D2cPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">El modelado complementario que cubre el gap residual de iOS 17/18</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/whatsapp-meta-ads-funnel-bofu-d2c" className="text-white font-semibold hover:text-white/80">
+          WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que más escalan →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">CTWA como palanca defensiva iOS: atribución 82-92% vs 55-65% web</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

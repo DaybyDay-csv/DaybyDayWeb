@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T09:00:00",
+  "last_updated": "2026-05-18T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -29,7 +29,8 @@
     "T43",
     "T44",
     "T45",
-    "T46"
+    "T46",
+    "T47"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -106,7 +107,8 @@
     "internacionalizar-d2c-espanol-meta-ads-eu",
     "partnership-ads-meta-ugc-creators-d2c",
     "ga4-meta-ads-eventos-custom-d2c",
-    "dashboard-paid-media-founder-d2c"
+    "dashboard-paid-media-founder-d2c",
+    "whatsapp-meta-ads-funnel-bofu-d2c"
   ],
   "phases": [
     {
@@ -783,9 +785,9 @@
           "words": 1200,
           "intent": "MOFU-BOFU",
           "priority": "MEDIA",
-          "status": "pending",
+          "status": "completed",
           "type": "article",
-          "note": ""
+          "note": "Publicado 2026-05-18. Cluster canales-emergentes. Funnel CTWA Click-to-WhatsApp + Meta Ads para BOFU D2C: cuándo activar por AOV ≥80€ y margen ≥30%, tabla decisión 8 verticales con CR esperado conv→pedido, stack técnico end-to-end (BSP Twilio/360dialog/Respond.io/MessageBird + Shopify Storefront API + CAPI for WhatsApp + n8n+BigQuery), 4 plantillas flujo conversacional por intent (cold educativo, warm cierre, abandono carrito, post-purchase), CTWA como palanca defensiva iOS 17/18 (atribución 82-92% vs 55-65% web), 6 errores frecuentes con AEPD y multas opt-in. Caso real cosmética técnica AOV 95€ CR 12%→27% CPA -23% atribución iOS 58%→87% en 75d."
         },
         {
           "id": "T48",

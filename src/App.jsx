@@ -94,6 +94,7 @@ import InternacionalizarD2cEspanolMetaAdsEuPage from "./pages/blog/Internacional
 import PartnershipAdsMetaCreatorsD2cPage from "./pages/blog/PartnershipAdsMetaCreatorsD2cPage";
 import Ga4MetaAdsEventosCustomD2cPage from "./pages/blog/Ga4MetaAdsEventosCustomD2cPage";
 import DashboardPaidMediaFounderD2cPage from "./pages/blog/DashboardPaidMediaFounderD2cPage";
+import WhatsappMetaAdsFunnelBofuD2cPage from "./pages/blog/WhatsappMetaAdsFunnelBofuD2cPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -318,6 +319,7 @@ const App = () => {
         <Route path="/blog/partnership-ads-meta-ugc-creators-d2c" element={<PartnershipAdsMetaCreatorsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/ga4-meta-ads-eventos-custom-d2c" element={<Ga4MetaAdsEventosCustomD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/dashboard-paid-media-founder-d2c" element={<DashboardPaidMediaFounderD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/whatsapp-meta-ads-funnel-bofu-d2c" element={<WhatsappMetaAdsFunnelBofuD2cPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

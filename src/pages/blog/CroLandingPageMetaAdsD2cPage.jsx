@@ -297,6 +297,12 @@ const CroLandingPageMetaAdsD2cPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Sin tracking deduplicado el A/B testing de landing miente — palanca técnica obligatoria</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/whatsapp-meta-ads-funnel-bofu-d2c" className="text-white font-semibold hover:text-white/80">
+          WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que más escalan →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Cuándo migrar de landing a CTWA: AOV ≥80€ con producto consultivo y CR conversación 18-32%</p>
+      </div>
     </div>
   </BlogPostLayout>
 );
