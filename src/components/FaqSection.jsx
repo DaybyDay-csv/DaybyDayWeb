@@ -1,21 +1,10 @@
 import { Helmet } from "react-helmet-async";
 
 const FaqSection = ({ faqs, title = "Preguntas frecuentes" }) => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(({ q, a }) => ({
-      "@type": "Question",
-      "name": q,
-      "acceptedAnswer": { "@type": "Answer", "text": a },
-    })),
-  };
+  // FAQPage schema removed — BlogPostLayout already emits it
+  // to avoid duplicate schema conflicts that break rich results
 
   return (
-    <>
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(schema)}</script>
-      </Helmet>
       <section
         className="bg-[#0f0c0c] py-16 px-4"
         aria-label="Preguntas frecuentes"
@@ -52,7 +41,6 @@ const FaqSection = ({ faqs, title = "Preguntas frecuentes" }) => {
           </div>
         </div>
       </section>
-    </>
   );
 };
 

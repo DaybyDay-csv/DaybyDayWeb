@@ -60,6 +60,27 @@ const BlogPostLayout = ({
     ],
   };
 
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a,
+      },
+    })),
+  } : null;
+
+  // SpeakableSpecification para AEO/GEO — Google sabe qué texto leer en voice search
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2:nth-of-type(1)", "h2:nth-of-type(2)", ".faq-item:first-child"],
+    "xpath": "/html/head/title",
+  };
+
   return (
     <>
       {/* Canonical estático — inyectado aquí para que crawlers y Lighthouse lo lean sin JS */}
@@ -67,6 +88,8 @@ const BlogPostLayout = ({
         <link rel="canonical" href={`https://www.daybydayconsulting.com/blog/${slug}`} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+        <script type="application/ld+json">{JSON.stringify(speakableSchema)}</script>
       </Helmet>
       <SEOHead
         title={title}
