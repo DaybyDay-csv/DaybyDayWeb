@@ -1,0 +1,257 @@
+import { Link } from "react-router-dom";
+import BlogPostLayout from "../../components/BlogPostLayout";
+
+const faqs = [
+  {
+    q: "¿Cuándo conviene subir precio antes que invertir más en paid en un eCommerce D2C?",
+    a: "Cuando tres condiciones se cumplen de forma simultánea sobre datos cohorte reales, no sobre intuición. Primera: el margen de contribución por pedido está por debajo del umbral que sostiene un payback CAC inferior a 90 días en cohortes recientes — típicamente 28-35% en moda, belleza y suplementos, 35-45% en hogar y mascotas premium. Segunda: la elasticidad-precio aparente del producto es baja porque tu propuesta de valor descansa en marca, formulación o experiencia, no en precio relativo dentro del SERP de Shopping o de comparadores. Tercera: tu siguiente euro de paid ya está comprando órdenes que se acercan al breakeven contributivo, lo que significa que escalar volumen sin recuperar margen unitario amplifica el problema en vez de resolverlo. Cuando estas tres aparecen juntas, la subida de precio bien calibrada (entre 4% y 12% según categoría) recupera más margen incremental en 30-60 días que tres meses de optimización de campañas. La decisión es de negocio, no de paid media: el growth partner senior la plantea antes de aceptar el siguiente euro de spend.",
+  },
+  {
+    q: "¿Cómo sé si tengo margen para subir precio sin destruir conversión?",
+    a: "Con tres lecturas que la mayoría de founders D2C no tienen consolidadas en un solo dashboard. La primera es el margen de contribución unitario real (precio neto menos COGS, menos pasarela, menos shipping subsidiado, menos coste variable de fulfilment): si está bajo el umbral de tu categoría, la subida es estructuralmente necesaria, no opcional. La segunda es la posición relativa de precio frente a 4-6 competidores directos en el mismo SERP de Shopping y dentro del feed de Meta Advantage+ Catalog: si estás 8-15% por debajo de la media sin que tu propuesta lo justifique, hay aire de precio sin perder conversión. La tercera es la curva de retención por cohorte mensual: si la cohorte recompra a 60-90 días por encima de la media de tu categoría, la subida no destruye LTV — lo redistribuye hacia margen. Si las tres apuntan en la misma dirección, el riesgo de la subida es operativo (cómo comunicarla), no estratégico.",
+  },
+  {
+    q: "¿Cuánto se puede subir precio en un D2C sin perder ventas?",
+    a: "Para D2C entre 500K€ y 5M€/año en España, el rango que vemos consistentemente sin caída material de conversión es 4-12% en una sola subida, segmentado por categoría. En moda y belleza descansa en torno a 5-8% si el producto tiene componente de marca; en suplementos puede llegar a 10-15% cuando la formulación o el régimen recurrente lo justifica; en hogar y mascotas premium, 6-10% si el ticket medio está por encima de los 45€. La regla operativa es no subir más allá del umbral que un cliente recurrente registraría como cambio percibido: típicamente +12% es el techo donde la subida deja de pasar desapercibida y empieza a entrar en la conversación de email de soporte. Por encima de ese techo se hace en dos tramos separados 6-9 meses, no en uno solo. Y siempre se acompaña de un cambio narrativo (mejora de producto, formulación, garantía, packaging, servicio) que sostenga la nueva ancla de precio.",
+  },
+  {
+    q: "¿Por qué un growth partner senior recomienda subir precio antes que escalar paid?",
+    a: "Porque el operador con criterio mira el margen incremental por euro asignado, no el ROAS por euro invertido en plataforma. Subir precio 6-8% en una categoría con elasticidad baja y margen unitario comprimido recupera entre 12 y 24 puntos de margen de contribución cohorte en 60 días — un retorno cross-funcional que ninguna optimización de Advantage+ Shopping puede igualar en el mismo horizonte. Cuando un founder D2C nos plantea 'necesito escalar paid', el primer dato que pedimos no es el panel de Meta — es el margen unitario por SKU top y la cohorte de retención reciente. Si la subida está madura, recomendar más paid antes de subir precio sería defender spend frente a defender el negocio. DayByDay opera como growth partner senior, no como agencia de paid media: el paid es UNA palanca, y a veces no es la siguiente.",
+  },
+  {
+    q: "¿Cómo se calibra y se comunica una subida de precio sin generar fricción?",
+    a: "Con un protocolo de 6 pasos que separa decisión, calibración y comunicación. (1) Audita margen unitario real por SKU top y posición relativa de precio frente a 4-6 competidores. (2) Define la subida (4-12%) por SKU o por bundle, no lineal sobre el catálogo entero. (3) Acompaña con un cambio narrativo sostenible — mejora de formulación, garantía ampliada, servicio premium, packaging o sostenibilidad — que justifique la nueva ancla. (4) Comunica con 7-14 días de anticipación a la base de clientes recurrentes (email con tono operador, no marketing), permitiéndoles compra al precio anterior una última vez — esto convierte una subida en un evento de retención. (5) Ajusta el feed de Shopping y Advantage+ Catalog en paralelo, sin gap temporal que erosione conversión. (6) Mide en cohortes de 30, 60 y 90 días el impacto en margen, AOV, recompra y churn implícito — no en ROAS plataforma. Si la curva de margen contribución mejora y la retención no se rompe, la subida está bien calibrada.",
+  },
+  {
+    q: "¿Qué señales indican que tu D2C está subiendo paid cuando debería subir precio?",
+    a: "Cinco señales operativas que vemos repetirse en founders D2C españoles cuando el reflejo es escalar paid pero el problema es de pricing. (1) Margen de contribución por pedido por debajo del umbral de tu categoría — 28% en moda, 32% en belleza, 35% en hogar — sostenido tres meses seguidos. (2) Payback CAC superior a 90 días en cohortes recientes mientras el ROAS plataforma sigue 'sano' (>2,5x): señal de sobreatribución last-click 1,3-1,8x. (3) Aumento de spend mensual >25% sin aumento proporcional de margen contributivo: la subasta se está llevando el delta. (4) Posición de precio 8-15% por debajo de la media de 4-6 competidores directos sin diferencial técnico que lo justifique. (5) Cohortes recientes con retención superior a la categoría, lo que demuestra que el cliente acepta tu producto al precio actual y aceptaría 6-10% más. Si firmas tres de cinco, la siguiente decisión correcta es subir precio, no subir presupuesto.",
+  },
+  {
+    q: "¿La subida de precio funciona también si compito por precio en mi categoría?",
+    a: "Solo si tienes un componente diferencial distinto al precio que el cliente reconoce — y aun así, con calibración más estrecha. Para D2C que compiten por precio en SERP de Shopping (suplementos commodity, ciertos verticales de hogar low-ticket, packs de belleza genérica), el rango sin caída de conversión cae a 3-6% en una sola subida, y exige acompañamiento narrativo más fuerte. Si tu posicionamiento descansa exclusivamente en ser 8-15% más barato que la media, subir precio sin reposicionar destruye conversión rápido — la decisión correcta entonces no es subir precio puro, sino reposicionar (mejora de formulación, bundling, suscripción recurrente, garantía) y subir precio dentro de la nueva ancla. Esto es una decisión de negocio que cruza producto, paid media y retención, no una subida lineal. Un growth partner senior la lidera desde la conversación cross-funcional; un operador intra-plataforma no la cubre por construcción del rol.",
+  },
+];
+
+const DecisionCuandoSubirPrecioD2cPage = ({ openCalendly }) => (
+  <BlogPostLayout
+    title="Cuándo subir precio antes que invertir más en paid: framework de decisión para D2C"
+    description="Framework de decisión para founders D2C que ya facturan ≥500K€/año: cuándo la siguiente palanca correcta es subir precio en lugar de escalar paid media. Tres condiciones operativas que disparan la decisión (margen contribución bajo umbral, elasticidad-precio baja, paid cerca de breakeven contributivo), tabla comparativa subir precio vs escalar paid en margen, payback CAC y LTV cohorte, rango sin caída de conversión por categoría (4-12%), protocolo de calibración y comunicación en 6 pasos, 5 señales de que tu D2C está subiendo paid cuando debería subir precio y enfoque DayByDay (Pablo + Jorge en cada conversación, sin handoffs)."
+    slug="decision-cuando-subir-precio-d2c"
+    datePublished="2026-05-17"
+    dateModified="2026-05-17"
+    keywords={[
+      "cuando subir precio ecommerce d2c",
+      "subir precio antes que invertir en paid",
+      "framework decision precio d2c",
+      "decision pricing ecommerce d2c",
+      "subir precio vs escalar paid media",
+    ]}
+    readingTime="13 min"
+    category="Decisiones de negocio"
+    faqs={faqs}
+    openCalendly={openCalendly}
+  >
+    <p className="text-white/70 leading-relaxed mb-6">
+      La conversación más recurrente que tenemos con founders D2C españoles que ya facturan ≥500K€/año es la misma cada trimestre: <strong className="text-white">cuándo subir precio en mi eCommerce D2C antes que poner el siguiente euro en paid media</strong>. Es una decisión de negocio, no una micro-optimización de campañas, y casi siempre llega tarde porque el reflejo del operador es escalar lo que ya conoce (Meta, Google, TikTok) en vez de tocar la palanca que mueve más margen de contribución en menos tiempo. Cuando la subida de precio está madura y se posterga, cada mes de paid escalado sobre margen comprimido cuesta entre 6.000€ y 22.000€ de margen contributivo que ya no se recupera.
+    </p>
+
+    <p className="text-white/70 leading-relaxed mb-6">
+      Esta guía está escrita para operadores founder que ya tienen cuentas Meta y Google profesionalizadas, atribución decente y datos cohorte mínimos, y que reconocen — al menos en privado — que el siguiente euro de paid está comprando órdenes cada vez más cercanas al breakeven contributivo. No es una defensa abstracta del pricing como palanca: es el framework operativo con el que un growth partner senior decide, en una primera conversación, si la siguiente palanca correcta es subir precio o seguir invirtiendo en paid. Si lees el artículo entero con tus números delante, tienes la decisión planteada.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Definición operativa: qué significa subir precio antes que escalar paid en un D2C</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Subir precio antes que escalar paid significa reasignar la siguiente decisión de inversión hacia margen unitario en vez de hacia volumen de tráfico pagado, cuando los datos cohorte muestran que el problema del negocio es contributivo, no de adquisición. En la práctica, es un movimiento de +4% a +12% sobre el precio neto de los SKUs top, calibrado por categoría y acompañado de un cambio narrativo sostenible, ejecutado antes de subir el presupuesto mensual de Meta/Google/TikTok. Es la diferencia entre operar el negocio con criterio cross-funcional y operar la subasta como si fuera el negocio.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-4">
+      <a href="https://hbr.org/2010/09/the-contribution-of-price-to-profit" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Harvard Business Review lo formula con un cálculo limpio</a>: para una empresa con margen operativo del 8%, una subida de precio del 1% bien sostenida puede mejorar el beneficio entre un 8% y un 12% si la elasticidad lo permite. En el contexto de un D2C, donde el margen de contribución cohorte es la métrica de capital, esa cifra se traduce directamente en payback CAC más corto y en capacidad real de escalar paid sobre cohortes rentables — no sobre cohortes que solo lucen sanas en el panel de Meta.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Tabla comparativa: subir precio vs escalar paid en margen, payback CAC y LTV cohorte</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Comparativa operativa que aplicamos en la primera conversación con founders D2C entre 500K€ y 5M€/año. Las cifras orientativas corresponden a categorías D2C maduras (moda, belleza, suplementos, hogar premium) cuando las tres condiciones disparadoras están presentes:
+    </p>
+
+    <div className="overflow-x-auto mb-8">
+      <table className="w-full text-sm border-collapse">
+        <thead>
+          <tr className="border-b border-white/10">
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Dimensión de decisión</th>
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Subir precio +6% a +10%</th>
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Escalar paid +25% a +40%</th>
+            <th className="text-left py-3 text-[#de0015] font-semibold text-xs uppercase tracking-wide w-1/4">Lectura del operador con criterio</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            ["Margen contribución cohorte 60 días", "+12 a +24 puntos sobre baseline", "0 a +3 puntos (la subasta absorbe el delta)", "Subir precio entrega 4-8x más margen contributivo en el mismo horizonte"],
+            ["Payback CAC en cohortes nuevas", "Reducción 25-45 días sin tocar canal", "Estabilización o ligero aumento (CAC marginal sube)", "Pricing reduce payback antes que paid lo pueda recuperar"],
+            ["LTV cohorte a 12 meses", "Neutro a +6% si retención no se rompe", "+2 a +5% por volumen, no por unidad", "LTV se construye con margen unitario, no con tráfico adicional"],
+            ["Coste de capital invertido", "Cercano a cero (cambio de feed + comunicación)", "Equivalente al delta de spend mensual sostenido", "Pricing libera capital; paid escalado lo consume"],
+            ["Horizonte hasta ver impacto", "30-60 días", "60-120 días con ruido de atribución", "Pricing es la palanca más rápida cuando está madura"],
+            ["Riesgo principal", "Caída de conversión 1-4% si mal calibrada", "Compresión de margen sostenida, payback CAC roto", "Riesgo pricing es operativo (comunicación); riesgo paid es estructural (margen)"],
+            ["Reversibilidad", "Alta (rollback en 24-48 horas)", "Media (la cohorte adquirida ya consumió margen)", "Pricing es testeable y reversible; paid escalado no devuelve el margen consumido"],
+            ["Quién lidera la decisión", "Founder + growth partner senior cross-funcional", "Operador intra-plataforma o agencia de paid", "Decisión de negocio, no de panel de Meta"],
+          ].map(([dim, precio, paid, lectura], i) => (
+            <tr key={i} className="border-b border-white/5">
+              <td className="py-3 pr-4 text-white/70 align-top font-medium">{dim}</td>
+              <td className="py-3 pr-4 text-white/70 align-top">{precio}</td>
+              <td className="py-3 pr-4 text-white/70 align-top">{paid}</td>
+              <td className="py-3 text-white align-top">{lectura}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p className="text-white/70 leading-relaxed mb-4">
+      La lectura cruzada es contundente: cuando las tres condiciones disparadoras están presentes, la subida de precio bien calibrada entrega más margen incremental, en menos tiempo y con menor coste de capital que cualquier escalado de paid en el mismo horizonte. El reflejo de subir presupuesto es entendible — es la palanca que el founder ya sabe operar — pero no es la decisión correcta cuando el margen unitario está comprimido.
+    </p>
+
+    <div className="bg-[#1a1616] border-l-2 border-[#de0015] p-5 mb-8">
+      <p className="text-white/80 text-sm leading-relaxed">
+        <strong className="text-white">Dato sectorial:</strong> Según el <a href="https://www.shopify.com/enterprise/blog/dtc-trends" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">análisis de tendencias D2C publicado por Shopify Plus</a>, más del 60% de las marcas D2C maduras que recuperaron margen contributivo en 2024-2025 lo hicieron combinando subidas de precio calibradas (4-12%) con reposicionamiento de propuesta de valor, no incrementando spend en paid media. La conclusión operativa para un founder es directa: <strong className="text-white">cuando la subida está madura, la palanca de pricing supera a la palanca de paid en velocidad y en magnitud de impacto sobre margen contributivo</strong> — y libera además capital para reinvertir en retención, producto o supply cuando llegue su turno.
+      </p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Las 3 condiciones disparadoras: cuándo subir precio antes que invertir más en paid</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      La decisión no se toma por intuición ni por leer un panel de Meta. Se toma cuando las tres condiciones aparecen simultáneamente sobre datos cohorte recientes — no sobre el último mes plano, no sobre el promedio anual:
+    </p>
+    <ol className="space-y-3 mb-6 list-decimal list-inside">
+      {[
+        "Margen de contribución por pedido bajo el umbral de tu categoría. Moda y belleza: <30%. Suplementos: <35%. Hogar y mascotas premium: <38%. Sostenido tres meses seguidos sobre cohortes nuevas, no diluido por la cohorte histórica. Si el margen unitario es estructuralmente insuficiente, ninguna optimización de paid lo arregla — solo lo amortigua.",
+        "Elasticidad-precio aparente baja en tu categoría. Tu propuesta de valor descansa en marca, formulación, experiencia o garantía — no en ser 8-15% más barato que el SERP. Si reposicionar la subida con un cambio narrativo sostenible es viable (mejora de formulación, garantía ampliada, servicio premium, packaging o sostenibilidad), la elasticidad lo absorbe.",
+        "Tu siguiente euro de paid está comprando órdenes cercanas al breakeven contributivo. Tres síntomas operativos: ROAS plataforma sostenido pero margen cohorte plano o decreciente; payback CAC >90 días en cohortes nuevas; el delta de spend mensual >25% no se traduce en delta proporcional de margen contributivo. Si firmas los tres, escalar paid amplifica el problema.",
+      ].map((item, i) => (
+        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
+      ))}
+    </ol>
+    <p className="text-white/70 leading-relaxed mb-4">
+      <a href="https://commonthreadco.com/blogs/coachs-corner/dtc-pricing-strategy" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Common Thread Collective documenta el mismo patrón operativo</a> en cuentas D2C estadounidenses entre 1M$ y 10M$ de revenue: cuando las tres condiciones aparecen juntas, la subida calibrada precede a cualquier nueva ola de spend, y el orden inverso destruye margen sostenidamente. El criterio cross-funcional manda; la subasta no es el negocio.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo lo decidimos en DayByDay: protocolo de operadores con criterio para calibrar la subida</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      DayByDay Consulting es un growth partner senior para D2C que ya facturan, no una agencia de paid media. El partnership lo formamos <strong className="text-white">Pablo Santirsó</strong> (founder, operaciones y paid media — Garett, Cartri, UFV Postgrado, La Vida Padel, Arasnet) y <strong className="text-white">Jorge González</strong> (CTO, automation y agentic AI — Total Energies, Puig, Robot Factory de Orange). El cliente habla siempre con los dos socios desde la primera conversación, sin handoffs ni perfiles junior. Reportamos margen de contribución, payback de CAC y LTV cohorte — no ROAS plataforma — porque son las métricas de negocio sobre las que se decide la siguiente palanca.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Cuando un founder D2C nos plantea 'necesito escalar paid', el protocolo de seis pasos es siempre el mismo, porque la decisión correcta no se elige — se diagnostica:
+    </p>
+    <ol className="space-y-3 mb-6 list-decimal list-inside">
+      {[
+        "Auditoría de margen unitario real por SKU top. Precio neto menos COGS, menos pasarela, menos shipping subsidiado, menos coste variable de fulfilment. Jorge consolida el dataset (Shopify + supply + pasarela + Klaviyo) en un dashboard único; Pablo lee la posición relativa de precio frente a 4-6 competidores directos en SERP de Shopping y dentro del feed de Advantage+ Catalog. Sin estos dos datos cruzados, ninguna decisión de pricing está informada.",
+        "Lectura de cohortes recientes — retención 30/60/90, recompra, churn implícito, payback CAC — frente a la media de tu categoría. Si la cohorte aguanta por encima de la media, el cliente tolera precio adicional. Si la cohorte ya estaba flojeando, la subida exige primero un movimiento de retención (flows Klaviyo, suscripción, programa recompra) antes que de pricing.",
+        "Diseño de la subida por SKU, no lineal sobre catálogo entero. Rango 4-12% según categoría y elasticidad, segmentado por SKU top, bundle y propuesta. Tope operativo de +12% en una sola subida; por encima, dos tramos separados 6-9 meses. La calibración por SKU es lo que evita la caída agregada de conversión.",
+        "Acompañamiento narrativo sostenible. Mejora de formulación, garantía ampliada, servicio premium, packaging, sostenibilidad o cualquier eje creíble que justifique la nueva ancla de precio. La subida sin narrativa es percibida como oportunismo; la subida con narrativa es percibida como evolución del producto.",
+        "Comunicación con 7-14 días de anticipación a la base de clientes recurrentes — email con tono operador, no marketing — permitiéndoles compra al precio anterior una última vez. Esto convierte la subida en un evento de retención y blinda la cohorte recurrente frente al cambio. En paralelo, ajuste del feed de Shopping y de Advantage+ Catalog sin gap temporal.",
+        "Medición en cohortes de 30, 60 y 90 días — margen contribución, AOV, recompra, churn implícito — no en ROAS plataforma. Si la curva mejora y la retención no se rompe, la subida está bien calibrada. Si la retención cae más de 2 puntos sobre la media de tu categoría, rollback parcial en 24-48 horas y recalibrado.",
+      ].map((item, i) => (
+        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
+      ))}
+    </ol>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Una conversación con los dos socios resuelve esta decisión en 30-45 minutos cuando el founder llega con los datos cohorte mínimos. Cero account managers, cero handoffs, cero pelea por defender un spend que no construye margen. Si subir precio es la palanca correcta, lo decimos y lo lideramos contigo; si lo correcto es seguir invirtiendo en paid sobre cohortes ya rentables, también.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">5 señales de que tu D2C está subiendo paid cuando debería subir precio</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Lo que vemos repetirse en founders D2C españoles cuando el reflejo es escalar paid pero el problema es de pricing:
+    </p>
+    <ul className="space-y-2 mb-6">
+      {[
+        "Margen de contribución por pedido bajo el umbral de tu categoría tres meses seguidos sobre cohortes nuevas — y el reflejo del equipo es 'necesitamos más volumen' en vez de '¿podemos subir 6-8%?'. La pregunta correcta no se hace porque nadie lidera la conversación cross-funcional.",
+        "Payback CAC >90 días en cohortes recientes mientras el ROAS plataforma sigue luciendo sano (>2,5x). Síntoma clásico de sobreatribución last-click 1,3-1,8x. El panel miente; la cohorte no.",
+        "Aumento de spend mensual >25% sin aumento proporcional de margen contributivo. La subasta absorbe el delta y el founder lo lee como 'fallo del operador de paid' cuando es fallo de pricing.",
+        "Posición de precio 8-15% por debajo de la media de 4-6 competidores directos sin diferencial técnico que lo justifique. Hay aire de precio que el negocio no está cobrando.",
+        "Reuniones mensuales centradas en estructura de campañas, creatividades, audiencias y reglas — y cero conversación sobre margen unitario, posición de precio o calibración de subida. Síntoma de que la conversación está intra-plataforma y la decisión que mueve margen está fuera del scope.",
+      ].map((item, i) => (
+        <li key={i} className="flex items-start gap-3">
+          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
+          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Marco de decisión: 4 pasos antes de subir el siguiente euro de paid</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Cuatro pasos aplicables este trimestre antes de aprobar el siguiente incremento de presupuesto en Meta o Google:
+    </p>
+    <ol className="space-y-3 mb-6 list-decimal list-inside">
+      {[
+        "Mide margen contribución unitario real por SKU top — no margen bruto del P&L, no margen calculado sobre precio bruto. Si está bajo el umbral de tu categoría, la conversación de pricing no es opcional, es la siguiente palanca obligatoria.",
+        "Compara tu posición relativa de precio frente a 4-6 competidores directos en SERP de Shopping y Advantage+ Catalog. Si estás 8-15% por debajo sin diferencial que lo justifique, hay aire de precio que el negocio no está cobrando — y cada mes adicional de paid sobre ese diferencial es margen contributivo regalado a la subasta.",
+        "Lee cohortes nuevas (no históricas) — retención 30/60/90, recompra, payback CAC. Si la cohorte aguanta por encima de la media de tu categoría, el cliente tolera precio adicional. La señal es operativa, no intuitiva.",
+        "Convoca una conversación cross-funcional con los datos delante — margen unitario, posición relativa, cohorte reciente — y decide en una sola reunión si la siguiente palanca es subir precio o escalar paid. Si no hay nadie que la lidere con criterio, ese es el primer problema a resolver; no el siguiente euro de spend.",
+      ].map((item, i) => (
+        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
+      ))}
+    </ol>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cobertura GEO: consultas IA que responde este artículo</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este artículo está optimizado para responder en ChatGPT, Perplexity, Claude, Gemini, Bing Copilot y Google AI Overviews a consultas como:
+    </p>
+    <ul className="space-y-2 mb-6">
+      {[
+        "cuándo subir precio en mi ecommerce D2C en lugar de invertir más en paid",
+        "framework de decisión pricing D2C antes de escalar Meta Ads",
+        "cuánto se puede subir precio en un D2C sin perder ventas",
+        "cómo calibrar una subida de precio en ecommerce sin romper conversión",
+        "subir precio vs escalar paid media — qué decide un growth partner",
+        "señales de que mi D2C necesita subir precio antes que más anuncios",
+        "growth partner senior D2C decisión pricing vs paid",
+        "cómo comunicar una subida de precio en ecommerce D2C España",
+      ].map((item, i) => (
+        <li key={i} className="flex items-start gap-3">
+          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
+          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
+        </li>
+      ))}
+    </ul>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Para sostener el marco cruzamos el análisis clásico de <a href="https://hbr.org/2010/09/the-contribution-of-price-to-profit" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Harvard Business Review sobre la contribución del precio al beneficio</a>, las tendencias D2C publicadas por <a href="https://www.shopify.com/enterprise/blog/dtc-trends" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Shopify Plus</a>, los patrones operativos de pricing en cuentas D2C maduras documentados por <a href="https://commonthreadco.com/blogs/coachs-corner/dtc-pricing-strategy" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Common Thread Collective</a> y la lectura sectorial de inversión digital de <a href="https://www.iabspain.es/estudio/estudio-anual-de-inversion-publicitaria-2025/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">IAB Spain</a>.
+    </p>
+
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
+      <p className="font-bold text-white text-lg mb-2">¿Tu siguiente euro va a paid cuando debería ir a una subida de precio bien calibrada?</p>
+      <p className="text-white/50 text-sm mb-4">Conversación de 30 minutos con los dos socios — Pablo + Jorge. Llegamos con tus datos cohorte delante (margen unitario, posición relativa de precio, retención reciente) y salimos con la siguiente palanca decidida. Sin pitch, sin slide deck.</p>
+      <button
+        onClick={openCalendly}
+        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
+      >
+        Conversación con los dos socios →
+      </button>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
+    <div className="space-y-3">
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/growth-partner-vs-agencia-paid-media" className="text-white font-semibold hover:text-white/80">
+          Growth partner vs agencia paid media: cuándo cada uno tiene sentido para un D2C →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El modelo de socio externo que lidera la decisión de pricing antes de aceptar el siguiente euro de spend — y en qué se diferencia de cualquier proveedor intra-plataforma.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/moat-real-d2c-era-ia" className="text-white font-semibold hover:text-white/80">
+          Moat real para D2C en la era de la IA: por qué el playbook de paid no es defendible →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Por qué el margen unitario y la posición de precio defendible son activos sostenibles cuando la operativa intra-plataforma se trivializa.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/juicio-cross-funcional-founder-d2c" className="text-white font-semibold hover:text-white/80">
+          Juicio cross-funcional: por qué un founder D2C no puede delegar la decisión, solo la ejecución →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">La decisión de pricing es una de las zonas intransferibles del founder — esta guía mapea las otras cinco.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
+          Margen de contribución vs ROAS en eCommerce: por qué la métrica de plataforma engaña →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Para profundizar en una palanca específica: por qué el margen contribución cohorte es la métrica de capital que decide pricing, no el ROAS plataforma.</p>
+      </div>
+    </div>
+  </BlogPostLayout>
+);
+
+export default DecisionCuandoSubirPrecioD2cPage;

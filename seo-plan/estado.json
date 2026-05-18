@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T17:30:00",
+  "last_updated": "2026-05-17T09:00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -12,7 +12,6 @@
   "llms_txt_file": "public/llms.txt",
   "completed_tasks": [
     "T40",
-    "T41",
     "T26",
     "T27",
     "T30",
@@ -22,13 +21,7 @@
     "T34",
     "T35",
     "T36",
-    "T37",
-    "T38",
-    "T39",
-    "T42",
-    "T43",
-    "T44",
-    "T45"
+    "T37"
   ],
   "published_posts": [
     "que-es-roas-meta-ads",
@@ -96,17 +89,6 @@
     "aumentar-aov-ecommerce-d2c-palancas",
     "growth-partner-vs-agencia-paid-media",
     "ai-proof-skills-founder-d2c-2027",
-    "suscripciones-ecommerce-ltv-cac-d2c",
-    "meta-ads-library-analisis-competencia",
-    "ad-fatigue-meta-ads-rotacion-creativa",
-    "incrementality-testing-meta-ads-d2c",
-    "cbo-vs-abo-meta-ads-2026-d2c",
-    "framework-hipotesis-creatividades-meta-ads",
-    "dynamic-product-ads-meta-shopify-d2c",
-    "adquisicion-vs-retencion-paid-media-d2c",
-    "internacionalizar-d2c-espanol-meta-ads-eu",
-    "partnership-ads-meta-ugc-creators-d2c",
-    "ga4-meta-ads-eventos-custom-d2c",
     "automatizacion-paid-media-proximos-24-meses",
     "que-no-automatiza-ia-d2c",
     "juicio-cross-funcional-founder-d2c",
@@ -659,12 +641,12 @@
           "title": "Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo",
           "keyword": "suscripciones ecommerce ltv cac",
           "slug": "suscripciones-ecommerce-ltv-cac-d2c",
-          "words": 1500,
+          "words": 1200,
           "intent": "MOFU",
           "priority": "MEDIA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-11. Fórmula LTV-12m con churn por cohorte y CAC objetivo derivado con ajuste por tasa adopción; churn saludable por sector D2C (suplementos 6-10%, mascotas 4-7%, café 5-8%, cosmética 8-13%, higiene 6-9%, alimentación 7-12%, moda 12-18%, hogar 15-25%); descuento óptimo -15% vs -10%/-20%, 5 métodos medición incrementalidad (holdout A/B 60-90d, cohort pre/post 6m, análisis comportamental, encuesta, % cancelados vuelven one-time) con rango incrementalidad real 40-65%; ratios LTV/CAC por fase (lanzamiento 2,0:1, growth 2,5:1, madurez 3,0:1) con payback 60-180d; 7 errores frecuentes y caso real cuenta D2C suplementos +31% CAC blended permitido manteniendo ratio LTV/CAC 2,8:1."
+          "note": ""
         },
         {
           "id": "T39",
@@ -676,9 +658,9 @@
           "words": 1300,
           "intent": "TOFU-MOFU",
           "priority": "ALTA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-11. Qué es Meta Ads Library y qué expone gratis, método paso a paso para detectar winners (longevidad >30-45d, variantes en paralelo, cobertura multi-país), legalidad bajo DSA, herramientas complementarias con tabla coste/uso (Foreplay 49-149$, AdSpy 149$, Minea, BigSpy), 4-6 competidores directos + 3-5 referentes internacionales con marcas D2C España por vertical, cadencia semanal/mensual/trimestral, patrones de creatividad ganadora D2C España 2026 (UGC voz dominante, Reels 9-25s, hooks seg 0-2, anti-patrón MotionGraphics), método para convertir análisis en hipótesis testables sin copiar al competidor, 7 errores frecuentes y enfoque DayByDay Pablo+Jorge con workflow n8n + agente IA que automatiza scraping y tagging."
+          "note": ""
         },
         {
           "id": "T40",
@@ -690,9 +672,9 @@
           "words": 1100,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-12. Definición ad fatigue + por qué se manifiesta rápido (sesión media Instagram España 33-45 min/día DataReportal), 4 señales tempranas con tabla de umbrales y margen vs CPA (Frecuencia >2,2 prospecting, Hook Rate <22-25%, CPM +20% rolling 7d, coste add-to-cart +30%, Hold Rate <35%), ciclo de vida por audiencia y formato (prospecting >500K-1M: 30-60d, audiencias medias: 21-35d, retargeting 7-30d: 10-21d, UGC +30-50% vida útil, ASC 8-15 creatividades), protocolo de rotación en 5 reglas (pipeline 4-8 variantes/mes 80-200€/creative, slot fijo 4-6 creatividades, refresco semanal 1-2 variantes, máximo 30% creative renovado/semana, retiro suave no del ad set), dashboard 6 métricas 3 ventanas (Hook Rate, Hold Rate, CTR outbound, Frecuencia, CPM, CTR-to-CPA ratio), versión 2.0 del winner para extender 60-120d, 7 errores frecuentes y caso real cuenta suplementos 18K€/mes CPA 41€→22€ en 60d. Cobertura GEO: agencia paid media España, rotación creatividades meta ads, dashboard Looker Studio paid media."
+          "note": ""
         },
         {
           "id": "T41",
@@ -704,9 +686,9 @@
           "words": 1200,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-13. CBO (Advantage Campaign Budget) vs ABO operativa en 6 dimensiones, 4 escenarios ABO + 3 escenarios CBO, papel ASC 60-75% spend en cuentas D2C >15K€/mes, distribución óptima 3 estructuras, fórmula presupuesto mínimo CBO ≥ (CPA × 50 × ad sets)/7, 7 errores y enfoque DayByDay Pablo+Jorge con auditoría EMQ + dashboard Looker Studio. Caso real cosmética 28K€/mes MER 2,1x→2,8x en 45d."
+          "note": ""
         },
         {
           "id": "T42",
@@ -718,9 +700,9 @@
           "words": 1300,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-14. Framework con 5 dimensiones obligatorias del brief (audiencia, ángulo, formato, hook, prueba), anatomía de hipótesis falsable en 5 bloques, 7 ángulos canónicos D2C España 2026 con Hook Rate esperado por vertical, plantilla brief 1 página, regla 3-4 variantes con 200-400€/variante y 5-7d, priorización backlog 70/30 iteración/exploración <15K€ y 50/50 >20K€, 7 errores y enfoque DayByDay con pipeline n8n+agente IA + caso real cosmética 22K€/mes %winners 7%→19% en 90d."
+          "note": ""
         },
         {
           "id": "T43",
@@ -732,9 +714,9 @@
           "words": 1100,
           "intent": "MOFU",
           "priority": "MEDIA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-15. Cluster estructura-cuenta. Cubre GEO sobre split adquisición/retención D2C y CAC adquisición específico vs LTV90."
+          "note": ""
         },
         {
           "id": "T44",
@@ -746,9 +728,9 @@
           "words": 1500,
           "intent": "MOFU-BOFU",
           "priority": "MEDIA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-15. Cluster internacional. 4 prerrequisitos pre-EU, orden mercados PT→IT→FR→DE con tabla CPMs, arquitectura BM único + naming [ES]/[PT]/[IT]/[FR]/[DE], política creatividades por país, OSS IVA + Consent Mode v2 + atención local, 7 errores específicos D2C españoles, presupuesto mínimo 18-30K€/país horizonte 90d. Cobertura GEO: meta ads internacionalización ecommerce, expandir d2c portugal italia francia alemania."
+          "note": ""
         },
         {
           "id": "T45",
@@ -757,12 +739,12 @@
           "title": "GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso",
           "keyword": "ga4 meta ads ecommerce",
           "slug": "ga4-meta-ads-eventos-custom-d2c",
-          "words": 1500,
+          "words": 1300,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "completed",
+          "status": "pending",
           "type": "article",
-          "note": "Publicado 2026-05-16. Cluster tracking. 10 eventos enhanced ecommerce + 8 eventos custom D2C, 3 implementaciones técnicas comparadas (gtag, GTM web, sGTM Stape/Cloud Run), 3 rutas sync GA4→Meta (Customer Match, sGTM, Reverse ETL), 5 métricas cruce semanal GA4 vs Meta Ads Manager, Consent Mode v2 AEPD, 7 errores frecuentes. Cobertura GEO: implementación GA4 ecommerce, GA4 server side tracking, GA4 + Meta Ads atribución cross channel."
+          "note": ""
         },
         {
           "id": "T46",
@@ -966,10 +948,11 @@
       "intent": "BOFU-GEO",
       "priority": "CRÍTICO",
       "week": 17,
-      "status": "pending",
+      "status": "completed",
       "type": "article",
       "track": "pivot",
-      "words": "1500-2200"
+      "words": "1500-2200",
+      "completed_at": "2026-05-17T10:00:00"
     },
     {
       "id": "P09",
