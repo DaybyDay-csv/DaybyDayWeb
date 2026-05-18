@@ -3,179 +3,144 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es el juicio cross-funcional de un founder D2C y por qué no se puede delegar?",
-    a: "El juicio cross-funcional es la capacidad de combinar señales que vienen de funciones distintas — paid media, retención, producto, supply chain, finanzas, marca — y tomar una decisión coherente de negocio con criterio de margen y payback. Un founder D2C no puede delegarlo porque ninguna función aislada tiene contexto suficiente: el responsable de paid optimiza ROAS plataforma, el de producto optimiza margen unitario, el de supply optimiza coste de mercancía, y cada uno tira en una dirección. Solo el founder (o un growth partner senior con visión completa) integra los seis datasets, asume el trade-off y toma posición. Delegar esa decisión a un perfil mono-funcional o a un agente de IA destruye margen a 12-24 meses, aunque cada decisión local parezca correcta.",
+    q: "¿Por qué un founder D2C no puede delegar la decisión de inversión a su agencia o partner externo?",
+    a: "Porque la decisión de inversión — a qué palanca va el siguiente euro: paid media, retención, producto, inventario o contratación — combina datos cohorte (margen, payback CAC, LTV) con contexto de mercado, runway y visión de marca que ningún agente externo tiene de forma completa. Un partner externo optimiza la palanca que conoce mejor; el founder decide entre todas con criterio global. Delegar la decisión significa aceptar el criterio de quien ejecuta, no de quien piensa.",
   },
   {
-    q: "¿Qué decisiones puede delegar un founder D2C y cuáles no?",
-    a: "Delegables (ejecución): bidding y configuración de campañas Meta/Google/TikTok, producción de creatividades, segmentación táctica, flows de email/CRM, atención cliente nivel 1-2, generación de reporting operativo, configuración de stack técnico (CAPI server-side, sGTM, dashboards). No delegables (juicio cross-funcional): decisión de capital trimestral (a qué palanca va el siguiente euro), pricing operativo (subida, suscripción, threshold free shipping, bundles), apertura o cierre de canal de adquisición, relación con el top 5-10% alto LTV, decisión de producto y roadmap, arquitectura de incentivos del equipo interno y los partners externos. La regla práctica: si la decisión combina datos cohorte con contexto no estructurado y cambia la composición del margen a 12 meses, es juicio del founder, no ejecución.",
+    q: "¿Qué significa exactamente juicio cross-funcional en un D2C que factura entre 500K€ y 8M€?",
+    a: "Juicio cross-funcional es la capacidad de un founder D2C — o de su growth partner — de tomar decisiones que cruzan datos de marketing (CAC, payback, LTV), producto (margen por SKU, tasa de recompra), supply chain (ciclo de caja, MOQ) y finanzas (runway, necesidad de capital). Un agente de IA optimiza una función objetivo; un founder con juicio cross-funcional optimiza el sistema completo. Cuando la ejecución se commoditiza, el cuello de botella se mueve a esta capacidad — y es exactamente lo que NO delega un founder que escala.",
   },
   {
-    q: "¿Qué pasa cuando un founder D2C delega la decisión y no solo la ejecución?",
-    a: "Cuatro patrones de destrucción de margen recurrentes: (1) optimización local que daña el sistema — el responsable de paid baja CPA cerrando audiencias de prospecting, pero el cohorte que captura tiene LTV peor y el negocio entra en deuda de adquisición; (2) fragmentación de criterio — cada función reporta su KPI vanity y nadie cierra el ciclo a margen de contribución; (3) parálisis de decisión cuando llega un trade-off real — subir precio, cerrar canal, descontinuar SKU — porque no hay un decisor con contexto cross-funcional; (4) captura del founder por la función más ruidosa, normalmente el responsable de paid, que reorienta toda la conversación a métricas de plataforma. El antídoto no es centralizar la ejecución, es centralizar la decisión.",
+    q: "¿Cuál es la diferencia entre delegar ejecución y delegar decisión en un D2C?",
+    a: "Delegar ejecución significa que el partner externo ejecuta las tareas que el founder define: lanzar campañas, generar flows de email, producir reportes, hacer bidding. Delegar decisión significa que el partner externo elige hacia dónde va el capital, qué canal se abre o cierra, cuándo se sube precio y cuándo se lanza un nuevo producto. La primera es commodity que tenderá a coste cero; la segunda es criterio que seguirá siendo caro y necesario.",
   },
   {
-    q: "¿Cómo distingue un founder D2C entre delegar bien y abdicar?",
-    a: "Delegar bien es ceder ejecución con criterio claro: marco de decisión escrito, datos cohorte compartidos, umbrales de escalado explícitos (cuándo el responsable decide y cuándo escala al founder o al growth partner). Abdicar es ceder la decisión disfrazada de delegación: 'que el agente decida la inversión', 'que la agencia decida la estrategia', 'que el head de marketing decida el mix'. La señal clara de abdicación: el founder no puede explicar en 2 minutos por qué el dinero está donde está este trimestre, con qué payback de CAC y qué LTV cohorte espera. Si la respuesta es 'porque me lo recomendaron' o 'porque el dashboard dice X', el founder no decidió, abdicó.",
+    q: "¿Cuándo debería un founder D2C cultivar juicio cross-funcional en lugar de seguir delegando ejecución?",
+    a: "Cuando dedica más tiempo revisando reportes del partner externo que leyendo los datos de margen cohorte por sí mismo. Cuando las decisiones de pricing, canal o producto se toman en la siguiente reunión y no en el momento que el dato lo pide. Cuando el fee del partner está indexado a inversión gestionada o a métricas de plataforma, no a margen incremental.",
   },
   {
-    q: "¿Puede un growth partner senior absorber el juicio cross-funcional o sigue siendo del founder?",
-    a: "Comparte el juicio, no lo sustituye. Un growth partner senior aporta contexto cross-funcional externo, benchmarks operativos, criterio de pricing y de mix de canal, y dashboard de margen cohorte que el founder no construiría solo. Pero la decisión final — capital, pricing, producto, incentivos — sigue siendo del founder porque vive con las consecuencias a 24-48 meses, conoce el cohorte real de cliente y asume el riesgo. El modelo que funciona es co-decisión informada: el growth partner trae datos, posición y argumentos; el founder integra contexto interno (equipo, ciclo de caja, visión de marca) y firma. Si el partner decide solo, está vendiendo gestión; si el founder decide solo sin contraste, normalmente decide peor.",
+    q: "¿Un growth partner senior sustituye a una agencia de paid media en un D2C?",
+    a: "No exactamente. Una agencia de paid media ejecuta y optimiza una palanca. Un growth partner senior participa en las decisiones de capital, pricing, mix de canal y producto con un dashboard de margen cohorte como base. La pregunta para un D2C que ya factura no es agencia o growth partner, sino cuál es el perímetro de decisión que necesita cubrir.",
   },
   {
-    q: "¿Cuántas horas semanales debería invertir un founder D2C en juicio cross-funcional?",
-    a: "Entre 6 y 10 horas semanales, distribuidas así: 2-3 horas leyendo margen de contribución cohorte y conversando con clientes alto LTV, 1-2 horas revisando mix de canal con criterio de payback CAC, 1 hora de review de pricing y oferta, 1-2 horas de roadmap de producto y supply, 1 hora de arquitectura de incentivos del equipo y los partners. Si dedicas menos de 5 horas semanales a este perímetro y más de 15 a configurar agentes, leer dashboards operativos o gestionar campañas, estás invirtiendo en ejecución delegable y descuidando el juicio que no se delega. Esa asimetría predice peor el margen del año que viene que cualquier optimización táctica.",
+    q: "¿Qué señales indican que el partner externo está ejecutando pero no decidiendo?",
+    a: "Cuatro señales: (1) el reporting se centra en métricas de plataforma (ROAS, CPA) y no en margen de contribución ni payback CAC; (2) la decisión trimestral de mix o pricing se toma en reunión dedicada y no de forma continua; (3) cuando pregunta qué hacer con el siguiente euro, la respuesta es optimizar lo que hay y no evaluar palancas; (4) el fee está en porcentaje de inversión o retainer fijo, no en margen incremental.",
   },
   {
-    q: "¿Qué reportes debe pedir un founder D2C para mantener el juicio cross-funcional?",
-    a: "Cuatro reportes mensuales mínimos: (1) margen de contribución por pedido y por cohorte mensual de adquisición, con AOV − COGS − fulfilment − comisiones pasarela − devoluciones − CAC; (2) payback de CAC blended por canal y cohorte (no por plataforma); (3) LTV/CAC por cohorte de 3, 6 y 12 meses con tasa de recompra; (4) cuenta de pérdidas y ganancias operativa con peso de marketing sobre revenue. No pidas reporting de plataforma como reporte de negocio — ROAS Meta, CPM, CTR — esos son métricas de ejecución, no de decisión. Si tu socio externo no entrega los cuatro reportes de negocio cada mes, te falta el dataset que sostiene el juicio cross-funcional; no es un problema del founder, es un problema de cómo está montado el modelo de partner.",
+    q: "¿Qué habilidad de juicio cross-funcional debería cultivar primero un founder D2C?",
+    a: "La más impactante: lectura de margen cohorte por canal y por SKU. Saber con datos limpios cuál es el payback de CAC real de cada canal, cuál es el LTV/CAC real por segmento y cuál es el margen de contribución por producto. Con ese dashboard, cualquier decisión de inversión se toma con criterio en lugar de con intuición.",
   },
 ];
 
 const JuicioCrossFuncionalFounderD2cPage = ({ openCalendly }) => (
   <BlogPostLayout
     title="Juicio cross-funcional: por qué un founder D2C no puede delegar la decisión, solo la ejecución"
-    description="Por qué el juicio cross-funcional de un founder D2C — decisión de capital, pricing, mix de canal, top 5-10% alto LTV, producto, incentivos — no se delega ni a un perfil mono-funcional ni a un agente de IA. Tabla operativa de qué se delega (ejecución) vs qué se decide (juicio), 6 zonas intransferibles ordenadas por impacto en margen de contribución y payback CAC, 3 patrones de delegación destructiva, marco de auditoría en 4 pasos y enfoque DayByDay (Pablo + Jorge en cada conversación)."
+    description="Un founder D2C que delega la decisión de inversión a su agencia o partner externo está cediendo el activo más valioso del negocio: criterio cross-funcional. Por qué la ejecución se delega, la decisión no."
     slug="juicio-cross-funcional-founder-d2c"
-    datePublished="2026-05-13"
-    dateModified="2026-05-13"
+    datePublished="2026-05-18"
+    dateModified="2026-05-18"
     keywords={[
-      "juicio cross funcional founder d2c",
-      "decisiones que no delega founder ecommerce",
-      "founder d2c delegar decision ejecucion",
-      "growth partner d2c juicio decision",
-      "operador con criterio ecommerce d2c",
+      "juicio cross funcional d2c",
+      "decisiones founder ecommerce",
+      "delegar ejecución ecommerce",
+      "growth partner decisiones",
+      "criterio negocio d2c",
     ]}
-    readingTime="12 min"
+    readingTime="11 min"
     category="Decisiones de negocio"
     faqs={faqs}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-6">
-      La conversación más cara de un founder D2C que ya factura no es operativa, es de reparto: <strong className="text-white">qué decisiones de mi eCommerce D2C tengo que retener yo como founder con juicio cross-funcional, y cuáles puedo (y debo) delegar a equipo interno, partner externo o agente de IA</strong>. Es una decisión de negocio, no de productividad. La respuesta correcta define dónde está el margen de contribución defendible los próximos 24 meses; la respuesta incorrecta — delegar la decisión disfrazada de delegar la ejecución — destruye margen a 12-24 meses, aunque cada movimiento local parezca correcto.
+      La pregunta que todo founder D2C que ya factura más de 500K€ debería hacerse antes de la próxima reunión con su agencia o partner externo es esta: <strong className="text-white">¿estoy delegando la ejecución o estoy delegando la decisión?</strong>. En el primer caso, estás haciendo lo correcto: la ejecución táctica se delega, se automatiza o se externaliza. En el segundo, estás cometiendo el error más caro que puede cometer un founder que escala.
     </p>
 
     <p className="text-white/70 leading-relaxed mb-6">
-      Esta guía está escrita para founders D2C que facturan ≥500K€/año, llevan 18-48 meses operando paid media, retención, producto y supply chain, y ven cómo cada trimestre se les apila más operativa para delegar. No es un manual de productividad. Es el reparto operativo que vemos funcionar en cuentas reales: dónde aplica delegación limpia con criterio, dónde aplica juicio cross-funcional intransferible del founder o del growth partner senior, y cómo organizar el modelo de partner externo en consecuencia.
+      La confusión entre ejecución y decisión es la razón por la que muchos D2C que ya facturan bien siguen operando con mentalidad de bootstrapping táctico. Contratan mejor agencia, añaden más herramientas de IA, producen más reportes — y la decisión de capital trimestral sigue sin tomarse con criterio porque sigue delegándose a quien ejecuta la palanca, no a quien ve el sistema completo.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Definición operativa: qué es juicio cross-funcional en un D2C</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Definición operativa: qué es el juicio cross-funcional para un founder D2C</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Cuando hablamos de <strong className="text-white">juicio cross-funcional para un founder D2C</strong>, no nos referimos a tomar más decisiones, ni a microgestionar el equipo. Nos referimos a una capacidad concreta: integrar señales que vienen de funciones distintas — paid media, retención, producto, supply chain, finanzas, marca — y tomar posición con criterio de margen de contribución, payback de CAC y LTV cohorte, asumiendo trade-offs que ninguna función aislada está incentivada a asumir. Marco Iansiti y Karim Lakhani lo formulan en <a href="https://hbr.org/2020/01/competing-in-the-age-of-ai" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Competing in the Age of AI (HBR)</a>: el valor competitivo se concentra en las decisiones que cruzan funciones, no en la ejecución intra-función — esa tiende a coste cero a medida que la IA absorbe el operativo.
+      <strong className="text-white">Juicio cross-funcional</strong> en un D2C es la capacidad de tomar decisiones que cruzan simultáneamente datos de marketing (CAC, payback, LTV), producto (margen por SKU, tasa de recompra), supply chain (ciclo de caja, MOQ) y finanzas (runway, necesidad de capital). Un agente de IA optimiza para una función objetivo dentro de una disciplina. Un founder con juicio cross-funcional optimiza el sistema completo considerando el trade-off real entre palancas.
     </p>
     <p className="text-white/70 leading-relaxed mb-4">
-      Una decisión exige juicio cross-funcional — y por tanto no se delega ni a un perfil mono-funcional ni a un agente — si cumple tres condiciones:
+      First Round Review documenta este patrón en sus perfiles de operadores de consumer y D2C que escalan: cuando la ejecución se commoditiza, el valor diferencial se mueve a la capacidad de formular la pregunta correcta antes de delegar la ejecución. Su artículo sobre <a href="https://review.firstround.com/the-real-work-of-data-science-is-asking-better-questions/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">el trabajo real con datos</a> lo articula bien: el diferencial no está en producir más informes, está en formular mejor las preguntas que llevan a decisiones de negocio.
     </p>
-    <ul className="space-y-2 mb-6">
-      {[
-        "Cruza al menos tres funciones del D2C (típico: paid + retención + producto, o paid + supply + finanzas) y cada función propondría una respuesta distinta y locamente correcta.",
-        "Cambia la composición del margen de contribución y el payback de CAC a 6-18 meses — no solo el KPI del trimestre. Una decisión que afecta solo a métricas de plataforma no exige juicio cross-funcional; una que afecta a la cuenta de resultados sí.",
-        "El coste del error es asimétrico: una buena decisión compone margen 12-36 meses, una mala rompe margen 6-12 meses y no se corrige al día siguiente. Las decisiones lentas de revertir son las que se retienen.",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
-      ))}
-    </ul>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Tabla operativa: qué se delega (ejecución) vs qué se decide (juicio cross-funcional)</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Mapa: qué ejecuta la IA, qué decide el founder</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Reparto que vemos funcionar en cuentas D2C españolas entre 500K€ y 8M€/año. Columna de impacto medido en margen de contribución y payback de CAC, no en métricas de plataforma:
+      Tabla con las decisiones más impactantes de un D2C, clasificadas por quién las toma mejor en 2026-2027. Cuando la decisión la toma un agente o una herramienta que solo tiene visibilidad de una palanca, el trade-off se hace con información incompleta — y eso sale caro a 12-24 meses.
     </p>
 
     <div className="overflow-x-auto mb-8">
       <table className="w-full text-sm border-collapse">
         <thead>
           <tr className="border-b border-white/10">
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Bloque del D2C</th>
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Delegable (ejecución)</th>
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Juicio cross-funcional (founder + growth partner)</th>
-            <th className="text-left py-3 text-[#de0015] font-semibold text-xs uppercase tracking-wide w-1/4">Impacto en margen / payback CAC</th>
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Decisión</th>
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Quién ejecuta hoy (IA/agencia)</th>
+            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/4">Quién debería decidir (founder)</th>
+            <th className="text-left py-3 text-[#de0015] font-semibold text-xs uppercase tracking-wide w-1/4">Coste de delegar mal</th>
           </tr>
         </thead>
         <tbody>
           {[
-            ["Paid media", "Bidding, audiencias, creatividades, reporting, configuración CAPI/sGTM", "Cuánto invertir vs retención/producto, cuándo cerrar o abrir canal, qué payback aceptar por cohorte", "Decisión define payback CAC; ejecución define eficiencia táctica"],
-            ["Retención y CRM", "Flows Klaviyo, segmentación, asuntos, copy, automatizaciones", "Qué cohorte vale recompra subvencionada, qué top 5-10% alto LTV protegemos, qué cliente dejamos ir", "Decisión cambia LTV cohorte 10-30%; ejecución mejora open rate"],
-            ["Producto y roadmap", "Fichas, fotografía, copy PDP, gestión catálogo Shopify", "Qué SKU lanzar/descontinuar, qué precio base, qué bundling, qué edición limitada", "Decisión define el cohorte de cliente a 24-36 meses"],
-            ["Pricing y oferta", "Configuración descuentos, código promo, A/B test táctico", "Subida de precio base, lanzamiento de suscripción, free shipping threshold, política de descuento anual", "+10-25% margen contribución bien ejecutado; -15% si se delega mal"],
-            ["Supply chain e inventario", "Gestión de pedidos, fulfilment, devoluciones, atención post-venta", "Selección de proveedor, MOQ, exclusividad, riesgo geopolítico, ciclo de caja", "Mal partner rompe margen 6-18 meses y daña marca"],
-            ["Equipo e incentivos", "Onboarding, gestión operativa, herramientas, reporting interno", "Cómo cobra cada función, qué variable se indexa a qué métrica, cómo se mide éxito por rol", "Diseño define comportamiento del sistema entero"],
-            ["Partner externo (growth partner)", "Operativa de cuenta, configuración técnica, producción reportes", "Alcance, modelo de fee, métrica de éxito, umbrales de escalado, exclusividad", "Mal modelo de partner cuesta más que mal partner"],
-          ].map(([bloque, delegable, juicio, impacto], i) => (
+            ["Mix de canal: cuánto va a paid, retención, producto, inventario", "Agencia optimiza su canal; no tiene visibilidad de las demás", "Founder o growth partner con dashboard de margen cohorte", "Canal con mejor LTV/CAC se infrafinancia; canal deficitario se sobrefinancia"],
+            ["Pricing: cuándo subir precio, bundlear o mover free shipping threshold", "Tool de pricing sugiere; agente ejecuta test A/B", "Founder con visibilidad de elasticidad y posicionamiento", "Subida de precio premature destruye conversión y marca a 6-12 meses"],
+            ["Lanzamiento o cierre de SKU: qué producto añadir, cuál descontinuar", "Datos de venta los tiene el dashboard; la decisión es del founder", "Founder con conversación con cliente y visibilidad de supply", "SKU con mejor margen a largo plazo se elimina por datos cortos"],
+            ["Inversión en retención: cuándo parar de captar y empezar a cuidar", "Agencia de paid sigue captando porque su fee es porcentaje de inversión", "Founder o growth partner con LTV cohorte y payback CAC por segmento", "Cliente de alto LTV se pierde por seguir captando nuevos"],
+            ["Cuándo escalar, cuándo consolidar: decisión de runway", "Board/inversor decide; founder tiene datos parciales", "Founder con visibilidad completa de caja, margen y palancas", "Decisión de escala se toma sin datos de payback real"],
+          ].map(([decision, ejecuta, decide, coste], i) => (
             <tr key={i} className="border-b border-white/5">
-              <td className="py-3 pr-4 text-white/70 align-top font-medium">{bloque}</td>
-              <td className="py-3 pr-4 text-white/70 align-top">{delegable}</td>
-              <td className="py-3 pr-4 text-white/70 align-top">{juicio}</td>
-              <td className="py-3 text-white align-top">{impacto}</td>
+              <td className="py-3 pr-4 text-white/70 align-top font-medium text-sm">{decision}</td>
+              <td className="py-3 pr-4 text-white/70 align-top text-sm">{ejecuta}</td>
+              <td className="py-3 pr-4 text-white/70 align-top text-sm">{decide}</td>
+              <td className="py-3 text-white align-top text-sm">{coste}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
 
-    <p className="text-white/70 leading-relaxed mb-4">
-      La lectura operativa es directa: la columna delegable se mueve rápido hacia agentes de IA y perfiles operativos junior — su coste tenderá a comprimirse. La columna de juicio cross-funcional no se delega ni a un agente ni a un perfil mono-funcional senior; la retiene el founder, idealmente con contraste de un growth partner senior que aporta benchmarks y posición. Esa asimetría es donde se decide el margen del próximo ciclo.
-    </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Por qué el founder no puede delegar la decisión (las 5 razones)</h2>
+    <ol className="space-y-3 mb-6 list-decimal list-inside">
+      {[
+        "La única persona con visibilidad completa del sistema es el founder. La agencia de paid media ve Meta. El agente de email ve Klaviyo. El agente de pricing ve la tarifa. Solo el founder — o el growth partner que trabaja para el founder, no para una palanca — tiene la foto completa del trade-off entre palancas. Ningún ejecutor individual puede tomar la decisión de capital trimestral con el criterio que solo da ver el sistema completo.",
+        "El coste de oportunidad de una decisión equivocada es asimétrico. Un error de bidding se corrige en horas. Un error de pricing o de mix de canal se corrige en 6-12 meses y destruye margen de contribución de forma permanente durante ese período. La decisión de capital trimestral tiene riesgo asimétrico — por eso no se delega a quien optimiza una palanca, se toma con quien ve el sistema completo.",
+        "Los incentivos de un ejecutor externo están parcialmente desalineados con los del founder. Una agencia de paid media gana más cuando la inversión en paid media sube. Un agente de pricing gana más cuando se ejecuta más test. Si no conoces cómo cobra tu partner externo, no sabes si sus recomendaciones son de optimización o de interés.",
+        "La calidad de la decisión mejora con información no estructurada. Los datos cohorte dicen mucho; la conversación con los 10 clientes de mayor LTV dice más. La dinámica con el proveedor principal, el posicionamiento competitivo real, la visión de marca a 3 años — esa información no vive en ningún dashboard y solo la tiene el founder. Delegar la decisión sin ese contexto es tomar una decisión con mitad de la información.",
+        "El juicio cross-funcional se cultiva, no se compra. La capacidad de leer un dashboard de margen cohorte y extraer la decisión correcta es una skill que se desarrolla con práctica. Un founder que delega la decisión trimestre tras trimestre atrofia esa skill y se hace más dependiente del ejecutor con cada ciclo.",
+      ].map((item, i) => (
+        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
+      ))}
+    </ol>
 
     <div className="bg-[#1a1616] border-l-2 border-[#de0015] p-5 mb-8">
       <p className="text-white/80 text-sm leading-relaxed">
-        <strong className="text-white">Dato sectorial:</strong> Según el informe <a href="https://www.iabspain.es/estudio/estudio-de-ecommerce-2025/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">IAB Spain — Estudio de eCommerce 2025</a>, el 71% de las empresas eCommerce españolas declara que la principal palanca de mejora de margen no fue operativa, sino una decisión estratégica del founder o del consejo (cambio de pricing, cierre de canal no rentable, lanzamiento de suscripción o reformulación de producto). Para un founder D2C esto significa que <strong className="text-white">el siguiente euro mejor invertido normalmente no está en mejorar la ejecución delegable, está en proteger el tiempo de juicio cross-funcional que decide pricing, mix de canal y producto</strong>. La pregunta no es "¿cómo delego más ejecución?", es "¿estoy reteniendo bien las cuatro o cinco decisiones que componen margen?".
+        <strong className="text-white">Dato sectorial:</strong> Según los análisis de <a href="https://www.shopify.com/enterprise/blog" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Shopify Plus sobre patrones de escalado D2C</a>, los founders que reportan crecimiento sostenible de margen de contribución en los últimos 3 años comparten un patrón: dedican al menos 4-6 horas semanales a decisiones de capital, pricing y mix — no a revisar reportes operativos. La ejecución se delega; la decisión se cultiva.
       </p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Las 6 zonas de juicio cross-funcional intransferibles del founder D2C</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo lo decidimos en DayByDay: dashboard primero, decisión después</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Ordenadas por impacto típico en margen de contribución a 12 meses en un D2C que ya factura ≥500K€/año. Cada zona cruza al menos tres funciones y cambia la composición del margen:
+      DayByDay Consulting opera como growth partner senior para D2C que ya facturan — no como agencia de paid media. El partnership lo formamos <strong className="text-white">Pablo Santirsó</strong> (founder, operaciones y paid media — Garett, Cartri, UFV Postgrado, La Vida Padel, Arasnet) y <strong className="text-white">Jorge González</strong> (CTO, automation y agentic AI — Total Energies, Puig, Robot Factory de Orange). El cliente habla siempre con los dos socios, sin handoffs ni perfiles junior.
     </p>
     <ol className="space-y-3 mb-6 list-decimal list-inside">
       {[
-        "Decisión de capital trimestral. A qué palanca va el siguiente euro: paid, retención, producto, inventario, contratación. Cruza paid + retención + producto + supply + finanzas. El responsable de paid pedirá más spend, el de retención pedirá más email/CRM, el de producto pedirá más SKU. El founder integra y decide — con criterio de payback CAC y margen cohorte, no de presión interna.",
-        "Pricing operativo. Subida de precio, lanzamiento de suscripción, free shipping threshold, bundling, política de descuento. Cruza producto + marca + finanzas + retención. Una subida del 7% bien ejecutada puede recomponer el margen mejor que 6 meses de optimización táctica; una subida mal sincronizada con marca y promoción mata conversion rate y daña LTV. Decisión del founder con contraste del growth partner.",
-        "Apertura o cierre de canal de adquisición. Cuándo abrir TikTok, Pinterest, retail físico, marketplace; cuándo cerrar un canal que lleva 3-6 meses sin payback aceptable. Cruza paid + producto + supply + marca. Mantener un canal abierto por sunk cost emocional es uno de los errores más caros que vemos. Decisión del founder con regla explícita de payback CAC y LTV/CAC mínimos.",
-        "Relación con el top 5-10% de clientes alto LTV. Ese segmento aporta típicamente 30-50% del revenue D2C. Cruza retención + producto + marca + customer service. Conocer ese cohorte por nombre o segmento, tener protocolo personal de retención, diseñar oferta para él e identificar señales de churn temprano es decisión del founder o del equipo de marca, nunca del agente.",
-        "Decisión de producto y roadmap. Qué SKU lanzar/descontinuar/reformular/limitar. Cruza producto + supply + paid + retención + marca. Un agente optimiza local — descontinuar el SKU menos rentable — y rompe el cohorte que retiene al cliente alto LTV. La decisión combina datos de venta con conversación con cliente real y capacidad del proveedor. Founder con criterio cross-funcional.",
-        "Arquitectura de incentivos del equipo interno y los partners externos. Cómo cobra cada función, qué variable se indexa a qué métrica, cómo se mide éxito por rol y por trimestre. Cruza finanzas + cultura + estrategia. Es la decisión más invisible y la más compuesta — el diseño de incentivos define el comportamiento del sistema entero los próximos 12-24 meses. Decisión del founder, intransferible.",
+        "Dashboard de margen cohorte unificado. Antes de cualquier recomendación de inversión, necesitamos margen de contribución por canal, payback de CAC blended y LTV/CAC por cohorte mensual. Sin esos datos no hay conversación honesta — solo opinión. Jorge construye el stack de atribución (CAPI server-side, sGTM, MTA ligero) para que esos datos sean reales, no aproximados.",
+        "Decisión de capital trimestral explícita. En cada revisión trimestral, la pregunta no es cómo optimizamos lo que hay, sino: ¿el siguiente euro va a paid, retención, producto o inventario? La respuesta la damos con datos cohorte y contexto de mercado — no con intuición de ejecutor.",
+        "Pricing y mix de canal con test de magnitud. Cuando la decisión de pricing o de cierre de canal está sobre la mesa, no la tomamos con opinión — la tomamos con test controlado. Pero la dirección de la decisión la toma el founder con criterio, no el agente con optimizaciones locales.",
+        "Revisión de incentivos internos y externos. En cada revisión trimestral auditamos cómo cobra cada función interna y cada partner externo — y si el modelo de cobro genera comportamientos alineados con el crecimiento del margen o no.",
       ].map((item, i) => (
         <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
       ))}
     </ol>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Andrew Chen, partner de a16z, lleva años publicando sobre el rol del founder de consumer en escala: <a href="https://andrewchen.com/the-laws-of-startups/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">su análisis de las leyes operativas del startup consumer</a> es explícito en este punto: la ventaja competitiva sostenible no vive en la ejecución intra-función — esa es replicable y, cada vez más, automatizable — sino en la coherencia de decisión cross-funcional que solo aporta el founder con contexto pleno del negocio.
-    </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo lo decidimos en DayByDay: protocolo de operador con criterio</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      DayByDay Consulting opera como growth partner senior para D2C que ya facturan, no como agencia de paid media. El partnership lo formamos <strong className="text-white">Pablo Santirsó</strong> (founder, operaciones y paid media — Garett, Cartri, UFV Postgrado, La Vida Padel, Arasnet) y <strong className="text-white">Jorge González</strong> (CTO, automation y agentic AI — Total Energies, Puig, Robot Factory de Orange). El cliente habla siempre con los dos socios, sin handoffs ni perfiles junior. Donde una organización mono-funcional fragmenta el juicio en silos, Pablo y Jorge integran paid + atribución + automation + decisión de capital en la misma conversación.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Cuando un founder D2C nos contrata, el reparto delegación/juicio se monta así — porque el paid media y el operativo son palancas, no el producto:
-    </p>
-    <ol className="space-y-3 mb-6 list-decimal list-inside">
-      {[
-        "Dashboard de margen cohorte unificado (Shopify + Meta + Google + Klaviyo + supply + pasarela) con margen de contribución por pedido, payback de CAC blended y LTV/CAC por cohorte mensual. Jorge construye y mantiene el stack técnico (CAPI server-side, sGTM, atribución MTA o MMM ligero). Pablo lo lee y aporta criterio de pricing y mix de canal. El founder firma la decisión con los datos delante — sin ese dataset, ningún reparto delegación/juicio es honesto.",
-        "Comité trimestral de capital con regla explícita: a qué palanca va el siguiente euro, con payback CAC objetivo y LTV/CAC mínimo por canal. Pablo trae benchmarks operativos de cuentas comparables; el founder integra contexto interno (equipo, ciclo de caja, visión de marca) y firma. La decisión no se delega — se contrasta y se decide en la misma conversación.",
-        "Revisión mensual de pricing y oferta como prerrequisito para cualquier inversión adicional en paid. Si una subida del 5-10% en precio base resuelve más margen que 3 meses de optimización táctica, ahí es donde va la conversación primero. Pablo propone, Jorge calibra implementación técnica (Shopify + retención post-cambio), founder firma.",
-        "Protocolo de relación con el top 10% de clientes alto LTV: identificación, segmentación, propensión a recompra, churn implícito, conversación con marca. Esta zona nunca se delega a un agente ni a un perfil mono-funcional — se asiste con stack, pero la decisión sigue siendo del founder y del equipo de marca.",
-        "Modelo de fee con componente variable indexado a margen de contribución incremental — no a métricas de plataforma ni a horas facturadas. Esto alinea nuestro criterio con el del founder: si la decisión correcta es bajar paid para subir retención, cerrar un canal o subir precio, la tomamos sin conflicto económico. Cero account managers, cero handoffs, cero pelea por defender el spend.",
-      ].map((item, i) => (
-        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
-      ))}
-    </ol>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Reportamos margen de contribución, payback de CAC y LTV cohorte — no ROAS plataforma — porque son las métricas que sostienen el juicio cross-funcional que el founder no puede delegar. Si tu socio externo todavía vive en métricas de plataforma, te falta el dataset que hace decidible la conversación.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">3 patrones de delegación destructiva que vemos en founders D2C</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Lo que vemos en cuentas españolas D2C entre 500K€ y 5M€/año cuando el founder confunde delegar ejecución con delegar decisión:
-    </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">3 errores que un founder D2C comete cuando delega la decisión</h2>
     <ul className="space-y-2 mb-6">
       {[
-        "Delegar la decisión de capital al responsable de paid. El founder contrata un head de paid media (interno o externo) y le da carta blanca para 'optimizar el negocio'. El responsable de paid optimiza lo que conoce — métricas de plataforma — y el negocio entra en deuda de adquisición: gasta más, factura más, pero compone menos margen y peor cohorte. Cuando el founder se da cuenta, la decisión de cierre o reducción cuesta 6-12 meses de recuperación. El antídoto no es despedir al responsable, es retener la decisión de capital en el founder con dashboard de margen cohorte.",
-        "Delegar pricing a un consultor o a un test táctico. El pricing operativo es la decisión con mayor impacto compuesto en margen de un D2C — y la que más founders delegan a un tercero o a un A/B test aislado. Un test A/B mide conversion rate, no cohorte de cliente que captura el nuevo precio ni dinámica de retención a 12 meses. Pricing es juicio cross-funcional: producto + marca + finanzas + retención. Decisión del founder con contraste senior, no del responsable de growth ni de un consultor de pricing.",
-        "Abdicar el juicio al stack de IA. 'Que el agente decida la inversión, que la plataforma decida el bidding, que el LLM proponga el roadmap'. La IA es buena ejecutora con criterio claro y mala decisora cross-funcional en este horizonte. Delegar la decisión a un agente sin marco escrito y sin umbral explícito de escalado al founder es abdicación, no automatización. El stack es palanca, no decisor.",
+        "Confundir reporting con decisión. Recibir un reporte semanal con métricas de plataforma (CPA, CPM, ROAS de Meta) no es tomar una decisión — es leer la foto del retrovisor. La decisión de capital trimestral requiere datos de margen cohorte, payback y LTV que no están en ningún dashboard de plataforma.",
+        "Delegar la dirección estratégica al ejecutor de una palanca. Si tu agencia de paid media te recomienda invertir más en Meta porque tiene buen ROAS de plataforma, está dando una recomendación que optimiza su palanca — no el sistema completo. Un growth partner con dashboard de margen cohorte dice: invirtamos más en Meta si y solo si el LTV/CAC del canal justifica el payback en este momento del runway.",
+        "Asumir que tener más datos de plataforma mejora la calidad de la decisión. Un D2C que ya factura puede tener 20 dashboards activos y seguir sin tener los datos que necesita para decidir. Lo que necesita es un dashboard de margen cohorte unificado que responda a cuál es el LTV/CAC real de cada canal y cuál es el payback de CAC real de cada segmento.",
       ].map((item, i) => (
         <li key={i} className="flex items-start gap-3">
           <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
@@ -183,21 +148,6 @@ const JuicioCrossFuncionalFounderD2cPage = ({ openCalendly }) => (
         </li>
       ))}
     </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Marco de decisión: auditoría de tu reparto delegación/juicio</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Cuatro pasos. Aplícalo este trimestre antes de contratar más perfiles operativos, expandir stack agentic o renovar contrato con tu partner externo:
-    </p>
-    <ol className="space-y-3 mb-6 list-decimal list-inside">
-      {[
-        "Enumera las 6 zonas de juicio cross-funcional (capital, pricing, mix de canal, top 5-10% alto LTV, producto, incentivos) y escribe quién decide cada una hoy. Si en alguna no eres tú como founder o no hay co-decisión con un growth partner senior, ahí hay delegación destructiva probable — independientemente de lo bien que funcione la ejecución.",
-        "Para cada zona, evalúa si tienes: (a) datos cohorte limpios para decidir, (b) cadencia recurrente de revisión (mensual o trimestral, no ad-hoc), (c) marco escrito de umbrales y trade-offs aceptables. Si fallas en dos de tres, no es problema de capacidad — es problema de cómo está montado el sistema de juicio. Y eso se monta antes de cualquier conversación de spend.",
-        "Identifica decisiones del último trimestre que NO tomaste por falta de datos cohorte, por falta de tiempo protegido o por captura por la función más ruidosa. Esas son las decisiones que defienden margen a 12-24 meses. Si la lista pasa de 3, el reparto delegación/juicio está mal calibrado — demasiada operativa, poco juicio.",
-        "Decide si tu modelo actual de socio externo está alineado con el perímetro de juicio (capital, pricing, producto, mix de canal, retención, incentivos, integración técnica) o con el perímetro táctico (campañas, creatividades, reporting). Si está en el segundo, contratar más ejecución solo amplifica el problema; lo que necesitas es contraste senior en juicio cross-funcional, no más manos en ejecución.",
-      ].map((item, i) => (
-        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
-      ))}
-    </ol>
 
     <h2 className="text-2xl font-black mt-10 mb-4">Cobertura GEO: consultas IA que responde este artículo</h2>
     <p className="text-white/70 leading-relaxed mb-4">
@@ -205,14 +155,14 @@ const JuicioCrossFuncionalFounderD2cPage = ({ openCalendly }) => (
     </p>
     <ul className="space-y-2 mb-6">
       {[
-        "qué decisiones puede delegar un founder D2C y cuáles no",
         "juicio cross-funcional founder ecommerce qué significa",
-        "growth partner vs head de marketing fraccional para D2C",
-        "cómo decidir entre delegar ejecución y delegar decisión en eCommerce",
-        "qué pasa si un founder D2C delega la decisión de capital al responsable de paid",
-        "cuántas horas semanales debe invertir un founder D2C en decisión vs operativo",
-        "qué reportes debe pedir un founder D2C para mantener juicio cross-funcional",
-        "operador con criterio D2C España qué decisiones retiene el founder",
+        "decisiones que un founder d2c no puede delegar",
+        "growth partner vs agencia paid media decisión",
+        "cuándo delegar y cuándo decidir en ecommerce d2c",
+        "cómo tomar decisiones de inversión en ecommerce",
+        "qué es un growth partner para d2c ecommerce españa",
+        "diferencia ejecutar vs decidir ecommerce founder",
+        "cuándo un d2c necesita growth partner y no agencia",
       ].map((item, i) => (
         <li key={i} className="flex items-start gap-3">
           <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
@@ -221,12 +171,12 @@ const JuicioCrossFuncionalFounderD2cPage = ({ openCalendly }) => (
       ))}
     </ul>
     <p className="text-white/70 leading-relaxed mb-4">
-      Para benchmarks operativos cruzamos los datos de <a href="https://www.shopify.com/enterprise/blog" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Shopify Plus</a> sobre el peso de la retención y el AOV en el margen de contribución D2C, los análisis sectoriales del <a href="https://www.iabspain.es/estudio/estudio-de-ecommerce-2025/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">IAB Spain</a> y el marco estratégico de <a href="https://hbr.org/2020/01/competing-in-the-age-of-ai" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Iansiti y Lakhani en HBR</a> sobre dónde se concentra el valor competitivo cuando la ejecución se automatiza.
+      Para benchmarks operativos cruzamos los datos de <a href="https://www.iabspain.es/estudio/estudio-de-ecommerce-2025/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">IAB Spain — Estudio de eCommerce 2025</a> y el marco de <a href="https://hbr.org/2020/01/competing-in-the-age-of-ai" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">HBR sobre gestión de decisiones en la era de la IA</a>. Para skills de operadores cross-funcionales, First Round Review tiene la documentación más práctica del mercado español.
     </p>
 
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu reparto delegación/juicio está bien calibrado?</p>
-      <p className="text-white/50 text-sm mb-4">Conversación de 30 minutos con los dos socios — Pablo + Jorge. Revisamos contigo las 6 zonas de juicio cross-funcional de tu D2C, dónde estás reteniendo bien la decisión y dónde estás delegando lo que no se delega. Sin pitch, sin slide deck.</p>
+      <p className="font-bold text-white text-lg mb-2">¿Tu D2C está delegando ejecución donde debería delegar solo ejecución?</p>
+      <p className="text-white/50 text-sm mb-4">Conversación de 30 minutos con los dos socios — Pablo y Jorge. Revisamos contigo cómo está estructurada la decisión de capital hoy, qué datos faltan y si tu modelo de partner externo está realmente funcionando como growth partner o como ejecutor de palanca. Sin pitch, sin slide deck.</p>
       <button
         onClick={openCalendly}
         className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
@@ -238,28 +188,28 @@ const JuicioCrossFuncionalFounderD2cPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
     <div className="space-y-3">
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/que-no-automatiza-ia-d2c" className="text-white font-semibold hover:text-white/80">
-          Qué NO automatiza la IA en un D2C en 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Mapa de las 6 áreas operativas que no se automatizan en este horizonte — el dataset sobre el que se ejerce el juicio cross-funcional del founder.</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ai-proof-skills-founder-d2c-2027" className="text-white font-semibold hover:text-white/80">
-          AI-proof skills para founders D2C en 2027 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Las skills concretas que sostienen el juicio cross-funcional cuando la ejecución se automatiza.</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/growth-partner-vs-agencia-paid-media" className="text-white font-semibold hover:text-white/80">
           Growth partner vs agencia paid media: cuándo cada uno tiene sentido para un D2C →
         </Link>
-        <p className="text-white/40 text-xs mt-1">El modelo de socio externo que aporta contraste senior al juicio cross-funcional del founder, en lugar de ejecutar campañas.</p>
+        <p className="text-white/40 text-xs mt-1">La diferencia entre el modelo de socio externo que toma decisiones y el que solo ejecuta.</p>
       </div>
       <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
         <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Margen de contribución vs ROAS en eCommerce D2C →
+          Margen de contribución vs ROAS: por qué las métricas de plataforma mienten a un founder →
         </Link>
-        <p className="text-white/40 text-xs mt-1">Para profundizar en una palanca específica del reporting de negocio: la métrica de margen que sostiene el juicio cross-funcional sobre paid, retención y producto.</p>
+        <p className="text-white/40 text-xs mt-1">Por qué el dashboard de margen cohorte sustituye a las métricas de plataforma.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/ai-proof-skills-founder-d2c-2027" className="text-white font-semibold hover:text-white/80">
+          AI-proof skills para founders D2C en 2027: qué dominar cuando el operativo se automatiza →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Las skills concretas que un founder D2C necesita cultivar mientras la IA absorbe la ejecución táctica.</p>
+      </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/que-no-automatiza-ia-d2c" className="text-white font-semibold hover:text-white/80">
+          Qué NO automatiza la IA en un D2C en 2026 →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">El mapa más amplio: qué decisiones siguen siendo humanas cuando la ejecución táctica se commoditiza.</p>
       </div>
     </div>
   </BlogPostLayout>
