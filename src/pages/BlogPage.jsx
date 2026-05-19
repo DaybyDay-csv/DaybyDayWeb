@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "pixel-meta-hibrido-cliente-servidor-implementacion",
+    title: "Pixel híbrido (cliente + servidor) en Meta Ads: implementación práctica paso a paso (2026)",
+    excerpt: "Guía práctica pixel híbrido Meta Ads 2026: qué es, por qué necesitas cliente + servidor, Event Match Quality score (0-10) explicado, 3 rutas de implementación para Shopify (Stape, sGTM Cloud Run, app partner), deduplicación Pixel + CAPI paso a paso con event_id, cómo mejorar EMQ con parámetros de usuario en 5 pasos, umbrales de spend que justifican cada ruta, errores frecuentes con tabla de diagnóstico, y enfoque DayByDay Pablo+Jorge con auditoría de tracking completa en onboarding.",
+    category: "Tracking",
+    date: "19 may 2026",
+    readingTime: "13 min",
+  },
+  {
     slug: "customer-journey-d2c-primer-impacto-repeticion",
     title: "Customer Journey D2C: del primer impacto a la repetición de compra (2026)",
     excerpt: "Guía completa del customer journey para eCommerce D2C España 2026: las 6 etapas operativo-funcionales (Despertar, Considerar, Decidir, Adquirir, Activar, Retener), métricas clave por etapa, cómo paid media (Meta Ads + Google Ads) influye en cada fase, роль del email marketing y WhatsApp en activación y retención, fugas más críticas (abandono checkout 65-80%, falta de second purchase, CPM inflado), benchmarking por vertical D2C España, cómo construir un funnel full-funnel cross-channel, y enfoque DayByDay Pablo+Jorge con datos propios de cuentas activas.",
