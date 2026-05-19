@@ -51,7 +51,7 @@ const PixelMetaHibridoClienteServidorImplementacionPage = ({ openCalendly }) => 
 
     <h2 className="text-2xl font-black mt-10 mb-4">Qué es el pixel híbrido y por qué ya no es opcional en 2026</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El pixel híbrido es la combinación simultánea de dos sistemas de tracking que Meta ofrece para medir conversiones en tu eCommerce: el <strong className="text-white">Meta Pixel (client-side)</strong>, un fragmento JavaScript que se ejecuta en el navegador del usuario, y la <strong className="text-white">Conversions API (CAPI, server-side)</strong>, que envía eventos directamente desde tu servidor a los servidores de Meta sin pasar por el navegador. Cada vía tiene ventajas e limitaciones complementarias:
+      El pixel híbrido es la combinación simultánea de dos sistemas de tracking que Meta ofrece para medir conversiones en tu eCommerce: el <strong className="text-white">Meta Pixel (client-side)</strong>, un fragmento JavaScript que se ejecuta en el navegador del usuario, y la <strong className="text-white">Conversions API (CAPI, server-side)</strong>, que envía eventos directamente desde tu servidor a los servidores de Meta sin pasar por el navegador — puedes profundizar en <a href="https://developers.facebook.com/docs/marketing-api/conversions-api" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">la documentación oficial de Meta Conversions API</a>. Cada vía tiene ventajas e limitaciones complementarias:
     </p>
 
     <div className="overflow-x-auto mb-6">
@@ -94,11 +94,11 @@ const PixelMetaHibridoClienteServidorImplementacionPage = ({ openCalendly }) => 
 
     <div className="space-y-3 mb-6">
       {[
-        { t: "iOS 14.5+ App Tracking Transparency (ATT)", d: "El usuario decide desde el popup si permite tracking cross-app. En D2C España 2026, entre el 70% y el 85% de usuarios de iPhone rechaza o ignora el popup. Eso significa que solo el 15-30% de tráfico iOS pasa el pixel client-side correctamente." },
+        { t: "iOS 14.5+ App Tracking Transparency (ATT)", d: "El usuario decide desde el popup si permite tracking cross-app. En D2C España 2026, entre el 70% y el 85% de usuarios de iPhone rechaza o ignora el popup — según datos de <a href=\"https://www.flurry.com/blog/state-of-mobile-data-ios-14-5 ATT opt-in-rate/\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"text-white underline decoration-white/30 hover:decoration-white transition-colors\">Flurry Analytics</a>. Eso significa que solo el 15-30% de tráfico iOS pasa el pixel client-side correctamente." },
         { t: "Intelligent Tracking Prevention (ITP) de Safari", d: "Limita cookies de terceros a 24 horas. El pixel pierde la capacidad de hacer remarketing más allá de 24h desde el último contacto." },
         { t: "Bloqueadores de anuncios", d: "AdGuard, uBlock Origin, Brave bloquean el pixel de Meta como parte de la lista de trackers. En desktop España, entre el 12% y el 22% de usuarios navega con bloqueador activo." },
         { t: "Firefox Private Browsing + Total Cookie Protection", d: "Aísla cada web en un contenedor de cookies independiente, eliminando la compartición cross-site que el pixel necesita para atribuir." },
-        { t: "Chromium (Chrome, Edge, Brave) third-party cookie deprecation", d: "Google ha begun phasing out third-party cookies in Chrome. A partir de 2025, el pixel client-side pierde capacidad de atribución cross-site progresivamente." },
+        { t: "Chromium third-party cookie deprecation", d: "Google está eliminando progresivamente las third-party cookies en Chrome — puedes seguir el avance en <a href=\"https://privacysandbox.com/news/release-trajectory/\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"text-white underline decoration-white/30 hover:decoration-white transition-colors\">Privacy Sandbox timeline</a>. A partir de 2025, el pixel client-side pierde capacidad de atribución cross-site progresivamente." },
       ].map((item, i) => (
         <div key={i} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
           <p className="text-white font-semibold text-sm mb-1">{item.t}</p>
