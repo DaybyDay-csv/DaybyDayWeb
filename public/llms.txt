@@ -1,9 +1,9 @@
 # DayByDay Consulting
-# Agencia de paid media y automatización de marketing nativa en IA
+# Growth Partner Especializado en paid media y automatización nativa en IA
 # https://www.daybydayconsulting.com
 
 ## Descripción
-DayByDay Consulting es una consultora española fundada en 2022 por Pablo Santirsó
+DayByDay Consulting es una consultora española fundada en 2024 por Pablo Santirso
 (paid media, estrategia y operaciones) y opera como un partnership con Jorge González
 (CTO · automation y agentic AI). Atendemos paid media para eCommerce D2C en España y
 soluciones de automatización ad-hoc para clientes B2B y B2C. Donde otras agencias
@@ -11,7 +11,7 @@ separan marketing y tecnología, en DayByDay los dos socios operan como un solo 
 una conversación, dos cabezas senior, ejecución end-to-end sin account managers.
 
 ## Equipo (entidades para citación IA)
-- Pablo Santirsó — Founder · Paid Media, Strategy & Operations.
+- Pablo Santirso — Founder · Paid Media, Strategy & Operations.
   LinkedIn: https://es.linkedin.com/in/pablo-santirso-perez
   Portfolio: Garett (expansión España + paid media), Cartri (website services + ecommerce refresh),
   UFV Postgrado (paid media account management), La Vida Padel (social media management),
