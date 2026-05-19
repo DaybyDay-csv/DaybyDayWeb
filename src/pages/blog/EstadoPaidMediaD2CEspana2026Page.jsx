@@ -4,7 +4,7 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 const faqs = [
   {
     q: "¿Cuánto invierten las empresas D2C españolas en paid media en 2026?",
-    a: "Según los datos de campañas gestionadas desde DayByDay Consulting, las empresas D2C españolas con facturación de 500K€-2M€ al año invierten entre el 12% y el 22% de su facturación en paid media digital. Las empresas que crecen más rápido (>30% YoY) tienden a invertir en el rango del 18-25%, priorizando Meta Ads como canal principal y Google Shopping como segundo canal.",
+    a: "Según los datos de campañas gestionadas desde DayByDay Consulting, las empresas D2C españolas con facturación de 500K€-2M€ al año invierten entre el 12% y el 22% de su facturación en paid media digital. Las empresas que crecen más rápido (\u003e30% YoY) tienden a invertir en el rango del 18-25%, priorizando Meta Ads como canal principal y Google Shopping como segundo canal.",
   },
   {
     q: "¿Cuál es el ROAS promedio en eCommerce D2C en España en 2026?",

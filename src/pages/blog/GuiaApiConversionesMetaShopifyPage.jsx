@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "¿Cómo verifico que mi Conversions API está bien configurada?",
-    a: "Tres comprobaciones obligatorias en Events Manager. (1) Event Match Quality (EMQ): puntuación de 8-10/10 indica matching óptimo de identidad de usuario. (2) Deduplicación: en \"Diagnostics\" no debe haber alertas de eventos duplicados — si las hay, falla event_id o event_name compartido entre píxel y CAPI. (3) Coverage: el porcentaje de eventos enviados por servidor vs navegador debe ser >70% para Purchase. Adicionalmente, prueba el \"Test Events\" tool antes de ir a producción y revisa la cobertura semanal durante el primer mes. Cualquier agencia que no te enseñe estos tres números en el reporte mensual no está midiendo bien.",
+    a: "Tres comprobaciones obligatorias en Events Manager. (1) Event Match Quality (EMQ): puntuación de 8-10/10 indica matching óptimo de identidad de usuario. (2) Deduplicación: en \"Diagnostics\" no debe haber alertas de eventos duplicados — si las hay, falla event_id o event_name compartido entre píxel y CAPI. (3) Coverage: el porcentaje de eventos enviados por servidor vs navegador debe ser \u003e70% para Purchase. Adicionalmente, prueba el \"Test Events\" tool antes de ir a producción y revisa la cobertura semanal durante el primer mes. Cualquier agencia que no te enseñe estos tres números en el reporte mensual no está midiendo bien.",
   },
 ];
 

@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "¿Qué tipo de campañas de Google Ads complementan mejor a Meta Ads en D2C?",
-    a: "Tres capas obligatorias: 1) Marca + brand defense (ROAS típico >8, coste muy bajo, captura tráfico que Meta empuja). 2) Categorías top non-brand (ROAS 2-4x, vuelo medio, captura demanda informacional/transaccional). 3) Performance Max sólo cuando el feed de producto está limpio y hay >30 conversiones/mes — antes de eso suele canibalizar marca. Shopping estándar es la alternativa segura mientras PMax madura. La capa de Display y YouTube se evalúa cuando la base de Search ya rinde estable.",
+    a: "Tres capas obligatorias: 1) Marca + brand defense (ROAS típico \u003e8, coste muy bajo, captura tráfico que Meta empuja). 2) Categorías top non-brand (ROAS 2-4x, vuelo medio, captura demanda informacional/transaccional). 3) Performance Max sólo cuando el feed de producto está limpio y\u003ehay >30 conversiones/mes — antes de eso suele canibalizar marca. Shopping estándar es la alternativa segura mientras PMax madura. La capa de Display y YouTube se evalúa cuando la base de Search ya rinde estable.",
   },
   {
     q: "¿Cómo evito que Google Ads y Meta Ads se atribuyan las mismas conversiones?",
@@ -107,7 +107,7 @@ const CombinarGoogleAdsMetaAdsD2CPage = ({ openCalendly }) => (
         {
           num: "3",
           titulo: "Google Ads de marca + brand defense",
-          desc: "Cuando Meta empieza a empujar, las búsquedas de tu marca crecen. Capturarlas con Search de marca tiene ROAS >8, coste muy bajo y bloquea a competidores que pujan por tu nombre. Es el primer canal Google que activamos siempre.",
+          desc: "Cuando Meta empieza a empujar, las búsquedas de tu marca crecen. Capturarlas con Search de marca tiene ROAS \u003e8, coste muy bajo y bloquea a competidores que pujan por tu nombre. Es el primer canal Google que activamos siempre.",
         },
         {
           num: "4",

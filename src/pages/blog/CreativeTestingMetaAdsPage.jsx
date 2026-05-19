@@ -4,7 +4,7 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 const faqs = [
   {
     q: "¿Cuántos creativos necesito para hacer creative testing en Meta Ads?",
-    a: "Para un test válido necesitas al menos 3-5 variaciones por variable que quieras testear (hook, formato, copy, oferta). En DayByDay recomendamos trabajar con un mínimo de 10-15 creativos activos simultáneamente en una cuenta con >50€/día de gasto, para que el algoritmo de Meta tenga suficientes opciones y datos para optimizar.",
+    a: "Para un test válido necesitas al menos 3-5 variaciones por variable que quieras testear (hook, formato, copy, oferta). En DayByDay recomendamos trabajar con un mínimo de 10-15 creativos activos simultáneamente en una cuenta con \u003e50€/día de gasto, para que el algoritmo de Meta tenga suficientes opciones y datos para optimizar.",
   },
   {
     q: "¿Cuánto presupuesto hay que asignar a creative testing?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "¿Con qué frecuencia hay que renovar los creativos en Meta Ads?",
-    a: "Depende del presupuesto: con <200€/día, un buen creativo puede durar 3-6 semanas. Con >500€/día, la fatiga llega antes (1-2 semanas). La señal de alarma no es el tiempo sino la métrica: si el CTR del creativo cae más de un 25% respecto a su mejor semana, es hora de renovarlo aunque lleve pocos días activo.",
+    a: "Depende del presupuesto: con <200€/día, un buen creativo puede durar 3-6 semanas. Con \u003e500€/día, la fatiga llega antes (1-2 semanas). La señal de alarma no es el tiempo sino la métrica: si el CTR del creativo cae más de un 25% respecto a su mejor semana, es hora de renovarlo aunque lleve pocos días activo.",
   },
 ];
 

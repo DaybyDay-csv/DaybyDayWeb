@@ -4,11 +4,11 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 const faqs = [
   {
     q: "¿Cuánto se puede escalar un eCommerce D2C con paid media de 100K a 1M€ al año?",
-    a: "El salto de 100K€ a 1M€ de facturación con paid media es realista en 12-24 meses si se cumplen tres condiciones: margen de contribución >40%, LTV/CAC >2,5x a 90 días y un sistema de validación creativa que genere mínimo 6-10 conceptos nuevos al mes. La trampa habitual es escalar presupuesto antes de tener señales de demanda validadas — eso multiplica el CAC sin mover ingresos. En las cuentas D2C que llevamos en DayByDay, las que escalan de forma sostenida son las que tratan el paid media como un sistema de validación de hipótesis, no como un grifo de presupuesto.",
+    a: "El salto de 100K€ a 1M€ de facturación con paid media es realista en 12-24 meses si se cumplen tres condiciones: margen de contribución \u003e40%, LTV\u003eCAC >2,5x a 90 días y un sistema de validación creativa que genere mínimo 6-10 conceptos nuevos al mes. La trampa habitual es escalar presupuesto antes de tener señales de demanda validadas — eso multiplica el CAC sin mover ingresos. En las cuentas D2C que llevamos en DayByDay, las que escalan de forma sostenida son las que tratan el paid media como un sistema de validación de hipótesis, no como un grifo de presupuesto.",
   },
   {
     q: "¿Qué KPIs hay que monitorizar para escalar un eCommerce D2C sin romper la rentabilidad?",
-    a: "Cuatro KPIs definen si el sistema escala: MER (Marketing Efficiency Ratio = ingresos totales / inversión total en marketing), CAC blended (gasto total / nuevos clientes), LTV a 90 días y nCPA (coste por nuevo cliente, no por compra). El ROAS de plataforma es ruido en fase de escala — durante un escalado, las ventanas de atribución se distorsionan. El MER es la métrica que no miente. Si el MER se mantiene estable o sube cuando subes el presupuesto, escala. Si baja >10% durante 14 días seguidos, has tocado el techo de la audiencia o las creatividades.",
+    a: "Cuatro KPIs definen si el sistema escala: MER (Marketing Efficiency Ratio = ingresos totales / inversión total en marketing), CAC blended (gasto total / nuevos clientes), LTV a 90 días y nCPA (coste por nuevo cliente, no por compra). El ROAS de plataforma es ruido en fase de escala — durante un escalado, las ventanas de atribución se distorsionan. El MER es la métrica que no miente. Si el MER se mantiene estable o sube cuando subes el presupuesto, escala. Si baja \u003e10% durante 14 días seguidos, has tocado el techo de la audiencia o las creatividades.",
   },
   {
     q: "¿Cuántas creatividades necesita un D2C para escalar de 100K a 1M€?",
@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     q: "¿Cuál es el orden correcto para escalar un D2C: presupuesto, audiencias o creatividades?",
-    a: "El orden es: validación → creatividades → audiencias → presupuesto. Subir presupuesto sin haber validado que la creatividad funciona en tres audiencias distintas (lookalike, intereses amplios, retargeting) genera CACs falsamente bajos en la primera semana que se desploman al cuarto mes. La regla en DayByDay: ningún incremento >25% sobre el presupuesto medio de los últimos 7 días si no hay 3 creativos en producción con CPA por debajo del objetivo durante 14 días seguidos.",
+    a: "El orden es: validación → creatividades → audiencias → presupuesto. Subir presupuesto sin haber validado que la creatividad funciona en tres audiencias distintas (lookalike, intereses amplios, retargeting) genera CACs falsamente bajos en la primera semana que se desploman al cuarto mes. La regla en DayByDay: ningún incremento \u003e25% sobre el presupuesto medio de los últimos 7 días si no hay 3 creativos en producción con CPA por debajo del objetivo durante 14 días seguidos.",
   },
   {
     q: "¿Cuándo es momento de añadir Google Ads y otros canales a un D2C que escala con Meta Ads?",
-    a: "El segundo canal entra cuando el primero da síntomas claros de saturación: CPM en subida sostenida (>20% en 60 días), frecuencia >4 en audiencias frías, MER en caída a pesar de creativos nuevos. Antes de eso, multiplicar canales antes de saturar el primero diluye el aprendizaje. En la mayoría de D2C que llevamos, esa señal aparece entre los 30K y 60K€/mes de inversión en Meta. Google Ads (Search + Performance Max) suele ser el siguiente canal lógico, no TikTok ni LinkedIn.",
+    a: "El segundo canal entra cuando el primero da síntomas claros de saturación: CPM en subida sostenida (\u003e20% en 60 días), frecue\u003ecia >4 en audiencias frías, MER en caída a pesar de creativos nuevos. Antes de eso, multiplicar canales antes de saturar el primero diluye el aprendizaje. En la mayoría de D2C que llevamos, esa señal aparece entre los 30K y 60K€/mes de inversión en Meta. Google Ads (Search + Performance Max) suele ser el siguiente canal lógico, no TikTok ni LinkedIn.",
   },
   {
     q: "¿Qué papel juega la IA y la automatización al escalar un eCommerce D2C?",
@@ -28,11 +28,11 @@ const faqs = [
   },
   {
     q: "¿Cuántos meses de paid media hacen falta para llevar un D2C de 100K a 1M€?",
-    a: "El rango realista es 12-24 meses, dependiendo del margen y del LTV. Las cuentas que escalan en menos de 12 meses suelen tener: producto con repetición de compra (LTV >150€ a 6 meses), margen >50%, y un equipo capaz de producir 8+ creatividades nuevas al mes. Por debajo de eso, forzar el escalado en menos de 12 meses casi siempre destruye margen. El error más común es proyectar el ROAS de los primeros 30K€ al millón — el CAC sube de forma no lineal a partir del 60-70% de penetración del público objetivo realista.",
+    a: "El rango realista es 12-24 meses, dependiendo del margen y del LTV. Las cuentas que escalan en menos de 12 meses suelen tener: producto con repetición de compra (LTV \u003e150€ a 6 meses), ma\u003egen >50%, y un equipo capaz de producir 8+ creatividades nuevas al mes. Por debajo de eso, forzar el escalado en menos de 12 meses casi siempre destruye margen. El error más común es proyectar el ROAS de los primeros 30K€ al millón — el CAC sube de forma no lineal a partir del 60-70% de penetración del público objetivo realista.",
   },
   {
     q: "¿Qué errores hay que evitar para no romper la rentabilidad al escalar?",
-    a: "Los cinco errores más caros: (1) subir presupuesto >50% en menos de 7 días — desestabiliza la fase de aprendizaje del algoritmo; (2) lanzar audiencias nuevas sin haber agotado el aprendizaje de la actual; (3) cambiar configuración de campañas en periodos de alta inversión sin documentar el cambio; (4) confiar solo en el ROAS de plataforma cuando el MER ya está dando señal de caída; (5) no parar campañas perdedoras por miedo a perder learning — un adset con 14 días sin venta no va a remontar, está consumiendo presupuesto que necesita el adset ganador para escalar.",
+    a: "Los cinco errores más caros: (1) subir presupuesto \u003e50% en menos de 7 días — desestabiliza la fase de aprendizaje del algoritmo; (2) lanzar audiencias nuevas sin haber agotado el aprendizaje de la actual; (3) cambiar configuración de campañas en periodos de alta inversión sin documentar el cambio; (4) confiar solo en el ROAS de plataforma cuando el MER ya está dando señal de caída; (5) no parar campañas perdedoras por miedo a perder learning — un adset con 14 días sin venta no va a remontar, está consumiendo presupuesto que necesita el adset ganador para escalar.",
   },
 ];
 
@@ -147,7 +147,7 @@ const EscalarEcommerceD2C100K1MPage = ({ openCalendly }) => (
         {
           num: "1",
           titulo: "MER (Marketing Efficiency Ratio) — la métrica que no se puede inflar",
-          desc: "Ingresos totales del negocio dividido entre gasto total en marketing (Meta + Google + lo que sea). No depende de atribución de plataforma. Si subes presupuesto y el MER se mantiene o sube → señal verde para escalar más. Si el MER baja >10% durante 14 días seguidos → has tocado el techo. Operativo: en cuentas D2C españolas con margen 45-55%, un MER >3 es saludable; <2,5 empieza a ser problema.",
+          desc: "Ingresos totales del negocio dividido entre gasto total en marketing (Meta + Google + lo que sea). No depende de atribución de plataforma. Si subes presupuesto y el MER se mantiene o sube → señal verde para escalar más. Si el MER baja \u003e10% durante 14 días seguidos → has tocado el techo. Operativo: en cuentas D2C españolas con margen 45-55%, un\u003eMER >3 es saludable; <2,5 empieza a ser problema.",
         },
         {
           num: "2",
@@ -162,7 +162,7 @@ const EscalarEcommerceD2C100K1MPage = ({ openCalendly }) => (
         {
           num: "4",
           titulo: "CPM por audiencia + frecuencia",
-          desc: "El CPM en audiencias frías y la frecuencia en audiencias <100K personas son las dos señales tempranas de fatiga creativa. CPM en subida sostenida + frecuencia >4 en menos de 30 días → la creatividad se ha agotado, el algoritmo está pagando más por menos atención. Cualquier subida de presupuesto en este escenario amplifica el problema.",
+          desc: "El CPM en audiencias frías y la frecuencia en audiencias <100K personas son las dos señales tempranas de fatiga creativa. CPM en subida sostenida + frecuencia \u003e4 en menos de 30 días → la creatividad se ha agotado, el algoritmo está pagando más por menos atención. Cualquier subida de presupuesto en este escenario amplifica el problema.",
         },
       ].map(({ num, titulo, desc }) => (
         <div key={num} className="bg-[#1a1616] border border-white/8 rounded-xl p-4 flex gap-4">

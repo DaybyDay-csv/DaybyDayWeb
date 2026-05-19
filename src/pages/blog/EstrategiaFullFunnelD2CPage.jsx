@@ -20,15 +20,15 @@ const faqs = [
   },
   {
     q: "¿Cómo mido si mi estrategia full funnel está funcionando o no?",
-    a: "Tres KPIs blended (no por canal): MER (ingresos totales / inversión paid total) > 3,5 en cuentas que escalan; CAC blended (inversión paid / clientes nuevos del periodo) en línea con LTV-180d para ratio LTV/CAC ≥3:1; tasa de recompra a 90 días >25% para validar que la capa de retención funciona. Mirar ROAS por canal aislado lleva a sobreinvertir en BOFU (que infla ROAS reportado pero no aporta clientes nuevos). El MER y el CAC blended son la fuente de verdad.",
+    a: "Tres KPIs blended (no por canal): MER (ingresos totales / inversión paid total) > 3,5 en cuentas que escalan; CAC blended (inversión paid / clientes nuevos del periodo) en línea con LTV-180d para ratio LTV/CAC ≥3:1; tasa de recompra a 90 días \u003e25% para validar que la capa de retención funciona. Mirar ROAS por canal aislado lleva a sobreinvertir en BOFU (que infla ROAS reportado pero no aporta clientes nuevos). El MER y el CAC blended son la fuente de verdad.",
   },
   {
     q: "¿Cómo afecta iOS 14+ y la pérdida de tracking a una estrategia full funnel D2C?",
-    a: "Reduce la precisión de atribución por canal entre un 20% y un 35% según sector. La consecuencia operativa es que las decisiones de presupuesto se toman cada vez más sobre métricas blended (MER, CAC blended, post-purchase survey) y menos sobre ROAS por plataforma. Un full funnel D2C bien montado en 2026 incluye Conversions API server-side, GA4 con eventos custom, post-purchase survey ('¿dónde nos conociste?') y, en cuentas que invierten >15K€/mes, modelos de marketing mix simplificados. Sin esa capa, escalar a ciegas es la norma.",
+    a: "Reduce la precisión de atribución por canal entre un 20% y un 35% según sector. La consecuencia operativa es que las decisiones de presupuesto se toman cada vez más sobre métricas blended (MER, CAC blended, post-purchase survey) y menos sobre ROAS por plataforma. Un full funnel D2C bien montado en 2026 incluye Conversions API server-side, GA4 con eventos custom, post-purchase survey ('¿dónde nos conociste?') y, en cuentas que invierten \u003e15K€/mes, modelos de marketing mix simplificados. Sin esa capa, escalar a ciegas es la norma.",
   },
   {
     q: "¿Cuál es el error más común al implementar full funnel en un D2C?",
-    a: "Empezar por la capa de retargeting/BOFU sin haber validado adquisición fría. La cuenta queda atrapada en un bucle: el ROAS reportado parece bueno porque el BOFU recoge usuarios que iban a comprar igual, pero el negocio no crece porque no entran clientes nuevos. La señal de alarma es MER blended >5 con crecimiento de ingresos plano. La regla operativa: hasta que la capa TOFU no genere CAC objetivo de forma estable durante 30 días, BOFU/MOFU son maquillaje, no motor.",
+    a: "Empezar por la capa de retargeting/BOFU sin haber validado adquisición fría. La cuenta queda atrapada en un bucle: el ROAS reportado parece bueno porque el BOFU recoge usuarios que iban a comprar igual, pero el negocio no crece porque no entran clientes nuevos. La señal de alarma es MER blended \u003e5 con crecimiento de ingresos plano. La regla operativa: hasta que la capa TOFU no genere CAC objetivo de forma estable durante 30 días, BOFU/MOFU son maquillaje, no motor.",
   },
 ];
 

@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo dejo correr un A/B test antes de decidir?",
-    a: "Mínimo 7 días, ideal 14, nunca menos. Meta sale del learning phase a los 50 eventos por ad set y los primeros 3-4 días el CPA está distorsionado por exploración del algoritmo. Tests de menos de una semana suelen ganar la variante 'que arrancó antes', no la mejor. La excepción es testar creativo dentro de un mismo ad set ganador: ahí 5-7 días con suficiente volumen pueden bastar. Si a los 14 días no hay diferencia clara (>20% en CPA con 100+ eventos por celda), el test es empate técnico — quédate con la variante operativamente más simple.",
+    a: "Mínimo 7 días, ideal 14, nunca menos. Meta sale del learning phase a los 50 eventos por ad set y los primeros 3-4 días el CPA está distorsionado por exploración del algoritmo. Tests de menos de una semana suelen ganar la variante 'que arrancó antes', no la mejor. La excepción es testar creativo dentro de un mismo ad set ganador: ahí 5-7 días con suficiente volumen pueden bastar. Si a los 14 días no hay diferencia clara (\u003e20% en CPA con 100+ eventos por celda), el test es empate técnico — quédate con la variante operativamente más simple.",
   },
   {
     q: "¿Tiene sentido hacer A/B testing si uso Advantage+ Shopping Campaign?",

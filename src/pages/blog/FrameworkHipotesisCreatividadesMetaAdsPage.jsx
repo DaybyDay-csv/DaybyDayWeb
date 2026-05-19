@@ -4,7 +4,7 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 const faqs = [
   {
     q: "¿Qué es un framework de hipótesis creativas en Meta Ads?",
-    a: "Un framework de hipótesis creativas es la estructura escrita que define qué se va a testar antes de gastar dinero en producir una pieza de Meta Ads. En lugar de pedirle al creador 'haz un UGC de 15 segundos', el framework convierte cada brief en una afirmación falsable del tipo 'creemos que un hook con dolor físico (espalda) en segundo 0-2, narrado por una mujer 40-55 años, conseguirá un Hook Rate >32% y bajará el CPA en un 18% frente al baseline'. Cada elemento (audiencia objetivo, formato, hook, propuesta, prueba) se anota previamente y se valida con datos. En auditorías de DayByDay vemos que cuentas D2C España con framework escrito previo consiguen 2-3 veces más winners por trimestre que cuentas donde el brief sigue siendo 'haz algo bonito que convierta'."
+    a: "Un framework de hipótesis creativas es la estructura escrita que define qué se va a testar antes de gastar dinero en producir una pieza de Meta Ads. En lugar de pedirle al creador 'haz un UGC de 15 segundos', el framework convierte cada brief en una afirmación falsable del tipo 'creemos que un hook con dolor físico (espalda) en segundo 0-2, narrado por una mujer 40-55 años, conseguirá un Hook Rate \u003e32% y bajará el CPA en un 18% frente al baseline'. Cada elemento (audiencia objetivo, formato, hook, propuesta, prueba) se anota previamente y se valida con datos. En auditorías de DayByDay vemos que cuentas D2C España con framework escrito previo consiguen 2-3 veces más winners por trimestre que cuentas donde el brief sigue siendo 'haz algo bonito que convierta'."
   },
   {
     q: "¿Cuántas variantes debo testar por hipótesis creativa?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "¿Cuándo descarto una hipótesis creativa que no ha funcionado?",
-    a: "Una hipótesis se descarta solo cuando las 3-4 variantes de ese ángulo, cada una con 200-400€ de spend durante 5-7 días, han mostrado Hook Rate <22%, CTR outbound <0,8% y CPA >130% del baseline. Si solo 1 variante ha fallado pero las otras 2-3 no se han llegado a producir, la hipótesis sigue viva. Si las 3-4 variantes han fallado en la misma audiencia, descártala para esa audiencia pero pruébala en una audiencia adyacente antes de matarla del todo. Y documenta siempre por qué se descarta: 'el ángulo dolor físico (espalda) no funcionó en mujer 40-55 con LAL 1% high-value buyers porque la oferta estaba sobreatribuida al beneficio cosmético, no al funcional'. Sin documentación, en 6 meses el equipo vuelve a producir el mismo ángulo fallido."
+    a: "Una hipótesis se descarta solo cuando las 3-4 variantes de ese ángulo, cada una con 200-400€ de spend durante 5-7 días, han mostrado Hook Rate <22%, CTR outbound <0,8% y CPA \u003e130% del baseline. Si solo 1 variante ha fallado pero las otras 2-3 no se han llegado a producir, la hipótesis sigue viva. Si las 3-4 variantes han fallado en la misma audiencia, descártala para esa audiencia pero pruébala en una audiencia adyacente antes de matarla del todo. Y documenta siempre por qué se descarta: 'el ángulo dolor físico (espalda) no funcionó en mujer 40-55 con LAL 1% high-value buyers porque la oferta estaba sobreatribuida al beneficio cosmético, no al funcional'. Sin documentación, en 6 meses el equipo vuelve a producir el mismo ángulo fallido."
   }
 ];
 

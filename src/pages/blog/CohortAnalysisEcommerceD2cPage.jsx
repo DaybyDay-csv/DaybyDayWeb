@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "¿Cuántas cohortes mínimas necesito para que el análisis sea útil?",
-    a: "Mínimo 6 cohortes mensuales con >50 clientes cada una para detectar tendencias con cierta solidez. Con 12 cohortes ya puedes ver estacionalidad anual y diferenciar entre cohortes Q4 (Black Friday, peor calidad) y cohortes Q1-Q3 (mejor calidad). Por debajo de 50 clientes/cohorte el ruido estadístico hace que cualquier curva de retención sea poco fiable; en ese caso conviene agrupar en cohortes trimestrales en lugar de mensuales hasta tener volumen."
+    a: "Mínimo 6 cohortes mensuales con \u003e50 clientes cada una para detectar tendencias con cierta solidez. Con 12 cohortes ya puedes ver estacionalidad anual y diferenciar entre cohortes Q4 (Black Friday, peor calidad) y cohortes Q1-Q3 (mejor calidad). Por debajo de 50 clientes/cohorte el ruido estadístico hace que cualquier curva de retención sea poco fiable; en ese caso conviene agrupar en cohortes trimestrales en lugar de mensuales hasta tener volumen."
   },
   {
     q: "¿Cómo detecto que mi D2C está degradándose con cohortes aunque la facturación crezca?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "¿Sirven Shopify Analytics o GA4 para hacer cohort analysis serio?",
-    a: "Para algo básico, sí. Shopify Analytics tiene reportes de retención por cohorte de adquisición y GA4 ofrece informe de cohortes de retención. Para análisis serio en D2C >100K€/mes ambos se quedan cortos: Shopify mezcla canales y no permite cruzar con CAC; GA4 mide visitas, no clientes. La realidad práctica es que la mayoría de D2C medianos hace cohort analysis en hojas (PostgreSQL/BigQuery + Looker o Sheets) o usa herramientas específicas como Triple Whale, Lifetimely o Polar Analytics — todas tienen vista de cohortes nativa cruzada con spend de marketing."
+    a: "Para algo básico, sí. Shopify Analytics tiene reportes de retención por cohorte de adquisición y GA4 ofrece informe de cohortes de retención. Para análisis serio en D2C \u003e100K€/mes ambos se quedan cortos: Shopify mezcla canales y no permite cruzar con CAC; GA4 mide visitas, no clientes. La realidad práctica es que la mayoría de D2C medianos hace cohort analysis en hojas (PostgreSQL/BigQuery + Looker o Sheets) o usa herramientas específicas como Triple Whale, Lifetimely o Polar Analytics — todas tienen vista de cohortes nativa cruzada con spend de marketing."
   },
   {
     q: "¿Qué payback period es bueno en eCommerce D2C español?",

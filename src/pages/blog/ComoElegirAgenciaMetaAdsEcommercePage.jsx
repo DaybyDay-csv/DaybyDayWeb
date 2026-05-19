@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "¿Las agencias grandes son mejores que las boutique para un eCommerce D2C?",
-    a: "Para un D2C que factura entre 30K€ y 1M€/mes, casi nunca. Las agencias grandes tienen procesos sólidos pero los D2C suelen acabar gestionados por juniors con plantillas, mientras los seniors se reservan para cuentas top. Las boutiques especializadas en D2C suelen dar acceso directo a un senior que ha gestionado decenas de cuentas similares. La excepción son D2C ya consolidados (>2M€/mes) que necesitan integración multi-canal compleja, equipo creativo interno y operativa internacional. Por debajo de eso, una boutique D2C-pure suele rendir mejor porque entiende exactamente tu tipo de cuenta.",
+    a: "Para un D2C que factura entre 30K€ y 1M€/mes, casi nunca. Las agencias grandes tienen procesos sólidos pero los D2C suelen acabar gestionados por juniors con plantillas, mientras los seniors se reservan para cuentas top. Las boutiques especializadas en D2C suelen dar acceso directo a un senior que ha gestionado decenas de cuentas similares. La excepción son D2C ya consolidados (\u003e2M€/mes) que necesitan integración multi-canal compleja, equipo creativo interno y operativa internacional. Por debajo de eso, una boutique D2C-pure suele rendir mejor porque entiende exactamente tu tipo de cuenta.",
   },
   {
     q: "¿Cuánto tiempo necesito para evaluar si una agencia de Meta Ads es realmente la mejor para mi eCommerce?",

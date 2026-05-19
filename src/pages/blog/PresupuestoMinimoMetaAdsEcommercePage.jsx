@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "¿Es mejor empezar con Advantage+ Shopping o con campaña tradicional?",
-    a: "Para presupuestos <50€/día, Advantage+ Shopping suele rendir mejor porque consolida volumen en un solo ad set y al algoritmo le es más fácil estabilizar. La trampa es que Advantage+ exige catálogo bien optimizado, eventos de calidad (CAPI con EMQ >7) y al menos 50-100 compradores históricos en pixel. Si la cuenta es nueva sin histórico, una campaña tradicional con audiencia broad amplia (España 18-65, sin intereses) optimizada a Purchase funciona como rampa de aprendizaje los primeros 30-45 días, y luego se migra a Advantage+. El error común es activar Advantage+ desde día 0 con cuenta vacía: el algoritmo no tiene de qué tirar y el CPA es 2-3x el realista.",
+    a: "Para presupuestos <50€/día, Advantage+ Shopping suele rendir mejor porque consolida volumen en un solo ad set y al algoritmo le es más fácil estabilizar. La trampa es que Advantage+ exige catálogo bien optimizado, eventos de calidad (CAPI con EMQ \u003e7) y al menos 50-100 compradores históricos en pixel. Si la cuenta es nueva sin histórico, una campaña tradicional con audiencia broad amplia (España 18-65, sin intereses) optimizada a Purchase funciona como rampa de aprendizaje los primeros 30-45 días, y luego se migra a Advantage+. El error común es activar Advantage+ desde día 0 con cuenta vacía: el algoritmo no tiene de qué tirar y el CPA es 2-3x el realista.",
   },
   {
     q: "¿Cuánto debo aumentar el presupuesto para escalar sin romper el ROAS?",

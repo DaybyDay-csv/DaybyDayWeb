@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "¿Qué porcentaje de mis ingresos debería invertir en Meta Ads como D2C?",
-    a: "El benchmark sano en eCommerce D2C español es 15-25% de los ingresos en paid media total (Meta + Google + TikTok), con Meta absorbiendo 50-70% de ese share en cuentas que escalan por descubrimiento. Por debajo del 10% rara vez consigues volumen para escalar. Por encima del 30% sostenido suele indicar margen bajo o LTV insuficiente para soportar adquisición agresiva. Cuentas con LTV/CAC >4:1 pueden invertir 25-35% temporalmente para ganar cuota antes de optimizar margen.",
+    a: "El benchmark sano en eCommerce D2C español es 15-25% de los ingresos en paid media total (Meta + Google + TikTok), con Meta absorbiendo 50-70% de ese share en cuentas que escalan por descubrimiento. Por debajo del 10% rara vez consigues volumen para escalar. Por encima del 30% sostenido suele indicar margen bajo o LTV insuficiente para soportar adquisición agresiva. Cuentas con LTV/CAC \u003e4:1 pueden invertir 25-35% temporalmente para ganar cuota antes de optimizar margen.",
   },
   {
     q: "¿Necesito presupuesto distinto para TOFU, MOFU y BOFU en Meta?",
@@ -213,7 +213,7 @@ const CuantoInvertirMetaAdsCalculadoraPage = ({ openCalendly }) => (
         {
           num: "2",
           titulo: "MOFU — 15-20% del presupuesto",
-          desc: "Visitantes 30-90 días, AddToCart sin compra >7 días, vídeos vistos >50%. Aquí van creatividades de prueba social, comparativa y FAQ que cierran objeciones.",
+          desc: "Visitantes 30-90 días, AddToCart sin compra \u003e7 días, vídeos vi\u003etos >50%. Aquí van creatividades de prueba social, comparativa y FAQ que cierran objeciones.",
         },
         {
           num: "3",

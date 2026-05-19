@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "¿Es mejor pagar un porcentaje sobre inversión o una tarifa fija?",
-    a: "Depende de tu situación. El porcentaje sobre inversión es proporcional a tu escala — pagás más cuando invertís más, lo que puede ser justo si la carga de trabajo de la agencia sube con la inversión. Pero si el porcentaje es alto (>15%), puede crear un incentivo perverso para que la agencia suba tu presupuesto aunque no sea necesario. La tarifa fija es más predecible y elimina ese incentivo, pero puede no ajustarse si tu inversión crece mucho. El modelo mixto (base fija + % sobre inversión adicional) es el más equilibrado para la mayoría de casos.",
+    a: "Depende de tu situación. El porcentaje sobre inversión es proporcional a tu escala — pagás más cuando invertís más, lo que puede ser justo si la carga de trabajo de la agencia sube con la inversión. Pero si el porcentaje es alto (\u003e15%), puede crear un incentivo perverso para que la agencia suba tu presupuesto aunque no sea necesario. La tarifa fija es más predecible y elimina ese incentivo, pero puede no ajustarse si tu inversión crece mucho. El modelo mixto (base fija + % sobre inversión adicional) es el más equilibrado para la mayoría de casos.",
   },
   {
     q: "¿Merece la pena el coste de una agencia de paid media vs gestionarlo yo mismo?",

@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "¿Advantage+ Shopping o campañas manuales para mi ecommerce D2C?",
-    a: "Para la mayoría de ecommerce D2C con catálogo >20 productos y presupuesto >1.500€/mes, Advantage+ Shopping supera consistentemente a las campañas manuales gracias al motor de IA de Meta. La excepción es cuando necesitas control preciso sobre qué productos publicitar (por ejemplo, lanzamientos puntuales o liquidaciones), donde las campañas manuales con segmentación controlada tienen más sentido.",
+    a: "Para la mayoría de ecommerce D2C con catálogo \u003e20 productos y presupu\u003esto >1.500€/mes, Advantage+ Shopping supera consistentemente a las campañas manuales gracias al motor de IA de Meta. La excepción es cuando necesitas control preciso sobre qué productos publicitar (por ejemplo, lanzamientos puntuales o liquidaciones), donde las campañas manuales con segmentación controlada tienen más sentido.",
   },
   {
     q: "¿Cuántas creatividades necesito tener activas en Meta Ads?",
@@ -195,11 +195,11 @@ const GuiaMetaAdsEcommerceD2CEspana2026Page = ({ openCalendly }) => (
         },
         {
           metrica: "Frecuencia en audiencias frías",
-          desc: "Frecuencia >2,5 en prospección indica saturación de audiencia. Señal de que necesitas ampliar segmentación o rotar creatividades urgentemente.",
+          desc: "Frecuencia \u003e2,5 en prospección indica saturación de audiencia. Señal de que necesitas ampliar segmentación o rotar creatividades urgentemente.",
         },
         {
           metrica: "Hook Rate (3-second video views / impressions)",
-          desc: "Qué porcentaje de personas que ven el vídeo aguantan los 3 primeros segundos. Benchmark: >30% es bueno, >50% es excelente. Si está por debajo del 20%, el gancho del vídeo no funciona.",
+          desc: "Qué porcentaje de personas que ven el vídeo aguantan los 3 primeros segundos. Benchmark: \u003e30% es bu\u003eno, >50% es excelente. Si está por debajo del 20%, el gancho del vídeo no funciona.",
         },
       ].map(({ metrica, desc }) => (
         <div key={metrica} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">

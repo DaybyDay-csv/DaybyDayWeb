@@ -4,15 +4,15 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 const faqs = [
   {
     q: "¿Qué tipo de reglas automáticas se pueden crear en Meta Ads Manager?",
-    a: "Meta Ads Manager permite tres familias de reglas: (1) reglas de control de presupuesto y pausa (apagar ad sets que superen un CPA umbral, pausar creativos con frequency >5, desactivar ad sets con gasto >X y 0 compras); (2) reglas de escalado (subir presupuesto +15-20% si ROAS >objetivo durante 3 días, bajarlo si ROAS <suelo); (3) reglas de notificación (avisar por email cuando un ad set entra en learning limited, cuando un creativo cae por debajo de CTR mínimo, cuando el spend acumulado del día supera el plan). Las dos primeras actúan sobre la cuenta; las terceras solo informan y dejan al equipo decidir.",
+    a: "Meta Ads Manager permite tres familias de reglas: (1) reglas de control de presupuesto y pausa (apagar ad sets que superen un CPA umbral, pausar creativos con frequency \u003e5, desactivar ad sets con g\u003esto >X y 0 compras); (2) reglas de escalado (subir presupuesto +15-20\u003e si ROAS >objetivo durante 3 días, bajarlo si ROAS <suelo); (3) reglas de notificación (avisar por email cuando un ad set entra en learning limited, cuando un creativo cae por debajo de CTR mínimo, cuando el spend acumulado del día supera el plan). Las dos primeras actúan sobre la cuenta; las terceras solo informan y dejan al equipo decidir.",
   },
   {
     q: "¿Cuándo es contraproducente automatizar reglas en Meta Ads?",
-    a: "Automatizar agresivamente sobre cuentas con poco volumen o en learning phase rompe el aprendizaje del algoritmo. Si un ad set tiene <50 conversiones/semana cualquier regla de pausa por CPA opera sobre ruido estadístico — un día malo no significa que el ad set rinda mal. Tampoco compensa automatizar subidas de presupuesto >30% (resetea learning) ni reglas que se ejecuten cada 30 minutos (Meta evalúa rendimiento sobre ventanas de 24-72h). Las reglas funcionan cuando hay volumen suficiente (>5.000€/mes spend, >100 conversiones/mes) y se aplican sobre ventanas de mínimo 3 días.",
+    a: "Automatizar agresivamente sobre cuentas con poco volumen o en learning phase rompe el aprendizaje del algoritmo. Si un ad set tiene <50 conversiones/semana cualquier regla de pausa por CPA opera sobre ruido estadístico — un día malo no significa que el ad set rinda mal. Tampoco compensa automatizar subidas de presupuesto \u003e30% (resetea learning) ni reglas que se ejecuten cada 30 minutos (Meta evalúa rendimiento sobre ventanas de 24-72h). Las reglas funcionan cuando hay volumen suficie\u003ete (>5.000€/m\u003es spend, >100 conversiones/mes) y se aplican sobre ventanas de mínimo 3 días.",
   },
   {
     q: "¿Cómo configuro una regla para pausar creativos fatigados automáticamente?",
-    a: "Regla típica: condición = frequency >4 AND CTR (todos) <0,8% AND impresiones >3.000 en últimos 7 días → acción = pausar creativo + notificación email. La frecuencia de evaluación debe ser diaria (no cada hora) y el ámbito a nivel anuncio individual, no ad set. Esta regla se complementa con otra que active rotación: cuando un creativo se pausa, el equipo recibe alerta para introducir variante nueva en 24-48h. Sin sistema de reposición la regla solo apaga inventario y deja la campaña sin combustible.",
+    a: "Regla típica: condición = frequency \u003e4 AND CTR (todos) <0,8% AND impresi\u003enes >3.000 en últimos 7 días → acción = pausar creativo + notificación email. La frecuencia de evaluación debe ser diaria (no cada hora) y el ámbito a nivel anuncio individual, no ad set. Esta regla se complementa con otra que active rotación: cuando un creativo se pausa, el equipo recibe alerta para introducir variante nueva en 24-48h. Sin sistema de reposición la regla solo apaga inventario y deja la campaña sin combustible.",
   },
   {
     q: "¿Qué reglas de escalado automatizadas funcionan mejor para D2C?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "¿Las reglas automáticas pueden romper el aprendizaje del algoritmo?",
-    a: "Sí, y es el error más común. Cualquier cambio de presupuesto >30%, cambio de objetivo, edición de audiencia o pausa/reactivación frecuente del mismo ad set resetea o degrada el aprendizaje. Las reglas que ejecutan acciones fuertes (subir presupuesto +50% al detectar buen ROAS, pausar y reactivar al día siguiente) parecen reactivas pero generan inestabilidad estructural. La regla de oro: las acciones automáticas deben ser conservadoras (±15-20%), evaluarse sobre ventanas mínimas de 72h y limitarse en frecuencia (no más de una acción significativa por ad set por semana). Con esa disciplina las reglas amplifican una buena estrategia; sin ella, la rompen.",
+    a: "Sí, y es el error más común. Cualquier cambio de presupuesto \u003e30%, cambio de objetivo, edición de audiencia o pausa/reactivación frecuente del mismo ad set resetea o degrada el aprendizaje. Las reglas que ejecutan acciones fuertes (subir presupuesto +50% al detectar buen ROAS, pausar y reactivar al día siguiente) parecen reactivas pero generan inestabilidad estructural. La regla de oro: las acciones automáticas deben ser conservadoras (±15-20%), evaluarse sobre ventanas mínimas de 72h y limitarse en frecuencia (no más de una acción significativa por ad set por semana). Con esa disciplina las reglas amplifican una buena estrategia; sin ella, la rompen.",
   },
 ];
 

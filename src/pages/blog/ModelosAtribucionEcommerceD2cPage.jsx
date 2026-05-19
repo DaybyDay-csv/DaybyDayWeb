@@ -8,11 +8,11 @@ const faqs = [
   },
   {
     q: "¿Cuál es la diferencia entre last-click, first-click, lineal y data-driven?",
-    a: "Last-click da el 100% al último canal que cerró la venta — sobreestima retargeting y branded search. First-click da el 100% al primer touchpoint — sobreestima descubrimiento (paid social TOFU). Lineal reparte el crédito a partes iguales entre todos los puntos de contacto — útil para visualizar journey pero no para decisiones. Data-driven (Google Ads, GA4) usa machine learning para asignar crédito en función del impacto incremental real de cada touchpoint en la conversión. En D2C español, data-driven suele dar la imagen más cercana a la realidad cuando hay >300 conversiones/mes; por debajo, el modelo es ruido."
+    a: "Last-click da el 100% al último canal que cerró la venta — sobreestima retargeting y branded search. First-click da el 100% al primer touchpoint — sobreestima descubrimiento (paid social TOFU). Lineal reparte el crédito a partes iguales entre todos los puntos de contacto — útil para visualizar journey pero no para decisiones. Data-driven (Google Ads, GA4) usa machine learning para asignar crédito en función del impacto incremental real de cada touchpoint en la conversión. En D2C español, data-driven suele dar la imagen más cercana a la realidad cuando hay \u003e300 conversiones/mes; por debajo, el modelo es ruido."
   },
   {
     q: "¿Qué es Marketing Mix Modeling (MMM) y cuándo conviene usarlo en D2C?",
-    a: "MMM es un modelo estadístico (regresión multivariable) que correlaciona inversión por canal con ventas totales del negocio en el tiempo, sin depender de cookies ni píxeles. Mide impacto incremental real, captura efectos offline (TV, OOH, branding) y aguanta iOS, GDPR y bloqueo de tracking sin degradarse. Conviene cuando un D2C invierte >50K€/mes en paid total, opera 5-7+ canales en paralelo, o quiere validar lo que dicen Meta y Google con una capa independiente. Por debajo de ese tamaño, MMM es overkill; data-driven en GA4 + análisis incremental por canal es suficiente."
+    a: "MMM es un modelo estadístico (regresión multivariable) que correlaciona inversión por canal con ventas totales del negocio en el tiempo, sin depender de cookies ni píxeles. Mide impacto incremental real, captura efectos offline (TV, OOH, branding) y aguanta iOS, GDPR y bloqueo de tracking sin degradarse. Conviene cuando un D2C invierte \u003e50K€/mes en paid total, opera 5-7+ canales en paralelo, o quiere validar lo que dicen Meta y Google con una capa independiente. Por debajo de ese tamaño, MMM es overkill; data-driven en GA4 + análisis incremental por canal es suficiente."
   },
   {
     q: "¿Por qué Meta Ads sobreatribuye conversiones frente al modelo de negocio real?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "¿Qué modelo de atribución debería usar mi D2C español ahora mismo?",
-    a: "Depende del tamaño y madurez. <30K€/mes spend total: data-driven en GA4 como referencia + Shopify para validar volumen real, con CAC blended como métrica de salud. 30-100K€/mes: data-driven + análisis incremental por canal trimestral (apagar y encender canales para medir lift real) + dashboard con CAC blended por cohorte. >100K€/mes con varios canales: MMM trimestral o mensual como capa de validación independiente, encima del data-driven plataforma. En todos los casos, last-click es insuficiente; usarlo solo en D2C de ticket único y journey corto (<2 touchpoints)."
+    a: "Depende del tamaño y madurez. <30K€/mes spend total: data-driven en GA4 como referencia + Shopify para validar volumen real, con CAC blended como métrica de salud. 30-100K€/mes: data-driven + análisis incremental por canal trimestral (apagar y encender canales para medir lift real) + dashboard con CAC blended por cohorte. \u003e100K€/mes con varios canales: MMM trimestral o mensual como capa de validación independiente, encima del data-driven plataforma. En todos los casos, last-click es insuficiente; usarlo solo en D2C de ticket único y journey corto (<2 touchpoints)."
   },
   {
     q: "¿Cómo afecta iOS 17/18 y la pérdida de cookies a los modelos de atribución?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "¿Vale la pena pagar herramientas de atribución multi-touch como Triple Whale, Northbeam o Polar Analytics?",
-    a: "Sí en cuentas D2C >50-80K€/mes en paid con 3+ canales. Estas herramientas combinan datos plataforma, web tracking propio, datos Shopify y modelos de atribución multi-touch ajustables (last-click, lineal, data-driven, position-based) en una sola vista, con CAC blended y por canal cruzados con LTV. El valor real no es el dato bruto sino la unificación: misma fuente de verdad para founder, media buyer y CFO. Por debajo de ese tamaño, GA4 + dashboard Looker Studio + Shopify Reports cubre el 80% del valor a coste cero."
+    a: "Sí en cuentas D2C \u003e50-80K€/mes en paid con 3+ canales. Estas herramientas combinan datos plataforma, web tracking propio, datos Shopify y modelos de atribución multi-touch ajustables (last-click, lineal, data-driven, position-based) en una sola vista, con CAC blended y por canal cruzados con LTV. El valor real no es el dato bruto sino la unificación: misma fuente de verdad para founder, media buyer y CFO. Por debajo de ese tamaño, GA4 + dashboard Looker Studio + Shopify Reports cubre el 80% del valor a coste cero."
   },
 ];
 

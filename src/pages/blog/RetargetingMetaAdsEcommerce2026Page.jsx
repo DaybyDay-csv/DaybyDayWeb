@@ -4,7 +4,7 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 const faqs = [
   {
     q: "¿Sigue funcionando el retargeting en Meta Ads en 2026 después de iOS y la pérdida de cookies?",
-    a: "Sí, pero con una condición innegociable: API de Conversiones server-side bien implementada con match rate (EMQ) >7. Sin CAPI server-side, el match de eventos cae al 50-65% y las audiencias de retargeting se quedan a la mitad de su tamaño real, con un coste por resultado que duplica el benchmark. Con CAPI server-side + parámetros enriquecidos (email hash, fbc/fbp, user_agent), el retargeting recupera prácticamente el rendimiento pre-iOS 14. La diferencia entre cuentas D2C que mantienen retargeting rentable y las que lo ven morir está casi siempre en la base técnica, no en el creativo ni en la puja.",
+    a: "Sí, pero con una condición innegociable: API de Conversiones server-side bien implementada con match rate (EMQ) \u003e7. Sin CAPI server-side, el match de eventos cae al 50-65% y las audiencias de retargeting se quedan a la mitad de su tamaño real, con un coste por resultado que duplica el benchmark. Con CAPI server-side + parámetros enriquecidos (email hash, fbc/fbp, user_agent), el retargeting recupera prácticamente el rendimiento pre-iOS 14. La diferencia entre cuentas D2C que mantienen retargeting rentable y las que lo ven morir está casi siempre en la base técnica, no en el creativo ni en la puja.",
   },
   {
     q: "¿Qué porcentaje de mi presupuesto debe ir a retargeting en Meta Ads?",
@@ -12,15 +12,15 @@ const faqs = [
   },
   {
     q: "¿Cuántas audiencias de retargeting debo crear?",
-    a: "Cuatro o cinco como máximo, con exclusiones cruzadas claras. Más allá fragmentas tanto el público que ningún ad set sale del aprendizaje. Estructura mínima que rinde: (1) Carrito abandonado 0-7 días, (2) ViewContent 14-30 días excluyendo carrito y compra, (3) Engagement 60-90 días (interacción con perfil, vídeo >50%) excluyendo visitantes web, (4) Compradores 60-180 días para cross-sell o repetición, (5) opcional: lista de clientes/newsletter no compradores. Multiplicar audiencias por hora del día, dispositivo o género suele tener efecto contrario al esperado.",
+    a: "Cuatro o cinco como máximo, con exclusiones cruzadas claras. Más allá fragmentas tanto el público que ningún ad set sale del aprendizaje. Estructura mínima que rinde: (1) Carrito abandonado 0-7 días, (2) ViewContent 14-30 días excluyendo carrito y compra, (3) Engagement 60-90 días (interacción con perfil, vídeo \u003e50%) excluyendo visitantes web, (4) Compradores 60-180 días para cross-sell o repetición, (5) opcional: lista de clientes/newsletter no compradores. Multiplicar audiencias por hora del día, dispositivo o género suele tener efecto contrario al esperado.",
   },
   {
     q: "¿Qué ventanas de retargeting funcionan mejor según mi ticket medio?",
-    a: "Ticket <40€ (impulso): carrito 3 días, ViewContent 7 días, compradores 60 días. Ticket 40-150€ (consideración media — moda, belleza, hogar): carrito 7 días, ViewContent 14 días, compradores 90-180 días. Ticket 150-500€ (electrónica, deporte): carrito 14 días, ViewContent 30 días, compradores 180 días. Ticket >500€ (premium, joyería): carrito 30 días, ViewContent 60 días, compradores 365 días. La regla es simple: cuanto más caro el producto, más larga la ventana, porque el ciclo de decisión real es más largo. Forzar ventanas cortas en ticket alto desperdicia el cookie/evento antes de que el usuario decida.",
+    a: "Ticket <40€ (impulso): carrito 3 días, ViewContent 7 días, compradores 60 días. Ticket 40-150€ (consideración media — moda, belleza, hogar): carrito 7 días, ViewContent 14 días, compradores 90-180 días. Ticket 150-500€ (electrónica, deporte): carrito 14 días, ViewContent 30 días, compradores 180 días. Ticket \u003e500€ (premium, joyería): carrito 30 días, ViewContent 60 días, compradores 365 días. La regla es simple: cuanto más caro el producto, más larga la ventana, porque el ciclo de decisión real es más largo. Forzar ventanas cortas en ticket alto desperdicia el cookie/evento antes de que el usuario decida.",
   },
   {
     q: "¿Cómo evito que el retargeting queme a los usuarios y mate la marca?",
-    a: "Tres palancas: (1) Frequency cap implícita rotando creativo cada 3-4 semanas. Si un usuario ve >5 impresiones/semana del mismo anuncio, mentalmente lo asocia a 'spam' y baja el CTR de futuras campañas; (2) Exclusiones cruzadas obligatorias (compradores fuera del retargeting de carrito, salvo cross-sell); (3) Diversificar formato — alternar carrusel dinámico, vídeo, UGC y collection ads para que la marca no sea siempre el mismo plano. Indicador clave: si el frequency en una audiencia de carrito 7d sube por encima de 6/semana, baja la puja o reduce el público. Por encima de 8 ya estás quemando.",
+    a: "Tres palancas: (1) Frequency cap implícita rotando creativo cada 3-4 semanas. Si un usuario ve \u003e5 impresiones/semana del mismo anuncio, mentalmente lo asocia a 'spam' y baja el CTR de futuras campañas; (2) Exclusiones cruzadas obligatorias (compradores fuera del retargeting de carrito, salvo cross-sell); (3) Diversificar formato — alternar carrusel dinámico, vídeo, UGC y collection ads para que la marca no sea siempre el mismo plano. Indicador clave: si el frequency en una audiencia de carrito 7d sube por encima de 6/semana, baja la puja o reduce el público. Por encima de 8 ya estás quemando.",
   },
   {
     q: "¿Debo separar retargeting estático y retargeting dinámico (DPA) en campañas distintas?",
