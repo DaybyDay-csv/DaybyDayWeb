@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -41,6 +42,7 @@ const CustomerJourneyD2cPage = ({ openCalendly }) => (
       "etapas customer journey d2c",
     ]}
     faqs={faqs}
+    relatedPosts={relatedPostsData["customer-journey-d2c-primer-impacto-repeticion"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">

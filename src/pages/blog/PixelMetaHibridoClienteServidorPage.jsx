@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -28,7 +29,7 @@ const PixelMetaHibridoClienteServidorPage = ({ openCalendly }) => (
   <BlogPostLayout
     title="Pixel híbrido (cliente + servidor) en Meta Ads: implementación práctica paso a paso (2026)"
     description="Guía práctica pixel híbrido Meta Ads 2026: qué es, por qué necesitas cliente + servidor, Event Match Quality score (0-10) explicado, 3 rutas de implementación para Shopify (Stape, sGTM Cloud Run, app partner), deduplicación Pixel + CAPI paso a paso con event_id, cómo mejorar EMQ con parámetros de usuario en 5 pasos, umbrales de spend que justifican cada ruta, errores frecuentes con tabla de diagnóstico, y enfoque DayByDay Pablo+Jorge con auditoría de tracking completa en onboarding."
-    slug="pixel-meta-hibrido-cliente-servidor-implementacion"
+    slug="pixel-meta-hibrido-cliente-servidor"
     datePublished="2026-05-19"
     dateModified="2026-05-19"
     readingTime="13 min"
@@ -41,6 +42,7 @@ const PixelMetaHibridoClienteServidorPage = ({ openCalendly }) => (
       "pixel meta vs conversios api",
     ]}
     faqs={faqs}
+    relatedPosts={relatedPostsData["pixel-meta-hibrido-cliente-servidor"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">
