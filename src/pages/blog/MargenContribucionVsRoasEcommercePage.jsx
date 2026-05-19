@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -49,11 +50,7 @@ const MargenContribucionVsRoasEcommercePage = ({ openCalendly }) => (
       "unit economics d2c españa",
     ]}
     faqs={faqs}
-    relatedPosts=[
-    { slug: "cac-vs-ltv-ecommerce-escalable", title: "CAC vs LTV: la métrica para escalar", description: "Por qué LTV determina el potencial de crecimiento real" },
-    { slug: "cohort-analysis-ecommerce-d2c", title: "Cohort analysis en D2C", description: "Datos para decidir con cohorte, no con métricas de plataforma" },
-    { slug: "aumentar-aov-ecommerce-d2c-palancas", title: "Cómo aumentar AOV", description: "Palancas para subir ticket medio y margen unitario" },
-  ]
+    relatedPosts={relatedPostsData["margen-contribucion-vs-roas-ecommerce"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">

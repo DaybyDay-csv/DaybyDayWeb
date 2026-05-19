@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -53,11 +54,7 @@ const RolMediaBuyer2027Page = ({ openCalendly }) => (
     readingTime="13 min"
     category="Decisiones de negocio"
     faqs={faqs}
-    relatedPosts=[
-    { slug: "growth-partner-vs-agencia-paid-media", title: "Growth partner vs agencia paid media", description: "El modelo que reemplaza al media buyer puro" },
-    { slug: "automatizacion-paid-media-proximos-24-meses", title: "Automatización paid media en 24 meses", description: "Qué decisiones absorben la IA y los agentes" },
-    { slug: "que-no-automatiza-ia-d2c", title: "Qué NO automatiza la IA en un D2C", description: "Las 6 funciones que siguen siendo humanas" },
-  ]
+    relatedPosts={relatedPostsData["rol-media-buyer-2027"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-6">

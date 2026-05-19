@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -49,11 +50,7 @@ const CohortAnalysisEcommerceD2cPage = ({ openCalendly }) => (
       "ltv por cohorte",
     ]}
     faqs={faqs}
-    relatedPosts=[
-    { slug: "cac-vs-ltv-ecommerce-escalable", title: "CAC vs LTV: la métrica que determina si escala", description: "Por qué LTV importa más que CAC para decisiones de growth" },
-    { slug: "email-marketing-meta-ads-ltv-d2c", title: "Email marketing para LTV", description: "Cómo combinar Meta Ads con email para maximizar lifetime value" },
-    { slug: "margen-contribucion-vs-roas-ecommerce", title: "Margen de contribución vs ROAS", description: "Por qué el margen es la métrica que manda en decisiones de capital" },
-  ]
+    relatedPosts={relatedPostsData["cohort-analysis-ecommerce-d2c"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">

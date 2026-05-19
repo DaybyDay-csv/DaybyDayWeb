@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -35,12 +36,7 @@ const ComoMejorarROASMetaAdsPage = ({ openCalendly }) => (
     category="Meta Ads"
     keywords={["mejorar ROAS Meta Ads", "cómo mejorar ROAS", "ROAS Meta Ads ecommerce", "optimizar campañas Meta Ads", "palancas ROAS"]}
     faqs={faqs}
-    
-    relatedPosts=[
-    { slug: "benchmark-roas-sector-espana-2026", title: "Benchmark ROAS por sector España", description: "Benchmarks reales por vertical para calibrar expectativas" },
-    { slug: "caso-exito-ecommerce-d2c-roas-meta-ads", title: "Caso de éxito ROAS D2C", description: "Resultado medible con la metodología DayByDay" },
-    { slug: "cbo-vs-abo-meta-ads-2026-d2c", title: "CBO vs ABO: estructura de campañas", description: "Qué funciona mejor en 2026 para D2C en España" },
-  ]openCalendly={openCalendly}
+    relatedPosts={relatedPostsData["como-mejorar-roas-meta-ads-7-palancas"] || []}openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">
       Si buscas <strong className="text-white">cómo mejorar el ROAS en Meta Ads</strong>, probablemente ya has probado cambiar pujas, subir presupuesto o lanzar nuevos conjuntos de anuncios sin resultados claros. El problema es que la mayoría de los cambios que se aplican primero no atacan las causas reales. Este artículo recoge las 7 palancas que más impacto tienen en el ROAS, en el orden correcto para aplicarlas.

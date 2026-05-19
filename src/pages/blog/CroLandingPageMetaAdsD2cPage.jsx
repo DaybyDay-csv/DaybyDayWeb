@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -49,11 +50,7 @@ const CroLandingPageMetaAdsD2cPage = ({ openCalendly }) => (
       "ab testing landing meta ads",
     ]}
     faqs={faqs}
-    relatedPosts=[
-    { slug: "ab-testing-meta-ads-que-testar-primero", title: "A/B testing: qué testear primero", description: "Priorización de tests con rigor estadístico" },
-    { slug: "guia-meta-ads-ecommerce-d2c-espana-2026", title: "Guía completa Meta Ads para D2C España 2026", description: "Estrategia integral de Meta Ads" },
-    { slug: "como-mejorar-roas-meta-ads-7-palancas", title: "7 palancas para mejorar ROAS", description: "Optimización sistemática del retorno publicitario" },
-  ]
+    relatedPosts={relatedPostsData["cro-landing-page-meta-ads-d2c"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">

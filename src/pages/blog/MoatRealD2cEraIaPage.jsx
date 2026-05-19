@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -49,11 +50,7 @@ const MoatRealD2cEraIaPage = ({ openCalendly }) => (
     readingTime="12 min"
     category="Decisiones de negocio"
     faqs={faqs}
-    relatedPosts=[
-    { slug: "growth-partner-vs-agencia-paid-media", title: "Growth partner vs agencia paid media", description: "El modelo de socio que aporta criterio cross-funcional" },
-    { slug: "juicio-cross-funcional-founder-d2c", title: "Juicio cross-funcional del founder D2C", description: "Decisiones que la IA no toma y dónde se requiere criterio integrado" },
-    { slug: "rol-media-buyer-2027", title: "El rol del media buyer en 2027", description: "Cómo evoluciona y qué queda como valor residual humano" },
-  ]
+    relatedPosts={relatedPostsData["moat-real-d2c-era-ia"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-6">

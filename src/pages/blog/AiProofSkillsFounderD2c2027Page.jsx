@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -49,11 +50,7 @@ const AiProofSkillsFounderD2c2027Page = ({ openCalendly }) => (
     readingTime="12 min"
     category="Decisiones de negocio"
     faqs={faqs}
-    relatedPosts=[
-    { slug: "automatizacion-paid-media-proximos-24-meses", title: "Automatización de paid media en 24 meses", description: "Qué absorbe la IA y qué permanece como capacidad humana" },
-    { slug: "que-no-automatiza-ia-d2c", title: "Qué NO automatiza la IA en un D2C", description: "Framework operativo de las 6 funciones que la IA no replica" },
-    { slug: "metodologia-daybyday", title: "Metodología DayByDay", description: "Cómo aplicamos growth partner + datos en cada compromiso" },
-  ]
+    relatedPosts={relatedPostsData["ai-proof-skills-founder-d2c-2027"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-6">

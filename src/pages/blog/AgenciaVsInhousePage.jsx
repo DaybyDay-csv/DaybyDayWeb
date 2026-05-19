@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -25,11 +26,7 @@ const AgenciaVsInhousePage = ({ openCalendly }) => (
     readingTime="7 min"
     category="Estrategia"
     faqs={faqs}
-    relatedPosts=[
-    { slug: "como-elegir-agencia-meta-ads-ecommerce", title: "Cómo elegir agencia de Meta Ads", description: "Criterios de evaluación y señales de alerta" },
-    { slug: "senales-agencia-no-rinde", title: "Señales de que tu agencia no rinde", description: "Checklist para detectar problemas antes de que cueste caro" },
-    { slug: "checklist-auditoria-campanas-paid-media", title: "Checklist auditoría paid media", description: "Qué revisar en una auditoría completa" },
-  ]
+    relatedPosts={relatedPostsData["agencia-vs-inhouse"] || []}
     openCalendly={openCalendly}
   >
     <h2 className="text-2xl font-black mt-10 mb-4">La pregunta que más nos hacen los fundadores</h2>
