@@ -282,6 +282,12 @@ const CombinarGoogleAdsMetaAdsD2CPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Sistema de escalado por hitos cuando Meta + Google ya rinden combinados</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/smart-bidding-google-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          Smart Bidding en Google Ads para D2C: cuándo confiar y cuándo intervenir →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">Las 5 estrategias automatizadas Target ROAS/CPA/Max Conversions y cuándo usar cada una.</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

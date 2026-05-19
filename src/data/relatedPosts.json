@@ -1,0 +1,72 @@
+{
+  "growth-partner-vs-agencia-paid-media": [
+    {"slug": "moat-real-d2c-era-ia", "title": "Moat real para D2C en la era de la IA", "description": "Por qué el playbook de paid media ya no es defendible y qué activos sí lo son"},
+    {"slug": "que-no-automatiza-ia-d2c", "title": "Qué NO automatiza la IA en un D2C", "description": "Las 6 áreas donde el criterio humano sigue siendo indispensable"},
+    {"slug": "rol-media-buyer-2027", "title": "El rol del media buyer en 2027", "description": "Por qué se evapora la categoría y qué lo reemplaza"}
+  ],
+  "moat-real-d2c-era-ia": [
+    {"slug": "growth-partner-vs-agencia-paid-media", "title": "Growth partner vs agencia paid media", "description": "El modelo de socio que aporta criterio cross-funcional"},
+    {"slug": "juicio-cross-funcional-founder-d2c", "title": "Juicio cross-funcional del founder D2C", "description": "Decisiones que la IA no toma y dónde se requiere criterio integrado"},
+    {"slug": "rol-media-buyer-2027", "title": "El rol del media buyer en 2027", "description": "Cómo evoluciona y qué queda como valor residual humano"}
+  ],
+  "ai-proof-skills-founder-d2c-2027": [
+    {"slug": "automatizacion-paid-media-proximos-24-meses", "title": "Automatización de paid media en 24 meses", "description": "Qué absorbe la IA y qué permanece como capacidad humana"},
+    {"slug": "que-no-automatiza-ia-d2c", "title": "Qué NO automatiza la IA en un D2C", "description": "Framework operativo de las 6 funciones que la IA no replica"},
+    {"slug": "metodologia-daybyday", "title": "Metodología DayByDay", "description": "Cómo aplicamos growth partner + datos en cada compromiso"}
+  ],
+  "cac-vs-ltv-ecommerce-escalable": [
+    {"slug": "cac-blended-vs-cac-canal-ecommerce", "title": "CAC por canal: blended vs canal", "description": "Cómo distinguir el coste real de adquisición por fuente"},
+    {"slug": "cohort-analysis-ecommerce-d2c", "title": "Cohort analysis para D2C", "description": "Cómo leer cohorts para tomar decisiones de inversión"},
+    {"slug": "suscripciones-ecommerce-ltv-cac-d2c", "title": "Suscripciones: LTV y recurrencia", "description": "Modelo de recurrencia para maximizar LTV en D2C"}
+  ],
+  "cohort-analysis-ecommerce-d2c": [
+    {"slug": "cac-vs-ltv-ecommerce-escalable", "title": "CAC vs LTV: la métrica que determina si escala", "description": "Por qué LTV importa más que CAC para decisiones de growth"},
+    {"slug": "email-marketing-meta-ads-ltv-d2c", "title": "Email marketing para LTV", "description": "Cómo combinar Meta Ads con email para maximizar lifetime value"},
+    {"slug": "margen-contribucion-vs-roas-ecommerce", "title": "Margen de contribución vs ROAS", "description": "Por qué el margen es la métrica que manda en decisiones de capital"}
+  ],
+  "guia-meta-ads-ecommerce-d2c-espana-2026": [
+    {"slug": "ab-testing-meta-ads-que-testar-primero", "title": "A/B testing en Meta Ads: qué testear primero", "description": "Framework de priorización para testear con rigor y velocidad"},
+    {"slug": "como-mejorar-roas-meta-ads-7-palancas", "title": "7 palancas para mejorar ROAS", "description": "Framework completo de optimización de retorno publicitario"},
+    {"slug": "caso-exito-ecommerce-d2c-roas-meta-ads", "title": "Caso de éxito ROAS D2C", "description": "Resultado real con metodología de growth partner"}
+  ],
+  "cro-landing-page-meta-ads-d2c": [
+    {"slug": "ab-testing-meta-ads-que-testar-primero", "title": "A/B testing: qué testear primero", "description": "Priorización de tests con rigor estadístico"},
+    {"slug": "guia-meta-ads-ecommerce-d2c-espana-2026", "title": "Guía completa Meta Ads para D2C España 2026", "description": "Estrategia integral de Meta Ads"},
+    {"slug": "como-mejorar-roas-meta-ads-7-palancas", "title": "7 palancas para mejorar ROAS", "description": "Optimización sistemática del retorno publicitario"}
+  ],
+  "escalar-campanas-meta-ads-sin-romper-roas": [
+    {"slug": "presupuesto-minimo-meta-ads-ecommerce", "title": "Presupuesto mínimo para Meta Ads", "description": "Cuánto necesitas para que el algoritmo funcione"},
+    {"slug": "cuanto-invertir-meta-ads-calculadora", "title": "Cuánto invertir en Meta Ads: calculadora", "description": "Presupuesto según tu fase de growth"},
+    {"slug": "benchmark-roas-sector-espana-2026", "title": "Benchmark ROAS por sector España 2026", "description": "A qué aspirar según tu nicho"}
+  ],
+  "como-mejorar-roas-meta-ads-7-palancas": [
+    {"slug": "benchmark-roas-sector-espana-2026", "title": "Benchmark ROAS por sector España", "description": "Benchmarks reales por vertical para calibrar expectativas"},
+    {"slug": "caso-exito-ecommerce-d2c-roas-meta-ads", "title": "Caso de éxito ROAS D2C", "description": "Resultado medible con la metodología DayByDay"},
+    {"slug": "cbo-vs-abo-meta-ads-2026-d2c", "title": "CBO vs ABO: estructura de campañas", "description": "Qué funciona mejor en 2026 para D2C en España"}
+  ],
+  "agencia-vs-inhouse": [
+    {"slug": "como-elegir-agencia-meta-ads-ecommerce", "title": "Cómo elegir agencia de Meta Ads", "description": "Criterios de evaluación y señales de alerta"},
+    {"slug": "senales-agencia-no-rinde", "title": "Señales de que tu agencia no rinde", "description": "Checklist para detectar problemas antes de que cueste caro"},
+    {"slug": "checklist-auditoria-campanas-paid-media", "title": "Checklist auditoría paid media", "description": "Qué revisar en una auditoría completa"}
+  ],
+  "rol-media-buyer-2027": [
+    {"slug": "growth-partner-vs-agencia-paid-media", "title": "Growth partner vs agencia paid media", "description": "El modelo que reemplaza al media buyer puro"},
+    {"slug": "automatizacion-paid-media-proximos-24-meses", "title": "Automatización paid media en 24 meses", "description": "Qué decisiones absorben la IA y los agentes"},
+    {"slug": "que-no-automatiza-ia-d2c", "title": "Qué NO automatiza la IA en un D2C", "description": "Las 6 funciones que siguen siendo humanas"}
+  ],
+  "checklist-auditoria-campanas-paid-media": [
+    {"slug": "senales-agencia-no-rinde", "title": "Señales de agencia que no rinde", "description": "Diagnóstico antes de cambiar de proveedor"},
+    {"slug": "como-elegir-agencia-meta-ads-ecommerce", "title": "Cómo elegir agencia de Meta Ads", "description": "Framework de evaluación de partners"},
+    {"slug": "agencia-vs-inhouse", "title": "Agencia vs equipo interno", "description": "Pros, contras y cuándo cada modelo tiene sentido"}
+  ],
+  "margen-contribucion-vs-roas-ecommerce": [
+    {"slug": "cac-vs-ltv-ecommerce-escalable", "title": "CAC vs LTV: la métrica para escalar", "description": "Por qué LTV determina el potencial de crecimiento real"},
+    {"slug": "cohort-analysis-ecommerce-d2c", "title": "Cohort analysis en D2C", "description": "Datos para decidir con cohorte, no con métricas de plataforma"},
+    {"slug": "aumentar-aov-ecommerce-d2c-palancas", "title": "Cómo aumentar AOV", "description": "Palancas para subir ticket medio y margen unitario"}
+  ],
+  "decision-cuando-subir-precio-d2c": [
+    {"slug": "margen-contribucion-vs-roas-ecommerce", "title": "Margen de contribución vs ROAS", "description": "La métrica que indica cuándo es safe subir precios"},
+    {"slug": "cac-vs-ltv-ecommerce-escalable", "title": "CAC vs LTV escalable", "description": "Entender payback y cuándo tienes margen para pricing decisions"},
+    {"slug": "aumentar-aov-ecommerce-d2c-palancas", "title": "Palancas para aumentar AOV", "description": "Estrategias para subir ticket sin perder conversión"}
+  ]
+}

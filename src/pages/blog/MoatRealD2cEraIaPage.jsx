@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -49,6 +50,7 @@ const MoatRealD2cEraIaPage = ({ openCalendly }) => (
     readingTime="12 min"
     category="Decisiones de negocio"
     faqs={faqs}
+    relatedPosts={relatedPostsData["moat-real-d2c-era-ia"] || []}
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-6">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -35,7 +36,7 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
     category="Meta Ads"
     keywords={["escalar campañas meta ads", "escalar meta ads sin romper roas", "cómo escalar meta ads", "protocolo escala meta ads", "subir presupuesto meta ads"]}
     faqs={faqs}
-    openCalendly={openCalendly}
+    relatedPosts={relatedPostsData["escalar-campanas-meta-ads-sin-romper-roas"] || []}openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">
       El problema con <strong className="text-white">escalar campañas de Meta Ads</strong> no es técnico — es que la mayoría de los ecommerces lo hacen sin un protocolo claro. Suben el presupuesto demasiado rápido, el ROAS cae, entran en pánico y vuelven al presupuesto inicial. El resultado es una cuenta estancada donde nunca se puede crecer sin perder rentabilidad.

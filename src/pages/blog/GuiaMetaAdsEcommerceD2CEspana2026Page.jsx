@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -33,7 +34,7 @@ const GuiaMetaAdsEcommerceD2CEspana2026Page = ({ openCalendly }) => (
     readingTime="14 min"
     category="Meta Ads"
     faqs={faqs}
-    openCalendly={openCalendly}
+    relatedPosts={relatedPostsData["guia-meta-ads-ecommerce-d2c-espana-2026"] || []}openCalendly={openCalendly}
   >
     <h2 className="text-2xl font-black mt-10 mb-4">Meta Ads ecommerce en España: lo que funcionaba en 2024 ya no funciona igual</h2>
     <p className="text-white/70 leading-relaxed mb-5">

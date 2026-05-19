@@ -244,6 +244,12 @@ const EmailMarketingMetaAdsLtvD2cPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Escalera de 4 peldaños y cómo se cruzan con flujos email para evitar canibalización</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/whatsapp-meta-ads-funnel-bofu-d2c" className="text-white font-semibold hover:text-white/80">
+          WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que más escalan →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">WhatsApp como tercer canal owned post-purchase: sube tasa 2ª compra 8-14 puntos vs solo email</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

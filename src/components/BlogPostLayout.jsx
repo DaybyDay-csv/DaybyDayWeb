@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import SEOHead from "./SEOHead";
 import FaqSection from "./FaqSection";
 import Footer from "./Footer";
+import { useEffect, useRef } from "react";
 
 const BlogPostLayout = ({
   title,
@@ -49,6 +50,29 @@ const BlogPostLayout = ({
       "@id": `https://www.daybydayconsulting.com/blog/${slug}`,
     },
   };
+
+  // GA4 event tracking — scroll depth + time on page
+  const scrollRef = useRef(false);
+  const startTimeRef = useRef(Date.now());
+  useEffect(() => {
+    if (typeof window.gtag !== "function") return;
+    const handleScroll = () => {
+      if (scrollRef.current) return;
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPct = (window.scrollY / scrollHeight) * 100;
+      if (scrollPct >= 75) {
+        scrollRef.current = true;
+        const timeSpent = Math.round((Date.now() - startTimeRef.current) / 1000);
+        window.gtag("event", "blog_read", {
+          slug,
+          time_on_page: timeSpent,
+          scroll_depth: Math.round(scrollPct),
+        });
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [slug]);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -166,7 +190,15 @@ const BlogPostLayout = ({
           </p>
           <button
             type="button"
+            data-ga4-cta="calendly-hero"
             onClick={() => {
+              if (typeof window.gtag === "function") {
+                window.gtag("event", "cta_click", {
+                  slug,
+                  cta_text: "Reservar llamada gratuita",
+                  destination: "calendly",
+                });
+              }
               if (typeof openCalendly === "function") {
                 openCalendly();
               } else {

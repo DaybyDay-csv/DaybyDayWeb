@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -25,6 +26,7 @@ const AgenciaVsInhousePage = ({ openCalendly }) => (
     readingTime="7 min"
     category="Estrategia"
     faqs={faqs}
+    relatedPosts={relatedPostsData["agencia-vs-inhouse"] || []}
     openCalendly={openCalendly}
   >
     <h2 className="text-2xl font-black mt-10 mb-4">La pregunta que más nos hacen los fundadores</h2>

@@ -228,6 +228,12 @@ const PerformanceMaxEcommerceD2CCuandoUsarPage = ({ openCalendly }) => (
         </Link>
         <p className="text-white/40 text-xs mt-1">Cómo PMax sobreatribuye 25-45% y por qué medir con MER blended es obligatorio</p>
       </div>
+      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+        <Link to="/blog/smart-bidding-google-ads-d2c" className="text-white font-semibold hover:text-white/80">
+          Smart Bidding en Google Ads para D2C: cuándo confiar y cuándo intervenir →
+        </Link>
+        <p className="text-white/40 text-xs mt-1">PMax es 100% Smart Bidding obligatorio — protocolo de intervención sin romper el learning phase.</p>
+      </div>
     </div>
   </BlogPostLayout>
 );

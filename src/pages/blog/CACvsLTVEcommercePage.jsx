@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
@@ -47,7 +48,7 @@ const CACvsLTVEcommercePage = ({ openCalendly }) => (
     category="Estrategia"
     keywords={["cac ltv ecommerce", "ltv cac d2c", "customer acquisition cost ecommerce", "lifetime value d2c", "payback period ecommerce"]}
     faqs={faqs}
-    openCalendly={openCalendly}
+    relatedPosts={relatedPostsData["cac-vs-ltv-ecommerce-escalable"] || []}openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">
       <strong className="text-white">La relación CAC/LTV es la métrica que decide si un eCommerce D2C es escalable o solo parece rentable</strong>. Hemos auditado decenas de cuentas con ROAS de plataforma por encima de 3 que estaban perdiendo dinero — y otras con ROAS 2 que escalaban con caja sana. La diferencia siempre estuvo en el mismo sitio: cuánto cuesta de verdad un cliente nuevo y cuánto devuelve antes de que la caja se rompa.
