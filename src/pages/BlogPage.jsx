@@ -4,6 +4,14 @@ import Footer from "../components/Footer";
 
 const posts = [
   {
+    slug: "customer-journey-d2c-primer-impacto-repeticion",
+    title: "Customer Journey D2C: del primer impacto a la repetición de compra (2026)",
+    excerpt: "Guía completa del customer journey para eCommerce D2C España 2026: las 6 etapas operativo-funcionales (Despertar, Considerar, Decidir, Adquirir, Activar, Retener), métricas clave por etapa, cómo paid media (Meta Ads + Google Ads) influye en cada fase, роль del email marketing y WhatsApp en activación y retención, fugas más críticas (abandono checkout 65-80%, falta de second purchase, CPM inflado), benchmarking por vertical D2C España, cómo construir un funnel full-funnel cross-channel, y enfoque DayByDay Pablo+Jorge con datos propios de cuentas activas.",
+    category: "Estrategia D2C",
+    date: "19 may 2026",
+    readingTime: "11 min",
+  },
+  {
     slug: "smart-bidding-google-ads-d2c",
     title: "Smart Bidding en Google Ads para D2C: cuándo confiar y cuándo intervenir (2026)",
     excerpt: "Guía operativa de Smart Bidding en Google Ads para eCommerce D2C España 2026: qué es y diferencias con pujas manuales, las 5 estrategias (Maximize Conversions, Maximize Conversion Value, Target CPA, Target ROAS, Enhanced CPC) con tabla decisión por volumen de conversiones y vertical D2C, periodo de aprendizaje real 14-21 días, presupuesto mínimo CPA×30 Search/Shopping y CPA×50-60 Performance Max, prerrequisito crítico Enhanced Conversions + GA4 Consent Mode v2 + sGTM (sube match rate 50-65%→80-90%, baja CPA real 12-22%), protocolo de intervención manual segura (cambios máximo ±15% cada 7-10 días, no tocar presupuesto en learning, exclusiones antes de bajar puja), Performance Max como caso especial 100% Smart Bidding con channel-level reporting + holdout geo test, 6 errores frecuentes en cuentas D2C españolas (tROAS sin volumen, conversiones mezcladas, tROAS exacto sin colchón, cambios diarios, sin Enhanced Conversions, PMax sin product groups por margen), enfoque DayByDay Pablo+Jorge con pipeline n8n + Google Ads API + Shopify Admin + GA4 BigQuery + offline conversions feed que cruza Smart Bidding × cohorte LTV90 × CAC adquisición específico por estrategia y caso real cosmética 22K€/mes CPA blended -19% y margen contribución +4 pts en 90d.",
