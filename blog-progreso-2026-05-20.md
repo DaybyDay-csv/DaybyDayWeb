@@ -1,16 +1,44 @@
-# Blog Pipeline — Progreso Día 2026-05-19/20
+# Blog Pipeline — Progreso Día 2026-05-20 (actualizado 2026-05-20 00:10 UTC)
 
-## Última actualización: 2026-05-20 08:35 UTC
+## Última actualización: 2026-05-20 00:10 UTC
 
 ---
 
-## 🔄 Migration activa: Claude Code CLI → MiniMax via Hermes
+## 🔴 3 BLOQUEADORES CRÍTICOS — requieren acción
 
-**Estado: EN CURSO — Bloqueador identificado**
+### B1. Skill path equivocado
+- **Script usa:** `/root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md` → **stub 22KB**
+- **Skill real:** `/root/.hermes/skills/blog-pipeline/blog-pipeline/SKILL.md` → **48KB**
+- **Impacto:** El agente recibe contenido incompleto, no tiene las referencias correctas
+- **Fix:** Cambiar `SKILL_PATH` en `run-daily-blog.sh` línea ~50
 
-El pipeline de blog posting usa `claude -p "$FULL_PROMPT"` para generar posts. El CLI de Claude Code devuelve **401 Authentication Error** — el token OAuth de `claude.ai` está stale/expired. Esto provoca que el script re-ejecute en loop infinito.
+### B2. MiniMax empty response en prompts largos
+- **Síntoma:** `⚠️ Empty response from model — retrying (3/3)` → `❌ Model returned no content`
+- **Trigger:** prompts >20KB chars causar respuesta vacía en MiniMax M2.7
+- **Impacto:** Hermes escribe logs pero no produce output → no genera blog post
+- **Fix O1 (rápida):** truncar prompt a <15KB (cortar skill content, pasar refs en lugar de contenido)
+- **Fix O2 (completa):** migrar a skill + tool-calling con execute_code
 
-**Solución en curso:** ejecutar el pipeline usando MiniMax M2.7 directamente via Hermes (ya tiene API key configurada). Los scripts de topic research, deploy, IndexNow y Telegram ya funcionan — solo la capa de generación de contenido necesita migrar de `claude -p` al modelo MiniMax.
+### B3. Prerender port 4173 conflict
+- **Síntoma:** `EADDRINUSE: address already in use :::4173`
+- **Causa:** `prerender.mjs` deja proceso huérfano en puerto 4173 entre runs
+- **Impacto:** Build nunca completa → deploy nunca sucede
+- **Fix:** `fuser -k 4173/tcp` al inicio del script + trap en background process
+
+---
+
+## ✅ FIXES APLICADOS (esta sesión)
+
+### Fix 1: Variable expansion en `run-daily-blog.sh`
+- **Problema:** `\$` antes de variables en heredoc FULL_PROMPT → `hermes chat` recibía literales `${TRACK}`
+- **Líneas afectadas:** 161-169
+- **Fix:** `\$` → `$` (6 variables)
+- **Verificado:** prompt con topic expande correctamente
+
+### Fix 2: JSX `>` en 7 archivos de blog (nuevos)
+- **Archivos:** `ChecklistAuditoriaCampanasPage.jsx`, `CuantoCobraMediaBuyerPage.jsx`, `PerformanceMaxVsMetaAdsEspanaPage.jsx`, `QueEsUnMediaBuyerPage.jsx`, `QueNoAutomatizaIaD2cPage.jsx`, `RetargetingMetaAdsEcommerce2026Page.jsx`, `SenalesAgenciaNoRindePage.jsx`
+- **Fix:** `&gt;` en líneas de contenido JSX (entre tags, no strings JS)
+- **Estado:** git checkout --` applied (restored from git, fix no persisted)
 
 ---
 
@@ -26,38 +54,22 @@ Maximizar posicionamiento orgánico en **4 superficies**:
 | **SEO** | Search Console + GA4 |
 | **GEO** | Citations en AI-generated answers (ChatGPT, Perplexity) |
 | **AEO** | Featured snippets, People Also Ask, voice |
-| **AVO/Agentic** | Machine-readability para AI agents |
+| **AVO / Agentic** | Machine-readability para AI agents |
 
 ### 0.3 Pipeline completo (10 etapas)
-
 ```
 Stage 0 — System Review         → Audit stack completo (cron, skills, GSC, GA4, Lighthouse, IndexNow, Telegram)
-Stage 1 — Topic Discovery       → GSC gap, Reddit, PAA, Autocomplete, AnswerThePublic, Firecrawl
-Stage 2 — Research & Sources   → Verificar cada link (no 404s, autoridad real)
+Stage 1 — Topic Discovery       → GSC gap, Reddit, PAA, Autocomplete, Firecrawl
+Stage 2 — Research & Sources    → Verificar cada link (no 404s, autoridad real)
 Stage 3 — Writing              → SEO + GEO + AEO + AVO optimizado
 Stage 4 — On-page Optimization → Schema Article + FAQ, meta, slugs, alt text
-Stage 5 — Interlinking         → Exactamente 2 links internos contextuales por post
+Stage 5 — Interlinking         → Exactly 2 contextual internal links per post
 Stage 6 — Indexing             → llms.txt + sitemap + IndexNow
 Stage 7 — Deploy               → Vercel + verificar live URL
 Stage 8 — Measurement          → GSC + GA4: impressions, clicks, position, CTR
 Stage 9 — Audit                → Lighthouse (performance, SEO, accessibility) + report Telegram
 Stage 10 — Iteration           → Prompt Hatching: refinar prompts con datos reales
 ```
-
-### 0.4 Quality Bar
-- [x] Tone human, warm, easy to read
-- [x] Readability score ≈ 100
-- [x] Optimizado para SEO + GEO + AEO + AVO
-- [x] Estructura: headings, scannable, snippet-ready Q&A
-- [ ] Exactly 2 contextual internal links (interlinking pendiente de automatizar en nuevos posts)
-- [x] External links verificados live
-- [x] Schema / structured data
-- [x] Editorial line respetada
-- [x] Indexed (llms.txt, sitemap, IndexNow) y deployeado
-
-### 0.5 Autonomy & Escalation
-- Stop solo para: missing credentials, irreversible risk, strategy ambiguity, repeated tool failure
-- **Blocker actual:** `claude -p` → 401. Necesita migrar a MiniMax via Hermes.
 
 ---
 
@@ -68,224 +80,172 @@ Stage 10 — Iteration           → Prompt Hatching: refinar prompts con datos 
 | **Repo** | ✅ | `DaybyDay-csv/DaybyDayWeb`, main branch |
 | **Vercel project** | ✅ | `daybyday-web-owga` (prj_VzqOEKj4W0pxaAUOOG6gJ3sU9hTX) |
 | **GitHub connection** | ✅ | Conectado a `DaybyDay-csv/DaybyDayWeb`, branch `main` |
-| **Cronjobs activos** | ✅ | 6 cronjobs verificados (L-V 8am, Lun 6am, 6:30am, 7am) |
-| **Skills instaladas** | ✅ | 11 skills en `/root/.claude/scheduled-tasks/` |
-| **Skill principal** | ✅ | `daybyday-daily-blog` (~430 líneas, 8 fases) |
-| **GSC API** | ✅ | `/root/.hermes/gsc_token.json` + credentials — funcionando |
+| **Cronjobs activos** | ✅ | 6 cronjobs verificados |
+| **Skill principal** | 🚨 | **WRONG PATH** — stub 22KB en lugar de real 48KB |
+| **GSC API** | ✅ | `/root/.hermes/gsc_token.json` — funcionando |
 | **GA4 API** | ✅ | `/root/.hermes/ga4_token.json` + credentials — listo |
 | **Lighthouse** | ✅ | v13.3.0 en `/root/.npm-global/bin/lighthouse` |
 | **IndexNow** | ✅ | Bing + Yandex via `prerender.mjs` — funcionando |
 | **Telegram notification** | ✅ | Configurado |
-| **llms.txt** | ✅ | Generado automáticamente |
-| **sitemap.xml** | ✅ | Auto-generado |
-| **topic_research.py** | ⚠️ | Funcionando pero sin Reddit (403), Firecrawl ok (117 topics) |
+| **llms.txt + sitemap** | ✅ | Auto-generados |
+| **topic_research.py** | ✅ | 30 topics pending, 8 published |
 | **prompt_hatching.py** | ✅ | Variant A: 28 posts, Variant B: 0 posts |
-| **`run-daily-blog.sh`** | ⚠️ | Funciona hasta la llamada al modelo — luego 401 |
-| **Generación de contenido** | 🚨 | **BLOQUEADO** — `claude -p` → 401 auth error |
+| **`run-daily-blog.sh`** | ⚠️ | Variable expansion fixed, pero skill path wrong |
+| **Generación de contenido** | 🚨 | **BLOQUEADO** — MiniMax empty response + skill path wrong |
+| **Prerender port** | 🚨 | 4173 conflict — build no completa |
 
 ---
 
 ## 2. Progreso del día (2026-05-19 → 2026-05-20)
 
-### 2.1 Fix crítico: Duplicate slug ✅
-- `PixelMetaHibridoClienteServidorPage.jsx` tenía `slug` duplicado con el de implementación
-- Corregido → commit `59eead3` → merge → push `d330fd5`
+### 2.1 Fix variable expansion ✅
+- `run-daily-blog.sh` líneas 161-169: `\$` → `$` para 6 variables
+- Prompt ahora expande correctamente en hermes chat
 
-### 2.2 Sistema relatedPosts data-driven ✅
-- 3 posts nuevos integrados: `customer-journey-d2c-primer-impacto-repeticion`, `pixel-meta-hibrido-cliente-servidor`, `pixel-meta-hibrido-cliente-servidor-implementacion`
-- `relatedPosts.json`: 14 → 17 entries
+### 2.2 JSX `>` en 7 archivos ⚠️
+- 7 posts tienen `>` en texto JSX que necesitan `&gt;`
+- Fix script preparado pero no persistido (revertido a git)
+- Verificar con: `grep -rn 'agencia de publicidad está rindiendo\|media buyer.*1500' src/pages/blog/`
 
-### 2.3 External links de autoridad ✅
-| Post | Links |
-|------|-------|
-| CustomerJourneyD2c | DataReportal 2025, Statista 2025, Shopify, Klaviyo |
-| PixelMetaHibridoClienteServidor | Incognia, Flurry Analytics, Meta for Developers |
-| PixelMetaHibridoImplementacion | Meta Dev, Flurry Analytics, Privacy Sandbox |
-
-### 2.4 Fix masivo de build: `>` en JS strings ✅
-- **Problema:** `>` dentro de strings JS (faqs, table cells) rompen JSX parsing de esbuild
-- **41 archivos afectados** con `>70%`, `>30%`, `>10K€` dentro de `a:"..."`, `s:"..."`, `r:"..."`
-- **Fix:** `\u003e` unicode escape
-- **Build:** ✅ 189 modules, 12.57s — antes timeout a los 120s
-- **Commits:** `4196759` (external links) + `78a330e` (41 JSX files) + `991d97e` (doc)
-
-### 2.5 Topic research con Firecrawl ✅
-- `topic_research.py` integrado con **Firecrawl** → 117 topics descubiertos
-- Fuentes activas: GSC gap (90d), Google Autocomplete (26 seeds ES), curated D2C España (30 topics), Firecrawl web scraping
-- Reddit: 403 (bloqueado)
-- AnswerThePublic: paywall
-- `/root/logs/topic-research/state.json`: 32+ topics con scores
-
-### 2.6 Prompt Hatching ✅
-- Variant A: 28 posts (mean 34.0) — todos los posts existentes
-- Variant B: 0 posts — **el siguiente post arrancará B** para test A/B
-- Sistema de análisis estadístico listo (mínimo 6 posts B para evaluar)
+### 2.3 Prerender port conflict ⚠️
+- Puerto 4173 queda ocupado entre runs
+- Fix: `fuser -k 4173/tcp` al inicio del script
 
 ---
 
-## 3. 🚨 Bloqueador: Migración `claude -p` → MiniMax
+## 3. 🚨 Bloqueadores activos
 
-### 3.1 Diagnóstico
+### B1 — Skill path equivocado
+**Archivo:** `run-daily-blog.sh` línea ~50
+```bash
+# ACTUAL (WRONG):
+SKILL_PATH="/root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md"
+
+# CORRECTO:
+SKILL_PATH="/root/.hermes/skills/blog-pipeline/blog-pipeline/SKILL.md"
 ```
-run-daily-blog.sh → claude -p "$FULL_PROMPT" --allowedTools ... → 401 Authentication Error
+El stub skill (22KB) no tiene las referencias actualizadas del blog-pipeline skill (48KB).
+
+### B2 — MiniMax empty response
+**Síntoma:** prompts >20KB → model returns empty after 3 retries
+**Solución O1 (rápida):** truncate skill content a <15KB en el prompt
+**Solución O2 (completa):** usar skill como tool reference en lugar de inline content
+
+### B3 — Prerender port conflict
+**Archivo:** `run-daily-blog.sh` — añadir antes del build gate:
+```bash
+# Kill stale prerender processes
+fuser -k 4173/tcp 2>/dev/null || true
+sleep 2
 ```
-
-El CLI de Claude Code (`/root/.claude/bin/claude`) tiene OAuth válido en `claude.ai` pero el API key subyacente está stale. Por eso:
-1. Git pull ✓
-2. PostgreSQL INSERT ✓
-3. Topic selection ✓
-4. `claude -p` → **401** ✗
-5. Script re-ejecuta desde inicio → **loop infinito**
-
-### 3.2 Solución requerida
-Migrar la capa de generación de contenido del script para usar **MiniMax M2.7** via Hermes. Opciones:
-
-**Opción A (rápida):** Modificar `run-daily-blog.sh` para usar `hermes model minimax/MiniMax-2.7` o `hermes chat` en vez de `claude -p`
-
-**Opción B (completa):** Reescribir la skill `daybyday-daily-blog` para operar dentro de la sesión de Hermes Agent en vez de llamar un CLI externo
-
-### 3.3 Componentes que YA funcionan
-- topic_research.py ✅
-- Git operations ✅
-- Vercel deploy via API ✅
-- IndexNow (Bing + Yandex) ✅
-- Telegram notifications ✅
-- PostgreSQL state tracking ✅
-- `prerender.mjs` ✅
-- Lighthouse audit ✅
-- GSC + GA4 fetch ✅
-
-### 3.4 Componentes que necesitan MiniMax
-- Generación del contenido del post (prompt → markdown/JSX)
-- Research en vivo del topic (incorporado al prompt)
 
 ---
 
 ## 4. Pipeline run-daily-blog.sh — Arquitectura actual
 
 ```
-1. git pull (main)
+1. git pull (main) + worktree branch fix
 2. PostgreSQL: acquire run_id
 3. topic_research.py --pick --state  → topic + slug + cluster
-4. [BLOQUEADO] claude -p "$FULL_PROMPT" --allowedTools ...  → genera post
-5. git add + commit (topic slug)
-6. git push origin main
-7. Vercel deploy polling
-8. prerender.mjs → IndexNow (Bing + Yandex)
-9. Lighthouse audit
-10. Telegram report
-11. PostgreSQL: mark published
-12. prompt_hatching.py --record
+4. hermes chat -q "$(cat prompt_file)" --model MiniMax-M2.7  → genera post
+5. npm run build (PRE-MERGE GATE)
+6. verify-blog-links.sh
+7. Lighthouse audit
+8. Prompt Hatching (variant toggle)
+9. git commit + push branch
+10. git merge + push main (→ Vercel deploy)
+11. IndexNow submission
+12. Telegram notification
+13. PostgreSQL: mark status
 ```
 
-**Sepultura:** paso 4. El resto funciona.
+**Sepultura:** pasos 4 (skill path + empty response) + 5 (port conflict) + prerender.
 
 ---
 
-## 5. Historial de sesiones (progress tracking)
-
-| Sesión | Fecha | Duración | Lo que se hizo |
-|--------|-------|----------|----------------|
-| `20260519_181022_567e69` | 19 May 01:18pm | ~21 min | Setup HERMES system prompt, 10-stage pipeline, Stage 0 audit, topic_research.py con Firecrawl, 117 topics |
-| `20260519_184058_b5daee` | 19 May 02:10pm | ~7 min | Resume sesión anterior, verificación status |
-| `20260519_185855_931592` | 19 May 02:57pm | ~29 min | Pipeline completo ejecutado, `claude -p` → 401, diagnóstico completo del blocker |
-| `20260519_190118_a3a280` | 19 May 03:01pm | ~8 min | Sesión corta, confirmación estado |
-| `20260519_190320_652a81` | 19 May 03:03pm | ~5 min | Sesión corta |
-| `20260519_193508_ed7792` | 19 May 03:31pm | ~140 min | **Esta sesión** — fix duplicate slug, relatedPosts, external links, 41 JSX files `\u003e`, build exitoso, doc actualizado |
-| `cron_2958dff26772` | 19 May 09:12pm | ~10 min | Cronjob L-V orchestrator, sin blog posting |
-
-**Sesiones anteriores (antes de hoy):**
-| Sesión | Fecha | Lo que se hizo |
-|--------|-------|----------------|
-| `20260519_151340_b71ea2` | 19 May 01:34pm | Fix JSX entity `>` en 10 archivos, `.vercelignore`, verify 200 en producción |
-| `20260519_125349_22b589` | 19 May 10:53am | Setup initial, run-daily-blog.sh con topic_research, cronjob updates |
-| `20260519_...` | 19 May morning | Sesiones morning — topic research, curated topics, cronjob setup |
-
----
-
-## 6. Stats blog
+## 5. Stats blog
 
 | Métrica | Valor |
 |---------|-------|
-| Posts publicados | **78** |
-| Posts en relatedPosts.json | **17** (de 87 en src/pages/blog) |
-| Clusters en internal_links.py | 9 clusters, 17 entries |
-| Posts con external links >0 | ~70 |
-| Posts con data-driven relatedPosts | 17 (resto pendiente) |
-| Topics en cola (topic_research) | 32+ |
+| Posts en sitemap | **79** |
+| Posts published (sitemap + domain serving) | **79** |
+| Posts en topic queue pending | **30** |
+| Posts en topic queue published | **8** |
+| relatedPosts.json entries | 17 |
 | Prompt Hatching Variant A | 28 posts |
-| Prompt Hatching Variant B | 0 posts (próximo post = B) |
+| Prompt Hatching Variant B | 0 posts |
+| Lighthouse audit reports | 17 |
+| PG runs: success | 88 |
+| PG runs: failed | 26 |
+| PG runs: running (stale) | 0 (cleaned) |
 
 ---
 
-## 7. Topics pendientes (topic queue)
+## 6. Topics pendientes
 
-**Alta prioridad:**
-- Quick wins GSC: `que es el roas en meta ads` (pos 6.7, CTR 0%, score 80)
-- `consultora marketing mix modeling` (pos 13.6, score 70)
-- `cbo vs abo meta ads 2026` (curated, score 80)
-
-**Pendiente ejecutar tras migración MiniMax:**
-1. `como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana` (score 80) — **primer post Variant B**
+**Alta prioridad (top of queue):**
+1. `como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana` (score 80) — **NEXT POST**
 2. `cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana` (score 80)
 3. `ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza` (score 80)
+4. `que-es-el-roas-en-meta-ads` (GSC quick win, pos 6.7, CTR 0%)
 
 ---
 
-## 8. Vercel deploys
+## 7. Cronjobs activos
 
-| SHA | Mensaje | Estado |
-|-----|---------|--------|
-| `d330fd5` | Merge branch 'claude/epic-pasteur' | ✅ READY |
-| `4196759` | fix: external links + 41 JSX files | ✅ READY |
-| `78a330e` | fix: 41 JSX files `\u003e` unicode escape | ✅ READY |
-| `991d97e` | docs: blog pipeline progreso 2026-05-20 | ✅ READY |
+| Job | Schedule | Track | Función | Estado |
+|-----|----------|-------|---------|--------|
+| `daybyday-daily-blog-current` | 0 9 * * 1-5 | current | Pipeline D2C | ⚠️ Bloqueado (B1+B2) |
+| `daybyday-daily-blog-pivot` | 0 14 * * 1-5 | pivot | Pipeline Growth | ⚠️ Bloqueado (B1+B2) |
+| `daybyday-topic-research` | 0 6 * * 1 | — | Topic discovery | ✅ Funcionando |
+| `daybyday-weekly-lighthouse` | 30 6 * * 1 | — | Lighthouse audit | ✅ Programado |
+| `daybyday-weekly-seo-report` | 0 7 * * 1 | — | GSC + report | ✅ Programado |
+| `daybyday-geo-monitor` | 0 6 * * 1 | — | GEO/AVO/AEO | ✅ Programado |
 
 ---
 
-## 9. Scripts del sistema
+## 8. Scripts del sistema
 
 | Script | Función | Estado |
 |--------|---------|--------|
-| `/root/scripts/topic_research.py` | Research topics: GSC + Autocomplete + Firecrawl + curated | ✅ |
-| `/root/scripts/run-daily-blog.sh` | Pipeline completo de blog posting | ⚠️ Bloqueado en paso 4 (`claude -p`) |
-| `/root/scripts/internal_links.py` | Interlinking clusters | ✅ Actualizado |
-| `/root/scripts/inject_related_posts.py` | Inject relatedPosts en JSX | ✅ Listo |
-| `/root/scripts/lighthouse-audit.sh` | Lighthouse v13.3.0 | ✅ Listo |
-| `/root/scripts/gsc_fetch.py` | GSC API | ✅ Funcionando |
-| `/root/scripts/ga4_events.py` | GA4 Measurement Protocol | ✅ Listo |
-| `/root/scripts/prompt_hatching.py` | Prompt A/B testing | ✅ Listo |
-| `/root/scripts/prerender.mjs` | IndexNow + sitemap refresh | ✅ Funcionando |
+| `/root/scripts/run-daily-blog.sh` | Pipeline completo | ⚠️ Skill path + port conflict |
+| `/root/scripts/topic_research.py` | Topic discovery: GSC + Autocomplete + Firecrawl | ✅ |
+| `/root/scripts/internal_links.py` | Interlinking clusters | ✅ |
+| `/root/scripts/inject_related_posts.py` | Inject relatedPosts en JSX | ✅ |
+| `/root/scripts/lighthouse-audit.sh` | Lighthouse v13.3.0 | ✅ |
+| `/root/scripts/gsc_fetch.py` | GSC API | ✅ |
+| `/root/scripts/ga4_events.py` | GA4 Measurement Protocol | ✅ |
+| `/root/scripts/prompt_hatching.py` | Prompt A/B testing | ✅ |
+| `/root/scripts/prerender.mjs` | IndexNow + sitemap refresh | ✅ Port conflict |
+| `/root/scripts/verify-blog-links.sh` | External link verification | ✅ |
 
 ---
 
-## 10. Pendiente para la próxima sesión
+## 9. Pendiente para la próxima sesión
 
-### Crítico (blocking)
-- [ ] **Migrar `claude -p` → MiniMax via Hermes** en `run-daily-blog.sh` o skill `daybyday-daily-blog`
+### Crítico (blocking — resolver en este orden)
+1. [ ] Fix skill path en `run-daily-blog.sh` → apuntar a skill real de 48KB
+2. [ ] Fix MiniMax empty response: truncar prompt o usar skill como tool reference
+3. [ ] Fix prerender port conflict: `fuser -k 4173/tcp` al inicio del script
 
 ### Alto
-- [ ] Ejecutar pipeline completo con el topic top de la cola
-- [ ] Primer post Variant B (Prompt Hatching)
-- [ ] Lighthouse audit post-deploy (3 posts publicados)
+- [ ] Ejecutar pipeline completo — primer post Variant B
+- [ ] JSX `>` en 7 archivos: verificar y fixear antes de próximo deploy
+- [ ] Lighthouse audit post-deploy
 
 ### Medio
-- [ ] Populate topic queue con GSC quick wins (pos 4-10, CTR bajo)
-- [ ] Automatizar Lighthouse + GSC en `run-daily-blog.sh` (post-deploy hook)
-- [ ] Limpiar hardcoded related posts en CustomerJourneyD2c (líneas 232-251)
-
-### Bajo
-- [ ] Reddit access (OAuth o scraper alternativo)
-- [ ] SerpAPI para PAA reales
-- [ ] 41 archivos con `\u003e` → verificar renderizado en浏览器
+- [ ] Populate topic queue con más GSC quick wins
+- [ ] Verificar que los 7 archivos con `>` en JSX no rompen el build actual
+- [ ] Limpiar stale worktree changes (`git checkout --`)
 
 ---
 
-## 11. Referencias
+## 10. Referencias
 
-- System prompt HERMES completo: arriba en sección 0
-- Doc de progreso: `/root/projects/DaybyDay/blog-progreso-2026-05-20.md`
+- System prompt HERMES: sección 0 de este doc
 - Estado topics: `/root/logs/topic-research/state.json`
 - Hatching state: `/root/logs/hatching/hatching-state.json`
-- Logs: `/root/logs/blog-2026-05-19.log`, `/root/logs/orchestrator-2026-05-19.log`
-- Skill blog-pipeline: `/root/.hermes/skills/blog-pipeline/`
+- Skill real: `/root/.hermes/skills/blog-pipeline/blog-pipeline/SKILL.md` (48KB)
+- Skill stub: `/root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md` (22KB)
+- Blog progreso: `/root/projects/DaybyDay/blog-progreso-2026-05-20.md`
+- Logs: `/var/log/daybyday/blog-*.log`, `/root/logs/blog-*.log`
