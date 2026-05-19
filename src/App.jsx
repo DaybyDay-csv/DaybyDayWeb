@@ -97,6 +97,7 @@ import DashboardPaidMediaFounderD2cPage from "./pages/blog/DashboardPaidMediaFou
 import WhatsappMetaAdsFunnelBofuD2cPage from "./pages/blog/WhatsappMetaAdsFunnelBofuD2cPage";
 import SmartBiddingGoogleAdsD2cPage from "./pages/blog/SmartBiddingGoogleAdsD2cPage";
 import CustomerJourneyD2cPage from "./pages/blog/CustomerJourneyD2cPage";
+import PixelMetaHibridoClienteServidorPage from "./pages/blog/PixelMetaHibridoClienteServidorPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -324,6 +325,7 @@ const App = () => {
         <Route path="/blog/whatsapp-meta-ads-funnel-bofu-d2c" element={<WhatsappMetaAdsFunnelBofuD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/smart-bidding-google-ads-d2c" element={<SmartBiddingGoogleAdsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/customer-journey-d2c-primer-impacto-repeticion" element={<CustomerJourneyD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/pixel-meta-hibrido-cliente-servidor-implementacion" element={<PixelMetaHibridoClienteServidorPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
