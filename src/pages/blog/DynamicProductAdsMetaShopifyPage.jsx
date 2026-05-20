@@ -55,6 +55,8 @@ const DynamicProductAdsMetaShopifyPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       Las <strong className="text-white">Dynamic Product Ads</strong> (renombradas Advantage+ Catalog Ads en la consola de Meta) son anuncios que se generan en tiempo real combinando tres piezas: tu catálogo de productos sincronizado, los eventos del pixel + Conversions API y una plantilla creativa con campos variables (imagen, título, precio, descuento). En lugar de producir una creatividad por SKU, el sistema decide qué producto mostrar a qué usuario y construye el ad dinámicamente. Para un D2C con 50-2.000 SKUs activos, las DPA pasan de ser un nice-to-have a la columna vertebral del 40-65% del presupuesto Meta.
     </p>
+            {link_para}
+            
     <p className="text-white/70 leading-relaxed mb-5">
       La importancia en 2026 es aún mayor porque <a href="https://www.facebook.com/business/help/1633334822807182" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta empuja activamente Advantage+ Shopping Campaigns</a> con catálogo integrado, porque la deprecación progresiva de cookies third-party hace que los eventos server-side (CAPI) sean obligatorios para mantener señal y porque el coste creativo manual (UGC + edición) ha subido a 80-250€/pieza, haciendo inviable producir creatividad estática por SKU en catálogos amplios.
     </p>

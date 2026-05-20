@@ -42,6 +42,8 @@ const SenalesAgenciaNoRindePage = ({ openCalendly }) => (
 
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
       <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Contexto importante</p>
+            {link_para}
+            
       <p className="text-white/70 text-sm leading-relaxed">
         Según datos internos de DayByDay, el <strong>63% de los ecommerces D2C</strong> que llegan a nosotros pidiendo auditoría llevan más de 4 meses con resultados planos o negativos sin haber recibido una propuesta de mejora concreta de su agencia anterior.
       </p>

@@ -53,6 +53,8 @@ const ComoElegirAgenciaMetaAdsEcommercePage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       Este artículo es la metodología que usamos cuando un fundador nos pide ayuda para evaluar a otra agencia (o a nosotros mismos): qué criterios pesan de verdad, qué scorecard usar para comparar dos propuestas, qué modelo de pricing tiene sentido en cada fase y qué señales delatan a las agencias que viven de prometer ROAS y subcontratar a juniors.
     </p>
+            {link_para}
+            
 
     <h2 className="text-2xl font-black mt-10 mb-4">Los 6 criterios que definen a la mejor agencia para tu eCommerce</h2>
     <p className="text-white/70 leading-relaxed mb-4">

@@ -42,6 +42,8 @@ const CuantoCobraMediaBuyerPage = ({ openCalendly }) => (
 
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
       <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Rango de mercado 2026</p>
+            {link_para}
+            
       <p className="text-white/70 text-sm leading-relaxed">
         Un media buyer freelance en España cobra entre <strong>1.500€ y 5.000€/mes</strong> según experiencia. Las agencias especializadas en D2C cobran entre <strong>800€ y 3.000€/mes</strong> en fee de gestión, con inversión mínima recomendada de 3.000€-5.000€ en publicidad.
       </p>

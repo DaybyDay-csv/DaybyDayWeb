@@ -53,6 +53,8 @@ const RemarketingDinamicoEcommerceGuiaPracticaPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       Esta guía resuelve qué necesitas para arrancarlo bien, qué ventanas y exclusiones aplicar según tu ticket, qué porcentaje del presupuesto debe ir a remarketing dinámico vs prospecting, qué plantillas creativas funcionan después de iOS 17 y cómo controlar la fatiga sin pausar la campaña.
     </p>
+            {link_para}
+            
 
     <h2 className="text-2xl font-black mt-10 mb-4">¿Cuándo merece la pena el remarketing dinámico?</h2>
     <p className="text-white/70 leading-relaxed mb-4">

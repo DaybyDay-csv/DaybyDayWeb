@@ -59,6 +59,8 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       <strong className="text-white">Ad fatigue</strong> es el deterioro progresivo del rendimiento de un anuncio cuando la audiencia objetivo lo ha visto suficientes veces como para dejar de reaccionar. En Meta Ads el ciclo es más corto que en otros canales porque la sesión media de Instagram en España es alta (33-45 minutos al día según <a href="https://datareportal.com/reports/digital-2025-spain" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">DataReportal Digital 2025 Spain</a>) y el feed quema impresiones rápido. Un usuario que abre Instagram 6-8 veces al día puede acumular 8-15 impresiones de un mismo anuncio en una semana si la campaña tiene presupuesto alto sobre una audiencia limitada.
     </p>
+            {link_para}
+            
 
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
       <p className="text-white font-bold text-sm mb-2">📊 Dato de referencia</p>

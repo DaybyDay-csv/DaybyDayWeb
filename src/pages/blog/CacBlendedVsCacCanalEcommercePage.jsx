@@ -57,6 +57,8 @@ const CacBlendedVsCacCanalEcommercePage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       En esta guía explicamos qué mide cada CAC, cuándo usar uno u otro, cómo calcularlos sin inflar el dato y qué ratios LTV:CAC son realistas en eCommerce D2C español en 2026.
     </p>
+            {link_para}
+            
 
     <h2 className="text-2xl font-black mt-10 mb-4">CAC blended vs CAC por canal: en qué se diferencian</h2>
     <div className="overflow-x-auto mb-6">

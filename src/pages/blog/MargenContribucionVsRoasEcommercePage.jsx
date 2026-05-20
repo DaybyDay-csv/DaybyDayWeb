@@ -61,6 +61,8 @@ const MargenContribucionVsRoasEcommercePage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       <strong className="text-white">El margen de contribución</strong> es la cantidad que queda de cada pedido después de restar todos los costes variables: COGS (coste del producto), packaging, fulfilment (warehouse + envío), comisión de pasarela de pago, coste esperado de devolución y coste de adquisición pagado en paid media. Es la cifra que aporta cada pedido a cubrir costes fijos (equipo, software, alquiler) y a generar beneficio. A diferencia del margen bruto (que solo descuenta COGS) o del ROAS (que solo mira revenue / spend paid), el margen de contribución es el único indicador que refleja la rentabilidad real por unidad vendida.
     </p>
+            {link_para}
+            
     <p className="text-white/70 leading-relaxed mb-5">
       <a href="https://www.shopify.com/blog/contribution-margin" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Según Shopify, el margen de contribución es la métrica financiera que mejor predice la viabilidad a largo plazo de un eCommerce D2C</a>: por encima del 30% sobre AOV el negocio puede absorber subidas de CPM y aún financiar crecimiento; por debajo del 15% cualquier shock externo (subida de costes logísticos, devolución masiva, evento fiscal) compromete la caja.
     </p>

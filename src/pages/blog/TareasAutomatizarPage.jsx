@@ -34,6 +34,8 @@ const TareasAutomatizarPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       Estas son las 7 tareas que más tiempo consumen y que se pueden automatizar de forma efectiva con las herramientas disponibles hoy.
     </p>
+            {link_para}
+            
 
     <h2 className="text-2xl font-black mt-10 mb-4">1. Email de bienvenida y primera secuencia de nurturing</h2>
     <p className="text-white/70 leading-relaxed mb-4">

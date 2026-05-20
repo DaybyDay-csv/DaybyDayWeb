@@ -44,6 +44,8 @@ const MediaBuyerVsAgenciaPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-4">
       Un <strong className="text-white">media buyer</strong> es el profesional especializado en planificación, compra y optimización de espacios publicitarios en plataformas digitales. Su trabajo incluye:
     </p>
+            {link_para}
+            
     <ul className="space-y-2 mb-6">
       {[
         "Diseño de la estrategia de campañas (qué plataformas, qué audiencias, qué objetivos)",

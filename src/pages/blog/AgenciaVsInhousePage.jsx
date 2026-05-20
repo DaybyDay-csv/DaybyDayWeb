@@ -36,6 +36,8 @@ const AgenciaVsInhousePage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       Este análisis está basado en nuestra experiencia auditando decenas de empresas y en los costes reales del mercado español en 2026.
     </p>
+            {link_para}
+            
 
     <h2 className="text-2xl font-black mt-10 mb-4">El coste real de cada opción</h2>
 

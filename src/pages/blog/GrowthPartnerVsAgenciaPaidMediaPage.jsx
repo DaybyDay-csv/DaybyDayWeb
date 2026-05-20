@@ -60,6 +60,8 @@ const GrowthPartnerVsAgenciaPaidMediaPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-6">
       Esta guía no compara proveedores. Compara dos modelos operativos distintos — agencia de paid media vs growth partner — y da el criterio para decidir cuál encaja con tu fase, tu margen de contribución y tu payback de CAC. Está escrita desde el lado del operador, no desde el lado del proveedor.
     </p>
+            {link_para}
+            
 
     <h2 className="text-2xl font-black mt-10 mb-4">Qué es un growth partner (definición operativa)</h2>
     <p className="text-white/70 leading-relaxed mb-4">

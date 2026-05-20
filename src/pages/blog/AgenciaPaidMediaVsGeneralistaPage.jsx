@@ -44,6 +44,8 @@ const AgenciaPaidMediaVsGeneralistaPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       La diferencia no es de tamaño ni de precio — es de modelo de trabajo y profundidad técnica:
     </p>
+            {link_para}
+            
 
     <div className="overflow-x-auto mb-8">
       <table className="w-full text-sm border-collapse">

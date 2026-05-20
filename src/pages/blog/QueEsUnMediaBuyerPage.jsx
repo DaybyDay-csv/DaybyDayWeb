@@ -42,6 +42,8 @@ const QueEsUnMediaBuyerPage = ({ openCalendly }) => (
 
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
       <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Dato clave</p>
+            {link_para}
+            
       <p className="text-white/70 text-sm leading-relaxed">
         España es el 5º mercado de publicidad digital en Europa con 6.211 millones de euros invertidos en 2025, un crecimiento del +11,2% respecto al año anterior. La demanda de media buyers especializados en D2C no ha parado de crecer desde 2022.
       </p>

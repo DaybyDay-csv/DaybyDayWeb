@@ -34,6 +34,8 @@ const FullFunnelMetaAdsPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       Una estrategia full-funnel organiza tus campañas de Meta Ads para acompañar al usuario en cada etapa: desde que descubre tu marca hasta que compra y repite. Es la diferencia entre quemar presupuesto y construir un sistema de adquisición predecible.
     </p>
+            {link_para}
+            
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
       <p className="text-white/40 text-xs uppercase tracking-wider mb-3">Las tres fases del funnel</p>
       <div className="space-y-2">

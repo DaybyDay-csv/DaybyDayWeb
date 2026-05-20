@@ -42,6 +42,8 @@ const CuantoCuestaAgenciaPaidMediaPage = ({ openCalendly }) => (
 
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
       <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Importante distinguir</p>
+            {link_para}
+            
       <p className="text-white/70 text-sm leading-relaxed">
         <strong className="text-white">Honorarios de agencia</strong> (lo que le pagas a la agencia por su trabajo) y <strong className="text-white">inversión en medios</strong> (lo que va a Meta Ads, Google Ads) son dos costes separados. Este artículo habla de honorarios de agencia. La inversión en medios va por separado.
       </p>

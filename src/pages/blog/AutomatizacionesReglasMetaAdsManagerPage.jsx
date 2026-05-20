@@ -57,6 +57,8 @@ const AutomatizacionesReglasMetaAdsManagerPage = ({ openCalendly }) => (
     <p className="text-white/70 leading-relaxed mb-5">
       En esta guía cubrimos qué reglas merecen la pena, en qué nivel aplicarlas, qué umbrales son seguros y cuándo conviene salir de Ads Manager hacia la Marketing API.
     </p>
+            {link_para}
+            
 
     <h2 className="text-2xl font-black mt-10 mb-4">Tres familias de reglas en Meta Ads Manager</h2>
     <p className="text-white/70 leading-relaxed mb-4">
