@@ -64,15 +64,28 @@ fi
 
 [ $RC -ne 0 ] && exit $RC
 
-# Validate JSON — strip <|>|think blocks before parsing
+# Validate JSON — strip <|>|think blocks and markdown code fences
 python3 - <<PYEOF
 import json, re, sys
 raw = open("$RAW").read()
 content = re.sub(r'<\|>.*?\|>', '', raw, flags=re.DOTALL).strip()
+# Strip markdown code fences
+content = re.sub(r'^```(?:json)?\s*', '', content, flags=re.MULTILINE)
+content = re.sub(r'\s*```$', '', content, flags=re.MULTILINE).strip()
 m = re.search(r'\{', content)
 if not m:
     print("No JSON found in output", file=sys.stderr); sys.exit(1)
 content = content[m.start():]
+# Find matching close brace
+depth, end = 0, m.start()
+for i, c in enumerate(content):
+    if c == '{': depth += 1
+    elif c == '}':
+        depth -= 1
+        if depth == 0:
+            end = i + 1
+            break
+content = content[:end]
 try:
     d = json.loads(content)
 except Exception as e:
