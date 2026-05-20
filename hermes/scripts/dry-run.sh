@@ -19,7 +19,7 @@ echo
 cd "$REPO"
 
 # Pre-check: clean state
-DIRTY=$(git status --porcelain | grep -vE '^\?\?.*\.(bak|hermes-bak)$' | wc -l)
+DIRTY=$(git status --porcelain | grep -vE '^\?\?.*\.(bak|hermes-bak)$' | grep -vE '^.. .claude/worktrees/' | wc -l)
 if [ "$DIRTY" -gt 0 ]; then
   echo "✗ Repo not clean. Run 'git status' to inspect. Dry-run aborted."
   git status --short
@@ -55,7 +55,7 @@ cleanup() {
   [ -n "$STASH_PLAN" ] && mv "$HERMES/state/plan-$DATE.json.dryrun-stash" "$HERMES/state/plan-$DATE.json" 2>/dev/null
   [ -n "$STASH_RESEARCH" ] && mv "$HERMES/state/research-$DATE.json.dryrun-stash" "$HERMES/state/research-$DATE.json" 2>/dev/null
   # Verify clean
-  FINAL_DIRTY=$(git status --porcelain | grep -vE '^\?\?.*\.(bak|hermes-bak)$' | wc -l)
+  FINAL_DIRTY=$(git status --porcelain | grep -vE '^\?\?.*\.(bak|hermes-bak)$' | grep -vE '^.. .claude/worktrees/' | wc -l)
   if [ "$FINAL_DIRTY" -gt 0 ]; then
     echo "✗ CLEANUP INCOMPLETE — worktree dirty after dry-run:"
     git status --short
