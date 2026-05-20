@@ -3,7 +3,15 @@ import SEOHead from "../components/SEOHead";
 import Footer from "../components/Footer";
 
 const posts = [
-      // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
+        // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
+  {
+    slug: "ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza",
+    title: "GA4 Meta Server Side Tracking Shopify Sin Dolores de Cabeza",
+    excerpt: "Guía para implementar GA4 y Meta server side tracking en Shopify. Aprende a configurar Conversions API, evitar duplicados y mejorar tu atribución en 2025.",
+    category: "Tracking",
+    date: "21 may 2026",
+    readingTime: "9 min",
+  },
   {
     slug: "cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana",
     title: "CBO vs ABO Meta Ads 2026: cuál gana en ecommerce España",

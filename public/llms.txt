@@ -155,3 +155,4 @@ Teléfono: +34 644 387 715
 Calendly: https://calendly.com/contact-daybydayconsulting/30min
 - [Cómo empezar con Meta Ads en 2026 siendo eCommerce España](https://www.daybydayconsulting.com/blog/como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana)
 - [CBO vs ABO Meta Ads 2026: cuál gana en ecommerce España](https://www.daybydayconsulting.com/blog/cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana)
+- [GA4 Meta Server Side Tracking Shopify Sin Dolores de Cabeza](https://www.daybydayconsulting.com/blog/ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza)

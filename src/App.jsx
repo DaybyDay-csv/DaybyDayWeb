@@ -101,6 +101,7 @@ import CustomerJourneyD2cPage from "./pages/blog/CustomerJourneyD2cPage";
 import PixelMetaHibridoClienteServidorPage from "./pages/blog/PixelMetaHibridoClienteServidorPage";
 import ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage from "./pages/blog/ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage";
 import CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage from "./pages/blog/CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage";
+import Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage from "./pages/blog/Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage";
 // HERMES_IMPORTS_END — Do not remove. hermes/scripts/update-routes.js inserts new blog imports above this line.
 import NotFoundPage from "./pages/NotFoundPage";
 
@@ -333,6 +334,7 @@ const App = () => {
         <Route path="/blog/pixel-meta-hibrido-cliente-servidor-implementacion" element={<PixelMetaHibridoClienteServidorPage openCalendly={openCalendly} />} />
                 <Route path="/blog/como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana" element={<ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage openCalendly={openCalendly} />} />
                 <Route path="/blog/cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana" element={<CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage openCalendly={openCalendly} />} />
+                <Route path="/blog/ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza" element={<Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage openCalendly={openCalendly} />} />
         {/* HERMES_ROUTES_END — Do not remove. hermes/scripts/update-routes.js inserts new blog routes above this line. */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
