@@ -50,6 +50,7 @@ import GuiaMetaAdsEcommerceD2CEspana2026Page from "./pages/blog/GuiaMetaAdsEcomm
 import CasoExitoEcommerceROASPage from "./pages/blog/CasoExitoEcommerceROASPage";
 import BenchmarkROASSectorEspanaPage from "./pages/blog/BenchmarkROASSectorEspanaPage";
 import CreativeTestingMetaAdsPage from "./pages/blog/CreativeTestingMetaAdsPage";
+import MetaAdsCreativeTesting2026D2cPage from "./pages/blog/meta-ads-creative-testing-2026-d2cPage";
 import ComoMejorarROASMetaAdsPage from "./pages/blog/ComoMejorarROASMetaAdsPage";
 import EscalarCampanasMetaAdsSinRomperROASPage from "./pages/blog/EscalarCampanasMetaAdsSinRomperROASPage";
 import AdvantagePlusShoppingPage from "./pages/blog/AdvantagePlusShoppingPage";
@@ -278,6 +279,7 @@ const App = () => {
         <Route path="/blog/caso-exito-ecommerce-d2c-roas-meta-ads" element={<CasoExitoEcommerceROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/benchmark-roas-sector-espana-2026" element={<BenchmarkROASSectorEspanaPage openCalendly={openCalendly} />} />
         <Route path="/blog/creative-testing-meta-ads" element={<CreativeTestingMetaAdsPage openCalendly={openCalendly} />} />
+        <Route path="/blog/meta-ads-creative-testing-2026-d2c" element={<MetaAdsCreativeTesting2026D2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/como-mejorar-roas-meta-ads-7-palancas" element={<ComoMejorarROASMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/escalar-campanas-meta-ads-sin-romper-roas" element={<EscalarCampanasMetaAdsSinRomperROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/advantage-plus-shopping-cuando-usarlo-no" element={<AdvantagePlusShoppingPage openCalendly={openCalendly} />} />
