@@ -64,17 +64,23 @@ fi
 
 [ $RC -ne 0 ] && exit $RC
 
-# Validate JSON
+# Validate JSON — strip <|>|think blocks before parsing
 python3 - <<PYEOF
-import json, sys
+import json, re, sys
+raw = open("$RAW").read()
+content = re.sub(r'<\|>.*?\|>', '', raw, flags=re.DOTALL).strip()
+m = re.search(r'\{', content)
+if not m:
+    print("No JSON found in output", file=sys.stderr); sys.exit(1)
+content = content[m.start():]
 try:
-    d = json.load(open("$RAW"))
+    d = json.loads(content)
 except Exception as e:
-    print(f"Strategist output invalid JSON: {e}", file=sys.stderr); sys.exit(1)
+    print(f"JSON parse error: {e}", file=sys.stderr); sys.exit(1)
 required = ["task_id","title","slug","keyword","faqs","internal_link_slugs"]
 missing = [k for k in required if k not in d]
 if missing:
-    print(f"Strategist output missing keys: {missing}", file=sys.stderr); sys.exit(1)
+    print(f"Missing keys: {missing}", file=sys.stderr); sys.exit(1)
 json.dump(d, open("$OUT","w"), ensure_ascii=False, indent=2)
 PYEOF
 
