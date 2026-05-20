@@ -85,7 +85,22 @@ async function prerender() {
         waitUntil: "networkidle0",
         timeout: 30000,
       });
-      await page.waitForFunction(() => document.title && document.title.length > 0, { timeout: 5000 }).catch(() => {});
+      // Wait for React to hydrate and render blog content
+      // Check for either #root children or h1 (blog posts always have h1)
+      await page.waitForFunction(
+        () => {
+          const root = document.getElementById('root');
+          if (!root) return false;
+          const children = root.children.length;
+          const h1 = document.querySelector('h1');
+          const title = document.title;
+          // Blog post renders when: root has children AND (h1 exists OR title changed from default)
+          const isBlogPost = title && !title.includes('Growth Partner para D2C');
+          return children > 0 && (!!h1 || isBlogPost);
+        },
+        { timeout: 10000 }
+      ).catch(() => {});
+
       let html = await page.content();
       // Dedupe canonical tags: keep only the last one per page
       const canonicalMatches = html.matchAll(/<link rel="canonical"[^>]*>/g);
