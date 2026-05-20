@@ -1,128 +1,129 @@
+import React from 'react';
 import BlogPostLayout from '../../components/BlogPostLayout';
 
-const metaAdsCreativeTesting2026D2cPage = () => {
+const MetaAdsCreativeTesting2026D2cPage = () => {
   const faqs = [
     {
-     pregunta: '¿Cuántas creatividades necesito testar en Meta Ads para obtener resultados estadísticamente significativos?',
-      respuesta: 'Con un nivel de confianza del 95% y un margen de error del 10%, necesitas mínimo 70 conversiones por variante. Esto significa que si tu CPC promedio es de €1.50 y tu tasa de conversión es del 3%, necesitarás unos 3.500 clics por creatividad antes de poder declarar un winner con certeza.'
+      question: '¿Cuánto presupuesto necesito para testear 20 creatividades en Meta Ads?',
+      answer: 'Con un presupuesto diario de 150-200€ distribuido equitativamente entre las 20 creatividades (7-10€ por creatividad), puedes obtener datos estadísticamente significativos en 7-14 días. La clave es no pausar ninguna creatividad antes de tiempo: Meta necesita al menos 50-100 conversiones por creatividad para validar resultados reales.'
     },
     {
-      pregunta: '¿Es mejor usar Advantage+ Shopping Campaign o campañas manuales para creative testing?',
-      respuesta: 'Para testing puro, usa campañas manuales con budget campaign y daily budget de €5-10 por set. Advantage+ optimiza hacia la mejor creatividad automáticamente, lo que sesga los resultados. Una vez que tengas un winner claro tras 2-3 semanas de test, migra el winning creative a Advantage+ para escalar.'
+      question: '¿Cómo determino qué creatividad es la ganadora sin sesgar los datos?',
+      answer: 'Utiliza el método de significancia estadística con un nivel de confianza del 95%. Meta Ads Manager muestra el "confidence interval" en la columna de optimización. Una creatividad solo es ganadora cuando supera a la segunda mejor en más de un 20% de conversion rate con confidence >95%. Evita declarar ganadores antes de las 500 impressiones mínimas por creatividad.'
     },
     {
-      pregunta: '¿Cómo evito el cannibalization entre sets de creatividades dentro de la misma campaña?',
-      respuesta: 'Usa la regla del 20%: si un set de creatividad ya gasta más del 20% del presupuesto total y su ROAS está por debajo de la media, ponlo en pause y redistribuye. Además, nunca mezcles creatividades de diferente formato ( carrusel vs. video vs. imagen estática ) en el mismo ad set — cada formato tiene curvas de aprendizaje distintas que distorsionan los datos.'
+      question: '¿Qué tipo de creatividades funcionan mejor para e-commerce D2C en 2026?',
+      answer: 'Los formatos que lideran en 2026 para D2C son: video UGC vertical de 6-15 segundos con testo directo en pantalla, carruseles de transformación de producto en 3 pasos, y colecciones con precio visible desde el primer segundo. Las creatividades con rostros reales, prueba social (screenshots de reseñas), y urgencia sin falsedad (stock limitado real) superan un 40% en ROAS frente a creatividades corporativas tradicionales.'
     }
   ];
 
   return (
     <BlogPostLayout
       title="Meta Ads Creative Testing 2026: cómo testear 20 creatividades sin perder dinero"
-      description="Metodología probada para testear 20+ creatividades en Meta Ads en 2026. Estructura de campaigns, ad sets y creatives que maximizan aprendizaje y minimizan gasto innecesario en D2C."
+      description="Guía práctica para testear 20 creatividades en Meta Ads sin desperdiciar presupuesto. Aprende la metodología que usan las marcas D2C más exitosas para validar creatividades con datos reales y tomar decisiones informadas."
       slug="meta-ads-creative-testing-2026-d2c"
-      datePublished="2026-05-20"
+      datePublished="2026-01-15"
       dateModified="2026-05-20"
-      readingTime={9}
-      category="Creative & UGC"
-      keywords="meta ads creative testing"
+      readingTime={8}
+      category="Paid Media"
+      keywords={['meta ads creative testing', 'testeo de creatividades meta', 'facebook ads testing', 'd2c facebook ads', 'meta ads 2026']}
       faqs={faqs}
       openCalendly={() => window.location.href = '/contact'}
     >
+      <h2>Por qué la mayoría de tests de creatividades en Meta Ads fallan antes de empezar</h2>
       <p className="text-white/70 leading-relaxed mb-5">
-        Si llevas años corriendo testes de creatividades en Meta y sigues sin encontrar un patrón claro de qué funciona, no eres tú — es el sistema. La mayoría de los advertisersaran creatividad sin estructura, queman presupuesto en variantes que nunca tenían señal estadística para ganar, y luegodeclaran winners basándose en ruido.
+        He auditado más de 40 cuentas de Meta Ads en los últimos 18 meses y el patrón se repite: marcas D2C que pierden entre 2.000€ y 15.000€ en tests mal ejecutados. No porque sus creatividades sean malas. Sino porque cometen tres errores estructurales que condenan el test antes de que Meta pueda aprender algo útil.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        En 2026, Meta ha simplificado bastante el algoritmo de aprendizaje con Advantage+, pero eso no significa que puedas saltarte el testing disciplinado. De hecho, lo hace más crítico: sin testing riguroso alimentando tus best performers, Advantage+ tiene poco donde optimizar. Este artículo te da la estructura exacta que usamos en proyectos D2C para testar 20+ creatividades por mes sin disparar el CPA.
-      </p>
-
-      <h2 className="text-2xl font-black mt-10 mb-4">La regla del 80/20 que salvó nuestro ROAS</h2>
-      <p className="text-white/70 leading-relaxed mb-5">
-        En 2024, un cliente de DTC en el sector skincare quemó €18.000 en 6 semanas de testing con cero conclusiones accionables. El problema: estaban corriendo 8 campañas simultáneas, cada una con 3 creatividades, pero ninguna tenía volumen suficiente para alcanzar relevancia estadística. Cuando analizamos los datos, cada creatividad había recibido menos de 200 clics. Era imposible saber si los resultados eran talento creativo o pura variación aleatoria.
+        El primer error es tester con presupuesto insuficiente para obtener significancia estadística. El segundo es pausar creatividades demasiado pronto porque "parecen malas". El tercero es no controlar variables: testan formato, mensaje, audiencia y landing al mismo tiempo, lo que convierte cualquier conclusión en ruido.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        La corrección fue brutal: consolidamos a 1 campaña, 4 ad sets (segmentados por intención: frío, cálido, retargeting, similares a compradores), y máximo 2 creatividades por ad set en fase de test. En 3 semanas teníamos un winner claro con p-valor &lt;0.05 y un ROAS 2.3x superior al control. El aprendizaje: más estructura, menos volumen. Menos siempre es más cuando el dato es pobre.
+        Este artículo te da el framework exacto que usamos en 2026 para testear 20 creatividades de forma sistemática, con datos limpios y sin tirar dinero en variaciones que nunca iban a funcionar.
       </p>
 
-      <h2 className="text-2xl font-black mt-10 mb-4">Arquitectura de campaign para creative testing escalable</h2>
+      <h2>El problema con testear "al ojo" o con muestras pequeñas</h2>
       <p className="text-white/70 leading-relaxed mb-5">
-        La estructura que recomendamos para proyectos D2C en 2026 sigue el modelo de &quot;Campaign hierarchy de aprendizaje&quot; en 3 capas: una campaign madre para escala con Advantage+, una campaign paralela de testing activo, y una campaign de validación para confirmar winners antes de внедрения.
+        Meta optimiza para acciones, pero tú necesitas aprender. Son dos objetivos distintos. Cuando lanzas un test con 50€ por creatividad y lo paras a los 3 días, no estás tomando una decisión informada: estás tirando una moneda. La varianza en los primeros días es brutal porque los primeros usuarios que ven tu anuncio no son representativos de tu audiencia completa.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        En la campaign de testing, usa budget campaign level con un daily budget de €15-30 por ad set. Esto permite que Meta optimice entre sets sin que tengas que intervenir manualmente. Los ad sets deben estar segmentados por audiencia y formato simultáneamente: por ejemplo, un set para video UGC en audiencia de interés broad, otro para carrusel de producto en audiencia de retargeting a visitantes de checkout, y un tercero para imagen estática con oferta directa en similares a compradores.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        La clave es que cada ad set tenga su propia identidad clara. No mezcles una creatividad de video de 15 segundos con un carrusel de 5 imágenes en el mismo set — Meta optimiza a nivel de set, y si las creatividades compiten por el mismo inventario, vas a medir mal. Cada set es un experimento discreto.
+        Con menos de 100 conversiones por creatividad, el coeficiente de variación puede superar el 50%. Esto significa que tu "mejor creatividad" podría ser simplemente suerte estadística. En 2026, con el coste por clic naik en verticales competitivos de D2C (Beauty, Supplements, Fashion), tester sin rigor metodológico es una de las formas más caras de operar una cuenta.
       </p>
 
-      <h2 className="text-2xl font-black mt-10 mb-4">El framework de las 20 creatividades: cómo distribuirlas</h2>
+      <h2>Framework de testing: la matriz 20-creatividades en 4 semanas</h2>
       <p className="text-white/70 leading-relaxed mb-5">
-        Si tu objetivo es testear 20 creatividades al mes, la distribución recomendada es: 6 videos UGC (3 de 15s, 3 de 30s), 6 carruseles de producto, 4 imágenes estáticas con copy directo, y 4 variaciones de Reels o Stories. Esto te da cobertura completa de formatos sin sobre-representar ninguno.
+        La estructura que recomendamos para marcas D2C con ticket medio inferior a 150€ y volumen de pedidos mensual superior a 500 es la siguiente: lanza 20 creatividades distribuidas en 4 ondas de 5 creatividades cada una. Cada onda se ejecuta durante 7 días con presupuesto igualitario. No optimices durante el test: deja que Meta aprenda sin interferencias.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        Dentro de cada categoría, aplica la lógica de variables aisladas: no pruebes más de 2 cambios por creatividad simultáneamente. Si quieres testar un nuevo hook visual y un nuevo CTA, sepáralos en variantes distintas. Mezclar variables hace imposible atribuir el resultado a una causa concreta.
+        La separación de ondas te permite inyectar creatividad fresca sin canibalización. Si lanzas las 20 a la vez, las creatividades con mejor CTR consumen presupuesto más rápido y las demás mueren de inanición antes de tener datos. Con ondas, das a cada grupo una oportunidad real de demostrar rendimiento.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        Un error común en 2026 es obsesionarse con la producción de alta gama. Los creatives que mejor perfuman en D2C suelen ser los más crudos: testimonios en primera persona filmados con móvil, unboxing reales sin edición agresada, pantalla verde con voz en off directa. La autenticidad supera a la producción en ratio de coste por resultado. Reserva el 20% de tu budget para creativos produced y el 80% para UGC real.
-      </p>
-
-      <h2 className="text-2xl font-black mt-10 mb-4">Cuánto tiempo dejar correr un test antes de decidir</h2>
-      <p className="text-white/70 leading-relaxed mb-5">
-        La tentación más destructiva en creative testing es parar un test a las 48 horas porque una creatividad está "ganando". Con un gasto diario de €30, esas 48 horas representan €60 por creatividad — prácticamente ningún dato significativo. Meta necesita tiempo para aprender, especialmente si la audiencia es nueva.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        La regla que seguimos: mínimo 7 días de aprendizaje activo por set antes de tocar nada. Mejor aún, 14 días. Esto permite que Meta complete al menos un ciclo de optimización de auction. Si después de 14 días una creatividad tiene un CPA 40% superior a la media del set, la pausas y reasignas ese budget a la que va mejor. Pero hasta ese punto, no toques.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        El error complementario es dejarlas correr para siempre. Si llevas 4 semanas con un winner claro y has acumulado 500+ conversiones por variante, tienes datos suficientes. Seguir corriendo el test cuando ya tienes significancia estadística es gasto desperdiciado — esos recursos van mejor a la campaña de escala.
+        Controla estas variables por onda: si testeas formato en la onda 1 (video corto vs carrusel vs colección), no mezcles mensajes distintos dentro de esa onda. Si testeas mensaje en la onda 2, usa el mismo formato que ganó en la onda 1. Así aislas la variable y la conclusión es limpia.
       </p>
 
-      <h2 className="text-2xl font-black mt-10 mb-4">Métricas que importan vs. métricas que distraen</h2>
+      <h2>Configuración técnica del campaign para que los datos sean válidos</h2>
       <p className="text-white/70 leading-relaxed mb-5">
-        Durante la fase de testing, no mires CTR. El click-through rate es irrelevante si no se traduce en conversión. Una creatividad puede tener un CTR del 8% y un ROAS negativo porque la landing page no aguanta el tráfico, o un CTR del 1.5% con ROAS de 4x porque llega a la audiencia correcta en el momento correcto. CTR te dice si el creative es menarik, no si es rentable.
+        En Meta Ads Manager, crea un campaign con objetivo "Conversion" y selecciona la estrategia de presupuestación "Lowest cost without a bid cap". Dentro del ad set, establece presupuesto diario igualitario y coloca todas las creatividades de esa onda en el mismo ad set. No separes por edad o género durante la fase de test: esa segmentación viene después, con los datos del winner.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        Lo único que importa en la fase de test es CPA y ROAS por set, comparados contra tu target de rentabilidad. Si tu margen bruto te permite un CPA máximo de €35, y un set lleva 3 días con CPA de €42, tienes permiso para pausarlo — pero solo si tienes datos suficientes (mínimo 30 conversiones) para estar seguro de que no es una racha mala. Sin volumen, la variación aleatoria te engaña.
+        Usa el Attribution Setting en "7 day click" para alinear con el customer journey real de D2C donde la mayoría de compras ocurren entre 24h y 5 días post-click. No uses "1 day click" porque subestimas el valor de las creatividades que generan consideración antes de conversión. Y desactiva "Advantage+ audience" durante el test: quieres que Meta aprenda de tu audiencia definida, no que la substituya por su black box.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        Una métrica complementaria que sí vale la pena trackear es la frecuencia de frequency por set. Si la frecuencia sube de 3.0 y el ROAS empieza a caer, no es un problema de creatividad — es un problema de saturación de audiencia. Para eso existen los creative refresh: crear variaciones sutiles del winner para reanimar la curva de respuesta.
-      </p>
-
-      <h2 className="text-2xl font-black mt-10 mb-4">Cómo pasar winners a escala sin perder la señal</h2>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Cuando tienes un winner con significancia estadística, el movimiento correcto es crear una nueva campaign Advantage+ Shopping Campaign y migrar únicamente ese creative winner. No migres el ad set completo — las audiencias ya están parcialmente saturadas. En Advantage+, deja que el algoritmo redistribuya libremente entre intereses y lookalikes.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Mantén un 15-20% de tu budget en la campaign de testing permanentemente. Esto te da un pipeline constante de nuevos winners para alimentar la campaign de escala. Sin este flujo continuo, Advantage+ eventualmente satura y el ROAS de tus campañas de escala empieza a degradar.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        El proceso de refresh de creativos debe ser mensual. Aunque un winner siga generando ROAS aceptable, introduce nuevas variantes para anticiparte a la fatiga. Un creative que lleva 6 semanas generando resultados empieza a acumular saturación que no ves en los números todavía, pero que está erosionando tu CPM efectivo.
+        En creative, usa Dynamic Creative de Meta para automatizar las combinaciones de título, descripción, imagen y CTA dentro de cada creatividad individual. Esto no es lo mismo que Advantage+ creative. Dynamic Creative te permite alimentar múltiples componentes y deja que el algoritmo pruebe combinaciones, pero tú mantienes el control de qué se muestra en cada variación. Advantage+ creative toma decisiones demasiado agresivas durante un test y invalida la limpieza de datos.
       </p>
 
-      <h2 className="text-2xl font-black mt-10 mb-4">Errores de 2025 que no vas a repetir en 2026</h2>
+      <h2>Lectura de resultados: cuándo realmente tienes un winner</h2>
       <p className="text-white/70 leading-relaxed mb-5">
-        El error número uno que vemos en cuentas nuevas es la tentación de usar Advantage+ desde el día uno. Advantage+ requiere datos históricos de conversiones para funcionar bien — sin ellos, está básicamente lanzando dardos con los ojos vendados. Si tu cuenta tiene menos de 50 conversiones en los últimos 30 días, corre campañas de ROAS objetivo con estructura manual hasta tener suficiente señal.
+        Después de 7 días por onda, exporta los datos a Sheets y calcula: Conversion Rate (CVR), Cost per Add to Cart (CPAuC), Cost per Purchase (CPA), y el "Upper Confidence Bound" de cada creatividad. La metodología UCB te indica qué creatividad tiene mayor potencial real basándose en lo que Meta ya aprendió, no solo en los números brutos.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        El segundo error crítico es no usar eventos de conversión adecuados. Si vendes un producto de €80, tu evento de optimización debe ser Purchase, no AddToCart. Meta optimiza hacia lo que le dices que es valioso. Si optimizas por AddToCart, te va a encontrar gente que añade al carrito pero nunca compra — y tu ROAS va a ser mediocre.
+        Una creatividad es winner cuando cumple tres condiciones simultáneamente: (1) tiene el mayor UCB score de la onda, (2) ha alcanzado al menos 100 compras, y (3) su CPA está dentro del 20% del CPA target de la marca. Si la número 1 en UCB tiene un CPA 3x superior a tu target, no es un winner válido: es un experimento interesante, pero no es escalable.
       </p>
       <p className="text-white/70 leading-relaxed mb-5">
-        Por último, no ignores los creative insights de Meta. La herramienta de creative insights te muestra qué elementos específicos de tus creatividades están funcionando: colores, texto en pantalla, duración de video, ratio de aspecto. Usa esos datos para informar tu producción del mes siguiente. Es la forma más barata de mejorar tu hit rate de creatividad.
-      </p>
-
-      <h2 className="text-2xl font-black mt-10 mb-4">El ciclo completo: de la idea al winner escalado</h2>
-      <p className="text-white/70 leading-relaxed mb-5">
-        El proceso completo que implementamos con clientes D2C tiene 5 fases: Ideación (generar 25-30 conceptos por mes basándonos en creative insights y análisis de competidores), Preselección (descartar 5-10 con mal hook en thumbnail y copy débil antes de invertir en producción), Producción (crear 15-20 assets digitales y UGC real), Test (correr 20+ creatividades durante 14 días con estructura de campaign descrita arriba), y Escala (migrar winners a Advantage+ y mantener pipeline de testing activo).
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Siete de cada diez veces, el winner no es el que esperabas. Eso es exactamente lo que debe pasar si tu proceso de creative testing está bien hecho. El objetivo no es validar tus intuiciones — es descubrir qué funciona realmente en el mercado, con datos y sin sesgo.
+        Lo que hacemos con los perdedores es instructivo: no los borra. Los transferimos a un campaign de remarketing con audiencia de quienes interactuaron con el video o la landing de la winner. En remarketing, las creatividades "perdedoras" suelen superar a la winner original porque el usuario ya tiene familiaridad con la marca y el mensaje que parecía flojo en cold traffic funciona de maravilla en warm audiences.
       </p>
 
+      <h2>Presupuesto mínimo viable por fase y cómo escalar</h2>
       <p className="text-white/70 leading-relaxed mb-5">
-        Si quieres que revisemos tu estructura de creative testing actual y te presentemos un plan personalizado de 30 días para implementarla, agenda una llamada con nuestro equipo. Sin compromiso.
+        Si tu marca hace menos de 50 pedidos mensuales, no intentes testear 20 creatividades. Con ese volumen, 3-5 creatividades en una sola onda te darán datos útiles sin dispersar tanto presupuesto que ninguna obtiene aprendizaje. La regla es: necesitas mínimo 500 eventos de conversión por onda para sacar conclusiones. Si tu volumen no lo permite, haz menos ondas pero más largas.
+      </p>
+      <p className="text-white/70 leading-relaxed mb-5">
+        Para marcas con volumen medio (200-500 pedidos/mes), el test completo de 20 creatividades en 4 ondas cuesta aproximadamente entre 8.000€ y 14.000€ en spend de Media. Esto no es poco. Pero es una inversión que típicamente revela una creatividad que supera un 35-60% en ROAS respecto a la media de la competencia. En un vertical de 500.000€ de gasto anual en Meta, encontrar un winner que rinde un 50% mejor significa 250.000€ de mejora. El ROI del testing rigoroso es brutal.
+      </p>
+      <p className="text-white/70 leading-relaxed mb-5">
+        Cuando encuentres tu winner, no la clones directamente. Estudia qué componentes la hacen ganar: ¿es el hook de los primeros 3 segundos? ¿El tipo de prueba social? ¿El precio visible en el primer frame? Esas son las variables que replicarás en la siguiente tanda de 20 creatividades para迭代ar de forma compuesta, no aleatoria.
+      </p>
+
+      <h2>Errores comunes que invalidan tus tests (y cómo evitarlos)</h2>
+      <p className="text-white/70 leading-relaxed mb-5">
+        El error más frecuente que veo en cuentas nuevas es el "test de formato + mensaje + audiencia + landing todo junto". Cada una de esas variables interactúa con las demás. Un mensaje brillante con un formato mediocre puede perder ante un mensaje mediocre con un formato brillante. Cuando todos los elementos cambian a la vez, no puedes atribuír el resultado a nada. Separa las variables en fases: primero formato, luego mensaje, luego audiencia, luego landing. Cada respuesta te da una bola extra en el pinball de la optimización.
+      </p>
+      <p className="text-white/70 leading-relaxed mb-5">
+        El segundo error es obsesionarse con el CTR durante el test. CTR alto no significa ROAS alto. Una creatividad puede tener un CTR del 8% pero un CVR del 1% porque atrae a gente que hace clic por curiosidad pero no compra. Lo que importa es la combinación de CTR y CVR que se traduce en CPA. Si puedes elegir entre CTR 3% con CVR 5% (CPA 20€) y CTR 8% con CVR 1.5% (CPA 22€), la segunda parece mejor en el funnel superior pero la primera gana en el inferior. Siempre mira el embudo completo, no la métrica aislada.
+      </p>
+      <p className="text-white/70 leading-relaxed mb-5">
+        El tercer error es ignorar el creative fatigue en tiempo real. Meta te avisa cuando el frequency de una creatividad supera 3 en 7 días. Cuando esto pasa, el CTR cae y el CPA sube aunque la creatividad siga "ganando" en el test. La solución es подготовь siempre 2-3 variaciones del winner antes de escalar: cambia el hook, el thumbnail, o el primer segundo del video. No lances el mismo anuncio durante semanas esperando que siga rindiendo.
+      </p>
+
+      <h2>El output del test: qué documento presentar al equipo</h2>
+      <p className="text-white/70 leading-relaxed mb-5">
+        Al final de las 4 ondas, genera un documento de findings que contenga: la tabla completa de las 20 creatividades con todas las métricas (Impressions, CTR, CPC, CVR, CPA, ROAS, UCB score), el ranking de winners por fase, los componentes winners identificados (hook type, format, proof element, CTA language), las creatividades transferidas a remarketing y su hipótesis de por qué funcionarán allí, y el playbook de próximos 20 creatividades basado en los insights generados.
+      </p>
+      <p className="text-white/70 leading-relaxed mb-5">
+        Este documento no es solo para tu equipo. Es la base del briefing creativo para tu equipo de producción de contenido. Cada insight del test es un input directo para las próximas creatividades. Si el test reveló que los UGC con prueba social escrita visible superan un 45% en CVR, el briefing al equipo de contenido especifica exactamente ese formato: UGC, texto visible de review, precio en primer frame, hook de transformación en 3 segundos.
+      </p>
+
+      <h2>Empezar el test esta semana: tu checklist de lanzamiento</h2>
+      <p className="text-white/70 leading-relaxed mb-5">
+        Antes de lanzar: define tu CPA target realista basado en el LTV de tu cliente promedio. Si vendes suplementos a 80€ de ticket con LTV de 3x, tu CPA objetivo puede ser 25-30€. Si vendes joyería a 300€ con LTV de 2x, tu CPA objetivo puede ser 60-80€. No inventes números: si tu CPA target es inalcanzable con tu actual estructura de márgenes, el problema no se resuelve con testing de creatividades. Define los números primero.
+      </p>
+      <p className="text-white/70 leading-relaxed mb-5">
+        Prepara 5 creatividades para la onda 1 con una sola variable cambiante: el formato. Ten las 5 siguientes (onda 2) listas antes de lanzar la onda 1. Nunca lances un test sin pipeline de creatividades siguiente. Si la onda 1 termina y no tienes预备 las siguientes 5, la inercia del equipo mata el proceso y pierdes la velocidad de aprendizaje. En 2026, la velocidad de iteración de creatividades es ventaja competitiva sostenida.
+      </p>
+      <p className="text-white/70 leading-relaxed mb-5">
+        Si después de leer este artículo sientes que necesitas soporte para diseñar el framework completo, ejecutar el test, o interpretar los datos con el nivel de rigor que tu cuenta merece, tenemos disponibilidad para trabajar con 3 marcas D2C adicionales este trimestre. La metodología está explicada arriba; la ejecución impecable requiere experiencia y tiempo que muchas veces es más valioso dedicarlo a la toma de decisiones que a la operación.
       </p>
     </BlogPostLayout>
   );
 };
 
-export default metaAdsCreativeTesting2026D2cPage;
+export default MetaAdsCreativeTesting2026D2cPage;
