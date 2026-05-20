@@ -3,7 +3,15 @@ import SEOHead from "../components/SEOHead";
 import Footer from "../components/Footer";
 
 const posts = [
-    // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
+      // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
+  {
+    slug: "cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana",
+    title: "CBO vs ABO Meta Ads 2026: cuál gana en ecommerce España",
+    excerpt: "Comparativa CBO vs ABO Meta Ads 2026 para ecommerce D2C España. Datos reales, benchmarks operativos y guía práctica para escalar con eficiencia.",
+    category: "Paid Media",
+    date: "21 may 2026",
+    readingTime: "9 min",
+  },
   {
     slug: "como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana",
     title: "Cómo empezar con Meta Ads en 2026 siendo eCommerce España",
