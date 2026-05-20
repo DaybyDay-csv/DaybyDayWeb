@@ -15,5 +15,15 @@
       ]
     }
   ],
-  "rewrites": [{ "source": "/((?!.*\\.).*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/((?!.*\\.).*)",
+      "has": [{ "type": "host", "value": "www.daybydayconsulting.com" }],
+      "destination": "/index.html"
+    },
+    {
+      "source": "/((?!blog/|assets/|images/|\\.).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
