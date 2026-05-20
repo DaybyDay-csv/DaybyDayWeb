@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "¿Qué errores típicos detecta un dry run antes de producción?",
-    a: "Los 5 errores más frecuentes que detectamos en dry runs son: (1) JSX con caracteres < o > sin escapar en texto (audiencias <2M usuarios) — rompe Vite parser. (2) Conflict markers de merge no resueltos en App.jsx. (3) Puerto 4173 ocupado por prerender anterior — EADDRINUSE. (4) Slug duplicado ya presente en sitemap.xml. (5) Marker HERMES_ROUTES_END borrado accidentalmente. Cada uno tiene un exit code dedicado (11, 12, 10, idempotente, fail respectivamente) y el orquestador no avanza hasta resolverlo."
+    a: "Los 5 errores más frecuentes que detectamos en dry runs son: (1) JSX con caracteres &lt; o &gt; sin escapar en texto (audiencias &lt;2M usuarios) — rompe Vite parser. (2) Conflict markers de merge no resueltos en App.jsx. (3) Puerto 4173 ocupado por prerender anterior — EADDRINUSE. (4) Slug duplicado ya presente en sitemap.xml. (5) Marker HERMES_ROUTES_END borrado accidentalmente. Cada uno tiene un exit code dedicado (11, 12, 10, idempotente, fail respectivamente) y el orquestador no avanza hasta resolverlo."
   }
 ];
 
@@ -75,7 +75,7 @@ const DryRunSampleHermesPipelineTestPage = ({ openCalendly }) => (
         <tbody>
           {[
             { c1: "Exit code orquestador", c2: "= 0", c3: "Cualquier fase fallida", c4: "varía" },
-            { c1: "Tiempo total", c2: "< 180s", c3: "Build lento o prerender colgado", c4: "10" },
+            { c1: "Tiempo total", c2: "&lt; 180s", c3: "Build lento o prerender colgado", c4: "10" },
             { c1: "jsx-safe-check", c2: "0 issues", c3: "Caracteres < > raw, conflict markers", c4: "11" },
             { c1: "npm run build", c2: "exit 0", c3: "JSX inválido, import roto, prerender fail", c4: "10" },
             { c1: "git status post-restore", c2: "limpia", c3: "Archivos huérfanos, .bak no listados en gitignore", c4: "30" },
