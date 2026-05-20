@@ -86,7 +86,7 @@ async function prerender() {
         timeout: 30000,
       });
       // Wait for React to hydrate and render blog content
-      // Check for either #root children or h1 (blog posts always have h1)
+      // Fix: wait for h1 or title change (hydration complete)
       await page.waitForFunction(
         () => {
           const root = document.getElementById('root');
