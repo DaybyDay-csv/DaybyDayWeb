@@ -28,7 +28,6 @@ dist-ssr
 *.bak
 *.hermes-bak
 *~
-.claude/worktrees/*/node_modules/
-.claude/worktrees/epic-pasteur/src/data/relatedPosts.json.bak
+.claude/worktrees/
 hermes/state/*
 !hermes/state/.gitkeep
