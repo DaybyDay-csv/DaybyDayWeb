@@ -24,10 +24,11 @@ dist-ssr
 *.sw?
 .vercel
 
-# Hermes
+# Hermes hygiene
 *.bak
 *.hermes-bak
 *~
+.claude/worktrees/*/node_modules/
+.claude/worktrees/epic-pasteur/src/data/relatedPosts.json.bak
 hermes/state/*
 !hermes/state/.gitkeep
-.claude/worktrees/*/node_modules/
