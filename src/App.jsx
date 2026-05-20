@@ -99,6 +99,7 @@ import WhatsappMetaAdsFunnelBofuD2cPage from "./pages/blog/WhatsappMetaAdsFunnel
 import SmartBiddingGoogleAdsD2cPage from "./pages/blog/SmartBiddingGoogleAdsD2cPage";
 import CustomerJourneyD2cPage from "./pages/blog/CustomerJourneyD2cPage";
 import PixelMetaHibridoClienteServidorPage from "./pages/blog/PixelMetaHibridoClienteServidorPage";
+// HERMES_IMPORTS_END — Do not remove. hermes/scripts/update-routes.js inserts new blog imports above this line.
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -328,6 +329,7 @@ const App = () => {
         <Route path="/blog/smart-bidding-google-ads-d2c" element={<SmartBiddingGoogleAdsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/customer-journey-d2c-primer-impacto-repeticion" element={<CustomerJourneyD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/pixel-meta-hibrido-cliente-servidor-implementacion" element={<PixelMetaHibridoClienteServidorPage openCalendly={openCalendly} />} />
+        {/* HERMES_ROUTES_END — Do not remove. hermes/scripts/update-routes.js inserts new blog routes above this line. */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

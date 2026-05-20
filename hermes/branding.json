@@ -1,0 +1,40 @@
+{
+  "company": "DayByDay Consulting",
+  "positioning": "Agencia paid media especialista en D2C eCommerce España",
+  "partners": [
+    {
+      "name": "Pablo Santirsó",
+      "role": "Founder · Paid Media, Estrategia & Operaciones",
+      "lead_for": ["paid media", "meta ads", "google ads", "atribución", "estrategia", "creatividad", "auditoría"],
+      "linkedin": "https://es.linkedin.com/in/pablo-santirso-perez",
+      "schema_person_id": "https://www.daybydayconsulting.com/#person-pablo"
+    },
+    {
+      "name": "Jorge González",
+      "role": "Partner · CTO · Automations & Agentic AI",
+      "lead_for": ["automation", "rpa", "azure cloud", "agentic ai", "integraciones", "tracking server-side", "n8n", "shopify", "capi"],
+      "linkedin": "https://www.linkedin.com/in/jorge-gonz%C3%A1lez-p%C3%A9rez-4091541b6/",
+      "schema_person_id": "https://www.daybydayconsulting.com/#person-jorge"
+    }
+  ],
+  "differentiators": [
+    "Partnership senior — el cliente habla con founder + CTO, sin account managers",
+    "Una conversación, dos cabezas — paid + tech en la misma reunión, sin handoffs",
+    "Sin sesgo cruzado — Pablo imagina sin freno técnico, Jorge filtra viabilidad y propone alternativas tech",
+    "Soluciones ad-hoc (SDD/PDD) — diseño técnico ajustado a cada cliente, no playbooks genéricos",
+    "+156% ROAS en 90 días — caso real D2C",
+    "Garantía paid media: sin mejora medible en 90 días → auditoría sin coste"
+  ],
+  "icp_paid_media": "eCommerce D2C España (no Amazon/marketplace). Sectores: moda, belleza, suplementos, hogar, mascotas, alimentación premium. Inversión >5K€/mes Meta Ads. Empresa <50 empleados. Facturación >500K€/año.",
+  "icp_tech": "B2B + B2C, sector transversal. Empresas que necesitan: agentic AI, RPA, integración cloud Azure, automatización de procesos, dashboards custom, apps multiplataforma, soluciones SDD/PDD. Track record: Total Energies, Puig, Robot Factory de Orange.",
+  "cta_primary": "https://calendly.com/daybydayconsulting/discovery",
+  "cta_secondary": "https://www.daybydayconsulting.com/contacto",
+  "contact_email": "contact@daybydayconsulting.com",
+  "site": "https://www.daybydayconsulting.com",
+  "tone": {
+    "voice": "directo, técnico-comercial, sin humo, con datos reales y benchmarks operativos",
+    "perspective": "primera persona plural ('nosotros en DayByDay vemos...') o impersonal",
+    "avoid": ["cofounder (Pablo es founder único, Jorge es partner)", "lenguaje corporativo vacío", "promesas sin datos", "stats inventados"],
+    "prefer": ["números con año + fuente", "comparativas concretas", "tablas y listas", "ejemplos de cliente anónimos pero específicos"]
+  }
+}

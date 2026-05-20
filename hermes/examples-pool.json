@@ -1,0 +1,61 @@
+{
+  "_note": "Anonymized client examples for Writer to rotate. One example per article. MiniMax: pick the example whose 'sector' or 'topic_tag' best matches the article keyword. Never use more than one per article.",
+  "examples": [
+    {
+      "id": "ex_moda_roas_156",
+      "sector": "moda",
+      "topic_tag": ["roas", "escalado", "creatividad"],
+      "stat": "+156% ROAS en 90 días",
+      "context": "D2C moda femenina, escalado de 8K€/mes a 24K€/mes en Meta Ads sin pérdida de eficiencia. Palancas: rotación creativa quincenal con UGC y product-focus, separación de presupuesto adquisición (TOFU + MOFU) vs retención, lookalike sobre clientes top-20% LTV180d, CAPI Stape con EMQ medio 7.8/10."
+    },
+    {
+      "id": "ex_belleza_cpa_38",
+      "sector": "belleza",
+      "topic_tag": ["cpa", "lookalike", "atribución"],
+      "stat": "CPA bajó 38%",
+      "context": "Marca cosmética natural, segmentación lookalike 1% sobre clientes con LTV90d > 80€. Implementación CAPI server-side via sGTM. Resultado: CPA primera compra de 32€ → 19,80€ en 6 semanas. Volumen mantenido 1.200 órdenes/mes."
+    },
+    {
+      "id": "ex_suplementos_repeat_2x",
+      "sector": "suplementos",
+      "topic_tag": ["ltv", "retención", "email"],
+      "stat": "Repeat purchase rate 30d +97%",
+      "context": "D2C suplementos deportivos, automatización post-compra con flow Klaviyo de 7 emails en 30 días + retargeting Meta segmentado por categoría comprada. Repeat purchase rate 30d pasó de 11% a 21,7%."
+    },
+    {
+      "id": "ex_hogar_mer_2_8",
+      "sector": "hogar",
+      "topic_tag": ["mer", "estrategia", "full-funnel"],
+      "stat": "MER 2.8 estable a 60K€/mes spend",
+      "context": "eCommerce decoración premium, estrategia full-funnel con presupuesto distribuido 60/25/15 (TOFU/MOFU/BOFU). Mantuvo MER 2.8 escalando de 25K€/mes a 60K€/mes en Meta + Google Ads combinados."
+    },
+    {
+      "id": "ex_mascotas_aov_24",
+      "sector": "mascotas",
+      "topic_tag": ["aov", "upsell", "bundle"],
+      "stat": "AOV +24%",
+      "context": "D2C alimentación para mascotas, bundles + suscripción con descuento progresivo (1 mes 5%, 3 meses 10%, 6 meses 15%). AOV subió de 36€ a 44,60€ en 8 semanas, sin caída de CR."
+    },
+    {
+      "id": "ex_alimentacion_caplife_44",
+      "sector": "alimentación premium",
+      "topic_tag": ["capi", "tracking", "atribucion"],
+      "stat": "Event Match Quality 4.4 → 8.6",
+      "context": "Marca D2C de café especialidad, migración a CAPI híbrido (Pixel + servidor via Stape) con parámetros enriquecidos (email hash, phone hash, fbp, fbc, client_user_agent). EMQ Purchase subió de 4.4 a 8.6 en 3 semanas, ROAS reportado en Meta +18% por mejor atribución."
+    },
+    {
+      "id": "ex_tech_automation_orange",
+      "sector": "b2b tech",
+      "topic_tag": ["automation", "rpa", "azure"],
+      "stat": "60% reducción tiempo proceso",
+      "context": "Robot Factory de Orange — Jorge lideró diseño SDD/PDD de automatización de procesos backoffice con RPA + Azure Functions. Reducción del 60% en tiempo medio de procesamiento de tickets de provisioning."
+    },
+    {
+      "id": "ex_d2c_funnel_ctwa",
+      "sector": "moda",
+      "topic_tag": ["whatsapp", "ctwa", "bofu"],
+      "stat": "CR conversación→pedido 38%",
+      "context": "D2C moda hombre, funnel CTWA (Click-to-WhatsApp) con respuesta automática + agente humano. CR de conversación→pedido 38% en 12 minutos medios. Coste por pedido vía CTWA 22€ vs 41€ landing tradicional."
+    }
+  ]
+}

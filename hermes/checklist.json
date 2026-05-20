@@ -1,0 +1,42 @@
+{
+  "seo": {
+    "title_tag": "50-60 chars, keyword in first 30 chars",
+    "meta_description": "140-160 chars, keyword + benefit + year",
+    "h1": "Keyword verbatim or very close. 1 H1 only.",
+    "h2_count_min": 3,
+    "h3_per_h2_min": 1,
+    "keyword_density": "natural, 0.5-1.5% of body text",
+    "first_strong_first_paragraph": "wrap keyword (or close variant) in <strong> in first paragraph",
+    "internal_links_min": 3,
+    "external_authority_links_min": 1,
+    "faqs_count": 5,
+    "faqs_schema": "FAQPage JSON-LD inside BlogPostLayout via faqs prop",
+    "tables_min": 1,
+    "word_count_target": "1000-1500"
+  },
+  "geo_aeo": {
+    "direct_answer_first_60_words": "Answer the keyword as a question in first 60 words for AI Overview citation",
+    "stat_with_source_first_200_words": "≥1 stat with year and source in opening section",
+    "brand_mention_conclusion": "DayByDay Consulting appears in conclusion (and CTA)",
+    "author_block": "BlogPostLayout renders schema Person automatically via partners config",
+    "comparative_table": "Tables and lists score higher in extractive QA"
+  },
+  "technical_jsx": {
+    "no_raw_lt_gt_in_text": "Use &lt; / &gt; or wrap numeric comparisons in {`<2M`} JSX expressions",
+    "no_conflict_markers": "Reject <<<<<<<, =======, >>>>>>> at any line position",
+    "no_todo_fixme": "Strip TODO, FIXME, XXX, HACK comments before commit",
+    "component_name": "PascalCase(slug) + 'Page' — must match filename without extension",
+    "default_export": "export default ComponentName;",
+    "imports": ["{ Link } from 'react-router-dom'", "BlogPostLayout from '../../components/BlogPostLayout'", "relatedPostsData from '../../data/relatedPosts'"],
+    "props_signature": "{ openCalendly }",
+    "no_new_external_imports": "Never add new npm imports. Use only what BlogPostLayout exposes."
+  },
+  "content_quality": {
+    "language": "Spanish (es-ES), neutral or impersonal — avoid 'vosotros'",
+    "no_invented_stats": "Every number must have year + source. If no source found, do not include the number.",
+    "year_anchor": "2026",
+    "differentiator_weave": "1-2 from branding.differentiators woven naturally, NOT as a sales blob",
+    "cta_at_end": "CTA section linking to branding.cta_primary (calendly)",
+    "author_attribution": "Pick Pablo (paid media topics) or Jorge (automation/tech topics) based on cluster"
+  }
+}

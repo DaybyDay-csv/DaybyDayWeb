@@ -1,0 +1,33 @@
+{
+  "task_id": "T999",
+  "keyword": "hermes pipeline test sample",
+  "citations": [
+    {
+      "url": "https://www.facebook.com/business/news/insights",
+      "source": "Meta for Business",
+      "year": "2025",
+      "stat": "El 71% de los compradores españoles descubrieron una marca nueva en Meta en los últimos 12 meses.",
+      "quote": "",
+      "verified": true
+    },
+    {
+      "url": "https://www.statista.com/outlook/dmo/ecommerce/spain",
+      "source": "Statista",
+      "year": "2025",
+      "stat": "El mercado eCommerce en España alcanzó 35.000 millones EUR en 2024 con crecimiento interanual del 9.4%.",
+      "quote": "",
+      "verified": true
+    },
+    {
+      "url": "https://datareportal.com/reports/digital-2025-spain",
+      "source": "DataReportal",
+      "year": "2025",
+      "stat": "Los usuarios españoles pasan una media de 4h 48min al día en smartphone.",
+      "quote": "",
+      "verified": true
+    }
+  ],
+  "search_queries_used": ["fixture — no real queries"],
+  "fetched_urls": [],
+  "notes": "Fixture for dry-run; do not commit to production."
+}

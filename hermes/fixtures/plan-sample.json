@@ -1,0 +1,25 @@
+{
+  "task_id": "T999",
+  "title": "Dry run sample post — Hermes pipeline test (2026)",
+  "slug": "dry-run-sample-hermes-pipeline-test",
+  "keyword": "hermes pipeline test sample",
+  "cluster": "internal-test",
+  "category": "Análisis",
+  "target_words": 1100,
+  "reading_time": 8,
+  "lead_partner": "jorge",
+  "faqs": [
+    "¿Qué valida un dry run de Hermes en eCommerce D2C España?",
+    "¿Cómo se diferencia un dry run de una ejecución productiva?",
+    "¿Qué métricas mira Hermes para decidir si un dry run pasa?",
+    "¿Cuánto tarda un ciclo completo de Hermes en un D2C medio?",
+    "¿Qué errores típicos detecta un dry run antes de producción?"
+  ],
+  "internal_link_slugs": [
+    "metodologia-daybyday-ia-automatizacion-paid-media",
+    "automatizacion-marketing",
+    "ia-marketing-digital"
+  ],
+  "example_id": "ex_tech_automation_orange",
+  "rationale": "Fixture for dry-run only. Not a real task."
+}

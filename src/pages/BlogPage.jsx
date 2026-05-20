@@ -3,6 +3,7 @@ import SEOHead from "../components/SEOHead";
 import Footer from "../components/Footer";
 
 const posts = [
+  // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
   {
     slug: "pixel-meta-hibrido-cliente-servidor-implementacion",
     title: "Pixel híbrido (cliente + servidor) en Meta Ads: implementación práctica paso a paso (2026)",

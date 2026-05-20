@@ -23,3 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Hermes
+*.bak
+*.hermes-bak
+*~
+hermes/state/*
+!hermes/state/.gitkeep
+.claude/worktrees/*/node_modules/
