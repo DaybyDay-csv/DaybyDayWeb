@@ -24,7 +24,13 @@ import json
 est = json.load(open("$REPO/seo-plan/estado.json"))
 top5 = sorted([t for t in est.get("tasks",[]) if t.get("status")=="pending" and t.get("type")=="article"],
               key=lambda t: t["id"])[:5]
-pub_slugs = [p.get("slug") for p in est.get("published_posts",[])]
+pub_posts = est.get("published_posts", []) or []
+pub_slugs = []
+for p in pub_posts:
+    if isinstance(p, str):
+        pub_slugs.append(p)
+    elif isinstance(p, dict) and p.get("slug"):
+        pub_slugs.append(p["slug"])
 
 try:
     kp = json.load(open("$REPO/seo-plan/keyword_priorities.json"))
