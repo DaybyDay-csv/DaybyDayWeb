@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T03:25:39.589089",
+  "last_updated": "2026-05-20T20:18:24.651Z",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -113,7 +113,14 @@
     "dashboard-paid-media-founder-d2c",
     "whatsapp-meta-ads-funnel-bofu-d2c",
     "smart-bidding-google-ads-d2c",
-    "customer-journey-d2c-primer-impacto-repeticion"
+    "customer-journey-d2c-primer-impacto-repeticion",
+    {
+      "slug": "como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana",
+      "title": "Cómo empezar con Meta Ads en 2026 siendo eCommerce España",
+      "taskId": "T041",
+      "date": "2026-05-20",
+      "keyword": "como empezar con meta ads en 2026 siendo ecommerce espana"
+    }
   ],
   "phases": [
     {
@@ -1103,7 +1110,7 @@
     },
     {
       "id": "T041",
-      "status": "pending",
+      "status": "published",
       "type": "article",
       "title": "como empezar con meta ads en 2026 siendo ecommerce españa",
       "keyword": "como empezar con meta ads en 2026 siendo ecommerce espana",
@@ -1114,7 +1121,9 @@
       "blog_score": 80,
       "source": "curated",
       "created_by": "sync-topic-to-estado",
-      "created_at": "2026-05-20T03:25:39.588924"
+      "created_at": "2026-05-20T03:25:39.588924",
+      "published_at": "2026-05-20T20:18:24.650Z",
+      "published_slug": "como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana"
     },
     {
       "id": "T042",

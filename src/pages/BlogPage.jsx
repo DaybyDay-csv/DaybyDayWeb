@@ -3,7 +3,15 @@ import SEOHead from "../components/SEOHead";
 import Footer from "../components/Footer";
 
 const posts = [
-  // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
+    // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
+  {
+    slug: "como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana",
+    title: "Cómo empezar con Meta Ads en 2026 siendo eCommerce España",
+    excerpt: "Guía operativa para lanzar Meta Ads en eCommerce D2C español en 2026: presupuesto mínimo, estructura de campañas, métricas clave y errores que destruyen cuentas nuevas.",
+    category: "Paid Media",
+    date: "20 may 2026",
+    readingTime: "9 min",
+  },
   {
     slug: "pixel-meta-hibrido-cliente-servidor-implementacion",
     title: "Pixel híbrido (cliente + servidor) en Meta Ads: implementación práctica paso a paso (2026)",
