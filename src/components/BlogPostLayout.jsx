@@ -32,10 +32,9 @@ const BlogPostLayout = ({
     },
     ...(keywords.length > 0 && { "keywords": keywords.join(", ") }),
     "author": {
-      "@type": "Organization",
-      "@id": "https://www.daybydayconsulting.com/#organization",
-      "name": "DayByDay Consulting",
-      "url": "https://www.daybydayconsulting.com",
+      "@type": "Person",
+      "@id": "https://www.daybydayconsulting.com/#pablo",
+      "name": "Pablo Santirsó",
     },
     "publisher": {
       "@type": "Organization",
@@ -111,6 +110,36 @@ const BlogPostLayout = ({
       <Helmet>
         <link rel="canonical" href={`https://www.daybydayconsulting.com/blog/${slug}`} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "@id": "https://www.daybydayconsulting.com/#pablo",
+          "name": "Pablo Santirsó",
+          "jobTitle": "Growth Partner · Paid Media & Estrategia",
+          "url": "https://www.daybydayconsulting.com",
+          "sameAs": [
+            "https://es.linkedin.com/in/pablo-santirso-perez"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "DayByDay Consulting"
+          }
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "@id": "https://www.daybydayconsulting.com/#jorge",
+          "name": "Jorge González",
+          "jobTitle": "CTO · Agentic AI & Automations",
+          "url": "https://www.daybydayconsulting.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/jorge-gonz%C3%A1lez-p%C3%A9rez-4091541b6/"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "DayByDay Consulting"
+          }
+        })}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
         <script type="application/ld+json">{JSON.stringify(speakableSchema)}</script>
