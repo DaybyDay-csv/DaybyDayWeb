@@ -94,6 +94,7 @@ import InternacionalizarD2cEspanolMetaAdsEuPage from "./pages/blog/Internacional
 import PartnershipAdsMetaCreatorsD2cPage from "./pages/blog/PartnershipAdsMetaCreatorsD2cPage";
 import Ga4MetaAdsEventosCustomD2cPage from "./pages/blog/Ga4MetaAdsEventosCustomD2cPage";
 import DashboardPaidMediaFounderD2cPage from "./pages/blog/DashboardPaidMediaFounderD2cPage";
+import KpisPaidMediaCfoCeoD2cPage from "./pages/blog/KpisPaidMediaCfoCeoD2cPage";
 import WhatsappMetaAdsFunnelBofuD2cPage from "./pages/blog/WhatsappMetaAdsFunnelBofuD2cPage";
 import SmartBiddingGoogleAdsD2cPage from "./pages/blog/SmartBiddingGoogleAdsD2cPage";
 import CustomerJourneyD2cPage from "./pages/blog/CustomerJourneyD2cPage";
@@ -322,6 +323,7 @@ const App = () => {
         <Route path="/blog/partnership-ads-meta-ugc-creators-d2c" element={<PartnershipAdsMetaCreatorsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/ga4-meta-ads-eventos-custom-d2c" element={<Ga4MetaAdsEventosCustomD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/dashboard-paid-media-founder-d2c" element={<DashboardPaidMediaFounderD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/kpis-paid-media-cfo-ceo-d2c" element={<KpisPaidMediaCfoCeoD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/whatsapp-meta-ads-funnel-bofu-d2c" element={<WhatsappMetaAdsFunnelBofuD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/smart-bidding-google-ads-d2c" element={<SmartBiddingGoogleAdsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/customer-journey-d2c-primer-impacto-repeticion" element={<CustomerJourneyD2cPage openCalendly={openCalendly} />} />

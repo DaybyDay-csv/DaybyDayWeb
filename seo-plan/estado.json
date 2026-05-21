@@ -111,6 +111,8 @@
     "partnership-ads-meta-ugc-creators-d2c",
     "ga4-meta-ads-eventos-custom-d2c",
     "dashboard-paid-media-founder-d2c",
+    "pixel-meta-hibrido-cliente-servidor-implementacion",
+    "kpis-paid-media-cfo-ceo-d2c",
     "whatsapp-meta-ads-funnel-bofu-d2c",
     "smart-bidding-google-ads-d2c",
     "customer-journey-d2c-primer-impacto-repeticion"
@@ -193,7 +195,7 @@
         {
           "id": "T05",
           "week": 5,
-          "status": "pending",
+          "status": "published",
           "type": "page",
           "cluster": "geo-authority",
           "title": "Crear/mejorar página /casos-de-exito con ItemList Schema",
@@ -832,7 +834,7 @@
           "words": 1300,
           "intent": "MOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "published",
           "type": "article",
           "note": ""
         },
@@ -846,7 +848,7 @@
           "words": 1100,
           "intent": "BOFU",
           "priority": "ALTA",
-          "status": "pending",
+          "status": "published",
           "type": "article",
           "note": ""
         }
