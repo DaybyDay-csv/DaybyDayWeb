@@ -50,7 +50,6 @@ import GuiaMetaAdsEcommerceD2CEspana2026Page from "./pages/blog/GuiaMetaAdsEcomm
 import CasoExitoEcommerceROASPage from "./pages/blog/CasoExitoEcommerceROASPage";
 import BenchmarkROASSectorEspanaPage from "./pages/blog/BenchmarkROASSectorEspanaPage";
 import CreativeTestingMetaAdsPage from "./pages/blog/CreativeTestingMetaAdsPage";
-import MetaAdsCreativeTesting2026D2cPage from "./pages/blog/meta-ads-creative-testing-2026-d2cPage";
 import ComoMejorarROASMetaAdsPage from "./pages/blog/ComoMejorarROASMetaAdsPage";
 import EscalarCampanasMetaAdsSinRomperROASPage from "./pages/blog/EscalarCampanasMetaAdsSinRomperROASPage";
 import AdvantagePlusShoppingPage from "./pages/blog/AdvantagePlusShoppingPage";
@@ -95,14 +94,11 @@ import InternacionalizarD2cEspanolMetaAdsEuPage from "./pages/blog/Internacional
 import PartnershipAdsMetaCreatorsD2cPage from "./pages/blog/PartnershipAdsMetaCreatorsD2cPage";
 import Ga4MetaAdsEventosCustomD2cPage from "./pages/blog/Ga4MetaAdsEventosCustomD2cPage";
 import DashboardPaidMediaFounderD2cPage from "./pages/blog/DashboardPaidMediaFounderD2cPage";
+import KpisPaidMediaCfoCeoD2cPage from "./pages/blog/KpisPaidMediaCfoCeoD2cPage";
 import WhatsappMetaAdsFunnelBofuD2cPage from "./pages/blog/WhatsappMetaAdsFunnelBofuD2cPage";
 import SmartBiddingGoogleAdsD2cPage from "./pages/blog/SmartBiddingGoogleAdsD2cPage";
 import CustomerJourneyD2cPage from "./pages/blog/CustomerJourneyD2cPage";
-import PixelMetaHibridoClienteServidorPage from "./pages/blog/PixelMetaHibridoClienteServidorPage";
-import ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage from "./pages/blog/ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage";
-import CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage from "./pages/blog/CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage";
-import Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage from "./pages/blog/Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage";
-// HERMES_IMPORTS_END — Do not remove. hermes/scripts/update-routes.js inserts new blog imports above this line.
+import PixelMetaHibridoClienteServidorImplementacionPage from "./pages/blog/pixel-meta-hibrido-cliente-servidor-implementacionPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -283,7 +279,6 @@ const App = () => {
         <Route path="/blog/caso-exito-ecommerce-d2c-roas-meta-ads" element={<CasoExitoEcommerceROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/benchmark-roas-sector-espana-2026" element={<BenchmarkROASSectorEspanaPage openCalendly={openCalendly} />} />
         <Route path="/blog/creative-testing-meta-ads" element={<CreativeTestingMetaAdsPage openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-ads-creative-testing-2026-d2c" element={<MetaAdsCreativeTesting2026D2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/como-mejorar-roas-meta-ads-7-palancas" element={<ComoMejorarROASMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/escalar-campanas-meta-ads-sin-romper-roas" element={<EscalarCampanasMetaAdsSinRomperROASPage openCalendly={openCalendly} />} />
         <Route path="/blog/advantage-plus-shopping-cuando-usarlo-no" element={<AdvantagePlusShoppingPage openCalendly={openCalendly} />} />
@@ -328,14 +323,11 @@ const App = () => {
         <Route path="/blog/partnership-ads-meta-ugc-creators-d2c" element={<PartnershipAdsMetaCreatorsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/ga4-meta-ads-eventos-custom-d2c" element={<Ga4MetaAdsEventosCustomD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/dashboard-paid-media-founder-d2c" element={<DashboardPaidMediaFounderD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/kpis-paid-media-cfo-ceo-d2c" element={<KpisPaidMediaCfoCeoD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/whatsapp-meta-ads-funnel-bofu-d2c" element={<WhatsappMetaAdsFunnelBofuD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/smart-bidding-google-ads-d2c" element={<SmartBiddingGoogleAdsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/customer-journey-d2c-primer-impacto-repeticion" element={<CustomerJourneyD2cPage openCalendly={openCalendly} />} />
-        <Route path="/blog/pixel-meta-hibrido-cliente-servidor-implementacion" element={<PixelMetaHibridoClienteServidorPage openCalendly={openCalendly} />} />
-                <Route path="/blog/como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana" element={<ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage openCalendly={openCalendly} />} />
-                <Route path="/blog/cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana" element={<CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage openCalendly={openCalendly} />} />
-                <Route path="/blog/ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza" element={<Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage openCalendly={openCalendly} />} />
-        {/* HERMES_ROUTES_END — Do not remove. hermes/scripts/update-routes.js inserts new blog routes above this line. */}
+        <Route path="/blog/pixel-meta-hibrido-cliente-servidor-implementacion" element={<PixelMetaHibridoClienteServidorImplementacionPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
