@@ -203,8 +203,8 @@ const MarketingMixModelingEcommerceD2cPage = ({ openCalendly }) => (
             { h: "Robyn (Meta open-source)", t: "Open-source R", c: "0€ licencia + equipo data", u: "80-200K€/mes spend, equipo técnico interno" },
             { h: "LightweightMMM (Google open-source)", t: "Open-source Python", c: "0€ licencia + equipo data", u: "80-200K€/mes spend, stack Python/BigQuery" },
             { h: "Recast", t: "MMM-as-a-service", c: "≈ 2.000-6.000€/mes", u: ">150K€/mes spend, founder-led growth, sin equipo data" },
-            { h: "Sellforte", t: "MMM-as-a-service EU", c: "≈ 1.500-5.000€/mes", u: ">100K€/mes, marca europea con offline" },
-            { h: "Mass Analytics", t: "Enterprise MMM", c: "≈ 5.000-15.000€/mes", u: ">500K€/mes spend, multi-país" },
+            { h: "Sellforte", t: "MMM-as-a-service EU", c: "≈ 1.500-5.000€/mes", u: "&gt;100K€/mes, marca europea con offline" },
+            { h: "Mass Analytics", t: "Enterprise MMM", c: "≈ 5.000-15.000€/mes", u: "&gt;500K€/mes spend, multi-país" },
             { h: "Northbeam", t: "MTA + MMM hybrid", c: "≈ 1.000-5.000€/mes", u: "100-300K€/mes, quiere todo en una suite" },
             { h: "Polar Analytics", t: "MTA + MMM ligero", c: "≈ 200-800€/mes", u: "30-150K€/mes, equipo data ligero" },
           ].map((row, i) => (

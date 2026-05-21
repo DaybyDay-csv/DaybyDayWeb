@@ -84,7 +84,7 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
             { m: "Lineal", c: "Reparto a partes iguales entre todos los touchpoints", u: "Visualizar journey, comparar canales sin sesgo", r: "No refleja impacto real; ningún canal queda bien medido" },
             { m: "Position-based (40-20-40)", c: "40% primero, 40% último, 20% intermedios", u: "D2C con journey medio (3-5 touchpoints) y embudo claro TOFU/MOFU/BOFU", r: "Ponderación arbitraria; no captura impacto real por canal" },
             { m: "Data-driven (GA4, Google Ads)", c: "ML asigna crédito según impacto incremental medido", u: ">300 conversiones/mes y multi-canal con tracking limpio", r: "Caja negra; degradación con pérdida de cookies; no ve offline" },
-            { m: "Marketing Mix Modeling (MMM)", c: "Regresión sobre inversión vs ventas totales", u: ">50K€/mes spend, multi-canal, validación independiente", r: "Requiere 12-18 meses de datos; cuesta tiempo o herramienta dedicada" },
+            { m: "Marketing Mix Modeling (MMM)", c: "Regresión sobre inversión vs ventas totales", u: "&gt;50K€/mes spend, multi-canal, validación independiente", r: "Requiere 12-18 meses de datos; cuesta tiempo o herramienta dedicada" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">
               <td className="py-3 px-3 text-white font-semibold text-xs">{row.m}</td>
@@ -189,7 +189,7 @@ const ModelosAtribucionEcommerceD2cPage = ({ openCalendly }) => (
             { h: "Shopify Reports + Sales by Source", m: "Last-click corregido por sesión Shopify", c: "Incluido en Shopify", u: "Validar volumen real vs plataformas" },
             { h: "Meta Attribution / Events Manager", m: "Last-click + modeled (7d click / 1d view)", c: "Gratis con cuenta Ads", u: "Optimización campañas, no decisión inversión" },
             { h: "Triple Whale", m: "Multi-touch ajustable + CAC blended", c: "≈ 100-500€/mes según spend", u: "30-200K€/mes spend, multi-canal" },
-            { h: "Northbeam", m: "Multi-touch + MTA + MMM hybrid", c: "≈ 1.000-5.000€/mes", u: ">100K€/mes spend, founder-led growth" },
+            { h: "Northbeam", m: "Multi-touch + MTA + MMM hybrid", c: "≈ 1.000-5.000€/mes", u: "&gt;100K€/mes spend, founder-led growth" },
             { h: "Polar Analytics", m: "Multi-touch + data warehouse", c: "≈ 200-800€/mes", u: "30-150K€/mes spend, equipo data ligero" },
             { h: "MMM custom (BigQuery + R/Python o Recast)", m: "Marketing Mix Modeling", c: "Variable / equipo data", u: ">200K€/mes spend o multi-país" },
           ].map((row, i) => (

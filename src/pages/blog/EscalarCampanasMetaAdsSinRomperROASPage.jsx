@@ -164,7 +164,7 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
     </p>
     <div className="space-y-3 mb-6">
       {[
-        { metrica: "ROAS (ventana 7 días)", umbral: "No debe caer >15% respecto a la semana anterior", señal: "Si cae >20%, aplicar protocolo de recuperación" },
+        { metrica: "ROAS (ventana 7 días)", umbral: "No debe caer >15% respecto a la semana anterior", señal: "Si cae &gt;20%, aplicar protocolo de recuperación" },
         { metrica: "CPM", umbral: "Subida de hasta +20% es normal al escalar", señal: "Si sube >30%, hay saturación de audiencia o aumento de competencia" },
         { metrica: "Frecuencia (audiencias frías)", umbral: "Mantener por debajo de 2,5 en los últimos 7 días", señal: "Si supera 3, necesitas más audiencia o nuevos creativos urgente" },
         { metrica: "CTR del creativo", umbral: "No debe caer >25% respecto al promedio histórico", señal: "Si cae más, el creativo está en fatiga — rotar" },

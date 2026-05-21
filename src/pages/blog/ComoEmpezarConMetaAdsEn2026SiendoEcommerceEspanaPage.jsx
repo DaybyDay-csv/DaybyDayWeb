@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "¿Cuándo CBO destruye tu rendimiento y cómo detectarlo antes de perder presupuesto?",
-    a: "CBO destruye rendimiento cuando: (1) tienes menos de 5-7 productos activos en el catálogo — Advantage+ Shopping necesita volumen para aprender; (2) el histórico de la cuenta es menos de 45 días — el algoritmo no tiene datos suficientes; (3) tienes audiencias exclusions muy agresivas que fragmentan el pool; (4) el presupuesto diario es menos de 3 veces tu CPA objetivo, forzando al algoritmo a optimizar por volumen en vez de valor. Señales de alerta: CPA sube >20% en semana 2-3 del campaign, frecuencia sube sin conversión, ROAS cae en vez de mejorar. Monitoriza semana a semana: si no ves mejora en CPM y frecuencia en semana 3, pausa y revierte a ABO."
+    a: "CBO destruye rendimiento cuando: (1) tienes menos de 5-7 productos activos en el catálogo — Advantage+ Shopping necesita volumen para aprender; (2) el histórico de la cuenta es menos de 45 días — el algoritmo no tiene datos suficientes; (3) tienes audiencias exclusions muy agresivas que fragmentan el pool; (4) el presupuesto diario es menos de 3 veces tu CPA objetivo, forzando al algoritmo a optimizar por volumen en vez de valor. Señales de alerta: CPA sube &gt;20% en semana 2-3 del campaign, frecuencia sube sin conversión, ROAS cae en vez de mejorar. Monitoriza semana a semana: si no ves mejora en CPM y frecuencia en semana 3, pausa y revierte a ABO."
   },
   {
     q: "¿Qué cuentas D2C en España deberían seguir usando ABO en lugar de CBO?",

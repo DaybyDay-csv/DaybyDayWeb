@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "¿Vale la pena vender en TikTok Shop España para una marca D2C en 2026?",
-    a: "Depende del catálogo, del margen y de la estrategia D2C. TikTok Shop está en expansión en España desde finales de 2024 y abre ventana de visibilidad pero introduce dos problemas para una D2C: (1) la comisión de plataforma erosiona margen entre 5-12% según categoría, lo que puede romper la unit economics si el AOV es bajo (<35€); (2) el comprador TikTok Shop tiende a ser cazaofertas, lo que baja LTV y dificulta retención por email/SMS porque los datos del cliente quedan parcialmente en TikTok. El escenario donde sí compensa: producto con margen \u003e55%, AOV 40-90€, marca con fuerte presencia orgánica TikTok y capacidad de producción rápida de contenido. El escenario donde NO compensa: marca premium D2C con\u003eAOV >100€ que monetiza por LTV vía email/SMS — TikTok Shop devalúa la propuesta y rompe el funnel directo a la web propia. La recomendación operativa: TikTok Ads SÍ desde 15-20K€/mes Meta. TikTok Shop solo si la unit economics encaja."
+    a: "Depende del catálogo, del margen y de la estrategia D2C. TikTok Shop está en expansión en España desde finales de 2024 y abre ventana de visibilidad pero introduce dos problemas para una D2C: (1) la comisión de plataforma erosiona margen entre 5-12% según categoría, lo que puede romper la unit economics si el AOV es bajo (<35€); (2) el comprador TikTok Shop tiende a ser cazaofertas, lo que baja LTV y dificulta retención por email/SMS porque los datos del cliente quedan parcialmente en TikTok. El escenario donde sí compensa: producto con margen \u003e55%, AOV 40-90€, marca con fuerte presencia orgánica TikTok y capacidad de producción rápida de contenido. El escenario donde NO compensa: marca premium D2C con\u003eAOV &gt;100€ que monetiza por LTV vía email/SMS — TikTok Shop devalúa la propuesta y rompe el funnel directo a la web propia. La recomendación operativa: TikTok Ads SÍ desde 15-20K€/mes Meta. TikTok Shop solo si la unit economics encaja."
   },
   {
     q: "¿Cómo se mide si TikTok Ads aporta incremental real o solo canibaliza Meta Ads?",
@@ -202,7 +202,7 @@ const TikTokAdsEcommerceD2cEspana2026Page = ({ openCalendly }) => (
           {[
             { p: "AOV <35€, margen <45%", s: "❌ NO", r: "Comisión 5-12% rompe unit economics" },
             { p: "AOV 40-90€, margen 50-65%, marca con tracción orgánica TikTok", s: "✅ SÍ piloto 60d", r: "Sweet spot: visibilidad incremental + economics aceptable" },
-            { p: "AOV >100€, marca premium, monetización por LTV vía email/SMS", s: "❌ NO", r: "Devalúa marca + rompe funnel directo a web propia" },
+            { p: "AOV &gt;100€, marca premium, monetización por LTV vía email/SMS", s: "❌ NO", r: "Devalúa marca + rompe funnel directo a web propia" },
             { p: "Producto novedad/impulso, ticket bajo/medio, sin LTV alto", s: "✅ SÍ canal principal", r: "TikTok Shop encaja con comportamiento de compra impulsivo" },
             { p: "D2C suscripción/recurrencia (consumibles, suplementos)", s: "❌ NO", r: "TikTok no facilita modelo subscription nativo, pierdes datos cliente" },
           ].map((row, i) => (

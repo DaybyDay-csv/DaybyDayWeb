@@ -107,7 +107,7 @@ const SmartBiddingGoogleAdsD2cPage = ({ openCalendly }) => (
       {[
         "Activar Enhanced Conversions for Web en Google Ads: envío de email/teléfono hasheado SHA256 al servidor de Google en el evento purchase de Shopify. Sube match rate del 50-65% al 80-90%.",
         "Implementar GA4 con Consent Mode v2 + modelado de conversiones para usuarios que rechazan cookies (recupera 15-25% de eventos perdidos según Google).",
-        "Server-side tracking vía Google Tag Manager server-side (sGTM) en Cloud Run o Stape, especialmente si AOV >100€ y spend >15K€/mes Google Ads.",
+        "Server-side tracking vía Google Tag Manager server-side (sGTM) en Cloud Run o Stape, especialmente si AOV &gt;100€ y spend >15K€/mes Google Ads.",
         "Importar conversiones offline desde Shopify (devoluciones, segunda compra, LTV60) cada 24-48h vía Google Ads API o Customer Match para que Smart Bidding optimice hacia LTV, no solo first purchase.",
         "Marcar Purchase como única conversión primaria de campaña; lead_form, add_to_cart, view_item como secundarias (informan al algoritmo pero no entran en el objetivo de optimización).",
       ].map((item) => (

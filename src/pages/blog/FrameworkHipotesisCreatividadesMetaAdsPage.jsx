@@ -109,7 +109,7 @@ const FrameworkHipotesisCreatividadesMetaAdsPage = ({ openCalendly }) => (
         "Afirmación: 'Creemos que [HOOK / ÁNGULO] resonará más en [AUDIENCIA] porque verbalizan [DOLOR] y consumen contenido [FORMATO]'. Ejemplo: 'creemos que un hook con before/after de cabello frizz a hidratado, narrado por mujer 30-45 que reconoce el problema visualmente, resonará más en LAL 1-3% de clientes con AOV >50€'.",
         "Métrica de éxito: número concreto que define ganador. Ejemplo: 'Hook Rate >32%, CTR outbound >1,4%, CPA <34€ (15% mejor que baseline 40€), 200€ de spend mínimo'.",
         "Variable aislada: única cosa que cambia respecto al baseline o al control. Ejemplo: 'mantenemos creador, audiencia, oferta y CTA; solo cambiamos el hook visual de talking-head a before/after en segundo 0-2'.",
-        "Riesgos y supuestos: qué tiene que ser cierto para que el test sea válido. Ejemplo: 'asumimos que la audiencia LAL 1-3% tiene volumen suficiente >100K usuarios y que la oferta -15% sigue activa durante todo el test'.",
+        "Riesgos y supuestos: qué tiene que ser cierto para que el test sea válido. Ejemplo: 'asumimos que la audiencia LAL 1-3% tiene volumen suficiente &gt;100K usuarios y que la oferta -15% sigue activa durante todo el test'.",
         "Decisión por resultado: qué se hace si gana, si pierde y si queda indiferente. Ejemplo: 'si gana: producimos 2-3 variantes del before/after con creadores distintos. Si pierde: matamos el ángulo before/after para esta audiencia y probamos en LAL 5-10%. Si indiferente: extendemos 3 días el test antes de decidir'.",
       ].map((item) => (
         <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>

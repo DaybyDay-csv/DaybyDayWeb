@@ -124,7 +124,7 @@ const WhatsappMetaAdsFunnelBofuD2cPage = ({ openCalendly }) => (
             { c: "Plataforma conversacional / flow builder", o: "Respond.io · ManyChat (limit) · Chatfuel · Tidio", co: "79-249$/mes según seats", d: "Respond.io para D2C con operadores, ManyChat para flujo simple" },
             { c: "Integración Shopify (inventario + pago)", o: "App Shop Pay · webhook custom + Shopify Storefront API · Bird Commerce", co: "0-150€/mes", d: "Webhook custom si AOV alto, app oficial si <30K€/mes" },
             { c: "Conversions API for WhatsApp", o: "CAPI Gateway · Stape · sGTM Cloud Run", co: "0-80€/mes", d: "CAPI Gateway gratis si stack Meta, Stape si ya tienes Stape" },
-            { c: "Pipeline atribución CAC adquisición específico", o: "n8n + BigQuery · Hightouch · Census", co: "20-200€/mes", d: "n8n para D2C 10-50K€/mes, Hightouch para >50K€" },
+            { c: "Pipeline atribución CAC adquisición específico", o: "n8n + BigQuery · Hightouch · Census", co: "20-200€/mes", d: "n8n para D2C 10-50K€/mes, Hightouch para &gt;50K€" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">
               <td className="py-3 px-3 text-white font-semibold text-xs">{row.c}</td>

@@ -111,7 +111,7 @@ const DynamicProductAdsMetaShopifyPage = ({ openCalendly }) => (
       {[
         "Instalar Facebook & Instagram by Meta en Shopify (canal de ventas oficial). Conectar el Business Manager correcto, el píxel correcto y el catálogo. Verificar que solo hay UN catálogo conectado: catálogos duplicados causan eventos asignados al catálogo erróneo y DPA sin productos.",
         "Activar Conversions API nativa de Shopify (Customer Events) o vía Shopify Hydrogen + GTM server-side / Stape. Comprobar en Events Manager que cada evento llega con browser + server, deduplicación activa y Event Match Quality ≥7/10 en Purchase y AddToCart.",
-        "Subir las imágenes mínimas: 1080×1080px o 1080×1350px, sin texto sobreimpreso (Meta penaliza >20% texto en imagen), formato producto sobre fondo neutro o lifestyle, primer plano del producto identificable.",
+        "Subir las imágenes mínimas: 1080×1080px o 1080×1350px, sin texto sobreimpreso (Meta penaliza &gt;20% texto en imagen), formato producto sobre fondo neutro o lifestyle, primer plano del producto identificable.",
         "Configurar product sets en Commerce Manager: 'Best sellers' (top 20% ventas 30d), 'New arrivals' (últimos 30d), 'Sale activos' (compare_at_price > price), 'Margen alto' (manual o vía tag Shopify), 'Excluir agotados' (availability=in stock). Cada ad set DPA usará el product set que le corresponda.",
         "Excluir productos agotados o con stock <5 unidades vía regla automática: nada destruye más rápido un CPA que servir tráfico a un PDP con botón 'Agotado'.",
         "Verificar URLs móviles rápidas: cada URL del feed debe resolver con LCP <2,5s en móvil 4G. Meta despriorisa silenciosamente catálogos lentos en la subasta. Usar PageSpeed Insights con muestreo de 10-20 PDPs.",
@@ -155,7 +155,7 @@ const DynamicProductAdsMetaShopifyPage = ({ openCalendly }) => (
     <ol className="space-y-3 mb-6 list-decimal pl-5">
       {[
         "Catálogo conectado pero con 15-30% de productos agotados o con imagen rota. Resultado: servimos tráfico a PDPs con 'Sin stock' y el CPA se duplica.",
-        "Imágenes con texto sobreimpreso (>20% del área): Meta penaliza la entrega en feed y baja Hook Rate efectivo. Usar imagen producto pura y mover el texto a la plantilla dinámica de la creatividad.",
+        "Imágenes con texto sobreimpreso (&gt;20% del área): Meta penaliza la entrega en feed y baja Hook Rate efectivo. Usar imagen producto pura y mover el texto a la plantilla dinámica de la creatividad.",
         "Mezclar DPA retargeting + DPA prospecting en el mismo ad set: el algoritmo concentra en warm y deja prospecting sin alimentar.",
         "Optimizar todos los ad sets DPA a Purchase con catálogos donde un 60% de SKUs tienen <3 ventas/mes: el algoritmo se cierra en los top sellers y nunca explora cola larga. Solución: 1-2 ad sets optimizan ViewContent o AddToCart para forzar exploración.",
         "Excluir compradores 30 días pero olvidar excluirlos también en el ad set de prospecting: se sirven a su propio cliente como nuevo, falsean atribución y suben CPA artificialmente.",

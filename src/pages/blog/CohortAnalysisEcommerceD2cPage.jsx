@@ -163,7 +163,7 @@ const CohortAnalysisEcommerceD2cPage = ({ openCalendly }) => (
         "Revisión trimestral de cohortes BFCM vs cohortes orgánicas Q2-Q3: si el gap supera el 30%, recalibramos política de descuentos y filtros de audiencia para Q4 siguiente.",
         "Proyección de LTV a 12 meses desde cohortes de 90 días: con datos de 3 meses se puede estimar LTV final con error <15% si la cohorte tiene volumen suficiente. Permite tomar decisiones de inversión sin esperar un año entero.",
         "Reglas de escalado paid derivadas del payback objetivo: si el cliente quiere payback ≤6 meses, el ROAS objetivo de primera compra se calcula desde ahí — no desde benchmarks genéricos. Esto evita escalar facturación con CAC que el negocio no puede aguantar.",
-        "Herramientas: BigQuery + Looker Studio para cuentas >50K€/mes, o Triple Whale / Lifetimely para escalas menores. Shopify Analytics para validar cifras pero no como fuente única de verdad.",
+        "Herramientas: BigQuery + Looker Studio para cuentas &gt;50K€/mes, o Triple Whale / Lifetimely para escalas menores. Shopify Analytics para validar cifras pero no como fuente única de verdad.",
       ].map((item) => (
         <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
           <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>

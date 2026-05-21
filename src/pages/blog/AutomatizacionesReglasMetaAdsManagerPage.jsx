@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "¿Cuándo es contraproducente automatizar reglas en Meta Ads?",
-    a: "Automatizar agresivamente sobre cuentas con poco volumen o en learning phase rompe el aprendizaje del algoritmo. Si un ad set tiene <50 conversiones/semana cualquier regla de pausa por CPA opera sobre ruido estadístico — un día malo no significa que el ad set rinda mal. Tampoco compensa automatizar subidas de presupuesto \u003e30% (resetea learning) ni reglas que se ejecuten cada 30 minutos (Meta evalúa rendimiento sobre ventanas de 24-72h). Las reglas funcionan cuando hay volumen suficie\u003ete (>5.000€/m\u003es spend, >100 conversiones/mes) y se aplican sobre ventanas de mínimo 3 días.",
+    a: "Automatizar agresivamente sobre cuentas con poco volumen o en learning phase rompe el aprendizaje del algoritmo. Si un ad set tiene <50 conversiones/semana cualquier regla de pausa por CPA opera sobre ruido estadístico — un día malo no significa que el ad set rinda mal. Tampoco compensa automatizar subidas de presupuesto \u003e30% (resetea learning) ni reglas que se ejecuten cada 30 minutos (Meta evalúa rendimiento sobre ventanas de 24-72h). Las reglas funcionan cuando hay volumen suficie\u003ete (>5.000€/m\u003es spend, &gt;100 conversiones/mes) y se aplican sobre ventanas de mínimo 3 días.",
   },
   {
     q: "¿Cómo configuro una regla para pausar creativos fatigados automáticamente?",
@@ -174,7 +174,7 @@ const AutomatizacionesReglasMetaAdsManagerPage = ({ openCalendly }) => (
         "Documentación obligatoria: cada regla activa tiene una ficha que explica qué hace, por qué, qué umbral usa y qué se mide para validar que rinde. Sin ficha, la regla se elimina.",
         "Revisión mensual: comparamos qué decisiones tomaron las reglas frente a qué habría decidido un humano con el mismo dato. Si la regla acertó <70% de las veces, se reajusta o se quita.",
         "Salto a Marketing API solo cuando hay caso de uso recurrente y valor cuantificable: lo más habitual son automatizaciones por inventario y bid caps por margen real, casi nunca lógica de pujas.",
-        "Punto de corte: si la cuenta no tiene volumen suficiente (>5.000€/mes spend, >100 conv/mes), no activamos automatizaciones — la revisión semanal humana rinde más que cualquier regla sobre poco dato.",
+        "Punto de corte: si la cuenta no tiene volumen suficiente (>5.000€/mes spend, &gt;100 conv/mes), no activamos automatizaciones — la revisión semanal humana rinde más que cualquier regla sobre poco dato.",
       ].map((item) => (
         <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
           <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>

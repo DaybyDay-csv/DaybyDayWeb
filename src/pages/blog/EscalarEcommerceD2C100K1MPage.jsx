@@ -221,7 +221,7 @@ const EscalarEcommerceD2C100K1MPage = ({ openCalendly }) => (
         "Regla del +20-25% / 4-7 días: ningún incremento sobre el presupuesto medio de los últimos 7 días superior al 25%, esperando 4-7 días entre subidas para evaluar estabilidad.",
         "Una subida por adset por semana, máximo. Subir simultáneamente 5 adsets desestabiliza la cuenta entera.",
         "Antes de subir: el adset debe llevar 14 días dentro del CPA objetivo y haber salido de la fase de aprendizaje (>50 conversiones en la ventana de optimización).",
-        "Si tras una subida el CPA sube >20% durante 5 días seguidos: se vuelve al presupuesto anterior. No se mantiene 'a ver si remonta'.",
+        "Si tras una subida el CPA sube &gt;20% durante 5 días seguidos: se vuelve al presupuesto anterior. No se mantiene 'a ver si remonta'.",
         "Cambios estructurales (audiencias, optimización, creatividades) NUNCA se hacen el mismo día de una subida de presupuesto. Se aísla la variable.",
       ].map((item) => (
         <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
@@ -240,7 +240,7 @@ const EscalarEcommerceD2C100K1MPage = ({ openCalendly }) => (
     </p>
     <div className="space-y-3 mb-6">
       {[
-        "CPM en audiencias frías de Meta sube >20% durante 60 días seguidos — la audiencia está saturada y la competencia es estructural, no estacional.",
+        "CPM en audiencias frías de Meta sube &gt;20% durante 60 días seguidos — la audiencia está saturada y la competencia es estructural, no estacional.",
         "Frecuencia >4 en audiencias frías incluso tras inyectar 6+ creatividades nuevas en un mes — síntoma claro de techo de audiencia.",
         "Búsquedas de marca en Google con tendencia creciente — la presión de Meta está generando demanda capturable en Search.",
         "MER se mantiene o sube cuando Meta cubre el 100% de inversión actual, pero pequeñas pruebas de Google brand-search dan CAC por debajo de Meta — señal verde para mover el 15-25% del presupuesto.",

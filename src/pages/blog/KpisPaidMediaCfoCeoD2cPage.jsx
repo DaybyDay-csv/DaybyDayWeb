@@ -220,7 +220,7 @@ const KpisPaidMediaCfoCeoD2cPage = ({ openCalendly }) => (
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
       <p className="text-white font-bold text-sm mb-2">💡 Nota técnica</p>
       <p className="text-white/70 text-sm leading-relaxed">
-        Este stack requiere setup inicial estimado en 15-25 horas de desarrollo n8n + Looker Studio, pero una vez implementado, funciona automáticamente. Para cuentas <10K€/mes de spend onde el reporting manual es viable, un Sheets con conexiones de Shopify + Meta + Google +TikTok export puede cubrir el monthly flash. No compres herramientas caras (Triple Whale, Northbeam) hasta que tengas >50K€/mes de spend y el CFO te pida reporting más sofisticado daily.
+        Este stack requiere setup inicial estimado en 15-25 horas de desarrollo n8n + Looker Studio, pero una vez implementado, funciona automáticamente. Para cuentas 10K€ o meno/mes de spend onde el reporting manual es viable, un Sheets con conexiones de Shopify + Meta + Google +TikTok export puede cubrir el monthly flash. No compres herramientas caras (Triple Whale, Northbeam) hasta que tengas >50K€/mes de spend y el CFO te pida reporting más sofisticado daily.
       </p>
     </div>
 

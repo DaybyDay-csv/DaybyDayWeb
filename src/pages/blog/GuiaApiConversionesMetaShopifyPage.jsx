@@ -121,7 +121,7 @@ const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
           coste: "Desarrollo 3-8K€ + mantenimiento mensual",
           pros: "Control total, puede integrar otras plataformas (Google, TikTok, Klaviyo) en el mismo stack server-side.",
           contras: "Requiere desarrollador con experiencia, mantenimiento continuo, riesgo de fallos silenciosos.",
-          cuando: "Cuentas >500K€/mes con equipo técnico interno o stack multi-canal complejo.",
+          cuando: "Cuentas &gt;500K€/mes con equipo técnico interno o stack multi-canal complejo.",
         },
       ].map(({ ruta, coste, pros, contras, cuando }) => (
         <div key={ruta} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">

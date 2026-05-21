@@ -85,7 +85,7 @@ const IncrementalityTestingMetaAdsPage = ({ openCalendly }) => (
           {[
             { m: "Atribución (Meta/GA4)", q: "¿A qué touchpoint asignamos la venta?", c: "Bajo / continuo", w: "Decisiones tácticas semanales" },
             { m: "Marketing Mix Modeling", q: "¿Qué % del revenue aporta cada canal a lo largo del año?", c: "Medio / 4-8 semanas montar, ejecución continua", w: "Mix anual + planificación budget" },
-            { m: "Conversion Lift Study (Meta)", q: "¿Cuánto lift causal genera Meta sobre conversion event?", c: "Spend operativo / 14-28 días", w: "Cuentas >100K€/mes y >500 conv/mes" },
+            { m: "Conversion Lift Study (Meta)", q: "¿Cuánto lift causal genera Meta sobre conversion event?", c: "Spend operativo / 14-28 días", w: "Cuentas &gt;100K€/mes y >500 conv/mes" },
             { m: "Geo holdout test", q: "¿Cuánto revenue total se pierde si apago Meta?", c: "Coste oportunidad 8-15% revenue Meta / 4-6 semanas end-to-end", w: "Cuentas 10-40K€/mes con revenue distribuido geográficamente" },
             { m: "Pre/post total apagado", q: "¿Cuál es la dependencia real del negocio a Meta?", c: "Alto / 5-7 días", w: "Auditoría puntual anual" },
           ].map((row, i) => (
@@ -150,7 +150,7 @@ const IncrementalityTestingMetaAdsPage = ({ openCalendly }) => (
     </p>
     <ul className="space-y-2 mb-6">
       {[
-        "Spend mensual Meta >100K€ (Meta no abre Conversion Lift en cuentas pequeñas por falta de volumen estadístico).",
+        "Spend mensual Meta &gt;100K€ (Meta no abre Conversion Lift en cuentas pequeñas por falta de volumen estadístico).",
         ">500 conversiones del evento test (purchase, add-to-cart) por celda durante la ventana del test.",
         "Quieres medir lift sobre un evento concreto (purchase) y no sobre revenue total del negocio.",
         "No tienes capacidad de operar diferenciadamente por geografía (catálogo único, fulfilment unificado).",

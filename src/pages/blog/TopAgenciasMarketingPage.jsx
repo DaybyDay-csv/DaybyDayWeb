@@ -84,7 +84,7 @@ const TopAgenciasMarketingPage = ({ openCalendly }) => (
           examples: "Paid media + CRO + email automation + analítica avanzada",
           pros: "Enfoque end-to-end en conversión y rentabilidad real del negocio",
           cons: "Honorarios más altos, suelen tener presupuestos mínimos elevados",
-          fit: "eCommerce con facturación >500K€ que quieren optimizar toda la cadena de captación",
+          fit: "eCommerce con facturación &gt;500K€ que quieren optimizar toda la cadena de captación",
         },
         {
           type: "Agencia creativa con paid media",

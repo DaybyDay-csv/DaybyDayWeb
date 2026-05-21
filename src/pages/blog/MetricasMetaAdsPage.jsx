@@ -127,7 +127,7 @@ const MetricasMetaAdsPage = ({ openCalendly }) => (
     </p>
     <div className="space-y-3 mb-6">
       {[
-        "CTR cae de forma sostenida (>20% en 2 semanas) → señal de fatiga creativa. Prioridad: producir nuevas creatividades antes de tocar presupuesto o audiencias.",
+        "CTR cae de forma sostenida (&gt;20% en 2 semanas) → señal de fatiga creativa. Prioridad: producir nuevas creatividades antes de tocar presupuesto o audiencias.",
         "CPM sube de forma brusca sin cambios en la cuenta → señal de presión competitiva estacional (rebajas, Black Friday, Navidad) o aumento de competencia en el sector. Acción: revisar el calendario y valorar ajustar presupuesto temporalmente.",
         "CTR alto + CPA alto → la creatividad engancha pero la landing no convierte. El problema está fuera de Meta Ads, no dentro.",
         "CTR bajo + CPA bajo → audiencia poco interesada pero que convierte bien la poca que llega. Suele indicar una audiencia muy cualificada con bajo volumen — ideal para escalar con lookalikes.",

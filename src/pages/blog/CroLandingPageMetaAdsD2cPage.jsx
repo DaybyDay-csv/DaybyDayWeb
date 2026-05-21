@@ -184,7 +184,7 @@ const CroLandingPageMetaAdsD2cPage = ({ openCalendly }) => (
             { p: "Spend <5K€/mes Meta, catálogo amplio, sin hero claro", r: "PDP Shopify optimizada con secciones modulares", s: "Theme Shopify + Shogun/Replo blocks" },
             { p: "Spend 5-15K€/mes, 3-5 hero products que concentran el spend", r: "Landing dedicada por hero product + PDP optimizada para resto", s: "Replo / Shogun / GemPages sobre Shopify" },
             { p: "Spend 15-50K€/mes, 1-3 hero products dominantes", r: "Landing dedicada por hero + 2-3 variantes A/B activas", s: "Replo + A/B testing nativo o VWO/Optimizely" },
-            { p: "Spend >50K€/mes, lanzamientos / ofertas estacionales", r: "Landing dedicada + landing oferta + landing retargeting (3+ destinos)", s: "Stack profesional Replo Pro / Unbounce / Instapage" },
+            { p: "Spend &gt;50K€/mes, lanzamientos / ofertas estacionales", r: "Landing dedicada + landing oferta + landing retargeting (3+ destinos)", s: "Stack profesional Replo Pro / Unbounce / Instapage" },
             { p: "Lead magnet / suscripción / quiz funnel", r: "Landing dedicada con formulario gated + flow email", s: "Unbounce / Replo + Klaviyo / Brevo" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">
@@ -246,7 +246,7 @@ const CroLandingPageMetaAdsD2cPage = ({ openCalendly }) => (
     <div className="space-y-3 mb-6">
       {[
         "Auditoría CRO inicial cruzada con auditoría paid: Pablo revisa creative→landing match, oferta, CTA, prueba social y flujo conversión; Jorge audita Core Web Vitals (LCP/CLS/INP), velocidad mobile real con CrUX, scripts third-party, deduplicación tracking server-side y CAPI. Entregamos un priorizado por impacto esperado en CPA, no una lista de buenas prácticas genéricas.",
-        "Stack de landings ad-hoc según madurez de la cuenta: Shopify+Replo blocks para cuentas <10K€/mes, Replo Pro o Shogun para 10-50K€/mes, Unbounce/Instapage para campañas estacionales o lead magnets, landing custom React/Next.js cuando la velocidad mobile o el control técnico lo justifican (caso típico: cuentas >100K€/mes Meta o productos con quiz funnel).",
+        "Stack de landings ad-hoc según madurez de la cuenta: Shopify+Replo blocks para cuentas <10K€/mes, Replo Pro o Shogun para 10-50K€/mes, Unbounce/Instapage para campañas estacionales o lead magnets, landing custom React/Next.js cuando la velocidad mobile o el control técnico lo justifican (caso típico: cuentas &gt;100K€/mes Meta o productos con quiz funnel).",
         "A/B testing disciplinado con calendario mensual: 1-2 tests/mes por landing principal, hipótesis documentada antes de lanzar, lectura solo a partir de 200 conv/variante y 95% significancia. El stack que usamos: Replo A/B testing nativo, VWO para tests más complejos cross-página, Convert.com cuando la cuenta exige Privacy-by-Design GDPR estricto.",
         "Continuidad creative→landing como obligación, no como opción: cada hero product nuevo tiene su asset hub (creative + landing variantes) y se versiona junto. El equipo de UGC y el equipo de landing trabajan con el mismo brief — sin handoffs entre proveedores que pierden el match expectation.",
         "Reporting CRO mensual junto al reporting paid: dashboard Looker Studio con CR landing→checkout, CR landing→purchase, AOV, CAC blended y MER, segmentado por landing y por audiencia. El cliente ve cada lunes qué landing está aportando y cuál hay que iterar o jubilar.",
