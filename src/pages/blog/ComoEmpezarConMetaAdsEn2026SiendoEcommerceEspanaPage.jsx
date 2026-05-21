@@ -5,7 +5,7 @@ import relatedPostsData from "../../data/relatedPosts";
 const faqs = [
   {
     q: "¿CBO o ABO en 2026? La decisión que cambia tu ROAS en eCommerce español",
-    a: "En 2026, el 65-70% del spend en cuentas Meta Ads españolas >10K€/mes opera ya en CBO o Advantage+ Shopping, frente a solo un 5-15% que sigue con ABO estructurado. Sin embargo, la decisión correcta depende de tu fase de scaling: si estás en 0-10K€/mes de spend, ABO te da control granular que necesitas para aprender. Si ya estás en 10K€+ con histórico de 90+ días, CBO/Advantage+ típicamente supera al ABO en eficiencia en un 17% de media según datos internos de Meta. La clave está en cuándo hacer el cambio — anticiparlo destruye rendimiento."
+    a: "En 2026, el 65-70% del spend en cuentas Meta Ads españolas 10K€€/mes opera ya en CBO o Advantage+ Shopping, frente a solo un 5-15% que sigue con ABO estructurado. Sin embargo, la decisión correcta depende de tu fase de scaling: si estás en 0-10K€/mes de spend, ABO te da control granular que necesitas para aprender. Si ya estás en 10K€+ con histórico de 90+ días, CBO/Advantage+ típicamente supera al ABO en eficiencia en un 17% de media según datos internos de Meta. La clave está en cuándo hacer el cambio — anticiparlo destruye rendimiento."
   },
   {
     q: "¿Cuándo CBO destruye tu rendimiento y cómo detectarlo antes de perder presupuesto?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "¿Merece la pena migrar de ABO a CBO si ya tienes campañas rentables?",
-    a: "Migrar de ABO a CBO con campañas ya rentables es el error más caro en Meta Ads en 2026. Si tienes un ROAS estable >3x con ABO estructurado, la regla es: nunca migrar en caliente. La estrategia correcta es crear un CBO paralelo con budget del 20% del spend de tu ABO winner y darle 30 días de aprendizaje. Si el CBO paralelo supera al ABO en ROAS durante 3 semanas consecutivas, então puedes escalar el CBO y reducir gradualmente el ABO. Si no supera, cancelas el CBO test y mantienes el ABO. Esto te da datos reales sin arriesgar tu cash flow."
+    a: "Migrar de ABO a CBO con campañas ya rentables es el error más caro en Meta Ads en 2026. Si tienes un ROAS estable 3x con ABO estructurado, la regla es: nunca migrar en caliente. La estrategia correcta es crear un CBO paralelo con budget del 20% del spend de tu ABO winner y darle 30 días de aprendizaje. Si el CBO paralelo supera al ABO en ROAS durante 3 semanas consecutivas, então puedes escalar el CBO y reducir gradualmente el ABO. Si no supera, cancelas el CBO test y mantienes el ABO. Esto te da datos reales sin arriesgar tu cash flow."
   }
 ];
 
@@ -106,7 +106,7 @@ const CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage = ({ openCalendly }) => (
 
     <h2 className="text-2xl font-black mt-10 mb-4">Cuándo sí migrar a CBO (y cómo hacerlo bien)</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El dato más relevante del IAB Spain 2025 indica que el 63% de los profesionales de marketing en España considera que sus campañas CBO/Advantage+ necesitan más tiempo de aprendizaje (4-6 semanas) antes de superar al ABO manual en ROAS. Esto confirma lo que vemos en cuentas reales: la migración vale la pena cuando tienes paciencia y presupuesto para la learning phase. La señales claras de que estás listo: ROAS stable >3x con ABO durante al menos 4 semanas, más de 500 pedidos/mes en la cuenta, frecuencia de ABO superando 4x sin mejora en conversión, capacidad de mantener el spend durante 30 días sin optimizar prematuramente.
+      El dato más relevante del IAB Spain 2025 indica que el 63% de los profesionales de marketing en España considera que sus campañas CBO/Advantage+ necesitan más tiempo de aprendizaje (4-6 semanas) antes de superar al ABO manual en ROAS. Esto confirma lo que vemos en cuentas reales: la migración vale la pena cuando tienes paciencia y presupuesto para la learning phase. La señales claras de que estás listo: ROAS stable 3x con ABO durante al menos 4 semanas, más de 500 pedidos/mes en la cuenta, frecuencia de ABO superando 4x sin mejora en conversión, capacidad de mantener el spend durante 30 días sin optimizar prematuramente.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
       El eCommerce en España alcanzó los 26.700M€ en 2024, un 13% más que el año anterior (Statista, 2025), con Meta Ads como primer canal de adquisición para el 67% de las tiendas D2C analizadas. Este volumen de mercado significa que el algoritmo de Meta tiene大量的 training data de consumidores españoles — lo cual hace que Advantage+ Shopping sea más efectivo aquí que en otros mercados con menor volumen de电商.

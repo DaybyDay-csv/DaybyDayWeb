@@ -223,10 +223,10 @@ const TikTokAdsEcommerceD2cEspana2026Page = ({ openCalendly }) => (
     <ol className="space-y-3 mb-6 list-decimal pl-5">
       {[
         "MER blended antes vs después: medir MER (revenue total / spend total Meta+Google+TikTok) los 30 días previos a activar TikTok y los 30 posteriores. Subida ≥0,2 puntos = incremental real. Plano o bajada = canibalización pura.",
-        "Holdout geo (cuentas >10K€/mes TikTok): apagar TikTok en una región (Cataluña o Madrid) durante 21-30 días y comparar caída de revenue total con la región control. Es el método más limpio.",
+        "Holdout geo (cuentas 10K€€/mes TikTok): apagar TikTok en una región (Cataluña o Madrid) durante 21-30 días y comparar caída de revenue total con la región control. Es el método más limpio.",
         "Conversion lift study nativo de TikTok: disponible para cuentas con >5K€/mes. TikTok divide audiencia expuesta vs control sin coste extra y reporta el lift incremental. Solo válido en spend sostenido.",
         "Post-purchase survey en checkout Shopify ('¿Dónde nos has descubierto?'): contraste cualitativo con la atribución de plataforma. Si TikTok atribuye 25% de conversiones pero la encuesta dice 8%, hay sobreatribución.",
-        "Cohort de New Customers: revisar % de clientes nuevos (sin compra previa en últimos 365d) en TikTok vs Meta. Si TikTok tiene <50% New Customer rate y Meta tiene >70%, TikTok está cosechando warm de Meta.",
+        "Cohort de New Customers: revisar % de clientes nuevos (sin compra previa en últimos 365d) en TikTok vs Meta. Si TikTok tiene <50% New Customer rate y Meta tiene 70%, TikTok está cosechando warm de Meta.",
       ].map((item) => (
         <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
       ))}
@@ -239,7 +239,7 @@ const TikTokAdsEcommerceD2cEspana2026Page = ({ openCalendly }) => (
         "Implementación Pablo + Jorge en paralelo: Pablo cierra estrategia de campañas, asset hub creativo, ROAS targets y briefing UGC; Jorge configura TikTok Pixel server-side via sGTM compartido con Meta CAPI, integración Shopify→TikTok Events API con deduplicación, sincronización Customer Match desde Klaviyo y dashboard Looker Studio con MER blended cruzando Meta+Google+TikTok.",
         "Pipeline UGC ad-hoc con creadores micro/nano españoles: en lugar de comprar creators caros, montamos pipeline con 6-10 creadores nano (1K-20K followers) por nicho, briefing semanal y revisión Hook Rate. Coste por creative producido baja a 80-200€ vs 600-1.500€ de agencia creative tradicional.",
         "Reporting MER-first, no ROAS-first: el dashboard que ve el cliente cada lunes muestra MER blended por canal y por semana, con anotaciones de cambios. El ROAS reportado de TikTok Ads se muestra en segundo plano porque sabemos que sobreatribuye 15-30% por modelo de atribución 7-day click + 1-day view.",
-        "Holdout geo trimestral en cuentas >10K€/mes TikTok: apagamos TikTok en una región durante 21-30 días para medir incremental real sin depender de la atribución de plataforma. Es el único método que aguanta auditoría externa.",
+        "Holdout geo trimestral en cuentas 10K€€/mes TikTok: apagamos TikTok en una región durante 21-30 días para medir incremental real sin depender de la atribución de plataforma. Es el único método que aguanta auditoría externa.",
         "Decisión TikTok Shop por unit economics, no por hype: si AOV<35€ y margen<45%, NO recomendamos activarlo aunque el CMO lo pida. Si AOV 40-90€ y marca con tracción orgánica, abrimos piloto de 60d y medimos canibalización del checkout web.",
       ].map((item) => (
         <div key={item} className="flex items-start gap-2 text-white/60 text-sm">

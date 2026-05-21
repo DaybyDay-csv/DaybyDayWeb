@@ -219,7 +219,7 @@ const MetodologiaDayByDayPage = ({ openCalendly }) => (
       {[
         "eCommerce B2C o D2C con facturación mensual de al menos 50.000€",
         "Inversión en paid media de 5.000€/mes o superior (o voluntad de llegar ahí)",
-        "Producto o servicio con márgenes suficientes para sostener paid media (margen bruto >30%)",
+        "Producto o servicio con márgenes suficientes para sostener paid media (margen bruto 30%)",
         "Empresa con voluntad de escalar: no buscar solo 'mantener' sino crecer de forma medible",
         "Disposición a compartir datos de negocio (márgenes, LTV, datos CRM) para tomar decisiones reales",
       ].map((item) => (

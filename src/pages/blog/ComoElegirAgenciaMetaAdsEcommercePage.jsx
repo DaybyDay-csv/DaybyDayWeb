@@ -106,7 +106,7 @@ const ComoElegirAgenciaMetaAdsEcommercePage = ({ openCalendly }) => (
         </thead>
         <tbody>
           {[
-            { q: "¿Qué % de tu cartera son eCommerce D2C?", s: ">70% o exclusivo D2C", r: "Mezcla con leadgen, locales, B2B" },
+            { q: "¿Qué % de tu cartera son eCommerce D2C?", s: "70% o exclusivo D2C", r: "Mezcla con leadgen, locales, B2B" },
             { q: "¿Implementáis CAPI server-side desde el día 1?", s: "Sí, con auditoría previa de eventos", r: "‘Está incluida en el píxel’ o evasivas" },
             { q: "¿Cuántos tests creativos lanzáis a la semana?", s: "5-15 con plan documentado", r: "‘Cuando hace falta’ / sin cadencia" },
             { q: "¿Con qué herramienta cruzáis ROAS plataforma vs ventas reales?", s: "Shopify/Triple Whale/Northbeam o panel propio con post-purchase survey", r: "Sólo el ROAS de Ads Manager" },

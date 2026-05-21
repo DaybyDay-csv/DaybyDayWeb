@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "¿Mis anuncios de Meta han dejado de funcionar de repente, qué puede haber pasado?",
-    a: "Cinco causas explican el 90% de las caídas bruscas: (1) fatiga creativa — frecuencia \u003e4 en audiencias frías sin nuevos creativos; (2) cambios estructurales recientes (subida de presupu\u003esto >30%, nueva audiencia, cambio de optimización) que rompen la fase de aprendizaje; (3) actualización de iOS/Android que afecta atribución y modelado de conversiones; (4) problema de tracking (Conversions API caída, hash de eventos roto, cambio en el checkout de Shopify); (5) competencia agresiva subiendo CPM en tu sector. Antes de intervenir, revisa frecuencia, registro de cambios de los últimos 14 días y estado de la API de Conversiones — en ese orden.",
+    a: "Cinco causas explican el 90% de las caídas bruscas: (1) fatiga creativa — frecuencia \u003e4 en audiencias frías sin nuevos creativos; (2) cambios estructurales recientes (subida de presupu\u003esto 30%, nueva audiencia, cambio de optimización) que rompen la fase de aprendizaje; (3) actualización de iOS/Android que afecta atribución y modelado de conversiones; (4) problema de tracking (Conversions API caída, hash de eventos roto, cambio en el checkout de Shopify); (5) competencia agresiva subiendo CPM en tu sector. Antes de intervenir, revisa frecuencia, registro de cambios de los últimos 14 días y estado de la API de Conversiones — en ese orden.",
   },
   {
     q: "¿Cómo saber si el problema son los anuncios o la web?",
@@ -201,7 +201,7 @@ const PorQueAnunciosMetaNoConviertenPage = ({ openCalendly }) => (
     <div className="space-y-3 mb-6">
       {[
         "Demasiados adsets activos con presupuesto bajo (<10€/día). Ninguno reúne las 50 conversiones semanales necesarias y todos se quedan eternamente en aprendizaje.",
-        "Cambios estructurales semanales (audiencia, optimización, presupuesto >30%) que reinician la fase de aprendizaje cada semana. El algoritmo nunca llega a estabilizar.",
+        "Cambios estructurales semanales (audiencia, optimización, presupuesto 30%) que reinician la fase de aprendizaje cada semana. El algoritmo nunca llega a estabilizar.",
         "TOFU, MOFU y BOFU mezclados en la misma campaña. Imposible saber qué capa funciona y la atribución se cruza dentro de la propia cuenta.",
         "Optimización por evento pobre (Add to Cart en lugar de Purchase) en cuentas con volumen suficiente para optimizar a Purchase. Trae carritos baratos pero no clientes.",
         "Sin separación entre adquisición y retargeting — el retargeting infla el ROAS de plataforma y te oculta que el TOFU no funciona.",

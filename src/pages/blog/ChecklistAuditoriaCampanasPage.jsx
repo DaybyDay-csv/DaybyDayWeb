@@ -137,8 +137,8 @@ const ChecklistAuditoriaCampanasPage = ({ openCalendly }) => (
         </thead>
         <tbody>
           {[
-            ["ROAS (moda/lifestyle)", ">4x", "2x–4x", "<2x"],
-            ["ROAS (suplementos)", ">5x", "3x–5x", "<3x"],
+            ["ROAS (moda/lifestyle)", "4x", "2x–4x", "<2x"],
+            ["ROAS (suplementos)", "5x", "3x–5x", "<3x"],
             ["CPA (ticket 60€)", "<25€", "25€–45€", ">45€"],
             ["CTR Link", ">1.5%", "0.8%–1.5%", "<0.8%"],
             ["Frecuencia", "<3", "3–4", ">4"],

@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "¿Cuál es el ratio de spend en paid media vs revenue saludable para un D2C español en 2026?",
-    a: "Depende del maturity del D2C: (1) D2C early-stage (<100K€ revenue/año): paid media representa 40-60% del revenue, el objetivo es test audience y generar data para optimizar; MER 1,5-2,0x es aceptable porque inviertes en aprendizaje; (2) D2C growth-stage (100K€-500K€ revenue/año): paid representa 25-40% del revenue, el objetivo es escala eficiente; MER 2,0-2,5x es el target; (3) D2C scale-stage (>500K€ revenue/año): paid representa 15-30% del revenue, el objetivo es eficiencia y retención; MER 2,5-3,5x es healthy. Por debajo de MER 1,8x sostenido 90 días, el modelo paid no es sostenible y hay que rebalancear mix de canales o aceptar márgenes más bajos. El CFO debe saber que MER <1,8x requiere intervención."
+    a: "Depende del maturity del D2C: (1) D2C early-stage (<100K€ revenue/año): paid media representa 40-60% del revenue, el objetivo es test audience y generar data para optimizar; MER 1,5-2,0x es aceptable porque inviertes en aprendizaje; (2) D2C growth-stage (100K€-500K€ revenue/año): paid representa 25-40% del revenue, el objetivo es escala eficiente; MER 2,0-2,5x es el target; (3) D2C scale-stage (500K€ revenue/año): paid representa 15-30% del revenue, el objetivo es eficiencia y retención; MER 2,5-3,5x es healthy. Por debajo de MER 1,8x sostenido 90 días, el modelo paid no es sostenible y hay que rebalancear mix de canales o aceptar márgenes más bajos. El CFO debe saber que MER <1,8x requiere intervención."
   },
   {
 q: "¿Cómo presento resultados de paid media en una junta con inversores que no saben qué es un ROAS?",

@@ -77,7 +77,7 @@ const AutomatizacionesReglasMetaAdsManagerPage = ({ openCalendly }) => (
         <tbody>
           {[
             { f: "Control / pausa", q: "Pausar ad set/anuncio si CPA, frequency o gasto exceden umbral", r: "Pausar sobre ruido si volumen <50 conv/sem", n: "Ad set + anuncio" },
-            { f: "Escalado", q: "Subir/bajar presupuesto si ROAS supera/incumple objetivo", r: "Resetear learning con saltos >30%", n: "Ad set (CBO: campaña)" },
+            { f: "Escalado", q: "Subir/bajar presupuesto si ROAS supera/incumple objetivo", r: "Resetear learning con saltos 30%", n: "Ad set (CBO: campaña)" },
             { f: "Notificación", q: "Avisar por email/Slack ante anomalía sin actuar", r: "Bajo — solo informa", n: "Cuenta entera" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">
@@ -101,7 +101,7 @@ const AutomatizacionesReglasMetaAdsManagerPage = ({ openCalendly }) => (
     <div className="space-y-3 mb-6">
       {[
         "Pausa creativo fatigado: frequency >4 AND CTR (todos) <0,8% AND impresiones >3.000 últimos 7d → pausar anuncio + notificar. Evita gastar en creativos quemados.",
-        "Pausa ad set sin compras: spend >2x CPA objetivo AND 0 compras en últimos 3 días → pausar ad set + notificar. Solo tiene sentido si hay reposición de ad sets activa.",
+        "Pausa ad set sin compras: spend 2x CPA objetivo AND 0 compras en últimos 3 días → pausar ad set + notificar. Solo tiene sentido si hay reposición de ad sets activa.",
         "Escalado conservador: ROAS últimos 3d ≥ ROAS objetivo × 1,2 AND frequency <3 AND spend ≥70% del presupuesto → subir presupuesto +15%. Máx una vez cada 3 días.",
         "Bajada por bajo rendimiento: ROAS últimos 3d <ROAS suelo × 0,8 → bajar presupuesto -20% y notificar. No pausar — bajar mantiene aprendizaje vivo.",
         "Aviso learning limited: ad set en estado 'learning limited' >5 días → email al equipo. Solo notifica, decisión humana.",
@@ -118,7 +118,7 @@ const AutomatizacionesReglasMetaAdsManagerPage = ({ openCalendly }) => (
     <div className="space-y-3 mb-6">
       {[
         "Reglas que evalúan cada 30 minutos: Meta optimiza sobre ventanas de 24-72h, nada más corto tiene sentido. Frecuencia de evaluación mínima recomendada: diaria.",
-        "Subidas o bajadas >30% automatizadas: cualquier cambio mayor resetea o degrada el learning. La regla del 15-20% existe por motivos algorítmicos, no por estética.",
+        "Subidas o bajadas 30% automatizadas: cualquier cambio mayor resetea o degrada el learning. La regla del 15-20% existe por motivos algorítmicos, no por estética.",
         "Reglas de pausa/reactivación del mismo ad set: cada pausa+reactivación reinicia el aprendizaje. Mejor bajar presupuesto que pausar y reactivar 24h después.",
         "Reglas que actúan sobre cuentas con <50 conv/sem por ad set: el sistema decide sobre ruido, no sobre patrón. En presupuestos pequeños, mejor revisión manual semanal.",
         "Reglas de pausa por CPA en evento secundario (ATC, IC) cuando se optimiza a Purchase: confunden la lectura del algoritmo y generan pausas espurias.",

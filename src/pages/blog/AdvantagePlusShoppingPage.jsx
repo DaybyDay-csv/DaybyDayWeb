@@ -75,7 +75,7 @@ const AdvantagePlusShoppingPage = ({ openCalendly }) => (
             { situacion: "<30 compras/semana", rec: "❌ Mantén campañas manuales", motivo: "El algoritmo no tiene suficientes datos y el aprendizaje no termina" },
             { situacion: "Catálogo >50 productos + ticket bajo", rec: "✅ Muy recomendable ASC", motivo: "El algoritmo optimiza la selección de producto por usuario mejor que tú" },
             { situacion: "Producto único o catálogo <10 SKUs", rec: "⚠️ Manual puede ser mejor", motivo: "Menor ventaja de selección automática de producto" },
-            { situacion: "Fase de escala (subir >50% presupuesto)", rec: "✅ ASC protege mejor el ROAS", motivo: "Redistribuye entre prospecting/retargeting según demanda real" },
+            { situacion: "Fase de escala (subir 50% presupuesto)", rec: "✅ ASC protege mejor el ROAS", motivo: "Redistribuye entre prospecting/retargeting según demanda real" },
             { situacion: "Cuenta con muchas restricciones de audiencia", rec: "❌ Manual da más control", motivo: "ASC no permite exclusiones granulares por audiencia" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">

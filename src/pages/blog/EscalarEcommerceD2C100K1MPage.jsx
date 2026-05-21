@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "¿Cuántos meses de paid media hacen falta para llevar un D2C de 100K a 1M€?",
-    a: "El rango realista es 12-24 meses, dependiendo del margen y del LTV. Las cuentas que escalan en menos de 12 meses suelen tener: producto con repetición de compra (LTV \u003e150€ a 6 meses), ma\u003egen >50%, y un equipo capaz de producir 8+ creatividades nuevas al mes. Por debajo de eso, forzar el escalado en menos de 12 meses casi siempre destruye margen. El error más común es proyectar el ROAS de los primeros 30K€ al millón — el CAC sube de forma no lineal a partir del 60-70% de penetración del público objetivo realista.",
+    a: "El rango realista es 12-24 meses, dependiendo del margen y del LTV. Las cuentas que escalan en menos de 12 meses suelen tener: producto con repetición de compra (LTV \u003e150€ a 6 meses), ma\u003egen 50%, y un equipo capaz de producir 8+ creatividades nuevas al mes. Por debajo de eso, forzar el escalado en menos de 12 meses casi siempre destruye margen. El error más común es proyectar el ROAS de los primeros 30K€ al millón — el CAC sube de forma no lineal a partir del 60-70% de penetración del público objetivo realista.",
   },
   {
     q: "¿Qué errores hay que evitar para no romper la rentabilidad al escalar?",
@@ -67,7 +67,7 @@ const EscalarEcommerceD2C100K1MPage = ({ openCalendly }) => (
       {[
         "Cuenta con 1-2 creatividades en producción durante meses, sin proceso sistemático para producir nuevas. Resultado: el algoritmo agota la audiencia y el CPM sube un 25-40% en 90 días.",
         "Decisiones de escala basadas exclusivamente en ROAS de plataforma — sin cruzar con el MER ni el nCPA real desde Shopify. Cuando se cruzan los datos, el ROAS real es un 25-30% inferior al reportado por Meta.",
-        "Subidas de presupuesto >50% de un día para otro porque 'la campaña va bien'. La fase de aprendizaje se rompe y el adset entra en una espiral de coste por compra creciente.",
+        "Subidas de presupuesto 50% de un día para otro porque 'la campaña va bien'. La fase de aprendizaje se rompe y el adset entra en una espiral de coste por compra creciente.",
         "Mezcla de TOFU, MOFU y BOFU en las mismas campañas, sin separar señal de aprendizaje. Imposible saber si lo que escala es la captación, el retargeting o un sesgo de atribución.",
         "Sin sistema de validación de hipótesis: cada audiencia o creativo nuevo se prueba a presupuesto pequeño durante 3-4 días y se mata antes de que salga del periodo de aprendizaje. Se pierde el learning antes de capturarlo.",
       ].map((item) => (

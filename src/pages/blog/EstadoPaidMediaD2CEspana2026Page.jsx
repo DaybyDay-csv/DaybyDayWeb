@@ -55,7 +55,7 @@ const EstadoPaidMediaD2CEspana2026Page = ({ openCalendly }) => (
       {[
         { label: "CPM medio Meta Ads España (moda)", value: "+22%", sub: "vs 2024" },
         { label: "ROAS promedio Meta Ads D2C", value: "3,2x–4,8x", sub: "sectores principales" },
-        { label: "Inversión paid media / facturación (D2C growth)", value: "18-25%", sub: "empresas >30% YoY" },
+        { label: "Inversión paid media / facturación (D2C growth)", value: "18-25%", sub: "empresas 30% YoY" },
         { label: "Discrepancia ROAS plataforma vs negocio real", value: "20-35%", sub: "Meta sobreatribuye" },
       ].map(({ label, value, sub }) => (
         <div key={label} className="bg-[#1a1616] border border-white/8 rounded-xl p-4 text-center">

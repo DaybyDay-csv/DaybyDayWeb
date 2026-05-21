@@ -199,7 +199,7 @@ const GuiaMetaAdsEcommerceD2CEspana2026Page = ({ openCalendly }) => (
         },
         {
           metrica: "Hook Rate (3-second video views / impressions)",
-          desc: "Qué porcentaje de personas que ven el vídeo aguantan los 3 primeros segundos. Benchmark: \u003e30% es bu\u003eno, >50% es excelente. Si está por debajo del 20%, el gancho del vídeo no funciona.",
+          desc: "Qué porcentaje de personas que ven el vídeo aguantan los 3 primeros segundos. Benchmark: \u003e30% es bu\u003eno, 50% es excelente. Si está por debajo del 20%, el gancho del vídeo no funciona.",
         },
       ].map(({ metrica, desc }) => (
         <div key={metrica} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">

@@ -66,7 +66,7 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
         },
         {
           num: "2",
-          req: "Tracking correcto (match rate >80%)",
+          req: "Tracking correcto (match rate 80%)",
           desc: "Verifica en Meta Events Manager que el match rate de tus eventos de compra está por encima del 80% y que no hay duplicaciones. Un tracking roto hace que el algoritmo optimice con datos incorrectos y el ROAS se destruye al escalar.",
         },
         {
@@ -106,7 +106,7 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
             { subida: "≤20%", caida: "Hasta -10%", dias: "5-7 días", accion: "Continuar — caída normal de aprendizaje" },
             { subida: "20-30%", caida: "Hasta -15%", dias: "7-10 días", accion: "Monitorizar — si persiste, mantener 7 días más" },
             { subida: "30-50%", caida: "Hasta -20%", dias: "10-14 días", accion: "Reducir al 80% del presupuesto actual y esperar" },
-            { subida: ">50%", caida: "No recomendable", dias: "—", accion: "Dividir en 2 subidas de ≤25% con 2 semanas entre ellas" },
+            { subida: "50%", caida: "No recomendable", dias: "—", accion: "Dividir en 2 subidas de ≤25% con 2 semanas entre ellas" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">
               <td className="py-3 px-3 text-white font-medium">{row.subida}</td>
@@ -165,7 +165,7 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
     <div className="space-y-3 mb-6">
       {[
         { metrica: "ROAS (ventana 7 días)", umbral: "No debe caer >15% respecto a la semana anterior", señal: "Si cae &gt;20%, aplicar protocolo de recuperación" },
-        { metrica: "CPM", umbral: "Subida de hasta +20% es normal al escalar", señal: "Si sube >30%, hay saturación de audiencia o aumento de competencia" },
+        { metrica: "CPM", umbral: "Subida de hasta +20% es normal al escalar", señal: "Si sube 30%, hay saturación de audiencia o aumento de competencia" },
         { metrica: "Frecuencia (audiencias frías)", umbral: "Mantener por debajo de 2,5 en los últimos 7 días", señal: "Si supera 3, necesitas más audiencia o nuevos creativos urgente" },
         { metrica: "CTR del creativo", umbral: "No debe caer >25% respecto al promedio histórico", señal: "Si cae más, el creativo está en fatiga — rotar" },
         { metrica: "Tasa de conversión post-clic", umbral: "Debe mantenerse estable al escalar", señal: "Si cae, el problema no está en Meta sino en la landing o el checkout" },

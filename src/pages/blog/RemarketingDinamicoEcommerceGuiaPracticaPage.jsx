@@ -64,7 +64,7 @@ const RemarketingDinamicoEcommerceGuiaPracticaPage = ({ openCalendly }) => (
       {[
         "Catálogo con >30-40 SKUs activos. Por debajo, el creativo dinámico no aporta sobre un retargeting estático bien hecho.",
         "Tráfico mensual >8.000 sesiones únicas. Audiencias dinámicas de <1.000 usuarios queman frecuencia en 5 días.",
-        "Píxel + API de Conversiones server-side con match rate >80%. Sin esto, el algoritmo no puede emparejar usuario y producto.",
+        "Píxel + API de Conversiones server-side con match rate 80%. Sin esto, el algoritmo no puede emparejar usuario y producto.",
         "Feed sincronizado al menos cada 24h, con <5% de productos rechazados en Commerce Manager / Merchant Center.",
         "Tiempo medio entre primera visita y compra >24h (si es <12h ya conviertes con retargeting de 1-3 días, no necesitas DPA).",
       ].map((item) => (

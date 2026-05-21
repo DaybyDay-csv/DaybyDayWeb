@@ -65,7 +65,7 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
       <p className="text-white font-bold text-sm mb-2">📊 Dato de referencia</p>
       <p className="text-white/70 text-sm leading-relaxed">
-        Según <a href="https://www.facebook.com/business/help/229311094776616" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Business</a>, el rendimiento de un anuncio empieza a degradarse de forma medible cuando la frecuencia supera 2,0 en prospecting 7 días, y el efecto es más severo en audiencias menores de 2M usuarios. En cuentas D2C España auditadas por DayByDay (2024-2026), el 38% de las caídas mensuales >20% en ROAS están directamente vinculadas a fatigue creativo no detectado a tiempo.
+        Según <a href="https://www.facebook.com/business/help/229311094776616" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Business</a>, el rendimiento de un anuncio empieza a degradarse de forma medible cuando la frecuencia supera 2,0 en prospecting 7 días, y el efecto es más severo en audiencias menores de 2M usuarios. En cuentas D2C España auditadas por DayByDay (2024-2026), el 38% de las caídas mensuales 20% en ROAS están directamente vinculadas a fatigue creativo no detectado a tiempo.
       </p>
     </div>
 
@@ -88,7 +88,7 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
             { s: "Hook Rate (3s views / impr)", t: "<22-25% cuando arrancó >32%", e: "3-5 días" },
             { s: "CPM rolling 7d", t: "+20% sin cambio audiencia/puja", e: "4-6 días" },
             { s: "Coste por add-to-cart", t: "+30% con CTR estable (click inercial)", e: "2-4 días" },
-            { s: "Hold Rate (15s/3s views)", t: "<35% cuando arrancó >50%", e: "3-5 días" },
+            { s: "Hold Rate (15s/3s views)", t: "<35% cuando arrancó 50%", e: "3-5 días" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">
               <td className="py-3 px-3 text-white font-semibold text-xs">{row.s}</td>
@@ -109,7 +109,7 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
     </p>
     <ul className="space-y-2 mb-6">
       {[
-        "Prospecting con audiencias amplias (>500K-1M): winner aguanta 30-60 días antes de fatigarse.",
+        "Prospecting con audiencias amplias (500K-1M): winner aguanta 30-60 días antes de fatigarse.",
         "Audiencias medias (100-500K) o LAL 1-3%: ciclo 21-35 días.",
         "Retargeting 7-30 días (catálogo, web visitors): ciclo 10-21 días por frecuencia alta intrínseca.",
         "Retargeting 30-180d y reactivación: ciclo 14-28 días, pero con frecuencias 6-12 que serían fatiga en prospecting.",
@@ -150,7 +150,7 @@ const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
     <ul className="space-y-2 mb-6">
       {[
         "Hook Rate (vistas 3s / impresiones): mide si el primer segundo retiene. Alerta <22% en formatos vídeo.",
-        "Hold Rate (vistas 15s / vistas 3s): mide si el mensaje sostiene. Alerta <35% si arrancó >50%.",
+        "Hold Rate (vistas 15s / vistas 3s): mide si el mensaje sostiene. Alerta <35% si arrancó 50%.",
         "CTR outbound (click al destino, no engagement social): filtra clicks inerciales. Alerta caída >25%.",
         "Frecuencia rolling 7d: alerta >2,2 prospecting / >4,0 retargeting.",
         "CPM rolling 7d: alerta +20% sin cambio de audiencia ni puja.",

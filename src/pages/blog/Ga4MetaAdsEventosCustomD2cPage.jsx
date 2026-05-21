@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "¿Qué eventos custom debe enviar GA4 para un eCommerce D2C que invierte en Meta Ads?",
-    a: "Más allá de los 10 eventos enhanced ecommerce estándar (view_item, add_to_cart, begin_checkout, purchase, etc.), un D2C que invierte 10-50K€/mes en Meta Ads debería enviar 5-8 eventos custom específicos: (1) lead_magnet_download (descarga guía/cupón), (2) wishlist_add (señal de intent fuerte), (3) high_intent_scroll_pdp (\u003e75% scroll en ficha producto), (4) coupon_applied (con código y % descuento), (5) video_pdp_pla\u003eed (>50% reproducción), (6) chat_started (WhatsApp/Intercom abierto), (7) shipping_calculated (intent BOFU), y (8) post_purchase_review (cuando aplique). Cada evento custom se sincroniza con audiencias de Meta para retargeting de capa intermedia (entre view_content y add_to_cart) y permite optimizar campañas a eventos predictivos cuando Purchase tiene volumen bajo (<50 conv/semana). El error típico es enviar 30+ eventos sin priorizar: dispersa señal, complica reporting y casi nunca se usan."
+    a: "Más allá de los 10 eventos enhanced ecommerce estándar (view_item, add_to_cart, begin_checkout, purchase, etc.), un D2C que invierte 10-50K€/mes en Meta Ads debería enviar 5-8 eventos custom específicos: (1) lead_magnet_download (descarga guía/cupón), (2) wishlist_add (señal de intent fuerte), (3) high_intent_scroll_pdp (\u003e75% scroll en ficha producto), (4) coupon_applied (con código y % descuento), (5) video_pdp_pla\u003eed (50% reproducción), (6) chat_started (WhatsApp/Intercom abierto), (7) shipping_calculated (intent BOFU), y (8) post_purchase_review (cuando aplique). Cada evento custom se sincroniza con audiencias de Meta para retargeting de capa intermedia (entre view_content y add_to_cart) y permite optimizar campañas a eventos predictivos cuando Purchase tiene volumen bajo (<50 conv/semana). El error típico es enviar 30+ eventos sin priorizar: dispersa señal, complica reporting y casi nunca se usan."
   },
   {
     q: "¿Cómo se sincronizan los eventos custom de GA4 con las audiencias de Meta Ads?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "¿Qué diferencias hay entre la implementación de GA4 vía gtag.js, GTM web y GTM server-side?",
-    a: "gtag.js (snippet directo) es la implementación más simple: copia/pega en theme.liquid de Shopify y dispara los eventos enhanced ecommerce nativos. Limita personalización y rompe con ad-blockers (-25-40% eventos en navegadores iOS Safari/Firefox). GTM web client-side da control granular sobre triggers y variables (puedes disparar high_intent_scroll_pdp solo cuando scroll \u003e75% Y tiempo en pá\u003eina >30s Y device mobile), pero sigue sufriendo bloqueo de ITP/ETP y ad-blockers. GTM server-side (sGTM, vía Google Cloud o Stape) ejecuta el contenedor desde tu dominio (ej. metrics.tumarca.com), evita ad-blockers y bloqueo cookies de terceros, mejora cobertura de eventos al 92-98% (vs 60-75% client-side puro) y permite enviar el mismo evento a GA4 + Meta CAPI + TikTok Events API desde una sola fuente.\u003ePara D2C >10K€/mes en spend, sGTM no es opcional: la pérdida de señal client-side cuesta más al mes que el coste de Stape."
+    a: "gtag.js (snippet directo) es la implementación más simple: copia/pega en theme.liquid de Shopify y dispara los eventos enhanced ecommerce nativos. Limita personalización y rompe con ad-blockers (-25-40% eventos en navegadores iOS Safari/Firefox). GTM web client-side da control granular sobre triggers y variables (puedes disparar high_intent_scroll_pdp solo cuando scroll \u003e75% Y tiempo en pá\u003eina >30s Y device mobile), pero sigue sufriendo bloqueo de ITP/ETP y ad-blockers. GTM server-side (sGTM, vía Google Cloud o Stape) ejecuta el contenedor desde tu dominio (ej. metrics.tumarca.com), evita ad-blockers y bloqueo cookies de terceros, mejora cobertura de eventos al 92-98% (vs 60-75% client-side puro) y permite enviar el mismo evento a GA4 + Meta CAPI + TikTok Events API desde una sola fuente.\u003ePara D2C 10K€€/mes en spend, sGTM no es opcional: la pérdida de señal client-side cuesta más al mes que el coste de Stape."
   },
   {
     q: "¿Qué métricas de GA4 debo cruzar con Meta Ads Manager para validar atribución?",
@@ -48,7 +48,7 @@ const Ga4MetaAdsEventosCustomD2cPage = ({ openCalendly }) => (
     openCalendly={openCalendly}
   >
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">GA4 + Meta Ads bien implementado con eventos custom es lo que separa a un D2C que decide reasignación de presupuesto con datos cross-channel de uno que opera a ciegas mirando solo el reporting de Meta Ads Manager.</strong> El pixel y la API de Conversiones te dan optimización dentro de Meta, pero no te dan visión de canal cruzado, atribución multi-touch ni cohortes por fuente de origen — y sin eso, cualquier decisión de subir o bajar spend en Meta vs Google vs TikTok es una apuesta. En auditorías DayByDay 2025-2026 vemos que el 60-70% de cuentas D2C españolas con presupuestos paid >10K€/mes operan con GA4 instalado pero mal configurado: eventos custom inexistentes, audiencias creadas sin sincronizar a Meta, doble conteo de Purchase, UTMs rotos. Esta guía recorre la implementación paso a paso para que GA4 deje de ser un dashboard decorativo y se convierta en el cerebro cross-channel del negocio.
+      <strong className="text-white">GA4 + Meta Ads bien implementado con eventos custom es lo que separa a un D2C que decide reasignación de presupuesto con datos cross-channel de uno que opera a ciegas mirando solo el reporting de Meta Ads Manager.</strong> El pixel y la API de Conversiones te dan optimización dentro de Meta, pero no te dan visión de canal cruzado, atribución multi-touch ni cohortes por fuente de origen — y sin eso, cualquier decisión de subir o bajar spend en Meta vs Google vs TikTok es una apuesta. En auditorías DayByDay 2025-2026 vemos que el 60-70% de cuentas D2C españolas con presupuestos paid 10K€€/mes operan con GA4 instalado pero mal configurado: eventos custom inexistentes, audiencias creadas sin sincronizar a Meta, doble conteo de Purchase, UTMs rotos. Esta guía recorre la implementación paso a paso para que GA4 deje de ser un dashboard decorativo y se convierta en el cerebro cross-channel del negocio.
     </p>
 
     <h2 className="text-2xl font-black mt-10 mb-4">Qué es GA4 + Meta Ads para D2C (definición operativa)</h2>
@@ -85,8 +85,8 @@ const Ga4MetaAdsEventosCustomD2cPage = ({ openCalendly }) => (
           {[
             { i: "gtag.js directo en theme.liquid", c: "60-70%", r: "Baja", co: "0€", re: "D2C <5K€/mes spend, prueba de concepto" },
             { i: "GTM web client-side", c: "65-78%", r: "Baja-Media", co: "0€ GTM", re: "D2C 5-10K€/mes con triggers custom" },
-            { i: "GTM server-side (sGTM Cloud Run)", c: "92-98%", r: "Alta", co: "30-120€ Google Cloud", re: "D2C >10K€/mes con stack técnico interno" },
-            { i: "GTM server-side (Stape gestionado)", c: "92-98%", r: "Alta", co: "20-80€ Stape", re: "D2C >10K€/mes sin equipo DevOps" },
+            { i: "GTM server-side (sGTM Cloud Run)", c: "92-98%", r: "Alta", co: "30-120€ Google Cloud", re: "D2C 10K€€/mes con stack técnico interno" },
+            { i: "GTM server-side (Stape gestionado)", c: "92-98%", r: "Alta", co: "20-80€ Stape", re: "D2C 10K€€/mes sin equipo DevOps" },
           ].map((row, i) => (
             <tr key={i} className="border-b border-white/5 hover:bg-white/2">
               <td className="py-3 px-3 text-white font-semibold text-xs">{row.i}</td>
@@ -100,7 +100,7 @@ const Ga4MetaAdsEventosCustomD2cPage = ({ openCalendly }) => (
       </table>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      Para cualquier cuenta D2C con spend Meta >10K€/mes, sGTM no es opcional: la pérdida de señal entre client-side y server-side (20-30 puntos porcentuales) cuesta más al mes en CPA inflado y atribución rota que los 20-80€ de Stape. Detalle completo en la <Link to="/blog/server-side-tracking-shopify-conversions-api" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de server-side tracking en Shopify con Conversions API</Link>.
+      Para cualquier cuenta D2C con spend Meta 10K€€/mes, sGTM no es opcional: la pérdida de señal entre client-side y server-side (20-30 puntos porcentuales) cuesta más al mes en CPA inflado y atribución rota que los 20-80€ de Stape. Detalle completo en la <Link to="/blog/server-side-tracking-shopify-conversions-api" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de server-side tracking en Shopify con Conversions API</Link>.
     </p>
 
     <h2 className="text-2xl font-black mt-10 mb-4">Los 10 eventos enhanced ecommerce + 8 eventos custom para D2C</h2>
@@ -116,7 +116,7 @@ const Ga4MetaAdsEventosCustomD2cPage = ({ openCalendly }) => (
         "wishlist_add: producto añadido a wishlist sin checkout. Señal de intent fuerte; CPA optimizando a este evento +ASC top of funnel es 18-32% mejor que view_content puro cuando Purchase <50/semana.",
         "high_intent_scroll_pdp: scroll >75% en ficha producto + tiempo >30s + device mobile. Combinación de 3 triggers en GTM; audiencia warm para campañas BOFU.",
         "coupon_applied: código + % descuento aplicado en checkout. Permite segmentar audiencias por price-sensitivity y excluirlas de campañas full-price.",
-        "video_pdp_played: >50% reproducción de video en ficha. Indica engagement profundo; correlacionado con CR x1,8-2,4 vs visitas sin play.",
+        "video_pdp_played: 50% reproducción de video en ficha. Indica engagement profundo; correlacionado con CR x1,8-2,4 vs visitas sin play.",
         "chat_started: WhatsApp Business o Intercom abierto. Trigger para flujo de seguimiento manual o automatizado vía CRM.",
         "shipping_calculated: cálculo de envío en cart sin completar. Audiencia BOFU caliente; retargeting 3-7d con descuento envío convierte 12-22%.",
         "post_purchase_review: review enviada tras compra. Señal de cliente satisfecho; alimenta lookalike high-LTV de calidad superior a Purchase puro.",
@@ -130,7 +130,7 @@ const Ga4MetaAdsEventosCustomD2cPage = ({ openCalendly }) => (
 
     <h2 className="text-2xl font-black mt-10 mb-4">Configuración técnica paso a paso (Shopify + GTM server-side)</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      Secuencia operativa exacta para una tienda Shopify con sGTM Stape y envío simultáneo a GA4 + Meta CAPI. Esto es lo que un D2C >10K€/mes en Meta debería tener montado:
+      Secuencia operativa exacta para una tienda Shopify con sGTM Stape y envío simultáneo a GA4 + Meta CAPI. Esto es lo que un D2C 10K€€/mes en Meta debería tener montado:
     </p>
     <ol className="space-y-3 mb-6 list-decimal pl-5">
       {[

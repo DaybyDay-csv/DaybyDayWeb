@@ -3,7 +3,7 @@ import BlogPostLayout from '../../components/BlogPostLayout';
 const faqs = [
   {
     pregunta: '¿Puedo usar solo pixel cliente o necesito servidor?',
-    respuesta: 'Necesitas ambos. El pixel cliente captura eventos directos del navegador, pero con iOS 17/18, Safari ITP y ad-blockers pierdes entre 30-50% de eventos. El CAPI servidor recupera 60-85% de esos eventos perdidos y además mejora el matching (hash de email/phone). La combinación se llama pixel híbrido y es obligatoria para cuentas D2C con inversión >10K€/mes.',
+    respuesta: 'Necesitas ambos. El pixel cliente captura eventos directos del navegador, pero con iOS 17/18, Safari ITP y ad-blockers pierdes entre 30-50% de eventos. El CAPI servidor recupera 60-85% de esos eventos perdidos y además mejora el matching (hash de email/phone). La combinación se llama pixel híbrido y es obligatoria para cuentas D2C con inversión 10K€€/mes.',
     fuente: 'Meta Business Help, Conversions API Best Practices 2025'
   },
   {
@@ -130,7 +130,7 @@ export default function PixelMetaHibridoClienteServidorImplementacionPage() {
       </p>
 
       <p className="text-white/70 leading-relaxed mb-5">
-        La mayoría de nuestros clientes con Shopify usan apps los primeros 6 meses. Si el volumen crece >500K eventos/mes, migramos a sGTM personalizado para reducir costes y tener control total.
+        La mayoría de nuestros clientes con Shopify usan apps los primeros 6 meses. Si el volumen crece 500K eventos/mes, migramos a sGTM personalizado para reducir costes y tener control total.
       </p>
 
       <h2 className="text-2xl font-black mt-10 mb-4">Ruta 2 — sGTM personalizado (Cloud Run / Docker)</h2>

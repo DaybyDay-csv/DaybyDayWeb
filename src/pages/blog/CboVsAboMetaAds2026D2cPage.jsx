@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "¿Cómo se reparte el presupuesto entre CBO, ABO y Advantage+ Shopping en una cuenta D2C escalada?",
-    a: "La distribución que mejor rinde en cuentas D2C España \u003e15K€/mes auditadas en DayByDay (2024-2026): 60-75% del spend en Advantage+ Shopping Campaigns absorbiendo prospecting broad + retargeting amplio (catálogo + web visitors recientes), 15-25% en CBO clásico para retargeting controlado por ventanas específicas (7d, 30d, 180d) o audiencias propias (clientes para upsell, lookalike de high-value buyers) donde necesitas exclusiones limpias y control de frecuencia, 5-15% en ABO para testing de ángulos creativos nuevos (4-6 ad sets con presupuestos fijos pequeños) o lanzamientos de producto donde necesitas garantizar spend por colección. Esta distribución cambia por debajo de 8K€/mes donde ASC suele abso\u003eber >80% del spend y por encima de 50K€/mes donde el % en CBO clásico puede subir al 25-30% para granularidad de medición."
+    a: "La distribución que mejor rinde en cuentas D2C España \u003e15K€/mes auditadas en DayByDay (2024-2026): 60-75% del spend en Advantage+ Shopping Campaigns absorbiendo prospecting broad + retargeting amplio (catálogo + web visitors recientes), 15-25% en CBO clásico para retargeting controlado por ventanas específicas (7d, 30d, 180d) o audiencias propias (clientes para upsell, lookalike de high-value buyers) donde necesitas exclusiones limpias y control de frecuencia, 5-15% en ABO para testing de ángulos creativos nuevos (4-6 ad sets con presupuestos fijos pequeños) o lanzamientos de producto donde necesitas garantizar spend por colección. Esta distribución cambia por debajo de 8K€/mes donde ASC suele abso\u003eber 80% del spend y por encima de 50K€/mes donde el % en CBO clásico puede subir al 25-30% para granularidad de medición."
   },
   {
     q: "¿Es verdad que CBO siempre rinde más que ABO según los anuncios de Meta?",
@@ -66,7 +66,7 @@ const CboVsAboMetaAds2026D2cPage = ({ openCalendly }) => (
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
       <p className="text-white font-bold text-sm mb-2">📊 Dato de referencia</p>
       <p className="text-white/70 text-sm leading-relaxed">
-        Según el <a href="https://www.statista.com/topics/2057/digital-advertising-in-spain/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">informe de Statista sobre digital advertising en España 2025</a>, la inversión en paid social ha superado los 1.500M€ anuales con Meta concentrando >70% del spend. En auditorías DayByDay (2024-2026, cuentas D2C 5-80K€/mes), el 65-70% del spend en cuentas >10K€/mes está en CBO o Advantage+ Shopping y solo 5-15% sigue en ABO clásico — pero ese 5-15% concentra los tests creativos y audiencias específicas que más impactan en CPA medio.
+        Según el <a href="https://www.statista.com/topics/2057/digital-advertising-in-spain/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">informe de Statista sobre digital advertising en España 2025</a>, la inversión en paid social ha superado los 1.500M€ anuales con Meta concentrando 70% del spend. En auditorías DayByDay (2024-2026, cuentas D2C 5-80K€/mes), el 65-70% del spend en cuentas 10K€€/mes está en CBO o Advantage+ Shopping y solo 5-15% sigue en ABO clásico — pero ese 5-15% concentra los tests creativos y audiencias específicas que más impactan en CPA medio.
       </p>
     </div>
 
@@ -169,7 +169,7 @@ const CboVsAboMetaAds2026D2cPage = ({ openCalendly }) => (
         "Cambiar de estructura cada 2-3 semanas reaccionando a CPA semanal: cada cambio resetea aprendizaje 5-10 días y la cuenta pasa más tiempo en learning que en optimización.",
         "Poner 6-8 ad sets en CBO sin recalcular presupuesto mínimo: la mitad de los ad sets se queda en aprendizaje permanente y consume spend sin generar señal aprovechable.",
         "Asumir que ASC sustituye CBO/ABO al 100%: ASC tiene limitaciones para retargeting controlado por ventanas largas (180d) y para audiencias propias high-value que conviene aislar.",
-        "Usar ABO para escalar prospecting broad >10K€/mes cuando CBO o ASC redistribuyen mejor el spend: la concentración manual deja dinero en la mesa.",
+        "Usar ABO para escalar prospecting broad 10K€€/mes cuando CBO o ASC redistribuyen mejor el spend: la concentración manual deja dinero en la mesa.",
         "Mantener una audiencia LAL 1-3% en CBO compitiendo con prospecting broad: el broad casi siempre gana en CPA y el LAL muere de hambre. Si quieres mantener LAL, va en ABO o en campaña CBO separada.",
         "No documentar la decisión de estructura por línea de producto: cuando rota el equipo, nadie recuerda por qué hay 3 CBOs distintas y se reorganiza sin criterio, perdiendo aprendizaje histórico.",
       ].map((item) => (

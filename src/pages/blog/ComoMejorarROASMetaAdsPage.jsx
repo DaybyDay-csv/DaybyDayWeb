@@ -88,7 +88,7 @@ const ComoMejorarROASMetaAdsPage = ({ openCalendly }) => (
         {[
           "Frecuencia > 2,5 en últimos 7 días",
           "CTR cae >25% respecto al promedio histórico",
-          "CPM sube >30% sin explicación por temporada",
+          "CPM sube 30% sin explicación por temporada",
           "Hook rate (stop scroll) por debajo del 20%",
         ].map((item) => (
           <div key={item} className="flex items-start gap-2 text-white/50 text-sm">

@@ -218,7 +218,7 @@ const CreativeTestingMetaAdsPage = ({ openCalendly }) => (
         <tbody className="divide-y divide-white/5">
           {[
             ["CTR (link clicks)", "Mide la capacidad del creativo de generar interés suficiente para el clic", ">1.5% en frío, >2.5% en retargeting"],
-            ["Hook Rate (vídeos)", "% que ve más de 3 segundos — indica si el hook detiene el scroll", ">30% para pasar a validación"],
+            ["Hook Rate (vídeos)", "% que ve más de 3 segundos — indica si el hook detiene el scroll", "30% para pasar a validación"],
             ["CVR (clic → compra)", "Mide si el creativo atrae al buyer correcto y no solo curiosos", ">1.5% para producto <60€, >0.8% para &gt;100€"],
             ["CPM", "Señal del nivel de competencia y saturación de audiencia", "Comparar vs benchmark del sector — sube si hay fatiga"],
             ["ROAS", "La métrica de negocio — lo que importa al final", "Definido por el objetivo de la cuenta, no universal"],

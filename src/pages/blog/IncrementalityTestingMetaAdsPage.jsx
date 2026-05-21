@@ -163,7 +163,7 @@ const IncrementalityTestingMetaAdsPage = ({ openCalendly }) => (
       ))}
     </ul>
     <p className="text-white/70 leading-relaxed mb-5">
-      Limitación importante: Meta diseña, ejecuta y reporta — auditarlo cruzando con un geo holdout independiente cada 6-12 meses aporta confianza adicional, sobre todo en decisiones de escalado >50% del spend mensual.
+      Limitación importante: Meta diseña, ejecuta y reporta — auditarlo cruzando con un geo holdout independiente cada 6-12 meses aporta confianza adicional, sobre todo en decisiones de escalado 50% del spend mensual.
     </p>
 
     <h2 className="text-2xl font-black mt-10 mb-4">Errores frecuentes en incrementality testing</h2>
@@ -235,7 +235,7 @@ const IncrementalityTestingMetaAdsPage = ({ openCalendly }) => (
         <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white font-semibold hover:text-white/80">
           Escalar campañas Meta Ads sin romper el ROAS →
         </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo usar el resultado de un test de incrementalidad para tomar decisiones de escalado >50% del spend</p>
+        <p className="text-white/40 text-xs mt-1">Cómo usar el resultado de un test de incrementalidad para tomar decisiones de escalado 50% del spend</p>
       </div>
     </div>
   </BlogPostLayout>

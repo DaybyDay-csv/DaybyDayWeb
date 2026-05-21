@@ -109,7 +109,7 @@ const AdquisicionVsRetencionPaidMediaD2cPage = ({ openCalendly }) => (
         "Campaña RET: ad sets con audiencias warm (ViewContent/AddToCart 7-30d), compradores 90-180d sin segunda compra, audiencias de engagement, DPA retargeting con product sets de cross-sell/upsell.",
         "Optimización por ad set: ADQ siempre a Purchase (aunque señal sea débil, hay que enseñar al algoritmo el evento final). RET puede optimizar a Purchase o Add to Cart según volumen y CPA esperado.",
         "Creatividades diferenciadas: ADQ usa ángulos educativos, aspiracionales o de diferenciación de marca (qué problema resolvemos, quién está detrás, por qué somos distintos). RET usa prueba social, urgencia, descuentos, recomendaciones por cesta o producto visto.",
-        "Reporting separado: cada lunes se mira el spend total, los pedidos atribuidos y el CAC por bucket. Si CAC ADQ sube >30% durante 3 semanas o tasa 2ª compra <22%, se rebalancea.",
+        "Reporting separado: cada lunes se mira el spend total, los pedidos atribuidos y el CAC por bucket. Si CAC ADQ sube 30% durante 3 semanas o tasa 2ª compra <22%, se rebalancea.",
       ].map((item) => (
         <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
       ))}
@@ -126,7 +126,7 @@ const AdquisicionVsRetencionPaidMediaD2cPage = ({ openCalendly }) => (
     <h2 className="text-2xl font-black mt-10 mb-4">4 señales para rebalancear hacia retención</h2>
     <ul className="space-y-2 mb-6">
       {[
-        "CPA adquisición específico sube >30% durante 3-4 semanas seguidas sin mejora en CTR, Hook Rate ni Thumbstop Ratio: audiencia objetivo saturada, escalar más adquisición tira margen sin ganar volumen real.",
+        "CPA adquisición específico sube 30% durante 3-4 semanas seguidas sin mejora en CTR, Hook Rate ni Thumbstop Ratio: audiencia objetivo saturada, escalar más adquisición tira margen sin ganar volumen real.",
         "Tasa de segunda compra a 90 días cae por debajo del 22%: la base de clientes tiene fuga estructural. Antes de meter más spend arriba, hay que tapar la fuga con flows post-purchase, cross-sell DPA y email/SMS automation.",
         "% spend retención <10% con base de compradores >5.000 en últimos 12 meses: estás regalando LTV. Cada cliente que no recibe un retargeting cross-sell o reactivación a 90-180d es margen que no se cobra.",
         "Margen contribución por pedido cae 4-6 puntos mes a mes pese a ROAS estable: el LTV implícito está bajando porque el mix está empeorando (más first purchase pequeñas, menos repeticiones). Señal clara de rebalancear.",

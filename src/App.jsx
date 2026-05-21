@@ -99,6 +99,19 @@ import WhatsappMetaAdsFunnelBofuD2cPage from "./pages/blog/WhatsappMetaAdsFunnel
 import SmartBiddingGoogleAdsD2cPage from "./pages/blog/SmartBiddingGoogleAdsD2cPage";
 import CustomerJourneyD2cPage from "./pages/blog/CustomerJourneyD2cPage";
 import PixelMetaHibridoClienteServidorImplementacionPage from "./pages/blog/pixel-meta-hibrido-cliente-servidor-implementacionPage";
+import JuicioCrossFuncionalFounderD2cPage from "./pages/blog/JuicioCrossFuncionalFounderD2cPage";
+import ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage from "./pages/blog/ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage";
+import AiProofSkillsFounderD2c2027Page from "./pages/blog/AiProofSkillsFounderD2c2027Page";
+import PixelMetaHibridoClienteServidorPage from "./pages/blog/PixelMetaHibridoClienteServidorPage";
+import CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage from "./pages/blog/CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage";
+import DecisionCuandoSubirPrecioD2cPage from "./pages/blog/DecisionCuandoSubirPrecioD2cPage";
+import QueNoAutomatizaIaD2cPage from "./pages/blog/QueNoAutomatizaIaD2cPage";
+import RolMediaBuyer2027Page from "./pages/blog/RolMediaBuyer2027Page";
+import GrowthPartnerVsAgenciaPaidMediaPage from "./pages/blog/GrowthPartnerVsAgenciaPaidMediaPage";
+import MoatRealD2cEraIaPage from "./pages/blog/MoatRealD2cEraIaPage";
+import MetaAdsCreativeTesting2026D2cPage from "./pages/blog/MetaAdsCreativeTesting2026D2cPage";
+import Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage from "./pages/blog/Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage";
+import AutomatizacionPaidMediaProximos24MesesPage from "./pages/blog/AutomatizacionPaidMediaProximos24MesesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -328,6 +341,20 @@ const App = () => {
         <Route path="/blog/smart-bidding-google-ads-d2c" element={<SmartBiddingGoogleAdsD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/customer-journey-d2c-primer-impacto-repeticion" element={<CustomerJourneyD2cPage openCalendly={openCalendly} />} />
         <Route path="/blog/pixel-meta-hibrido-cliente-servidor-implementacion" element={<PixelMetaHibridoClienteServidorImplementacionPage openCalendly={openCalendly} />} />
+        
+        <Route path="/blog/juicio-cross-funcional-founder-d2c" element={<JuicioCrossFuncionalFounderD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana" element={<ComoEmpezarConMetaAdsEn2026SiendoEcommerceEspanaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/ai-proof-skills-founder-d2c-2027" element={<AiProofSkillsFounderD2c2027Page openCalendly={openCalendly} />} />
+        <Route path="/blog/pixel-meta-hibrido-cliente-servidor" element={<PixelMetaHibridoClienteServidorPage openCalendly={openCalendly} />} />
+        <Route path="/blog/cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana" element={<CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/decision-cuando-subir-precio-d2c" element={<DecisionCuandoSubirPrecioD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/que-no-automatiza-ia-d2c" element={<QueNoAutomatizaIaD2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/rol-media-buyer-2027" element={<RolMediaBuyer2027Page openCalendly={openCalendly} />} />
+        <Route path="/blog/growth-partner-vs-agencia-paid-media" element={<GrowthPartnerVsAgenciaPaidMediaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/moat-real-d2c-era-ia" element={<MoatRealD2cEraIaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/meta-ads-creative-testing-2026-d2c" element={<MetaAdsCreativeTesting2026D2cPage openCalendly={openCalendly} />} />
+        <Route path="/blog/ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza" element={<Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage openCalendly={openCalendly} />} />
+        <Route path="/blog/automatizacion-paid-media-proximos-24-meses" element={<AutomatizacionPaidMediaProximos24MesesPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

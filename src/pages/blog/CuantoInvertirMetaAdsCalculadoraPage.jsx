@@ -213,7 +213,7 @@ const CuantoInvertirMetaAdsCalculadoraPage = ({ openCalendly }) => (
         {
           num: "2",
           titulo: "MOFU — 15-20% del presupuesto",
-          desc: "Visitantes 30-90 días, AddToCart sin compra \u003e7 días, vídeos vi\u003etos >50%. Aquí van creatividades de prueba social, comparativa y FAQ que cierran objeciones.",
+          desc: "Visitantes 30-90 días, AddToCart sin compra \u003e7 días, vídeos vi\u003etos 50%. Aquí van creatividades de prueba social, comparativa y FAQ que cierran objeciones.",
         },
         {
           num: "3",

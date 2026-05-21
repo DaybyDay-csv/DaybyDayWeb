@@ -225,7 +225,7 @@ const MarketingMixModelingEcommerceD2cPage = ({ openCalendly }) => (
         "Holdout temporal: entrenar el modelo con los primeros 12-18 meses, predecir los 3-6 siguientes y medir el error MAPE (Mean Absolute Percentage Error). Razonable: 5-15%. Por encima del 20% el modelo no es fiable para decisiones.",
         "Geo-experiments controlados: apagar un canal (típicamente Meta o paid search) en una geo secundaria 2-4 semanas, medir el lift real en ventas vs el lift que predijo el MMM. Si los números no cuadran dentro de un margen, el modelo está mal calibrado.",
         "Cross-check con incremental tests plataforma: Meta Conversion Lift, Google Geo Experiments, TikTok Brand Lift. Comparar el ROI incremental MMM contra el ROI incremental plataforma — deberían apuntar a la misma dirección, aunque con magnitud diferente.",
-        "Estabilidad temporal de coeficientes: re-entrenar el modelo cada mes y observar si el coeficiente de cada canal se mueve drásticamente. Variaciones >30% mes a mes sin causa de negocio = modelo inestable, ajustar regularización o revisar variables exógenas.",
+        "Estabilidad temporal de coeficientes: re-entrenar el modelo cada mes y observar si el coeficiente de cada canal se mueve drásticamente. Variaciones 30% mes a mes sin causa de negocio = modelo inestable, ajustar regularización o revisar variables exógenas.",
         "Sanity check de saturación: las curvas de saturación deben tener forma de S (saturación creciente decreciente). Si un canal aparece con saturación lineal infinita o coeficiente negativo, es señal de overfitting o variable mal especificada.",
       ].map((item) => (
         <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
