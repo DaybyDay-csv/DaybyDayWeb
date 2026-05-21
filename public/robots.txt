@@ -24,4 +24,8 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# Bing
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://www.daybydayconsulting.com/sitemap.xml

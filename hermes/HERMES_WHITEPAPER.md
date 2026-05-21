@@ -2,35 +2,20 @@
 
 > **Reader contract:** This document is the single source of truth for MiniMax 2.7 running in YOLO mode to bring the DayByDay automated SEO blog pipeline to production. Every step has cause, why, solution, action, verify, rollback. Execute phases in order. Do not skip. State lives on disk under `/root/projects/DaybyDay/hermes/state/`.
 
-**Owner:** DayByDay Consulting (Pablo Santirsó + Jorge González)
+**Owner:** DayByDay Consulting (Pablo Santirso + Jorge González)
 **Repo:** https://github.com/DaybyDay-csv/DaybyDayWeb.git
 **Working dir:** `/root/projects/DaybyDay/`
 **Execution model:** MiniMax 2.7 (cheap per-token) for LLM phases, pure shell/Python for deterministic phases.
-**North star KPI:** #1 organic Google for "agencia paid media España", "media buying D2C", "Meta Ads D2C ecommerce". Concrete proxy: 3-5 high-quality posts/week published, prerendered, indexed, no failed deploys.
+**North star KPI:** #1 organic Google for "growth partner" "business growth" "agencia paid media España", "media buying D2C", "Meta Ads D2C ecommerce". Concrete proxy: 10-20 high-quality posts/week published, prerendered, indexed, no failed deploys.
 
 ---
 
 ## 0. EXECUTION CONTRACT FOR MINIMAX 2.7
 
-> **Status note (2026-05-20):** All pre-bake work from sections 1-7 is **DONE on disk**. Skim sections 0-2 + 8, then jump to "POST-PREBAKE NEXT STEPS" at the bottom. Most artifacts already exist.
+MiniMax operates this system in two modes:
 
-MiniMax operates this system in **two paths** depending on which API keys are present in `/root/.env`:
-
-### PATH A (default, ACTIVE — no extra keys required)
-MiniMax-running-in-YOLO IS the LLM. When a phase script needs reasoning (Strategist, Researcher, Writer, Improver) it calls `/root/scripts/minimax_call.sh` which returns **exit code 64** and writes a Path-A sentinel JSON to the output file. MiniMax must then:
-1. Read the system prompt file (`hermes/prompts/<phase>.md`)
-2. Read the user prompt file (the sentinel points to it)
-3. Produce the JSON or JSX output **directly in its own session**
-4. Write it to the output path the sentinel specifies
-5. Re-invoke `hermes/scripts/orchestrator.sh` to continue the state machine
-
-Path A is cheap because MiniMax-as-orchestrator already has the conversation context loaded — no extra API call needed.
-
-### PATH B (unlocks when keys present)
-Set `MINIMAX_API_KEY` and (optionally) `BRAVE_API_KEY` in `/root/.env`. Then `minimax_call.sh` curls the MiniMax API directly and `brave_search.sh` returns real search results. State machine works identically — phase scripts don't care which path. Path B enables headless cron operation without MiniMax-as-orchestrator in the loop.
-
-**Other modes considered, decision:**
-- Sub-agent LLM calls via raw API → only Path B; not available until keys added.
+1. **Direct execution** (YOLO): MiniMax reads this whitepaper, then runs the phases by shelling out (`bash`, `python3`, `git`, `npm`, `vercel`, `curl`). It writes files, commits, deploys.
+2. **Sub-agent LLM calls**: When a phase needs LLM reasoning (Strategist, Researcher, Writer, Improver), MiniMax calls its own API via `curl` using the wrapper at `/root/scripts/minimax_call.sh` (Phase 1 builds this).
 
 Every phase MUST:
 - Be **idempotent** (re-running same phase with same state = no-op or same result).
@@ -1464,103 +1449,4 @@ export GITHUB_TOKEN="..."         # for gh CLI used by Improver
 
 ---
 
----
-
-## 10. POST-PREBAKE NEXT STEPS (2026-05-20 status)
-
-Pre-bake by Claude on 2026-05-20 completed the following deterministic work. **MiniMax should skip these on first run**, they are already done:
-
-### Already on disk (do NOT recreate)
-
-```
-hermes/
-├── HERMES_WHITEPAPER.md          ← this file
-├── SCHEMAS.md                    ← READ THIS SECOND, contains data shapes
-├── branding.json                 ← Writer-only config
-├── checklist.json                ← Quality gates
-├── examples-pool.json            ← 8 anonymized client snippets
-├── template.jsx                  ← Golden blog skeleton with {{PLACEHOLDER}} tokens
-├── prompts/
-│   ├── strategist.md             ← ≤40 lines, slim
-│   ├── researcher.md             ← ≤40 lines
-│   ├── writer.md                 ← ≤40 lines
-│   ├── publisher.md              ← doc-only, no LLM
-│   └── improver.md               ← weekly review
-├── scripts/
-│   ├── orchestrator.sh           ← state machine, flock, exit-code disciplined
-│   ├── strategist.sh             ← builds input, calls LLM, validates JSON
-│   ├── researcher.sh             ← Brave (optional) + LLM
-│   ├── writer.sh                 ← LLM + jsx-safe-check
-│   ├── publisher.sh              ← pure shell, no LLM
-│   ├── analyst.sh                ← pure Python, no LLM
-│   ├── preflight.sh              ← validates env before any run
-│   ├── dry-run.sh                ← fixture-based pipeline test, auto-revert
-│   ├── jsx-safe-check.py         ← rejects raw <,>, conflict markers, TODOs, placeholders
-│   └── update-routes.js          ← deterministic 5-file mutation
-├── state/                        ← gitignored, written at runtime
-└── fixtures/
-    ├── plan-sample.json
-    ├── research-sample.json
-    └── writer-output-sample.jsx
-```
-
-Plus, applied to the repo:
-- `src/App.jsx` — has `HERMES_IMPORTS_END` and `HERMES_ROUTES_END` markers
-- `src/pages/BlogPage.jsx` — has `HERMES_POSTS_START` marker
-- `.gitignore` — `*.bak`, `*.hermes-bak`, `hermes/state/*` (except .gitkeep), worktree node_modules
-- `.git/hooks/pre-commit` — rejects conflict markers, secret patterns, `.env`/`.bak` files, runs jsx-safe-check on staged blog JSX
-
-Plus, system-level:
-- `/root/scripts/minimax_call.sh` — Path A/B selector
-- `/root/scripts/brave_search.sh` — graceful no-key fallback
-- `/root/.claude/scheduled-tasks/system-improver/SKILL.md` — stub pointing to Hermes Improver
-- Crontab — old `run-daily-blog.sh` and `run-blog-pivot-retry.sh` lines commented with `# HERMES_V2_DISABLED:` prefix. Backup at `/root/crontab.backup.<timestamp>`.
-
-### Smoke-test results (2026-05-20)
-- `hermes/scripts/preflight.sh` → exit 0 (37 pass, 3 expected warnings for Path B keys + dirty worktree from new files)
-- `npx vite build` in repo → exit 0, dist/ built successfully — markers do NOT break parser
-- Two pre-existing raw `>` patterns surfaced in `Ga4MetaAdsEventosCustomD2cPage.jsx` (esbuild warning, non-fatal). `jsx-safe-check.py` will catch this pattern in new Writer output.
-
-### What MiniMax actually needs to do on first launch
-
-1. **Read these three files first, in this order:**
-   - `hermes/HERMES_WHITEPAPER.md` (you are reading it)
-   - `hermes/SCHEMAS.md`
-   - `hermes/prompts/strategist.md` + `researcher.md` + `writer.md`
-
-2. **Run preflight:**
-   ```bash
-   /root/projects/DaybyDay/hermes/scripts/preflight.sh
-   ```
-   Must exit 0. Resolve any FAIL before proceeding.
-
-3. **Run dry-run (no tokens spent):**
-   ```bash
-   /root/projects/DaybyDay/hermes/scripts/dry-run.sh
-   ```
-   Must exit 0. Auto-reverts worktree on completion.
-
-4. **First real run (Path A):**
-   ```bash
-   /root/projects/DaybyDay/hermes/scripts/orchestrator.sh
-   ```
-   Will hit Strategist → exit 64 (Path A sentinel). MiniMax then reads `hermes/state/plan-<DATE>.json.raw` sentinel, reads `hermes/prompts/strategist.md`, reads the user-prompt file the sentinel points to, generates the plan JSON, writes it to `hermes/state/plan-<DATE>.json`, then re-runs orchestrator. Repeat for Researcher and Writer phases. Publisher and Analyst are pure shell, no MiniMax intervention.
-
-5. **Before first git push, REVIEW with human.** Do NOT set `HERMES_AUTOPUSH=1` until first commit is reviewed and approved.
-
-6. **After first successful run**: confirm Vercel preview deploys correctly on `claude/epic-pasteur` branch. Confirm new post URL renders and lighthouse SEO ≥95. Then user opens PR to `main`.
-
-### Deferred (Phase 6/7 of original whitepaper)
-
-- Postgres schema upgrade for `agent_runs` extended columns
-- GitHub Action `promote-hermes.yml`
-- Cron entries for hermes orchestrator (manual run only until first 3 posts succeed)
-- Token budget gauge cron
-- Improver weekly cron
-- VERCEL_TOKEN rotation (user said "rotate later")
-
-These are documented above. When ready, MiniMax can implement them as Phase 6/7 of the original whitepaper steps.
-
----
-
-**End of whitepaper. MiniMax 2.7: begin execution at Section 10 step 1.**
+**End of whitepaper. MiniMax 2.7: begin execution at Phase 1.1.**
