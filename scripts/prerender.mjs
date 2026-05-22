@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { createServer } from "node:http";
+import getPort from "get-port";
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { extname, join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -9,7 +10,10 @@ import chromium from "@sparticuz/chromium";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const DIST = join(ROOT, "dist");
-const PORT = 4173;
+
+// Get dynamic port to avoid collisions from previous runs
+const PORT = await getPort({port: [4173, 4174, 4175, 4176, 4177]});
+console.log(`[prerender] Using port ${PORT}`);
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -41,8 +45,8 @@ async function tryFile(p) {
 
 function startServer() {
   const server = createServer(async (req, res) => {
+    const urlPath = decodeURIComponent(req.url.split("?")[0]);
     try {
-      const urlPath = decodeURIComponent(req.url.split("?")[0]);
       const candidate = join(DIST, urlPath);
       const file = await tryFile(candidate);
       if (file) {
@@ -50,11 +54,17 @@ function startServer() {
         res.end(await readFile(file));
         return;
       }
+      // SPA fallback
+      const indexPath = join(DIST, "index.html");
+      const indexHtml = await readFile(indexPath);
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-      res.end(await readFile(join(DIST, "index.html")));
-    } catch {
-      res.writeHead(404);
-      res.end("not found");
+      res.end(indexHtml);
+    } catch (e) {
+      // Only send 404 if we haven't sent headers yet
+      if (!res.writableEnded) {
+        res.writeHead(404);
+        res.end("not found");
+      }
     }
   });
   return new Promise((resolve) => server.listen(PORT, () => resolve(server)));
