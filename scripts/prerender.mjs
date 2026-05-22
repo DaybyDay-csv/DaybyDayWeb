@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import { createServer } from "node:http";
-import getPort from "get-port";
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { extname, join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -10,10 +9,7 @@ import chromium from "@sparticuz/chromium";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const DIST = join(ROOT, "dist");
-
-// Get dynamic port to avoid collisions from previous runs
-const PORT = await getPort({port: [4173, 4174, 4175, 4176, 4177]});
-console.log(`[prerender] Using port ${PORT}`);
+const PORT = 4173;
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
