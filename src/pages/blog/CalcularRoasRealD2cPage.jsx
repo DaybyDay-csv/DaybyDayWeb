@@ -16,9 +16,7 @@ const faqs = [
   }
 ];
 
-const relatedPosts = relatedPostsData.filter(post => 
-  ["kpis-paid-media-cfo-ceo-d2c", "meta-ads-creative-testing-2026-d2c", "retargeting-meta-ads-ecommerce-2026"].includes(post.slug)
-);
+const relatedPosts = relatedPostsData["calcular-roas-real-d2c"] || [];
 
 export const metadata = {
   title: "7 Tácticas para Calcular el ROAS Real de tu eCommerce D2C",

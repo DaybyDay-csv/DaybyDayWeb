@@ -302,5 +302,22 @@
       "title": "iOS 14+ atribución Meta Ads para D2C en 2026",
       "description": "Recupera señal de conversión en iOS 14+ con pixel híbrido y CAPI."
     }
+  ],
+  "calcular-roas-real-d2c": [
+    {
+      "slug": "kpis-paid-media-cfo-ceo-d2c",
+      "title": "KPIs de paid media para CFO/CEO: cómo presentar resultados sin tecnicismos (2026)",
+      "description": "Cómo traducir MER, CAC, LTV y ROAS a euros y porcentajes que entienda cualquier CFO, con plantillas de reporting."
+    },
+    {
+      "slug": "meta-ads-creative-testing-2026-d2c",
+      "title": "Meta Ads Creative Testing 2026: cómo testear 20 creatividades sin perder dinero",
+      "description": "Sistema de testing de creatividades Meta Ads para ecommerce D2C: valida 20 variantes con presupuesto controlado y decide cuál escala."
+    },
+    {
+      "slug": "retargeting-meta-ads-ecommerce-2026",
+      "title": "Retargeting en Meta Ads para eCommerce: guía completa 2026",
+      "description": "Escalera de audiencias, ventanas por ticket, exclusiones, presupuesto vs prospecting y secuenciado creativo en retargeting."
+    }
   ]
 }
