@@ -22,7 +22,7 @@
       "destination": "/index.html"
     },
     {
-      "source": "/((?!blog/|assets/|images/|\\.).*)",
+      "source": "/((?!assets/|images/|\\.).*)",
       "destination": "/index.html"
     }
   ]
