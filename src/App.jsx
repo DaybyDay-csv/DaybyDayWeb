@@ -115,7 +115,7 @@ import AutomatizacionPaidMediaProximos24MesesPage from "./pages/blog/Automatizac
 import NotFoundPage from "./pages/NotFoundPage";
 import CalcularRoasRealD2cPage from "./pages/blog/CalcularRoasRealD2cPage";
 
-import CuandoEscalarCampanasMetaAds from "./pages/blog/CuandoEscalarCampanasMetaAds";
+import CuandoEscalarCampanasMetaAds from "./pages/blog/CuandoEscalarCampanasMetaAdsPage";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
