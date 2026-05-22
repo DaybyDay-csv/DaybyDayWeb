@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T16:30:00",
+  "last_updated": "2026-05-22T20:30:42.500712+00:00",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -115,7 +115,8 @@
     "kpis-paid-media-cfo-ceo-d2c",
     "whatsapp-meta-ads-funnel-bofu-d2c",
     "smart-bidding-google-ads-d2c",
-    "customer-journey-d2c-primer-impacto-repeticion"
+    "customer-journey-d2c-primer-impacto-repeticion",
+    "cuando-escalar-campanas-meta-ads"
   ],
   "phases": [
     {

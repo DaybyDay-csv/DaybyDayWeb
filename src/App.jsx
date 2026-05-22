@@ -115,6 +115,7 @@ import AutomatizacionPaidMediaProximos24MesesPage from "./pages/blog/Automatizac
 import NotFoundPage from "./pages/NotFoundPage";
 import CalcularRoasRealD2cPage from "./pages/blog/CalcularRoasRealD2cPage";
 
+import CuandoEscalarCampanasMetaAds from "./pages/blog/CuandoEscalarCampanasMetaAds";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
@@ -357,7 +358,8 @@ const App = () => {
         <Route path="/blog/ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza" element={<Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage openCalendly={openCalendly} />} />
         <Route path="/blog/automatizacion-paid-media-proximos-24-meses" element={<AutomatizacionPaidMediaProximos24MesesPage openCalendly={openCalendly} />} />
         <Route path="/blog/calcular-roas-real-d2c" element={<CalcularRoasRealD2cPage openCalendly={openCalendly} />} />
-        <Route path="*" element={<NotFoundPage />} />
+
+        <Route path="/blog/cuando-escalar-campanas-meta-ads" element={<CuandoEscalarCampanasMetaAds openCalendly={openCalendly} />} />        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
       <Analytics />
