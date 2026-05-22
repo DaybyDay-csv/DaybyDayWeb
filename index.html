@@ -86,9 +86,22 @@
 
     <!-- Calendly widget styles -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
+<script>
+  // DEBUG: Si esto aparece, JS se ejecuta
+  console.log("DBSD: JS loaded", Date.now());
+  window.addEventListener("load", () => {
+    console.log("DBSD: Page loaded");
+    const root = document.getElementById("root");
+    if (root && root.children.length > 0) {
+      console.log("DBSD: Root has children:", root.children.length);
+    } else {
+      console.error("DBSD: Root is EMPTY - React not rendering!");
+    }
+  });
+</script>
+</head>
+<body>
+  <div id="root">Loading...</div>
     <script type="module" src="/src/main.jsx"></script>
     <!-- Calendly popup widget loader -->
     <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
