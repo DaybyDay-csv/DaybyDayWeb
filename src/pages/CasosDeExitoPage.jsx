@@ -177,6 +177,7 @@ const casos = [
   },
   {
     client: "Garett España",
+    clientUrl: "https://garettshop.es/",
     category: "Meta Ads · eCommerce B2C",
     img: "/images/garett.png",
     highlight: "CPA 4,8€ · 14.936 clicks",
@@ -287,7 +288,20 @@ const CasosDeExitoPage = ({ openCalendly }) => (
               <div>
                 <span className="text-[#de0015] text-xs font-bold uppercase tracking-wider">{c.category}</span>
                 <h2 className="text-xl font-black mt-1">{c.highlight}</h2>
-                <p className="text-white/60 text-sm mt-1">{c.client}</p>
+                <p className="text-white/60 text-sm mt-1">
+                  {c.clientUrl ? (
+                    <a
+                      href={c.clientUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white hover:underline transition-colors"
+                    >
+                      {c.client}
+                    </a>
+                  ) : (
+                    c.client
+                  )}
+                </p>
               </div>
               <span className="bg-[#de0015]/10 border border-[#de0015]/20 text-[#de0015] text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
                 Caso completo
@@ -336,7 +350,20 @@ const CasosDeExitoPage = ({ openCalendly }) => (
               <div className="mb-3">
                 <span className="text-[#de0015] text-xs font-bold uppercase tracking-wider">{c.category}</span>
                 <h2 className="text-base font-black mt-1">{c.highlight}</h2>
-                <p className="text-white/40 text-xs mt-0.5">{c.client}</p>
+                <p className="text-white/40 text-xs mt-0.5">
+                {c.clientUrl ? (
+                  <a
+                    href={c.clientUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white hover:underline transition-colors"
+                  >
+                    {c.client}
+                  </a>
+                ) : (
+                  c.client
+                )}
+              </p>
               </div>
               <p className="text-white/55 text-sm leading-relaxed mb-4 flex-1">{c.summary}</p>
               {/* Mini metrics */}

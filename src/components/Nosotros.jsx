@@ -74,6 +74,7 @@ const testimonials = [
     name: "Garett España",
     tagline: "Startup B2B en crecimiento",
     img: "/images/garett.png",
+    url: "https://garettshop.es/",
     variant: "a",
     bg: "from-[#1a1a1a] via-[#2a2a2a] to-[#000000]",
   },
@@ -144,13 +145,38 @@ const evercreateMetrics = [
 ];
 
 const logos = [
-  { src: "/images/garett.png", alt: "Garett" },
+  { src: "/images/garett.png", alt: "Garett", url: "https://garettshop.es/" },
   { src: "/images/cartri.png", alt: "Cartri" },
   { src: "/images/araslife.png", alt: "Aras Life Plus" },
   { src: "/images/evercreate.png", alt: "Evercreate" },
-  { src: "/images/ufv.png", alt: "UFV" },
-  { src: "/images/kueba.png", alt: "Kueba" },
+  {
+    src: "/images/ufv.png",
+    alt: "UFV",
+    url: "https://www.ufv.es/estudiar-en-ufv/masteres-y-postgrado/",
+  },
+  {
+    src: "/images/kueba.png",
+    alt: "Kueba",
+    url: "https://www.kuebakitchen.com/",
+  },
 ];
+
+const SlotLogo = ({ logo }) => {
+  const img = (
+    <img src={logo.src} alt={logo.alt} className="slot-logo" />
+  );
+  if (!logo.url) return img;
+  return (
+    <a
+      href={logo.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Visitar ${logo.alt}`}
+    >
+      {img}
+    </a>
+  );
+};
 
 const Nosotros = () => {
   const featRef = useRef(null);
@@ -653,7 +679,20 @@ const Nosotros = () => {
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white p-1 object-contain"
                     />
                     <div className="text-xs md:text-sm opacity-90">
-                      <div className="font-bold">{t.name}</div>
+                      <div className="font-bold">
+                        {t.url ? (
+                          <a
+                            href={t.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline"
+                          >
+                            {t.name}
+                          </a>
+                        ) : (
+                          t.name
+                        )}
+                      </div>
                       <div className="text-white/70 text-[11px] md:text-[12px] italic mt-0.5">
                         {t.tagline}
                       </div>
@@ -759,11 +798,7 @@ const Nosotros = () => {
               <div
                 className={`slot-wrapper ${animating[0] ? "slot-animating" : ""}`}
               >
-                <img
-                  src={logos[slot1].src}
-                  alt={logos[slot1].alt}
-                  className="slot-logo"
-                />
+                <SlotLogo logo={logos[slot1]} />
               </div>
             </div>
 
@@ -772,11 +807,7 @@ const Nosotros = () => {
               <div
                 className={`slot-wrapper ${animating[1] ? "slot-animating" : ""}`}
               >
-                <img
-                  src={logos[slot2].src}
-                  alt={logos[slot2].alt}
-                  className="slot-logo"
-                />
+                <SlotLogo logo={logos[slot2]} />
               </div>
             </div>
 
@@ -785,11 +816,7 @@ const Nosotros = () => {
               <div
                 className={`slot-wrapper ${animating[2] ? "slot-animating" : ""}`}
               >
-                <img
-                  src={logos[slot3].src}
-                  alt={logos[slot3].alt}
-                  className="slot-logo"
-                />
+                <SlotLogo logo={logos[slot3]} />
               </div>
             </div>
           </div>

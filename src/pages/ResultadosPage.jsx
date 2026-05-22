@@ -110,6 +110,7 @@ const ResultadosPage = ({ openCalendly }) => (
               type: "eCommerce B2C",
               highlight: "CPA 4,8€ · 14.936 clicks · 661 inicios de pago",
               route: "/servicios/meta-ads",
+              web: "https://garettshop.es/",
             },
             {
               name: "Evercreate × Universidad",
@@ -133,14 +134,29 @@ const ResultadosPage = ({ openCalendly }) => (
               route: "/servicios/ecommerce",
             },
           ].map((c, i) => (
-            <Link key={i} to={c.route} className="bg-[#1f1a1a] border border-white/8 hover:border-white/20 rounded-2xl p-5 flex items-start gap-4 transition-colors group">
-              <img src={c.img} alt={c.name} className="w-10 h-10 rounded-full bg-white p-1 object-contain flex-shrink-0 mt-0.5" />
-              <div>
-                <div className="font-bold text-sm group-hover:text-white transition-colors">{c.name}</div>
-                <div className="text-white/40 text-xs mt-0.5">{c.type}</div>
-                <div className="text-white/60 text-xs mt-2">{c.highlight}</div>
-              </div>
-            </Link>
+            <div key={i} className="bg-[#1f1a1a] border border-white/8 hover:border-white/20 rounded-2xl p-5 transition-colors group">
+              <Link to={c.route} className="flex items-start gap-4">
+                <img src={c.img} alt={c.name} className="w-10 h-10 rounded-full bg-white p-1 object-contain flex-shrink-0 mt-0.5" />
+                <div>
+                  <div className="font-bold text-sm group-hover:text-white transition-colors">{c.name}</div>
+                  <div className="text-white/40 text-xs mt-0.5">{c.type}</div>
+                  <div className="text-white/60 text-xs mt-2">{c.highlight}</div>
+                </div>
+              </Link>
+              {c.web && (
+                <a
+                  href={c.web}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-white/50 hover:text-white text-xs mt-3 ml-14 transition-colors"
+                >
+                  Visitar web
+                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              )}
+            </div>
           ))}
         </div>
 

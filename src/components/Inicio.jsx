@@ -877,6 +877,7 @@ const Inicio = () => {
               {
                 name: "Garett España",
                 tag: "eCommerce D2C",
+                url: "https://garettshop.es/",
               },
               {
                 name: "Evercreate",
@@ -890,19 +891,35 @@ const Inicio = () => {
                 name: "Cartri",
                 tag: "eCommerce D2C",
               },
-            ].map(({ name, tag }) => (
-              <div
-                key={name}
-                className="flex flex-col items-center justify-center bg-[#1a1616] border border-white/8 rounded-xl px-4 py-6 gap-2 hover:border-white/16 transition-colors duration-300"
-              >
-                <span className="text-white font-bold text-sm text-center leading-tight">
-                  {name}
-                </span>
-                <span className="text-white/30 text-[10px] uppercase tracking-wider font-medium">
-                  {tag}
-                </span>
-              </div>
-            ))}
+            ].map(({ name, tag, url }) => {
+              const inner = (
+                <>
+                  <span className="text-white font-bold text-sm text-center leading-tight">
+                    {name}
+                  </span>
+                  <span className="text-white/30 text-[10px] uppercase tracking-wider font-medium">
+                    {tag}
+                  </span>
+                </>
+              );
+              const className =
+                "flex flex-col items-center justify-center bg-[#1a1616] border border-white/8 rounded-xl px-4 py-6 gap-2 hover:border-white/16 transition-colors duration-300";
+              return url ? (
+                <a
+                  key={name}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
+                  {inner}
+                </a>
+              ) : (
+                <div key={name} className={className}>
+                  {inner}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
