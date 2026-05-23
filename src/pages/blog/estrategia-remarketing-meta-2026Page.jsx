@@ -11,10 +11,12 @@ const RemarketingMetaAdsPage = ({ openCalendly }) => (
   <BlogPostLayout
     title="Estrategia Completa de Remarketing con Meta Ads en 2025"
     description="Aprende a crear una estrategia de remarketing efectiva con Meta Ads. Guía completa sobre segmentación, configuración, optimización y mejores prácticas para conversiones."
-    path="/blog/estrategia-remarketing-meta-2026"
-    publishDate="2025-12-19"
-    author="Pablo Santirsó"
+    slug="estrategia-remarketing-meta-2026"
+    datePublished="2026-05-23"
+    readingTime="8 min"
+    category="Meta Ads"
     faqs={faqs}
+    openCalendly={openCalendly}
   >
     <section>
       <h2>Introducción</h2>
