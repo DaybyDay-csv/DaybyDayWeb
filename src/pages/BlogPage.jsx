@@ -3,7 +3,15 @@ import SEOHead from "../components/SEOHead";
 import Footer from "../components/Footer";
 
 const posts = [
-        // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
+        // HERMES_POSTS_START
+  {
+    slug: "",
+    title: "",
+    excerpt: "",
+    category: "Meta Ads",
+    date: "24 May 2026",
+    readingTime: "10 min",
+},
   {
     slug: "optimizacion-conversion-ecommerce-2026",
     title: "Optimización de Conversión Ecommerce: Guía Completa 2026",

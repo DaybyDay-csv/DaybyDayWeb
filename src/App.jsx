@@ -115,6 +115,7 @@ import AutomatizacionPaidMediaProximos24MesesPage from "./pages/blog/Automatizac
 import NotFoundPage from "./pages/NotFoundPage";
 import CalcularRoasRealD2cPage from "./pages/blog/CalcularRoasRealD2cPage";
 import BudgetMetaAdsPage from "./pages/blog/BudgetMetaAdsPage";
+import FacebookAdsVsInstagramAdsEcommPage from "./pages/blog/FacebookAdsVsInstagramAdsEcommPage";
 import TestCampaignsMetaAdsPage from "./pages/blog/TestCampaignsMetaAdsPage";
 import CuandoEscalarCampanasMetaAds from "./pages/blog/CuandoEscalarCampanasMetaAdsPage";
 import EstrategiaMetaAds2026Page from "./pages/blog/estrategia-meta-ads-2026Page";
@@ -371,6 +372,7 @@ const App = () => {
         <Route path="/blog/optimizacion-conversion-ecommerce-2026" element={<OptimizacionConversionEcommercePage openCalendly={openCalendly} />} />
         <Route path="/blog/budget-meta-ads-2026" element={<BudgetMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/test-campaigns-meta-ads" element={<TestCampaignsMetaAdsPage openCalendly={openCalendly} />} />
+        <Route path="/blog/facebook-ads-vs-instagram-ads-ecommerce" element={<FacebookAdsVsInstagramAdsEcommPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
