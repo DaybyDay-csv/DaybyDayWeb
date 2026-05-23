@@ -6,8 +6,12 @@
   NODE_VERSION = "22"
 
 [[redirects]]
-  # SPA fallback for paths that don't match files
-  from = "/:path(.*)"
+  # SPA fallback - only for paths without extension
+  from = "/*"
   to = "/index.html"
   status = 200
-  force = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
