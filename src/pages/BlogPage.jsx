@@ -13,6 +13,22 @@ const posts = [
     readingTime: "8 min",
   },
   {
+    slug: "test-campaigns-meta-ads",
+    title: "Cómo Testar Nuevas Campañas en Meta Ads: Sistema de Experimentación 2026",
+    excerpt: "Guía completa para testar campañas de Meta Ads de forma científica. Aprende a diseñar tests, interpretar resultados y escalar lo que funciona.",
+    category: "Meta Ads",
+    date: "24 may 2026",
+    readingTime: "11 min",
+  },
+  {
+    slug: "budget-meta-ads-2026",
+    title: "Cuánto Presupuesto Necesitas para Meta Ads en 2026",
+    excerpt: "Descubre cuánto deberías invertir en Meta Ads según tu sector y objetivos. Incluye calculadora de presupuesto mínimo y estructura de inversión por embudo.",
+    category: "Meta Ads",
+    date: "23 may 2026",
+    readingTime: "9 min",
+  },
+  {
     slug: "estrategia-remarketing-meta-2026",
     title: "Estrategia Completa de Remarketing con Meta Ads en 2025",
     excerpt: "Aprende a crear una estrategia de remarketing efectiva con Meta Ads. Guía completa sobre segmentación, configuración y optimización.",
