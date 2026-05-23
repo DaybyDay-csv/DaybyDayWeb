@@ -116,6 +116,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import CalcularRoasRealD2cPage from "./pages/blog/CalcularRoasRealD2cPage";
 
 import CuandoEscalarCampanasMetaAds from "./pages/blog/CuandoEscalarCampanasMetaAdsPage";
+import EstrategiaMetaAds2026Page from "./pages/blog/estrategia-meta-ads-2026Page";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
@@ -359,7 +360,9 @@ const App = () => {
         <Route path="/blog/automatizacion-paid-media-proximos-24-meses" element={<AutomatizacionPaidMediaProximos24MesesPage openCalendly={openCalendly} />} />
         <Route path="/blog/calcular-roas-real-d2c" element={<CalcularRoasRealD2cPage openCalendly={openCalendly} />} />
 
-        <Route path="/blog/cuando-escalar-campanas-meta-ads" element={<CuandoEscalarCampanasMetaAds openCalendly={openCalendly} />} />        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/blog/cuando-escalar-campanas-meta-ads" element={<CuandoEscalarCampanasMetaAds openCalendly={openCalendly} />} />
+        <Route path="/blog/estrategia-meta-ads-2026" element={<EstrategiaMetaAds2026Page openCalendly={openCalendly} />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
       <Analytics />
