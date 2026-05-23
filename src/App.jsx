@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import NavBar from "./components/NavBar";
 import WhatsAppButton from "./components/WhatsAppButton";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";  // Netlify compatible
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -367,7 +367,7 @@ const App = () => {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
-      <Analytics />
+      {/* <Analytics />  // Netlify */}
     </main>
   );
 };
