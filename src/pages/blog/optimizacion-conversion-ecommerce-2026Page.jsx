@@ -11,10 +11,12 @@ const OptimizacionConversionEcommercePage = ({ openCalendly }) => (
   <BlogPostLayout
     title="Optimización de Conversión Ecommerce: Guía Completa 2026"
     description="Aprende las estrategias más efectivas para aumentar la tasa de conversión de tu ecommerce. Descubre técnicas de CRO, optimizaciones de UX y mejores prácticas para maximizar tus ventas online."
-    path="/blog/optimizacion-conversion-ecommerce-2026"
-    publishDate="2026-01-20"
-    author="Pablo Santirsó"
+    slug="optimizacion-conversion-ecommerce-2026"
+    datePublished="2026-05-23"
+    readingTime="8 min"
+    category="Ecommerce"
     faqs={faqs}
+    openCalendly={openCalendly}
   >
     <section>
       <h2>Introducción: ¿Por qué la optimización de conversión es vital para tu ecommerce?</h2>
