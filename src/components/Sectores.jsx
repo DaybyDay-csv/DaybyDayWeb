@@ -196,7 +196,7 @@ const DesktopSectores = ({ onAgendarClick }) => {
 
   // Aparición con parallax (scrub) + quick wins + hover CTA - MEJORADO
   useEffect(() => {
-    const cards = cardRefs.current.filter(Boolean);
+    const cards = cardRefs.current?.filter(Boolean) || [];
 
     // Limpiar ScrollTriggers existentes
     cards.forEach((card) => {

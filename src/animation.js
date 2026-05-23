@@ -126,7 +126,7 @@ export const sectoresCardsEntranceAnimation = (cardRefs, options = {}) => {
     startOpacity = 0,
   } = options;
 
-  const cards = cardRefs.current.filter(Boolean);
+  const cards = cardRefs.current?.filter(Boolean) || [];
 
   // Set initial state
   gsap.set(cards, {
@@ -168,7 +168,7 @@ export const sectoresCardsScrollAnimation = (cardRefs, options = {}) => {
     initialScale = 0.98,
   } = options;
 
-  const cards = cardRefs.current.filter(Boolean);
+  const cards = cardRefs.current?.filter(Boolean) || [];
   const animations = [];
 
   cards.forEach((card, index) => {
@@ -301,7 +301,7 @@ export const sectoresCardsScrollAnimation = (cardRefs, options = {}) => {
 export const sectoresCardsHoverAnimation = (cardRefs) => {
   if (!cardRefs || !cardRefs.current) return;
 
-  const cards = cardRefs.current.filter(Boolean);
+  const cards = cardRefs.current?.filter(Boolean) || [];
 
   cards.forEach((card) => {
     if (!card) return;
@@ -416,7 +416,7 @@ export const sectoresCardsExitAnimation = (cardRefs, options = {}) => {
     exitOpacity = 0,
   } = options;
 
-  const cards = cardRefs.current.filter(Boolean);
+  const cards = cardRefs.current?.filter(Boolean) || [];
 
   return gsap.to(cards, {
     opacity: exitOpacity,
