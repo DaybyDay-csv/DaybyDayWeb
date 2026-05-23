@@ -1,49 +1,8 @@
-<think>The user is asking me to create a complete blog post in Spanish for DayByDay Consulting, a paid media agency in Spain. The blog should compare Facebook Ads vs Instagram Ads for e-commerce.
-
-Let me carefully review the requirements:
-1. Start with: import React from 'react';
-2. No text before or after the JSX code
-3. No ```jsx or ``` delimiters
-4. Include all necessary components at the beginning:
-   - import { Link } from "react-router-dom";
-   - BlogPostLayout (but there's an issue - I don't see the full path)
-5. BlogPostLayout props: title, description, slug, datePublished, readingTime, category, faqs
-6. Use faqs array (4 items)
-7. Use <Link to="/blog/..."> for internal links
-8. Use <a href="..."> for external authority links
-9. Minimum 1500 real words
-10. Structure: h2 for main sections, h3 for subsections
-11. Each section with substantial content (3-5 paragraphs minimum)
-12. Interlinking to other relevant DayByDay blogs
-13. Natural CTAs (not forced)
-
-The topic list shows various marketing topics, so I should link to relevant ones based on context.
-
-Looking at the structure requested, it seems like they want:
-- Introduction
-- Comparison section (Facebook Ads characteristics)
-- Comparison section (Instagram Ads characteristics)
-- Direct comparison/head-to-head
-- FAQ section
-- CTA
-
-But wait - I need to understand better what this page component should be named and where it's positioned. Looking at the export "export default [NombrePage;", it seems like the page needs a name. Given the topic is "facebook ads vs instagram ads ecommerce", I'll name it something like "FacebookVsInstagramAds".
-
-Wait, there's a problem. I don't know exactly which path they're importing BlogPostLayout from, and I don't know their actual route structure for linking. Let me assume a reasonable structure like "../components/BlogPostLayout" or "../../components/BlogPostLayout".
- 
-I'll carefully check the topic variations again to ensure perfect understanding when creating the page. The variations seem minimal, with different word orders that essentially represent the same core concept around social media advertising strategies.
-
-Considering the context of a paid media agency in Spain, I'll focus on Facebook vs Instagram ads in the e-commerce landscape. I'll strategically plan the blog post to align with local market insights while maintaining a professional tone. The key will be crafting compelling FAQs that demonstrate expertise in social media advertising for Spanish businesses.
-
-I'll develop 3-4 targeted FAQs that address common client challenges, using a natural question format in Spanish that reflects how potential clients might search for solutions. This approach ensures the content feels authentic and directly relevant to their needs.
-
-I'll now draft the complete page, anticipating it will meet the comprehensive length requirement.</think>
-
 import React from 'react';
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
 
-const FacebookVsInstagramAdsPage = () => {
+const FacebookAdsVsInstagramAdsEcommPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -350,4 +309,4 @@ const FacebookVsInstagramAdsPage = () => {
   );
 };
 
-export default FacebookVsInstagramAdsPage;
+export default FacebookAdsVsInstagramAdsEcommPage;
