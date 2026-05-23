@@ -5,6 +5,30 @@ import Footer from "../components/Footer";
 const posts = [
         // HERMES_POSTS_START — Do not remove. hermes/scripts/update-routes.js inserts new post entries below this line.
   {
+    slug: "optimizacion-conversion-ecommerce-2026",
+    title: "Optimización de Conversión Ecommerce: Guía Completa 2026",
+    excerpt: "Aprende las estrategias más efectivas para aumentar la tasa de conversión de tu ecommerce. Descubre técnicas de CRO, optimizaciones de UX y mejores prácticas.",
+    category: "Ecommerce",
+    date: "23 may 2026",
+    readingTime: "8 min",
+  },
+  {
+    slug: "estrategia-remarketing-meta-2026",
+    title: "Estrategia Completa de Remarketing con Meta Ads en 2025",
+    excerpt: "Aprende a crear una estrategia de remarketing efectiva con Meta Ads. Guía completa sobre segmentación, configuración y optimización.",
+    category: "Paid Media",
+    date: "23 may 2026",
+    readingTime: "8 min",
+  },
+  {
+    slug: "mejorar-roas-meta-2026",
+    title: "Cómo Mejorar ROAS en Meta Ads: Guía Completa 2026",
+    excerpt: "Aprende estrategias efectivas y probadas para aumentar tu Return on Ad Spend en Meta Ads.",
+    category: "Paid Media",
+    date: "23 may 2026",
+    readingTime: "8 min",
+  },
+  {
     slug: "ga4-meta-server-side-tracking-shopify-sin-dolores-de-cabeza",
     title: "GA4 Meta Server Side Tracking Shopify Sin Dolores de Cabeza",
     excerpt: "Guía para implementar GA4 y Meta server side tracking en Shopify. Aprende a configurar Conversions API, evitar duplicados y mejorar tu atribución en 2025.",
