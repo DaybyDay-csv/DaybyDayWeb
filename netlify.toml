@@ -5,8 +5,8 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# SPA redirect for all unmatched routes - use 200 for SPA
 [[redirects]]
-  # SPA fallback - only for paths without extension
   from = "/*"
   to = "/index.html"
   status = 200
