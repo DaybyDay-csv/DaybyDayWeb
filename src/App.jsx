@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import NavBar from "./components/NavBar";
 import WhatsAppButton from "./components/WhatsAppButton";
-// import { Analytics } from "@vercel/analytics/react";  // Not needed on Netlify
+import { Analytics } from "@vercel/analytics/react";
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -359,14 +359,10 @@ const App = () => {
         <Route path="/blog/automatizacion-paid-media-proximos-24-meses" element={<AutomatizacionPaidMediaProximos24MesesPage openCalendly={openCalendly} />} />
         <Route path="/blog/calcular-roas-real-d2c" element={<CalcularRoasRealD2cPage openCalendly={openCalendly} />} />
 
-        <Route path="/blog/cuando-escalar-campanas-meta-ads" element={<CuandoEscalarCampanasMetaAds openCalendly={openCalendly} />} />        <Route path="/blog/estrategia remarketing instagram" element={<Estrategia Remarketing InstagramPage openCalendly={openCalendly} />} />
-        <Route path="/blog/remarketing-instagram-2026" element={<Remarketinginstagram2026Page openCalendly={openCalendly} />} />
-        import {GoogleAdsVsMetaAds} from './pages/blog/google-ads-vs-meta-ads';
-        <Route path="/blog/google-ads-vs-meta-ads" element={<GoogleAdsVsMetaAds openCalendly={openCalendly} />} />
-        <Route path="*" />} />
+        <Route path="/blog/cuando-escalar-campanas-meta-ads" element={<CuandoEscalarCampanasMetaAds openCalendly={openCalendly} />} />        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
-      {/* <Analytics />  // Not needed on Netlify */}
+      <Analytics />
     </main>
   );
 };
