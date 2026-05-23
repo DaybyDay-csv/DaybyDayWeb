@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import App from "./App.jsx";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+// Removed: @vercel/speed-insights (not needed on Netlify)
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -13,7 +13,6 @@ createRoot(document.getElementById("root")).render(
       <HelmetProvider>
         <BrowserRouter>
           <App />
-          <SpeedInsights />
         </BrowserRouter>
       </HelmetProvider>
     </ErrorBoundary>
