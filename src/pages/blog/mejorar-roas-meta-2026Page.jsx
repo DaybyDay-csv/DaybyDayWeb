@@ -10,11 +10,13 @@ const faqs = [
 const MejorarROASMetaAdsPage = ({ openCalendly }) => (
   <BlogPostLayout
     title="Cómo Mejorar ROAS en Meta Ads: Guía Completa 2026"
-    description="Aprende estrategias efectivas y probadas para aumentar tu Return on Ad Spend en Meta Ads. Optimiza campañas, mejora targeting y maximiza tu presupuesto-publicitario."
-    path="/blog/mejorar-roas-meta-2026"
-    publishDate="14 de enero de 2026"
-    author="Pablo Santirsó"
+    description="Aprende estrategias efectivas y probadas para aumentar tu Return on Ad Spend en Meta Ads. Optimiza campañas, mejora targeting y maximiza tu presupuesto."
+    slug="mejorar-roas-meta-2026"
+    datePublished="2026-01-14"
+    readingTime="8 min"
+    category="Meta Ads"
     faqs={faqs}
+    openCalendly={openCalendly}
   >
     <section>
       <h2>Introducción</h2>
@@ -74,7 +76,7 @@ const MejorarROASMetaAdsPage = ({ openCalendly }) => (
       <h2>Métricas Clave para Monitorear</h2>
       <p>Más allá del ROAS general, monitorea métricas específicas para identificar áreas de mejora:</p>
       <p><strong>Costo por resultado ( CPA):</strong> Este es tu indicador directo de eficiencia. Compara con tu costo de adquisición máximo acceptable basado en tu margen.</p>
-      <p><strong>Frecuencia:</strong> Una frecuencia alta (>3) indica fatiga y puede estar dañando tu ROAS. Rota creatividades o reduce alcance.</p>
+      <p><strong>Frecuencia:</strong> Una frecuencia alta mayor a 3 indica fatiga y puede estar dañando tu ROAS. Rota creatividades o reduce alcance.</p>
       <p><strong>Relevance Score:</strong> Aunque Meta lo ha disminuido en importancia, aún gives una indicación de cómo tu audiencia responde a tus creatividades.</p>
       <p><strong>Tasa de conversión:</strong> Mona el sitio web independientemente del Ads. Una baja tasa de conversión indica problemas de landing page, no necesariamente de ads.</p>
     </section>
