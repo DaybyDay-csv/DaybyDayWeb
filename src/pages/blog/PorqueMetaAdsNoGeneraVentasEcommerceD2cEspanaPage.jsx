@@ -17,10 +17,10 @@ const faqs = [
   }
 ];
 
-// CONFIGURABLE: Related posts (slugs from blog)
-const relatedPosts = relatedPostsData.filter(post => 
+// CONFIGURABLE: Related posts (slugs from blog) - safely handle if data is not array
+const relatedPosts = Array.isArray(relatedPostsData) ? relatedPostsData.filter(post => 
   ["como-mejorar-roas-meta-ads", "estado-paid-media-d2c-espana-2026", "por-que-anuncios-meta-no-convierten"].includes(post.slug)
-);
+) : [];
 
 // CONFIGURABLE: Metadata
 export const metadata = {
