@@ -6,6 +6,8 @@
   NODE_VERSION = "22"
 
 [[redirects]]
-  from = "/*"
+  # SPA fallback for paths that don't match files
+  from = "/:path(.*)"
   to = "/index.html"
   status = 200
+  force = false
