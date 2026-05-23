@@ -114,12 +114,11 @@ import Ga4MetaServerSideTrackingShopifySinDoloresDeCabezaPage from "./pages/blog
 import AutomatizacionPaidMediaProximos24MesesPage from "./pages/blog/AutomatizacionPaidMediaProximos24MesesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import CalcularRoasRealD2cPage from "./pages/blog/CalcularRoasRealD2cPage";
-
+import EstructuraMetaAds from "./pages/blog/EstructuraMetaAds";
 import CuandoEscalarCampanasMetaAds from "./pages/blog/CuandoEscalarCampanasMetaAdsPage";
 import EstrategiaMetaAds2026Page from "./pages/blog/estrategia-meta-ads-2026Page";
 import MejorarROASMetaAdsPage from "./pages/blog/mejorar-roas-meta-2026Page";
 import RemarketingMetaAdsPage from "./pages/blog/estrategia-remarketing-meta-2026Page";
-import NuevoBlog from "./pages/blog/Estrategiagoogleadsecommerce2026Page";
 import OptimizacionConversionEcommercePage from "./pages/blog/optimizacion-conversion-ecommerce-2026Page";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -367,9 +366,9 @@ const App = () => {
         <Route path="/blog/cuando-escalar-campanas-meta-ads" element={<CuandoEscalarCampanasMetaAds openCalendly={openCalendly} />} />
         <Route path="/blog/estrategia-meta-ads-2026" element={<EstrategiaMetaAds2026Page openCalendly={openCalendly} />} />
         <Route path="/blog/mejorar-roas-meta-2026" element={<MejorarROASMetaAdsPage openCalendly={openCalendly} />} />
-        <Route path="/blog/estrategia-google-ads-ecommerce-2026" element={<NuevoBlog openCalendly={{openCalendly}} />} />
         <Route path="/blog/estrategia-remarketing-meta-2026" element={<RemarketingMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/optimizacion-conversion-ecommerce-2026" element={<OptimizacionConversionEcommercePage openCalendly={openCalendly} />} />
+        <Route path="/blog/estructura-campaigns-meta-ads" element={<EstructuraMetaAds openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
