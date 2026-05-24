@@ -5,12 +5,12 @@ import Footer from "../components/Footer";
 const posts = [
         // HERMES_POSTS_START
   {
-    slug: "meta-ads-creative-strategy-2026-framework",
-    title: "",
-    excerpt: "",
+    slug: "meta-ads-creative-strategy-2026",
+    title: "Estrategia Creativa de Meta Ads 2026: Guía Completa para D2C",
+    excerpt: "Framework completo para crear creatividades de Meta Ads que convierten. Hooks, formatos, test A/B y escalado.",
     category: "Meta Ads",
     date: "24 May 2026",
-    readingTime: "12 min",
+    readingTime: "11 min",
   },
 
   {
