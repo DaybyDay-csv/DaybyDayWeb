@@ -5,6 +5,14 @@ import Footer from "../components/Footer";
 const posts = [
         // HERMES_POSTS_START
   {
+    slug: "meta-ads-creative-testing-framework-ecommerce",
+    title: "Framework de Testing de Creatives para Meta Ads: Guía Completa",
+    excerpt: "Framework práctico para testear creatividades en Meta Ads. Aprende cuándo merece la pena probar, cuántos variants y cómo evitar errores.",
+    category: "Meta Ads",
+    date: "24 May 2026",
+    readingTime: "12 min",
+  },
+  {
     slug: "meta-ads-creative-strategy-2026",
     title: "Estrategia Creativa de Meta Ads 2026: Guía Completa para D2C",
     excerpt: "Framework completo para crear creatividades de Meta Ads que convierten. Hooks, formatos, test A/B y escalado.",
