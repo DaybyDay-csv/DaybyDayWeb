@@ -374,7 +374,7 @@ const App = () => {
         <Route path="/blog/budget-meta-ads-2026" element={<BudgetMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/test-campaigns-meta-ads" element={<TestCampaignsMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/facebook-ads-vs-instagram-ads-ecommerce" element={<FacebookAdsVsInstagramAdsEcommPage openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-ads-creative-strategy-2026-framework" element={<MetaAdsCreativeStrategy2026Page openCalendly={openCalendly} />} />
+        <Route path="/blog/meta-ads-creative-strategy-2026" element={<MetaAdsCreativeStrategy2026Page openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
