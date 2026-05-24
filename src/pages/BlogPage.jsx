@@ -438,11 +438,11 @@ const posts = [
   },
   {
     slug: "advantage-plus-shopping-cuando-usarlo-no",
-    title: "Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no",
-    excerpt: "Guía práctica de Advantage+ Shopping Campaigns (ASC) para ecommerce D2C: tabla de decisión por volumen de conversiones, ventajas reales vs campañas manuales, límites del formato y protocolo de transición sin perder ROAS.",
+    title: "Advantage+ Shopping en Meta Ads: Guía Completa 2026",
+    excerpt: "Framework honesta para decidir cuándo usar Advantage+ Shopping y cuándo configurar manualmente. Incluye tabla de decisión, configuración paso a paso y casos donde NO deberías usarlo.",
     category: "Meta Ads",
-    date: "7 abr 2026",
-    readingTime: "6 min",
+    date: "24 May 2026",
+    readingTime: "12 min",
   },
   {
     slug: "escalar-campanas-meta-ads-sin-romper-roas",
