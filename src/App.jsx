@@ -13,6 +13,7 @@ import AutomatizacionPage from "./pages/services/AutomatizacionPage";
 import PaidMediaPage from "./pages/services/PaidMediaPage";
 import CaptacionPage from "./pages/services/CaptacionPage";
 import EcommercePage from "./pages/services/EcommercePage";
+import MetaAdsCreativeStrategy2026Page from "./pages/blog/MetaAdsCreativeStrategy2026Page";
 import BlogPage from "./pages/BlogPage";
 import ResultadosPage from "./pages/ResultadosPage";
 import FAQPage from "./pages/FAQPage";
@@ -373,6 +374,7 @@ const App = () => {
         <Route path="/blog/budget-meta-ads-2026" element={<BudgetMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/test-campaigns-meta-ads" element={<TestCampaignsMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/facebook-ads-vs-instagram-ads-ecommerce" element={<FacebookAdsVsInstagramAdsEcommPage openCalendly={openCalendly} />} />
+        <Route path="/blog/meta-ads-creative-strategy-2026-framework" element={<MetaAdsCreativeStrategy2026Page openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
