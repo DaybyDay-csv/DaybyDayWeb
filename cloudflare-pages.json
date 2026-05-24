@@ -1,5 +1,0 @@
-{
-  "routes": [
-    { "pattern": "/*", "serve_single_page_app": true }
-  ]
-}
