@@ -1,29 +1,13 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "daybydayconsulting.com" }],
-      "destination": "https://www.daybydayconsulting.com/:path*",
-      "permanent": true
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/((?!.*\\.).*)",
-      "has": [{ "type": "host", "value": "www.daybydayconsulting.com" }],
-      "destination": "/index.html"
-    },
-    {
-      "source": "/((?!blog/|assets/|images/|\\.).*)",
-      "destination": "/index.html"
     }
   ]
 }
