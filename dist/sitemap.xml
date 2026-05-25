@@ -578,44 +578,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-    <url>
-      <loc>https://www.daybydayconsulting.com/blog/tu-slug-aqui</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-      <url>
-      <loc>https://www.daybydayconsulting.com/blog/migrar-de-campanas-shopping-manuales-a-advantage</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-      <url>
-      <loc>https://www.daybydayconsulting.com/blog/slug</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-      <url>
-      <loc>https://www.daybydayconsulting.com/blog/descripcion</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-      <url>
-      <loc>https://www.daybydayconsulting.com/blog/meta-advantage-shopping</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-      <url>
-      <loc>https://www.daybydayconsulting.com/blog/meta-ads-cbo-campaigns</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-      <url>
-      <loc>https://www.daybydayconsulting.com/blog/facebook-advantage-shopping-campaign-setup</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-      <url>
-      <loc>https://www.daybydayconsulting.com/blog/meta-ads-cbo-vs-abo</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  </urlset>
+</urlset>
