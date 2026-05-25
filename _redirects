@@ -1,9 +1,0 @@
-# Serve static assets directly
-/assets/* /assets/:file 200
-/images/* /images/:file 200
-/favicon.ico /favicon.ico 200
-/*.json /index.html 200
-/*.xml /index.html 200
-
-# SPA fallback for everything else (but NOT /blog/)
-/* /index.html 200
