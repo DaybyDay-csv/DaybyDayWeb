@@ -5,23 +5,6 @@ import Footer from "../components/Footer";
 const posts = [
         // HERMES_POSTS_START
   {
-    slug: "meta-ads-creative-testing-framework-ecommerce",
-    title: "Framework de Testing de Creatives para Meta Ads: Guía Completa",
-    excerpt: "Framework práctico para testear creatividades en Meta Ads. Aprende cuándo merece la pena probar, cuántos variants y cómo evitar errores.",
-    category: "Meta Ads",
-    date: "24 May 2026",
-    readingTime: "12 min",
-  },
-  {
-    slug: "meta-ads-creative-strategy-2026",
-    title: "Estrategia Creativa de Meta Ads 2026: Guía Completa para D2C",
-    excerpt: "Framework completo para crear creatividades de Meta Ads que convierten. Hooks, formatos, test A/B y escalado.",
-    category: "Meta Ads",
-    date: "24 May 2026",
-    readingTime: "11 min",
-  },
-
-  {
     slug: "",
     title: "",
     excerpt: "",
@@ -455,11 +438,11 @@ const posts = [
   },
   {
     slug: "advantage-plus-shopping-cuando-usarlo-no",
-    title: "Advantage+ Shopping en Meta Ads: Guía Completa 2026",
-    excerpt: "Framework honesta para decidir cuándo usar Advantage+ Shopping y cuándo configurar manualmente. Incluye tabla de decisión, configuración paso a paso y casos donde NO deberías usarlo.",
+    title: "Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no",
+    excerpt: "Guía práctica de Advantage+ Shopping Campaigns (ASC) para ecommerce D2C: tabla de decisión por volumen de conversiones, ventajas reales vs campañas manuales, límites del formato y protocolo de transición sin perder ROAS.",
     category: "Meta Ads",
-    date: "24 May 2026",
-    readingTime: "12 min",
+    date: "7 abr 2026",
+    readingTime: "6 min",
   },
   {
     slug: "escalar-campanas-meta-ads-sin-romper-roas",

@@ -13,8 +13,6 @@ import AutomatizacionPage from "./pages/services/AutomatizacionPage";
 import PaidMediaPage from "./pages/services/PaidMediaPage";
 import CaptacionPage from "./pages/services/CaptacionPage";
 import EcommercePage from "./pages/services/EcommercePage";
-import MetaAdsCreativeStrategy2026Page from "./pages/blog/MetaAdsCreativeStrategy2026Page";
-import MetaAdsCreativeTestingFrameworPage from "./pages/blog/MetaAdsCreativeTestingFrameworPage";
 import BlogPage from "./pages/BlogPage";
 import ResultadosPage from "./pages/ResultadosPage";
 import FAQPage from "./pages/FAQPage";
@@ -54,7 +52,7 @@ import BenchmarkROASSectorEspanaPage from "./pages/blog/BenchmarkROASSectorEspan
 import CreativeTestingMetaAdsPage from "./pages/blog/CreativeTestingMetaAdsPage";
 import ComoMejorarROASMetaAdsPage from "./pages/blog/ComoMejorarROASMetaAdsPage";
 import EscalarCampanasMetaAdsSinRomperROASPage from "./pages/blog/EscalarCampanasMetaAdsSinRomperROASPage";
-import AdvantagePlusShoppingMetaAdsPage from "./pages/blog/AdvantagePlusShoppingMetaAdsPage";
+import AdvantagePlusShoppingPage from "./pages/blog/AdvantagePlusShoppingPage";
 import MetricasMetaAdsPage from "./pages/blog/MetricasMetaAdsPage";
 import EscalarEcommerceD2C100K1MPage from "./pages/blog/EscalarEcommerceD2C100K1MPage";
 import PorqueMetaAdsNoGeneraVentasEcommerceD2cEspanaPage from "./pages/blog/PorqueMetaAdsNoGeneraVentasEcommerceD2cEspanaPage";
@@ -124,14 +122,6 @@ import EstrategiaMetaAds2026Page from "./pages/blog/estrategia-meta-ads-2026Page
 import MejorarROASMetaAdsPage from "./pages/blog/mejorar-roas-meta-2026Page";
 import RemarketingMetaAdsPage from "./pages/blog/estrategia-remarketing-meta-2026Page";
 import OptimizacionConversionEcommercePage from "./pages/blog/optimizacion-conversion-ecommerce-2026Page";
-import MetaAdsRoasOptimizationPage from "./pages/blog/MetaAdsRoasOptimizationPage";
-import MetaAdsCboVsAboPage from "./pages/blog/MetaAdsCboVsAboPage";
-import MetaAdsCboCampaignsPage from "./pages/blog/MetaAdsCboCampaignsPage";
-import MetaAdvantageShoppingPage from "./pages/blog/MetaAdvantageShoppingPage";
-import MetaAdvantageShoppingSetupPage from "./pages/blog/MetaAdvantageShoppingSetupPage";
-import MetaAdvantageCampaignSetupPage from "./pages/blog/MetaAdvantageCampaignSetupPage";
-import FacebookAdvantageShoppingCampaPage from "./pages/blog/FacebookAdvantageShoppingCampaPage";
-import MetaAdsRetargetingStrategyPage from "./pages/blog/MetaAdsRetargetingStrategyPage";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
@@ -312,7 +302,7 @@ const App = () => {
         <Route path="/blog/creative-testing-meta-ads" element={<CreativeTestingMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/como-mejorar-roas-meta-ads-7-palancas" element={<ComoMejorarROASMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/escalar-campanas-meta-ads-sin-romper-roas" element={<EscalarCampanasMetaAdsSinRomperROASPage openCalendly={openCalendly} />} />
-        <Route path="/blog/advantage-plus-shopping-cuando-usarlo-no" element={<AdvantagePlusShoppingMetaAdsPage openCalendly={openCalendly} />} />
+        <Route path="/blog/advantage-plus-shopping-cuando-usarlo-no" element={<AdvantagePlusShoppingPage openCalendly={openCalendly} />} />
         <Route path="/blog/metricas-meta-ads-importantes-ecommerce" element={<MetricasMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" element={<EscalarEcommerceD2C100K1MPage openCalendly={openCalendly} />} />
         <Route path="/blog/porque-meta-ads-no-genera-ventas-ecommerce-d2c-espania" element={<PorqueMetaAdsNoGeneraVentasEcommerceD2cEspanaPage openCalendly={openCalendly} />} />
@@ -383,17 +373,6 @@ const App = () => {
         <Route path="/blog/budget-meta-ads-2026" element={<BudgetMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/test-campaigns-meta-ads" element={<TestCampaignsMetaAdsPage openCalendly={openCalendly} />} />
         <Route path="/blog/facebook-ads-vs-instagram-ads-ecommerce" element={<FacebookAdsVsInstagramAdsEcommPage openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-ads-creative-strategy-2026" element={<MetaAdsCreativeStrategy2026Page openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-ads-creative-testing-framework-ecommerce" element={<MetaAdsCreativeTestingFrameworPage openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-ads-roas-optimization" element={<MetaAdsRoasOptimizationPage openCalendly={openCalendly} />} />
-        <Route path="/blog/tu-slug-aqui" element={<MetaAdsRetargetingStrategyPage openCalendly={openCalendly} />} />
-        <Route path="/blog/migrar-de-campanas-shopping-manuales-a-advantage" element={<FacebookAdvantageShoppingCampaPage openCalendly={openCalendly} />} />
-        <Route path="/blog/slug" element={<MetaAdvantageCampaignSetupPage openCalendly={openCalendly} />} />
-        <Route path="/blog/descripcion" element={<MetaAdvantageShoppingSetupPage openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-advantage-shopping" element={<MetaAdvantageShoppingPage openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-ads-cbo-campaigns" element={<MetaAdsCboCampaignsPage openCalendly={openCalendly} />} />
-        <Route path="/blog/facebook-advantage-shopping-campaign-setup" element={<FacebookAdvantageShoppingCampaPage openCalendly={openCalendly} />} />
-        <Route path="/blog/meta-ads-cbo-vs-abo" element={<MetaAdsCboVsAboPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
