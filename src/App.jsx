@@ -125,13 +125,13 @@ import MejorarROASMetaAdsPage from "./pages/blog/mejorar-roas-meta-2026Page";
 import RemarketingMetaAdsPage from "./pages/blog/estrategia-remarketing-meta-2026Page";
 import OptimizacionConversionEcommercePage from "./pages/blog/optimizacion-conversion-ecommerce-2026Page";
 import MetaAdsRoasOptimizationPage from "./pages/blog/MetaAdsRoasOptimizationPage";
-importMetaAdsCboVsAboPagefrom.pagesblogMetaAdsCboVsAboPage
-importMetaAdsCboCampaignsPagefrom.pagesblogMetaAdsCboCampaignsPage
-importMetaAdvantageShoppingPagefrom.pagesblogMetaAdvantageShoppingPage
-importMetaAdvantageShoppingSetupPagefrom.pagesblogMetaAdvantageShoppingSetupPage
-importMetaAdvantageCampaignSetupPagefrom.pagesblogMetaAdvantageCampaignSetupPage
-importFacebookAdvantageShoppingCampaPagefrom.pagesblogFacebookAdvantageShoppingCampaPage
-importMetaAdsRetargetingStrategyPagefrom.pagesblogMetaAdsRetargetingStrategyPage
+import MetaAdsCboVsAboPage from "./pages/blog/MetaAdsCboVsAboPage";
+import MetaAdsCboCampaignsPage from "./pages/blog/MetaAdsCboCampaignsPage";
+import MetaAdvantageShoppingPage from "./pages/blog/MetaAdvantageShoppingPage";
+import MetaAdvantageShoppingSetupPage from "./pages/blog/MetaAdvantageShoppingSetupPage";
+import MetaAdvantageCampaignSetupPage from "./pages/blog/MetaAdvantageCampaignSetupPage";
+import FacebookAdvantageShoppingCampaPage from "./pages/blog/FacebookAdvantageShoppingCampaPage";
+import MetaAdsRetargetingStrategyPage from "./pages/blog/MetaAdsRetargetingStrategyPage";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
