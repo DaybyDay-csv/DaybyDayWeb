@@ -608,4 +608,14 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
+      <url>
+      <loc>https://www.daybydayconsulting.com/blog/facebook-advantage-shopping-campaign-setup</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+      <url>
+      <loc>https://www.daybydayconsulting.com/blog/meta-ads-cbo-vs-abo</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
   </urlset>
