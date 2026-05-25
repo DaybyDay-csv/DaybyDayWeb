@@ -125,6 +125,7 @@ import MejorarROASMetaAdsPage from "./pages/blog/mejorar-roas-meta-2026Page";
 import RemarketingMetaAdsPage from "./pages/blog/estrategia-remarketing-meta-2026Page";
 import OptimizacionConversionEcommercePage from "./pages/blog/optimizacion-conversion-ecommerce-2026Page";
 import MetaAdsRoasOptimizationPage from "./pages/blog/MetaAdsRoasOptimizationPage";
+importFacebookAdvantageShoppingCampaPagefrom.pagesblogFacebookAdvantageShoppingCampaPage
 importMetaAdsRetargetingStrategyPagefrom.pagesblogMetaAdsRetargetingStrategyPage
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -381,6 +382,7 @@ const App = () => {
         <Route path="/blog/meta-ads-creative-testing-framework-ecommerce" element={<MetaAdsCreativeTestingFrameworPage openCalendly={openCalendly} />} />
         <Route path="/blog/meta-ads-roas-optimization" element={<MetaAdsRoasOptimizationPage openCalendly={openCalendly} />} />
         <Route path="/blog/tu-slug-aqui" element={<MetaAdsRetargetingStrategyPage openCalendly={openCalendly} />} />
+        <Route path="/blog/migrar-de-campanas-shopping-manuales-a-advantage" element={<FacebookAdvantageShoppingCampaPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
