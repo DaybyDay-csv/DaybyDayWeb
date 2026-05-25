@@ -1,5 +1,6 @@
-[compatibility]
-nodejs = "18"
-
 [build]
-command = "echo Using prebuilt dist"
+  command = "echo using prebuilt static files"
+  publish = "dist"
+
+[site]
+  bucket = "./dist"
