@@ -578,4 +578,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-</urlset>
+    <url>
+      <loc>https://www.daybydayconsulting.com/blog/tu-slug-aqui</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  </urlset>
