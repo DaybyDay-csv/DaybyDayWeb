@@ -125,6 +125,7 @@ import MejorarROASMetaAdsPage from "./pages/blog/mejorar-roas-meta-2026Page";
 import RemarketingMetaAdsPage from "./pages/blog/estrategia-remarketing-meta-2026Page";
 import OptimizacionConversionEcommercePage from "./pages/blog/optimizacion-conversion-ecommerce-2026Page";
 import MetaAdsRoasOptimizationPage from "./pages/blog/MetaAdsRoasOptimizationPage";
+importMetaAdvantageShoppingPagefrom.pagesblogMetaAdvantageShoppingPage
 importMetaAdvantageShoppingSetupPagefrom.pagesblogMetaAdvantageShoppingSetupPage
 importMetaAdvantageCampaignSetupPagefrom.pagesblogMetaAdvantageCampaignSetupPage
 importFacebookAdvantageShoppingCampaPagefrom.pagesblogFacebookAdvantageShoppingCampaPage
@@ -387,6 +388,7 @@ const App = () => {
         <Route path="/blog/migrar-de-campanas-shopping-manuales-a-advantage" element={<FacebookAdvantageShoppingCampaPage openCalendly={openCalendly} />} />
         <Route path="/blog/slug" element={<MetaAdvantageCampaignSetupPage openCalendly={openCalendly} />} />
         <Route path="/blog/descripcion" element={<MetaAdvantageShoppingSetupPage openCalendly={openCalendly} />} />
+        <Route path="/blog/meta-advantage-shopping" element={<MetaAdvantageShoppingPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
