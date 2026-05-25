@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-const OptimizacionROASMetaAdsPage = () => {
+const MetaAdsRoasOptimizationPage = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
