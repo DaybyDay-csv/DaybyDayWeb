@@ -1,0 +1,5 @@
+[compatibility]
+nodejs = "18"
+
+[build]
+command = "echo Using prebuilt dist"
