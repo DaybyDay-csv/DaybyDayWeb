@@ -290,65 +290,29 @@ def extract_from_brief(brief, section):
 # ============ RESEARCH PHASE ============
 
 def research_topic(topic):
-    log("[RESEARCH] Starting: %s" % topic)
+    """Research simplificado con JSON"""
+    log(f"[RESEARCH] {topic}")
+
+    prompt = f"""Tema: {topic}
+JSON: {{"titulo":"","slug":"","descripcion":"","angulo":"","preguntas":"","estructura":"","keywords":"","cta":"","template":"framework"}}
+Completa. SoloJSON."""
+
+    import json
+    resp = call_llm(prompt, max_tokens=800)
     
-    # Questions people ask
-    log("[1/3] Preguntas...")
-    questions_prompt = f"Genera 20 preguntas que la gente REALMENTE pregunta sobre: {topic}\n\nFormato: una pregunta por linea.\nIncluye: como, porque, cuanto, cuando, donde, que, vs"
-    questions = call_llm(questions_prompt, max_tokens=1500)
-    
-    # Competitor analysis
-    log("[2/3] Competidores...")
-    competitors_prompt = f"Analiza como las agencias D2C/Growth posicionan sobre: {topic}\n\nAgencias: Growth Partners, LP Agency, Clerk, Outbound\n\nDetecta: ANGULO usado, HUECO donde NO cover bien\n\nDevuelve: Angulos ocupados, 3 huecos disponibles, preguntas que NADIE responde bien"
-    competitors = call_llm(competitors_prompt, max_tokens=2000)
-    
-    # Authority links
-    log("[3/3] Enlaces...")
-    links_prompt = f"Busca 5-7 fuentes AUTORIDAD para citar sobre: {topic}\n\nValidas:\n- Docs oficiales: Meta Business, Google Ads, Shopify\n- Estudios: Deloitte, McKinsey, eMarketer, Statista, HBR\n- Blogs tecnicos de alto nivel\n\nFormato: [Nombre](URL) - Por que citar\n\nNO blogs de agencias."
-    links = call_llm(links_prompt, max_tokens=2000)
-    
-    # Content brief
-    brief_prompt = f"""Eres content strategist para DayByDay Consulting.
+    try:
+        start = resp.find('{')
+        end = resp.rfind('}') + 1
+        data = json.loads(resp[start:end])
+        brief = "\n".join([f"{k}: {v}" for k,v in data.items()])
+    except:
+        import re
+        slug_topic = re.sub(r'[^a-z0-9\s]', '', topic.lower())
+        slug_topic = re.sub(r'\s+', '-', slug_topic.strip())[:50]
+        brief = f"titulo: {topic}\nslug: {slug_topic}\ndescripcion: Guia\nangulo:\npreguntas:\nestructura:\nkeywords:\ncta:\ntemplate: framework"
 
-TOPICO: {topic}
-
-Investigation:
-{questions}
-
-Competition:
-{competitors}
-
-Authority links:
-{links}
-
-OUTPUT FORMAT: Write ONLY the value for each field, one per line, NO explanations, NO instructions.
-
-Format example (COPY THIS EXACTLY):
-Titulo: Tu titulo aqui
-Meta Description: Tu descripcion aqui  
-Slug: tu-slug-aqui
-Angulo: Tu angulo aqui
-Preguntas: pregunta 1|pregunta 2|pregunta 3|pregunta 4|pregunta 5
-Estructura: punto 1|punto 2|punto 3
-Keywords: keyword 1|keyword 2|keyword 3
-CTAs: Tu llamada aqui
-Template: framework
-
-Ahora genera:
-Titulo:
-Slug:
-Meta Description:
-Angulo:
-Preguntas:
-Estructura:
-Keywords:
-CTAs:
-Template:
-"""
-    
-    brief = call_llm(brief_prompt, max_tokens=4000)
-    log("[RESEARCH] Done")
-    return brief, links, questions
+    log("[RESEARCH] Listo")
+    return brief, "", ""
 
 
 # ============ WRITE PHASE ============
