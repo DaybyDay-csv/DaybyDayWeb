@@ -383,8 +383,20 @@ Template:
 
 # ============ WRITE PHASE ============
 
+EDITOR_PROMPT = """You are a senior editor reviewing a draft blog post.
+Your job: polish for voice consistency, anti-AI patterns, and Hormozi-style punch.
+
+CHECKLIST:
+1. VOZ: frases de max 14 palabras, tuteo consistente, variacion de ritmo, max 2 adverbios en -mente
+2. ANTI-AI: elimina 3 bullets misma estructura, frases repetidas, arranques identicos ("Ademas", "Por otro lado"), "en conclusion", "en resumen"
+3. HORMOZI PUNCH: cada seccion necesita minimo 1 cifra cruda, 1的例子, 1 giro contraintuitivo
+4. ESTRUCTURA: escena de apertura (no intro), promesa antes del 20%, framework numerado, action step ejecutable
+5. INTERLINKING: any [LINK: slug] placeholder → replace with <Link to="/blog/slug">anchor text</Link>
+
+Return ONLY the polished blog post JSX. No commentary. No JSON. Just the final JSX code."""
+
 def write_blog_post(topic, brief, authority_links, template_type="framework"):
-    log("[WRITE] Generating blog post (section-by-section)...")
+    log("[WRITE] Generating blog post + polish editor...")
 
     # Extract from brief
     title = extract_from_brief(brief, "Titulo")
@@ -407,54 +419,77 @@ Convierte en 4 FAQs con respuestas sustanciales (2-3 sentences).
 JSON array: [{{"q": "...", "a": "..."}}]"""
     faqs_result = call_llm(faqs_prompt, max_tokens=1500)
 
-    # Compact authority links (URL only, no verbose descriptions) to stay under 12KB
+    # Compact authority links to stay under 12KB
     auth_links_compact = "\n".join(
         l.strip() for l in authority_links.split("\n") if l.strip()
     )[:2000]
 
-    # Section-by-section generation — each section < 3KB prompt
-    # 6 sections × ~2KB prompt each = ~12KB total, well under the cap
-    sections = []
-    section_names = [
-        "EPIGRAFE_Y_ESCENA",   # Epígrafe (opcional) + escena de apertura
-        "PROMESA_Y_DROP",       # Promesa + drop de autoridad con cifras
-        "FRAMEWORK",           # Framework numerado con nombre memorable
-        "EJEMPLO_REAL",        # Caso real con antes/después/tiempo
-        "PRO_TIP_Y_ACTION",     # Pro tip + action step ejecutable
-        "RECAP_Y_CLIFFHANGER"  # Recap bullets + cliffhanger
-    ]
+    # === GENERATION: one call, full master ===
+    # Trim PROMPT_MASTER to essentials to stay under 12KB total
+    master_trimmed = PROMPT_MASTER[:8000]  # hard cap at 8K chars
 
-    for i, section_name in enumerate(section_names):
-        section_prompt = f"""{PROMPT_MASTER[:3000]}
+    write_prompt = f"""{master_trimmed}
 
 [[TEMA]]: {topic}
 [[DOLOR DEL LECTOR]]: {angle}
 [[KEYWORDS]]: {keywords}
-[[SECCION]]: {section_name}
-[[PLANTILLA]]: {template['nombre']} - {template['para']}
+[[PLANTILLA]]: {template_type}
+
+PLANTILLA: {template['nombre']} - {template['para']}
 {template['esqueleto']}
 
-ESCRIBE SOLO esta seccion del blog post en espanol.
+ENLACES AUTORIDAD:
+{auth_links_compact}
 
-REGLAS:
-1. Empieza con el codigo JSX para esta seccion (h2, p, etc.)
-2. Maximo 400 palabras para esta seccion
-3. Usa <a href="..." target="_blank" rel="noopener"> para enlaces externos
-4. NO pongas ```jsx ni ```
-5. Devuelve solo el JSX de esta seccion, nada mas"""
+ESCRIBE EL BLOG POST completo en espanol.
 
-        # Hard cap per-section
-        if len(section_prompt) > MAX_PROMPT_CHARS:
-            section_prompt = section_prompt[:int(MAX_PROMPT_CHARS * 0.9)]
+REGLAS TECNICAS:
+1. Empieza con: import React from 'react';
+2. NO ```jsx ni ``` markers
+3. Imports: import {{ Link }} from "react-router-dom"; import BlogPostLayout from "../../components/BlogPostLayout";
+4. BlogPostLayout props: title, description, path="/blog/{slug}", datePublished, readingTime, category, faqs
+5. Usa <Link to="/blog/slug"> para interlinking interno
+6. Usa <a href="..." target="_blank" rel="noopener"> para externos
+7. Minimo 1500 palabras reales, 3-5 parrafos por seccion
+8. Interlinking: al menos 2 posts DayByDay relevantes
+9. TERMINA con: export default [Nombre]Page;
+10. Marca interlinking pendiente con: [LINK: slug-destino]
 
-        section = call_llm(section_prompt, max_tokens=2000)
-        sections.append(section)
-        log(f"[WRITE] Section {i+1}/6: {section_name} ({len(section)} chars)")
-        time.sleep(0.5)  # Brief pause between calls
+Devuelve el JSX completo."""
 
-    # Assemble final content
-    content = "\n\n".join(sections)
+    # Enforce 12KB cap on write prompt
+    if len(write_prompt) > MAX_PROMPT_CHARS:
+        raise Exception("WRITE_PROMPT_TOO_LARGE: %d > %d. Trim PROMPT_MASTER." % (
+            len(write_prompt), MAX_PROMPT_CHARS))
+
+    log(f"[WRITE] Generating (~{len(write_prompt)} chars)...")
+    content = call_llm(write_prompt, max_tokens=10000)
     content = clean_blog_content(content)
+    log(f"[WRITE] Draft done ({len(content)} chars)")
+
+    # === POLISH: one editor call (avoids voice inconsistency of section-by-section)
+    log("[POLISH] Editor pass...")
+    polish_prompt = f"""{EDITOR_PROMPT}
+
+DRAFT:
+{content[:8000]}
+
+TOPIC: {topic}
+SLUG: {slug}
+"""
+
+    if len(polish_prompt) > MAX_PROMPT_CHARS:
+        polish_prompt = polish_prompt[:MAX_PROMPT_CHARS]
+
+    polished = call_llm(polish_prompt, max_tokens=10000)
+    polished = clean_blog_content(polished)
+
+    # If polish returned something useful, use it; otherwise fall back to draft
+    if polished and len(polished) > 200:
+        content = polished
+        log("[POLISH] Applied editor polish")
+    else:
+        log("[POLISH] No improvement, keeping draft")
 
     # Component name
     name = re.sub(r'[^a-zA-Z0-9]+', '', topic.title().replace(" ", ""))
@@ -462,7 +497,7 @@ REGLAS:
         name = name[:30]
     component_name = name + "Page"
 
-    log("[WRITE] Generated: %s (%d sections)" % (component_name, len(sections)))
+    log("[WRITE] Done: %s" % component_name)
     return content, component_name, slug, faqs_result
 
 
