@@ -324,58 +324,62 @@ def research_topic(topic):
     
     # Questions people ask
     log("[1/3] Preguntas...")
-    questions_prompt = f"Genera 20 preguntas que la gente REALMENTE pregunta sobre: {topic}\n\nFormato: una pregunta por linea.\nIncluye: como, porque, cuanto, cuando, donde, que, vs"
-    questions = call_llm(questions_prompt, max_tokens=1500)
-    
+    questions_prompt = f"Genera 10 preguntas que la gente REALMENTE pregunta sobre: {topic}\n\nFormato: una pregunta por linea. Incluye: como, porque, cuanto, cuando, donde, que, vs"
+    questions = call_llm(questions_prompt, max_tokens=800)
+
     # Competitor analysis
     log("[2/3] Competidores...")
-    competitors_prompt = f"Analiza como las agencias D2C/Growth posicionan sobre: {topic}\n\nAgencias: Growth Partners, LP Agency, Clerk, Outbound\n\nDetecta: ANGULO usado, HUECO donde NO cover bien\n\nDevuelve: Angulos ocupados, 3 huecos disponibles, preguntas que NADIE responde bien"
-    competitors = call_llm(competitors_prompt, max_tokens=2000)
-    
+    competitors_prompt = f"Como posicionan las agencias D2C/Growth sobre: {topic}\n\nAngulos que usan (max 3 lineas). Huecos donde NO entran bien (max 3). Pregunta que nadie responde bien (1)."
+    competitors = call_llm(competitors_prompt, max_tokens=1000)
+
     # Authority links
     log("[3/3] Enlaces...")
-    links_prompt = f"Busca 5-7 fuentes AUTORIDAD para citar sobre: {topic}\n\nValidas:\n- Docs oficiales: Meta Business, Google Ads, Shopify\n- Estudios: Deloitte, McKinsey, eMarketer, Statista, HBR\n- Blogs tecnicos de alto nivel\n\nFormato: [Nombre](URL) - Por que citar\n\nNO blogs de agencias."
-    links = call_llm(links_prompt, max_tokens=2000)
-    
-    # Content brief
-    brief_prompt = f"""Eres content strategist para DayByDay Consulting.
+    links_prompt = f"3 fuentes AUTORIDAD para {topic}. Formato: [Nombre](URL). Validas: Meta Business, Google Ads, Shopify, Deloitte, McKinsey, Statista, HBR."
+    links = call_llm(links_prompt, max_tokens=500)
 
-TOPICO: {topic}
+    # Content brief — compact to stay under 12KB total
+    brief_prompt = f"""TOPICO: {topic}
 
-Investigation:
-{questions}
+Preguntas:
+{questions[:600]}
 
-Competition:
-{competitors}
+Competencia:
+{competitors[:800]}
 
-Authority links:
-{links}
+Enlaces:
+{links[:400]}
 
-OUTPUT FORMAT: Write ONLY the value for each field, one per line, NO explanations, NO instructions.
-
-Format example (COPY THIS EXACTLY):
-Titulo: Tu titulo aqui
-Meta Description: Tu descripcion aqui  
-Slug: tu-slug-aqui
-Angulo: Tu angulo aqui
-Preguntas: pregunta 1|pregunta 2|pregunta 3|pregunta 4|pregunta 5
-Estructura: punto 1|punto 2|punto 3
-Keywords: keyword 1|keyword 2|keyword 3
-CTAs: Tu llamada aqui
+Formato (copia exactamente):
+Titulo: ...
+Slug: ...
+Meta Description: ...
+Angulo: ...
+Preguntas: p1|p2|p3
+Estructura: e1|e2|e3
+Keywords: k1|k2|k3
+CTAs: ...
 Template: framework
 
-Ahora genera:
-Titulo:
-Slug:
-Meta Description:
-Angulo:
-Preguntas:
-Estructura:
-Keywords:
-CTAs:
-Template:
-"""
-    
+Ahora"""
+    # Final check — if brief_prompt still too large, truncate the inputs further
+    if len(brief_prompt) > MAX_PROMPT_CHARS:
+        log("[WARN] Brief prompt %d chars — truncating inputs" % len(brief_prompt))
+        questions = questions[:400]
+        competitors = competitors[:500]
+        links = links[:300]
+        brief_prompt = f"""TOPICO: {topic}
+
+Preguntas: {questions}
+
+Competencia: {competitors}
+
+Enlaces: {links}
+
+Formato:
+Titulo: |Slug: |Meta Description: |Angulo: |Preguntas: |Estructura: |Keywords: |CTAs: |Template: framework
+
+Ahora"""
+
     brief = call_llm(brief_prompt, max_tokens=4000)
     log("[RESEARCH] Done")
     return brief, links, questions
@@ -391,7 +395,7 @@ CHECKLIST:
 2. ANTI-AI: elimina 3 bullets misma estructura, frases repetidas, arranques identicos ("Ademas", "Por otro lado"), "en conclusion", "en resumen"
 3. HORMOZI PUNCH: cada seccion necesita minimo 1 cifra cruda, 1的例子, 1 giro contraintuitivo
 4. ESTRUCTURA: escena de apertura (no intro), promesa antes del 20%, framework numerado, action step ejecutable
-5. INTERLINKING: any [LINK: slug] placeholder → replace with <Link to="/blog/slug">anchor text</Link>
+5. INTERLINKING: any [LINK: slug] placeholder -> replace with <Link to="/blog/slug">anchor text</Link>
 
 Return ONLY the polished blog post JSX. No commentary. No JSON. Just the final JSX code."""
 
