@@ -361,55 +361,62 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2
       <ul class="nav-links">
           <li><a href="/problema.html">Problema</a></li>
           
-          <!-- Cómo Trabajamos + Stack Tech -->
+          <!-- Cómo Trabajamos + Stack Tech (Grid) -->
           <li class="nav-dropdown">
             <button class="nav-dropdown-btn">Cómo Trabajamos</button>
-            <div class="nav-dropdown-content">
-              <div style="padding:0.5rem 0.875rem;border-bottom:1px solid var(--border);margin-bottom:0.25rem;">
-                <span style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">Stack Tecnológico</span>
+            <div class="nav-dropdown-content small">
+              <div class="mega-section">
+                <div class="mega-section-title">Stack Tecnológico</div>
+                <div class="stack-grid">
+                  <a href="/tech/meta-ads.html">Meta Ads</a>
+                  <a href="/tech/google-ads-tech.html">Google Ads</a>
+                  <a href="/tech/shopify.html">Shopify</a>
+                  <a href="/tech/ga4.html">GA4</a>
+                  <a href="/tech/n8n.html">n8n</a>
+                  <a href="/tech/capi.html">CAPI</a>
+                </div>
               </div>
-              <a href="/tech/meta-ads.html">Meta Ads</a>
-              <a href="/tech/google-ads-tech.html">Google Ads</a>
-              <a href="/tech/shopify.html">Shopify</a>
-              <a href="/tech/ga4.html">GA4</a>
-              <a href="/tech/n8n.html">n8n</a>
-              <a href="/tech/capi.html">Conversions API</a>
             </div>
           </li>
           
-          <!-- Servicios -->
+          <!-- Servicios (Mega Menu) -->
           <li class="nav-dropdown">
             <button class="nav-dropdown-btn">Servicios</button>
-            <div class="nav-dropdown-content" style="min-width:280px;">
-              <div style="padding:0.5rem 0.875rem 0.25rem;border-bottom:1px solid var(--border);">
-                <span style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">Paid Media</span>
+            <div class="nav-dropdown-content mega">
+              <div class="mega-grid">
+                <!-- Paid Media -->
+                <div class="mega-section">
+                  <div class="mega-section-title">Paid Media</div>
+                  <a href="/meta-ads.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>Meta Ads</a>
+                  <a href="/google-ads.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>Google Ads</a>
+                  <a href="/tech/tiktok-ads.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>TikTok Ads</a>
+                  <a href="/tech/linkedin-ads.html" class="highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/></svg>LinkedIn Ads</a>
+                </div>
+                
+                <!-- Growth Strategy -->
+                <div class="mega-section">
+                  <div class="mega-section-title">Growth Strategy</div>
+                  <a href="/growth-strategy.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/></svg>Estrategia</a>
+                  <a href="/growth-partner.html" class="highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>Growth Partner</a>
+                </div>
+                
+                <!-- Automation -->
+                <div class="mega-section">
+                  <div class="mega-section-title">Automation</div>
+                  <a href="/automatizacion.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>Automatización</a>
+                  <a href="/tech/n8n.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>n8n</a>
+                  <a href="/tech/capi.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Conversions API</a>
+                </div>
+                
+                <!-- Analytics + AI -->
+                <div class="mega-section">
+                  <div class="mega-section-title">Analytics & AI</div>
+                  <a href="/analytics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>Analytics</a>
+                  <a href="/tech/ga4.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/></svg>GA4</a>
+                  <a href="/agentic-ai.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>AI Agent</a>
+                  <a href="/tech/azure.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24"/></svg>Azure AI</a>
+                </div>
               </div>
-              <a href="/meta-ads.html">Meta Ads</a>
-              <a href="/google-ads.html">Google Ads</a>
-              <a href="/tech/tiktok-ads.html">TikTok Ads</a>
-              <a href="/tech/linkedin-ads.html">LinkedIn Ads</a>
-              <div style="padding:0.5rem 0.875rem 0.25rem;border-bottom:1px solid var(--border);">
-                <span style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">Growth Strategy</span>
-              </div>
-              <a href="/growth-strategy.html">Estrategia</a>
-              <a href="/growth-partner.html">Growth Partner</a>
-              <div style="padding:0.5rem 0.875rem 0.25rem;border-bottom:1px solid var(--border);">
-                <span style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">Automation</span>
-              </div>
-              <a href="/automatizacion.html">Automatización</a>
-              <a href="/tech/n8n.html">n8n</a>
-              <a href="/tech/capi.html">CAPI</a>
-              <div style="padding:0.5rem 0.875rem 0.25rem;border-bottom:1px solid var(--border);">
-                <span style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">Analytics</span>
-              </div>
-              <a href="/analytics.html">Analytics</a>
-              <a href="/tech/ga4.html">GA4</a>
-              <a href="/tech/gtm.html">GTM</a>
-              <div style="padding:0.5rem 0.875rem 0.25rem;">
-                <span style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">Agentic AI</span>
-              </div>
-              <a href="/agentic-ai.html">AI Agent</a>
-              <a href="/tech/azure.html">Azure AI</a>
             </div>
           </li>
           
