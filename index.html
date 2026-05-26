@@ -91,7 +91,7 @@
     @media (min-width: 768px) { .servicios-grid { grid-template-columns: repeat(2, 1fr); } }
     .servicio-item { background: var(--bg-card); padding: 1.5rem 2rem; border-radius: 8px; display: flex; align-items: center; gap: 1rem; border: 1px solid #333; transition: border-color 0.3s; cursor: pointer; }
     .servicio-item:hover { border-color: #555; }
-    .servicio-icon { width: 48px; height: 48px; background: #333; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+    .servicio-icon { width: 48px; height: 48px; background: var(--bg-card); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--text-primary); }
     .servicio-text h4 { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); }
     .servicio-text p { font-size: 0.9rem; color: var(--text-secondary); }
     
@@ -247,48 +247,61 @@
 
   <!-- Servicios -->
   <section class="section">
-    <h2 class="section-title">Lo que hacemos</h2>
+    <h2 class="section-title">Servicios</h2>
+    <p class="section-subtitle">Stack completo de growth para D2C:</p>
     <div class="servicios-grid">
       <div class="servicio-item">
-        <div class="servicio-icon">📺</div>
+        <div class="servicio-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4h20v16H2z"/><path d="M2 9h20M9 4v20"/></svg>
+        </div>
         <div class="servicio-text">
           <h4>Meta Ads</h4>
-          <p>Campañas de conversión, catálogo, Advantage+, setup completo CAPI</p>
+          <p>Campañas de conversión, catálogo, Advantage+, setup completo CAPI, pixel, conversiones personalizadas, audiences, tracking multi-touch.</p>
         </div>
       </div>
       <div class="servicio-item">
-        <div class="servicio-icon">🔍</div>
+        <div class="servicio-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
         <div class="servicio-text">
           <h4>Google Ads</h4>
-          <p>Search, Shopping, Performance Max con atribución completa</p>
+          <p>Search Ads, Shopping, Performance Max, Display, YouTube. Configuración completa de conversiones, attribution model multi-touch, RLSA, remarketing.</p>
         </div>
       </div>
       <div class="servicio-item">
-        <div class="servicio-icon">⚙️</div>
+        <div class="servicio-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
         <div class="servicio-text">
           <h4>Automatización</h4>
-          <p>n8n workflows, notificaciones, sync pedidos, abandoned cart</p>
+          <p>n8n workflows, sync pedidos Shopify, notificaciones WhatsApp/Telegram, abandoned cart flows, email sequences, CRM sync.</p>
         </div>
       </div>
       <div class="servicio-item">
-        <div class="servicio-icon">📊</div>
+        <div class="servicio-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 5-5"/></svg>
+        </div>
         <div class="servicio-text">
           <h4>Analytics</h4>
-          <p>GA4, GTM, dashboards custom, atribución multi-touch</p>
+          <p>GA4 setup completo, GTM, Data Studio dashboards, atribución multi-touch, UTMs, events custom, cohorts analysis.</p>
         </div>
       </div>
       <div class="servicio-item">
-        <div class="servicio-icon">🚀</div>
+        <div class="servicio-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
         <div class="servicio-text">
           <h4>Growth Strategy</h4>
-          <p>Escalado, pricing, mix de canales, expansión</p>
+          <p> roadmaps de escalado, pricing strategy, mix de canales, expansión geográfica, unit economics optimization, pitch deck para inversores.</p>
         </div>
       </div>
       <div class="servicio-item">
-        <div class="servicio-icon">🤖</div>
+        <div class="servicio-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+        </div>
         <div class="servicio-text">
           <h4>Agentic AI</h4>
-          <p>Asistentes<IA para ventas, soporte, qualify</p>
+          <p>Asistentes IA para qualification, ventas, soporte level 1, embeddings documentos, fine-tuned models, workflows autonomous.</p>
         </div>
       </div>
     </div>
