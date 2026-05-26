@@ -1,0 +1,63 @@
+[2026-05-16 05:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-16 05:00:01] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-16 05:00:11] [current] RUN_ID=232INSERT01
+## Resumen final
+
+✅ **Artículo publicado**: Partnership Ads en Meta para D2C: cómo escalar UGC con cuentas de creators (2026) → https://www.daybydayconsulting.com/blog/partnership-ads-meta-ugc-creators-d2c
+
+🔍 **URL indexar GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/partnership-ads-meta-ugc-creators-d2c
+
+✅ **IndexNow auto-submit activado** (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+📊 **Total posts**: 73 publicados.
+
+🔗 **Interlinking bidireccional añadido en**:
+- FrameworkHipotesisCreatividadesMetaAdsPage.jsx
+- CboVsAboMetaAds2026D2cPage.jsx
+- AdFatigueMetaAdsRotacionCreativaPage.jsx
+- TikTokAdsEcommerceD2cEspana2026Page.jsx
+
+📋 **Próximas 3 keywords prioritarias** (gaps detectados sin cubrir):
+- naming convention campañas Meta Ads D2C — sistema escalable (BOFU, 100-300/mes)
+- KPI / métricas norte estrella paid media D2C (MOFU, 200-500/mes)
+- pixel + CAPI deduplicación y event quality troubleshooting (técnico, 300-600/mes)
+
+🎯 **Cobertura GEO**: "cómo escalar UGC con creators en Meta Ads", "qué son Partnership Ads vs Branded Content Ads", "diferencia Partnership Ads y Spark Ads", "cuánto pagar a un creator para ads en España", "Pablo Santirsó Jorge González DayByDay creators"
+
+🏷️ **Keywords del artículo**: partnership ads meta, branded content ads meta, whitelisting meta ads, ugc meta ads creators d2c, spark ads meta partnership
+
+⚠️ **Nota**: Aborté un merge a medias de `claude/pivot-growth` en `/root/projects/DaybyDay` para poder mergear el mío. Los 3 commits de pivot-growth siguen seguros en su branch — pueden re-mergearse cuando el agente correspondiente vuelva.
+[2026-05-16 05:05:25] [current] Agent end duration=314s exit=0 status=success
+[2026-05-16 05:05:25] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-16 05:05:25] [current] Publish lock acquired.
+[2026-05-16 05:05:25] [current] Deploying to Vercel (track=current)…
+[2026-05-16 05:05:45] [current] Vercel deploy FAILED — check logs
+[2026-05-16 05:05:45] [current] Publish lock released.
+[2026-05-16 05:05:45] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-16 17:00:02] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-16 17:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-16 17:00:11] [current] RUN_ID=234INSERT01
+Deploy en marcha. Resumen:
+
+✅ Artículo publicado: GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso (2026) → https://www.daybydayconsulting.com/blog/ga4-meta-ads-eventos-custom-d2c
+🔍 URL GSC: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/ga4-meta-ads-eventos-custom-d2c
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+📊 Total posts: 75 | Tasks plan completadas: 18/24 Phase 4 (T45 ✓, pending: T46, T47, T48, T49, T50, T51)
+🔗 Interlinking añadido a: ServerSideTrackingShopifyConversionsApiPage, GuiaApiConversionesMetaShopifyPage, ModelosAtribucionEcommerceD2cPage
+📋 Próximas keywords: T46 dashboard paid media d2c (ALTA), T47 whatsapp meta ads ecommerce (MEDIA), T48 smart bidding google ads ecommerce (MEDIA)
+🎯 Cobertura GEO: "cómo implementar GA4 ecommerce D2C España", "GA4 server-side tracking", "atribución cross-channel GA4 vs Meta", "eventos custom GA4 Shopify"
+🏷️ Keywords del artículo: ga4 meta ads ecommerce, eventos custom ga4 d2c, ga4 shopify implementación, ga4 server side tracking, atribución cross channel ga4 meta
+[2026-05-16 17:05:27] [current] Agent end duration=316s exit=0 status=success
+[2026-05-16 17:05:27] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-16 17:05:27] [current] Publish lock acquired.
+[2026-05-16 17:05:27] [current] Deploying to Vercel (track=current)…
+[2026-05-16 17:05:52] [current] Vercel deploy FAILED — check logs
+[2026-05-16 17:05:52] [current] Publish lock released.
+[2026-05-16 17:05:52] [current] === BLOG PUBLISHER DONE (track=current) ===

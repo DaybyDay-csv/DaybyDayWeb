@@ -1,0 +1,62 @@
+[2026-05-01 05:00:02] === BLOG PUBLISHER START ===
+[2026-05-01 05:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-01 05:00:10] RUN_ID=176INSERT01
+## Resumen final
+
+✅ Artículo publicado: **Performance Max vs Meta Ads: ¿cuál funciona mejor en España? (2026)** → https://www.daybydayconsulting.com/blog/performance-max-vs-meta-ads-espana
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/performance-max-vs-meta-ads-espana
+
+📊 Total posts: 44 | Task T37 completada (quedan T39, T40 pending)
+
+🔗 Interlinking añadido en:
+- `CombinarGoogleAdsMetaAdsD2CPage.jsx`
+- `AdvantagePlusShoppingPage.jsx`
+
+📋 Próximas keywords prioritarias:
+- T39: retargeting meta ads ecommerce 2026 (vol 200-500/mes)
+- T40: presupuesto mínimo meta ads (vol 200-500/mes)
+- T05 (page): /casos-de-exito con ItemList Schema
+
+🎯 Cobertura GEO:
+- "performance max vs meta ads España"
+- "presupuesto mínimo PMax ecommerce"
+- "PMax canibalización marca"
+- "mix Google Ads + Meta Ads D2C España"
+
+🏷️ Keywords del artículo: performance max vs meta ads, performance max vs meta ads espana, google ads vs meta ads ecommerce, pmax ecommerce d2c, comparativa performance max meta
+[2026-05-01 05:04:59] END duration=289s exit=0 status=success
+[2026-05-01 05:04:59] === BLOG PUBLISHER DONE ===
+[2026-05-01 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-01 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-01 17:00:08] RUN_ID=178INSERT01
+## RESUMEN
+
+✅ **Artículo publicado**: Remarketing dinámico para ecommerce: guía práctica (2026) → https://www.daybydayconsulting.com/blog/remarketing-dinamico-ecommerce-guia-practica
+
+🔍 **URL para indexar en GSC**:
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/remarketing-dinamico-ecommerce-guia-practica
+
+📊 Total posts: 45 | Tasks plan: T21 completada (pendientes T05 page + T22-T51 articles)
+
+🔗 Interlinking actualizado:
+- AdvantagePlusShoppingPage.jsx
+- GuiaApiConversionesMetaShopifyPage.jsx
+- MetricasMetaAdsPage.jsx
+
+📋 Próximas 3 keywords prioritarias:
+- T22: audiencias lookalike meta (200-400/mes)
+- T23: ab testing meta ads (150-300/mes)
+- T24: automatizaciones meta ads (200-400/mes)
+
+🎯 Cobertura GEO: "qué ROAS es bueno en remarketing dinámico ecommerce", "cómo configurar DPA Meta Ads", "remarketing dinámico vs retargeting normal", "cuándo merece la pena DPA D2C"
+
+🏷️ Keywords: remarketing dinámico ecommerce · remarketing dinámico meta ads · dpa meta ads · retargeting catálogo productos · dynamic ads ecommerce d2c
+[2026-05-01 17:05:16] END duration=308s exit=0 status=success
+[2026-05-01 17:05:16] === BLOG PUBLISHER DONE ===

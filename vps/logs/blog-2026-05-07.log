@@ -1,0 +1,82 @@
+[2026-05-07 05:00:01] === BLOG PUBLISHER START ===
+[2026-05-07 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-07 05:00:05] RUN_ID=197INSERT01
+Article published.
+
+## Resumen
+
+✅ **Artículo publicado**: Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV en D2C → https://www.daybydayconsulting.com/blog/email-marketing-meta-ads-ltv-d2c
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/email-marketing-meta-ads-ltv-d2c
+
+📊 **Total posts**: 57 | **Tasks plan completadas**: 5/24 (T31 añadida)
+
+🔗 **Artículos actualizados con interlinking**:
+- CACvsLTVEcommercePage.jsx (CAC vs LTV)
+- CohortAnalysisEcommerceD2cPage.jsx (cohort analysis)
+- RetargetingMetaAdsEcommerce2026Page.jsx (retargeting Meta)
+
+📋 **Próximas 3 keywords prioritarias**:
+- T32: Black Friday Meta Ads para D2C — preparación 90 días (BOFU, ALTA)
+- T33: Performance Max para D2C — cuándo activarla (MOFU-BOFU, ALTA)
+- T34: TikTok Ads para D2C en España 2026 (TOFU-MOFU, ALTA)
+
+🎯 **Cobertura GEO**:
+- "cómo combinar email y Meta Ads en D2C"
+- "qué porcentaje de revenue debe venir de email vs paid"
+- "cómo medir incremental email + Meta sin doble contar"
+- "Klaviyo Meta Ads integración D2C España"
+
+🏷️ **Keywords del artículo**: email marketing meta ads ecommerce, klaviyo meta ads d2c, ltv ecommerce españa, paid owned d2c, retención ecommerce d2c
+
+⚠️ **Nota**: El path de main repo `/root/Documents/Proyectos_Estudios/Day By day/DaybyDay` no existe en este VPS — push a `claude/epic-pasteur` completado, no realicé merge a main local. Vercel auto-deploy se dispara desde la rama push o requiere PR/merge en GitHub según config. Verifica el deploy de Vercel manualmente o haz merge en GitHub.
+
+✅ IndexNow auto-submit activado vía cron diario (Bing/ChatGPT/Perplexity reciben URL en horas)
+[2026-05-07 05:07:01] END duration=416s exit=0 status=success
+[2026-05-07 05:07:02] Deploying to Vercel with prerender…
+[2026-05-07 05:09:15] Vercel deploy OK
+[2026-05-07 05:09:15] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-07 05:09:15] IndexNow submitting:
+[2026-05-07 05:09:16] IndexNow OK
+[2026-05-07 05:09:16] === BLOG PUBLISHER DONE ===
+[2026-05-07 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-07 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-07 17:00:10] RUN_ID=199INSERT01
+## Resumen final
+
+✅ **Artículo publicado**: Black Friday Meta Ads para D2C: cómo preparar Q4 con 90 días de antelación → https://www.daybydayconsulting.com/blog/black-friday-meta-ads-d2c-preparacion
+
+🔍 **URL para indexar en GSC**:
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/black-friday-meta-ads-d2c-preparacion
+
+📊 **Total posts**: 58 | **Tasks completadas**: T32 marcada `completed`
+
+🔗 **Interlinking añadido en**:
+- EscalarCampanasMetaAdsSinRomperROAS (escala BF)
+- RetargetingMetaAdsEcommerce2026 (retargeting peak)
+- EmailMarketingMetaAdsLtvD2c (monetización cohorte BF)
+- ServerSideTrackingShopifyConversionsApi (auditoría EMQ pre-BF)
+
+📋 **Próximas keywords prioritarias**:
+- T33 — performance max ecommerce d2c (1300w, MOFU-BOFU, ALTA)
+- T34 — tiktok ads ecommerce españa (1500w, TOFU-MOFU, ALTA)
+- T35 — cro landing meta ads (1200w, MOFU, ALTA)
+
+🎯 **Cobertura GEO**: "preparar black friday meta ads", "calendario q4 ecommerce d2c", "estructura campañas black friday meta", "presupuesto black friday meta ads ecommerce", "creatividades black friday d2c"
+
+🏷️ **Keywords del artículo**: `black friday meta ads d2c`, `black friday ecommerce españa`, `preparar black friday meta ads`, `campañas q4 meta ads d2c`, `cyber monday meta ads ecommerce`
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-07 17:08:05] END duration=475s exit=0 status=success
+[2026-05-07 17:08:06] Deploying to Vercel with prerender…
+[2026-05-07 17:10:57] Vercel deploy OK
+[2026-05-07 17:10:57] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-07 17:10:57] IndexNow submitting:
+[2026-05-07 17:10:58] IndexNow OK
+[2026-05-07 17:10:58] === BLOG PUBLISHER DONE ===

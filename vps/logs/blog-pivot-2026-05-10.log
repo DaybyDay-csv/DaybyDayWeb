@@ -1,0 +1,40 @@
+[2026-05-10 15:03:41] [pivot] === BLOG PUBLISHER START (track=pivot) ===
+[2026-05-10 15:03:41] [pivot] Worktree: /root/projects/DaybyDay/.claude/worktrees/pivot-growth | Branch: claude/pivot-growth | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog-pivot/SKILL.md
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[2026-05-10 15:03:41] [pivot] WARN: Pull failed, continuing with local state
+[2026-05-10 15:03:42] [pivot] RUN_ID=207INSERT01
+[2026-05-10 19:06:20] [pivot] === BLOG PUBLISHER START (track=pivot) ===
+[2026-05-10 19:06:20] [pivot] Worktree: /root/projects/DaybyDay/.claude/worktrees/pivot-growth | Branch: claude/pivot-growth | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog-pivot/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/pivot-growth -> FETCH_HEAD
+Already up to date.
+[2026-05-10 19:06:23] [pivot] RUN_ID=209INSERT01
+Push OK. `run-daily-blog.sh --track=pivot` hace merge, deploy, IndexNow.
+
+---
+
+## RESUMEN FINAL
+
+- ✅ PIVOT publicado: AI-proof skills para founders D2C en 2027 → https://www.daybydayconsulting.com/blog/ai-proof-skills-founder-d2c-2027
+- 🎯 Cluster: pivot-operador-anti-tactical
+- 🔍 GSC: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/ai-proof-skills-founder-d2c-2027
+- 📊 Total posts pivot: 2 | Tasks pivot completadas: 2/32
+- 🔗 Interlinking: growth-partner-vs-agencia-paid-media · margen-contribucion-vs-roas-ecommerce · cac-vs-ltv-ecommerce-escalable · ia-marketing-digital
+- 🚫 Auditoría anti-solapamiento: PASS vs current
+- 🏷️ Keywords pivot: skills founder d2c era ia · ai proof skills founder ecommerce · que aprender founder d2c 2027 · growth partner vs agencia ia · operador con criterio era ia
+- 🧠 Decisión de negocio cubierta: dónde invierte un founder D2C su tiempo de aprendizaje cuando la IA absorbe la ejecución operativa
+- 📐 Términos obligatorios: growth partner=16, operador con criterio=4, margen contribución=12, payback CAC=3, palanca=5, founder=49
+- 📐 Términos prohibidos: 0
+- 📝 Palabras: ~3.498 (file con JSX, contenido editorial dentro del rango 1500-2200)
+- ✅ IndexNow auto-submit (track pivot) lo activa run-daily-blog.sh tras Vercel deploy
+[2026-05-10 19:11:43] [pivot] Agent end duration=320s exit=0 status=success
+[2026-05-10 19:11:43] [pivot] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-10 19:11:43] [pivot] Publish lock acquired.
+[2026-05-10 19:11:43] [pivot] Deploying to Vercel (track=pivot)…
+[2026-05-10 19:14:50] [pivot] Vercel deploy OK
+[2026-05-10 19:14:50] [pivot] Publish lock released.
+[2026-05-10 19:14:50] [pivot] IndexNow: detecting new blog URLs from sitemap diff (track=pivot)…
+[2026-05-10 19:14:50] [pivot] IndexNow submitting:
+[2026-05-10 19:14:51] [pivot] IndexNow OK
+[2026-05-10 19:14:51] [pivot] === BLOG PUBLISHER DONE (track=pivot) ===

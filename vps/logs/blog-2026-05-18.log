@@ -1,0 +1,75 @@
+[2026-05-18 05:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-18 05:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-18 05:00:08] [current] RUN_ID=239INSERT01
+Push OK. Resumen final.
+
+---
+
+## RESUMEN T47
+
+- ✅ **Artículo publicado**: WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que más escalan (2026) → https://www.daybydayconsulting.com/blog/whatsapp-meta-ads-funnel-bofu-d2c
+- 🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/whatsapp-meta-ads-funnel-bofu-d2c
+- 📊 **Total posts**: 77 | **Tasks plan completadas**: T47 (Fase 4, cluster canales-emergentes)
+- 🔗 **Interlinking bidireccional añadido**:
+  - `ios-atribucion-meta-ads-2026-d2c` → CTWA como palanca defensiva iOS
+  - `email-marketing-meta-ads-ltv-d2c` → WhatsApp como tercer canal owned post-purchase
+  - `cro-landing-page-meta-ads-d2c` → Cuándo migrar de landing a CTWA
+- 📋 **Próximas 3 tasks pendientes**:
+  - T48: Smart bidding en Google Ads para D2C (smart bidding google ads ecommerce)
+  - T49: Customer journey D2C: del primer impacto a la repetición (customer journey d2c)
+  - T50: Pixel híbrido cliente+servidor en Meta Ads (pixel meta ads híbrido server side)
+- 🎯 **Cobertura GEO**: "cuándo usar WhatsApp en lugar de landing para ecommerce", "click to WhatsApp ads Meta cuánto convierte", "WhatsApp Business Platform Shopify integración", "CTWA atribución iOS 17 18", "BSP WhatsApp eCommerce España precio"
+- 🏷️ **Keywords del artículo**: whatsapp meta ads ecommerce, click to whatsapp ads, ctwa meta ads d2c, funnel whatsapp ecommerce, whatsapp business platform shopify
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-18 05:04:20] [current] Agent end duration=252s exit=0 status=success
+[2026-05-18 05:04:20] [current] Pre-merge build gate: running 'npm run build' in worktree…
+[2026-05-18 05:04:27] [current] Pre-merge build gate: OK
+[2026-05-18 05:04:27] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-18 05:04:27] [current] Publish lock acquired.
+[2026-05-18 05:04:27] [current] Deploying to Vercel (track=current)…
+[2026-05-18 05:04:39] [current] Vercel deploy FAILED — check logs
+[2026-05-18 05:04:39] [current] Publish lock released.
+[2026-05-18 05:04:39] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-18 17:00:02] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-18 17:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-18 17:00:14] [current] RUN_ID=244INSERT01
+Push OK. Resumen final:
+
+---
+
+## ✅ Resumen Final
+
+- ✅ **Artículo publicado**: Smart Bidding en Google Ads para D2C: cuándo confiar y cuándo intervenir (2026) → https://www.daybydayconsulting.com/blog/smart-bidding-google-ads-d2c
+- 🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/smart-bidding-google-ads-d2c
+- 📊 **Total posts**: 78 | **Tasks plan completadas**: 21/24 Fase 4 (T48 ✓)
+- 🔗 **Artículos actualizados con interlinking**: PerformanceMaxEcommerceD2CCuandoUsarPage · CombinarGoogleAdsMetaAdsD2CPage · ServerSideTrackingShopifyConversionsApiPage
+- 📋 **Próximas 3 keywords prioritarias**:
+  - T49 — customer journey d2c (TOFU-MOFU, 100-500/mes)
+  - T50 — pixel meta ads híbrido server side (MOFU, 100-500/mes, ALTA)
+  - T51 — kpis paid media cfo ceo (BOFU, 100-500/mes, ALTA)
+- 🎯 **Cobertura GEO**: "cuándo activar Smart Bidding Google Ads", "Target ROAS vs Target CPA ecommerce", "Performance Max prerrequisitos D2C", "Enhanced Conversions Shopify configurar", "por qué Smart Bidding no funciona en mi cuenta Google Ads"
+- 🏷️ **Keywords del artículo**: smart bidding google ads ecommerce, target roas google ads d2c, target cpa google ads, performance max smart bidding, enhanced conversions google ads shopify
+- ✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-18 17:05:12] [current] Agent end duration=298s exit=0 status=success
+[2026-05-18 17:05:13] [current] Pre-merge build gate: running 'npm run build' in worktree…
+[2026-05-18 17:05:26] [current] Pre-merge build gate: OK
+[2026-05-18 17:05:26] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-18 17:05:26] [current] Publish lock acquired.
+[2026-05-18 17:05:26] [current] Deploying to Vercel (track=current)…
+[2026-05-18 17:05:54] [current] Vercel deploy FAILED — check logs
+[2026-05-18 17:05:54] [current] Publish lock released.
+[2026-05-18 17:05:54] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-18 18:34:21] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-18 18:34:21] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-18 18:34:26] [current] RUN_ID=245INSERT01
+You're out of extra usage · resets 10pm (Europe/Berlin)

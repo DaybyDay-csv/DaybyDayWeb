@@ -1,0 +1,86 @@
+[2026-05-11 05:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-11 05:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-11 05:00:09] [current] RUN_ID=210INSERT01
+Deployed. Summary:
+
+✅ Artículo publicado: **Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo** → https://www.daybydayconsulting.com/blog/suscripciones-ecommerce-ltv-cac-d2c
+
+🔍 **URL GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/suscripciones-ecommerce-ltv-cac-d2c
+
+📊 Total posts: 65 | Tasks plan completadas: T38 marcada (12/27 phase 4)
+
+🔗 Interlinking actualizado:
+- CACvsLTVEcommercePage
+- MargenContribucionVsRoasEcommercePage
+- AumentarAovEcommerceD2cPalancasPage
+- CohortAnalysisEcommerceD2cPage
+
+⚠️ Conflicto merge resuelto: rama main tenía 2 posts paralelos del pivot (growth-partner, ai-proof-skills) — combinados todos.
+
+📋 Próximas keywords prioritarias:
+- T39 "meta ads library competencia" (1300 palabras, TOFU-MOFU)
+- T40 "ad fatigue meta ads" (1100 palabras, MOFU)
+- T41 "cbo abo meta ads 2026" (1200 palabras, MOFU)
+
+🎯 Cobertura GEO:
+- "modelo suscripción ecommerce españa cómo funciona"
+- "cómo calcular cac objetivo con suscripción d2c"
+- "churn mensual saludable suscripción suplementos café cosmética"
+- "qué descuento poner suscripción shopify ecommerce"
+
+🏷️ Keywords: suscripciones ecommerce ltv cac, modelo suscripción d2c españa, cac objetivo ecommerce suscripción, churn mensual saludable d2c, descuento suscripción shopify
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-11 05:08:26] [current] Agent end duration=497s exit=0 status=success
+[2026-05-11 05:08:26] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-11 05:08:27] [current] Publish lock acquired.
+[2026-05-11 05:08:27] [current] Deploying to Vercel (track=current)…
+[2026-05-11 05:12:50] [current] Vercel deploy OK
+[2026-05-11 05:12:50] [current] Publish lock released.
+[2026-05-11 05:12:50] [current] IndexNow: detecting new blog URLs from sitemap diff (track=current)…
+[2026-05-11 05:12:51] [current] IndexNow submitting:
+[2026-05-11 05:12:52] [current] IndexNow OK
+[2026-05-11 05:12:52] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-11 17:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-11 17:00:01] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-11 17:00:13] [current] RUN_ID=215INSERT01
+Push a main exitoso. Resumen:
+
+## ✅ Artículo publicado
+
+**Análisis de competencia en Meta Ads Library: cómo extraer creatividades ganadoras**
+→ https://www.daybydayconsulting.com/blog/meta-ads-library-analisis-competencia
+
+🔍 **GSC indexar**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/meta-ads-library-analisis-competencia
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+📊 **Total posts publicados**: 65 | Tasks completadas Phase 4: T26-T38 + T39 (13/27)
+
+🔗 **Interlinking añadido**:
+- ABTestingMetaAdsQueTestarPrimeroPage → nuevo artículo
+- PorQueAnunciosMetaNoConviertenPage → nuevo artículo
+
+📋 **Próximas 3 keywords prioritarias**:
+- T40 ad fatigue meta ads (cluster creatividades, ALTA, 1100w)
+- T41 cbo abo meta ads 2026 (cluster estructura-cuenta, ALTA, 1200w)
+- T42 framework creatividades meta ads (cluster creatividades, ALTA, 1300w)
+
+🎯 **Cobertura GEO**: "cómo analizar competencia meta ads", "cómo encontrar creatividades ganadoras competidor", "agencia que audita Meta Ads Library", "swipe file meta ads para D2C España"
+
+🏷️ **Keywords**: meta ads library competencia, analizar creatividades competencia meta ads, facebook ad library ecommerce, espiar anuncios meta competidor, swipe file meta ads d2c
+
+⚠️ Conflicto de merge en `seo-plan/estado.json` (array `published_posts`) resuelto combinando ambos sides — incluye nuevos slugs de `pivot-growth` (growth-partner-vs-agencia, ai-proof-skills) + suscripciones + meta-ads-library.
+[2026-05-11 17:08:09] [current] Agent end duration=476s exit=0 status=success
+[2026-05-11 17:08:10] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-11 17:08:10] [current] Publish lock acquired.
+[2026-05-11 17:08:10] [current] Deploying to Vercel (track=current)…
+[2026-05-11 17:08:52] [current] Vercel deploy FAILED — check logs
+[2026-05-11 17:08:52] [current] Publish lock released.
+[2026-05-11 17:08:52] [current] === BLOG PUBLISHER DONE (track=current) ===

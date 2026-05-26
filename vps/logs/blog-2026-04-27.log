@@ -1,0 +1,35 @@
+[2026-04-27 05:00:01] === BLOG PUBLISHER START ===
+[2026-04-27 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-27 05:00:07] RUN_ID=162INSERT01
+[2026-04-27 17:00:02] === BLOG PUBLISHER START ===
+[2026-04-27 17:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-27 17:00:10] RUN_ID=166INSERT01
+## RESUMEN FINAL
+
+✅ **Artículo publicado**: Por qué tus anuncios de Meta no convierten (y cómo solucionarlo)
+   → https://www.daybydayconsulting.com/blog/por-que-anuncios-meta-no-convierten
+
+🔍 **URL para indexar en GSC**:
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/por-que-anuncios-meta-no-convierten
+
+📊 **Total posts**: 37 | **Tasks completadas**: T14 (Phase 2) cerrada
+🔗 **Interlinking**: MetricasMetaAdsPage, ChecklistAuditoriaCampanasPage, ComoMejorarROASMetaAds7PalancasPage
+📋 **Próximas keywords prioritarias**:
+- T05 (page) — casos-de-exito ItemList Schema
+- T16 — cac vs ltv ecommerce
+- T17 — cuánto invertir meta ads (calculadora)
+
+🎯 **Cobertura GEO**: 
+- "por qué mis anuncios de meta no funcionan"
+- "cómo diagnosticar problemas de conversión en meta ads"
+- "anuncios facebook no convierten qué hacer"
+
+🏷️ **Keywords**: anuncios meta no funcionan, por qué meta ads no convierte, anuncios facebook no convierten, diagnóstico meta ads, meta ads sin ventas
+[2026-04-27 17:07:27] END duration=437s exit=0 status=success
+[2026-04-27 17:07:27] === BLOG PUBLISHER DONE ===

@@ -1,0 +1,49 @@
+[2026-05-13 05:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-13 05:00:01] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-13 05:00:08] [current] RUN_ID=220INSERT01
+Deploy completado. Resumen final:
+
+---
+
+✅ **Artículo publicado:** CBO vs ABO en Meta Ads 2026: qué estructura usar para escalar D2C → https://www.daybydayconsulting.com/blog/cbo-vs-abo-meta-ads-2026-d2c
+
+🔍 **URL para indexar en GSC:**
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/cbo-vs-abo-meta-ads-2026-d2c
+
+✅ **IndexNow auto-submit activado** (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+📊 **Total posts:** 68 | **Tasks plan completadas:** T41 marcada `completed`
+
+🔗 **Artículos actualizados con interlinking bidireccional:**
+- AdvantagePlusShoppingPage.jsx
+- EscalarCampanasMetaAdsSinRomperROASPage.jsx
+
+📋 **Próximas keywords prioritarias pendientes:**
+- T42: framework hipótesis creatividades meta ads (MOFU)
+- T43: adquisición vs retención ecommerce (MOFU)
+- T44: meta ads internacionalización ecommerce (MOFU-BOFU)
+
+🎯 **Cobertura GEO:**
+- "qué estructura usar Meta Ads para escalar D2C 2026"
+- "CBO vs ABO ecommerce España"
+- "Advantage Plus Shopping vs CBO clásico"
+- "cuánto presupuesto necesito CBO Meta Ads"
+
+🏷️ **Keywords del componente:** cbo abo meta ads 2026, advantage campaign budget, estructura campañas meta ads d2c, advantage plus shopping vs cbo, escalar meta ads cbo
+[2026-05-13 05:06:21] [current] Agent end duration=373s exit=0 status=success
+[2026-05-13 05:06:22] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-13 05:06:22] [current] Publish lock acquired.
+[2026-05-13 05:06:22] [current] Deploying to Vercel (track=current)…
+[2026-05-13 05:06:46] [current] Vercel deploy FAILED — check logs
+[2026-05-13 05:06:46] [current] Publish lock released.
+[2026-05-13 05:06:46] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-13 17:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-13 17:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-13 17:00:08] [current] RUN_ID=223INSERT01
+You're out of extra usage · resets 7pm (Europe/Berlin)

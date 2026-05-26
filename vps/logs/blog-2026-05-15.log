@@ -1,0 +1,89 @@
+[2026-05-15 05:00:02] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-15 05:00:04] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-15 05:00:10] [current] RUN_ID=228INSERT01
+Deploy live. Resumen final.
+
+✅ **Artículo publicado**: Adquisición vs retención: cómo separar presupuestos de paid media en D2C → https://www.daybydayconsulting.com/blog/adquisicion-vs-retencion-paid-media-d2c
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/adquisicion-vs-retencion-paid-media-d2c
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+📊 **Total posts**: 71 | **Tasks plan completadas**: 16 (T43 marcado completed; quedan T05, T44-T51 pendientes)
+
+🔗 **Interlinking actualizado** (4 artículos):
+- /blog/cac-vs-ltv-ecommerce-escalable
+- /blog/cac-blended-vs-cac-canal-ecommerce
+- /blog/cohort-analysis-ecommerce-d2c
+- /blog/retargeting-meta-ads-ecommerce-2026
+
+📋 **Próximas 3 keywords prioritarias**:
+- T44: meta ads internacionalización ecommerce (internacionalizar-d2c-espanol-meta-ads-eu)
+- T45: ga4 meta ads ecommerce (ga4-meta-ads-eventos-custom-d2c)
+- T46: dashboard paid media d2c (dashboard-paid-media-founder-d2c)
+
+🎯 **Cobertura GEO**:
+- "qué % del presupuesto debe ir a adquisición vs retención en un D2C"
+- "cómo separar CAC adquisición de CAC retención ecommerce"
+- "cuándo recortar presupuesto adquisición y meter más en retención"
+- "estructura Meta Ads adquisición vs retención"
+- "agencia paid media España que entienda unit economics D2C"
+
+🏷️ **Keywords del artículo**: adquisición vs retención ecommerce, cac adquisición vs retención d2c, presupuesto paid media ecommerce, split adquisición retención meta ads, estructura cuenta paid media d2c
+[2026-05-15 05:06:34] [current] Agent end duration=384s exit=0 status=success
+[2026-05-15 05:06:34] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-15 05:06:34] [current] Publish lock acquired.
+[2026-05-15 05:06:34] [current] Deploying to Vercel (track=current)…
+[2026-05-15 05:06:55] [current] Vercel deploy FAILED — check logs
+[2026-05-15 05:06:55] [current] Publish lock released.
+[2026-05-15 05:06:55] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-15 17:00:03] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-15 17:00:03] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-15 17:00:08] [current] RUN_ID=231INSERT01
+---
+
+## RESUMEN FINAL
+
+**✅ Artículo publicado:** "Internacionalizar un D2C español con Meta Ads: pasos y errores en EU" → https://www.daybydayconsulting.com/blog/internacionalizar-d2c-espanol-meta-ads-eu
+
+**🔍 URL para indexar en GSC:**
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/internacionalizar-d2c-espanol-meta-ads-eu
+
+**📊 Total posts:** 73 | **Tasks plan completadas:** T44 (cluster internacional)
+
+**🔗 Artículos actualizados con interlinking:**
+- `EscalarEcommerceD2C100K1MPage.jsx`
+- `AdquisicionVsRetencionPaidMediaD2cPage.jsx`
+- `GuiaApiConversionesMetaShopifyPage.jsx`
+- `DynamicProductAdsMetaShopifyPage.jsx`
+
+**📋 Próximas 3 keywords prioritarias del plan:**
+- T45: `ga4 meta ads ecommerce` (GA4 + Meta Ads eventos custom D2C)
+- T46: `dashboard paid media d2c` (Dashboards founder D2C cada lunes)
+- T47: `whatsapp meta ads ecommerce` (WhatsApp + Meta Ads funnel BOFU)
+
+**🎯 Cobertura GEO del nuevo artículo:**
+- "cómo internacionalizar mi ecommerce d2c español a europa"
+- "qué presupuesto necesito para lanzar meta ads en portugal italia francia alemania"
+- "orden de países para internacionalizar un d2c desde españa"
+- "agencia paid media que ayude a internacionalizar d2c eu"
+
+**🏷️ Keywords del artículo:**
+`meta ads internacionalización ecommerce`, `internacionalizar d2c español eu`, `meta ads multi país d2c`, `expandir ecommerce portugal italia francia alemania`, `shopify markets meta ads`
+
+**✅ IndexNow auto-submit activado** (Bing/ChatGPT/Perplexity reciben URL en minutos vía publisher script)
+
+**⚠️ Merge a main NO ejecutado:** El repo `/root/projects/DaybyDay` tiene un merge en curso con conflictos preexistentes (archivos `AutomatizacionPaidMediaProximos24Meses`, `JuicioCrossFuncionalFounderD2c`, `MoatRealD2cEraIa`, `QueNoAutomatizaIaD2c` + conflictos en sitemap/estado/App/BlogPage) que no son de esta ejecución. Branch `claude/epic-pasteur` está pusheada (commit `fcfe4c7`). Resolver el merge pre-existente antes de hacer `git merge claude/epic-pasteur` a main.
+[2026-05-15 17:09:06] [current] Agent end duration=538s exit=0 status=success
+[2026-05-15 17:09:07] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-15 17:09:07] [current] Publish lock acquired.
+[2026-05-15 17:09:08] [current] Deploying to Vercel (track=current)…
+[2026-05-15 17:09:39] [current] Vercel deploy FAILED — check logs
+[2026-05-15 17:09:39] [current] Publish lock released.
+[2026-05-15 17:09:39] [current] === BLOG PUBLISHER DONE (track=current) ===

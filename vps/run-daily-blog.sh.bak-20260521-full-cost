@@ -1,0 +1,330 @@
+#!/bin/bash
+export PATH=/usr/local/bin:/usr/bin:/bin
+export VERCEL_TOKEN="PLACEHOLDER_VERCEL_TOKEN"
+# DayByDay — Daily Blog Publisher — GUARDRAILS VERSION
+# Safe: ONLY touches src/pages/blog/, src/App.jsx, src/pages/BlogPage.jsx,
+#       public/sitemap.xml, public/llms.txt, seo-plan/estado.json
+# NEVER modifies: components, layouts, config, theme, CSS, JS lib files
+# Runs via cron 3x/week Mon/Wed/Fri 5:00 UTC (6am Spain)
+
+set -euo pipefail
+
+REPO_DIR="/root/projects/DaybyDay"
+WORKTREE_DIR="${REPO_DIR}/.claude/worktrees/epic-pasteur"
+BRANCH="claude/epic-pasteur"
+LOG_FILE="/var/log/daybyday/blog-$(date +%Y-%m-%d).log"
+LEGACY_LOG="/root/logs/blog-$(date +%Y-%m-%d).log"
+
+mkdir -p /var/log/daybyday /root/logs
+
+log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE" >> "$LEGACY_LOG"; }
+
+log "=== BLOG PUBLISHER START ==="
+log "Worktree: $WORKTREE_DIR | Branch: $BRANCH"
+
+# 1. Safety: verify worktree exists and is on correct branch
+cd "$WORKTREE_DIR" || { log "ERROR: Worktree not found"; exit 1; }
+
+CURRENT_BRANCH=$(git branch --show-current 2>/dev/null || echo "detached")
+if [ "$CURRENT_BRANCH" != "$BRANCH" ]; then
+  log "Fixing branch: $CURRENT_BRANCH → $BRANCH"
+  git checkout -B "$BRANCH" 2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG"
+  git branch -u origin/"$BRANCH" 2>&1 || true
+fi
+
+# 2. Pull latest to avoid conflicts
+git pull origin "$BRANCH" --rebase 2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG" || {
+  log "WARN: Pull failed, continuing with local state"
+}
+
+# 3. Record run in PostgreSQL
+RUN_ID=$(docker exec daybyday-postgres psql -U daybyday -d daybyday -t -c \
+  "INSERT INTO agent_runs (agent_name, status, started_at) VALUES ('daybyday-daily-blog', 'running', NOW()) RETURNING id;" \
+  2>/dev/null | tr -d ' \n\r')
+log "RUN_ID=${RUN_ID}"
+
+# 4. Run the blog agent with STRICT tool/path guardrails
+START_TIME=$(date +%s)
+
+SKILL_CONTENT=$(awk 'BEGIN{f=0} /^---$/{if(f==0){f=1;next}else if(f==1){f=2;next}} f>=2{print}' \
+  "/root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md")
+[ -z "$(echo "$SKILL_CONTENT" | tr -d '[:space:]')" ] && \
+  SKILL_CONTENT=$(cat "/root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md")
+
+FULL_PROMPT="# AGENTE: daybyday-daily-blog
+# RUTA DE TRABAJO: ${WORKTREE_DIR}
+# RESTRICCIÓN CRÍTICA DE SEGURIDAD:
+# - SOLO puedes modificar archivos en: src/pages/blog/, src/App.jsx, src/pages/BlogPage.jsx, public/sitemap.xml, public/llms.txt, seo-plan/estado.json
+# - NUNCA toques: src/components/, src/layouts/, src/styles/, vite.config.js, package.json, index.html, cualquier archivo de configuración
+# - Si dudas sobre si un archivo es seguro: NO LO TOQUES
+# - El git add del commit SOLO incluye los archivos permitidos listados arriba
+
+${SKILL_CONTENT}
+
+## CONTEXTO ADICIONAL
+Directorio de trabajo activo: ${WORKTREE_DIR}
+Usa 'cd ${WORKTREE_DIR}' antes de cualquier operación de archivo.
+Al hacer git commit, usa EXACTAMENTE este comando (no añadas otros archivos):
+  git add src/pages/blog/ src/App.jsx src/pages/BlogPage.jsx public/sitemap.xml public/llms.txt seo-plan/estado.json
+  git commit -m 'feat(blog): [TITULO] — keyword: [KEYWORD]'
+  git push origin ${BRANCH}
+
+Después del push, ejecuta:
+  curl -s 'https://www.google.com/ping?sitemap=https://daybydayconsulting.com/sitemap.xml' || true
+  echo 'GSC_PING_DONE'
+"
+
+# FASE 1: RESEARCH + WRITING con MiniMax M2.5 (único modelo, $0.07 total)
+log "=== BLOG GENERATION (MiniMax M2.5 only) ==="
+
+BLOG_PROMPT="# AGENTE: blog-generator
+# META: Investigar topic, preparar brief Y escribir post completo
+# RUTA: ${WORKTREE_DIR}
+# MODELO: MiniMax M2.5 (único modelo, mejor reasoning @ $0.07)
+
+## TU TAREA:
+1. Leer estado.json → obtener task pendiente (menor ID)
+2. Web research básica: \"[TOPIC] 2025 2026 España\" (máx 3 búsquedas)
+3. Verificar links con curl -I (solo HTTP 200)
+4. Generar outline + escribir post JSX completo EN UNA PASADA
+5. Commit + push
+
+### OUTPUT:
+- Archivo: src/pages/blog/[Slug].jsx
+- Mínimo 800 palabras
+- 3+ FAQs
+- Schema JSON-LD (Article + FAQPage)
+- Meta description única (140-160 chars)
+- Título con keyword en primeras 30 chars
+
+### RESTRICCIONES:
+- SOLO modificar: src/pages/blog/, src/App.jsx, public/sitemap.xml, seo-plan/estado.json
+- Links externos: SOLO los verificados
+- NO inventar stats — usar fuentes públicas conocidas
+- Keywords del post: pixel meta ads híbrido, meta pixel server side, conversions api meta ecommerce, event match quality meta
+
+git commit:
+  git add src/pages/blog/ src/App.jsx public/sitemap.xml public/llms.txt seo-plan/estado.json
+  git commit -m 'feat(blog): [TITULO]'
+  git push origin ${BRANCH}"
+
+hermes chat \
+  -q "$BLOG_PROMPT" \
+  --model minimax-m2.5 \
+  --provider minimax \
+  2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG"
+
+RESEARCH_PROMPT="# AGENTE: blog-researcher
+# META: Investigar topic y preparar brief para redactor (NO escribe el post)
+# RUTA: ${WORKTREE_DIR}
+# MODELO: MiniMax M2.5 (reasoning de alta calidad, $0.07/task)
+
+## TU TAREA:
+1. Recibir topic pendiente del estado.json
+2. Búsqueda web: \"[TOPIC] 2025 2026 España\" (máx 5 resultados)
+3. Para cada fuente externa candidate: verificar con curl que devuelve HTTP 200
+4. Verificar stats/benchmarks del contenido — buscar si siguen siendo válidos
+5. Generar OUTLINE + BRIEF con:
+   - Título sugerido (50-60 chars, keyword al inicio)
+   - Meta description (140-160 chars, única)
+   - 5 H2s con bullet points de contenido
+   - Stats verificados con fuente + año
+   - Links externos verificados (HTTP 200) con anchor text sugerido
+   - FAQs sugeridas (3-5 preguntas con respuesta de 80-150 palabras)
+
+## RESTRICCIÓN CRÍTICA:
+- NO escribas el post, solo prepara el brief
+- Solo incluir stats que se puedan verificar en web
+- Si un stat no es verificable: marcar como \"(sin verificar — usar con precaución)\"
+
+## OUTPUT FORMAT:
+Devuelve el BRIEF completo en markdown estructurado. Este brief será usado por otro agente (Claude Sonnet 4) para escribir el post real.
+
+## CONTEXTO:
+- Categoría del post: Paid Media / Growth Partner / Automation
+- Autor: Pablo Santirsó (Growth Partner, DayByDay Consulting)
+- Brand voice: profesional, directo, sin fluff, datos reales, casos de éxito propios
+- Target: founders/CMOs de ecommerce D2C España >5K€/mes inversión Meta Ads
+
+Después de generar el BRIEF, escribirlo en:
+${WORKTREE_DIR}/seo-plan/research-brief.md
+
+Usa 'cd ${WORKTREE_DIR}' antes de cualquier operación.
+"
+
+hermes chat \
+  -q "$RESEARCH_PROMPT" \
+  --model minimax-m2.5 \
+  --provider minimax \
+  2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG"
+
+RESEARCH_EXIT=${PIPESTATUS[0]}
+if [ $RESEARCH_EXIT -ne 0 ]; then
+  log "WARN: Research phase failed with exit=$RESEARCH_EXIT — continuing anyway"
+fi
+
+# Verificar que el brief existe antes de proceder
+if [ -f "${WORKTREE_DIR}/seo-plan/research-brief.md" ]; then
+  log "Research brief generated successfully"
+else
+  log "WARN: No research brief found — generating minimal brief"
+  echo "# Brief mínimo (research falló)
+Título: [generar título con keyword]
+Meta: [meta description]
+Outline: completar manualmente" > "${WORKTREE_DIR}/seo-plan/research-brief.md"
+fi
+
+# FASE 2: WRITING con Claude Sonnet 4 (mejor calidad de redacción humana)
+# DESHABILITADO: Claude sin credits. Volver a activar cuando se renueve.
+# Usar únicamente MiniMax M2.5 (línea 77-120)
+#:~ 
+#: 
+# # FASE 2: WRITING con Claude Sonnet 4 (mejor calidad de redacción humana)
+# log "=== FASE 2: WRITING (Claude Sonnet 4) ==="
+# 
+# WRITING_PROMPT=
+# META: Escribir post de blog completo en JSX usando el brief proporcionado
+# RUTA: ${WORKTREE_DIR}
+# MODELO: Claude Sonnet 4 (máxima calidad de redacción humana)
+# IMPORTANTE: Lee ${WORKTREE_DIR}/seo-plan/research-brief.md antes de escribir
+
+## TU TAREA:
+1. Leer research-brief.md (contiene outline, stats verificados, links verificados)
+2. Escribir post completo en JSX siguiendo EXACTAMENTE el checklist de calidad:
+
+### CHECKLIST DE CALIDAD (OBLIGATORIO):
+- Título: 50-60 chars, keyword en primeras 30
+- Meta description: 140-160 chars, única
+- Mínimo 800 palabras contenido visible
+- Mínimo 2 H2s sustanciales (no headers huérfanos)
+- Mínimo 3 FAQs con respuestas 80-150 palabras
+- Article schema + FAQPage schema + Author schema
+- Canonical tag único
+- Links externos: SOLO los verificados en research-brief.md
+- Anchor text: mínimo 4 palabras, descriptivo
+- 2+ enlaces internos a otros posts del blog
+
+### RESTRICCIÓN CRÍTICA DE SEGURIDAD:
+- SOLO modifica: src/pages/blog/, src/App.jsx, src/pages/BlogPage.jsx, public/sitemap.xml, public/llms.txt, seo-plan/estado.json
+- NUNCA toques: src/components/, src/layouts/, src/styles/, vite.config.js, package.json, index.html
+- Usar solo los links externos verificados del research-brief.md
+- NO inventar stats — usar SOLO los del brief que están marcados como verificados
+
+## FORMATO DE OUTPUT:
+- Archivo: src/pages/blog/[Slug]Page.jsx
+- Template: usar estructura de BlogPostLayout.jsx existente
+- Incluir SEOHead con title, description, slug, datePublished, category, readingTime
+- Incluir schema JSON-LD (Article + FAQPage + Author + Organization)
+
+## COMMIT:
+Después de escribir y verificar:
+git add src/pages/blog/ src/App.jsx src/pages/BlogPage.jsx public/sitemap.xml public/llms.txt seo-plan/estado.json
+git commit -m 'feat(blog): [TITULO] — keyword: [KEYWORD]'
+git push origin ${BRANCH}
+
+Después del push:
+curl -s 'https://www.google.com/ping?sitemap=https://daybydayconsulting.com/sitemap.xml' || true
+echo 'GSC_PING_DONE'
+"
+
+# Usar ANTHROPIC_API_KEY directamente para Claude
+export ANTHROPIC_API_KEY
+ANTHROPIC_API_KEY=$(grep ANTHROPIC_API_KEY /root/.env | cut -d'=' -f2 | tr -d ' \n\r')
+
+hermes chat \
+  -q "$WRITING_PROMPT" \
+  --model claude-sonnet-4-20250514 \
+  --provider anthropic \
+  2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG"
+
+EXIT_CODE=${PIPESTATUS[0]}
+END_TIME=$(date +%s)
+DURATION=$((END_TIME - START_TIME))
+STATUS="success"
+[ $EXIT_CODE -ne 0 ] && STATUS="failed"
+
+/root/scripts/notify.sh "⚠️ Blog ${STATUS} (${DURATION}s)" 2>/dev/null &
+log "END duration=${DURATION}s exit=${EXIT_CODE} status=${STATUS}"
+
+# 4b. Extract slug + keyword from last commit for downstream gates
+sleep 5  # let filesystem settle
+LATEST_BLOG_FILE=$(cd "$WORKTREE_DIR" && git diff --name-only --diff-filter=A HEAD~1 HEAD 2>/dev/null | grep 'src/pages/blog/' | grep -v 'BlogPage\|App\.' | head -1)
+if [ -n "$LATEST_BLOG_FILE" ]; then
+  LH_SLUG=$(basename "$LATEST_BLOG_FILE" .jsx 2>/dev/null || basename "$LATEST_BLOG_FILE" .tsx 2>/dev/null || basename "$LATEST_BLOG_FILE")
+  KEYWORD=$(grep -m1 'export const metadata' "$WORKTREE_DIR/$LATEST_BLOG_FILE" 2>/dev/null | grep -oP "keywords:\s*\[?\K[^\]\n]+" | tr -d ",'\" " | head -c 100 || echo "unknown")
+  log "Detected slug=$LH_SLUG keyword=$KEYWORD"
+else
+  LH_SLUG=$(ls -t "$WORKTREE_DIR/src/pages/blog/"*.jsx 2>/dev/null | head -1 | xargs -I{} basename {} .jsx 2>/dev/null || echo "unknown")
+  KEYWORD="unknown"
+  log "Detected slug=$LH_SLUG (fallback)"
+fi
+
+# 4c. Content Depth Gate — block if BELOW THRESHOLD
+log "Running content depth gate…"
+if python3 /root/scripts/content-depth-gate.py --keyword "$KEYWORD" --slug "$LH_SLUG" >> "$LOG_FILE" 2>&1; then
+  log "Content depth gate: PASSED"
+else
+  log "WARN: Content depth gate: BELOW THRESHOLD — continuing anyway (review manually)"
+fi
+
+# 5. Update PostgreSQL
+SUMMARY=$(tail -30 "$LOG_FILE" | { grep -E 'Artículo|feat\(blog\)|FUNCIONA|published|ERROR' || true; } | tr '\n' ' ' | cut -c1-500)
+docker exec daybyday-postgres psql -U daybyday -d daybyday -c \
+  "UPDATE agent_runs SET status='${STATUS}', finished_at=NOW(), duration=${DURATION}, summary='$(echo $SUMMARY | sed "s/'/''/g")' WHERE id=${RUN_ID};" \
+  2>/dev/null || true
+
+# 6. GSC ping (belt and suspenders)
+curl -s "https://www.google.com/ping?sitemap=https://daybydayconsulting.com/sitemap.xml" >> "$LOG_FILE" 2>&1 || true
+
+# 7. Build con prerender + deploy a Vercel (HTML estático por ruta para SEO)
+log "Deploying to Vercel with prerender…"
+(
+  set +e
+  cd "$REPO_DIR"
+  git fetch origin main "$BRANCH" 2>&1
+  git checkout main 2>&1
+  git pull origin main --rebase 2>&1
+  # Merge blog branch (claude/epic-pasteur) into main, then push
+  git merge "origin/${BRANCH}" --no-edit -m "merge: blog updates from ${BRANCH}" 2>&1
+  git push origin main 2>&1
+  npm run build 2>&1
+  vercel deploy --prebuilt --prod --yes --token="$VERCEL_TOKEN" 2>&1
+) >> "$LOG_FILE" 2>&1 && DEPLOY_OK=1 || DEPLOY_OK=0
+[ "$DEPLOY_OK" = "1" ] && log "Vercel deploy OK" || log "Vercel deploy FAILED — check logs"
+
+# 7b. GEO Citation Tracker — monitor new post for 72h citation window
+if [ "$DEPLOY_OK" = "1" ] && [ "$LH_SLUG" != "unknown" ]; then
+  log "Scheduling GEO citation tracker for slug=$LH_SLUG"
+  python3 /root/scripts/geo-citation-tracker.py --slug "$LH_SLUG" --publish >> "$LOG_FILE" 2>&1 &
+fi
+
+# 8. IndexNow auto-submit — push new blog URL + homepage to Bing/ChatGPT/Perplexity
+if [ "$DEPLOY_OK" = "1" ]; then
+  log "IndexNow: detecting new blog URLs from sitemap diff…"
+  # Extract real slugs from sitemap.xml diff in last commit (not JSX filenames)
+  NEW_BLOG_URLS=$(cd "$WORKTREE_DIR" && git diff HEAD~1 HEAD -- public/sitemap.xml 2>/dev/null \
+    | grep -E '^\+\s*<loc>https://www\.daybydayconsulting\.com/blog/' \
+    | grep -oP '(?<=<loc>)[^<]+' \
+    | sort -u)
+  if [ -n "$NEW_BLOG_URLS" ]; then
+    SUBMIT_LIST=$(printf '%s\n' \
+      "https://www.daybydayconsulting.com/" \
+      "https://www.daybydayconsulting.com/blog" \
+      $NEW_BLOG_URLS)
+    log "IndexNow submitting:"
+    echo "$SUBMIT_LIST" | tee -a "$LOG_FILE"
+    /root/scripts/indexnow-submit.sh $SUBMIT_LIST >> "$LOG_FILE" 2>&1 \
+      && log "IndexNow OK" || log "IndexNow FAILED"
+  else
+    log "IndexNow: no new blog URLs in sitemap diff, running --new mode"
+    /root/scripts/indexnow-submit.sh --new >> "$LOG_FILE" 2>&1 || log "IndexNow --new FAILED"
+  fi
+fi
+
+log "=== BLOG PUBLISHER DONE ==="
+
+# Telegram notification
+source /root/projects/DaybyDay/.env 2>/dev/null || true
+LAST_COMMIT=$(cd /root/projects/DaybyDay/.claude/worktrees/epic-pasteur && git log --oneline -1 2>/dev/null || echo 'run completado')
+/root/scripts/notify.sh "📝 Blog ${STATUS} (${DURATION}s)
+${LAST_COMMIT}" 2>/dev/null &

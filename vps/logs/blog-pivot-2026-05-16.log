@@ -1,0 +1,25 @@
+[2026-05-16 14:00:01] [pivot] === BLOG PUBLISHER START (track=pivot) ===
+[2026-05-16 14:00:01] [pivot] Worktree: /root/projects/DaybyDay/.claude/worktrees/pivot-growth | Branch: claude/pivot-growth | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog-pivot/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/pivot-growth -> FETCH_HEAD
+Already up to date.
+[2026-05-16 14:00:10] [pivot] RUN_ID=233INSERT01
+## Resumen Final
+
+- ✅ PIVOT publicado: **El rol del media buyer en 2027: por qué la categoría se evapora y qué la sustituye** → https://www.daybydayconsulting.com/blog/rol-media-buyer-2027
+- 🎯 Cluster: **pivot-operador-anti-tactical**
+- 🔍 URL para indexar en GSC: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/rol-media-buyer-2027
+- 📊 Total posts pivot: **7** | Tasks pivot completadas: **7/32**
+- 🔗 Interlinking: growth-partner-vs-agencia-paid-media · automatizacion-paid-media-proximos-24-meses · que-no-automatiza-ia-d2c · moat-real-d2c-era-ia
+- 🚫 Auditoría anti-solapamiento: **PASS** (current cubre "qué es media buyer", "media buyer vs agencia", "cuánto cobra media buyer freelance"; este pivot ataca futuro/categoría 2027 — keyword distinta, intent BOFU-GEO)
+- 🏷️ Keywords pivot: media buyer 2027 futuro · futuro rol media buyer ecommerce · media buyer vs growth partner · automatizacion media buyer d2c · growth partner sustituye media buyer
+- 🧠 Decisión de negocio cubierta: cuándo dejar de pagar a un media buyer freelance cuya operativa intra-plataforma ya internalizan Advantage+ / AI Max / Symphony.
+- 📐 Términos obligatorios encontrados: growth partner=27, operador con criterio=2, margen contribución=14, payback CAC=11+2, palanca=3, founder=22
+- ⏳ IndexNow: auto-submit por `run-daily-blog.sh --track=pivot` tras Vercel deploy.
+[2026-05-16 14:04:07] [pivot] Agent end duration=237s exit=0 status=success
+[2026-05-16 14:04:08] [pivot] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-16 14:04:08] [pivot] Publish lock acquired.
+[2026-05-16 14:04:08] [pivot] Deploying to Vercel (track=pivot)…
+[2026-05-16 14:04:26] [pivot] Vercel deploy FAILED — check logs
+[2026-05-16 14:04:26] [pivot] Publish lock released.
+[2026-05-16 14:04:26] [pivot] === BLOG PUBLISHER DONE (track=pivot) ===

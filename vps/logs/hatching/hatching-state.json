@@ -1,0 +1,300 @@
+{
+  "variants": {
+    "A": {
+      "posts": [
+        {
+          "slug": "cro-landing-page-meta-ads-d2c",
+          "timestamp": "2026-05-19T00:01:31.665011",
+          "lh_perf": 73.0,
+          "lh_seo": 100.0,
+          "gsc_ctr": null,
+          "gsc_position": null,
+          "composite_score": 45.35
+        },
+        {
+          "slug": "ab-testing-meta-ads-que-testar-primero",
+          "timestamp": "2026-05-19T03:46:57.527879",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 1.47,
+          "gsc_position": 9.2,
+          "composite_score": 34.36
+        },
+        {
+          "slug": "estrategias-puja-meta-ads",
+          "timestamp": "2026-05-19T03:46:57.639565",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.83,
+          "gsc_position": 6.9,
+          "composite_score": 35.87
+        },
+        {
+          "slug": "que-es-roas-meta-ads",
+          "timestamp": "2026-05-19T03:46:57.715748",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 1.39,
+          "gsc_position": 7.4,
+          "composite_score": 35.69
+        },
+        {
+          "slug": "suscripciones-ecommerce-ltv-cac-d2c",
+          "timestamp": "2026-05-19T03:46:57.801049",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 14.29,
+          "gsc_position": 4.7,
+          "composite_score": 42.23
+        },
+        {
+          "slug": "agencia-vs-inhouse-vs-ia",
+          "timestamp": "2026-05-19T03:46:57.878408",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 19.1,
+          "composite_score": 26.42
+        },
+        {
+          "slug": "ai-proof-skills-founder-d2c-2027",
+          "timestamp": "2026-05-19T03:46:57.969803",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 2.0,
+          "composite_score": 39.25
+        },
+        {
+          "slug": "aumentar-aov-ecommerce-d2c-palancas",
+          "timestamp": "2026-05-19T03:46:58.048719",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 50.0,
+          "composite_score": 25.0
+        },
+        {
+          "slug": "black-friday-meta-ads-d2c-preparacion",
+          "timestamp": "2026-05-19T03:46:58.126570",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 11.0,
+          "composite_score": 32.5
+        },
+        {
+          "slug": "buen-roas-por-nicho-benchmarks-2026",
+          "timestamp": "2026-05-19T03:46:58.220017",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 7.0,
+          "composite_score": 35.5
+        },
+        {
+          "slug": "cohort-analysis-ecommerce-d2c",
+          "timestamp": "2026-05-19T03:46:58.443198",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 7.7,
+          "composite_score": 34.98
+        },
+        {
+          "slug": "creative-testing-meta-ads",
+          "timestamp": "2026-05-19T03:46:58.531189",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 8.0,
+          "composite_score": 34.75
+        },
+        {
+          "slug": "cro-landing-page-meta-ads-d2c",
+          "timestamp": "2026-05-19T03:46:58.617500",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 12.0,
+          "composite_score": 31.75
+        },
+        {
+          "slug": "email-marketing-meta-ads-ltv-d2c",
+          "timestamp": "2026-05-19T03:46:58.736285",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 67.0,
+          "composite_score": 25.0
+        },
+        {
+          "slug": "growth-partner-vs-agencia-paid-media",
+          "timestamp": "2026-05-19T03:46:58.856752",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 4.0,
+          "composite_score": 37.75
+        },
+        {
+          "slug": "guia-api-conversiones-meta-ads-shopify",
+          "timestamp": "2026-05-19T03:46:59.218418",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 8.4,
+          "composite_score": 34.45
+        },
+        {
+          "slug": "ia-marketing-digital",
+          "timestamp": "2026-05-19T03:46:59.300291",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 4.0,
+          "composite_score": 37.75
+        },
+        {
+          "slug": "incrementality-testing-meta-ads-d2c",
+          "timestamp": "2026-05-19T03:46:59.478288",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 5.0,
+          "composite_score": 37.0
+        },
+        {
+          "slug": "ios-atribucion-meta-ads-2026-d2c",
+          "timestamp": "2026-05-19T03:46:59.696194",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 4.4,
+          "composite_score": 37.45
+        },
+        {
+          "slug": "margen-contribucion-vs-roas-ecommerce",
+          "timestamp": "2026-05-19T03:46:59.796483",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 13.4,
+          "composite_score": 30.7
+        },
+        {
+          "slug": "marketing-mix-modeling-ecommerce-d2c",
+          "timestamp": "2026-05-19T03:46:59.914692",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 23.6,
+          "composite_score": 25.0
+        },
+        {
+          "slug": "modelos-atribucion-ecommerce-d2c",
+          "timestamp": "2026-05-19T03:46:59.995772",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 5.6,
+          "composite_score": 36.55
+        },
+        {
+          "slug": "que-es-paid-media-guia-completa",
+          "timestamp": "2026-05-19T03:47:00.115151",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 80.5,
+          "composite_score": 25.0
+        },
+        {
+          "slug": "senales-agencia-publicidad-no-rinde",
+          "timestamp": "2026-05-19T03:47:00.255687",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 5.5,
+          "composite_score": 36.62
+        },
+        {
+          "slug": "server-side-tracking-shopify-conversions-api",
+          "timestamp": "2026-05-19T03:47:00.479438",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 10.9,
+          "composite_score": 32.57
+        },
+        {
+          "slug": "tareas-marketing-automatizar",
+          "timestamp": "2026-05-19T03:47:00.619841",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 9.0,
+          "composite_score": 34.0
+        },
+        {
+          "slug": "tiktok-ads-ecommerce-d2c-espana-2026",
+          "timestamp": "2026-05-19T03:47:00.766036",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 5.9,
+          "composite_score": 36.32
+        },
+        {
+          "slug": "ugc-meta-ads",
+          "timestamp": "2026-05-19T03:47:00.877321",
+          "lh_perf": null,
+          "lh_seo": null,
+          "gsc_ctr": 0.0,
+          "gsc_position": 10.2,
+          "composite_score": 33.1
+        }
+      ],
+      "scores": [
+        45.349999999999994,
+        34.36450000000001,
+        35.8655,
+        35.686499999999995,
+        42.226499999999994,
+        26.424999999999997,
+        39.24999999999999,
+        25.0,
+        32.5,
+        35.5,
+        34.975,
+        34.75,
+        31.75,
+        25.0,
+        37.75,
+        34.45,
+        37.75,
+        37.0,
+        37.45,
+        30.7,
+        25.0,
+        36.55,
+        25.0,
+        36.625,
+        32.574999999999996,
+        34.0,
+        36.324999999999996,
+        33.1
+      ]
+    },
+    "B": {
+      "posts": [],
+      "scores": [],
+      "description": "Narrative con caso cliente de apertura, 10 H2 sections 8-10 lineas, 3 FAQs largas con ejemplo, TL;DR al inicio, benchmark tabla al final",
+      "name": "variant_b"
+    }
+  },
+  "current_control": "A",
+  "winner": null,
+  "last_promoted": null,
+  "runs": 0
+}

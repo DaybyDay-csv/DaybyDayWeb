@@ -1,0 +1,8 @@
+#!/bin/bash
+# DayByDay — GEO Monitor — Mondays 6:45 UTC
+cd /root/projects/DaybyDay
+DATE=$(date +%Y-%m-%d)
+LOG=/root/logs/geo-monitor-$DATE.log
+echo "=== START $(date) ===" >> $LOG
+claude --dangerously-skip-permissions   -p "$(cat /root/.claude/scheduled-tasks/daybyday-geo-monitor/SKILL.md)"   --allowedTools 'Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch'   >> $LOG 2>&1
+echo "=== END $(date) ===" >> $LOG

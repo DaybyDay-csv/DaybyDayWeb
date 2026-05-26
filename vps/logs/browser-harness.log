@@ -1,0 +1,497 @@
+[2768489:2768553:0520/111841.932532:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768553:0520/111841.943880:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768553:0520/111842.065600:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768553:0520/111842.245519:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/cdc327a7-9190-4f03-afb0-968bf322f57d
+[2768489:2768553:0520/111842.533847:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768553:0520/111842.533924:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111842.875276:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768489:0520/111842.876320:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/111842.879581:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111842.909640:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768489:0520/111842.943335:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/111842.994460:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111843.322776:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768489:0520/111843.326210:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/111843.326418:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111843.422693:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768489:0520/111843.422800:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[2768489:2768553:0520/111843.425503:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111843.453181:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/111843.453546:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111843.464900:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768554:0520/111847.917771:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[2768489:2768489:0520/111850.799678:ERROR:chrome/browser/ui/webui/ntp/new_tab_ui.cc:53] Requested load of chrome://newtab/ for incorrect profile type.
+[2768489:2768554:0520/111910.902835:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[2768489:2768553:0520/111928.028591:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111928.028784:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/111928.028904:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111928.028934:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/111944.328757:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111944.328883:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/111944.328959:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/111944.328993:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768554:0520/111959.040694:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: QUOTA_EXCEEDED
+[2768489:2768553:0520/112012.435462:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112012.435791:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112012.436002:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112012.436044:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112029.354906:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112029.355042:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112029.355135:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112029.355163:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112029.667734:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112029.668306:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112029.668854:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112029.671537:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112113.882525:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112113.882726:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112113.885370:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112113.885546:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112141.100466:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112141.100618:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112141.100890:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112141.100935:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112158.435394:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112158.435515:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112158.435570:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112158.435636:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112213.371888:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112213.372093:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/112213.372311:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/112213.372383:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768591:2768591:0520/113144.121986:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113144.225401:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113146.682774:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113146.715246:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113212.071836:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113212.096019:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113226.390028:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113226.402354:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113243.930715:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113243.984531:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768489:2768553:0520/113256.444543:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/113256.470373:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/113256.478981:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/113256.491917:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768591:2768591:0520/113256.927225:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113256.966061:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768489:2768553:0520/113451.713337:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/113451.715365:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/113451.726723:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/113451.726896:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768591:2768591:0520/113452.233146:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113452.273367:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768489:2768553:0520/113640.844668:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/113640.844872:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768489:2768553:0520/113640.844962:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2768489:2768489:0520/113640.844996:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2768591:2768591:0520/113641.185007:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/113641.200542:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.763628:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.882352:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.889426:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.890936:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.891581:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.892212:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.894775:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.914248:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.916540:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.917475:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.918195:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.924308:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.930598:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/123146.931504:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133145.810027:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133146.021174:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.030746:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.066559:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.228133:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.230184:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.239450:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.241512:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.243777:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.252036:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.292973:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.293922:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.294603:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/133147.295598:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143150.759081:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.135109:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.137068:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.165581:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.166914:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.173859:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.177005:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.349752:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.351040:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.409213:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.410922:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.412064:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.413185:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/143151.414306:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.294052:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.613702:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.617425:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.618804:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.619558:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.620976:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.621882:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.622676:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.634411:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.637142:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.648573:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.650410:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.652151:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/153150.700989:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163147.048222:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163147.102983:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163149.356575:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163149.524171:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.321368:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.325042:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.349776:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.351710:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.356041:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.358228:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.360014:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.361300:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.369298:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/163150.372185:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173147.106296:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173147.145214:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173150.214517:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173150.219848:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173150.254763:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173150.383600:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.203748:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.209814:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.220716:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.434902:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.441900:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.448656:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.457963:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/173151.469281:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183147.083507:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183147.197118:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183151.200708:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183151.204516:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183151.215853:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183151.230858:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.201297:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.202214:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.204949:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.213037:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.223840:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.224917:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.233858:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/183152.242766:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193147.050768:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193147.215628:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193151.383791:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193151.388466:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193152.280345:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193152.311647:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193152.351623:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193152.362591:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193153.242826:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193153.249876:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193153.253046:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193153.256091:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193153.257000:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/193153.343067:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203147.091243:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203147.112201:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203152.268842:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203152.276089:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203153.327227:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203153.334991:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203153.374353:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203153.400481:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203154.268101:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203154.279719:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203154.294173:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203154.301138:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203154.390957:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/203154.429851:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213147.154848:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213147.374872:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213153.250312:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213153.254244:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213153.271449:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213153.285457:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213154.217751:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213154.302935:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213155.257616:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213155.258659:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213155.265092:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213155.266536:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213155.355019:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/213155.417561:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223147.078402:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223147.104845:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223154.202658:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223154.209440:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223154.211032:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223154.221422:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223155.240122:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223155.245286:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223156.275949:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223156.352765:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223156.354734:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223156.359165:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223156.361762:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/223156.433533:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233147.176150:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233147.339127:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233155.361418:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233155.369284:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233155.378794:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233155.399750:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233156.194082:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233156.202799:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233157.190993:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233157.192481:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233157.193401:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233157.198329:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233157.200718:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0520/233157.202726:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003147.551839:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003147.580463:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003156.248170:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003156.261164:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003156.279308:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003156.289530:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003157.331337:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003157.389250:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003158.214828:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003158.222496:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003158.223786:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003158.224978:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003158.235758:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/003158.252325:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013147.313146:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013147.332317:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013156.245591:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013156.248658:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013157.414583:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013157.454075:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013158.236013:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013158.244763:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013159.221535:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013159.224777:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013159.225654:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013159.230241:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013159.231375:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/013159.232375:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023147.301592:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023147.379417:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023157.212025:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023157.224189:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023158.272445:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023158.286117:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023159.194789:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023159.227572:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023200.192079:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023200.193571:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023200.195480:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023200.197704:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023200.200177:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/023200.201587:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033147.343586:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033147.383570:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033158.209134:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033158.215533:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033159.206613:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033159.226068:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033200.217769:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033200.228362:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033200.243981:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033200.256274:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033201.326500:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033201.327656:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033201.367019:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/033201.369887:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043147.442055:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043147.538750:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043159.231462:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043159.239822:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043200.226602:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043200.233884:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043200.245406:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043200.258398:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043201.195742:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043201.228447:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043202.196085:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043202.275275:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043202.410780:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/043202.544724:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053147.576386:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053147.604785:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053200.357706:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053200.498235:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053201.257526:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053201.268318:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053201.286632:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053201.316342:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053201.318036:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053201.318973:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053203.310159:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053203.405588:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053203.409213:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/053203.419984:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063147.406908:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063147.427659:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063201.377126:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063201.416534:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063201.486754:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063201.508439:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063202.225069:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063202.226650:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063202.232927:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063202.234910:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063203.386398:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063203.539217:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063204.294628:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/063204.359220:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073147.393324:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073147.431738:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073202.287318:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073202.328787:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073202.329856:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073202.341347:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073203.217247:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073203.230365:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073203.232198:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073203.238799:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073203.240938:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073203.261679:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073205.381311:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/073205.403753:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083147.316570:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083147.326055:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083203.262462:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083203.407084:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083203.604145:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083203.615889:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083204.307568:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083204.317426:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083204.323383:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083204.326552:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083204.329756:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083204.331695:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083206.189029:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/083206.192522:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093147.416274:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093147.428615:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093204.273194:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093204.279138:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093204.444946:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093204.505877:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093205.215038:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093205.221507:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093205.231544:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093205.240352:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093205.243223:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093205.260871:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093207.321819:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/093207.358027:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103147.658151:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103147.703132:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103205.281987:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103205.290956:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103205.302492:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103205.308376:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103205.339644:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103205.381492:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103206.203218:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103206.226945:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103206.249805:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103206.324765:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103208.225851:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/103208.230381:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113147.413466:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113147.434611:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113206.219020:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113206.223987:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113206.378465:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113206.402300:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113206.429474:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113206.432244:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113207.238190:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113207.256394:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113207.257386:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113207.275198:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113209.468468:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/113209.514747:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768489:2768554:0521/114535.807383:ERROR:google_apis/gcm/engine/mcs_client.cc:748] Received close command, resetting connection.
+[2768591:2768591:0521/123147.717601:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123147.828811:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123207.191976:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123207.200211:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123207.201825:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123207.207631:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123207.214598:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123207.218615:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123208.207164:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123208.211554:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123208.272439:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123208.288373:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123210.251860:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/123210.304512:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133147.562808:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133147.576643:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.266433:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.366011:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.368009:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.394123:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.396156:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.398680:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.470420:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133208.474172:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133209.493567:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133209.541137:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133211.284500:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/133211.309086:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143147.504248:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143147.520207:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.198801:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.201740:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.205493:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.208712:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.214252:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.216373:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.217204:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143209.226708:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143210.229762:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143210.236480:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143212.218577:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[2768591:2768591:0521/143212.251249:ERROR:gpu/command_buffer/service/context_group.cc:138] ContextResult::kFatalFailure: WebGL1 blocklisted
+[3909320:3909335:0526/103145.915669:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909335:0526/103145.930198:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909335:0526/103145.993327:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909335:0526/103146.027994:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/d71aec1e-3f1c-4ed3-930b-1fb5effb6178
+[3909320:3909335:0526/103146.368787:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909335:0526/103146.368855:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909320:0526/103146.699925:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909320:0526/103146.700416:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909335:0526/103146.701019:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909320:0526/103146.708948:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909320:0526/103146.711560:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909335:0526/103146.711687:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909320:0526/103146.732441:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909320:0526/103146.763638:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909335:0526/103146.856978:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909320:0526/103147.016178:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[3909320:3909320:0526/103147.018628:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909335:0526/103147.018726:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909320:0526/103147.102089:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909335:0526/103147.105190:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[3909320:3909320:0526/103147.129160:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[3909320:3909336:0526/103150.757483:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[3909320:3909320:0526/103205.543164:ERROR:chrome/browser/ui/webui/ntp/new_tab_ui.cc:53] Requested load of chrome://newtab/ for incorrect profile type.
+[3909320:3909336:0526/103214.890045:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[3909320:3909336:0526/103304.910308:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: QUOTA_EXCEEDED

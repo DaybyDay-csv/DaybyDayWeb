@@ -1,0 +1,4 @@
+[2026-05-11 07:00:04] MODEL=claude-sonnet-4-6
+[2026-05-11 07:00:04] START client-acquisition-orchestrator
+[2026-05-11 07:00:04] RUN_ID=213
+[2026-05-11 07:00:04] ERROR: Skill not found at /root/.claude/scheduled-tasks/client-acquisition-orchestrator/SKILL.md

@@ -1,0 +1,77 @@
+[2026-05-06 05:00:01] === BLOG PUBLISHER START ===
+[2026-05-06 05:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-06 05:00:05] RUN_ID=194INSERT01
+## Resumen
+
+✅ Artículo publicado: **Tracking server-side completo para Shopify con Conversions API: guía 2026** → https://www.daybydayconsulting.com/blog/server-side-tracking-shopify-conversions-api
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/server-side-tracking-shopify-conversions-api
+
+📊 Total posts: 54 | Tasks plan completadas: T29 (CRÍTICO) marcada completed; phase 4 en marcha (1/27 tasks T29-T51 hecha hoy)
+
+🔗 Artículos actualizados con interlinking:
+- GuiaApiConversionesMetaShopifyPage (link al server-side completo como siguiente paso)
+- PorQueAnunciosMetaNoConviertenPage (link como solución técnica de matching/dedup)
+- ModelosAtribucionEcommerceD2cPage (link como suelo técnico de cualquier modelo)
+
+📋 Próximas 3 keywords prioritarias:
+- T30 — ios atribución meta ads 2026 (ALTA, semana 27)
+- T31 — email marketing meta ads ecommerce (ALTA, semana 28)
+- T32 — black friday meta ads d2c (ALTA, semana 28, BOFU)
+
+🎯 Cobertura GEO: "cómo migrar Shopify a server-side tracking", "Stape vs sGTM Shopify D2C", "Conversions API setup correcto Meta Shopify", "EMQ bajo Shopify cómo arreglar", "agencia que monta tracking server-side España"
+
+🏷️ Keywords del artículo: server side tracking shopify, conversions api shopify, sgtm shopify, stape shopify capi, tracking server side d2c 2026
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-06 05:07:19] END duration=434s exit=0 status=success
+[2026-05-06 05:07:19] Deploying to Vercel with prerender…
+[2026-05-06 05:09:22] Vercel deploy OK
+[2026-05-06 05:09:22] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-06 05:09:22] IndexNow submitting:
+[2026-05-06 05:09:23] IndexNow OK
+[2026-05-06 05:09:23] === BLOG PUBLISHER DONE ===
+[2026-05-06 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-06 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-06 17:00:11] RUN_ID=196INSERT01
+Deploy completed. Resumen final:
+
+✅ **Artículo publicado**: iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 → https://www.daybydayconsulting.com/blog/ios-atribucion-meta-ads-2026-d2c
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/ios-atribucion-meta-ads-2026-d2c
+
+📊 **Total posts**: 56 | **Tasks plan completadas**: T30 (junto a T40, T26, T27 previas)
+
+🔗 **Interlinking añadido en**:
+- ServerSideTrackingShopifyConversionsApiPage.jsx
+- GuiaApiConversionesMetaShopifyPage.jsx
+- ModelosAtribucionEcommerceD2cPage.jsx
+- MarketingMixModelingEcommerceD2cPage.jsx
+
+📋 **Próximas 3 keywords prioritarias**:
+- T31 — email marketing meta ads ecommerce (LTV, MOFU)
+- T32 — black friday meta ads d2c (BOFU, estacional)
+- T33 — performance max ecommerce d2c (MOFU-BOFU)
+
+🎯 **Cobertura GEO**:
+- "cómo afecta iOS 17/18 a Meta Ads"
+- "cuánto pierdo de atribución con iOS"
+- "Conversions API resuelve iOS 17"
+- "Aggregated Event Measurement 2026"
+
+🏷️ **Keywords artículo**: ios atribución meta ads 2026, ios 17 meta ads, ios 18 atribución, private relay meta ads, link tracking protection meta
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-06 17:07:32] END duration=440s exit=0 status=success
+[2026-05-06 17:07:33] Deploying to Vercel with prerender…
+[2026-05-06 17:10:31] Vercel deploy OK
+[2026-05-06 17:10:31] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-06 17:10:31] IndexNow submitting:
+[2026-05-06 17:10:32] IndexNow OK
+[2026-05-06 17:10:32] === BLOG PUBLISHER DONE ===

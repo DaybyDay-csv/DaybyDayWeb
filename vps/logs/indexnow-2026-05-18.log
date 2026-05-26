@@ -1,0 +1,7 @@
+[2026-05-18 18:48:01] Submitting 77 URLs (mode=--blog)
+[2026-05-18 18:48:02] Response HTTP=200 body=<empty>
+[2026-05-18 18:48:03] OK: 77 URLs accepted
+[2026-05-18 19:15:53] Submitting 6 URLs (mode=--blog)
+[2026-05-18 19:15:54] Response HTTP=200 body=<empty>
+[2026-05-18 19:15:54] OK: 6 URLs accepted
+[2026-05-18 21:40:13] All --blog URLs submitted within last 24h, skipping (dedup)

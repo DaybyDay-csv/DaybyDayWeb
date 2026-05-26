@@ -1,0 +1,34 @@
+[2026-05-15 14:00:01] [pivot] === BLOG PUBLISHER START (track=pivot) ===
+[2026-05-15 14:00:01] [pivot] Worktree: /root/projects/DaybyDay/.claude/worktrees/pivot-growth | Branch: claude/pivot-growth | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog-pivot/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/pivot-growth -> FETCH_HEAD
+Already up to date.
+[2026-05-15 14:00:09] [pivot] RUN_ID=230INSERT01
+Push completado. El merge a main + Vercel deploy + IndexNow los maneja `run-daily-blog.sh --track=pivot`.
+
+---
+
+## RESUMEN FINAL
+
+- ✅ **PIVOT publicado**: Moat real para D2C en la era de la IA → https://www.daybydayconsulting.com/blog/moat-real-d2c-era-ia
+- 🎯 **Cluster**: pivot-operador-anti-tactical
+- 🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/moat-real-d2c-era-ia
+- 📊 **Total posts pivot**: 6 | Tasks pivot completadas: 6/32
+- 🔗 **Interlinking**:
+  - /blog/juicio-cross-funcional-founder-d2c
+  - /blog/que-no-automatiza-ia-d2c
+  - /blog/growth-partner-vs-agencia-paid-media
+  - /blog/cac-vs-ltv-ecommerce-escalable (palanca current recontextualizada)
+- 🚫 **Auditoría anti-solapamiento**: PASS — keyword "moat ecommerce d2c era ia" no aparece en ningún post current
+- 🏷️ **Keywords pivot**: moat ecommerce d2c era ia · ventaja competitiva sostenible d2c · moat real ecommerce playbook paid · growth partner moat d2c · defender margen contribución d2c ia
+- 🧠 **Decisión de negocio cubierta**: cuándo el playbook táctico de paid deja de ser ventaja y qué 4 activos sí componen moat defendible (top alto LTV · datos cohorte propios · control vertical · arquitectura de incentivos)
+- 📐 **Términos obligatorios**: growth partner=9 · operador con criterio=2 · margen de contribución=14 · payback CAC=10 · founder=24 · palanca=5
+- 📚 **Fuentes externas citadas**: HBR Iansiti/Lakhani · IAB Spain eCommerce 2025 · Shopify Plus · Brian Balfour Four Fits Framework
+- ✅ IndexNow auto-submit activado (track pivot) — se lanza en `run-daily-blog.sh --track=pivot`
+[2026-05-15 14:06:49] [pivot] Agent end duration=400s exit=0 status=success
+[2026-05-15 14:06:49] [pivot] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-15 14:06:49] [pivot] Publish lock acquired.
+[2026-05-15 14:06:49] [pivot] Deploying to Vercel (track=pivot)…
+[2026-05-15 14:07:16] [pivot] Vercel deploy FAILED — check logs
+[2026-05-15 14:07:16] [pivot] Publish lock released.
+[2026-05-15 14:07:16] [pivot] === BLOG PUBLISHER DONE (track=pivot) ===

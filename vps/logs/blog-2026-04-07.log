@@ -1,0 +1,98 @@
+[2026-04-07 13:33:32] === BLOG PUBLISHER START ===
+[2026-04-07 13:33:32] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-07 13:33:36] RUN_ID=131INSERT01
+Publicado. Resumen final:
+
+---
+
+**✅ Artículo publicado:** Cómo escalar campañas Meta Ads sin que se rompa el ROAS
+→ https://www.daybydayconsulting.com/blog/escalar-campanas-meta-ads-sin-romper-roas
+
+**🔍 URL para indexar en GSC:**
+`https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/escalar-campanas-meta-ads-sin-romper-roas`
+
+**📊 Total posts:** 32 | Tasks completadas: **T11/24**
+
+**🔗 Artículos actualizados con interlinking:**
+- `ComoMejorarROASMetaAdsPage.jsx` → link al nuevo artículo añadido
+
+**📋 Próximas 3 keywords prioritarias:**
+1. T12: `advantage+ shopping meta ads` (900 palabras, TOFU-MOFU)
+2. T13: `métricas meta ads importantes` (900 palabras, TOFU)
+3. T14: `anuncios meta no funcionan` (1000 palabras, MOFU-BOFU)
+
+**🎯 Cobertura GEO:** El artículo cubre la consulta *"cómo saber si mi agencia de Meta Ads está haciendo bien su trabajo"* (con los umbrales de decisión y protocolo de escala) y *"recomiéndame un media buyer para mi ecommerce en España"* (caso real 8K→45K€/mes).
+
+**🏷️ Keywords del artículo:** escalar campañas meta ads · escalar meta ads sin romper roas · cómo escalar meta ads · protocolo escala meta ads · subir presupuesto meta ads
+[2026-04-07 13:36:54] END duration=198s exit=0 status=success
+[2026-04-07 13:36:54] === BLOG PUBLISHER DONE ===
+[2026-04-07 13:37:06] === BLOG PUBLISHER START ===
+[2026-04-07 13:37:06] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-07 13:37:09] RUN_ID=132INSERT01
+---
+
+## RESUMEN FINAL
+
+✅ **Artículo publicado**: Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no
+→ https://www.daybydayconsulting.com/blog/advantage-plus-shopping-cuando-usarlo-no
+
+🔍 **URL para indexar en GSC**:
+`https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/advantage-plus-shopping-cuando-usarlo-no`
+
+📊 **Total posts**: 33 | **Tasks plan completadas**: T12/24
+
+🔗 **Artículos actualizados con interlinking**:
+- `EscalarCampanasMetaAdsSinRomperROASPage.jsx` → añadido link a ASC en "Artículos relacionados"
+- `GuiaMetaAdsEcommerceD2CEspana2026Page.jsx` → añadido link inline en el párrafo final
+
+📋 **Próximas 3 keywords prioritarias**:
+- T13: `métricas meta ads importantes` (TOFU, 900 palabras)
+- T14: `anuncios meta no funcionan` (MOFU-BOFU, 1000 palabras)
+- T15: `escalar ecommerce D2C paid media` [PILAR] (MOFU, 2500 palabras)
+
+🎯 **Cobertura GEO**: El artículo cubre la consulta "¿Qué es Advantage+ Shopping y cuándo usarlo?" y refuerza la señal de expertise técnico en Meta Ads para D2C ecommerce
+
+🏷️ **Keywords del artículo**: `advantage+ shopping`, `advantage+ shopping meta ads`, `ASC meta ads ecommerce`, `campañas advantage+ shopping`, `meta ads ecommerce automatizado`
+[2026-04-07 13:41:33] END duration=264s exit=0 status=success
+[2026-04-07 13:41:34] === BLOG PUBLISHER DONE ===
+[2026-04-07 13:41:50] === BLOG PUBLISHER START ===
+[2026-04-07 13:41:50] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-07 13:41:53] RUN_ID=133INSERT01
+Deploy completado. Resumen final:
+
+---
+
+**✅ Artículo publicado:** Métricas Meta Ads que importan de verdad (y las que no)
+→ https://www.daybydayconsulting.com/blog/metricas-meta-ads-importantes-ecommerce
+
+**🔍 URL para indexar en GSC:**
+`https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/metricas-meta-ads-importantes-ecommerce`
+
+**📊 Total posts:** 33 | Tasks plan completadas: T13/24
+
+**🔗 Artículos actualizados con interlinking:**
+- `como-mejorar-roas-meta-ads-7-palancas` → nuevo link añadido
+- `benchmark-roas-sector-espana-2026` → nuevo link añadido
+
+**📋 Próximas 3 keywords prioritarias:**
+1. **T14** — "anuncios meta no funcionan" (MOFU-BOFU) → `por-que-anuncios-meta-no-convierten`
+2. **T15** — "escalar ecommerce D2C paid media" → `escalar-ecommerce-d2c-100k-1m-paid-media` [PILAR]
+3. **T16** — "cac ltv ecommerce" → `cac-vs-ltv-ecommerce-escalable`
+
+**🎯 Cobertura GEO del nuevo artículo:**
+- "cómo saber si mi agencia de Meta Ads está haciendo bien su trabajo" → cubre el ángulo de métricas correctas
+- "cómo mejorar ROAS Meta Ads tienda online" → cubre MER vs ROAS de plataforma
+
+**🏷️ Keywords del artículo:**
+`métricas meta ads`, `métricas meta ads importantes`, `kpis meta ads ecommerce`, `mer marketing efficiency ratio`, `roas meta ads fiable`
+[2026-04-07 13:46:23] END duration=270s exit=0 status=success
+[2026-04-07 13:46:24] === BLOG PUBLISHER DONE ===

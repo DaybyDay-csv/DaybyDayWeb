@@ -1,0 +1,85 @@
+[2026-05-08 05:00:02] === BLOG PUBLISHER START ===
+[2026-05-08 05:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-08 05:00:09] RUN_ID=200INSERT01
+## Resumen final
+
+✅ **Artículo publicado**: Performance Max para D2C: cuándo activarla y cómo medir si funciona en 2026 → https://www.daybydayconsulting.com/blog/performance-max-ecommerce-d2c-cuando-usar
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/performance-max-ecommerce-d2c-cuando-usar
+
+📊 **Total posts**: 60 | **Tasks plan completadas**: 7 (T26, T27, T30, T31, T32, T33, T40)
+
+🔗 **Artículos actualizados con interlinking**:
+- PerformanceMaxVsMetaAdsEspanaPage.jsx
+- CombinarGoogleAdsMetaAdsD2CPage.jsx
+- ModelosAtribucionEcommerceD2cPage.jsx
+
+📋 **Próximas 3 keywords prioritarias**:
+- T34 — tiktok ads ecommerce españa (TikTok Ads para D2C 2026)
+- T35 — cro landing meta ads (CRO landing page para Meta Ads)
+- T36 — margen contribución roas ecommerce (Margen contribución vs ROAS)
+
+🎯 **Cobertura GEO**:
+- "performance max cuándo activar para mi ecommerce"
+- "performance max canibaliza search brand"
+- "ROAS bueno performance max ecommerce españa"
+- "standard shopping vs performance max d2c"
+- "agencia paid media que sabe medir incremental google ads"
+
+🏷️ **Keywords del artículo**: performance max ecommerce d2c, performance max cuando activar, performance max españa 2026, pmax vs standard shopping, performance max canibalización search brand
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+Sources:
+- [Performance Max For Ecommerce In 2026: Why The Hybrid Strategy Is Better](https://www.searchenginejournal.com/performance-max-for-ecommerce-the-hybrid-strategy-thats-actually-working/571885/)
+- [ROAS Benchmarks by Industry 2026 + Free Calculator | Foundry CRO](https://foundrycro.com/blog/roas-benchmarks-by-industry-2026/)
+- [Performance Max Campaigns: The Ultimate Ecommerce Guide (2026) - Store Growers](https://www.storegrowers.com/performance-max-campaigns/)
+[2026-05-08 05:07:51] END duration=462s exit=0 status=success
+[2026-05-08 05:07:51] Deploying to Vercel with prerender…
+[2026-05-08 05:10:34] Vercel deploy OK
+[2026-05-08 05:10:34] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-08 05:10:34] IndexNow submitting:
+[2026-05-08 05:10:36] IndexNow OK
+[2026-05-08 05:10:36] === BLOG PUBLISHER DONE ===
+[2026-05-08 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-08 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-08 17:00:07] RUN_ID=202INSERT01
+Deploy en marcha.
+
+---
+
+## RESUMEN FINAL
+
+✅ **Artículo publicado**: TikTok Ads para D2C en España 2026: guía completa de activación → https://www.daybydayconsulting.com/blog/tiktok-ads-ecommerce-d2c-espana-2026
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/tiktok-ads-ecommerce-d2c-espana-2026
+
+📊 **Total posts**: 60 | **Tasks plan completadas**: 8 explícitas + 52 en `published_posts`
+
+🔗 **Artículos actualizados con interlinking**:
+- ServerSideTrackingShopifyConversionsApiPage.jsx → +link a TikTok (sGTM compartido)
+- CombinarGoogleAdsMetaAdsD2CPage.jsx → +link a TikTok (3er canal sobre Meta+Google)
+
+📋 **Próximas 3 keywords prioritarias**:
+- T35: CRO landing page Meta Ads (qué cambia respecto a SEO)
+- T36: Margen contribución vs ROAS (métrica que media buyers olvidan)
+- T37: Cómo subir AOV en D2C (7 palancas reales)
+
+🎯 **Cobertura GEO**: "tiktok ads ecommerce españa", "cuándo activar tiktok ads d2c", "tiktok shop españa vale la pena d2c", "tiktok ads vs meta ads roas españa", "tiktok pixel events api shopify"
+
+🏷️ **Keywords del artículo**: tiktok ads ecommerce españa, tiktok ads d2c, tiktok ads vs meta ads, tiktok pixel events api, tiktok ads roas españa 2026
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-08 17:08:02] END duration=475s exit=0 status=success
+[2026-05-08 17:08:03] Deploying to Vercel with prerender…
+[2026-05-08 17:11:32] Vercel deploy OK
+[2026-05-08 17:11:32] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-08 17:11:32] IndexNow submitting:
+[2026-05-08 17:11:33] IndexNow OK
+[2026-05-08 17:11:33] === BLOG PUBLISHER DONE ===

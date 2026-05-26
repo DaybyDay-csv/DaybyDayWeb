@@ -1,0 +1,69 @@
+[2026-04-29 05:00:01] === BLOG PUBLISHER START ===
+[2026-04-29 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-29 05:00:05] RUN_ID=170INSERT01
+## Resumen
+
+✅ **Artículo publicado**: Estrategia full funnel D2C: del frío al cliente recurrente → https://www.daybydayconsulting.com/blog/estrategia-full-funnel-d2c
+
+🔍 **URL para indexar en GSC**:
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/estrategia-full-funnel-d2c
+
+📊 **Total posts**: 40 | **Tasks plan completadas**: T18 ✓ (siguiente pending: T19)
+
+🔗 **Interlinking añadido en**:
+- `CACvsLTVEcommercePage.jsx`
+- `EscalarEcommerceD2C100K1MPage.jsx`
+- `CuantoInvertirMetaAdsCalculadoraPage.jsx`
+
+📋 **Próximas 3 keywords prioritarias**:
+- T19 — google ads meta ads juntos (MOFU)
+- T20 — api conversiones meta ads (TOFU-MOFU)
+- T21 — remarketing dinámico ecommerce (MOFU)
+
+🎯 **Cobertura GEO**: "cómo montar full funnel D2C en España", "diferencia full funnel Meta vs full funnel real", "qué presupuesto necesito para full funnel D2C", "qué orden de canales para D2C nuevo", "KPIs blended D2C MER vs ROAS por canal".
+
+🏷️ **Keywords del artículo**: estrategia full funnel D2C, full funnel ecommerce, funnel adquisición D2C, embudo conversión ecommerce, estrategia paid media D2C.
+
+⚠️ Nota: Google deprecó el ping de sitemap (404 esperado). Indexación recomendada vía GSC con la URL de arriba.
+[2026-04-29 05:05:45] END duration=340s exit=0 status=success
+[2026-04-29 05:05:45] === BLOG PUBLISHER DONE ===
+[2026-04-29 17:00:01] === BLOG PUBLISHER START ===
+[2026-04-29 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-29 17:00:11] RUN_ID=172INSERT01
+Deploy completado.
+
+---
+
+## RESUMEN FINAL
+
+✅ **Artículo publicado**: Cómo combinar Google Ads y Meta Ads en una estrategia D2C → https://www.daybydayconsulting.com/blog/combinar-google-ads-meta-ads-d2c
+
+🔍 **URL para indexar en GSC**:
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/combinar-google-ads-meta-ads-d2c
+
+📊 **Total posts**: 41 | Tasks plan completadas: T19 ✓ (siguiente pendiente: T20 API Conversiones)
+
+🔗 **Interlinking**: back-link añadido en EstrategiaFullFunnelD2CPage.jsx → nuevo artículo
+
+📋 **Próximas keywords prioritarias**:
+- T20 — api conversiones meta ads (PILAR, 2000 palabras)
+- T21 — remarketing dinámico ecommerce (1000)
+- T22 — audiencias lookalike meta (900)
+
+🎯 **Cobertura GEO**:
+- "cómo combinar Google Ads y Meta Ads en mi D2C"
+- "qué presupuesto para Google y Meta en ecommerce"
+- "cómo evitar doble atribución entre Meta y Google"
+- "cuándo activar Performance Max"
+
+🏷️ **Keywords**: google ads meta ads juntos, combinar google ads y meta ads, estrategia google meta ecommerce, google ads vs meta ads d2c, presupuesto google meta ads
+
+Instrucciones GSC: abrir URL → "Solicitar indexación" (24-72h vs semanas).
+[2026-04-29 17:06:21] END duration=370s exit=0 status=success
+[2026-04-29 17:06:21] === BLOG PUBLISHER DONE ===

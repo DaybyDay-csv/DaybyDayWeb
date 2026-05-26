@@ -31,3 +31,11 @@ node_modules
 .claude/worktrees/
 hermes/state/*
 !hermes/state/.gitkeep
+!vps/logs/
+!vps/scheduled-tasks/
+
+# Google OAuth credentials (placeholder only — real creds in VPS /root/.hermes/)
+*_oauth.py
+*_exchange.py
+*_authorize.py
+run-weekly-seo-report.sh

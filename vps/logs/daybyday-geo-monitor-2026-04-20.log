@@ -1,0 +1,9 @@
+[2026-04-20 06:45:02] MODEL=claude-haiku-4-5-20251001
+[2026-04-20 06:45:02] START daybyday-geo-monitor
+[2026-04-20 06:45:02] RUN_ID=153
+[2026-04-20 06:45:02] PROMPT_SIZE=6152 bytes (skill + memory + feedback)
+[2026-04-20 06:45:02] PROMPT_HASH=4e2bc6eafa31...
+[2026-04-20 06:45:02] CALLER=sdk (prompt-caching enabled)
+Error: ANTHROPIC_API_KEY not set
+
+[2026-04-20 06:45:02] END daybyday-geo-monitor status=failed duration=6s exit=2

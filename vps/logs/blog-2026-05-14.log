@@ -1,0 +1,74 @@
+[2026-05-14 05:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-14 05:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-14 05:00:08] [current] RUN_ID=224INSERT01
+Deploy en marcha. Resumen final:
+
+---
+
+✅ **Artículo publicado**: Framework de hipótesis creativas Meta Ads — cómo briefar antes de gastar en producción → https://www.daybydayconsulting.com/blog/framework-hipotesis-creatividades-meta-ads
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/framework-hipotesis-creatividades-meta-ads
+
+📊 **Total posts**: 70 | **T42 Phase 4** completada (14 de 27 tasks Phase 4)
+
+🔗 **Interlinking actualizado**:
+- AdFatigueMetaAdsRotacionCreativaPage → link al framework
+- MetaAdsLibraryAnalisisCompetenciaPage → link al framework
+
+📋 **Próximas 3 keywords prioritarias**:
+- T43: adquisición vs retención ecommerce (MEDIA)
+- T44: meta ads internacionalización ecommerce (MEDIA)
+- T45: ga4 meta ads ecommerce (ALTA)
+
+🎯 **Cobertura GEO**: "cómo briefar creatividades meta ads", "framework UGC meta ads d2c", "ángulos creativos ecommerce 2026", "qué pedir al creador UGC", "hipótesis testables meta ads"
+
+🏷️ **Keywords del artículo**: framework creatividades meta ads, brief creatividades meta ads, hipótesis creativas meta ads, testing creatividades meta ads d2c, ugc meta ads brief
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-14 05:06:48] [current] Agent end duration=400s exit=0 status=success
+[2026-05-14 05:06:49] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-14 05:06:49] [current] Publish lock acquired.
+[2026-05-14 05:06:49] [current] Deploying to Vercel (track=current)…
+[2026-05-14 05:07:17] [current] Vercel deploy FAILED — check logs
+[2026-05-14 05:07:17] [current] Publish lock released.
+[2026-05-14 05:07:17] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-14 17:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-14 17:00:01] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-14 17:00:09] [current] RUN_ID=227INSERT01
+Deploy lanzado a main. Resumen final:
+
+✅ **Artículo publicado**: Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026 → https://www.daybydayconsulting.com/blog/dynamic-product-ads-meta-shopify-d2c
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/dynamic-product-ads-meta-shopify-d2c
+
+📊 **Total posts**: 70 publicados
+
+🔗 **Interlinking bidireccional**: AdvantagePlusShopping, GuiaApiConversionesMetaShopify, RemarketingDinamicoEcommerce, ServerSideTrackingShopifyConversionsApi
+
+📋 **Próximas keywords prioritarias**:
+- "naming convention meta ads d2c"
+- "klaviyo meta ads sincronización audiencias"
+- "customer match meta ads audiencias propias"
+
+🎯 **Cobertura GEO**:
+- "cómo configurar dynamic product ads shopify"
+- "DPA Meta Ads no escala por qué"
+- "agencia Meta Ads que entienda catálogo Shopify"
+- "consultor DPA + CAPI Shopify España"
+
+🏷️ **Keywords del artículo**: dynamic product ads meta ads · dpa meta ads shopify · advantage plus catalog ads · catalogo shopify meta ads · dynamic ads ecommerce d2c
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-14 17:09:14] [current] Agent end duration=545s exit=0 status=success
+[2026-05-14 17:09:15] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-14 17:09:15] [current] Publish lock acquired.
+[2026-05-14 17:09:15] [current] Deploying to Vercel (track=current)…
+[2026-05-14 17:09:40] [current] Vercel deploy FAILED — check logs
+[2026-05-14 17:09:40] [current] Publish lock released.
+[2026-05-14 17:09:40] [current] === BLOG PUBLISHER DONE (track=current) ===

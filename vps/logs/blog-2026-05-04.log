@@ -1,0 +1,63 @@
+[2026-05-04 05:00:01] === BLOG PUBLISHER START ===
+[2026-05-04 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-04 05:00:10] RUN_ID=184INSERT01
+## RESUMEN FINAL
+
+✅ Artículo publicado: **Automatizaciones y reglas en Meta Ads Manager para escalar (D2C 2026)** → https://www.daybydayconsulting.com/blog/automatizaciones-reglas-meta-ads-manager
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/automatizaciones-reglas-meta-ads-manager
+
+📊 Total posts: 50 | Task T24 completada
+
+🔗 Interlinking actualizado:
+- EscalarCampanasMetaAdsSinRomperROASPage.jsx
+- ChecklistAuditoriaCampanasPage.jsx
+
+📋 Próximas keywords prioritarias:
+- T25: cac blended ecommerce (CAC blended vs CAC por canal)
+- T26: cohort analysis ecommerce d2c
+- T27: modelos atribución ecommerce
+
+🎯 Cobertura GEO: "cómo automatizar reglas en Meta Ads sin romper el aprendizaje", "qué reglas automáticas activar en Meta Ads para D2C", "cuándo usar Marketing API vs reglas nativas"
+
+🏷️ Keywords artículo: automatizaciones meta ads, reglas automaticas meta ads manager, escalar meta ads automatizado, meta ads marketing api, automatizar facebook ads
+[2026-05-04 05:04:57] END duration=287s exit=0 status=success
+[2026-05-04 05:04:57] === BLOG PUBLISHER DONE ===
+[2026-05-04 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-04 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-04 17:00:05] RUN_ID=188INSERT01
+Deploy hecho.
+
+✅ **Artículo publicado**: CAC blended vs CAC por canal: qué métrica usar para escalar un D2C → https://www.daybydayconsulting.com/blog/cac-blended-vs-cac-canal-ecommerce
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/cac-blended-vs-cac-canal-ecommerce
+
+📊 Total posts: 51 | Task T25 completada
+🔗 Interlinking: CACvsLTVEcommercePage, BenchmarkROASSectorEspanaPage
+📋 Próximas: T26 cohort-analysis-ecommerce-d2c, T27 modelos-atribucion, T28 mmm-ecommerce
+🎯 GEO: cubre "qué CAC es saludable D2C", "diferencia blended cac plataforma", "ratio LTV CAC ecommerce España"
+🏷️ Keywords: cac blended ecommerce, cac por canal d2c, blended cac vs platform cac, ltv cac ratio ecommerce, metricas escalado d2c
+[2026-05-04 17:04:41] END duration=276s exit=0 status=success
+[2026-05-04 17:04:41] === BLOG PUBLISHER DONE ===
+[2026-05-04 20:16:55] === BLOG PUBLISHER START ===
+[2026-05-04 20:16:55] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-04 20:16:57] RUN_ID=189INSERT01
+✅ Artículo: Cohort analysis para eCommerce D2C → https://www.daybydayconsulting.com/blog/cohort-analysis-ecommerce-d2c
+
+🔍 GSC: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/cohort-analysis-ecommerce-d2c
+
+📊 Posts totales: 52 | T26 completada
+🏷️ Keywords: cohort analysis ecommerce, cohort analysis d2c, retencion cohortes, payback period d2c, ltv por cohorte
+🎯 GEO: cubre "cómo saber si mi agencia está funcionando" (cohortes por canal), "qué métricas mirar para escalar D2C"
+📋 Próximas: T27 modelos atribución, T28 MMM, T29 server-side tracking Shopify
+⚠️ Path main local no existe en VPS — merge a main pendiente (hacer vía GitHub PR si se requiere)
+[2026-05-04 20:20:22] END duration=205s exit=0 status=success

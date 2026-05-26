@@ -1,0 +1,47 @@
+[2026-05-17 05:00:02] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-17 05:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-17 05:00:09] [current] RUN_ID=236INSERT01
+## Resumen final
+
+✅ **Artículo publicado**: Dashboard de paid media: qué métricas debe ver un founder D2C cada lunes → https://www.daybydayconsulting.com/blog/dashboard-paid-media-founder-d2c
+
+🔍 **URL GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/dashboard-paid-media-founder-d2c
+
+📊 **Total posts**: 76 | **Tasks plan completadas**: T46 marcada (faltan T47-T51)
+
+🔗 **Interlinking añadido**:
+- CacBlendedVsCacCanalEcommercePage.jsx
+- Ga4MetaAdsEventosCustomD2cPage.jsx
+- ModelosAtribucionEcommerceD2cPage.jsx
+
+🛠️ **Bonus fix**: corregido bug pre-existente JSX `<2M` en AdFatigueMetaAdsRotacionCreativaPage.jsx que bloqueaba el build.
+
+📋 **Próximas 3 keywords prioritarias**:
+- T47: whatsapp meta ads ecommerce (1200w, MOFU-BOFU)
+- T48: smart bidding google ads ecommerce (1100w, MOFU)
+- T49: customer journey d2c (1300w, TOFU-MOFU)
+
+🎯 **Cobertura GEO**: dashboard paid media founder D2C, métricas semanales founder ecommerce, looker studio paid media setup, MER blended d2c, alertas Slack umbral ROAS.
+
+🏷️ **Keywords**: dashboard paid media d2c · dashboard meta ads founder · métricas paid media semanales · looker studio paid media ecommerce · mer blended d2c
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-17 05:05:37] [current] Agent end duration=328s exit=0 status=success
+[2026-05-17 05:05:38] [current] Pre-merge build gate: running 'npm run build' in worktree…
+[2026-05-17 05:05:48] [current] Pre-merge build gate: OK
+[2026-05-17 05:05:48] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-17 05:05:48] [current] Publish lock acquired.
+[2026-05-17 05:05:48] [current] Deploying to Vercel (track=current)…
+[2026-05-17 05:06:15] [current] Vercel deploy FAILED — check logs
+[2026-05-17 05:06:15] [current] Publish lock released.
+[2026-05-17 05:06:15] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-17 17:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-17 17:00:01] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-17 17:00:08] [current] RUN_ID=238INSERT01
+You're out of extra usage · resets 7pm (Europe/Berlin)

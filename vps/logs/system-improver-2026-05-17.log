@@ -1,0 +1,4 @@
+[2026-05-17 03:00:01] MODEL=claude-sonnet-4-6
+[2026-05-17 03:00:01] START system-improver
+[2026-05-17 03:00:01] RUN_ID=235
+[2026-05-17 03:00:01] ERROR: Skill not found at /root/.claude/scheduled-tasks/system-improver/SKILL.md

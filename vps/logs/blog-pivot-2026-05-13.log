@@ -1,0 +1,27 @@
+[2026-05-13 14:00:01] [pivot] === BLOG PUBLISHER START (track=pivot) ===
+[2026-05-13 14:00:01] [pivot] Worktree: /root/projects/DaybyDay/.claude/worktrees/pivot-growth | Branch: claude/pivot-growth | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog-pivot/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/pivot-growth -> FETCH_HEAD
+Already up to date.
+[2026-05-13 14:00:09] [pivot] RUN_ID=222INSERT01
+## RESUMEN FINAL
+
+- ✅ PIVOT publicado: **Juicio cross-funcional: por qué un founder D2C no puede delegar la decisión, solo la ejecución** → https://www.daybydayconsulting.com/blog/juicio-cross-funcional-founder-d2c
+- 🎯 Cluster: **pivot-operador-anti-tactical** (P05)
+- 🔍 URL GSC: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/juicio-cross-funcional-founder-d2c
+- 📊 Total posts pivot: **5** | Tasks pivot completadas: **5/32**
+- 🔗 Interlinking: que-no-automatiza-ia-d2c · ai-proof-skills-founder-d2c-2027 · growth-partner-vs-agencia-paid-media · margen-contribucion-vs-roas-ecommerce
+- 🚫 Auditoría anti-solapamiento: **PASS** — keyword "juicio cross funcional founder d2c" sin colisión vs current ni vs otras pivot
+- 🏷️ Keywords pivot: juicio cross funcional founder d2c · decisiones que no delega founder ecommerce · founder d2c delegar decision ejecucion · growth partner d2c juicio decision · operador con criterio ecommerce d2c
+- 🧠 Decisión de negocio cubierta: cómo reparte un founder D2C entre delegar ejecución y retener juicio cross-funcional (capital, pricing, mix de canal, top alto LTV, producto, incentivos)
+- 📐 Términos obligatorios encontrados: growth partner=**14**, operador con criterio=**3**, margen de contribución=**14**, payback CAC=**7**, founder=**59**, palanca=**7**
+- 🔗 Fuentes externas (3): HBR (Iansiti & Lakhani) · IAB Spain eCommerce 2025 · Andrew Chen (a16z) + Shopify Plus blog
+- 📚 ≥6 FAQs (**7**) · Tabla 7×4 · 2 listas ordenadas · Stat box con fuente · CTA "Conversación con los dos socios"
+- 🚀 Branch `claude/pivot-growth` pushed (`f76c232`). Merge a main + Vercel deploy + IndexNow los gestiona `/root/scripts/run-daily-blog.sh --track=pivot`.
+[2026-05-13 14:06:29] [pivot] Agent end duration=380s exit=0 status=success
+[2026-05-13 14:06:29] [pivot] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-13 14:06:29] [pivot] Publish lock acquired.
+[2026-05-13 14:06:29] [pivot] Deploying to Vercel (track=pivot)…
+[2026-05-13 14:06:47] [pivot] Vercel deploy FAILED — check logs
+[2026-05-13 14:06:47] [pivot] Publish lock released.
+[2026-05-13 14:06:47] [pivot] === BLOG PUBLISHER DONE (track=pivot) ===

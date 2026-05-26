@@ -1,0 +1,43 @@
+[2026-05-10 05:00:02] === BLOG PUBLISHER START ===
+[2026-05-10 05:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-10 05:00:08] RUN_ID=206INSERT01
+Deploy completado. Resumen final:
+
+✅ **Artículo publicado**: "Cómo subir el AOV en D2C: 7 palancas reales para ecommerce" → https://www.daybydayconsulting.com/blog/aumentar-aov-ecommerce-d2c-palancas
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/aumentar-aov-ecommerce-d2c-palancas
+
+📊 **Total posts**: 64 publicados | **Tasks plan completadas**: T37 cerrada (cluster Unit Economics, Phase 4)
+
+🔗 **Interlinking bidireccional**:
+- `MargenContribucionVsRoasEcommercePage.jsx` ← link al nuevo
+- `CACvsLTVEcommercePage.jsx` ← link al nuevo
+- `CuantoInvertirMetaAdsCalculadoraPage.jsx` ← link al nuevo
+
+📋 **Próximas 3 keywords prioritarias**:
+- T38: "suscripciones ecommerce ltv cac" (1200 palabras, MOFU)
+- T39: "meta ads library competencia" (1300 palabras, TOFU-MOFU, ALTA)
+- T40: "ad fatigue meta ads" (1100 palabras, MOFU, ALTA)
+
+🎯 **Cobertura GEO**: "cómo subir el AOV de mi ecommerce", "qué AOV es bueno en D2C España", "free shipping threshold óptimo", "palancas para subir ticket medio Shopify", "cómo escalar D2C sin subir CAC"
+
+🏷️ **Keywords del artículo**: aumentar aov ecommerce, subir ticket medio ecommerce d2c, palancas aov d2c, free shipping threshold óptimo, upsell post-purchase shopify
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-10 05:06:47] END duration=399s exit=0 status=success
+[2026-05-10 05:06:48] Deploying to Vercel with prerender…
+[2026-05-10 05:10:05] Vercel deploy OK
+[2026-05-10 05:10:05] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-10 05:10:05] IndexNow submitting:
+[2026-05-10 05:10:06] IndexNow OK
+[2026-05-10 05:10:06] === BLOG PUBLISHER DONE ===
+[2026-05-10 17:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-10 17:00:01] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-10 17:00:07] [current] RUN_ID=208INSERT01
+You're out of extra usage · resets 6:30pm (Europe/Berlin)

@@ -1,0 +1,173 @@
+
+================================================================
+ANALYST REPORT - 2026-05-24 03:43
+================================================================
+
+## GSC PERFORMANCE SUMMARY (Last 28 days)
+
+TOP PERFORMING KEYWORDS:
+- meta ads estrategia 2026: 45 clicks, 320 impressions, CTR 14.1%, Pos 3.2
+- como mejorar roas meta ads: 38 clicks, 280 impressions, CTR 13.6%, Pos 4.1
+- test a b meta ads: 29 clicks, 190 impressions, CTR 15.3%, Pos 5.5
+- advantage+ shopping meta: 24 clicks, 150 impressions, CTR 16.0%, Pos 6.2
+- remarketing meta ads español: 21 clicks, 180 impressions, CTR 11.7%, Pos 7.8
+
+TOP PERFORMING PAGES:
+- /blog/como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana: 52 clicks, CTR 12.4%, Pos 4.1
+- /blog/cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana: 48 clicks, CTR 12.6%, Pos 4.8
+- /blog/mejorar-roas-meta-2026: 41 clicks, CTR 11.7%, Pos 5.2
+- /blog/estrategia-remarketing-meta-2026: 35 clicks, CTR 12.1%, Pos 5.9
+- /blog/test-campaigns-meta-ads: 31 clicks, CTR 12.9%, Pos 6.4
+
+## TECHNICAL ISSUES DETECTED
+
+✅ No critical performance issues
+
+⚠️ SEO ISSUES:
+  - [MEDIUM] https://d7601aee.daybyday-bg5.pages.dev/blog/meta-ads-creative-strategy-2026: Insufficient H2 headings
+  - [MEDIUM] https://d7601aee.daybyday-bg5.pages.dev/blog/test-campaigns-meta-ads: Insufficient H2 headings
+  - [MEDIUM] https://d7601aee.daybyday-bg5.pages.dev/blog/budget-meta-ads-2026: Insufficient H2 headings
+  - [MEDIUM] https://d7601aee.daybyday-bg5.pages.dev/blog/estrategia-remarketing-meta-2026: Insufficient H2 headings
+  - [MEDIUM] https://d7601aee.daybyday-bg5.pages.dev/blog/mejorar-roas-meta-2026: Insufficient H2 headings
+  - [MEDIUM] https://d7601aee.daybyday-bg5.pages.dev/blog/cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana: Insufficient H2 headings
+
+## OPPORTUNITIES FOR NEXT TOPICS
+
+HIGH CTR but could rank higher (easy wins):
+- Crear contenido sobre 'test a b meta ads' (CTR 15.3% pero position 5.5)
+- Crear contenido sobre 'advantage+ shopping meta' (CTR 16.0% pero position 6.2)
+
+## RECOMMENDED NEXT TOPICS (from Strategist analysis)
+
+<think>The user wants 3 blog post topics based on GSC data for DayByDay Consulting (a paid media agency for D2C in Spain). The top keywords are:
+- meta ads estrategia 2026
+- como mejorar roas meta ads
+- test a b meta ads
+- advantage+ shopping meta
+- remarketing meta ads español
+
+The user wants topics that:
+1. Target high-value keywords with ranking potential
+2. Fill content gaps not covered by existing posts
+3. Match the agency's expertise (Meta Ads, paid media, D2C)
+
+Each topic should have:
+- Topic title (in Spanish)
+- Target keyword
+- Angle/differentiation from existing content
+- Expected search intent
+
+Format: numbered list, concise. Only the 3 topics, no explanation.
+
+We need to assume that these keywords are already being targeted or are opportunities. We need to find gaps and create new angles.
+
+Given the keywords, we can see:
+- "meta ads estrategia 2026" – strategy for 2026 (future-looking)
+- "como mejorar roas meta ads" – how to improve ROAS
+- "test a b meta ads" – A/B testing
+- "advantage+ shopping meta" – Advantage+ Shopping campaigns
+- "remarketing meta ads español" – remarketing in Spanish
+
+We need to propose 3 blog post topics. They should be in Spanish, target specific keywords, have a unique angle, and match search intent.
+
+Possible gaps:
+- There might be no content on "advantage+ shopping meta" in Spanish for D2C.
+- "remarketing meta ads español" might be too broad; perhaps a detailed guide for D2C brands.
+- "test a b meta ads" might be covered but not specifically for Meta Ads in 2026 or for D2C.
+
+We need to ensure the topics are actionable and aligned with the agency's expertise.
+
+Let’s think about existing posts. The user says "Opportunities: See above" meaning the opportunities are the keywords themselves. So we can assume these keywords are not yet covered or are not adequately covered.
+
+We need to propose topics that target these keywords or related long-tail versions.
+
+Topic 1: Could target "advantage+ shopping meta" with a guide for D2C in Spain.
+
+Topic 2: Could target "como mejorar roas meta ads" with a case study or step-by-step for D2C.
+
+Topic 3: Could target "test a b meta ads" but with a focus on meta ads specifically for D2C, maybe "test a b meta ads para电商 d2c" or something.
+
+But we need to use the exact keywords or variations. The user wants to target high-value keywords with ranking potential. So we should use the keywords provided or closely related.
+
+Let’sList:
+
+1. "Guía completa de Advantage+ Shopping Campaigns para D2C en España" – targeting "advantage+ shopping meta"
+2. "Cómo mejorar el ROAS en Meta Ads para marcas D2C: estrategias probadas" – targeting "como mejorar roas meta ads"
+3. "Test A/B en Meta Ads para e-commerce D2C: cómo optimizar tus campañas" – targeting "test a b meta ads"
+
+But the user wants each topic to have a specific target keyword. So we need to assign one keyword per topic.
+
+Also, we need to specify the angle/differentiation and expected search intent.
+
+We need to format as: numbered list, concise. Only the 3 topics, no explanation.
+
+So for each topic, we write:
+- Topic title (in Spanish)
+- Target keyword
+- Angle/differentiation
+- Expected search intent
+
+We need to make it concise.
+
+Let’sDraft:
+
+1. **Tema:** Guía definitivo de Advantage+ Shopping Campaigns para D2C en España  
+   **Palabra objetivo:** advantage+ shopping meta  
+   **Ángulo:** Tutorial práctico adaptado a ecommerce D2C español, con ejemplos y errores a evitar.  
+   **Intención de búsqueda:** Informacional/comercial – usuarios buscan cómo implementar Advantage+ Shopping en sus tiendas online.
+
+2. **Tema:** Cómo mejorar el ROAS en Meta Ads: estrategias para marcas D2C  
+   **Palabra objetivo:** como melhorar roas meta ads  
+   **Ángulo:** Caso de estudio y tácticas específicas para mejorar el retorno de inversión publicitaria en Meta.  
+   **Intención de búsqueda:** Transaccional – usuarios buscan mejorar resultados y aumentar ventas.
+
+3. **Tema:** Test A/B en Meta Ads: guía para optimizar campañas D2C  
+   **Palabra objetivo:** test a b meta ads  
+   **Ángulo:** paso a paso para configurar y medir tests A/B en campañas de Meta, enfocado en conversion.  
+   **Intención de búsqueda:** Informacional – usuarios buscan cómo hacer tests y optimizar campañas.
+
+We need to ensure it’s in Spanish, concise, and formatted asnumbered list.
+
+But the user said "Only the 3 topics, no explanation." However, they also said "For each topic provide: Topic title, Target keyword, Angle/differentiation, Expected search intent." So we need to include those details. But then they say "Only the 3 topics, no explanation." That might mean no extra text beyond the required fields. So we should list each topic with those four subpoints.
+
+Let’s reformat:
+
+1. Título: Guía completo de Advantage+ Shopping Campaigns para D2C en España  
+   Palabra objetivo: advantage+ shopping meta  
+   Ángulo: Tutorial prático adaptado a ecommerce D2C español, con ejemplos y errores a evitar.  
+   Intención de búsqueda: Informacional/comercial – usuarios buscan cómo implementar Advantage+ Shopping en tiendas online.
+
+2. Título: Cómo mejorar el ROAS en Meta Ads para marcas D2C: estrategias probadas  
+   Palabra objetivo: como mejorar roas meta ads  
+   Ángulo: Caso de estudio y tácticas específicas para mejorar el retorno de inversión publicitaria en Meta.  
+   Intención de búsqueda: Transaccional – usuarios buscan mejorar resultados y aumentar ventas.
+
+3. Título: Test A/B en Meta Ads para e-commerce D2C: cómo optimizar tus campañas  
+   Palabra objetivo: test a b meta ads  
+   Ángeles: Paso a paso para configurar y medir tests A/B en campañas de Meta, enfocado en conversión.  
+   Intención de búsqueda: Informacional – usuarios buscan cómo hacer tests y optimizar campañas.
+
+We need to keep it concise. Perhaps use bullet points or just lines.
+
+But the user said "format: numbered list, concise." So probably each topic is a number, and then within each, we list the details.
+
+Let’s produce the final answer.</think>
+
+1. **Título:** Guía definitiva de Advantage+ Shopping Campaigns para D2C en España  
+   **Palabra objetivo:** advantage+ shopping meta  
+   **Ángulo:** Tutorial prático adaptado a ecommerce D2C español, con ejemplos paso a paso y errores comunes que avoidar.  
+   **Intención de búsqueda:** Informacional/comercial – propietarios de tiendas online buscan cómo implementar y optimizar campañas Advantage+ Shopping para aumentar ventas.
+
+2. **Título:** Cómo mejorar el ROAS en Meta Ads para marcas D2C: estrategias probadas  
+   **Palabra objetivo:** como mejorar roas meta ads
+
+## ACTIONS FOR NEXT ITERATION
+
+1. [HIGH] Fix any pages with performance score < 70
+2. [HIGH] Add meta descriptions to any pages missing them
+3. [MEDIUM] Improve internal linking for pages with low internal link count
+4. [LOW] Consider updating/CTAs on top-performing posts to increase CTR
+
+================================================================
+Report generated: 2026-05-24T03:43:08.721766
+================================================================

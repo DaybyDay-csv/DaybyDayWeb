@@ -1,0 +1,31 @@
+[2026-05-12 14:00:01] [pivot] === BLOG PUBLISHER START (track=pivot) ===
+[2026-05-12 14:00:01] [pivot] Worktree: /root/projects/DaybyDay/.claude/worktrees/pivot-growth | Branch: claude/pivot-growth | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog-pivot/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/pivot-growth -> FETCH_HEAD
+Already up to date.
+[2026-05-12 14:00:06] [pivot] RUN_ID=218INSERT01
+Deploy/IndexNow lo maneja `/root/scripts/run-daily-blog.sh --track=pivot`. No ejecuto submit manual.
+
+---
+
+## Resumen final
+
+- ✅ PIVOT publicado: **Qué NO automatiza la IA (Claude, Andromeda, agentes) en un D2C en 2026** → https://www.daybydayconsulting.com/blog/que-no-automatiza-ia-d2c
+- 🎯 Cluster: pivot-operador-anti-tactical
+- 🔍 GSC inspect: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/que-no-automatiza-ia-d2c
+- 📊 Total posts pivot: 4 | Tasks pivot completadas: 4/32
+- 🔗 Interlinking: automatizacion-paid-media-proximos-24-meses, ai-proof-skills-founder-d2c-2027, growth-partner-vs-agencia-paid-media, margen-contribucion-vs-roas-ecommerce
+- 🚫 Auditoría anti-solapamiento: PASS — P04 cubre las 6 áreas del D2C completo (capital, pricing, top 10% LTV, producto, supply, incentivos), distinto del zoom paid-media-only de P03
+- 🏷️ Keywords pivot: que no automatiza ia ecommerce d2c, limites ia ecommerce d2c, decisiones humanas vs automatizadas d2c, growth partner era ia, claude andromeda agentes d2c
+- 🧠 Decisión de negocio cubierta: qué áreas del D2C resisten la automatización en 2026-2027 y por tanto definen dónde está el margen defendible y a qué socio externo paga sentido pagar
+- 📐 Términos obligatorios encontrados: growth partner=11, operador con criterio=6, margen contribución=13
+- 🤖 IndexNow auto-submit activado vía `run-daily-blog.sh --track=pivot`
+
+Commit `b47a7b9` empujado a `claude/pivot-growth`. Merge a main + deploy lo dispara el script orquestador.
+[2026-05-12 14:05:48] [pivot] Agent end duration=342s exit=0 status=success
+[2026-05-12 14:05:48] [pivot] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-12 14:05:48] [pivot] Publish lock acquired.
+[2026-05-12 14:05:48] [pivot] Deploying to Vercel (track=pivot)…
+[2026-05-12 14:06:06] [pivot] Vercel deploy FAILED — check logs
+[2026-05-12 14:06:06] [pivot] Publish lock released.
+[2026-05-12 14:06:06] [pivot] === BLOG PUBLISHER DONE (track=pivot) ===

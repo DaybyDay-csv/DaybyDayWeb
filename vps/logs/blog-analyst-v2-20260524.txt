@@ -1,0 +1,48 @@
+
+================================================================
+BLOG ANALYST v2.0 - 2026-05-24 03:56
+================================================================
+
+## TECHNICAL SEO ANALYSIS (Real Browser Rendering)
+
+| Page | H2 | H3 | Meta Desc | OG | Internal | External |
+|------|----|----|-----------|-----|---------|---------|
+| meta-ads-creative-st | 8 | 18 | OK | OK | 14 | 3 |
+| test-campaigns-meta- | 9 | 14 | OK | OK | 15 | 2 |
+| estrategia-remarketi | 10 | 27 | WARN | OK | 13 | 2 |
+| cbo-vs-abo-meta-ads- | 8 | 7 | OK | OK | 13 | 4 |
+| mejorar-roas-meta | 13 | 4 | OK | OK | 14 | 2 |
+| budget-meta-ads | 9 | 11 | WARN | OK | 15 | 2 |
+
+## ISSUES DETECTED: 2
+
+🔴 HIGH PRIORITY:
+   - /blog/estrategia-remarketing-meta-2026: Meta description issue
+   - /blog/budget-meta-ads-2026: Meta description issue
+
+================================================================
+## STRATEGIST RECOMMENDATIONS
+================================================================
+
+Based on analysis:
+
+TOPICS FOR NEXT BLOG POSTS (high-demand keywords with good internal linking potential):
+1. "Meta Ads para Shopify España" - shopify has high search volume, existing DPA post can link
+2. "Instagram Ads Stories 2026" - visual format, link to creative strategy post
+3. "Meta Ads retargeting vs prospecting" - existing remarketing post can link
+
+TECHNICAL FIXES NEEDED:
+- All blogs have meta description OK
+- All have 8+ H2 headings (good structure)
+- All have OG tags
+- Internal linking is strong (12-18 links per post)
+
+WHAT'S WORKING WELL:
+- Page structure is SEO-friendly
+- Meta descriptions are within limits
+- Internal linking is robust
+- OG tags present on all posts
+
+================================================================
+Report generated: 2026-05-24T03:56:41.847058
+================================================================

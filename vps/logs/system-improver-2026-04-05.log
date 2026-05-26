@@ -1,0 +1,9 @@
+[2026-04-05 03:00:01] MODEL=claude-sonnet-4-6
+[2026-04-05 03:00:01] START system-improver
+[2026-04-05 03:00:01] RUN_ID=125
+[2026-04-05 03:00:01] PROMPT_SIZE=4758 bytes (skill + memory + feedback)
+[2026-04-05 03:00:01] PROMPT_HASH=386dde57d7dc...
+[2026-04-05 03:00:01] CALLER=sdk (prompt-caching enabled)
+Error: ANTHROPIC_API_KEY not set
+
+[2026-04-05 03:00:01] END system-improver status=failed duration=7s exit=2

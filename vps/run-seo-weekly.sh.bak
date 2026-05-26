@@ -1,0 +1,9 @@
+#!/bin/bash
+# DayByDay — SEO Weekly — Mondays 6:30 UTC
+cd /root/projects/DaybyDay
+git pull origin main --quiet 2>/dev/null
+DATE=$(date +%Y-%m-%d)
+LOG=/root/logs/seo-weekly-$DATE.log
+echo "=== START $(date) ===" >> $LOG
+claude --dangerously-skip-permissions   -p "$(cat /root/.claude/scheduled-tasks/daybyday-seo-weekly/SKILL.md)"   --allowedTools 'Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch'   >> $LOG 2>&1
+echo "=== END $(date) ===" >> $LOG

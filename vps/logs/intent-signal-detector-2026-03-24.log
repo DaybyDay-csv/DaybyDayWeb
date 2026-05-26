@@ -1,0 +1,206 @@
+[2026-03-24 00:50:04] START intent-signal-detector
+[2026-03-24 00:50:04] RUN_ID=103INSERT01
+[2026-03-24 00:50:04] PROMPT_SIZE=7939 bytes (skill + memory + feedback)
+error: unknown option '---
+name: intent-signal-detector
+description: Detectar señales públicas de que una empresa D2C en España está buscando activamente una agencia de paid media o está insatisfecha con la actual
+---
+
+## INTENT SIGNAL DETECTOR — DayByDay Consulting
+
+Tu objetivo es detectar señales públicas de que una empresa D2C en España está buscando activamente una agencia de paid media o está insatisfecha con la actual.
+
+### SEÑALES A BUSCAR:
+
+**Tipo 1 — Oferta de trabajo (señal fuerte):**
+Empresa que busca empleado de paid media = puede querer externalizar.
+Búsquedas:
+- `"paid media manager" OR "performance marketing" España ecommerce site:linkedin.com`
+- `"meta ads" OR "facebook ads" specialist empleos España tienda online`
+- `"paid media" oferta trabajo D2C España 2025 2026`
+
+**Tipo 2 — Posts de fundadores en LinkedIn quejándose:**
+- `site:linkedin.com "ROAS bajo" OR "agencia que no rinde" OR "cambiar de agencia" paid media España`
+- `site:linkedin.com founder D2C España "meta ads" problema resultados`
+
+**Tipo 3 — Comunidades y foros:**
+- `"buscamos agencia" paid media ecommerce España`
+- `"recomendación agencia" meta ads ecommerce España site:linkedin.com OR site:reddit.com`
+
+**Tipo 4 — Nuevos lanzamientos (oportunidad):**
+- `lanzamiento tienda online D2C España 2026 moda belleza suplementos`
+- Nueva marca = necesitan expertise en paid media desde el principio
+
+### PROCESO:
+
+**PASO 1:** Ejecuta las búsquedas anteriores con WebSearch.
+
+**PASO 2:** Para cada señal detectada, extrae:
+- Empresa/persona
+- URL de la señal
+- Tipo de señal (oferta, post, foro, lanzamiento)
+- Fecha
+- Acción recomendada (contactar ahora / monitorizar / ignorar)
+- Score de urgencia (1-10)
+
+**PASO 3 — Guarda en intent-signals.json:**
+Ruta: `/root/projects/DaybyDay/Claude Skills Maxing/intent-signals.json`
+
+```json
+{
+  "last_updated": "FECHA",
+  "signals": [
+    {
+      "id": "IS001",
+      "company": "Nombre empresa o persona",
+      "signal_type": "job_posting|linkedin_post|forum|new_launch",
+      "signal_description": "Descripción de la señal",
+      "source_url": "https://...",
+      "detected_date": "FECHA",
+      "urgency_score": 8,
+      "recommended_action": "Contactar esta semana con mensaje personalizado sobre...",
+      "status": "new"
+    }
+  ]
+}
+```
+
+**PASO 4 — Reporta:**
+- Nº de señales detectadas
+- Top 3 señales más urgentes con acción recomendada
+- Si alguna señal corresponde a un prospect ya en prospects.json, actualiza su estado
+
+### CONTEXTO DAYBYDAY:
+- Web: https://daybydayconsulting.com
+- ICP: D2C moda, belleza, suplementos, hogar, mascotas — España — >5K€/mes Meta Ads
+
+---
+## CONTEXTO DE ESTA EJECUCIÓN
+- Agent: intent-signal-detector
+- RUN_ID en PostgreSQL: 103INSERT01
+- Fecha/hora inicio: 2026-03-24 00:50:04
+- Para actualizar tu run en la BD usa: WHERE id=103INSERT01 en la tabla agent_runs
+
+---
+ ## MEMORIA DEL AGENTE                                                                                                                                                                                                                                                                                                                                                                  +
+ [instruction] FASE1: Setup y escribe señales en PostgreSQL: FASE 1 OBLIGATORIO — Al inicio de tu ejecución, crea la tabla si no existe y guarda cada señal:                                                                                                                                                                                                                            +
+                                                                                                                                                                                                                                                                                                                                                                                        +
+ PASO 1 - Crea la tabla (solo si no existe):                                                                                                                                                                                                                                                                                                                                            +
+ docker exec daybyday-postgres psql -U daybyday -d daybyday -c "CREATE TABLE IF NOT EXISTS intent_signals (id SERIAL PRIMARY KEY, company TEXT NOT NULL, signal_type TEXT NOT NULL, signal_text TEXT NOT NULL, source_url TEXT, strength INTEGER DEFAULT 50, notes TEXT, processed BOOLEAN DEFAULT FALSE, detected_at TIMESTAMPTZ DEFAULT NOW(), created_at TIMESTAMPTZ DEFAULT NOW());"+
+                                                                                                                                                                                                                                                                                                                                                                                        +
+ PASO 2 - Por cada señal detectada:                                                                                                                                                                                                                                                                                                                                                     +
+ docker exec daybyday-postgres psql -U daybyday -d daybyday -c "INSERT INTO intent_signals (company, signal_type, signal_text, source_url, strength, notes) VALUES ('EMPRESA', 'job_posting', 'DESCRIPCION', 'URL', FUERZA_0_100, 'ACCION');"                                                                                                                                           +
+ signal_type: job_posting|review_complaint|funding|competitor_switch|content_signal                                                                                                                                                                                                                                                                                                     +
+ [instruction] FASE1: Escribe señales en PostgreSQL: FASE 1 OBLIGATORIO — Cada señal de intención detectada, guárdala en PostgreSQL con tu herramienta Bash:                                                                                                                                                                                                                            +
+ docker exec daybyday-postgres psql -U daybyday -d daybyday -c "INSERT INTO intent_signals (company, signal_type, signal_text, source_url, strength, notes) VALUES ('EMPRESA', 'job_posting', 'DESCRIPCION_SEÑAL', 'URL_FUENTE', FUERZA_0_100, 'ACCION_RECOMENDADA');"                                                                                                                  +
+ signal_type opciones: job_posting, review_complaint, funding, competitor_switch, content_signal. strength: 0-100 (urgency_score * 10). Ejecuta por cada señal antes de terminar.                                                                                                                                                                                                       +
+ [fact] Señales de intención más fiables: Señales más fiables (ordenadas): 1) Oferta laboral 'paid media manager' activa <7 días (strength 90), 2) Review negativa en Trustpilot sobre su agencia actual (strength 85), 3) Post LinkedIn del founder pidiendo recomendaciones de agencias (strength 95), 4) Funding round reciente >500K€ en ecommerce D2C (strength 75).               +
+ [strategy] Senales de alto valor: Posts sobre escalar, contratar, buscar agencia = senal de compra. Score +20 puntos.'
+[2026-03-24 00:50:04] END intent-signal-detector status=failed duration=5s exit=1
+[2026-03-24 00:51:39] START intent-signal-detector
+[2026-03-24 00:51:39] RUN_ID=104INSERT01
+[2026-03-24 00:51:39] PROMPT_SIZE=7939 bytes (skill + memory + feedback)
+error: unknown option '---
+name: intent-signal-detector
+description: Detectar señales públicas de que una empresa D2C en España está buscando activamente una agencia de paid media o está insatisfecha con la actual
+---
+
+## INTENT SIGNAL DETECTOR — DayByDay Consulting
+
+Tu objetivo es detectar señales públicas de que una empresa D2C en España está buscando activamente una agencia de paid media o está insatisfecha con la actual.
+
+### SEÑALES A BUSCAR:
+
+**Tipo 1 — Oferta de trabajo (señal fuerte):**
+Empresa que busca empleado de paid media = puede querer externalizar.
+Búsquedas:
+- `"paid media manager" OR "performance marketing" España ecommerce site:linkedin.com`
+- `"meta ads" OR "facebook ads" specialist empleos España tienda online`
+- `"paid media" oferta trabajo D2C España 2025 2026`
+
+**Tipo 2 — Posts de fundadores en LinkedIn quejándose:**
+- `site:linkedin.com "ROAS bajo" OR "agencia que no rinde" OR "cambiar de agencia" paid media España`
+- `site:linkedin.com founder D2C España "meta ads" problema resultados`
+
+**Tipo 3 — Comunidades y foros:**
+- `"buscamos agencia" paid media ecommerce España`
+- `"recomendación agencia" meta ads ecommerce España site:linkedin.com OR site:reddit.com`
+
+**Tipo 4 — Nuevos lanzamientos (oportunidad):**
+- `lanzamiento tienda online D2C España 2026 moda belleza suplementos`
+- Nueva marca = necesitan expertise en paid media desde el principio
+
+### PROCESO:
+
+**PASO 1:** Ejecuta las búsquedas anteriores con WebSearch.
+
+**PASO 2:** Para cada señal detectada, extrae:
+- Empresa/persona
+- URL de la señal
+- Tipo de señal (oferta, post, foro, lanzamiento)
+- Fecha
+- Acción recomendada (contactar ahora / monitorizar / ignorar)
+- Score de urgencia (1-10)
+
+**PASO 3 — Guarda en intent-signals.json:**
+Ruta: `/root/projects/DaybyDay/Claude Skills Maxing/intent-signals.json`
+
+```json
+{
+  "last_updated": "FECHA",
+  "signals": [
+    {
+      "id": "IS001",
+      "company": "Nombre empresa o persona",
+      "signal_type": "job_posting|linkedin_post|forum|new_launch",
+      "signal_description": "Descripción de la señal",
+      "source_url": "https://...",
+      "detected_date": "FECHA",
+      "urgency_score": 8,
+      "recommended_action": "Contactar esta semana con mensaje personalizado sobre...",
+      "status": "new"
+    }
+  ]
+}
+```
+
+**PASO 4 — Reporta:**
+- Nº de señales detectadas
+- Top 3 señales más urgentes con acción recomendada
+- Si alguna señal corresponde a un prospect ya en prospects.json, actualiza su estado
+
+### CONTEXTO DAYBYDAY:
+- Web: https://daybydayconsulting.com
+- ICP: D2C moda, belleza, suplementos, hogar, mascotas — España — >5K€/mes Meta Ads
+
+---
+## CONTEXTO DE ESTA EJECUCIÓN
+- Agent: intent-signal-detector
+- RUN_ID en PostgreSQL: 104INSERT01
+- Fecha/hora inicio: 2026-03-24 00:51:39
+- Para actualizar tu run en la BD usa: WHERE id=104INSERT01 en la tabla agent_runs
+
+---
+ ## MEMORIA DEL AGENTE                                                                                                                                                                                                                                                                                                                                                                  +
+ [instruction] FASE1: Setup y escribe señales en PostgreSQL: FASE 1 OBLIGATORIO — Al inicio de tu ejecución, crea la tabla si no existe y guarda cada señal:                                                                                                                                                                                                                            +
+                                                                                                                                                                                                                                                                                                                                                                                        +
+ PASO 1 - Crea la tabla (solo si no existe):                                                                                                                                                                                                                                                                                                                                            +
+ docker exec daybyday-postgres psql -U daybyday -d daybyday -c "CREATE TABLE IF NOT EXISTS intent_signals (id SERIAL PRIMARY KEY, company TEXT NOT NULL, signal_type TEXT NOT NULL, signal_text TEXT NOT NULL, source_url TEXT, strength INTEGER DEFAULT 50, notes TEXT, processed BOOLEAN DEFAULT FALSE, detected_at TIMESTAMPTZ DEFAULT NOW(), created_at TIMESTAMPTZ DEFAULT NOW());"+
+                                                                                                                                                                                                                                                                                                                                                                                        +
+ PASO 2 - Por cada señal detectada:                                                                                                                                                                                                                                                                                                                                                     +
+ docker exec daybyday-postgres psql -U daybyday -d daybyday -c "INSERT INTO intent_signals (company, signal_type, signal_text, source_url, strength, notes) VALUES ('EMPRESA', 'job_posting', 'DESCRIPCION', 'URL', FUERZA_0_100, 'ACCION');"                                                                                                                                           +
+ signal_type: job_posting|review_complaint|funding|competitor_switch|content_signal                                                                                                                                                                                                                                                                                                     +
+ [instruction] FASE1: Escribe señales en PostgreSQL: FASE 1 OBLIGATORIO — Cada señal de intención detectada, guárdala en PostgreSQL con tu herramienta Bash:                                                                                                                                                                                                                            +
+ docker exec daybyday-postgres psql -U daybyday -d daybyday -c "INSERT INTO intent_signals (company, signal_type, signal_text, source_url, strength, notes) VALUES ('EMPRESA', 'job_posting', 'DESCRIPCION_SEÑAL', 'URL_FUENTE', FUERZA_0_100, 'ACCION_RECOMENDADA');"                                                                                                                  +
+ signal_type opciones: job_posting, review_complaint, funding, competitor_switch, content_signal. strength: 0-100 (urgency_score * 10). Ejecuta por cada señal antes de terminar.                                                                                                                                                                                                       +
+ [fact] Señales de intención más fiables: Señales más fiables (ordenadas): 1) Oferta laboral 'paid media manager' activa <7 días (strength 90), 2) Review negativa en Trustpilot sobre su agencia actual (strength 85), 3) Post LinkedIn del founder pidiendo recomendaciones de agencias (strength 95), 4) Funding round reciente >500K€ en ecommerce D2C (strength 75).               +
+ [strategy] Senales de alto valor: Posts sobre escalar, contratar, buscar agencia = senal de compra. Score +20 puntos.'
+[2026-03-24 00:51:39] END intent-signal-detector status=failed duration=4s exit=1
+[2026-03-24 00:52:54] START intent-signal-detector
+[2026-03-24 00:52:54] RUN_ID=105
+[2026-03-24 00:52:54] PROMPT_SIZE=7775 bytes (skill + memory + feedback)
+[2026-03-24 01:01:34] START intent-signal-detector
+[2026-03-24 01:01:34] RUN_ID=106
+[2026-03-24 01:01:34] PROMPT_SIZE=7775 bytes (skill + memory + feedback)
+You're out of extra usage · resets 5am (Europe/Berlin)
+[2026-03-24 01:01:34] END intent-signal-detector status=failed duration=87s exit=1

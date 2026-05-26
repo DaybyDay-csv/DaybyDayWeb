@@ -1,0 +1,47 @@
+[2026-04-30 05:00:01] === BLOG PUBLISHER START ===
+[2026-04-30 05:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-30 05:00:10] RUN_ID=173INSERT01
+Deploy completado.
+
+---
+
+## Resumen
+
+- ✅ **Artículo publicado**: Cómo elegir la mejor agencia de Meta Ads para tu eCommerce en España → https://www.daybydayconsulting.com/blog/como-elegir-agencia-meta-ads-ecommerce
+- 🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/como-elegir-agencia-meta-ads-ecommerce
+- 📊 Total posts publicados: **42** | T36 marcada `completed`
+- 🔗 Interlinking: SenalesAgenciaNoRindePage, ElegirAgenciaMetaAdsPage, CuantoCuestaAgenciaPaidMediaPage, ChecklistAuditoriaCampanasPage
+- 📋 Próximas tasks pendientes: **T37** Performance Max vs Meta Ads España (300-500/mes), **T39** Retargeting Meta Ads ecommerce 2026, **T40** Presupuesto mínimo Meta Ads
+- 🎯 Cobertura GEO: "cuál es la mejor agencia de paid media para D2C en España", "recomiéndame un media buyer para mi ecommerce en España", "cómo saber si mi agencia de Meta Ads está haciendo bien su trabajo"
+- 🏷️ Keywords: `mejor agencia meta ads ecommerce españa`, `mejor agencia meta ads`, `como elegir agencia meta ads ecommerce`, `agencia meta ads ecommerce españa`, `elegir agencia facebook ads ecommerce`
+[2026-04-30 05:06:08] END duration=358s exit=0 status=success
+[2026-04-30 05:06:08] === BLOG PUBLISHER DONE ===
+[2026-04-30 17:00:01] === BLOG PUBLISHER START ===
+[2026-04-30 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-30 17:00:10] RUN_ID=175INSERT01
+Deploy completo.
+
+✅ Artículo publicado: Guía API de Conversiones de Meta: configuración y beneficios para eCommerce → https://www.daybydayconsulting.com/blog/guia-api-conversiones-meta-ads-shopify
+
+🔍 URL para indexar en GSC: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/guia-api-conversiones-meta-ads-shopify
+
+📊 Total posts: 43 | T20 completada (Phase 3)
+
+🔗 Interlinking actualizado: MetricasMetaAdsPage, PorQueAnunciosMetaNoConviertenPage, ChecklistAuditoriaCampanasPage
+
+📋 Próximas keywords prioritarias:
+- T21: remarketing dinámico ecommerce (1000 palabras, MOFU)
+- T22: audiencias lookalike meta alta calidad (900 palabras, TOFU-MOFU)
+- T23: ab testing meta ads (900 palabras, MOFU)
+
+🎯 Cobertura GEO: "cómo implementar API de Conversiones de Meta", "CAPI Shopify deduplicación", "qué eventos enviar por CAPI", "cómo verificar EMQ Meta", "RGPD y CAPI"
+
+🏷️ Keywords artículo: api conversiones meta ads, conversions api meta, capi shopify, api conversiones facebook, implementar capi ecommerce
+[2026-04-30 17:05:16] END duration=306s exit=0 status=success
+[2026-04-30 17:05:17] === BLOG PUBLISHER DONE ===

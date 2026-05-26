@@ -1,0 +1,145 @@
+#!/bin/bash
+export PATH=/usr/local/bin:/usr/bin:/bin
+export VERCEL_TOKEN="PLACEHOLDER_VERCEL_TOKEN"
+# DayByDay — Daily Blog Publisher — GUARDRAILS VERSION
+# Safe: ONLY touches src/pages/blog/, src/App.jsx, src/pages/BlogPage.jsx,
+#       public/sitemap.xml, public/llms.txt, seo-plan/estado.json
+# NEVER modifies: components, layouts, config, theme, CSS, JS lib files
+# Runs via cron 3x/week Mon/Wed/Fri 5:00 UTC (6am Spain)
+
+set -euo pipefail
+
+REPO_DIR="/root/projects/DaybyDay"
+WORKTREE_DIR="${REPO_DIR}/.claude/worktrees/epic-pasteur"
+BRANCH="claude/epic-pasteur"
+LOG_FILE="/var/log/daybyday/blog-$(date +%Y-%m-%d).log"
+LEGACY_LOG="/root/logs/blog-$(date +%Y-%m-%d).log"
+
+mkdir -p /var/log/daybyday /root/logs
+
+log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE" >> "$LEGACY_LOG"; }
+
+log "=== BLOG PUBLISHER START ==="
+log "Worktree: $WORKTREE_DIR | Branch: $BRANCH"
+
+# 1. Safety: verify worktree exists and is on correct branch
+cd "$WORKTREE_DIR" || { log "ERROR: Worktree not found"; exit 1; }
+
+CURRENT_BRANCH=$(git branch --show-current 2>/dev/null || echo "detached")
+if [ "$CURRENT_BRANCH" != "$BRANCH" ]; then
+  log "Fixing branch: $CURRENT_BRANCH → $BRANCH"
+  git checkout -B "$BRANCH" 2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG"
+  git branch -u origin/"$BRANCH" 2>&1 || true
+fi
+
+# 2. Pull latest to avoid conflicts
+git pull origin "$BRANCH" --rebase 2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG" || {
+  log "WARN: Pull failed, continuing with local state"
+}
+
+# 3. Record run in PostgreSQL
+RUN_ID=$(docker exec daybyday-postgres psql -U daybyday -d daybyday -t -c \
+  "INSERT INTO agent_runs (agent_name, status, started_at) VALUES ('daybyday-daily-blog', 'running', NOW()) RETURNING id;" \
+  2>/dev/null | tr -d ' \n\r')
+log "RUN_ID=${RUN_ID}"
+
+# 4. Run the blog agent with STRICT tool/path guardrails
+START_TIME=$(date +%s)
+
+SKILL_CONTENT=$(awk 'BEGIN{f=0} /^---$/{if(f==0){f=1;next}else if(f==1){f=2;next}} f>=2{print}' \
+  "/root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md")
+[ -z "$(echo "$SKILL_CONTENT" | tr -d '[:space:]')" ] && \
+  SKILL_CONTENT=$(cat "/root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md")
+
+FULL_PROMPT="# AGENTE: daybyday-daily-blog
+# RUTA DE TRABAJO: ${WORKTREE_DIR}
+# RESTRICCIÓN CRÍTICA DE SEGURIDAD:
+# - SOLO puedes modificar archivos en: src/pages/blog/, src/App.jsx, src/pages/BlogPage.jsx, public/sitemap.xml, public/llms.txt, seo-plan/estado.json
+# - NUNCA toques: src/components/, src/layouts/, src/styles/, vite.config.js, package.json, index.html, cualquier archivo de configuración
+# - Si dudas sobre si un archivo es seguro: NO LO TOQUES
+# - El git add del commit SOLO incluye los archivos permitidos listados arriba
+
+${SKILL_CONTENT}
+
+## CONTEXTO ADICIONAL
+Directorio de trabajo activo: ${WORKTREE_DIR}
+Usa 'cd ${WORKTREE_DIR}' antes de cualquier operación de archivo.
+Al hacer git commit, usa EXACTAMENTE este comando (no añadas otros archivos):
+  git add src/pages/blog/ src/App.jsx src/pages/BlogPage.jsx public/sitemap.xml public/llms.txt seo-plan/estado.json
+  git commit -m 'feat(blog): [TITULO] — keyword: [KEYWORD]'
+  git push origin ${BRANCH}
+
+Después del push, ejecuta:
+  curl -s 'https://www.google.com/ping?sitemap=https://daybydayconsulting.com/sitemap.xml' || true
+  echo 'GSC_PING_DONE'
+"
+
+claude \
+  -p "$FULL_PROMPT" \
+  --allowedTools 'Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch' \
+  2>&1 | tee -a "$LOG_FILE" >> "$LEGACY_LOG"
+
+EXIT_CODE=${PIPESTATUS[0]}
+END_TIME=$(date +%s)
+DURATION=$((END_TIME - START_TIME))
+STATUS="success"
+[ $EXIT_CODE -ne 0 ] && STATUS="failed"
+
+/root/scripts/notify.sh "⚠️ Blog ${STATUS} (${DURATION}s)" 2>/dev/null &
+log "END duration=${DURATION}s exit=${EXIT_CODE} status=${STATUS}"
+
+# 5. Update PostgreSQL
+SUMMARY=$(tail -30 "$LOG_FILE" | { grep -E 'Artículo|feat\(blog\)|FUNCIONA|published|ERROR' || true; } | tr '\n' ' ' | cut -c1-500)
+docker exec daybyday-postgres psql -U daybyday -d daybyday -c \
+  "UPDATE agent_runs SET status='${STATUS}', finished_at=NOW(), duration=${DURATION}, summary='$(echo $SUMMARY | sed "s/'/''/g")' WHERE id=${RUN_ID};" \
+  2>/dev/null || true
+
+# 6. GSC ping (belt and suspenders)
+curl -s "https://www.google.com/ping?sitemap=https://daybydayconsulting.com/sitemap.xml" >> "$LOG_FILE" 2>&1 || true
+
+# 7. Build con prerender + deploy a Vercel (HTML estático por ruta para SEO)
+log "Deploying to Vercel with prerender…"
+(
+  set +e
+  cd "$REPO_DIR"
+  git fetch origin main "$BRANCH" 2>&1
+  git checkout main 2>&1
+  git pull origin main --rebase 2>&1
+  # Merge blog branch (claude/epic-pasteur) into main, then push
+  git merge "origin/${BRANCH}" --no-edit -m "merge: blog updates from ${BRANCH}" 2>&1
+  git push origin main 2>&1
+  npm run build 2>&1
+  vercel deploy --prebuilt --prod --yes --token="$VERCEL_TOKEN" 2>&1
+) >> "$LOG_FILE" 2>&1 && DEPLOY_OK=1 || DEPLOY_OK=0
+[ "$DEPLOY_OK" = "1" ] && log "Vercel deploy OK" || log "Vercel deploy FAILED — check logs"
+
+# 8. IndexNow auto-submit — push new blog URL + homepage to Bing/ChatGPT/Perplexity
+if [ "$DEPLOY_OK" = "1" ]; then
+  log "IndexNow: detecting new blog URLs from sitemap diff…"
+  # Extract real slugs from sitemap.xml diff in last commit (not JSX filenames)
+  NEW_BLOG_URLS=$(cd "$WORKTREE_DIR" && git diff HEAD~1 HEAD -- public/sitemap.xml 2>/dev/null \
+    | grep -E '^\+\s*<loc>https://www\.daybydayconsulting\.com/blog/' \
+    | grep -oP '(?<=<loc>)[^<]+' \
+    | sort -u)
+  if [ -n "$NEW_BLOG_URLS" ]; then
+    SUBMIT_LIST=$(printf '%s\n' \
+      "https://www.daybydayconsulting.com/" \
+      "https://www.daybydayconsulting.com/blog" \
+      $NEW_BLOG_URLS)
+    log "IndexNow submitting:"
+    echo "$SUBMIT_LIST" | tee -a "$LOG_FILE"
+    /root/scripts/indexnow-submit.sh $SUBMIT_LIST >> "$LOG_FILE" 2>&1 \
+      && log "IndexNow OK" || log "IndexNow FAILED"
+  else
+    log "IndexNow: no new blog URLs in sitemap diff, running --new mode"
+    /root/scripts/indexnow-submit.sh --new >> "$LOG_FILE" 2>&1 || log "IndexNow --new FAILED"
+  fi
+fi
+
+log "=== BLOG PUBLISHER DONE ==="
+
+# Telegram notification
+source /root/projects/DaybyDay/.env 2>/dev/null || true
+LAST_COMMIT=$(cd /root/projects/DaybyDay/.claude/worktrees/epic-pasteur && git log --oneline -1 2>/dev/null || echo 'run completado')
+/root/scripts/notify.sh "📝 Blog ${STATUS} (${DURATION}s)
+${LAST_COMMIT}" 2>/dev/null &

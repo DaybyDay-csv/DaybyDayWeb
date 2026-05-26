@@ -1,0 +1,7 @@
+[2026-04-15 05:00:01] === BLOG PUBLISHER START ===
+[2026-04-15 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-15 05:00:07] RUN_ID=145INSERT01
+/root/scripts/run-daily-blog.sh: line 77: claude: command not found

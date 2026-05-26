@@ -1,0 +1,10 @@
+#!/bin/bash
+# DayByDay — Client Acquisition Orchestrator
+# Mon-Fri 7:00 UTC (8:00 Spain winter / 9:00 summer)
+cd /root/projects/DaybyDay
+git pull origin main --quiet 2>/dev/null
+DATE=$(date +%Y-%m-%d)
+LOG=/root/logs/orchestrator-$DATE.log
+echo "=== START $(date) ===" >> $LOG
+claude --dangerously-skip-permissions   -p "$(cat /root/.claude/scheduled-tasks/client-acquisition-orchestrator/SKILL.md)"   --allowedTools 'Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch'   >> $LOG 2>&1
+echo "=== END $(date) ===" >> $LOG

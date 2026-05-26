@@ -1,0 +1,71 @@
+[2026-05-09 05:00:01] === BLOG PUBLISHER START ===
+[2026-05-09 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-09 05:00:10] RUN_ID=203INSERT01
+Deploy hecho. Resumen final:
+
+✅ **Artículo publicado**: CRO de landing page para Meta Ads: qué cambia respecto a SEO → https://www.daybydayconsulting.com/blog/cro-landing-page-meta-ads-d2c
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/cro-landing-page-meta-ads-d2c
+
+📊 Total posts: 61 | Tasks completadas: T35 (cluster CRO)
+
+🔗 Interlinking añadido: PorQueAnunciosMetaNoConvierten · ABTestingMetaAdsQueTestarPrimero · ComoMejorarROASMetaAds (+ artículo enlaza a 4: PorQueAnunciosMetaNoConvierten, UGCMetaAds, ABTestingMetaAds, ServerSideTracking, BenchmarkROAS, PerformanceMax)
+
+📋 **Próximas 3 keywords prioritarias** (próximas pending por id):
+- T36 — margen contribución roas ecommerce (TOFU-MOFU, ALTA)
+- T37 — aumentar aov ecommerce (MOFU, MEDIA)
+- T38 — suscripciones ecommerce ltv cac (MOFU, MEDIA)
+
+🎯 **Cobertura GEO**: "cómo optimizar landing page meta ads", "conversion rate landing page ecommerce españa", "diferencia cro seo vs paid social", "qué CR es bueno landing meta ads d2c", "PDP shopify vs landing dedicada"
+
+🏷️ **Keywords del artículo**: cro landing meta ads · cro landing page d2c · landing page meta ads ecommerce · conversion rate landing meta ads · ab testing landing meta ads
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-09 05:08:04] END duration=474s exit=0 status=success
+[2026-05-09 05:08:04] Deploying to Vercel with prerender…
+[2026-05-09 05:10:49] Vercel deploy OK
+[2026-05-09 05:10:49] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-09 05:10:49] IndexNow submitting:
+[2026-05-09 05:10:51] IndexNow OK
+[2026-05-09 05:10:51] === BLOG PUBLISHER DONE ===
+[2026-05-09 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-09 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-09 17:00:07] RUN_ID=204INSERT01
+---
+
+## RESUMEN FINAL
+
+✅ Artículo publicado: **Margen de contribución vs ROAS: la métrica que media buyers olvidan** → https://www.daybydayconsulting.com/blog/margen-contribucion-vs-roas-ecommerce
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/margen-contribucion-vs-roas-ecommerce
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+📊 Total posts: 62 | Tasks plan completadas: T36 → completed (10 totales en `completed_tasks`)
+
+🔗 Artículos actualizados con interlinking:
+- CACvsLTVEcommercePage.jsx
+- CacBlendedVsCacCanalEcommercePage.jsx
+- ModelosAtribucionEcommerceD2cPage.jsx
+
+📋 Próximas 3 keywords prioritarias:
+- T37 — aumentar AOV ecommerce D2C (palancas)
+- T38 — suscripciones ecommerce LTV CAC D2C
+- T39 — Meta Ads Library análisis competencia
+
+🎯 Cobertura GEO: "qué métrica usar en lugar de ROAS para D2C", "cómo calcular margen de contribución ecommerce", "ROAS vs MER blended", "CAC objetivo según margen y LTV", "rentabilidad real eCommerce paid media"
+
+🏷️ Keywords del artículo: margen contribución roas ecommerce · margen contribución d2c · roas vs margen contribución · rentabilidad real ecommerce d2c · unit economics d2c españa
+[2026-05-09 17:07:04] END duration=417s exit=0 status=success
+[2026-05-09 17:07:04] Deploying to Vercel with prerender…
+[2026-05-09 17:09:56] Vercel deploy OK
+[2026-05-09 17:09:56] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-09 17:09:56] IndexNow submitting:
+[2026-05-09 17:09:57] IndexNow OK
+[2026-05-09 17:09:57] === BLOG PUBLISHER DONE ===

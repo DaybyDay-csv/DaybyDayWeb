@@ -1,0 +1,9 @@
+[2026-04-13 06:30:02] MODEL=claude-sonnet-4-6
+[2026-04-13 06:30:02] START daybyday-seo-weekly
+[2026-04-13 06:30:02] RUN_ID=141
+[2026-04-13 06:30:02] PROMPT_SIZE=5163 bytes (skill + memory + feedback)
+[2026-04-13 06:30:02] PROMPT_HASH=4a38c6a098c9...
+[2026-04-13 06:30:02] CALLER=sdk (prompt-caching enabled)
+Error: ANTHROPIC_API_KEY not set
+
+[2026-04-13 06:30:02] END daybyday-seo-weekly status=failed duration=7s exit=2

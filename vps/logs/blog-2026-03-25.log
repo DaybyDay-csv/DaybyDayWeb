@@ -1,0 +1,42 @@
+[2026-03-25 05:00:02] === BLOG PUBLISHER START ===
+[2026-03-25 05:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+   42a8ba2..3826b1d  claude/epic-pasteur -> origin/claude/epic-pasteur
+Updating 42a8ba2..3826b1d
+Fast-forward
+ index.html                                         |  19 +-
+ public/llms.txt                                    |   3 +
+ public/sitemap.xml                                 |  18 ++
+ seo-plan/estado.json                               |  29 ++-
+ src/App.jsx                                        |   6 +
+ src/components/BlogPostLayout.jsx                  |  10 +
+ src/components/SEOHead.jsx                         |   6 +-
+ src/pages/BlogPage.jsx                             |  24 +++
+ src/pages/HomePage.jsx                             |  81 +++++--
+ src/pages/blog/BenchmarkROASSectorEspanaPage.jsx   | 236 +++++++++++++++++++++
+ src/pages/blog/BuenROASNichosPage.jsx              |   7 +-
+ .../CasoExitoEcommerceDc156RoasMetaAdsPage.jsx     | 229 ++++++++++++++++++++
+ src/pages/blog/CasoExitoEcommerceROASPage.jsx      | 210 ++++++++++++++++++
+ src/pages/blog/ChecklistAuditoriaCampanasPage.jsx  |   4 +-
+ src/pages/blog/ComoMejorarROASMetaAdsPage.jsx      | 225 ++++++++++++++++++++
+ .../blog/GuiaMetaAdsEcommerceD2CEspana2026Page.jsx |   3 +
+ src/pages/blog/MejoresAgenciasPaidMediaPage.jsx    |   1 +
+ src/pages/blog/MetodologiaDayByDayPage.jsx         |   6 +-
+ src/pages/services/MetaAdsPage.jsx                 |   8 +
+ src/pages/services/PaidMediaPage.jsx               |   8 +
+ vercel.json                                        |   8 +
+ 21 files changed, 1092 insertions(+), 49 deletions(-)
+ create mode 100644 src/pages/blog/BenchmarkROASSectorEspanaPage.jsx
+ create mode 100644 src/pages/blog/CasoExitoEcommerceDc156RoasMetaAdsPage.jsx
+ create mode 100644 src/pages/blog/CasoExitoEcommerceROASPage.jsx
+ create mode 100644 src/pages/blog/ComoMejorarROASMetaAdsPage.jsx
+[2026-03-25 05:00:09] RUN_ID=108INSERT01
+You're out of extra usage · resets 6am (Europe/Berlin)
+[2026-03-25 12:19:02] === BLOG PUBLISHER START ===
+[2026-03-25 12:19:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-03-25 12:19:05] RUN_ID=110INSERT01
+You're out of extra usage · resets 4pm (Europe/Berlin)

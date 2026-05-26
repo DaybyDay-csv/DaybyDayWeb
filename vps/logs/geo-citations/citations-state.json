@@ -1,0 +1,1410 @@
+{
+  "tracked_urls": {
+    "que-es-roas-meta-ads": {
+      "first_tracked": "2026-05-21T08:00:11.416394",
+      "index_checked_at": "2026-05-21T08:00:12.545545",
+      "ai_checked_at": "2026-05-21T08:00:13.709716",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:12.892447"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:13.194616"
+        }
+      }
+    },
+    "meta-ads-vs-google-ads": {
+      "first_tracked": "2026-05-21T08:00:14.720756",
+      "index_checked_at": "2026-05-21T08:00:15.372189",
+      "ai_checked_at": "2026-05-21T08:00:17.443742",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:15.834614"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:16.819406"
+        }
+      }
+    },
+    "como-reducir-cpa-ecommerce": {
+      "first_tracked": "2026-05-21T08:00:18.452468",
+      "index_checked_at": "2026-05-21T08:00:18.631139",
+      "ai_checked_at": "2026-05-21T08:00:20.519246",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:19.226531"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:19.899525"
+        }
+      }
+    },
+    "estrategia-full-funnel-meta-ads-d2c": {
+      "first_tracked": "2026-05-21T08:00:21.586710",
+      "index_checked_at": "2026-05-21T08:00:21.809522",
+      "ai_checked_at": "2026-05-21T08:00:22.973560",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:22.141867"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:22.551851"
+        }
+      }
+    },
+    "automatizacion-marketing-que-es": {
+      "first_tracked": "2026-05-21T08:00:24.017403",
+      "index_checked_at": "2026-05-21T08:00:24.817457",
+      "ai_checked_at": "2026-05-21T08:00:27.728991",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:25.539988"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:26.125368"
+        }
+      }
+    },
+    "tareas-marketing-automatizar": {
+      "first_tracked": "2026-05-21T08:00:28.732614",
+      "index_checked_at": "2026-05-21T08:00:29.133053",
+      "ai_checked_at": "2026-05-21T08:00:30.978833",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:29.669031"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:30.279803"
+        }
+      }
+    },
+    "agencia-vs-inhouse-vs-ia": {
+      "first_tracked": "2026-05-21T08:00:31.981188",
+      "index_checked_at": "2026-05-21T08:00:32.134400",
+      "ai_checked_at": "2026-05-21T08:00:33.389528",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:32.475668"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:32.947632"
+        }
+      }
+    },
+    "estrategias-puja-meta-ads": {
+      "first_tracked": "2026-05-21T08:00:34.390778",
+      "index_checked_at": "2026-05-21T08:00:34.522101",
+      "ai_checked_at": "2026-05-21T08:00:36.136728",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:34.804308"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:35.465728"
+        }
+      }
+    },
+    "escalar-meta-ads": {
+      "first_tracked": "2026-05-21T08:00:37.147202",
+      "index_checked_at": "2026-05-21T08:00:37.534760",
+      "ai_checked_at": "2026-05-21T08:00:39.124043",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:37.774985"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:38.692305"
+        }
+      }
+    },
+    "embudo-captacion-clientes": {
+      "first_tracked": "2026-05-21T08:00:40.130410",
+      "index_checked_at": "2026-05-21T08:00:40.430721",
+      "ai_checked_at": "2026-05-21T08:00:41.858083",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:40.896115"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:41.489477"
+        }
+      }
+    },
+    "preguntas-contratar-agencia-paid-media": {
+      "first_tracked": "2026-05-21T08:00:42.884378",
+      "index_checked_at": "2026-05-21T08:00:43.055109",
+      "ai_checked_at": "2026-05-21T08:00:44.393249",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:43.608749"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:44.023548"
+        }
+      }
+    },
+    "ugc-meta-ads": {
+      "first_tracked": "2026-05-21T08:00:45.444515",
+      "index_checked_at": "2026-05-21T08:00:46.220757",
+      "ai_checked_at": "2026-05-21T08:00:47.285836",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:46.597766"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:46.990932"
+        }
+      }
+    },
+    "ia-marketing-digital": {
+      "first_tracked": "2026-05-21T08:00:48.295772",
+      "index_checked_at": "2026-05-21T08:00:48.452965",
+      "ai_checked_at": "2026-05-21T08:00:49.532665",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:48.882983"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:49.181107"
+        }
+      }
+    },
+    "buen-roas-por-nicho-benchmarks-2026": {
+      "first_tracked": "2026-05-21T08:00:50.580846",
+      "index_checked_at": "2026-05-21T08:00:51.378728",
+      "ai_checked_at": "2026-05-21T08:00:52.380590",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:51.619867"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:52.031452"
+        }
+      }
+    },
+    "metodologia-daybyday-ia-automatizacion-paid-media": {
+      "first_tracked": "2026-05-21T08:00:53.421990",
+      "index_checked_at": "2026-05-21T08:00:53.855114",
+      "ai_checked_at": "2026-05-21T08:00:55.781452",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:54.523961"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:55.151322"
+        }
+      }
+    },
+    "estado-paid-media-d2c-espana-2026": {
+      "first_tracked": "2026-05-21T08:00:56.891814",
+      "index_checked_at": "2026-05-21T08:00:57.216293",
+      "ai_checked_at": "2026-05-21T08:00:58.432313",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:57.527983"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:58.179583"
+        }
+      }
+    },
+    "mejores-agencias-paid-media-espana-ecommerce-d2c": {
+      "first_tracked": "2026-05-21T08:00:59.433799",
+      "index_checked_at": "2026-05-21T08:00:59.699727",
+      "ai_checked_at": "2026-05-21T08:01:00.754832",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:00:59.928363"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:00.183319"
+        }
+      }
+    },
+    "que-es-paid-media-guia-completa": {
+      "first_tracked": "2026-05-21T08:01:01.769126",
+      "index_checked_at": "2026-05-21T08:01:02.269031",
+      "ai_checked_at": "2026-05-21T08:01:03.819666",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:02.895580"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:03.402420"
+        }
+      }
+    },
+    "elegir-agencia-anuncios-meta-ads-d2c": {
+      "first_tracked": "2026-05-21T08:01:04.847452",
+      "index_checked_at": "2026-05-21T08:01:05.271020",
+      "ai_checked_at": "2026-05-21T08:01:06.824321",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:05.697687"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:06.358018"
+        }
+      }
+    },
+    "top-agencias-marketing-digital-espana-que-mirar": {
+      "first_tracked": "2026-05-21T08:01:07.851090",
+      "index_checked_at": "2026-05-21T08:01:08.018946",
+      "ai_checked_at": "2026-05-21T08:01:10.053836",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:08.803221"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:09.593786"
+        }
+      }
+    },
+    "agencia-paid-media-vs-agencia-marketing-generalista": {
+      "first_tracked": "2026-05-21T08:01:11.058788",
+      "index_checked_at": "2026-05-21T08:01:11.214523",
+      "ai_checked_at": "2026-05-21T08:01:12.322812",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:11.539051"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:11.913307"
+        }
+      }
+    },
+    "cuanto-cuesta-agencia-paid-media-espana-precios-2026": {
+      "first_tracked": "2026-05-21T08:01:13.341518",
+      "index_checked_at": "2026-05-21T08:01:14.150621",
+      "ai_checked_at": "2026-05-21T08:01:14.970185",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:14.376819"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:14.750434"
+        }
+      }
+    },
+    "media-buyer-vs-agencia-ecommerce-d2c": {
+      "first_tracked": "2026-05-21T08:01:15.986344",
+      "index_checked_at": "2026-05-21T08:01:16.191635",
+      "ai_checked_at": "2026-05-21T08:01:17.382867",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:16.502164"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:17.089502"
+        }
+      }
+    },
+    "que-es-un-media-buyer": {
+      "first_tracked": "2026-05-21T08:01:18.386540",
+      "index_checked_at": "2026-05-21T08:01:18.537282",
+      "ai_checked_at": "2026-05-21T08:01:19.871835",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:18.979079"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:19.254126"
+        }
+      }
+    },
+    "cuanto-cobra-media-buyer-freelance-espana": {
+      "first_tracked": "2026-05-21T08:01:20.886543",
+      "index_checked_at": "2026-05-21T08:01:21.279553",
+      "ai_checked_at": "2026-05-21T08:01:23.082477",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:21.681120"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:22.538087"
+        }
+      }
+    },
+    "senales-agencia-publicidad-no-rinde": {
+      "first_tracked": "2026-05-21T08:01:24.084893",
+      "index_checked_at": "2026-05-21T08:01:24.362041",
+      "ai_checked_at": "2026-05-21T08:01:25.260929",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:24.729031"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:25.054873"
+        }
+      }
+    },
+    "checklist-auditoria-campanas-paid-media": {
+      "first_tracked": "2026-05-21T08:01:26.309608",
+      "index_checked_at": "2026-05-21T08:01:26.589811",
+      "ai_checked_at": "2026-05-21T08:01:28.324996",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:26.876046"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:27.472627"
+        }
+      }
+    },
+    "guia-meta-ads-ecommerce-d2c-espana-2026": {
+      "first_tracked": "2026-05-21T08:01:29.374784",
+      "index_checked_at": "2026-05-21T08:01:29.547618",
+      "ai_checked_at": "2026-05-21T08:01:30.865957",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:29.933174"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:30.582045"
+        }
+      }
+    },
+    "caso-exito-ecommerce-d2c-roas-meta-ads": {
+      "first_tracked": "2026-05-21T08:01:31.884862",
+      "index_checked_at": "2026-05-21T08:01:32.533720",
+      "ai_checked_at": "2026-05-21T08:01:33.575169",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:32.935835"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:33.352573"
+        }
+      }
+    },
+    "benchmark-roas-sector-espana-2026": {
+      "first_tracked": "2026-05-21T08:01:34.577738",
+      "index_checked_at": "2026-05-21T08:01:34.740554",
+      "ai_checked_at": "2026-05-21T08:01:36.368730",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:35.087045"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:35.521603"
+        }
+      }
+    },
+    "como-mejorar-roas-meta-ads-7-palancas": {
+      "first_tracked": "2026-05-21T08:01:37.387221",
+      "index_checked_at": "2026-05-21T08:01:37.662366",
+      "ai_checked_at": "2026-05-21T08:01:39.117347",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:38.191986"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:38.672138"
+        }
+      }
+    },
+    "creative-testing-meta-ads": {
+      "first_tracked": "2026-05-21T08:01:40.119993",
+      "index_checked_at": "2026-05-21T08:01:40.350180",
+      "ai_checked_at": "2026-05-21T08:01:41.406459",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:40.771477"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:41.135225"
+        }
+      }
+    },
+    "escalar-campanas-meta-ads-sin-romper-roas": {
+      "first_tracked": "2026-05-21T08:01:42.442861",
+      "index_checked_at": "2026-05-21T08:01:42.655469",
+      "ai_checked_at": "2026-05-21T08:01:43.662701",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:42.953961"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:43.403691"
+        }
+      }
+    },
+    "advantage-plus-shopping-cuando-usarlo-no": {
+      "first_tracked": "2026-05-21T08:01:44.751421",
+      "index_checked_at": "2026-05-21T08:01:45.399550",
+      "ai_checked_at": "2026-05-21T08:01:46.523561",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:45.726859"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:46.096658"
+        }
+      }
+    },
+    "metricas-meta-ads-importantes-ecommerce": {
+      "first_tracked": "2026-05-21T08:01:47.527838",
+      "index_checked_at": "2026-05-21T08:01:47.742427",
+      "ai_checked_at": "2026-05-21T08:01:49.195131",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:48.170438"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:48.664751"
+        }
+      }
+    },
+    "escalar-ecommerce-d2c-100k-1m-paid-media": {
+      "first_tracked": "2026-05-21T08:01:50.235397",
+      "index_checked_at": "2026-05-21T08:01:51.149132",
+      "ai_checked_at": "2026-05-21T08:01:53.359753",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:51.996378"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:52.675502"
+        }
+      }
+    },
+    "por-que-anuncios-meta-no-convierten": {
+      "first_tracked": "2026-05-21T08:01:54.364836",
+      "index_checked_at": "2026-05-21T08:01:54.534711",
+      "ai_checked_at": "2026-05-21T08:01:56.059278",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:55.118301"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:55.665455"
+        }
+      }
+    },
+    "cac-vs-ltv-ecommerce-escalable": {
+      "first_tracked": "2026-05-21T08:01:57.129571",
+      "index_checked_at": "2026-05-21T08:01:57.546905",
+      "ai_checked_at": "2026-05-21T08:01:59.220782",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:57.936768"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:01:58.840136"
+        }
+      }
+    },
+    "cuanto-invertir-meta-ads-calculadora": {
+      "first_tracked": "2026-05-21T08:02:00.275194",
+      "index_checked_at": "2026-05-21T08:02:00.705433",
+      "ai_checked_at": "2026-05-21T08:02:03.615072",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:01.034687"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:02.854618"
+        }
+      }
+    },
+    "estrategia-full-funnel-d2c": {
+      "first_tracked": "2026-05-21T08:02:04.638392",
+      "index_checked_at": "2026-05-21T08:02:05.055917",
+      "ai_checked_at": "2026-05-21T08:02:08.076950",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:05.607512"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:07.102322"
+        }
+      }
+    },
+    "combinar-google-ads-meta-ads-d2c": {
+      "first_tracked": "2026-05-21T08:02:09.080565",
+      "index_checked_at": "2026-05-21T08:02:09.452298",
+      "ai_checked_at": "2026-05-21T08:02:11.340146",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:10.108973"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:10.990151"
+        }
+      }
+    },
+    "como-elegir-agencia-meta-ads-ecommerce": {
+      "first_tracked": "2026-05-21T08:02:12.349527",
+      "index_checked_at": "2026-05-21T08:02:12.614890",
+      "ai_checked_at": "2026-05-21T08:02:13.879647",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:13.096768"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:13.668042"
+        }
+      }
+    },
+    "guia-api-conversiones-meta-ads-shopify": {
+      "first_tracked": "2026-05-21T08:02:14.964430",
+      "index_checked_at": "2026-05-21T08:02:15.485159",
+      "ai_checked_at": "2026-05-21T08:02:17.302052",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:15.975410"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:16.449719"
+        }
+      }
+    },
+    "performance-max-vs-meta-ads-espana": {
+      "first_tracked": "2026-05-21T08:02:18.337239",
+      "index_checked_at": "2026-05-21T08:02:18.629494",
+      "ai_checked_at": "2026-05-21T08:02:19.873593",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:18.976639"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:19.371703"
+        }
+      }
+    },
+    "remarketing-dinamico-ecommerce-guia-practica": {
+      "first_tracked": "2026-05-21T08:02:20.880055",
+      "index_checked_at": "2026-05-21T08:02:21.305732",
+      "ai_checked_at": "2026-05-21T08:02:22.631842",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:21.801345"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:22.141875"
+        }
+      }
+    },
+    "retargeting-meta-ads-ecommerce-2026": {
+      "first_tracked": "2026-05-21T08:02:23.659882",
+      "index_checked_at": "2026-05-21T08:02:23.973580",
+      "ai_checked_at": "2026-05-21T08:02:25.140428",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:24.424584"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:24.879758"
+        }
+      }
+    },
+    "audiencias-lookalike-meta-alta-calidad": {
+      "first_tracked": "2026-05-21T08:02:26.150460",
+      "index_checked_at": "2026-05-21T08:02:26.316667",
+      "ai_checked_at": "2026-05-21T08:02:27.322356",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:26.596764"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:26.979665"
+        }
+      }
+    },
+    "ab-testing-meta-ads-que-testar-primero": {
+      "first_tracked": "2026-05-21T08:02:28.338726",
+      "index_checked_at": "2026-05-21T08:02:28.484102",
+      "ai_checked_at": "2026-05-21T08:02:29.681248",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:28.883334"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:29.301342"
+        }
+      }
+    },
+    "presupuesto-minimo-meta-ads-ecommerce": {
+      "first_tracked": "2026-05-21T08:02:30.692411",
+      "index_checked_at": "2026-05-21T08:02:31.012998",
+      "ai_checked_at": "2026-05-21T08:02:32.734664",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:31.342755"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:31.949459"
+        }
+      }
+    },
+    "automatizaciones-reglas-meta-ads-manager": {
+      "first_tracked": "2026-05-21T08:02:33.740792",
+      "index_checked_at": "2026-05-21T08:02:33.870305",
+      "ai_checked_at": "2026-05-21T08:02:34.979549",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:34.308073"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:34.692619"
+        }
+      }
+    },
+    "cac-blended-vs-cac-canal-ecommerce": {
+      "first_tracked": "2026-05-21T08:02:36.032801",
+      "index_checked_at": "2026-05-21T08:02:36.535180",
+      "ai_checked_at": "2026-05-21T08:02:37.931587",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:36.836158"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:37.634547"
+        }
+      }
+    },
+    "cohort-analysis-ecommerce-d2c": {
+      "first_tracked": "2026-05-21T08:02:38.937152",
+      "index_checked_at": "2026-05-21T08:02:39.275238",
+      "ai_checked_at": "2026-05-21T08:02:40.701025",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:39.874721"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:40.385812"
+        }
+      }
+    },
+    "modelos-atribucion-ecommerce-d2c": {
+      "first_tracked": "2026-05-21T08:02:41.720885",
+      "index_checked_at": "2026-05-21T08:02:42.155179",
+      "ai_checked_at": "2026-05-21T08:02:43.014760",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:42.458680"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:42.785613"
+        }
+      }
+    },
+    "marketing-mix-modeling-ecommerce-d2c": {
+      "first_tracked": "2026-05-21T08:02:44.031899",
+      "index_checked_at": "2026-05-21T08:02:44.400954",
+      "ai_checked_at": "2026-05-21T08:02:46.107207",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:44.724583"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:45.514825"
+        }
+      }
+    },
+    "server-side-tracking-shopify-conversions-api": {
+      "first_tracked": "2026-05-21T08:02:47.114936",
+      "index_checked_at": "2026-05-21T08:02:47.522363",
+      "ai_checked_at": "2026-05-21T08:02:48.686973",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:47.882036"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:48.446577"
+        }
+      }
+    },
+    "ios-atribucion-meta-ads-2026-d2c": {
+      "first_tracked": "2026-05-21T08:02:49.719087",
+      "index_checked_at": "2026-05-21T08:02:50.331708",
+      "ai_checked_at": "2026-05-21T08:02:51.142791",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:50.646701"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:50.923969"
+        }
+      }
+    },
+    "email-marketing-meta-ads-ltv-d2c": {
+      "first_tracked": "2026-05-21T08:02:52.147404",
+      "index_checked_at": "2026-05-21T08:02:52.348914",
+      "ai_checked_at": "2026-05-21T08:02:53.276577",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:52.704449"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:52.961472"
+        }
+      }
+    },
+    "black-friday-meta-ads-d2c-preparacion": {
+      "first_tracked": "2026-05-21T08:02:54.290427",
+      "index_checked_at": "2026-05-21T08:02:54.764501",
+      "ai_checked_at": "2026-05-21T08:02:56.271101",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:55.073969"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:55.884792"
+        }
+      }
+    },
+    "performance-max-ecommerce-d2c-cuando-usar": {
+      "first_tracked": "2026-05-21T08:02:57.295866",
+      "index_checked_at": "2026-05-21T08:02:57.923817",
+      "ai_checked_at": "2026-05-21T08:02:59.040689",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:58.281110"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:02:58.562009"
+        }
+      }
+    },
+    "tiktok-ads-ecommerce-d2c-espana-2026": {
+      "first_tracked": "2026-05-21T08:03:00.049058",
+      "index_checked_at": "2026-05-21T08:03:00.236430",
+      "ai_checked_at": "2026-05-21T08:03:02.023463",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:00.493194"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:00.814689"
+        }
+      }
+    },
+    "cro-landing-page-meta-ads-d2c": {
+      "first_tracked": "2026-05-21T08:03:03.035140",
+      "index_checked_at": "2026-05-21T08:03:03.280399",
+      "ai_checked_at": "2026-05-21T08:03:04.180948",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:03.487672"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:03.840472"
+        }
+      }
+    },
+    "margen-contribucion-vs-roas-ecommerce": {
+      "first_tracked": "2026-05-21T08:03:05.187432",
+      "index_checked_at": "2026-05-21T08:03:05.340052",
+      "ai_checked_at": "2026-05-21T08:03:06.851523",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:05.605607"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:06.264507"
+        }
+      }
+    },
+    "aumentar-aov-ecommerce-d2c-palancas": {
+      "first_tracked": "2026-05-21T08:03:07.932354",
+      "index_checked_at": "2026-05-21T08:03:08.256955",
+      "ai_checked_at": "2026-05-21T08:03:09.532369",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:08.641415"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:08.995517"
+        }
+      }
+    },
+    "suscripciones-ecommerce-ltv-cac-d2c": {
+      "first_tracked": "2026-05-21T08:03:10.535665",
+      "index_checked_at": "2026-05-21T08:03:10.721008",
+      "ai_checked_at": "2026-05-21T08:03:11.841277",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:10.959708"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:11.579590"
+        }
+      }
+    },
+    "meta-ads-library-analisis-competencia": {
+      "first_tracked": "2026-05-21T08:03:12.846045",
+      "index_checked_at": "2026-05-21T08:03:13.044886",
+      "ai_checked_at": "2026-05-21T08:03:14.354245",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:13.365524"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:13.905772"
+        }
+      }
+    },
+    "ad-fatigue-meta-ads-rotacion-creativa": {
+      "first_tracked": "2026-05-21T08:03:15.360087",
+      "index_checked_at": "2026-05-21T08:03:15.617235",
+      "ai_checked_at": "2026-05-21T08:03:16.952658",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:16.135468"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:16.529925"
+        }
+      }
+    },
+    "incrementality-testing-meta-ads-d2c": {
+      "first_tracked": "2026-05-21T08:03:17.973938",
+      "index_checked_at": "2026-05-21T08:03:18.216968",
+      "ai_checked_at": "2026-05-21T08:03:19.464697",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:18.650430"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:19.006859"
+        }
+      }
+    },
+    "cbo-vs-abo-meta-ads-2026-d2c": {
+      "first_tracked": "2026-05-21T08:03:20.485217",
+      "index_checked_at": "2026-05-21T08:03:20.662037",
+      "ai_checked_at": "2026-05-21T08:03:21.816969",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:20.929068"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:21.470823"
+        }
+      }
+    },
+    "framework-hipotesis-creatividades-meta-ads": {
+      "first_tracked": "2026-05-21T08:03:22.842638",
+      "index_checked_at": "2026-05-21T08:03:23.081869",
+      "ai_checked_at": "2026-05-21T08:03:24.478474",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:23.821685"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:24.225136"
+        }
+      }
+    },
+    "dynamic-product-ads-meta-shopify-d2c": {
+      "first_tracked": "2026-05-21T08:03:25.485788",
+      "index_checked_at": "2026-05-21T08:03:25.607478",
+      "ai_checked_at": "2026-05-21T08:03:26.714493",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:25.930769"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:26.365135"
+        }
+      }
+    },
+    "adquisicion-vs-retencion-paid-media-d2c": {
+      "first_tracked": "2026-05-21T08:03:27.724006",
+      "index_checked_at": "2026-05-21T08:03:27.925987",
+      "ai_checked_at": "2026-05-21T08:03:29.162166",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:28.186738"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:28.679479"
+        }
+      }
+    },
+    "internacionalizar-d2c-espanol-meta-ads-eu": {
+      "first_tracked": "2026-05-21T08:03:30.186374",
+      "index_checked_at": "2026-05-21T08:03:30.425456",
+      "ai_checked_at": "2026-05-21T08:03:31.677235",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:30.704706"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:31.241996"
+        }
+      }
+    },
+    "partnership-ads-meta-ugc-creators-d2c": {
+      "first_tracked": "2026-05-21T08:03:32.682715",
+      "index_checked_at": "2026-05-21T08:03:32.975733",
+      "ai_checked_at": "2026-05-21T08:03:34.947159",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:33.263947"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:33.940769"
+        }
+      }
+    },
+    "ga4-meta-ads-eventos-custom-d2c": {
+      "first_tracked": "2026-05-21T08:03:35.956591",
+      "index_checked_at": "2026-05-21T08:03:36.268533",
+      "ai_checked_at": "2026-05-21T08:03:37.440859",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:36.510128"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:36.873227"
+        }
+      }
+    },
+    "dashboard-paid-media-founder-d2c": {
+      "first_tracked": "2026-05-21T08:03:38.457934",
+      "index_checked_at": "2026-05-21T08:03:38.759768",
+      "ai_checked_at": "2026-05-21T08:03:40.098618",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:39.057930"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:39.650837"
+        }
+      }
+    },
+    "whatsapp-meta-ads-funnel-bofu-d2c": {
+      "first_tracked": "2026-05-21T08:03:41.110230",
+      "index_checked_at": "2026-05-21T08:03:41.246071",
+      "ai_checked_at": "2026-05-21T08:03:42.542468",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:41.703016"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:42.122140"
+        }
+      }
+    },
+    "smart-bidding-google-ads-d2c": {
+      "first_tracked": "2026-05-21T08:03:43.687084",
+      "index_checked_at": "2026-05-21T08:03:43.987426",
+      "ai_checked_at": "2026-05-21T08:03:45.128471",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:44.231677"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:44.698383"
+        }
+      }
+    },
+    "customer-journey-d2c-primer-impacto-repeticion": {
+      "first_tracked": "2026-05-21T08:03:46.138882",
+      "index_checked_at": "2026-05-21T08:03:46.495968",
+      "ai_checked_at": "2026-05-21T08:03:47.820014",
+      "indexed": null,
+      "presence_score": 0,
+      "index_check_source": "bing_site_search",
+      "citations": {
+        "bing_copilot": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:46.857367"
+        },
+        "google_ai_overview": {
+          "cited": false,
+          "timestamp": "2026-05-21T08:03:47.420116"
+        }
+      }
+    }
+  },
+  "last_check": "2026-05-21T08:03:47.820055",
+  "last_daily_check": "2026-05-26T08:00:21.431962"
+}

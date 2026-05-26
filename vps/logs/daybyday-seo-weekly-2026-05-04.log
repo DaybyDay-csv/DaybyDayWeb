@@ -1,0 +1,4 @@
+[2026-05-04 06:30:01] MODEL=claude-sonnet-4-6
+[2026-05-04 06:30:01] START daybyday-seo-weekly
+[2026-05-04 06:30:01] RUN_ID=185
+[2026-05-04 06:30:01] ERROR: Skill not found at /root/.claude/scheduled-tasks/daybyday-seo-weekly/SKILL.md

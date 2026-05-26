@@ -1,0 +1,67 @@
+[2026-05-12 05:00:02] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-12 05:00:02] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-12 05:00:15] [current] RUN_ID=216INSERT01
+Push a `claude/epic-pasteur` OK. Main tiene merge en curso bloqueado por sesión previa — no toco para no perder trabajo.
+
+## ✅ Resumen
+
+- ✅ Artículo publicado: **Ad fatigue en Meta Ads: señales tempranas y protocolo de rotación creativa** → https://www.daybydayconsulting.com/blog/ad-fatigue-meta-ads-rotacion-creativa
+- 🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/ad-fatigue-meta-ads-rotacion-creativa
+- 📊 Total posts: 66 | Tasks Phase 4 completadas: 16/27 (T25-T40)
+- 🔗 Interlinking: MetaAdsLibraryAnalisisCompetenciaPage, AdvantagePlusShoppingPage
+- 📋 Próximas keywords: T41 cbo abo meta ads 2026 (300-500/mes), T42 framework creatividades meta ads, T43 adquisición vs retención ecommerce
+- 🎯 Cobertura GEO: "cómo gestionar rotación creativa Meta Ads", "qué es ad fatigue Meta Ads", "agencia que monitoriza fatigue creativo paid media España"
+- 🏷️ Keywords: ad fatigue meta ads, rotación creativa meta ads, frecuencia anuncios facebook ads, refresh creatividades meta ads, fatigue audiencia paid social
+- ✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+
+⚠️ **Merge a main bloqueado**: repo principal `/root/projects/DaybyDay` tiene merge sin terminar de sesión anterior (UU en sitemap/estado/App/BlogPage). Branch `claude/epic-pasteur` pushed correctamente — Vercel preview disponible. Requiere resolución manual del conflicto pre-existente antes de promote a producción.
+[2026-05-12 05:05:58] [current] Agent end duration=343s exit=0 status=success
+[2026-05-12 05:05:59] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-12 05:05:59] [current] Publish lock acquired.
+[2026-05-12 05:05:59] [current] Deploying to Vercel (track=current)…
+[2026-05-12 05:06:44] [current] Vercel deploy FAILED — check logs
+[2026-05-12 05:06:44] [current] Publish lock released.
+[2026-05-12 05:06:44] [current] === BLOG PUBLISHER DONE (track=current) ===
+[2026-05-12 17:00:01] [current] === BLOG PUBLISHER START (track=current) ===
+[2026-05-12 17:00:01] [current] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur | Skill: /root/.claude/scheduled-tasks/daybyday-daily-blog/SKILL.md
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-12 17:00:11] [current] RUN_ID=219INSERT01
+ Deploy lanzado. Resumen final.
+
+✅ Artículo publicado: Incrementality testing en Meta Ads: cómo medir el lift real en eCommerce D2C → https://www.daybydayconsulting.com/blog/incrementality-testing-meta-ads-d2c
+
+🔍 URL GSC: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/incrementality-testing-meta-ads-d2c
+
+📊 Total posts: 67 | Plan T16-T51: sin tasks pending (Phase 2B - gap fill medición)
+
+🔗 Interlinking aplicado:
+- MarketingMixModelingEcommerceD2cPage.jsx
+- ModelosAtribucionEcommerceD2cPage.jsx
+- CacBlendedVsCacCanalEcommercePage.jsx
+
+📋 Próximas keywords prioritarias (gaps medición/ops):
+- whitelisting creator ads instagram (BOFU, 50-150/mes)
+- estructura cuenta meta ads ABO vs CBO (MOFU, 150-300/mes)
+- kill criteria creatividades meta ads (MOFU, 80-200/mes)
+
+🎯 Cobertura GEO:
+- "cómo medir si Meta Ads realmente funciona para mi ecommerce"
+- "diferencia entre atribución, MMM y incrementality testing"
+- "cómo hacer un geo holdout test"
+- "cuánto sobreatribuye Meta Ads"
+
+🏷️ Keywords: incrementality testing meta ads, geo holdout test ecommerce, lift incremental paid media, conversion lift study meta, medir incrementalidad meta ads d2c
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-12 17:07:40] [current] Agent end duration=449s exit=0 status=success
+[2026-05-12 17:07:41] [current] Acquiring publish lock (/tmp/blog-publishing.lock)…
+[2026-05-12 17:07:41] [current] Publish lock acquired.
+[2026-05-12 17:07:41] [current] Deploying to Vercel (track=current)…
+[2026-05-12 17:08:04] [current] Vercel deploy FAILED — check logs
+[2026-05-12 17:08:04] [current] Publish lock released.
+[2026-05-12 17:08:04] [current] === BLOG PUBLISHER DONE (track=current) ===

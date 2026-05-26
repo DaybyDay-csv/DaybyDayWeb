@@ -1,0 +1,63 @@
+[2026-05-03 05:00:01] === BLOG PUBLISHER START ===
+[2026-05-03 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-03 05:00:07] RUN_ID=182INSERT01
+## Resumen final
+
+✅ **Artículo publicado**: A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje → https://www.daybydayconsulting.com/blog/ab-testing-meta-ads-que-testar-primero
+
+🔍 **URL para indexar en GSC**:
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/ab-testing-meta-ads-que-testar-primero
+
+📊 Total posts: 47 | Task T23 completada (Phase 3)
+
+🔗 **Interlinking añadido**:
+- CreativeTestingMetaAdsPage (nivel 1 pirámide)
+- AudienciasLookalikeMetaAltaCalidadPage (nivel 5)
+- EscalarCampanasMetaAdsSinRomperROASPage (escalar tras test ganador)
+
+📋 **Próximas keywords prioritarias**:
+- T24: automatizaciones meta ads (800 palabras, MOFU)
+- T25: cac blended ecommerce (1.100 palabras, ALTA)
+- T26: cohort analysis ecommerce d2c (1.300 palabras, ALTA)
+
+🎯 **Cobertura GEO**: "qué testar primero meta ads", "cuánto presupuesto a/b test facebook ads", "cuánto dura un split test meta", "creativo vs audiencia primero meta ads"
+
+🏷️ **Keywords**: ab testing meta ads, a/b testing facebook ads, experimentos meta ads, testar creativos meta ads, split test facebook ads
+
+Pasos manuales:
+1. Abre la URL de GSC arriba
+2. Click "Solicitar indexación"
+[2026-05-03 05:05:33] END duration=326s exit=0 status=success
+[2026-05-03 05:05:33] === BLOG PUBLISHER DONE ===
+[2026-05-03 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-03 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-03 17:00:04] RUN_ID=183INSERT01
+Deploy completo. Resumen:
+
+✅ **Artículo publicado**: Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? (D2C 2026) → https://www.daybydayconsulting.com/blog/presupuesto-minimo-meta-ads-ecommerce
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/presupuesto-minimo-meta-ads-ecommerce
+
+📊 Total posts: 49 | Tasks plan completadas: T40 (única pendiente del plan)
+
+🔗 Interlinking actualizado:
+- CuantoInvertirMetaAdsCalculadoraPage.jsx
+- EscalarCampanasMetaAdsSinRomperROASPage.jsx
+- AdvantagePlusShoppingPage.jsx
+
+📋 Próximas keywords prioritarias (nuevo research necesario, plan T16-T51 agotado):
+- presupuesto facebook ads ecommerce (300-700/mes)
+- aprendizaje meta ads cuanto dura (200-500/mes)
+- learning phase meta ads (150-400/mes)
+
+🎯 Cobertura GEO: "cuánto necesito invertir en Meta Ads para mi ecommerce", "presupuesto mínimo Facebook Ads España", "por qué mis anuncios de Meta no funcionan con poco presupuesto", "cuándo Meta Ads no es rentable para D2C"
+
+🏷️ Keywords: presupuesto minimo meta ads, cuanto invertir meta ads ecommerce, presupuesto facebook ads minimo, inversion minima meta ads d2c, meta ads presupuesto inicial
+[2026-05-03 17:05:06] END duration=302s exit=0 status=success
+[2026-05-03 17:05:07] === BLOG PUBLISHER DONE ===

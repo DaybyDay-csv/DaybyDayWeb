@@ -1,0 +1,5 @@
+[2026-03-27 07:00:08] START client-acquisition-orchestrator
+[2026-03-27 07:00:08] RUN_ID=113
+[2026-03-27 07:00:08] PROMPT_SIZE=27442 bytes (skill + memory + feedback)
+Failed to authenticate. API Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth token has expired. Please obtain a new token or refresh your existing token."},"request_id":"req_011CZT5HtF3GdxmtAcWNBodk"}
+[2026-03-27 07:00:08] END client-acquisition-orchestrator status=failed duration=15s exit=1

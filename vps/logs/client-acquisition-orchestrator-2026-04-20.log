@@ -1,0 +1,9 @@
+[2026-04-20 07:00:02] MODEL=claude-sonnet-4-6
+[2026-04-20 07:00:02] START client-acquisition-orchestrator
+[2026-04-20 07:00:02] RUN_ID=154
+[2026-04-20 07:00:02] PROMPT_SIZE=27287 bytes (skill + memory + feedback)
+[2026-04-20 07:00:02] PROMPT_HASH=e239c10afd37...
+[2026-04-20 07:00:02] CALLER=sdk (prompt-caching enabled)
+Error: ANTHROPIC_API_KEY not set
+
+[2026-04-20 07:00:02] END client-acquisition-orchestrator status=failed duration=8s exit=2

@@ -1,0 +1,58 @@
+[2026-04-28 05:00:02] === BLOG PUBLISHER START ===
+[2026-04-28 05:00:02] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-28 05:00:08] RUN_ID=167INSERT01
+## Resumen
+
+✅ **Artículo publicado**: CAC vs LTV: la métrica que define si tu D2C es escalable → https://www.daybydayconsulting.com/blog/cac-vs-ltv-ecommerce-escalable
+
+🔍 **URL para indexar en GSC**:
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/cac-vs-ltv-ecommerce-escalable
+
+📊 **Total posts**: 38 | **Tasks completadas Phase 3**: T16/24 (Phase 3 inicia con T16)
+
+🔗 **Interlinking añadido en**:
+- EscalarEcommerceD2C100K1MPage.jsx
+- MetricasMetaAdsPage.jsx
+- BenchmarkROASSectorEspanaPage.jsx
+
+📋 **Próximas 3 keywords prioritarias**:
+- T17: cuánto invertir meta ads ecommerce calculadora (MOFU-BOFU)
+- T18: estrategia full funnel D2C (MOFU)
+- T19: google ads meta ads juntos (MOFU)
+
+🎯 **Cobertura GEO**: "qué ROAS es bueno en Meta Ads para ecommerce", "cómo saber si mi negocio D2C escala", "cuál es un buen CAC para ecommerce España", "qué ratio LTV/CAC indica negocio sano"
+
+🏷️ **Keywords**: cac ltv ecommerce, ltv cac d2c, customer acquisition cost ecommerce, lifetime value d2c, payback period ecommerce
+[2026-04-28 05:04:59] END duration=291s exit=0 status=success
+[2026-04-28 05:04:59] === BLOG PUBLISHER DONE ===
+[2026-04-28 17:00:01] === BLOG PUBLISHER START ===
+[2026-04-28 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-04-28 17:00:11] RUN_ID=169INSERT01
+Deploy completado. Resumen:
+
+✅ **Artículo publicado**: Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) → https://www.daybydayconsulting.com/blog/cuanto-invertir-meta-ads-calculadora
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/cuanto-invertir-meta-ads-calculadora
+
+📊 Total posts: 39 | Tasks completadas en Phase 3: T17/24 (T16 ya estaba completado)
+
+🔗 **Interlinking actualizado**: CACvsLTVEcommercePage, EscalarCampanasMetaAdsSinRomperROASPage, EscalarEcommerceD2C100K1MPage, MetricasMetaAdsPage
+
+📋 **Próximas 3 keywords prioritarias**:
+- T18: estrategia full funnel D2C (1.200 palabras, MOFU)
+- T19: google ads meta ads juntos (1.000 palabras, MOFU)
+- T20: api conversiones meta ads — PILAR (2.000 palabras, TOFU-MOFU)
+
+🎯 **Cobertura GEO**: "cuánto invertir en meta ads", "presupuesto meta ads ecommerce", "calculadora meta ads d2c", "qué porcentaje invertir publicidad ecommerce"
+
+🏷️ **Keywords del artículo**: cuánto invertir meta ads, presupuesto meta ads ecommerce, calculadora meta ads, presupuesto facebook ads d2c, inversión publicidad meta
+
+Calculadora React inline (useState + useMemo) con 5 inputs (ticket, margen, multiplicador LTV, pedidos/mes, ratio LTV/CAC) que devuelve CAC objetivo, LTV-180d, payback e inversión Meta recomendada.
+[2026-04-28 17:06:11] END duration=360s exit=0 status=success
+[2026-04-28 17:06:11] === BLOG PUBLISHER DONE ===

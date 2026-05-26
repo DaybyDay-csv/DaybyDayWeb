@@ -1,0 +1,5 @@
+[2026-03-24 07:00:01] START client-acquisition-orchestrator
+[2026-03-24 07:00:01] RUN_ID=107
+[2026-03-24 07:00:01] PROMPT_SIZE=35052 bytes (skill + memory + feedback)
+You're out of extra usage · resets 10am (Europe/Berlin)
+[2026-03-24 07:00:01] END client-acquisition-orchestrator status=failed duration=13s exit=1

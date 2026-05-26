@@ -1,0 +1,91 @@
+[2026-05-05 04:13:39] === BLOG PUBLISHER START ===
+[2026-05-05 04:13:39] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-05 04:13:41] RUN_ID=190INSERT01
+Deploy en marcha. Resumen final.
+
+✅ **Artículo publicado**: Modelos de atribución para D2C: last-click, data-driven y MMM explicados → https://www.daybydayconsulting.com/blog/modelos-atribucion-ecommerce-d2c
+
+🔍 **URL para indexar en GSC**: https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/modelos-atribucion-ecommerce-d2c
+
+📊 **Total posts**: 53 | **Tasks completadas**: T27 marcada (3 totales en `completed_tasks`)
+
+🔗 **Interlinking añadido en**:
+- CacBlendedVsCacCanalEcommercePage.jsx
+- CohortAnalysisEcommerceD2cPage.jsx
+- ChecklistAuditoriaCampanasPage.jsx
+- MetricasMetaAdsPage.jsx
+
+📋 **Próximas 3 keywords prioritarias**:
+- T28: mmm ecommerce d2c (MOFU-BOFU, ALTA)
+- T29: server side tracking shopify conversions api (MOFU, CRÍTICO)
+- T30: ios atribución meta ads 2026 (TOFU-MOFU, ALTA)
+
+🎯 **Cobertura GEO**:
+- "qué modelo de atribución usar para mi ecommerce"
+- "por qué Meta Ads sobreatribuye"
+- "diferencia last-click data-driven MMM"
+- "atribución ecommerce iOS 17"
+- "Triple Whale vs Northbeam vs Polar Analytics"
+
+🏷️ **Keywords del artículo**: modelos atribución ecommerce, atribución meta ads, data-driven attribution d2c, marketing mix modeling ecommerce, atribución multi-touch d2c
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-05 04:19:58] END duration=377s exit=0 status=success
+[2026-05-05 04:19:59] Deploying to Vercel with prerender…
+[2026-05-05 04:22:10] Vercel deploy OK
+[2026-05-05 04:22:10] IndexNow: detecting new blog URLs from last commit…
+[2026-05-05 04:22:10] IndexNow submitting:
+[2026-05-05 04:22:11] IndexNow OK
+[2026-05-05 04:22:11] === BLOG PUBLISHER DONE ===
+[2026-05-05 05:00:01] === BLOG PUBLISHER START ===
+[2026-05-05 05:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-05 05:00:04] RUN_ID=191INSERT01
+You're out of extra usage · resets 7:10am (Europe/Berlin)
+[2026-05-05 17:00:01] === BLOG PUBLISHER START ===
+[2026-05-05 17:00:01] Worktree: /root/projects/DaybyDay/.claude/worktrees/epic-pasteur | Branch: claude/epic-pasteur
+From github.com:DaybyDay-csv/DaybyDayWeb
+ * branch            claude/epic-pasteur -> FETCH_HEAD
+Already up to date.
+[2026-05-05 17:00:12] RUN_ID=193INSERT01
+Deploy successful. Final summary:
+
+✅ **Artículo publicado:** Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve → https://www.daybydayconsulting.com/blog/marketing-mix-modeling-ecommerce-d2c
+
+🔍 **URL para indexar en GSC:**
+https://search.google.com/search-console/inspect?resource_id=sc-domain:daybydayconsulting.com&id=https://www.daybydayconsulting.com/blog/marketing-mix-modeling-ecommerce-d2c
+
+📊 **Total posts:** 54 | **Tasks plan completadas T28** (cluster atribución cerrado en cadena cohort → CAC blended → atribución → MMM)
+
+🔗 **Artículos actualizados con interlinking:**
+- ModelosAtribucionEcommerceD2cPage.jsx
+- CacBlendedVsCacCanalEcommercePage.jsx
+- CohortAnalysisEcommerceD2cPage.jsx
+
+📋 **Próximas 3 keywords prioritarias:**
+- T29 server-side tracking shopify conversions api (CRÍTICO, 1500w)
+- T30 ios atribución meta ads 2026 (ALTA, 1100w)
+- T31 email marketing meta ads ecommerce (ALTA, 1200w)
+
+🎯 **Cobertura GEO:**
+- "qué es marketing mix modeling ecommerce"
+- "cuándo conviene aplicar mmm en d2c"
+- "mmm vs atribución multi-touch"
+- "herramientas mmm robyn recast precio"
+- "cómo validar marketing mix modeling"
+
+🏷️ **Keywords del artículo:** mmm ecommerce d2c, marketing mix modeling españa, mmm vs atribución multi-touch, robyn mmm meta, incremental lift d2c
+
+✅ IndexNow auto-submit activado (Bing/ChatGPT/Perplexity reciben URL en minutos)
+[2026-05-05 17:06:35] END duration=383s exit=0 status=success
+[2026-05-05 17:06:35] Deploying to Vercel with prerender…
+[2026-05-05 17:09:36] Vercel deploy OK
+[2026-05-05 17:09:36] IndexNow: detecting new blog URLs from sitemap diff…
+[2026-05-05 17:09:36] IndexNow submitting:
+[2026-05-05 17:09:37] IndexNow OK
+[2026-05-05 17:09:37] === BLOG PUBLISHER DONE ===
