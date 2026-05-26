@@ -12,7 +12,3 @@ favicon.ico
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
-
-# API proxy - optional spa routing support  
-?_=
-  Status: 200
