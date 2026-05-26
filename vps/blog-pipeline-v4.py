@@ -247,7 +247,14 @@ def clean_blog_content(content):
         content = content[match.start():]
     return content
 
-def call_llm(prompt, max_tokens=8000):
+MAX_PROMPT_CHARS = 12000  # ~12KB — empirical MiniMax empty-response threshold
+
+def call_llm(prompt, max_tokens=8000, retry_on_empty=True):
+    # Hard cap on prompt size to prevent empty-response bug
+    if len(prompt) > MAX_PROMPT_CHARS:
+        raise Exception("PROMPT_TOO_LARGE: %d chars (cap %d). Split into smaller calls." % (
+            len(prompt), MAX_PROMPT_CHARS))
+
     resp = requests.post(
         "https://api.minimax.io/v1/chat/completions",
         headers={"Authorization": "Bearer %s" % API_KEY, "Content-Type": "application/json"},
@@ -262,6 +269,29 @@ def call_llm(prompt, max_tokens=8000):
         raise Exception("API error: %s" % resp.text[:200])
     result = resp.json()
     content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
+
+    # B2 FIX: detect silent empty response (MiniMax returns "" when prompt too large)
+    if not content and retry_on_empty:
+        # Retry once with a reduced prompt
+        log("[WARN] Empty response, retrying with truncated prompt...")
+        truncated = prompt[:int(MAX_PROMPT_CHARS * 0.7)]
+        resp2 = requests.post(
+            "https://api.minimax.io/v1/chat/completions",
+            headers={"Authorization": "Bearer %s" % API_KEY, "Content-Type": "application/json"},
+            json={
+                "model": MODEL,
+                "messages": [{"role": "user", "content": truncated}],
+                "max_tokens": max_tokens,
+                "temperature": 0.1
+            }
+        )
+        if resp2.status_code == 200:
+            result2 = resp2.json()
+            content = result2.get("choices", [{}])[0].get("message", {}).get("content", "")
+
+    if not content:
+        raise Exception("EMPTY_RESPONSE: MiniMax returned empty. Prompt was %d chars." % len(prompt))
+
     return content
 
 def run(cmd, cwd=REPO_DIR):
@@ -354,8 +384,8 @@ Template:
 # ============ WRITE PHASE ============
 
 def write_blog_post(topic, brief, authority_links, template_type="framework"):
-    log("[WRITE] Generating blog post...")
-    
+    log("[WRITE] Generating blog post (section-by-section)...")
+
     # Extract from brief
     title = extract_from_brief(brief, "Titulo")
     description = extract_from_brief(brief, "Meta Description")
@@ -364,71 +394,75 @@ def write_blog_post(topic, brief, authority_links, template_type="framework"):
     questions = extract_from_brief(brief, "preguntas clave|preguntas que")
     structure = extract_from_brief(brief, "Estructura")
     keywords = extract_from_brief(brief, "Keywords")
-    
+
     # Get template
     template = PLANTILLAS.get(template_type, PLANTILLAS["framework"])
-    
+
     # FAQs
     faqs_prompt = f"""Topico: {topic}
 Preguntas clave:
-{questions}
+{questions[:500] if questions else '3 preguntas relevantes sobre ' + topic}
 
 Convierte en 4 FAQs con respuestas sustanciales (2-3 sentences).
 JSON array: [{{"q": "...", "a": "..."}}]"""
     faqs_result = call_llm(faqs_prompt, max_tokens=1500)
-    
-    # Blog content generation with FULL HORMOZI SYSTEM
-    content_prompt = f"""{PROMPT_MASTER}
 
-INPUT:
+    # Compact authority links (URL only, no verbose descriptions) to stay under 12KB
+    auth_links_compact = "\n".join(
+        l.strip() for l in authority_links.split("\n") if l.strip()
+    )[:2000]
+
+    # Section-by-section generation — each section < 3KB prompt
+    # 6 sections × ~2KB prompt each = ~12KB total, well under the cap
+    sections = []
+    section_names = [
+        "EPIGRAFE_Y_ESCENA",   # Epígrafe (opcional) + escena de apertura
+        "PROMESA_Y_DROP",       # Promesa + drop de autoridad con cifras
+        "FRAMEWORK",           # Framework numerado con nombre memorable
+        "EJEMPLO_REAL",        # Caso real con antes/después/tiempo
+        "PRO_TIP_Y_ACTION",     # Pro tip + action step ejecutable
+        "RECAP_Y_CLIFFHANGER"  # Recap bullets + cliffhanger
+    ]
+
+    for i, section_name in enumerate(section_names):
+        section_prompt = f"""{PROMPT_MASTER[:3000]}
 
 [[TEMA]]: {topic}
 [[DOLOR DEL LECTOR]]: {angle}
 [[KEYWORDS]]: {keywords}
-[[PLANTILLA]]: {template_type}
-
-PLANTILLA "{template['nombre']}" - {template['para']}
+[[SECCION]]: {section_name}
+[[PLANTILLA]]: {template['nombre']} - {template['para']}
 {template['esqueleto']}
 
-ENLACES AUTORIDAD A CITAR:
-{authority_links}
+ESCRIBE SOLO esta seccion del blog post en espanol.
 
-ESCRIBE EL BLOG POST completo en espanol, usando la plantilla anterior.
+REGLAS:
+1. Empieza con el codigo JSX para esta seccion (h2, p, etc.)
+2. Maximo 400 palabras para esta seccion
+3. Usa <a href="..." target="_blank" rel="noopener"> para enlaces externos
+4. NO pongas ```jsx ni ```
+5. Devuelve solo el JSX de esta seccion, nada mas"""
 
-REGLAS TECNICAS (IMPORTANTE):
-1. Empieza con: import React from 'react';
-2. NO pongas texto antes o despues del codigo JSX
-3. NO inclusas ```jsx ni ```
-4. Incluye TODOS los imports:
-   - import {{ Link }} from "react-router-dom";
-   - import BlogPostLayout from "../../components/BlogPostLayout";
-5. Props BlogPostLayout:
-   - title="..."
-   - description="..."
-   - path="/blog/..."
-   - datePublished="YYYY-MM-DD"
-   - readingTime="X min"
-   - category="Paid Media"
-   - faqs={{ [...] }}
-6. <Link to="/blog/..."> para interlinking interno
-7. <a href="..." target="_blank" rel="noopener"> para externos
-8. MINIMO 1500 palabras reales
-9. Estructura: h2 principales, h3 subsecciones
-10. Cada seccion 3-5 parrafos sustanciales
-11. Interlinking a otros blogs DayByDay relevantes
-12. CTAs naturales
-13. TERMINA con: export default [Nombre]Page;"""
-    
-    content = call_llm(content_prompt, max_tokens=10000)
+        # Hard cap per-section
+        if len(section_prompt) > MAX_PROMPT_CHARS:
+            section_prompt = section_prompt[:int(MAX_PROMPT_CHARS * 0.9)]
+
+        section = call_llm(section_prompt, max_tokens=2000)
+        sections.append(section)
+        log(f"[WRITE] Section {i+1}/6: {section_name} ({len(section)} chars)")
+        time.sleep(0.5)  # Brief pause between calls
+
+    # Assemble final content
+    content = "\n\n".join(sections)
     content = clean_blog_content(content)
-    
+
     # Component name
     name = re.sub(r'[^a-zA-Z0-9]+', '', topic.title().replace(" ", ""))
     if len(name) > 30:
         name = name[:30]
     component_name = name + "Page"
-    
-    log("[WRITE] Generated: %s" % component_name)
+
+    log("[WRITE] Generated: %s (%d sections)" % (component_name, len(sections)))
     return content, component_name, slug, faqs_result
 
 

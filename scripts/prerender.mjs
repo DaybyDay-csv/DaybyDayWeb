@@ -1,8 +1,8 @@
-#!/usr/bin/env node
 import { createServer } from "node:http";
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { extname, join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
 import puppeteer from "puppeteer-core";
 import chromium from "@sparticuz/chromium";
 
@@ -10,6 +10,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const DIST = join(ROOT, "dist");
 const PORT = 4173;
+
+// B3 FIX: kill any process holding PORT before starting
+try {
+  execSync(`fuser -k ${PORT}/tcp 2>/dev/null || true`, { stdio: "ignore" });
+  console.log(`[port] Cleared ${PORT}/tcp`);
+} catch (e) {
+  // fuser not available or no process — continue
+}
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -57,7 +65,23 @@ function startServer() {
       res.end("not found");
     }
   });
-  return new Promise((resolve) => server.listen(PORT, () => resolve(server)));
+  return new Promise((resolve, reject) => {
+    server.on("error", (e) => {
+      if (e.code === "EADDRINUSE") {
+        console.error(`[port] ${PORT} in use — trying to free it...`);
+        try {
+          execSync(`fuser -k ${PORT}/tcp 2>/dev/null || true`, { stdio: "ignore" });
+          // Retry once
+          server.listen(PORT, () => resolve(server));
+        } catch (e2) {
+          reject(e2);
+        }
+      } else {
+        reject(e);
+      }
+    });
+    server.listen(PORT, () => resolve(server));
+  });
 }
 
 async function getRoutes() {
