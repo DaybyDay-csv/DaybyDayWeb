@@ -333,6 +333,14 @@ const posts = [
     readingTime: "8 min",
   },
   {
+    slug: "presupuesto-minimo-meta-ads-sin-tirar-dinero",
+    title: "Presupuesto mínimo Meta Ads sin tirar dinero",
+    excerpt: "Cuál es el presupuesto mínimo para Meta Ads sin tirar dinero. No necesitas 10K€ para empezar - con 150€/mes puedes validar tu producto y saber si funciona.",
+    category: "Estrategia",
+    date: "26 may 2026",
+    readingTime: "6 min",
+  },
+  {
     slug: "audiencias-lookalike-meta-alta-calidad",
     title: "Audiencias lookalike en Meta de alta calidad: guía 2026 D2C",
     excerpt: "Cómo crear audiencias lookalike de alta calidad en Meta Ads para eCommerce D2C: jerarquía de semillas (compradores LTV alto, AddToCart, engagement), tamaño semilla mínimo, qué porcentaje (1-10%) usar según tamaño de cuenta, exclusiones obligatorias y cuándo Advantage+ los sustituye.",

@@ -13,6 +13,7 @@ import AutomatizacionPage from "./pages/services/AutomatizacionPage";
 import PaidMediaPage from "./pages/services/PaidMediaPage";
 import CaptacionPage from "./pages/services/CaptacionPage";
 import EcommercePage from "./pages/services/EcommercePage";
+import GrowthPartnerPage from "./pages/services/GrowthPartnerPage";
 import BlogPage from "./pages/BlogPage";
 import ResultadosPage from "./pages/ResultadosPage";
 import FAQPage from "./pages/FAQPage";
@@ -67,6 +68,7 @@ import RemarketingDinamicoEcommerceGuiaPracticaPage from "./pages/blog/Remarketi
 import RetargetingMetaAdsEcommerce2026Page from "./pages/blog/RetargetingMetaAdsEcommerce2026Page";
 import AudienciasLookalikeMetaAltaCalidadPage from "./pages/blog/AudienciasLookalikeMetaAltaCalidadPage";
 import ABTestingMetaAdsQueTestarPrimeroPage from "./pages/blog/ABTestingMetaAdsQueTestarPrimeroPage";
+import PresupuestoMinimoMetaAdsSinTirarDineroPage from "./pages/blog/PresupuestoMinimoMetaAdsSinTirarDineroPage";
 import PresupuestoMinimoMetaAdsEcommercePage from "./pages/blog/PresupuestoMinimoMetaAdsEcommercePage";
 import AutomatizacionesReglasMetaAdsManagerPage from "./pages/blog/AutomatizacionesReglasMetaAdsManagerPage";
 import CacBlendedVsCacCanalEcommercePage from "./pages/blog/CacBlendedVsCacCanalEcommercePage";
@@ -263,6 +265,7 @@ const App = () => {
         <Route path="/servicios/paid-media" element={<PaidMediaPage openCalendly={openCalendly} />} />
         <Route path="/servicios/captacion-clientes" element={<CaptacionPage openCalendly={openCalendly} />} />
         <Route path="/servicios/ecommerce" element={<EcommercePage openCalendly={openCalendly} />} />
+        <Route path="/servicios/growth-partner" element={<GrowthPartnerPage openCalendly={openCalendly} />} />
         <Route path="/blog" element={<BlogPage openCalendly={openCalendly} />} />
         <Route path="/resultados" element={<ResultadosPage openCalendly={openCalendly} />} />
         <Route path="/faq" element={<FAQPage openCalendly={openCalendly} />} />
@@ -317,6 +320,7 @@ const App = () => {
         <Route path="/blog/retargeting-meta-ads-ecommerce-2026" element={<RetargetingMetaAdsEcommerce2026Page openCalendly={openCalendly} />} />
         <Route path="/blog/audiencias-lookalike-meta-alta-calidad" element={<AudienciasLookalikeMetaAltaCalidadPage openCalendly={openCalendly} />} />
         <Route path="/blog/ab-testing-meta-ads-que-testar-primero" element={<ABTestingMetaAdsQueTestarPrimeroPage openCalendly={openCalendly} />} />
+        <Route path="/blog/presupuesto-minimo-meta-ads-sin-tirar-dinero" element={<PresupuestoMinimoMetaAdsSinTirarDineroPage openCalendly={openCalendly} />} />
         <Route path="/blog/presupuesto-minimo-meta-ads-ecommerce" element={<PresupuestoMinimoMetaAdsEcommercePage openCalendly={openCalendly} />} />
         <Route path="/blog/automatizaciones-reglas-meta-ads-manager" element={<AutomatizacionesReglasMetaAdsManagerPage openCalendly={openCalendly} />} />
         <Route path="/blog/cac-blended-vs-cac-canal-ecommerce" element={<CacBlendedVsCacCanalEcommercePage openCalendly={openCalendly} />} />
