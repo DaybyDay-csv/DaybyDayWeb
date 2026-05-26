@@ -296,6 +296,107 @@
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero .cta-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .props-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .founder-card {
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  footer .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* iPhone SE and small devices */
+@media (max-width: 374px) {
+  :root {
+    font-size: 14px;
+  }
+  
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  
+  .file-tree-sidebar {
+    width: 100%;
+  }
+}
+
+/* Large mobile */
+@media (min-width: 375px) and (max-width: 413px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* iPhone Pro / Plus */
+@media (min-width: 414px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Touch-friendly iPad */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ============================================

@@ -5,7 +5,8 @@
   top: 64px;
   bottom: 0;
   width: 280px;
-  background: var(--bg-secondary);
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(12px);
   border-right: 1px solid var(--border);
   overflow-y: auto;
   z-index: 50;
@@ -23,14 +24,21 @@
   left: 1rem;
   top: 80px;
   z-index: 60;
-  width: 40px;
-  height: 40px;
-  background: var(--bg-card);
+  width: 44px;
+  height: 44px;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: 8px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.file-tree-toggle:active {
+  background: var(--bg-card);
 }
 
 @media (max-width: 1024px) {
