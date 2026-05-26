@@ -1143,5 +1143,48 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2
     <p class="footer-copy">© 2026 DayByDay Consulting</p>
   </section>
   <script src="/js/main.js"></script>
+  
+  <!-- Parallax & Reveal Animations -->
+  <script>
+    // Reveal on scroll
+    const revealElements = document.querySelectorAll('.reveal, .card, .section');
+    const revealOnScroll = () => {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const revealPoint = 100;
+        if (elementTop < windowHeight - revealPoint) {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }
+      });
+    };
+    
+    // Set initial state
+    document.querySelectorAll('.reveal, .card, .section').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    });
+    
+    // Initial check
+    revealOnScroll();
+    // Listen for scroll
+    window.addEventListener('scroll', revealOnScroll, { passive: true });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
