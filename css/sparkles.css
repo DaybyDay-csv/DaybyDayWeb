@@ -1,82 +1,112 @@
-/* Sparkles Background Effect */
-.sparkles-container {
+/* Frontier Tech Background - Micro dots, grid, digital feel */
+
+/* Micro dots - tiny, numerosos, sutiles */
+.tech-dots {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.4;
+}
+
+/* Subtle grid */
+.tech-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Floating micro-particles - tech feel */
+.tech-particles {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  z-index: 0;
+}
+
+.tech-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+}
+
+.tech-particle:nth-child(1) { top: 5%; left: 8%; animation: float-v 8s ease-in-out infinite; }
+.tech-particle:nth-child(2) { top: 15%; left: 25%; animation: float-v 12s ease-in-out infinite; }
+.tech-particle:nth-child(3) { top: 25%; left: 42%; animation: float-v 6s ease-in-out infinite; }
+.tech-particle:nth-child(4) { top: 35%; left: 60%; animation: float-v 10s ease-in-out infinite; }
+.tech-particle:nth-child(5) { top: 45%; left: 78%; animation: float-v 14s ease-in-out infinite; }
+.tech-particle:nth-child(6) { top: 55%; left: 12%; animation: float-v 9s ease-in-out infinite; }
+.tech-particle:nth-child(7) { top: 65%; left: 35%; animation: float-v 7s ease-in-out infinite; }
+.tech-particle:nth-child(8) { top: 75%; left: 52%; animation: float-v 11s ease-in-out infinite; }
+.tech-particle:nth-child(9) { top: 85%; left: 68%; animation: float-v 8s ease-in-out infinite; }
+.tech-particle:nth-child(10) { top: 95%; left: 85%; animation: float-v 13s ease-in-out infinite; }
+.tech-particle:nth-child(11) { top: 12%; left: 92%; animation: float-v 15s ease-in-out infinite; }
+.tech-particle:nth-child(12) { top: 38%; left: 5%; animation: float-v 10s ease-in-out infinite; }
+.tech-particle:nth-child(13) { top: 62%; left: 88%; animation: float-v 9s ease-in-out infinite; }
+.tech-particle:nth-child(14) { top: 82%; left: 22%; animation: float-v 12s ease-in-out infinite; }
+.tech-particle:nth-child(15) { top: 22%; left: 72%; animation: float-v 7s ease-in-out infinite; }
+
+@keyframes float-v {
+  0%, 100% { transform: translateY(0); opacity: 0.3; }
+  50% { transform: translateY(-20px); opacity: 0.6; }
+}
+
+/* Scan line effect - muy sutil */
+.scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: scan 4s linear infinite;
   pointer-events: none;
 }
 
-.sparkle {
+@keyframes scan {
+  0% { top: -2px; }
+  100% { top: 100%; }
+}
+
+/* Noise texture - opcional */
+.noise-bg {
+  position: fixed;
+  inset: 0;
+  opacity: 0.02;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Corner accents - tech frame */
+.corner-frame {
   position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.corner-tl { top: 20px; left: 20px; border-right: none; border-bottom: none; }
+.corner-tr { top: 20px; right: 20px; border-left: none; border-bottom: none; }
+.corner-bl { bottom: 20px; left: 20px; border-right: none; border-top: none; }
+.corner-br { bottom: 20px; right: 20px; border-left: none; border-top: none; }
+
+/* Glowing data points */
+.data-point {
   width: 4px;
   height: 4px;
-  background: white;
+  background: rgba(255,255,255,0.4);
   border-radius: 50%;
-  opacity: 0;
-  animation: sparkle-fade 3s ease-in-out infinite;
+  animation: pulse-data 2s ease-in-out infinite;
 }
 
-.sparkle::before {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
-}
+.data-point:nth-child(odd) { animation-delay: 0.5s; }
 
-/* Variantes de tamaño */
-.sparkle.sm {
-  width: 2px;
-  height: 2px;
-}
-
-.sparkle.lg {
-  width: 6px;
-  height: 6px;
-}
-
-/* Posiciones - distribuir por el-hero */
-.sparkle:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
-.sparkle:nth-child(2) { top: 20%; left: 80%; animation-delay: 0.5s; }
-.sparkle:nth-child(3) { top: 30%; left: 20%; animation-delay: 1s; }
-.sparkle:nth-child(4) { top: 40%; left: 70%; animation-delay: 1.5s; }
-.sparkle:nth-child(5) { top: 50%; left: 30%; animation-delay: 2s; }
-.sparkle:nth-child(6) { top: 60%; left: 90%; animation-delay: 0.3s; }
-.sparkle:nth-child(7) { top: 70%; left: 15%; animation-delay: 0.8s; }
-.sparkle:nth-child(8) { top: 80%; left: 60%; animation-delay: 1.3s; }
-.sparkle:nth-child(9) { top: 15%; left: 50%; animation-delay: 1.8s; }
-.sparkle:nth-child(10) { top: 85%; left: 40%; animation-delay: 2.2s; }
-.sparkle:nth-child(11) { top: 25%; left: 35%; animation-delay: 0.7s; }
-.sparkle:nth-child(12) { top: 75%; left: 75%; animation-delay: 1.2s; }
-
-@keyframes sparkle-fade {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Gradient mesh background alternative */
-.mesh-gradient {
-  position: absolute;
-  inset: 0;
-  background: 
-    radial-gradient(ellipse at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(236, 72, 153, 0.05) 0%, transparent 70%);
-  z-index: 0;
-  animation: mesh-move 10s ease-in-out infinite alternate;
-}
-
-@keyframes mesh-move {
-  0% {
-    transform: scale(1) translate(0, 0);
-  }
-  100% {
-    transform: scale(1.1) translate(-2%, -2%);
-  }
+@keyframes pulse-data {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
 }
