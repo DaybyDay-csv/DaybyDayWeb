@@ -8,58 +8,33 @@
   <meta name="robots" content="index, follow">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/modern.css">
   <style>
-    :root { --bg-primary: #050507; --bg-secondary: #0e0e11; --text-primary: #fafafa; --text-secondary: #a1a1a6; --text-muted: #71717a; --border: #27272a; --accent: #0a66c2; }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-    .hero { padding: 8rem 0 4rem; background: linear-gradient(180deg, #050507 0%, #0a1628 100%); }
-    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
-    h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; letter-spacing: -0.02em; }
-    .subtitle { font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; }
-    .badge { display: inline-block; padding: 0.4rem 1rem; background: linear-gradient(135deg, #0a66c2, #0077b5); border-radius: 9999px; font-size: 0.75rem; font-weight: 600; color: white; margin-bottom: 1rem; }
-    .section { padding: 4rem 0; }
-    .section-dark { background: var(--bg-secondary); }
-    .grid-2 { display: grid; gap: 1.5rem; }
-    @media (min-width: 768px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } }
-    .card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
-    .card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
-    .card p { color: var(--text-secondary); font-size: 0.9rem; }
-    .cta-box { background: linear-gradient(135deg, #0a1628, #0e0e11); border: 1px solid #0a66c2; border-radius: 16px; padding: 2.5rem; text-align: center; margin: 3rem 0; }
-    .cta-button { display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #0a66c2, #0077b5); color: white; font-weight: 600; border-radius: 8px; text-decoration: none; margin-top: 1rem; }
-    .breadcrumb { background: var(--bg-secondary); padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
-    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
-    .breadcrumb span { color: var(--text-muted); margin: 0 0.5rem; }
-    footer { background: var(--bg-secondary); padding: 3rem 0; text-align: center; border-top: 1px solid var(--border); }
-    footer a { color: var(--text-secondary); text-decoration: none; margin: 0 1rem; }
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(5,5,7,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 64px; }
-    nav .container { display: flex; justify-content: space-between; align-items: center; height: 100%; }
-    nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; }
-    nav a:hover { color: var(--text-primary); }
-    nav .logo { font-size: 1.25rem; font-weight: 700; color: var(--text-primary); }
-    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
-    .spacer { height: 64px; }
+    :root { --accent: #0a66c2; }
+    .badge { background: linear-gradient(135deg, #0a66c2, #0077b5); }
+    .accent-bg { background: linear-gradient(180deg, #050507 0%, #0a1628 100%); }
+    .accent-border { border-color: rgba(10,102,194,0.3); }
+    .cta-button { background: linear-gradient(135deg, #0a66c2, #0077b5); }
   </style>
 </head>
 <body>
-  <nav>
-    <div class="container">
-      <a href="/" class="logo">DayByDay</a>
-      <ul class="nav-links">
-        <li><a href="/problema.html">Problema</a></li>
-        <li><a href="/servicios.html">Servicios</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-      </ul>
-    </div>
+  <nav class="main-nav">
+    <a href="/" class="nav-logo">DayByDay</a>
+    <ul class="nav-links">
+      <li><a href="/problema.html">Problema</a></li>
+      <li><a href="/servicios.html">Servicios</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+    </ul>
   </nav>
-  <div class="spacer"></div>
+  <div style="height:64px;"></div>
 
   <div class="breadcrumb">
     <div class="container">
-      <a href="/">Inicio</a><span>›</span><a href="/servicios.html">Servicios</a><span>›</span><span style="color:#fafafa;">LinkedIn Ads</span>
+      <a href="/">Inicio</a><span>›</span><a href="/servicios.html">Servicios</a><span>›</span><span style="color:var(--text-primary);">LinkedIn Ads</span>
     </div>
   </div>
 
-  <section class="hero">
+  <section class="hero accent-bg">
     <div class="container">
       <span class="badge">Paid Media</span>
       <h1>LinkedIn Ads</h1>
@@ -67,9 +42,9 @@
     </div>
   </section>
 
-  <section class="section section-dark">
+  <section class="section">
     <div class="container">
-      <h2 style="font-size:1.75rem;font-weight:700;margin-bottom:1.5rem;">Por qué LinkedIn Ads</h2>
+      <h2>Por qué LinkedIn Ads</h2>
       <div class="grid-2">
         <div class="card">
           <h3>Targeting Precisivo</h3>
@@ -91,9 +66,9 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section-dark">
     <div class="container">
-      <h2 style="font-size:1.75rem;font-weight:700;margin-bottom:1.5rem;">Estrategia LinkedIn que Funciona</h2>
+      <h2>Estrategia LinkedIn que Funciona</h2>
       <div class="grid-2">
         <div class="card">
           <h3>1. Sponsored Content</h3>
@@ -115,9 +90,9 @@
     </div>
   </section>
 
-  <section class="section section-dark">
+  <section class="section">
     <div class="container">
-      <h2 style="font-size:1.75rem;font-weight:700;margin-bottom:1.5rem;">Relacionado</h2>
+      <h2>Relacionado</h2>
       <div class="grid-2">
         <a href="/growth-strategy.html" class="card" style="text-decoration:none;">
           <h3>Growth Strategy</h3>
@@ -131,19 +106,17 @@
     </div>
   </section>
 
-  <div class="cta-box">
-    <h2 style="font-size:1.75rem;font-weight:700;margin-bottom:1rem;">Leads B2B de Calidad?</h2>
-    <p style="color:var(--text-secondary);">Empieza con 1.5K€/mes y optimiza por SQLs.</p>
+  <div class="cta-box accent-border">
+    <h2>Leads B2B de Calidad?</h2>
+    <p>Empieza con 1.5K€/mes y optimiza por SQLs.</p>
     <a href="/contacto.html" class="cta-button">Hablamos</a>
   </div>
 
-  <footer>
-    <div class="container">
-      <a href="/">Inicio</a>
-      <a href="/servicios.html">Servicios</a>
-      <a href="/blog.html">Blog</a>
-      <p style="margin-top:1rem;color:var(--text-muted);font-size:0.85rem;">© 2026 DayByDay Consulting</p>
-    </div>
+  <footer class="footer">
+    <a href="/">Inicio</a>
+    <a href="/servicios.html">Servicios</a>
+    <a href="/blog.html">Blog</a>
+    <p>© 2026 DayByDay Consulting</p>
   </footer>
 </body>
 </html>
