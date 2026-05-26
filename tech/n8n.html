@@ -55,38 +55,60 @@
 </head>
 <body>
 
-    <nav class="main-nav" style="background:rgba(5,5,7,0.95);backdrop-filter:blur(12px);border-bottom:1px solid #27272a;position:fixed;top:0;left:0;right:0;z-index:100;">
-    <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;display:flex;justify-content:space-between;align-items:center;height:64px;">
-      <a href="/" style="font-size:1.25rem;font-weight:700;color:#fafafa;text-decoration:none;">DayByDay</a>
-      <ul style="display:flex;gap:1.25rem;list-style:none;">
-          <li><a href="/problema.html" style="color:#a1a1a6;text-decoration:none;font-size:0.9rem;">Problema</a></li>
-          <li><a href="/como-trabajamos.html" style="color:#a1a1a6;text-decoration:none;font-size:0.9rem;">Cómo Trabajamos</a></li>
-          <li><a href="/servicios.html" style="color:#a1a1a6;text-decoration:none;font-size:0.9rem;">Servicios</a></li>
-          <li><a href="/blog.html" style="color:#a1a1a6;text-decoration:none;font-size:0.9rem;">Blog</a></li>
+      <nav class="main-nav">
+    <a href="/" class="nav-logo">DayByDay</a>
+    <div class="nav-menu">
+      <ul class="nav-links">
+          <li><a href="/problema.html">Problema</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-btn">Cómo Trabajamos</button>
+            <div class="nav-dropdown-content small">
+              <div class="mega-section">
+                <div class="mega-section-title">Stack Tecnológico</div>
+                <div class="stack-grid">
+                  <a href="/tech/meta-ads.html">Meta Ads</a>
+                  <a href="/tech/google-ads-tech.html">Google Ads</a>
+                  <a href="/tech/shopify.html">Shopify</a>
+                  <a href="/tech/ga4.html">GA4</a>
+                  <a href="/tech/n8n.html">n8n</a>
+                  <a href="/tech/capi.html">CAPI</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-btn">Servicios</button>
+            <div class="nav-dropdown-content">
+              <div class="mega-grid">
+                <div class="mega-column"><h4>Paid Media</h4>
+                  <a href="/meta-ads.html">Meta Ads</a>
+                  <a href="/google-ads.html">Google Ads</a>
+                  <a href="/tiktok-ads.html">TikTok Ads</a>
+                  <a href="/linkedin-ads.html">LinkedIn Ads</a>
+                </div>
+                <div class="mega-column"><h4>Growth Strategy</h4>
+                  <a href="/growth-strategy.html">Estrategia</a>
+                  <a href="/growth-partner.html">Growth Partner</a>
+                </div>
+                <div class="mega-column"><h4>Automation</h4>
+                  <a href="/automatizacion.html">Automatización</a>
+                  <a href="/tech/n8n.html">n8n</a>
+                  <a href="/tech/capi.html">CAPI</a>
+                </div>
+                <div class="mega-column"><h4>Analytics & AI</h4>
+                  <a href="/analytics.html">Analytics</a>
+                  <a href="/agentic-ai.html">Agentic AI</a>
+                  <a href="/tech/azure.html">Azure AI</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="/blog.html">Blog</a></li>
       </ul>
-      <button class="mobile-menu-btn" onclick="document.getElementById('mobile-nav').classList.toggle('active')" style="background:none;border:1px solid #27272a;border-radius:8px;padding:0.5rem;cursor:pointer;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fafafa" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-      </button>
     </div>
   </nav>
-
-  <!-- Mobile Navigation -->
-  <div id="mobile-nav" class="mobile-nav" style="display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:rgba(5,5,7,0.98);backdrop-filter:blur(20px);z-index:999;overflow-y:auto;padding:1.5rem;">
-    <div style="margin-bottom:1.5rem;">
-      <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:0.75rem;">Navegación</div>
-      <a href="/" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;">Inicio</a>
-      <a href="/servicios.html" style="display:block;padding:0.75rem 0;color:#fafafa;text-decoration:none;border-bottom:1px solid #27272a;font-weight:600;">Servicios</a>
-      <a href="/blog.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;">Blog</a>
-    </div>
-    <div>
-      <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:0.75rem;">Todos los Stacks</div>
-      <a href="/tech/meta-ads.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;">Meta Ads</a>
-      <a href="/tech/google-ads-tech.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;">Google Ads</a>
-      <a href="/tech/ga4.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;">GA4</a>
-      <a href="/tech/n8n.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;">n8n</a>
-    </div>
-  </div>
   <div style="height:64px;"></div>
+
 
   <!-- Breadcrumb -->
   <div style="background:var(--bg-secondary);padding:0.75rem 0;border-bottom:1px solid var(--border);">
