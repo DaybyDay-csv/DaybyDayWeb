@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T20:30:42.500712+00:00",
+  "last_updated": "2026-05-26T13:35:35.947702Z",
   "current_week": 15,
   "current_phase": 1,
   "site": "https://daybydayconsulting.com",
@@ -121,9 +121,9 @@
   "phases": [
     {
       "phase": 1,
-      "name": "Fundación",
+      "name": "Fundaci\u00f3n",
       "weeks": "1-6",
-      "objective": "Aparecer en búsquedas transaccionales y capturar PAA",
+      "objective": "Aparecer en b\u00fasquedas transaccionales y capturar PAA",
       "tasks": [
         {
           "id": "T00",
@@ -131,13 +131,13 @@
           "status": "completed",
           "type": "article",
           "cluster": "contratar-media-buyer",
-          "title": "Qué es un media buyer: rol, funciones y cuándo contratar uno",
-          "keyword": "qué es un media buyer",
+          "title": "Qu\u00e9 es un media buyer: rol, funciones y cu\u00e1ndo contratar uno",
+          "keyword": "qu\u00e9 es un media buyer",
           "slug": "que-es-un-media-buyer",
           "words": 1200,
           "intent": "TOFU-AEO-GEO",
-          "priority": "CRÍTICO",
-          "note": "★★★★★ 500-1000/mes, AEO+GEO. Publicado 2026-03-12"
+          "priority": "CR\u00cdTICO",
+          "note": "\u2605\u2605\u2605\u2605\u2605 500-1000/mes, AEO+GEO. Publicado 2026-03-12"
         },
         {
           "id": "T01",
@@ -145,7 +145,7 @@
           "status": "completed",
           "type": "article",
           "cluster": "contratar-media-buyer",
-          "title": "Media buyer vs agencia de publicidad: qué necesita tu D2C",
+          "title": "Media buyer vs agencia de publicidad: qu\u00e9 necesita tu D2C",
           "keyword": "media buyer vs agencia",
           "slug": "media-buyer-vs-agencia-ecommerce-d2c",
           "words": 2000,
@@ -159,8 +159,8 @@
           "status": "completed",
           "type": "article",
           "cluster": "contratar-media-buyer",
-          "title": "Cuánto cobra un media buyer freelance en España en 2026",
-          "keyword": "cuánto cobra media buyer españa",
+          "title": "Cu\u00e1nto cobra un media buyer freelance en Espa\u00f1a en 2026",
+          "keyword": "cu\u00e1nto cobra media buyer espa\u00f1a",
           "slug": "cuanto-cobra-media-buyer-freelance-espana",
           "words": 900,
           "intent": "BOFU",
@@ -173,8 +173,8 @@
           "status": "completed",
           "type": "article",
           "cluster": "contratar-media-buyer",
-          "title": "Señales de que tu agencia de publicidad no está rindiendo",
-          "keyword": "cómo saber si agencia publicidad es buena",
+          "title": "Se\u00f1ales de que tu agencia de publicidad no est\u00e1 rindiendo",
+          "keyword": "c\u00f3mo saber si agencia publicidad es buena",
           "slug": "senales-agencia-publicidad-no-rinde",
           "words": 1000,
           "intent": "MOFU-BOFU",
@@ -188,10 +188,10 @@
           "type": "technical",
           "cluster": "technical",
           "title": "Optimizar homepage + FAQPage Schema en /servicios",
-          "keyword": "agencia paid media consultor Meta Ads España",
+          "keyword": "agencia paid media consultor Meta Ads Espa\u00f1a",
           "slug": null,
           "intent": "BOFU",
-          "note": "Completado 2026-03-16. Homepage: nuevo title/description + ProfessionalService schema + founder + FAQPage BOFU (5 preguntas). MetaAdsPage: +2 FAQs consultor Meta Ads España. PaidMediaPage: +2 FAQs consultor paid media vs agencia."
+          "note": "Completado 2026-03-16. Homepage: nuevo title/description + ProfessionalService schema + founder + FAQPage BOFU (5 preguntas). MetaAdsPage: +2 FAQs consultor Meta Ads Espa\u00f1a. PaidMediaPage: +2 FAQs consultor paid media vs agencia."
         },
         {
           "id": "T05",
@@ -199,8 +199,8 @@
           "status": "published",
           "type": "page",
           "cluster": "geo-authority",
-          "title": "Crear/mejorar página /casos-de-exito con ItemList Schema",
-          "keyword": "casos éxito agencia paid media españa D2C",
+          "title": "Crear/mejorar p\u00e1gina /casos-de-exito con ItemList Schema",
+          "keyword": "casos \u00e9xito agencia paid media espa\u00f1a D2C",
           "slug": null,
           "intent": "GEO+BOFU"
         },
@@ -210,8 +210,8 @@
           "status": "completed",
           "type": "article",
           "cluster": "contratar-media-buyer",
-          "title": "Checklist para auditar tus campañas de paid media",
-          "keyword": "auditoría campañas paid media",
+          "title": "Checklist para auditar tus campa\u00f1as de paid media",
+          "keyword": "auditor\u00eda campa\u00f1as paid media",
           "slug": "checklist-auditoria-campanas-paid-media",
           "words": 1000,
           "intent": "BOFU",
@@ -223,7 +223,7 @@
       "phase": 2,
       "name": "Autoridad",
       "weeks": "7-14",
-      "objective": "Construir silo temático + aparecer en respuestas de IA",
+      "objective": "Construir silo tem\u00e1tico + aparecer en respuestas de IA",
       "tasks": [
         {
           "id": "T07",
@@ -231,8 +231,8 @@
           "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
-          "title": "[PILAR] Guía completa Meta Ads para ecommerce D2C en España 2026",
-          "keyword": "meta ads ecommerce españa",
+          "title": "[PILAR] Gu\u00eda completa Meta Ads para ecommerce D2C en Espa\u00f1a 2026",
+          "keyword": "meta ads ecommerce espa\u00f1a",
           "slug": "guia-meta-ads-ecommerce-d2c-espana-2026",
           "words": 2500,
           "intent": "TOFU-MOFU",
@@ -244,8 +244,8 @@
           "status": "completed",
           "type": "article",
           "cluster": "geo-authority",
-          "title": "Caso de éxito: eCommerce D2C +156% ROAS en 90 días con Meta Ads",
-          "keyword": "casos éxito meta ads ecommerce españa",
+          "title": "Caso de \u00e9xito: eCommerce D2C +156% ROAS en 90 d\u00edas con Meta Ads",
+          "keyword": "casos \u00e9xito meta ads ecommerce espa\u00f1a",
           "slug": "caso-exito-ecommerce-d2c-roas-meta-ads",
           "words": 1200,
           "intent": "BOFU-GEO",
@@ -257,12 +257,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
-          "title": "Benchmark ROAS por sector en España: ¿estás por encima de la media?",
-          "keyword": "roas medio españa por sector",
+          "title": "Benchmark ROAS por sector en Espa\u00f1a: \u00bfest\u00e1s por encima de la media?",
+          "keyword": "roas medio espa\u00f1a por sector",
           "slug": "benchmark-roas-sector-espana-2026",
           "words": 1500,
           "intent": "TOFU-MOFU",
-          "note": "Publicado 2026-03-18. Tabla comparativa 10 sectores, benchmarks España vs globales, 4 factores clave, FAQs GEO."
+          "note": "Publicado 2026-03-18. Tabla comparativa 10 sectores, benchmarks Espa\u00f1a vs globales, 4 factores clave, FAQs GEO."
         },
         {
           "id": "T10",
@@ -270,12 +270,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
-          "title": "Cómo mejorar el ROAS en Meta Ads: 7 palancas reales",
-          "keyword": "cómo mejorar ROAS Meta Ads",
+          "title": "C\u00f3mo mejorar el ROAS en Meta Ads: 7 palancas reales",
+          "keyword": "c\u00f3mo mejorar ROAS Meta Ads",
           "slug": "como-mejorar-roas-meta-ads-7-palancas",
           "words": 1000,
           "intent": "MOFU",
-          "note": "Publicado 2026-03-23. 7 palancas: tracking, estructura, creatividades, landing, pujas, segmentación por margen y retargeting."
+          "note": "Publicado 2026-03-23. 7 palancas: tracking, estructura, creatividades, landing, pujas, segmentaci\u00f3n por margen y retargeting."
         },
         {
           "id": "T11",
@@ -283,12 +283,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
-          "title": "Cómo escalar campañas Meta Ads sin que se rompa el ROAS",
-          "keyword": "escalar campañas meta ads",
+          "title": "C\u00f3mo escalar campa\u00f1as Meta Ads sin que se rompa el ROAS",
+          "keyword": "escalar campa\u00f1as meta ads",
           "slug": "escalar-campanas-meta-ads-sin-romper-roas",
           "words": 1200,
           "intent": "MOFU",
-          "note": "Publicado 2026-04-07. Protocolo de escala: prerequisitos, tabla de decisión, regla 7 días, Advantage+ Shopping, métricas de monitorización y caso real 8K→45K€/mes."
+          "note": "Publicado 2026-04-07. Protocolo de escala: prerequisitos, tabla de decisi\u00f3n, regla 7 d\u00edas, Advantage+ Shopping, m\u00e9tricas de monitorizaci\u00f3n y caso real 8K\u219245K\u20ac/mes."
         },
         {
           "id": "T12",
@@ -296,12 +296,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
-          "title": "Advantage+ Shopping: cuándo usarlo y cuándo no",
+          "title": "Advantage+ Shopping: cu\u00e1ndo usarlo y cu\u00e1ndo no",
           "keyword": "advantage+ shopping meta ads",
           "slug": "advantage-plus-shopping-cuando-usarlo-no",
           "words": 900,
           "intent": "TOFU-MOFU",
-          "note": "Publicado 2026-04-07. Tabla de decisión por volumen de conversiones, 4 ventajas reales vs campañas manuales, límites de ASC y protocolo de transición en 4 pasos."
+          "note": "Publicado 2026-04-07. Tabla de decisi\u00f3n por volumen de conversiones, 4 ventajas reales vs campa\u00f1as manuales, l\u00edmites de ASC y protocolo de transici\u00f3n en 4 pasos."
         },
         {
           "id": "T13",
@@ -309,12 +309,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
-          "title": "Métricas Meta Ads que importan de verdad (y las que no)",
-          "keyword": "métricas meta ads importantes",
+          "title": "M\u00e9tricas Meta Ads que importan de verdad (y las que no)",
+          "keyword": "m\u00e9tricas meta ads importantes",
           "slug": "metricas-meta-ads-importantes-ecommerce",
           "words": 900,
           "intent": "TOFU",
-          "note": "Publicado 2026-04-07. MER vs ROAS de plataforma, CPA real, CPNC, tabla de prioridad por métrica y cadencia de revisión. 2 tablas comparativas, 6 FAQs."
+          "note": "Publicado 2026-04-07. MER vs ROAS de plataforma, CPA real, CPNC, tabla de prioridad por m\u00e9trica y cadencia de revisi\u00f3n. 2 tablas comparativas, 6 FAQs."
         },
         {
           "id": "T14",
@@ -322,12 +322,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "meta-ads-d2c",
-          "title": "Por qué tus anuncios de Meta no convierten (y cómo solucionarlo)",
+          "title": "Por qu\u00e9 tus anuncios de Meta no convierten (y c\u00f3mo solucionarlo)",
           "keyword": "anuncios meta no funcionan",
           "slug": "por-que-anuncios-meta-no-convierten",
           "words": 1000,
           "intent": "MOFU-BOFU",
-          "note": "Publicado 2026-04-28. Diagnóstico en 5 capas (tracking, landing, audiencia, creatividad, estructura), tabla de causas reales con frecuencia, protocolo de auditoría 5 días y 8 FAQs."
+          "note": "Publicado 2026-04-28. Diagn\u00f3stico en 5 capas (tracking, landing, audiencia, creatividad, estructura), tabla de causas reales con frecuencia, protocolo de auditor\u00eda 5 d\u00edas y 8 FAQs."
         }
       ]
     },
@@ -343,7 +343,7 @@
           "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
-          "title": "[PILAR] Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media",
+          "title": "[PILAR] C\u00f3mo escalar un eCommerce D2C de 100K a 1M\u20ac con paid media",
           "keyword": "escalar ecommerce D2C paid media",
           "slug": "escalar-ecommerce-d2c-100k-1m-paid-media",
           "words": 2500,
@@ -356,7 +356,7 @@
           "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
-          "title": "CAC vs LTV: la métrica que define si tu D2C es escalable",
+          "title": "CAC vs LTV: la m\u00e9trica que define si tu D2C es escalable",
           "keyword": "cac ltv ecommerce",
           "slug": "cac-vs-ltv-ecommerce-escalable",
           "words": 1000,
@@ -369,12 +369,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
-          "title": "Cuánto invertir en Meta Ads según tu ticket medio y margen",
-          "keyword": "cuánto invertir meta ads ecommerce calculadora",
+          "title": "Cu\u00e1nto invertir en Meta Ads seg\u00fan tu ticket medio y margen",
+          "keyword": "cu\u00e1nto invertir meta ads ecommerce calculadora",
           "slug": "cuanto-invertir-meta-ads-calculadora",
           "words": 1200,
           "intent": "MOFU-BOFU",
-          "note": "Publicado 2026-04-28. Calculadora interactiva React inline (useState/useMemo), fórmula CAC objetivo = LTV × margen / ratio, tabla suelo mínimo por ticket, distribución TOFU/MOFU/BOFU, protocolo subida 20-30% semanal."
+          "note": "Publicado 2026-04-28. Calculadora interactiva React inline (useState/useMemo), f\u00f3rmula CAC objetivo = LTV \u00d7 margen / ratio, tabla suelo m\u00ednimo por ticket, distribuci\u00f3n TOFU/MOFU/BOFU, protocolo subida 20-30% semanal."
         },
         {
           "id": "T18",
@@ -382,12 +382,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
-          "title": "Estrategia full funnel para D2C: del frío al cliente recurrente",
+          "title": "Estrategia full funnel para D2C: del fr\u00edo al cliente recurrente",
           "keyword": "estrategia full funnel D2C",
           "slug": "estrategia-full-funnel-d2c",
           "words": 1200,
           "intent": "MOFU",
-          "note": "Publicado 2026-04-29. Full funnel multi-canal (Meta+Google+email/WhatsApp), orden operativo, distribución por madurez y KPIs blended (MER, CAC blended)."
+          "note": "Publicado 2026-04-29. Full funnel multi-canal (Meta+Google+email/WhatsApp), orden operativo, distribuci\u00f3n por madurez y KPIs blended (MER, CAC blended)."
         },
         {
           "id": "T19",
@@ -395,12 +395,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "estrategia-d2c",
-          "title": "Cómo combinar Google Ads y Meta Ads en una estrategia D2C",
+          "title": "C\u00f3mo combinar Google Ads y Meta Ads en una estrategia D2C",
           "keyword": "google ads meta ads juntos",
           "slug": "combinar-google-ads-meta-ads-d2c",
           "words": 1000,
           "intent": "MOFU",
-          "note": "Publicado 2026-04-29. Rol diferenciado Meta (demanda) vs Google (cosecha), orden operativo de incorporación, tabla de reparto por fase de madurez, doble atribución (MER blended, pause-test), errores y plan 90 días DayByDay."
+          "note": "Publicado 2026-04-29. Rol diferenciado Meta (demanda) vs Google (cosecha), orden operativo de incorporaci\u00f3n, tabla de reparto por fase de madurez, doble atribuci\u00f3n (MER blended, pause-test), errores y plan 90 d\u00edas DayByDay."
         },
         {
           "id": "T20",
@@ -408,12 +408,12 @@
           "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
-          "title": "[PILAR] Guía API de Conversiones de Meta: configuración y beneficios",
+          "title": "[PILAR] Gu\u00eda API de Conversiones de Meta: configuraci\u00f3n y beneficios",
           "keyword": "api conversiones meta ads",
           "slug": "guia-api-conversiones-meta-ads-shopify",
           "words": 2000,
           "intent": "TOFU-MOFU",
-          "note": "Publicado 2026-04-30. Qué es CAPI, impacto real (+15-25% eventos), 3 rutas Shopify (nativa/app partner/custom), eventos críticos, deduplicación, RGPD, 3 chequeos verificación (EMQ, dedup, coverage)."
+          "note": "Publicado 2026-04-30. Qu\u00e9 es CAPI, impacto real (+15-25% eventos), 3 rutas Shopify (nativa/app partner/custom), eventos cr\u00edticos, deduplicaci\u00f3n, RGPD, 3 chequeos verificaci\u00f3n (EMQ, dedup, coverage)."
         },
         {
           "id": "T21",
@@ -421,8 +421,8 @@
           "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
-          "title": "Remarketing dinámico para ecommerce: guía práctica",
-          "keyword": "remarketing dinámico ecommerce",
+          "title": "Remarketing din\u00e1mico para ecommerce: gu\u00eda pr\u00e1ctica",
+          "keyword": "remarketing din\u00e1mico ecommerce",
           "slug": "remarketing-dinamico-ecommerce-guia-practica",
           "words": 1000,
           "intent": "MOFU",
@@ -434,7 +434,7 @@
           "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
-          "title": "Cómo crear audiencias lookalike de alta calidad en Meta",
+          "title": "C\u00f3mo crear audiencias lookalike de alta calidad en Meta",
           "keyword": "audiencias lookalike meta",
           "slug": "audiencias-lookalike-meta-alta-calidad",
           "words": 1500,
@@ -447,7 +447,7 @@
           "status": "completed",
           "type": "article",
           "cluster": "herramientas-avanzadas",
-          "title": "A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje",
+          "title": "A/B testing en Meta Ads: qu\u00e9 testar primero para maximizar aprendizaje",
           "keyword": "ab testing meta ads",
           "slug": "ab-testing-meta-ads-que-testar-primero",
           "words": 900,
@@ -473,13 +473,13 @@
       "phase": 4,
       "name": "Sistema escalado + AEO/GEO depth",
       "weeks": "25-38",
-      "objective": "Cubrir consultas long-tail BOFU/MOFU y consolidar autoridad para citaciones GEO en ChatGPT/Perplexity. Densidad de cobertura sobre tracking, atribución, métricas avanzadas, y sistemas de validación.",
+      "objective": "Cubrir consultas long-tail BOFU/MOFU y consolidar autoridad para citaciones GEO en ChatGPT/Perplexity. Densidad de cobertura sobre tracking, atribuci\u00f3n, m\u00e9tricas avanzadas, y sistemas de validaci\u00f3n.",
       "tasks": [
         {
           "id": "T25",
           "week": 25,
           "cluster": "metricas-avanzadas",
-          "title": "CAC blended vs CAC por canal: qué métrica usar para escalar un D2C",
+          "title": "CAC blended vs CAC por canal: qu\u00e9 m\u00e9trica usar para escalar un D2C",
           "keyword": "cac blended ecommerce",
           "slug": "cac-blended-vs-cac-canal-ecommerce",
           "words": 1100,
@@ -493,7 +493,7 @@
           "id": "T26",
           "week": 25,
           "cluster": "metricas-avanzadas",
-          "title": "Cohort analysis para eCommerce D2C: la métrica que predice si tu negocio escala",
+          "title": "Cohort analysis para eCommerce D2C: la m\u00e9trica que predice si tu negocio escala",
           "keyword": "cohort analysis ecommerce d2c",
           "slug": "cohort-analysis-ecommerce-d2c",
           "words": 1300,
@@ -507,8 +507,8 @@
           "id": "T27",
           "week": 26,
           "cluster": "atribucion",
-          "title": "Modelos de atribución para D2C: last-click, data-driven y MMM explicados",
-          "keyword": "modelos atribución ecommerce",
+          "title": "Modelos de atribuci\u00f3n para D2C: last-click, data-driven y MMM explicados",
+          "keyword": "modelos atribuci\u00f3n ecommerce",
           "slug": "modelos-atribucion-ecommerce-d2c",
           "words": 1400,
           "intent": "MOFU",
@@ -521,7 +521,7 @@
           "id": "T28",
           "week": 26,
           "cluster": "atribucion",
-          "title": "Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve",
+          "title": "Marketing Mix Modeling (MMM) para D2C: cu\u00e1ndo aplicarlo y qu\u00e9 resuelve",
           "keyword": "mmm ecommerce d2c",
           "slug": "marketing-mix-modeling-ecommerce-d2c",
           "words": 1300,
@@ -535,35 +535,35 @@
           "id": "T29",
           "week": 27,
           "cluster": "tracking",
-          "title": "Tracking server-side completo para Shopify con Conversions API: guía 2026",
+          "title": "Tracking server-side completo para Shopify con Conversions API: gu\u00eda 2026",
           "keyword": "server side tracking shopify conversions api",
           "slug": "server-side-tracking-shopify-conversions-api",
           "words": 1500,
           "intent": "MOFU",
-          "priority": "CRÍTICO",
+          "priority": "CR\u00cdTICO",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-06. Arquitectura sGTM vs Stape vs apps Shopify, umbral de migración por spend, eventos críticos con datos cliente hasheados, deduplicación cliente-servidor, Consent Mode v2 + AEPD, tabla impacto medido EMQ/CPA/coverage y 7 errores de auditoría."
+          "note": "Publicado 2026-05-06. Arquitectura sGTM vs Stape vs apps Shopify, umbral de migraci\u00f3n por spend, eventos cr\u00edticos con datos cliente hasheados, deduplicaci\u00f3n cliente-servidor, Consent Mode v2 + AEPD, tabla impacto medido EMQ/CPA/coverage y 7 errores de auditor\u00eda."
         },
         {
           "id": "T30",
           "week": 27,
           "cluster": "tracking",
-          "title": "iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026",
-          "keyword": "ios atribución meta ads 2026",
+          "title": "iOS 17/18 y atribuci\u00f3n en Meta Ads: qu\u00e9 ha cambiado para D2C en 2026",
+          "keyword": "ios atribuci\u00f3n meta ads 2026",
           "slug": "ios-atribucion-meta-ads-2026-d2c",
           "words": 1500,
           "intent": "TOFU-MOFU",
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-06. iOS 17 LTP + iOS 18 Private Relay/ITP, pérdida medida por tipo de cuenta D2C (-12 a -40% según ticket), AEM 8 web events priorizados, qué resuelve CAPI server-side (60-85%) y qué no, impacto algoritmo y lookalike, plan operativo en 6 pasos, enfoque DayByDay con auditoría iOS-aware."
+          "note": "Publicado 2026-05-06. iOS 17 LTP + iOS 18 Private Relay/ITP, p\u00e9rdida medida por tipo de cuenta D2C (-12 a -40% seg\u00fan ticket), AEM 8 web events priorizados, qu\u00e9 resuelve CAPI server-side (60-85%) y qu\u00e9 no, impacto algoritmo y lookalike, plan operativo en 6 pasos, enfoque DayByDay con auditor\u00eda iOS-aware."
         },
         {
           "id": "T31",
           "week": 28,
           "cluster": "ltv-retention",
-          "title": "Email marketing + Meta Ads: cómo combinar paid + owned para escalar LTV",
+          "title": "Email marketing + Meta Ads: c\u00f3mo combinar paid + owned para escalar LTV",
           "keyword": "email marketing meta ads ecommerce",
           "slug": "email-marketing-meta-ads-ltv-d2c",
           "words": 1200,
@@ -571,13 +571,13 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-07. Combina paid+owned: 5 flujos email obligatorios, sincronización Klaviyo↔Meta, jerarquía CA/LAL, % revenue por madurez, MER blended + holdout test."
+          "note": "Publicado 2026-05-07. Combina paid+owned: 5 flujos email obligatorios, sincronizaci\u00f3n Klaviyo\u2194Meta, jerarqu\u00eda CA/LAL, % revenue por madurez, MER blended + holdout test."
         },
         {
           "id": "T32",
           "week": 28,
           "cluster": "estacional",
-          "title": "Black Friday Meta Ads para D2C: preparar Q4 con 90 días de antelación",
+          "title": "Black Friday Meta Ads para D2C: preparar Q4 con 90 d\u00edas de antelaci\u00f3n",
           "keyword": "black friday meta ads d2c",
           "slug": "black-friday-meta-ads-d2c-preparacion",
           "words": 1500,
@@ -585,13 +585,13 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-08. Calendario 90 días con 4 fases (Foundation/Warm-up/Peak/Post-peak/Cooldown), CPM +35-55% durante BF, distribución Q4 escalonada, estructura peak 50/30/20 (retargeting/prospecting/Advantage+), 4 creatividades winner vs anti-patrones, checklist semanal sept-ene, auditoría EMQ obligatoria 6 semanas antes."
+          "note": "Publicado 2026-05-08. Calendario 90 d\u00edas con 4 fases (Foundation/Warm-up/Peak/Post-peak/Cooldown), CPM +35-55% durante BF, distribuci\u00f3n Q4 escalonada, estructura peak 50/30/20 (retargeting/prospecting/Advantage+), 4 creatividades winner vs anti-patrones, checklist semanal sept-ene, auditor\u00eda EMQ obligatoria 6 semanas antes."
         },
         {
           "id": "T33",
           "week": 29,
           "cluster": "google-ads",
-          "title": "Performance Max para D2C: cuándo activarla y cómo medir si funciona",
+          "title": "Performance Max para D2C: cu\u00e1ndo activarla y c\u00f3mo medir si funciona",
           "keyword": "performance max ecommerce d2c",
           "slug": "performance-max-ecommerce-d2c-cuando-usar",
           "words": 1300,
@@ -599,27 +599,27 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-08. 3 condiciones activación (>30 conv/mes, feed GMC limpio, Search Brand baseline), 6 métodos detección canibalización (brand search test, channel-level reporting, % New Customers, MER blended, search query report, holdout geo), ROAS por sector, modelo híbrido Standard Shopping+PMax, novedades 2026 (channel reporting, brand exclusions, GA4 LTV cohorts, Customer Match), 5 intervenciones feed Merchant Center."
+          "note": "Publicado 2026-05-08. 3 condiciones activaci\u00f3n (>30 conv/mes, feed GMC limpio, Search Brand baseline), 6 m\u00e9todos detecci\u00f3n canibalizaci\u00f3n (brand search test, channel-level reporting, % New Customers, MER blended, search query report, holdout geo), ROAS por sector, modelo h\u00edbrido Standard Shopping+PMax, novedades 2026 (channel reporting, brand exclusions, GA4 LTV cohorts, Customer Match), 5 intervenciones feed Merchant Center."
         },
         {
           "id": "T34",
           "week": 29,
           "cluster": "tiktok",
-          "title": "TikTok Ads para D2C en España: guía completa de activación 2026",
-          "keyword": "tiktok ads ecommerce españa",
+          "title": "TikTok Ads para D2C en Espa\u00f1a: gu\u00eda completa de activaci\u00f3n 2026",
+          "keyword": "tiktok ads ecommerce espa\u00f1a",
           "slug": "tiktok-ads-ecommerce-d2c-espana-2026",
           "words": 1500,
           "intent": "TOFU-MOFU",
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-08. 3 condiciones activación (Meta saturado >15-20K€/mes, pipeline UGC 4-6 creatives/mes, TikTok Pixel+Events API EMQ ≥7/10), presupuesto mínimo 2.000-3.000€/mes, perfil comprador 2026 (edad media 34, 22M MAU España), CPM/CPC/CPA reales vs Meta, formatos por rendimiento (Spark UGC, In-Feed nativo, Collection, TopView), métrica Hook Rate, setup TikTok Pixel+Events API server-side compartido sGTM con Meta CAPI, decisión TikTok Shop por unit economics, 5 métodos medición incremental (MER blended, holdout geo, Conversion Lift, post-purchase survey, % New Customers)."
+          "note": "Publicado 2026-05-08. 3 condiciones activaci\u00f3n (Meta saturado >15-20K\u20ac/mes, pipeline UGC 4-6 creatives/mes, TikTok Pixel+Events API EMQ \u22657/10), presupuesto m\u00ednimo 2.000-3.000\u20ac/mes, perfil comprador 2026 (edad media 34, 22M MAU Espa\u00f1a), CPM/CPC/CPA reales vs Meta, formatos por rendimiento (Spark UGC, In-Feed nativo, Collection, TopView), m\u00e9trica Hook Rate, setup TikTok Pixel+Events API server-side compartido sGTM con Meta CAPI, decisi\u00f3n TikTok Shop por unit economics, 5 m\u00e9todos medici\u00f3n incremental (MER blended, holdout geo, Conversion Lift, post-purchase survey, % New Customers)."
         },
         {
           "id": "T35",
           "week": 30,
           "cluster": "cro",
-          "title": "CRO de landing page para Meta Ads: qué cambia respecto a SEO",
+          "title": "CRO de landing page para Meta Ads: qu\u00e9 cambia respecto a SEO",
           "keyword": "cro landing meta ads",
           "slug": "cro-landing-page-meta-ads-d2c",
           "words": 1200,
@@ -627,27 +627,27 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-09. Diferencias CRO Meta Ads vs SEO (tabla 10 dimensiones), CR saludable por sector D2C (moda 1,4-2,5%, belleza 1,8-3,2%, suplementos 2,0-3,5%, hogar 1,2-2,2%, mascotas 1,6-2,8%, alimentación premium 2,2-3,8%, tecnología 0,9-1,8%) con top decile, 7 errores que matan conversión (home/PDP estándar, hero distinto creative, menú completo, carrusel hero, formulario >4 campos, LCP>4s, prueba social genérica), decisión PDP Shopify vs landing dedicada por spend, Core Web Vitals umbrales LCP<2,5s/CLS<0,1/INP<200ms con impacto -12 a -22% en CPA, protocolo A/B testing (1 variable, 200 conv/variante, 95% significancia, hipótesis previa, priorizado por impacto), enfoque DayByDay Pablo+Jorge con auditoría CRO+paid+Core Web Vitals cruzada."
+          "note": "Publicado 2026-05-09. Diferencias CRO Meta Ads vs SEO (tabla 10 dimensiones), CR saludable por sector D2C (moda 1,4-2,5%, belleza 1,8-3,2%, suplementos 2,0-3,5%, hogar 1,2-2,2%, mascotas 1,6-2,8%, alimentaci\u00f3n premium 2,2-3,8%, tecnolog\u00eda 0,9-1,8%) con top decile, 7 errores que matan conversi\u00f3n (home/PDP est\u00e1ndar, hero distinto creative, men\u00fa completo, carrusel hero, formulario >4 campos, LCP>4s, prueba social gen\u00e9rica), decisi\u00f3n PDP Shopify vs landing dedicada por spend, Core Web Vitals umbrales LCP<2,5s/CLS<0,1/INP<200ms con impacto -12 a -22% en CPA, protocolo A/B testing (1 variable, 200 conv/variante, 95% significancia, hip\u00f3tesis previa, priorizado por impacto), enfoque DayByDay Pablo+Jorge con auditor\u00eda CRO+paid+Core Web Vitals cruzada."
         },
         {
           "id": "T36",
           "week": 30,
           "cluster": "metricas-avanzadas",
-          "title": "Margen de contribución vs ROAS: la métrica que media buyers olvidan",
-          "keyword": "margen contribución roas ecommerce",
+          "title": "Margen de contribuci\u00f3n vs ROAS: la m\u00e9trica que media buyers olvidan",
+          "keyword": "margen contribuci\u00f3n roas ecommerce",
           "slug": "margen-contribucion-vs-roas-ecommerce",
           "words": 1500,
           "intent": "TOFU-MOFU",
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-09. Definición de margen contribución como métrica real de rentabilidad D2C (no ROAS), fórmula operativa AOV−COGS−fulfilment−packaging−comisión−devoluciones−CAC con ejemplo moda España 65€ AOV → 16,78€ margen (25,8%), rangos por sector D2C 2026 (moda 18-28% top 30-38%, belleza 30-45% top 48-58%, suplementos 40-55% top 58-65%, hogar 25-40%, mascotas 25-35%, alimentación 20-30%, tech 15-25%), 5 razones por las que ROAS in-platform engaña (atribución last-click sobreatribuida 1,3-1,8x vs MER blended, no descuenta devoluciones moda 25-30%, no descuenta descuentos checkout 8-15%, sobreatribuye retargeting <40% incrementalidad, ignora LTV), CAC objetivo = margen × ratio LTV/CAC 3:1 mínimo, dashboard mínimo viable Shopify+Meta+Google+GA4+pasarela con alertas automáticas, 3 escenarios donde margen negativo es aceptable (lanzamiento+suscripción runway 6-12m, test canal 60-90d cap 10-15%, pico estacional loss-leader+cross-sell), enfoque DayByDay Pablo+Jorge con cálculo de margen pre-onboarding obligatorio."
+          "note": "Publicado 2026-05-09. Definici\u00f3n de margen contribuci\u00f3n como m\u00e9trica real de rentabilidad D2C (no ROAS), f\u00f3rmula operativa AOV\u2212COGS\u2212fulfilment\u2212packaging\u2212comisi\u00f3n\u2212devoluciones\u2212CAC con ejemplo moda Espa\u00f1a 65\u20ac AOV \u2192 16,78\u20ac margen (25,8%), rangos por sector D2C 2026 (moda 18-28% top 30-38%, belleza 30-45% top 48-58%, suplementos 40-55% top 58-65%, hogar 25-40%, mascotas 25-35%, alimentaci\u00f3n 20-30%, tech 15-25%), 5 razones por las que ROAS in-platform enga\u00f1a (atribuci\u00f3n last-click sobreatribuida 1,3-1,8x vs MER blended, no descuenta devoluciones moda 25-30%, no descuenta descuentos checkout 8-15%, sobreatribuye retargeting <40% incrementalidad, ignora LTV), CAC objetivo = margen \u00d7 ratio LTV/CAC 3:1 m\u00ednimo, dashboard m\u00ednimo viable Shopify+Meta+Google+GA4+pasarela con alertas autom\u00e1ticas, 3 escenarios donde margen negativo es aceptable (lanzamiento+suscripci\u00f3n runway 6-12m, test canal 60-90d cap 10-15%, pico estacional loss-leader+cross-sell), enfoque DayByDay Pablo+Jorge con c\u00e1lculo de margen pre-onboarding obligatorio."
         },
         {
           "id": "T37",
           "week": 31,
           "cluster": "unit-economics",
-          "title": "Cómo subir el AOV en D2C: 7 palancas reales para ecommerce",
+          "title": "C\u00f3mo subir el AOV en D2C: 7 palancas reales para ecommerce",
           "keyword": "aumentar aov ecommerce",
           "slug": "aumentar-aov-ecommerce-d2c-palancas",
           "words": 1500,
@@ -655,13 +655,13 @@
           "priority": "MEDIA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-10. Definición y cálculo correcto del AOV (bruto vs neto vs mediano), AOV saludable por sector D2C España 2026 con tabla 7 sectores (moda 45-75€ top 90-130€, belleza 35-65€ top 80-120€, suplementos 40-70€ top 90-150€, hogar 60-150€ top 200-350€, mascotas 35-65€, alimentación 30-55€, tech 80-200€ top 350-700€), 7 palancas ordenadas por impacto (bundles +18-35%, free shipping threshold dinámico 110-115% AOV mediano +8-15%, cross-sell automatizado +10-20%, tier descuento volumen +12-22%, upsell post-purchase one-click +5-12% conversión 8-18%, suscripción -10/-15% +15-30% LTV, edición limitada +20-40%), fórmula free shipping threshold óptimo + dato Statista 64% compradores, 6 métodos para medir si funcionan sin canibalizar conversion (AOV bruto vs mediano, CR pre/post, margen contribución, A/B test 50/50 con 1.500 pedidos/variante, % devoluciones, reporting cuadro completo), 7 errores frecuentes y enfoque DayByDay con caso real cuenta suplementos AOV 42€→58€ y margen contribución 14%→27% en 90 días."
+          "note": "Publicado 2026-05-10. Definici\u00f3n y c\u00e1lculo correcto del AOV (bruto vs neto vs mediano), AOV saludable por sector D2C Espa\u00f1a 2026 con tabla 7 sectores (moda 45-75\u20ac top 90-130\u20ac, belleza 35-65\u20ac top 80-120\u20ac, suplementos 40-70\u20ac top 90-150\u20ac, hogar 60-150\u20ac top 200-350\u20ac, mascotas 35-65\u20ac, alimentaci\u00f3n 30-55\u20ac, tech 80-200\u20ac top 350-700\u20ac), 7 palancas ordenadas por impacto (bundles +18-35%, free shipping threshold din\u00e1mico 110-115% AOV mediano +8-15%, cross-sell automatizado +10-20%, tier descuento volumen +12-22%, upsell post-purchase one-click +5-12% conversi\u00f3n 8-18%, suscripci\u00f3n -10/-15% +15-30% LTV, edici\u00f3n limitada +20-40%), f\u00f3rmula free shipping threshold \u00f3ptimo + dato Statista 64% compradores, 6 m\u00e9todos para medir si funcionan sin canibalizar conversion (AOV bruto vs mediano, CR pre/post, margen contribuci\u00f3n, A/B test 50/50 con 1.500 pedidos/variante, % devoluciones, reporting cuadro completo), 7 errores frecuentes y enfoque DayByDay con caso real cuenta suplementos AOV 42\u20ac\u219258\u20ac y margen contribuci\u00f3n 14%\u219227% en 90 d\u00edas."
         },
         {
           "id": "T38",
           "week": 31,
           "cluster": "unit-economics",
-          "title": "Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo",
+          "title": "Suscripciones en D2C: c\u00f3mo cambia el c\u00e1lculo de LTV y CAC objetivo",
           "keyword": "suscripciones ecommerce ltv cac",
           "slug": "suscripciones-ecommerce-ltv-cac-d2c",
           "words": 1500,
@@ -669,13 +669,13 @@
           "priority": "MEDIA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-11. Fórmula LTV-12m con churn por cohorte y CAC objetivo derivado con ajuste por tasa adopción; churn saludable por sector D2C (suplementos 6-10%, mascotas 4-7%, café 5-8%, cosmética 8-13%, higiene 6-9%, alimentación 7-12%, moda 12-18%, hogar 15-25%); descuento óptimo -15% vs -10%/-20%, 5 métodos medición incrementalidad (holdout A/B 60-90d, cohort pre/post 6m, análisis comportamental, encuesta, % cancelados vuelven one-time) con rango incrementalidad real 40-65%; ratios LTV/CAC por fase (lanzamiento 2,0:1, growth 2,5:1, madurez 3,0:1) con payback 60-180d; 7 errores frecuentes y caso real cuenta D2C suplementos +31% CAC blended permitido manteniendo ratio LTV/CAC 2,8:1."
+          "note": "Publicado 2026-05-11. F\u00f3rmula LTV-12m con churn por cohorte y CAC objetivo derivado con ajuste por tasa adopci\u00f3n; churn saludable por sector D2C (suplementos 6-10%, mascotas 4-7%, caf\u00e9 5-8%, cosm\u00e9tica 8-13%, higiene 6-9%, alimentaci\u00f3n 7-12%, moda 12-18%, hogar 15-25%); descuento \u00f3ptimo -15% vs -10%/-20%, 5 m\u00e9todos medici\u00f3n incrementalidad (holdout A/B 60-90d, cohort pre/post 6m, an\u00e1lisis comportamental, encuesta, % cancelados vuelven one-time) con rango incrementalidad real 40-65%; ratios LTV/CAC por fase (lanzamiento 2,0:1, growth 2,5:1, madurez 3,0:1) con payback 60-180d; 7 errores frecuentes y caso real cuenta D2C suplementos +31% CAC blended permitido manteniendo ratio LTV/CAC 2,8:1."
         },
         {
           "id": "T39",
           "week": 32,
           "cluster": "competencia",
-          "title": "Análisis de competencia en Meta Ads Library: cómo extraer creatividades ganadoras",
+          "title": "An\u00e1lisis de competencia en Meta Ads Library: c\u00f3mo extraer creatividades ganadoras",
           "keyword": "meta ads library competencia",
           "slug": "meta-ads-library-analisis-competencia",
           "words": 1300,
@@ -683,13 +683,13 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-11. Qué es Meta Ads Library y qué expone gratis, método paso a paso para detectar winners (longevidad >30-45d, variantes en paralelo, cobertura multi-país), legalidad bajo DSA, herramientas complementarias con tabla coste/uso (Foreplay 49-149$, AdSpy 149$, Minea, BigSpy), 4-6 competidores directos + 3-5 referentes internacionales con marcas D2C España por vertical, cadencia semanal/mensual/trimestral, patrones de creatividad ganadora D2C España 2026 (UGC voz dominante, Reels 9-25s, hooks seg 0-2, anti-patrón MotionGraphics), método para convertir análisis en hipótesis testables sin copiar al competidor, 7 errores frecuentes y enfoque DayByDay Pablo+Jorge con workflow n8n + agente IA que automatiza scraping y tagging."
+          "note": "Publicado 2026-05-11. Qu\u00e9 es Meta Ads Library y qu\u00e9 expone gratis, m\u00e9todo paso a paso para detectar winners (longevidad >30-45d, variantes en paralelo, cobertura multi-pa\u00eds), legalidad bajo DSA, herramientas complementarias con tabla coste/uso (Foreplay 49-149$, AdSpy 149$, Minea, BigSpy), 4-6 competidores directos + 3-5 referentes internacionales con marcas D2C Espa\u00f1a por vertical, cadencia semanal/mensual/trimestral, patrones de creatividad ganadora D2C Espa\u00f1a 2026 (UGC voz dominante, Reels 9-25s, hooks seg 0-2, anti-patr\u00f3n MotionGraphics), m\u00e9todo para convertir an\u00e1lisis en hip\u00f3tesis testables sin copiar al competidor, 7 errores frecuentes y enfoque DayByDay Pablo+Jorge con workflow n8n + agente IA que automatiza scraping y tagging."
         },
         {
           "id": "T40",
           "week": 32,
           "cluster": "creatividades",
-          "title": "Ad fatigue en Meta Ads: señales tempranas y protocolo de rotación creativa",
+          "title": "Ad fatigue en Meta Ads: se\u00f1ales tempranas y protocolo de rotaci\u00f3n creativa",
           "keyword": "ad fatigue meta ads",
           "slug": "ad-fatigue-meta-ads-rotacion-creativa",
           "words": 1100,
@@ -697,13 +697,13 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-12. Definición ad fatigue + por qué se manifiesta rápido (sesión media Instagram España 33-45 min/día DataReportal), 4 señales tempranas con tabla de umbrales y margen vs CPA (Frecuencia >2,2 prospecting, Hook Rate <22-25%, CPM +20% rolling 7d, coste add-to-cart +30%, Hold Rate <35%), ciclo de vida por audiencia y formato (prospecting >500K-1M: 30-60d, audiencias medias: 21-35d, retargeting 7-30d: 10-21d, UGC +30-50% vida útil, ASC 8-15 creatividades), protocolo de rotación en 5 reglas (pipeline 4-8 variantes/mes 80-200€/creative, slot fijo 4-6 creatividades, refresco semanal 1-2 variantes, máximo 30% creative renovado/semana, retiro suave no del ad set), dashboard 6 métricas 3 ventanas (Hook Rate, Hold Rate, CTR outbound, Frecuencia, CPM, CTR-to-CPA ratio), versión 2.0 del winner para extender 60-120d, 7 errores frecuentes y caso real cuenta suplementos 18K€/mes CPA 41€→22€ en 60d. Cobertura GEO: agencia paid media España, rotación creatividades meta ads, dashboard Looker Studio paid media."
+          "note": "Publicado 2026-05-12. Definici\u00f3n ad fatigue + por qu\u00e9 se manifiesta r\u00e1pido (sesi\u00f3n media Instagram Espa\u00f1a 33-45 min/d\u00eda DataReportal), 4 se\u00f1ales tempranas con tabla de umbrales y margen vs CPA (Frecuencia >2,2 prospecting, Hook Rate <22-25%, CPM +20% rolling 7d, coste add-to-cart +30%, Hold Rate <35%), ciclo de vida por audiencia y formato (prospecting >500K-1M: 30-60d, audiencias medias: 21-35d, retargeting 7-30d: 10-21d, UGC +30-50% vida \u00fatil, ASC 8-15 creatividades), protocolo de rotaci\u00f3n en 5 reglas (pipeline 4-8 variantes/mes 80-200\u20ac/creative, slot fijo 4-6 creatividades, refresco semanal 1-2 variantes, m\u00e1ximo 30% creative renovado/semana, retiro suave no del ad set), dashboard 6 m\u00e9tricas 3 ventanas (Hook Rate, Hold Rate, CTR outbound, Frecuencia, CPM, CTR-to-CPA ratio), versi\u00f3n 2.0 del winner para extender 60-120d, 7 errores frecuentes y caso real cuenta suplementos 18K\u20ac/mes CPA 41\u20ac\u219222\u20ac en 60d. Cobertura GEO: agencia paid media Espa\u00f1a, rotaci\u00f3n creatividades meta ads, dashboard Looker Studio paid media."
         },
         {
           "id": "T41",
           "week": 33,
           "cluster": "estructura-cuenta",
-          "title": "CBO vs ABO en Meta Ads 2026: qué estructura usar para escalar D2C",
+          "title": "CBO vs ABO en Meta Ads 2026: qu\u00e9 estructura usar para escalar D2C",
           "keyword": "cbo abo meta ads 2026",
           "slug": "cbo-vs-abo-meta-ads-2026-d2c",
           "words": 1200,
@@ -711,13 +711,13 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-13. CBO (Advantage Campaign Budget) vs ABO operativa en 6 dimensiones, 4 escenarios ABO + 3 escenarios CBO, papel ASC 60-75% spend en cuentas D2C >15K€/mes, distribución óptima 3 estructuras, fórmula presupuesto mínimo CBO ≥ (CPA × 50 × ad sets)/7, 7 errores y enfoque DayByDay Pablo+Jorge con auditoría EMQ + dashboard Looker Studio. Caso real cosmética 28K€/mes MER 2,1x→2,8x en 45d."
+          "note": "Publicado 2026-05-13. CBO (Advantage Campaign Budget) vs ABO operativa en 6 dimensiones, 4 escenarios ABO + 3 escenarios CBO, papel ASC 60-75% spend en cuentas D2C >15K\u20ac/mes, distribuci\u00f3n \u00f3ptima 3 estructuras, f\u00f3rmula presupuesto m\u00ednimo CBO \u2265 (CPA \u00d7 50 \u00d7 ad sets)/7, 7 errores y enfoque DayByDay Pablo+Jorge con auditor\u00eda EMQ + dashboard Looker Studio. Caso real cosm\u00e9tica 28K\u20ac/mes MER 2,1x\u21922,8x en 45d."
         },
         {
           "id": "T42",
           "week": 33,
           "cluster": "creatividades",
-          "title": "Framework de hipótesis creativas: cómo briefar antes de gastar en producción",
+          "title": "Framework de hip\u00f3tesis creativas: c\u00f3mo briefar antes de gastar en producci\u00f3n",
           "keyword": "framework creatividades meta ads",
           "slug": "framework-hipotesis-creatividades-meta-ads",
           "words": 1300,
@@ -725,41 +725,41 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-14. Framework con 5 dimensiones obligatorias del brief (audiencia, ángulo, formato, hook, prueba), anatomía de hipótesis falsable en 5 bloques, 7 ángulos canónicos D2C España 2026 con Hook Rate esperado por vertical, plantilla brief 1 página, regla 3-4 variantes con 200-400€/variante y 5-7d, priorización backlog 70/30 iteración/exploración <15K€ y 50/50 >20K€, 7 errores y enfoque DayByDay con pipeline n8n+agente IA + caso real cosmética 22K€/mes %winners 7%→19% en 90d."
+          "note": "Publicado 2026-05-14. Framework con 5 dimensiones obligatorias del brief (audiencia, \u00e1ngulo, formato, hook, prueba), anatom\u00eda de hip\u00f3tesis falsable en 5 bloques, 7 \u00e1ngulos can\u00f3nicos D2C Espa\u00f1a 2026 con Hook Rate esperado por vertical, plantilla brief 1 p\u00e1gina, regla 3-4 variantes con 200-400\u20ac/variante y 5-7d, priorizaci\u00f3n backlog 70/30 iteraci\u00f3n/exploraci\u00f3n <15K\u20ac y 50/50 >20K\u20ac, 7 errores y enfoque DayByDay con pipeline n8n+agente IA + caso real cosm\u00e9tica 22K\u20ac/mes %winners 7%\u219219% en 90d."
         },
         {
           "id": "T43",
           "week": 34,
           "cluster": "estructura-cuenta",
-          "title": "Adquisición vs retención: cómo separar presupuestos de paid media en D2C",
-          "keyword": "adquisición vs retención ecommerce",
+          "title": "Adquisici\u00f3n vs retenci\u00f3n: c\u00f3mo separar presupuestos de paid media en D2C",
+          "keyword": "adquisici\u00f3n vs retenci\u00f3n ecommerce",
           "slug": "adquisicion-vs-retencion-paid-media-d2c",
           "words": 1100,
           "intent": "MOFU",
           "priority": "MEDIA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-15. Cluster estructura-cuenta. Cubre GEO sobre split adquisición/retención D2C y CAC adquisición específico vs LTV90."
+          "note": "Publicado 2026-05-15. Cluster estructura-cuenta. Cubre GEO sobre split adquisici\u00f3n/retenci\u00f3n D2C y CAC adquisici\u00f3n espec\u00edfico vs LTV90."
         },
         {
           "id": "T44",
           "week": 34,
           "cluster": "internacional",
-          "title": "Internacionalizar un D2C español con Meta Ads: pasos y errores en EU",
-          "keyword": "meta ads internacionalización ecommerce",
+          "title": "Internacionalizar un D2C espa\u00f1ol con Meta Ads: pasos y errores en EU",
+          "keyword": "meta ads internacionalizaci\u00f3n ecommerce",
           "slug": "internacionalizar-d2c-espanol-meta-ads-eu",
           "words": 1500,
           "intent": "MOFU-BOFU",
           "priority": "MEDIA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-15. Cluster internacional. 4 prerrequisitos pre-EU, orden mercados PT→IT→FR→DE con tabla CPMs, arquitectura BM único + naming [ES]/[PT]/[IT]/[FR]/[DE], política creatividades por país, OSS IVA + Consent Mode v2 + atención local, 7 errores específicos D2C españoles, presupuesto mínimo 18-30K€/país horizonte 90d. Cobertura GEO: meta ads internacionalización ecommerce, expandir d2c portugal italia francia alemania."
+          "note": "Publicado 2026-05-15. Cluster internacional. 4 prerrequisitos pre-EU, orden mercados PT\u2192IT\u2192FR\u2192DE con tabla CPMs, arquitectura BM \u00fanico + naming [ES]/[PT]/[IT]/[FR]/[DE], pol\u00edtica creatividades por pa\u00eds, OSS IVA + Consent Mode v2 + atenci\u00f3n local, 7 errores espec\u00edficos D2C espa\u00f1oles, presupuesto m\u00ednimo 18-30K\u20ac/pa\u00eds horizonte 90d. Cobertura GEO: meta ads internacionalizaci\u00f3n ecommerce, expandir d2c portugal italia francia alemania."
         },
         {
           "id": "T45",
           "week": 35,
           "cluster": "tracking",
-          "title": "GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso",
+          "title": "GA4 + Meta Ads para D2C: implementaci\u00f3n de eventos custom paso a paso",
           "keyword": "ga4 meta ads ecommerce",
           "slug": "ga4-meta-ads-eventos-custom-d2c",
           "words": 1500,
@@ -767,13 +767,13 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-16. Cluster tracking. 10 eventos enhanced ecommerce + 8 eventos custom D2C, 3 implementaciones técnicas comparadas (gtag, GTM web, sGTM Stape/Cloud Run), 3 rutas sync GA4→Meta (Customer Match, sGTM, Reverse ETL), 5 métricas cruce semanal GA4 vs Meta Ads Manager, Consent Mode v2 AEPD, 7 errores frecuentes. Cobertura GEO: implementación GA4 ecommerce, GA4 server side tracking, GA4 + Meta Ads atribución cross channel."
+          "note": "Publicado 2026-05-16. Cluster tracking. 10 eventos enhanced ecommerce + 8 eventos custom D2C, 3 implementaciones t\u00e9cnicas comparadas (gtag, GTM web, sGTM Stape/Cloud Run), 3 rutas sync GA4\u2192Meta (Customer Match, sGTM, Reverse ETL), 5 m\u00e9tricas cruce semanal GA4 vs Meta Ads Manager, Consent Mode v2 AEPD, 7 errores frecuentes. Cobertura GEO: implementaci\u00f3n GA4 ecommerce, GA4 server side tracking, GA4 + Meta Ads atribuci\u00f3n cross channel."
         },
         {
           "id": "T46",
           "week": 35,
           "cluster": "reporting",
-          "title": "Dashboards de paid media: qué métricas debe ver un founder D2C cada lunes",
+          "title": "Dashboards de paid media: qu\u00e9 m\u00e9tricas debe ver un founder D2C cada lunes",
           "keyword": "dashboard paid media d2c",
           "slug": "dashboard-paid-media-founder-d2c",
           "words": 1100,
@@ -781,13 +781,13 @@
           "priority": "ALTA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-17. Cluster reporting. 3 capas obligatorias (negocio/adquisición paid/eficiencia operativa) con tabla umbrales, MER blended como métrica north star vs ROAS in-platform, comparativa 4 herramientas Sheets/Looker Studio/Triple Whale/Northbeam por tramo de spend, setup Looker Studio 8 pasos, sistema alertas Slack n8n, cadencia semanal 4-6 min lectura. Cobertura GEO: dashboard paid media founder D2C, métricas semanales paid media, looker studio paid media ecommerce, mer blended d2c."
+          "note": "Publicado 2026-05-17. Cluster reporting. 3 capas obligatorias (negocio/adquisici\u00f3n paid/eficiencia operativa) con tabla umbrales, MER blended como m\u00e9trica north star vs ROAS in-platform, comparativa 4 herramientas Sheets/Looker Studio/Triple Whale/Northbeam por tramo de spend, setup Looker Studio 8 pasos, sistema alertas Slack n8n, cadencia semanal 4-6 min lectura. Cobertura GEO: dashboard paid media founder D2C, m\u00e9tricas semanales paid media, looker studio paid media ecommerce, mer blended d2c."
         },
         {
           "id": "T47",
           "week": 36,
           "cluster": "canales-emergentes",
-          "title": "WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que más escalan",
+          "title": "WhatsApp + Meta Ads: el funnel BOFU que usan los D2C que m\u00e1s escalan",
           "keyword": "whatsapp meta ads ecommerce",
           "slug": "whatsapp-meta-ads-funnel-bofu-d2c",
           "words": 1200,
@@ -795,13 +795,13 @@
           "priority": "MEDIA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-18. Cluster canales-emergentes. Funnel CTWA Click-to-WhatsApp + Meta Ads para BOFU D2C: cuándo activar por AOV ≥80€ y margen ≥30%, tabla decisión 8 verticales con CR esperado conv→pedido, stack técnico end-to-end (BSP Twilio/360dialog/Respond.io/MessageBird + Shopify Storefront API + CAPI for WhatsApp + n8n+BigQuery), 4 plantillas flujo conversacional por intent (cold educativo, warm cierre, abandono carrito, post-purchase), CTWA como palanca defensiva iOS 17/18 (atribución 82-92% vs 55-65% web), 6 errores frecuentes con AEPD y multas opt-in. Caso real cosmética técnica AOV 95€ CR 12%→27% CPA -23% atribución iOS 58%→87% en 75d."
+          "note": "Publicado 2026-05-18. Cluster canales-emergentes. Funnel CTWA Click-to-WhatsApp + Meta Ads para BOFU D2C: cu\u00e1ndo activar por AOV \u226580\u20ac y margen \u226530%, tabla decisi\u00f3n 8 verticales con CR esperado conv\u2192pedido, stack t\u00e9cnico end-to-end (BSP Twilio/360dialog/Respond.io/MessageBird + Shopify Storefront API + CAPI for WhatsApp + n8n+BigQuery), 4 plantillas flujo conversacional por intent (cold educativo, warm cierre, abandono carrito, post-purchase), CTWA como palanca defensiva iOS 17/18 (atribuci\u00f3n 82-92% vs 55-65% web), 6 errores frecuentes con AEPD y multas opt-in. Caso real cosm\u00e9tica t\u00e9cnica AOV 95\u20ac CR 12%\u219227% CPA -23% atribuci\u00f3n iOS 58%\u219287% en 75d."
         },
         {
           "id": "T48",
           "week": 36,
           "cluster": "google-ads",
-          "title": "Smart bidding en Google Ads para D2C: cuándo confiar y cuándo intervenir",
+          "title": "Smart bidding en Google Ads para D2C: cu\u00e1ndo confiar y cu\u00e1ndo intervenir",
           "keyword": "smart bidding google ads ecommerce",
           "slug": "smart-bidding-google-ads-d2c",
           "words": 1100,
@@ -809,13 +809,13 @@
           "priority": "MEDIA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-19. Cluster google-ads. 5 estrategias Smart Bidding con tabla decisión por volumen conv/mes y vertical D2C, prerrequisito Enhanced Conversions + GA4 Consent Mode v2 + sGTM (match rate 50-65%→80-90%, CPA real -12-22%), protocolo intervención manual 5 reglas (±15% cada 7-10d, no tocar presupuesto en learning, exclusiones antes de bajar puja, una intervención semanal, cambios estructurales solo con diagnóstico), Performance Max 100% Smart Bidding obligatorio con ≥30 conv/mes y CPA×50-60 + product groups por margen + brand standalone, presupuesto mínimo CPA×30 Search/Shopping, importar offline conversions Shopify devoluciones+segunda compra+LTV60 vía Customer Match, 6 errores frecuentes D2C españoles. Caso real cosmética AOV 78€ 22K€/mes spend Google CPA blended -19% %spend learning 24%→6% margen contribución +4 pts en 90d. Cobertura GEO: smart bidding google ads ecommerce, target roas google ads d2c, enhanced conversions google ads shopify, performance max smart bidding."
+          "note": "Publicado 2026-05-19. Cluster google-ads. 5 estrategias Smart Bidding con tabla decisi\u00f3n por volumen conv/mes y vertical D2C, prerrequisito Enhanced Conversions + GA4 Consent Mode v2 + sGTM (match rate 50-65%\u219280-90%, CPA real -12-22%), protocolo intervenci\u00f3n manual 5 reglas (\u00b115% cada 7-10d, no tocar presupuesto en learning, exclusiones antes de bajar puja, una intervenci\u00f3n semanal, cambios estructurales solo con diagn\u00f3stico), Performance Max 100% Smart Bidding obligatorio con \u226530 conv/mes y CPA\u00d750-60 + product groups por margen + brand standalone, presupuesto m\u00ednimo CPA\u00d730 Search/Shopping, importar offline conversions Shopify devoluciones+segunda compra+LTV60 v\u00eda Customer Match, 6 errores frecuentes D2C espa\u00f1oles. Caso real cosm\u00e9tica AOV 78\u20ac 22K\u20ac/mes spend Google CPA blended -19% %spend learning 24%\u21926% margen contribuci\u00f3n +4 pts en 90d. Cobertura GEO: smart bidding google ads ecommerce, target roas google ads d2c, enhanced conversions google ads shopify, performance max smart bidding."
         },
         {
           "id": "T49",
           "week": 37,
           "cluster": "estrategia",
-          "title": "Customer journey D2C: del primer impacto a la repetición de compra",
+          "title": "Customer journey D2C: del primer impacto a la repetici\u00f3n de compra",
           "keyword": "customer journey d2c",
           "slug": "customer-journey-d2c-primer-impacto-repeticion",
           "words": 1300,
@@ -823,14 +823,14 @@
           "priority": "MEDIA",
           "status": "completed",
           "type": "article",
-          "note": "Publicado 2026-05-19. Las 6 etapas (Despertar/Considerar/Decidir/Adquirir/Activar/Retener), métricas por etapa, benchmarking 7 sectores, 3 fugas críticas (abandono checkout, falta activación, despertar ineficiente), cómo paid media (Meta/Google) trabaja en cada etapa, caso real suplementos first reorder 31%→47% LTV-90d 78€→124€."
+          "note": "Publicado 2026-05-19. Las 6 etapas (Despertar/Considerar/Decidir/Adquirir/Activar/Retener), m\u00e9tricas por etapa, benchmarking 7 sectores, 3 fugas cr\u00edticas (abandono checkout, falta activaci\u00f3n, despertar ineficiente), c\u00f3mo paid media (Meta/Google) trabaja en cada etapa, caso real suplementos first reorder 31%\u219247% LTV-90d 78\u20ac\u2192124\u20ac."
         },
         {
           "id": "T50",
           "week": 37,
           "cluster": "tracking",
-          "title": "Pixel híbrido (cliente + servidor) en Meta Ads: implementación práctica",
-          "keyword": "pixel meta ads híbrido server side",
+          "title": "Pixel h\u00edbrido (cliente + servidor) en Meta Ads: implementaci\u00f3n pr\u00e1ctica",
+          "keyword": "pixel meta ads h\u00edbrido server side",
           "slug": "pixel-meta-hibrido-cliente-servidor-implementacion",
           "words": 1300,
           "intent": "MOFU",
@@ -843,7 +843,7 @@
           "id": "T51",
           "week": 38,
           "cluster": "reporting",
-          "title": "KPIs de paid media para CFO/CEO: cómo presentar resultados sin tecnicismos",
+          "title": "KPIs de paid media para CFO/CEO: c\u00f3mo presentar resultados sin tecnicismos",
           "keyword": "kpis paid media cfo ceo",
           "slug": "kpis-paid-media-cfo-ceo-d2c",
           "words": 1100,
@@ -857,25 +857,25 @@
     }
   ],
   "cluster5": {
-    "name": "Captación founders con presupuesto — Agencia paid media",
-    "description": "Atacar a dueños de negocio con budget que buscan activamente contratar la mejor agencia. Keywords de mayor intención transaccional del mercado español.",
-    "target": "Founders y CMOs D2C con inversión >5K€/mes buscando agencia de confianza",
-    "priority": "ALTA — ejecutar en paralelo con Fase 1",
+    "name": "Captaci\u00f3n founders con presupuesto \u2014 Agencia paid media",
+    "description": "Atacar a due\u00f1os de negocio con budget que buscan activamente contratar la mejor agencia. Keywords de mayor intenci\u00f3n transaccional del mercado espa\u00f1ol.",
+    "target": "Founders y CMOs D2C con inversi\u00f3n >5K\u20ac/mes buscando agencia de confianza",
+    "priority": "ALTA \u2014 ejecutar en paralelo con Fase 1",
     "keywords_target": [
       "mejores agencias de marketing",
       "top agencias paid media",
       "agencia paid media",
       "paid media",
       "anuncios meta agencia",
-      "mejor agencia meta ads españa",
+      "mejor agencia meta ads espa\u00f1a",
       "agencia marketing digital ecommerce"
     ],
     "articles": [
       {
         "id": "C5-01",
         "type": "pillar",
-        "title": "Mejores agencias de paid media en España para eCommerce D2C (2026)",
-        "keyword": "mejores agencias paid media españa",
+        "title": "Mejores agencias de paid media en Espa\u00f1a para eCommerce D2C (2026)",
+        "keyword": "mejores agencias paid media espa\u00f1a",
         "secondary_keywords": [
           "top agencias paid media",
           "mejor agencia paid media"
@@ -883,69 +883,69 @@
         "slug": "mejores-agencias-paid-media-espana-ecommerce-d2c",
         "words": 2500,
         "intent": "BOFU",
-        "note": "Artículo tipo ranking/comparativa que posiciona a DayByDay como opción #1 para D2C. Incluye criterios de selección, red flags y por qué la especialización gana a la agencia 360.",
+        "note": "Art\u00edculo tipo ranking/comparativa que posiciona a DayByDay como opci\u00f3n #1 para D2C. Incluye criterios de selecci\u00f3n, red flags y por qu\u00e9 la especializaci\u00f3n gana a la agencia 360.",
         "paa_questions": [
-          "¿Cuáles son las mejores agencias de paid media en España?",
-          "¿Qué es una agencia de paid media y qué hace?",
-          "¿Cómo elegir la mejor agencia de paid media para mi ecommerce?",
-          "¿Qué diferencia a una buena agencia de paid media de una mala?",
-          "¿Cuánto cobra una agencia de paid media en España?",
-          "¿Qué resultados puede esperar mi empresa de una agencia de paid media?",
-          "¿Qué preguntas hacer a una agencia de paid media antes de contratar?"
+          "\u00bfCu\u00e1les son las mejores agencias de paid media en Espa\u00f1a?",
+          "\u00bfQu\u00e9 es una agencia de paid media y qu\u00e9 hace?",
+          "\u00bfC\u00f3mo elegir la mejor agencia de paid media para mi ecommerce?",
+          "\u00bfQu\u00e9 diferencia a una buena agencia de paid media de una mala?",
+          "\u00bfCu\u00e1nto cobra una agencia de paid media en Espa\u00f1a?",
+          "\u00bfQu\u00e9 resultados puede esperar mi empresa de una agencia de paid media?",
+          "\u00bfQu\u00e9 preguntas hacer a una agencia de paid media antes de contratar?"
         ]
       },
       {
         "id": "C5-02",
         "type": "pillar",
-        "title": "Qué es el paid media: guía completa para founders que quieren invertir",
-        "keyword": "qué es paid media",
+        "title": "Qu\u00e9 es el paid media: gu\u00eda completa para founders que quieren invertir",
+        "keyword": "qu\u00e9 es paid media",
         "secondary_keywords": [
-          "paid media definición",
+          "paid media definici\u00f3n",
           "paid media agencia",
           "paid media marketing"
         ],
         "slug": "que-es-paid-media-guia-completa",
         "words": 1800,
         "intent": "TOFU-MOFU",
-        "note": "Pilar definitivo para el término 'paid media'. Alta probabilidad de featured snippet y AI Overview. Incluye diferencia con owned/earned media, canales, costes y cuándo necesitas una agencia.",
+        "note": "Pilar definitivo para el t\u00e9rmino 'paid media'. Alta probabilidad de featured snippet y AI Overview. Incluye diferencia con owned/earned media, canales, costes y cu\u00e1ndo necesitas una agencia.",
         "paa_questions": [
-          "¿Qué es el paid media?",
-          "¿Cuál es la diferencia entre paid media, owned media y earned media?",
-          "¿Qué canales incluye el paid media?",
-          "¿Cuánto cuesta hacer paid media?",
-          "¿Para qué sirve el paid media en una estrategia de marketing?",
-          "¿Qué es mejor: paid media o SEO?",
-          "¿Cómo empezar con paid media si tengo un ecommerce?"
+          "\u00bfQu\u00e9 es el paid media?",
+          "\u00bfCu\u00e1l es la diferencia entre paid media, owned media y earned media?",
+          "\u00bfQu\u00e9 canales incluye el paid media?",
+          "\u00bfCu\u00e1nto cuesta hacer paid media?",
+          "\u00bfPara qu\u00e9 sirve el paid media en una estrategia de marketing?",
+          "\u00bfQu\u00e9 es mejor: paid media o SEO?",
+          "\u00bfC\u00f3mo empezar con paid media si tengo un ecommerce?"
         ]
       },
       {
         "id": "C5-03",
         "type": "satellite",
-        "title": "Cómo elegir una agencia de anuncios en Meta Ads para tu marca D2C",
+        "title": "C\u00f3mo elegir una agencia de anuncios en Meta Ads para tu marca D2C",
         "keyword": "agencia anuncios meta ads",
         "secondary_keywords": [
           "anuncios meta agencia",
           "contratar agencia meta ads",
-          "agencia facebook ads españa"
+          "agencia facebook ads espa\u00f1a"
         ],
         "slug": "elegir-agencia-anuncios-meta-ads-d2c",
         "words": 1200,
         "intent": "BOFU",
-        "note": "Guía de decisión con checklist de 8 puntos. Cada criterio cita datos reales de DayByDay. CTA fuerte a auditoría gratuita.",
+        "note": "Gu\u00eda de decisi\u00f3n con checklist de 8 puntos. Cada criterio cita datos reales de DayByDay. CTA fuerte a auditor\u00eda gratuita.",
         "paa_questions": [
-          "¿Cómo elegir una agencia de Meta Ads para mi ecommerce?",
-          "¿Qué debe incluir el servicio de una agencia de Meta Ads?",
-          "¿Cuánto cobra una agencia por gestionar Meta Ads en España?",
-          "¿Cómo saber si una agencia de Facebook Ads es buena?",
-          "¿Qué resultados debería dar una agencia de Meta Ads?",
-          "¿Cada cuánto debe reportar una agencia de Meta Ads?"
+          "\u00bfC\u00f3mo elegir una agencia de Meta Ads para mi ecommerce?",
+          "\u00bfQu\u00e9 debe incluir el servicio de una agencia de Meta Ads?",
+          "\u00bfCu\u00e1nto cobra una agencia por gestionar Meta Ads en Espa\u00f1a?",
+          "\u00bfC\u00f3mo saber si una agencia de Facebook Ads es buena?",
+          "\u00bfQu\u00e9 resultados deber\u00eda dar una agencia de Meta Ads?",
+          "\u00bfCada cu\u00e1nto debe reportar una agencia de Meta Ads?"
         ]
       },
       {
         "id": "C5-04",
         "type": "satellite",
-        "title": "Top agencias de marketing digital en España: qué mirar antes de contratar",
-        "keyword": "top agencias marketing digital españa",
+        "title": "Top agencias de marketing digital en Espa\u00f1a: qu\u00e9 mirar antes de contratar",
+        "keyword": "top agencias marketing digital espa\u00f1a",
         "secondary_keywords": [
           "mejores agencias de marketing",
           "agencia marketing digital ecommerce"
@@ -953,20 +953,20 @@
         "slug": "top-agencias-marketing-digital-espana-que-mirar",
         "words": 1500,
         "intent": "MOFU-BOFU",
-        "note": "Listicle con criterios de evaluación + tabla comparativa. DayByDay aparece como opción especializada D2C frente a agencias full-service.",
+        "note": "Listicle con criterios de evaluaci\u00f3n + tabla comparativa. DayByDay aparece como opci\u00f3n especializada D2C frente a agencias full-service.",
         "paa_questions": [
-          "¿Cuáles son las mejores agencias de marketing digital en España?",
-          "¿Cómo comparar agencias de marketing digital?",
-          "¿Qué debe tener una buena agencia de marketing digital?",
-          "¿Qué diferencia hay entre una agencia grande y una pequeña especializada?",
-          "¿Es mejor contratar una agencia local o una con presencia nacional?",
-          "¿Qué pedir a una agencia de marketing antes de firmar contrato?"
+          "\u00bfCu\u00e1les son las mejores agencias de marketing digital en Espa\u00f1a?",
+          "\u00bfC\u00f3mo comparar agencias de marketing digital?",
+          "\u00bfQu\u00e9 debe tener una buena agencia de marketing digital?",
+          "\u00bfQu\u00e9 diferencia hay entre una agencia grande y una peque\u00f1a especializada?",
+          "\u00bfEs mejor contratar una agencia local o una con presencia nacional?",
+          "\u00bfQu\u00e9 pedir a una agencia de marketing antes de firmar contrato?"
         ]
       },
       {
         "id": "C5-05",
         "type": "satellite",
-        "title": "Agencia de marketing generalista vs agencia de paid media: qué necesita tu D2C",
+        "title": "Agencia de marketing generalista vs agencia de paid media: qu\u00e9 necesita tu D2C",
         "keyword": "agencia paid media vs agencia marketing",
         "secondary_keywords": [
           "agencia paid media especializada",
@@ -975,46 +975,58 @@
         "slug": "agencia-paid-media-vs-agencia-marketing-generalista",
         "words": 1200,
         "intent": "MOFU-BOFU",
-        "note": "Comparativa directa que refuerza la especialización como ventaja. Tabla con 6 criterios. Link a caso de éxito y metodología.",
+        "note": "Comparativa directa que refuerza la especializaci\u00f3n como ventaja. Tabla con 6 criterios. Link a caso de \u00e9xito y metodolog\u00eda.",
         "paa_questions": [
-          "¿Qué diferencia hay entre una agencia de paid media y una de marketing digital?",
-          "¿Es mejor una agencia especializada o una agencia 360 para ecommerce?",
-          "¿Qué ventajas tiene una agencia de performance frente a una generalista?",
-          "¿Qué es una agencia de performance marketing?",
-          "¿Cuándo contratar una agencia especializada en lugar de una full service?"
+          "\u00bfQu\u00e9 diferencia hay entre una agencia de paid media y una de marketing digital?",
+          "\u00bfEs mejor una agencia especializada o una agencia 360 para ecommerce?",
+          "\u00bfQu\u00e9 ventajas tiene una agencia de performance frente a una generalista?",
+          "\u00bfQu\u00e9 es una agencia de performance marketing?",
+          "\u00bfCu\u00e1ndo contratar una agencia especializada en lugar de una full service?"
         ]
       },
       {
         "id": "C5-06",
         "type": "satellite",
-        "title": "Cuánto cuesta una agencia de paid media en España: guía de precios 2026",
-        "keyword": "precio agencia paid media españa",
+        "title": "Cu\u00e1nto cuesta una agencia de paid media en Espa\u00f1a: gu\u00eda de precios 2026",
+        "keyword": "precio agencia paid media espa\u00f1a",
         "secondary_keywords": [
-          "cuánto cuesta agencia paid media",
+          "cu\u00e1nto cuesta agencia paid media",
           "tarifas agencia meta ads",
           "precio agencia facebook ads"
         ],
         "slug": "cuanto-cuesta-agencia-paid-media-espana-precios-2026",
         "words": 1000,
         "intent": "BOFU",
-        "note": "Artículo de precios con tabla detallada por modelo (% inversión, fee fijo, híbrido). El más probable de capturar búsquedas de precios y generar leads directos.",
+        "note": "Art\u00edculo de precios con tabla detallada por modelo (% inversi\u00f3n, fee fijo, h\u00edbrido). El m\u00e1s probable de capturar b\u00fasquedas de precios y generar leads directos.",
         "paa_questions": [
-          "¿Cuánto cobra una agencia de paid media en España?",
-          "¿Qué modelos de precio tienen las agencias de Meta Ads?",
-          "¿Qué porcentaje cobra una agencia sobre la inversión publicitaria?",
-          "¿Cuánto cuesta gestionar campañas de Google Ads y Meta Ads con una agencia?",
-          "¿Hay un mínimo de inversión para contratar una agencia de paid media?",
-          "¿Cuánto debería pagar por la gestión de mis Meta Ads?"
+          "\u00bfCu\u00e1nto cobra una agencia de paid media en Espa\u00f1a?",
+          "\u00bfQu\u00e9 modelos de precio tienen las agencias de Meta Ads?",
+          "\u00bfQu\u00e9 porcentaje cobra una agencia sobre la inversi\u00f3n publicitaria?",
+          "\u00bfCu\u00e1nto cuesta gestionar campa\u00f1as de Google Ads y Meta Ads con una agencia?",
+          "\u00bfHay un m\u00ednimo de inversi\u00f3n para contratar una agencia de paid media?",
+          "\u00bfCu\u00e1nto deber\u00eda pagar por la gesti\u00f3n de mis Meta Ads?"
         ]
       }
     ]
   },
   "tasks": [
     {
+      "id": "TEST01",
+      "status": "research",
+      "cluster": "metricas-avanzadas",
+      "title": "KPIs ecommerce D2C: los 7 que de verdad importan en 2026",
+      "keyword": "kpis ecommerce d2c",
+      "slug": null,
+      "words": 1500,
+      "intent": "MOFU",
+      "priority": "high",
+      "note": "TEST run - can delete"
+    },
+    {
       "id": "T31",
       "status": "completed",
       "type": "article",
-      "title": "¿Qué es un Media Buyer y para qué sirve?",
+      "title": "\u00bfQu\u00e9 es un Media Buyer y para qu\u00e9 sirve?",
       "keyword": "que es un media buyer",
       "slug": "que-es-un-media-buyer",
       "volume": "500-1000"
@@ -1023,7 +1035,7 @@
       "id": "T32",
       "status": "completed",
       "type": "article",
-      "title": "¿Cuánto cobra un media buyer freelance en España?",
+      "title": "\u00bfCu\u00e1nto cobra un media buyer freelance en Espa\u00f1a?",
       "keyword": "cuanto cobra media buyer freelance espana",
       "slug": "cuanto-cobra-media-buyer-freelance-espana",
       "volume": "300-600"
@@ -1032,7 +1044,7 @@
       "id": "T33",
       "status": "completed",
       "type": "article",
-      "title": "5 señales de que tu agencia de publicidad no está funcionando",
+      "title": "5 se\u00f1ales de que tu agencia de publicidad no est\u00e1 funcionando",
       "keyword": "senales agencia publicidad no rinde",
       "slug": "senales-agencia-publicidad-no-rinde",
       "volume": "400-800"
@@ -1041,7 +1053,7 @@
       "id": "T34",
       "status": "completed",
       "type": "article",
-      "title": "Checklist para auditar tus campañas de paid media",
+      "title": "Checklist para auditar tus campa\u00f1as de paid media",
       "keyword": "auditoria campanas paid media",
       "slug": "checklist-auditoria-campanas-paid-media",
       "volume": "200-500"
@@ -1050,7 +1062,7 @@
       "id": "T35",
       "status": "completed",
       "type": "article",
-      "title": "Caso de éxito: eCommerce D2C +156% ROAS con Meta Ads",
+      "title": "Caso de \u00e9xito: eCommerce D2C +156% ROAS con Meta Ads",
       "keyword": "caso exito meta ads ecommerce",
       "slug": "caso-exito-ecommerce-d2c-roas-meta-ads",
       "volume": "300-700"
@@ -1059,7 +1071,7 @@
       "id": "T36",
       "status": "completed",
       "type": "article",
-      "title": "Cómo elegir la mejor agencia de Meta Ads para tu eCommerce",
+      "title": "C\u00f3mo elegir la mejor agencia de Meta Ads para tu eCommerce",
       "keyword": "mejor agencia meta ads ecommerce espana",
       "slug": "como-elegir-agencia-meta-ads-ecommerce",
       "volume": "300-600",
@@ -1069,7 +1081,7 @@
       "id": "T37",
       "status": "completed",
       "type": "article",
-      "title": "Performance Max vs Meta Ads: ¿cuál funciona mejor en España?",
+      "title": "Performance Max vs Meta Ads: \u00bfcu\u00e1l funciona mejor en Espa\u00f1a?",
       "keyword": "performance max vs meta ads espana",
       "slug": "performance-max-vs-meta-ads-espana",
       "volume": "150-400",
@@ -1089,7 +1101,7 @@
       "id": "T39",
       "status": "completed",
       "type": "article",
-      "title": "Retargeting en Meta Ads para eCommerce: guía completa 2026",
+      "title": "Retargeting en Meta Ads para eCommerce: gu\u00eda completa 2026",
       "keyword": "retargeting meta ads ecommerce 2026",
       "slug": "retargeting-meta-ads-ecommerce-2026",
       "volume": "250-500",
@@ -1099,7 +1111,7 @@
       "id": "T40",
       "status": "completed",
       "type": "article",
-      "title": "Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir?",
+      "title": "Presupuesto m\u00ednimo Meta Ads: \u00bfcu\u00e1nto necesito invertir?",
       "keyword": "presupuesto minimo meta ads",
       "slug": "presupuesto-minimo-meta-ads-ecommerce",
       "volume": "400-900"
