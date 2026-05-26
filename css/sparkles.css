@@ -1,0 +1,82 @@
+/* Sparkles Background Effect */
+.sparkles-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: sparkle-fade 3s ease-in-out infinite;
+}
+
+.sparkle::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
+}
+
+/* Variantes de tamaño */
+.sparkle.sm {
+  width: 2px;
+  height: 2px;
+}
+
+.sparkle.lg {
+  width: 6px;
+  height: 6px;
+}
+
+/* Posiciones - distribuir por el-hero */
+.sparkle:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+.sparkle:nth-child(2) { top: 20%; left: 80%; animation-delay: 0.5s; }
+.sparkle:nth-child(3) { top: 30%; left: 20%; animation-delay: 1s; }
+.sparkle:nth-child(4) { top: 40%; left: 70%; animation-delay: 1.5s; }
+.sparkle:nth-child(5) { top: 50%; left: 30%; animation-delay: 2s; }
+.sparkle:nth-child(6) { top: 60%; left: 90%; animation-delay: 0.3s; }
+.sparkle:nth-child(7) { top: 70%; left: 15%; animation-delay: 0.8s; }
+.sparkle:nth-child(8) { top: 80%; left: 60%; animation-delay: 1.3s; }
+.sparkle:nth-child(9) { top: 15%; left: 50%; animation-delay: 1.8s; }
+.sparkle:nth-child(10) { top: 85%; left: 40%; animation-delay: 2.2s; }
+.sparkle:nth-child(11) { top: 25%; left: 35%; animation-delay: 0.7s; }
+.sparkle:nth-child(12) { top: 75%; left: 75%; animation-delay: 1.2s; }
+
+@keyframes sparkle-fade {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Gradient mesh background alternative */
+.mesh-gradient {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(236, 72, 153, 0.05) 0%, transparent 70%);
+  z-index: 0;
+  animation: mesh-move 10s ease-in-out infinite alternate;
+}
+
+@keyframes mesh-move {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.1) translate(-2%, -2%);
+  }
+}
