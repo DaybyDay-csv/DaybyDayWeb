@@ -39,3 +39,17 @@ hermes/state/*
 *_exchange.py
 *_authorize.py
 run-weekly-seo-report.sh
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Local env
+.env.local
+.env.production
+
