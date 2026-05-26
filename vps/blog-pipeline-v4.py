@@ -349,15 +349,17 @@ Competencia:
 Enlaces:
 {links[:400]}
 
-Formato (copia exactamente):
-Titulo: ...
-Slug: ...
-Meta Description: ...
-Angulo: ...
-Preguntas: p1|p2|p3
-Estructura: e1|e2|e3
-Keywords: k1|k2|k3
-CTAs: ...
+IMPORTANTE: Devuelve SOLO 1 articulo. NO una lista. Elige el mejor angulo.
+
+Formato (copia exactamente, cada linea en su propia linea):
+Titulo: [titulo generico aqui]
+Slug: [solo-el-slug-no-la-url]
+Meta Description: [max 160 caracteres]
+Angulo: [angulo unico]
+Preguntas: [3 preg separadas por |]
+Estructura: [3 puntos sep |]
+Keywords: [3 keywords sep |]
+CTAs: [cta]
 Template: framework
 
 Ahora"""
