@@ -1,130 +1,98 @@
-  <nav class="main-nav" style="background:rgba(5,5,7,0.95);backdrop-filter:blur(12px);border-bottom:1px solid #27272a;position:fixed;top:0;left:0;right:0;z-index:100;">
-    <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;display:flex;justify-content:space-between;align-items:center;height:64px;">
-      <a href="/" style="font-size:1.25rem;font-weight:700;color:#fafafa;text-decoration:none;">DayByDay</a>
-      <ul style="display:flex;gap:1.25rem;list-style:none;">
-          <li><a href="/problema.html" style="color:#a1a1a6;text-decoration:none;font-size:0.9rem;">Problema</a></li>
-          <li><a href="/como-trabajamos.html" style="color:#a1a1a6;text-decoration:none;font-size:0.9rem;">Cómo Trabajamos</a></li>
-          <li><a href="/resultados.html" style="color:#fafafa;text-decoration:none;font-size:0.9rem;font-weight:600;">Resultados</a></li>
-          <li><a href="/blog.html" style="color:#a1a1a6;text-decoration:none;font-size:0.9rem;">Blog</a></li>
-      </ul>
-      <button class="mobile-menu-btn" onclick="document.getElementById('mobile-nav').classList.toggle('active')" style="background:none;border:1px solid #27272a;border-radius:8px;padding:0.5rem;cursor:pointer;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fafafa" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-      </button>
-    </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | DayByDay Consulting</title>
+  <meta name="description" content="DayByDay Consulting - Paid media, automation y growth para eCommerce D2C.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/modern.css">
+</head>
+<body>
+  <!-- Consistent Navbar -->
+    <!-- Consistent Navbar -->
+  <nav class="main-nav">
+    <a href="/" class="nav-logo">DayByDay</a>
+    <ul class="nav-links">
+      <li><a href="/problema.html">Problema</a></li>
+      <li><a href="/servicios.html">Servicios</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+    </ul>
   </nav>
   <div style="height:64px;"></div>
+</div>
 
-  <!-- Mobile Navigation -->
-  <div id="mobile-nav" class="mobile-nav" style="display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:rgba(5,5,7,0.98);backdrop-filter:blur(20px);z-index:999;overflow-y:auto;padding:1.5rem;">
-    <div style="margin-bottom:1.5rem;">
-      <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:0.75rem;">Navegación</div>
-      <a href="/" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Inicio</a>
-      <a href="/problema.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Problema</a>
-      <a href="/como-trabajamos.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Cómo Trabajamos</a>
-      <a href="/resultados.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Resultados</a>
-      <a href="/blog.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Blog</a>
-    </div>
-    <div style="margin-bottom:1.5rem;">
-      <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:0.75rem;">Servicios</div>
-      <a href="/meta-ads.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Meta Ads</a>
-      <a href="/google-ads.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Google Ads</a>
-      <a href="/growth-strategy.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Growth Strategy</a>
-      <a href="/automatizacion.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Automation</a>
-      <a href="/analytics.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Analytics</a>
-      <a href="/agentic-ai.html" style="display:block;padding:0.75rem 0;color:#a1a1a6;text-decoration:none;border-bottom:1px solid #27272a;font-size:1rem;">Agentic AI</a>
-    </div>
-    <div>
-      <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:0.75rem;">Stack</div>
-      <a href="/tech/meta-ads.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;font-size:0.9rem;">Meta Ads</a>
-      <a href="/tech/google-ads-tech.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;font-size:0.9rem;">Google Ads</a>
-      <a href="/tech/ga4.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;font-size:0.9rem;">GA4</a>
-      <a href="/tech/n8n.html" style="display:block;padding:0.5rem 0;color:#71717a;text-decoration:none;font-size:0.9rem;">n8n</a>
-    </div>
-  </div>
 
-  <!-- Servicios Hero -->
-  <section style="padding:8rem 0 4rem;background:linear-gradient(180deg,#050507 0%,#0e0e11 100%);">
-    <div style="max-width:900px;margin:0 auto;padding:0 1.5rem;text-align:center;">
-      <h1 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:800;color:#fafafa;margin-bottom:1rem;">Nuestros Servicios</h1>
-      <p style="font-size:1.15rem;color:#a1a1a6;max-width:600px;margin:0 auto;">Paid Media + Growth + Automation + Analytics. Todo lo que necesitas para escalar tu D2C.</p>
+  <section class="hero" style="padding: 6rem 0 3rem;">
+    <div class="container">
+      <h1 style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1rem;">Nuestros Servicios</h1>
+      <p class="subtitle">Paid Media + Growth + Automation + Analytics. Todo lo que necesitas para escalar tu D2C.</p>
     </div>
   </section>
 
-  <!-- Servicios Grid -->
-  <section style="padding:4rem 0;background:#0e0e11;">
-    <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;">
-        <!-- Paid Media -->
-        <a href="/meta-ads.html" style="display:block;background:#141418;border:1px solid #27272a;border-radius:12px;padding:1.5rem;text-decoration:none;transition:border-color 0.2s;">
-          <div style="width:48px;height:48px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
-          </div>
-          <h3 style="font-size:1.25rem;font-weight:600;color:#fafafa;margin-bottom:0.5rem;">Paid Media</h3>
-          <p style="color:#a1a1a6;font-size:0.9rem;">Meta Ads, Google Ads, TikTok, LinkedIn. Campañas que convierten.</p>
+  <section class="section section-dark">
+    <div class="container">
+      <div class="grid-2">
+        <a href="/meta-ads.html" class="card" style="text-decoration:none;">
+          <h3>Meta Ads</h3>
+          <p>Campañas de conversión, CAPI, pixel, audiences.</p>
         </a>
-        <!-- Growth Strategy -->
-        <a href="/growth-strategy.html" style="display:block;background:#141418;border:1px solid #27272a;border-radius:12px;padding:1.5rem;text-decoration:none;transition:border-color 0.2s;">
-          <div style="width:48px;height:48px;background:linear-gradient(135deg,#10b981,#34d399);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/></svg>
-          </div>
-          <h3 style="font-size:1.25rem;font-weight:600;color:#fafafa;margin-bottom:0.5rem;">Growth Strategy</h3>
-          <p style="color:#a1a1a6;font-size:0.9rem;">Estrategia de crecimiento. De 100K a 1M. Scaling con ROAS.</p>
+        <a href="/google-ads.html" class="card" style="text-decoration:none;">
+          <h3>Google Ads</h3>
+          <p>Search, Shopping, Performance Max.</p>
         </a>
-        <!-- Automation -->
-        <a href="/automatizacion.html" style="display:block;background:#141418;border:1px solid #27272a;border-radius:12px;padding:1.5rem;text-decoration:none;transition:border-color 0.2s;">
-          <div style="width:48px;height:48px;background:linear-gradient(135deg,#f59e0b,#fbbf24);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/></svg>
-          </div>
-          <h3 style="font-size:1.25rem;font-weight:600;color:#fafafa;margin-bottom:0.5rem;">Automation</h3>
-          <p style="color:#a1a1a6;font-size:0.9rem;">n8n, CAPI, integrations. Automa tu marketing.</p>
+        <a href="/tiktok-ads.html" class="card" style="text-decoration:none;">
+          <h3>TikTok Ads</h3>
+          <p>UGC, viral growth, testing creatives.</p>
         </a>
-        <!-- Analytics -->
-        <a href="/analytics.html" style="display:block;background:#141418;border:1px solid #27272a;border-radius:12px;padding:1.5rem;text-decoration:none;transition:border-color 0.2s;">
-          <div style="width:48px;height:48px;background:linear-gradient(135deg,#3b82f6,#60a5fa);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
-          </div>
-          <h3 style="font-size:1.25rem;font-weight:600;color:#fafafa;margin-bottom:0.5rem;">Analytics</h3>
-          <p style="color:#a1a1a6;font-size:0.9rem;">GA4, GTM, dashboards. Mide todo. Optimiza con datos.</p>
+        <a href="/linkedin-ads.html" class="card" style="text-decoration:none;">
+          <h3>LinkedIn Ads</h3>
+          <p>B2B, ABM, Lead Gen Forms.</p>
         </a>
-        <!-- Agentic AI -->
-        <a href="/agentic-ai.html" style="display:block;background:#141418;border:1px solid #27272a;border-radius:12px;padding:1.5rem;text-decoration:none;transition:border-color 0.2s;">
-          <div style="width:48px;height:48px;background:linear-gradient(135deg,#ec4899,#f472b6);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h3 style="font-size:1.25rem;font-weight:600;color:#fafafa;margin-bottom:0.5rem;">Agentic AI</h3>
-          <p style="color:#a1a1a6;font-size:0.9rem;">AI Agents, Azure, automatizacion inteligente.</p>
+        <a href="/growth-strategy.html" class="card" style="text-decoration:none;">
+          <h3>Growth Strategy</h3>
+          <p>Roadmaps, pricing, unit economics.</p>
         </a>
-        <!-- Tech Stack -->
-        <a href="/tech/meta-ads.html" style="display:block;background:#141418;border:1px solid #27272a;border-radius:12px;padding:1.5rem;text-decoration:none;transition:border-color 0.2s;">
-          <div style="width:48px;height:48px;background:linear-gradient(135deg,#6366f1,#a78bfa);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-          </div>
-          <h3 style="font-size:1.25rem;font-weight:600;color:#fafafa;margin-bottom:0.5rem;">Stack Tech</h3>
-          <p style="color:#a1a1a6;font-size:0.9rem;">Shopify, n8n, GA4, CAPI, Azure. Nuestra tecnología.</p>
+        <a href="/automatizacion.html" class="card" style="text-decoration:none;">
+          <h3>Automation</h3>
+          <p>n8n, sync, WhatsApp, CRM.</p>
+        </a>
+        <a href="/analytics.html" class="card" style="text-decoration:none;">
+          <h3>Analytics</h3>
+          <p>GA4, GTM, dashboards, cohorts.</p>
+        </a>
+        <a href="/agentic-ai.html" class="card" style="text-decoration:none;">
+          <h3>Agentic AI</h3>
+          <p>Qualification, ventas, soporte.</p>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Tech Stack Section -->
-  <section style="padding:4rem 0;background:#050507;">
-    <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
-      <h2 style="font-size:1.75rem;font-weight:700;color:#fafafa;margin-bottom:2rem;text-align:center;">Stack Tecnológico</h2>
-      <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;">
-        <a href="/tech/meta-ads.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">Meta Ads</a>
-        <a href="/tech/google-ads-tech.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">Google Ads</a>
-        <a href="/tech/shopify.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">Shopify</a>
-        <a href="/tech/ga4.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">GA4</a>
-        <a href="/tech/gtm.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">GTM</a>
-        <a href="/tech/n8n.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">n8n</a>
-        <a href="/tech/capi.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">CAPI</a>
-        <a href="/tech/azure.html" style="padding:0.5rem 1rem;background:#141418;border:1px solid #27272a;border-radius:8px;color:#a1a1a6;text-decoration:none;font-size:0.875rem;">Azure</a>
+  <section class="section">
+    <div class="container">
+      <h2>Stack Tecnológico</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem;">
+        <a href="/tech/meta-ads.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">Meta Ads</a>
+        <a href="/tech/google-ads-tech.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">Google Ads</a>
+        <a href="/tech/shopify.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">Shopify</a>
+        <a href="/tech/ga4.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">GA4</a>
+        <a href="/tech/gtm.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">GTM</a>
+        <a href="/tech/n8n.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">n8n</a>
+        <a href="/tech/capi.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">CAPI</a>
+        <a href="/tech/azure.html" style="padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">Azure</a>
       </div>
     </div>
   </section>
 
-  <footer style="background:#0e0e11;padding:3rem 0;text-align:center;border-top:1px solid #27272a;">
-    <p style="color:#71717a;font-size:0.875rem;">© 2026 DayByDay Consulting</p>
+
+  <footer class="footer">
+    <a href="/">Inicio</a>
+    <a href="/servicios.html">Servicios</a>
+    <a href="/blog.html">Blog</a>
+    <p>© 2026 DayByDay Consulting</p>
   </footer>
 </body>
 </html>
