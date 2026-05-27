@@ -3,248 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Cuál es el presupuesto mínimo real para empezar en Meta Ads en 2026?",
-    a: "El suelo operativo realista para una cuenta D2C en España es 30-50€/día (≈900-1.500€/mes). Por debajo de 20€/día Meta no consigue salir del learning phase de un ad set optimizado a Purchase: necesita ~50 conversiones en 7 días para estabilizarse, y con CPA típico de eCommerce moda/belleza (25-45€) eso exige al menos 25-30€/día por ad set. Cuentas que arrancan con 10-15€/día gastan 2-3 meses sin que el algoritmo encuentre patrón estable, y el ROAS reportado oscila tanto que el negocio no puede tomar decisiones. El 'mínimo Meta Ads' no es lo que la plataforma deja activar (1€/día), sino lo que permite aprender.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Por qué Meta exige ~50 conversiones para optimizar bien un ad set?",
-    a: "El sistema de pujas de Meta funciona con un modelo predictivo que necesita ejemplos para construir la curva de probabilidad de conversión por usuario. Con menos de 50 eventos de Purchase por semana en un ad set, el modelo opera con incertidumbre alta y compensa pujando agresivamente sobre tráfico amplio (CPM bajo, conversión también baja). El umbral de 50 conv/semana es el que la propia documentación oficial de Meta recomienda para salir de learning phase. En presupuestos pequeños la solución no es bajar el objetivo a AddToCart (engaña al algoritmo y luego no escala), sino consolidar ad sets para que cada uno reciba volumen suficiente.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuál es el coste mínimo si vendo producto de ticket alto (>200€)?",
-    a: "Subir el ticket reduce el número de conversiones que el presupuesto compra, así que el suelo sube. Con ticket 200-400€ y CPA típico 50-90€, mantener 50 conv/semana en un ad set exige 350-650€/día. Para tickets altos el camino realista es: empezar optimizando a AddToCart o Initiate Checkout (eventos más frecuentes que Purchase) durante los primeros 30-45 días con presupuesto 50-80€/día, recoger señal, y migrar a Purchase cuando hay 100+ compradores en pixel + CAPI. La alternativa es invertir 200€/día desde el inicio aceptando que los primeros 30 días son aprendizaje caro.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cuánto presupuesto necesito para tener prospecting + retargeting bien estructurados?",
-    a: "Estructura mínima viable: 70-80% prospecting + 20-30% retargeting, con prospecting recibiendo el grueso para alimentar el funnel. Si tu presupuesto total es 1.500€/mes (50€/día), eso significa ~35-40€/día prospecting + 10-15€/día retargeting. Por debajo de 1.000€/mes total, retargeting puro empieza a no rendir: las audiencias se queman en 2-3 semanas y el frequency sube a 6-8 sin renovación de pool. La regla operativa: si no puedes mantener al menos 30€/día estables en prospecting durante 90 días, el retargeting no compensa estructurar como capa separada — mejor dejar exclusión de compradores y trabajar todo desde un ad set Advantage+ Shopping.",
-  },
-  {
-    q: "¿Es mejor empezar con Advantage+ Shopping o con campaña tradicional?",
-    a: "Para presupuestos <50€/día, Advantage+ Shopping suele rendir mejor porque consolida volumen en un solo ad set y al algoritmo le es más fácil estabilizar. La trampa es que Advantage+ exige catálogo bien optimizado, eventos de calidad (CAPI con EMQ \u003e7) y al menos 50-100 compradores históricos en pixel. Si la cuenta es nueva sin histórico, una campaña tradicional con audiencia broad amplia (España 18-65, sin intereses) optimizada a Purchase funciona como rampa de aprendizaje los primeros 30-45 días, y luego se migra a Advantage+. El error común es activar Advantage+ desde día 0 con cuenta vacía: el algoritmo no tiene de qué tirar y el CPA es 2-3x el realista.",
-  },
-  {
-    q: "¿Cuánto debo aumentar el presupuesto para escalar sin romper el ROAS?",
-    a: "Subidas máximas del 20-30% sobre el presupuesto del ad set cada 3-5 días, manteniendo el creativo y la audiencia estables. Una subida de +50% o más resetea total o parcialmente el aprendizaje del algoritmo: en la práctica el ad set vuelve a learning phase y el CPA se desestabiliza 5-10 días. Si necesitas duplicar presupuesto rápidamente, mejor duplicar el ad set y dejar ambos correr 7 días (el original con presupuesto estable, el clon con presupuesto nuevo) que subir el original de golpe. La regla del 20-30% no aplica a Advantage+ Shopping con CBO: ahí la lógica de subida es por campaña, y la tolerancia es algo mayor (hasta 40-50% sin reseteo).",
-  },
-  {
-    q: "¿Qué pasa si activo Meta Ads con menos de 500€/mes?",
-    a: "Con <500€/mes la realidad es que Meta no es la palanca correcta para tu eCommerce todavía. La plataforma seguirá gastando el dinero (no hay mensaje de error), pero el resultado típico es: 1-2 conversiones/semana sin patrón estable, ROAS reportado entre 0,8x y 3x sin coherencia, y aprendizaje bloqueado. Alternativas más eficientes en esa franja: Google Ads Search sobre keywords transaccionales de marca + producto (intent alto, CPC controlable), email marketing sobre lista existente, partnerships y contenido orgánico. Cuando el negocio puede destinar 1.000-1.500€/mes estables a Meta durante 6+ meses, entonces la palanca empieza a tener sentido económico.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const PresupuestoMinimoMetaAdsEcommercePage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? (D2C 2026)"
-    description="Cuánto presupuesto mínimo necesitas para que Meta Ads funcione en eCommerce D2C en 2026: suelo operativo realista (30-50€/día), por qué el algoritmo necesita 50 conversiones/semana para estabilizar, mínimos por ticket (40€ a 200€+), distribución prospecting/retargeting según presupuesto, Advantage+ vs tradicional y reglas de escalado sin romper el aprendizaje."
-    slug="presupuesto-minimo-meta-ads-ecommerce"
-    datePublished="2026-05-03"
-    dateModified="2026-05-03"
-    readingTime="9 min"
-    category="Estrategia"
-    keywords={[
-      "presupuesto minimo meta ads",
-      "cuanto invertir meta ads ecommerce",
-      "presupuesto facebook ads minimo",
-      "inversion minima meta ads d2c",
-      "meta ads presupuesto inicial",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El <strong className="text-white">presupuesto mínimo en Meta Ads</strong> no es lo que la plataforma deja activar (1€/día) sino lo que permite que el algoritmo aprenda. La diferencia entre esos dos números es lo que separa una cuenta D2C que escala de otra que gasta tres meses sin patrón estable. La mayoría de eCommerce que arrancan con 10-15€/día llegan a la conclusión equivocada de que "Meta no funciona para ellos" cuando el problema real es que estaban operando por debajo del umbral de aprendizaje del sistema.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      En esta guía cubrimos qué presupuesto necesita realmente Meta Ads para rendir en eCommerce D2C, cómo varía según el ticket medio, qué estructura de campañas tiene sentido en cada franja y cómo escalar sin reventar el aprendizaje del algoritmo.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Por qué existe un suelo operativo y dónde está</h2>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Meta optimiza con un modelo predictivo que necesita ejemplos para construir la curva de probabilidad de conversión por usuario. Sin volumen suficiente de eventos, el modelo no aprende — gasta dinero pero no estabiliza CPA. El umbral oficial:
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
-    <div className="space-y-3 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        "50 conversiones/semana por ad set para salir de learning phase (recomendación oficial de Meta).",
-        "Eso son ~7 conversiones/día estables por ad set, no como pico semanal.",
-        "Con CPA típico D2C (25-45€ moda, 35-60€ belleza, 40-80€ suplementos), 7 conv/día requieren 200-400€/día por ad set.",
-        "Cuentas pequeñas no pueden permitirse ese volumen — la solución es consolidar todo en uno o dos ad sets, no fragmentar.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La <a href="https://www.facebook.com/business/help/112167992830700" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">documentación oficial de Meta sobre la learning phase</a> es explícita: por debajo de 50 conversiones por ventana de 7 días el rendimiento del ad set es inestable. Esto no es una recomendación blanda — es el límite por debajo del cual el algoritmo opera con incertidumbre estadística alta.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Suelo realista por ticket medio</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El presupuesto mínimo no es una cifra única — depende del ticket. Cuanto mayor el ticket, mayor el CPA, y por tanto mayor el spend necesario para alcanzar el volumen de conversiones que estabiliza el aprendizaje:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Ticket medio</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">CPA típico</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Suelo operativo</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Evento óptimo</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { t: "30-60€", c: "20-40€", s: "30-50€/día (≈1.000-1.500€/mes)", e: "Purchase desde día 1" },
-            { t: "60-100€", c: "30-55€", s: "50-80€/día (≈1.500-2.400€/mes)", e: "Purchase desde día 1" },
-            { t: "100-200€", c: "45-80€", s: "80-150€/día (≈2.400-4.500€/mes)", e: "Purchase + AddToCart secundario" },
-            { t: "200-400€", c: "60-110€", s: "150-300€/día (≈4.500-9.000€/mes)", e: "AddToCart/IC primero, Purchase a 30-45 días" },
-            { t: ">400€", c: "100-200€", s: "300€+/día (≈9.000€+/mes)", e: "AddToCart + IC primero, ventana atribución 7d click" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.t}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.e}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Cifras de auditorías reales de cuentas D2C en España gestionadas por DayByDay y benchmark cruzado con datos sectoriales de <a href="https://www.statista.com/topics/2057/social-media-marketing/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Statista sobre social media marketing</a>. CPA varía ±25% según sector, estacionalidad y calidad de creativo, pero los suelos operativos son consistentes.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Distribución prospecting / retargeting según presupuesto</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Otra decisión que cambia con el presupuesto: cuándo separar prospecting y retargeting en estructuras independientes y cuándo es contraproducente:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Spend mensual</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Estructura recomendada</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Distribución</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { s: "<1.000€/mes", e: "1 ad set Advantage+ Shopping con exclusión compradores 180d", d: "100% en una sola caja" },
-            { s: "1.000-2.500€/mes", e: "Advantage+ Shopping + 1 ad set retargeting carrito 0-7d", d: "85% prospecting + 15% retargeting" },
-            { s: "2.500-6.000€/mes", e: "Prospecting (broad o lookalike 3-5%) + retargeting 2 niveles (carrito + ViewContent)", d: "75-80% prospecting + 20-25% retargeting" },
-            { s: ">6.000€/mes", e: "Stack de 3-4 ad sets prospecting + escalera retargeting de 3-4 peldaños", d: "70% prospecting + 25% retargeting + 5% reactivación clientes" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.e}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.d}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Por debajo de 1.000€/mes no separes prospecting y retargeting — el retargeting puro consume el presupuesto en 2-3 semanas, las audiencias se queman, el frequency sube a 6-8 y el ROAS reportado se infla con compras que iban a pasar igual. Con tan poco presupuesto, Advantage+ Shopping con exclusión de compradores 180d cumple las dos funciones sin fragmentar.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Errores frecuentes en presupuestos pequeños</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Activar 4-6 ad sets con 5-10€/día cada uno: ninguno alcanza volumen para salir de learning phase. Resultado: 6 ad sets dispersos rindiendo todos mal en lugar de 1-2 estables.",
-        "Cambiar de objetivo (Purchase → AddToCart → Traffic) cada 2 semanas porque 'no funciona': cada cambio resetea el aprendizaje y prolonga el problema. Mejor mantener Purchase 30-45 días con presupuesto consolidado.",
-        "Empezar con Advantage+ Shopping en cuenta nueva sin histórico: el algoritmo no tiene compradores de referencia y el CPA es 2-3x el realista. Mejor 30 días de tradicional broad + Purchase, luego migrar.",
-        "Subir presupuesto +50% o +100% de golpe cuando el ad set rinde: resetea el aprendizaje y devuelve la cuenta a inestabilidad. Subidas máximas del 20-30% cada 3-5 días.",
-        "No tener CAPI server-side con EMQ >7: en presupuestos pequeños el match rate de eventos cae y el algoritmo aprende sobre datos parciales — el CPA reportado se separa del CPA real.",
-        "Poner objetivos de ROAS antes del aprendizaje: pedir ROAS 4x al ad set durante learning phase fuerza una puja restrictiva que impide encontrar volumen y bloquea el aprendizaje permanentemente.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo escalar sin romper el ROAS</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Subir presupuesto es la operación más delicada en Meta Ads. La regla operativa que aplicamos en cuentas D2C:
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
-    <div className="space-y-3 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        "+20-30% sobre el presupuesto del ad set cada 3-5 días, manteniendo creativo y audiencia estables. Subidas mayores resetean aprendizaje.",
-        "Si necesitas duplicar rápido: clona el ad set y deja ambos correr 7 días — el original con presupuesto estable, el clon con presupuesto nuevo. Mejor que subir el original.",
-        "Advantage+ Shopping con CBO tolera subidas algo mayores (40-50%) por la lógica de campaña vs ad set, pero no más.",
-        "No subir presupuesto si el ad set lleva <7 días estables o si el CPA está fuera de rango la última semana — primero estabilizar, luego escalar.",
-        "Renovar creativo cada 2-3 semanas cuando subes presupuesto: la frecuencia se acelera proporcionalmente y sin creativo nuevo el ad set fatiga en 10-14 días.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cuándo Meta Ads no es la palanca correcta todavía</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
     <p className="text-white/70 leading-relaxed mb-5">
-      Si el negocio no puede destinar al menos 1.000€/mes estables a Meta durante 6+ meses, la inversión rinde mejor en otras palancas: Google Ads Search sobre keywords de marca y producto (intent alto, CPC controlable y suelo de presupuesto más bajo), email marketing sobre lista existente, contenido orgánico y partnerships. Meta Ads tiene retorno asimétrico: con presupuesto suficiente y consistente escala muy bien, pero por debajo del suelo operativo el dinero se diluye sin generar aprendizaje. La pregunta correcta no es "¿cuánto cobra Meta?" sino "¿qué presupuesto puedo sostener 6 meses sin que un mes flojo me obligue a parar la cuenta?".
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo definimos el presupuesto inicial en DayByDay</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Auditoría previa de unit economics: ticket medio, margen bruto, LTV a 12 meses, ratio LTV/CAC objetivo. Sin estos cuatro datos no se puede definir suelo operativo realista.",
-        "Cálculo de CPA máximo permitido: ticket × margen × (1 - reserva operativa). Si el suelo operativo del sector queda por encima del CPA máximo, Meta no es viable a ese ticket todavía.",
-        "Definición de fase 0 (aprendizaje, 30-45 días) con presupuesto en suelo operativo y objetivo de validar CPA y ROAS marginales — no de rentabilizar.",
-        "Estructura inicial mínima: 1-2 ad sets prospecting + 1 retargeting si presupuesto >2.500€/mes, todo bajo CBO, con CAPI server-side validada antes de activar.",
-        "Protocolo de escalado documentado: subidas +20-30% cada 3-5 días, renovación creativa cada 2 semanas, revisión semanal de frequency y solapamiento de audiencias.",
-        "Punto de corte: si en 60 días con presupuesto en suelo operativo el CPA marginal supera el CPA máximo permitido en >25%, recomendamos pausar Meta y reasignar a Google Search + email — no insistimos por ego.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu presupuesto en Meta está por encima o por debajo del suelo operativo?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos ticket, margen, CPA actual y estructura para detectar si tu cuenta opera bajo el umbral de aprendizaje y qué presupuesto mínimo necesitas para que Meta empiece a rendir.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
-          Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El paso siguiente al suelo mínimo: cuánto invertir según ticket, margen y LTV para rentabilizar</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar campañas Meta Ads sin romper el ROAS →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Una vez superado el suelo operativo, cómo subir presupuesto sin resetear el aprendizaje del algoritmo</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/audiencias-lookalike-meta-alta-calidad" className="text-white font-semibold hover:text-white/80">
-          Audiencias lookalike en Meta de alta calidad: guía 2026 D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cuándo el presupuesto permite construir lookalikes y cómo elegir semilla por volumen</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
-          Advantage+ Shopping Campaign: cuándo usarlo y cuándo no →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué Advantage+ rinde mejor en presupuestos pequeños y cuándo no activarlo desde día 0</p>
-      </div>
-    </div>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default PresupuestoMinimoMetaAdsEcommercePage;
+export default BuenROASNichosPage;

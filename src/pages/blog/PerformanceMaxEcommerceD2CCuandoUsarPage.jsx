@@ -3,239 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Cuándo conviene activar Performance Max para un eCommerce D2C en España?",
-    a: "Cuando se cumplen tres condiciones a la vez: la cuenta tiene más de 30 conversiones/mes en Google Ads (umbral mínimo del algoritmo de PMax para no quemar presupuesto en aprendizaje), el feed de Google Merchant Center está limpio (sin disapprovals, con GTIN, custom labels y atributos de margen), y existe ya base de Search Brand + non-brand activa con datos de conversión. Activar Performance Max sin estas tres condiciones suele acabar en CPA inflado un 40-80% durante 4-6 semanas y canibalización de Search brand sin que el operador lo vea (PMax atribuye a sí mismo conversiones que la marca habría capturado igual). En cuentas D2C de menos de 15K€/mes en Google Ads recomendamos empezar con Standard Shopping + Search brand+non-brand y solo abrir PMax cuando el volumen mensual cruza 30 conversiones reales sostenidas tres meses seguidos."
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Qué ROAS es bueno en Performance Max para un eCommerce D2C en España 2026?",
-    a: "Depende del sector y de cómo se mida, pero los rangos que vemos en cuentas D2C que hemos auditado son: moda 2,8-4,2x, belleza 3,5-5,5x, suplementos 2,5-3,8x, hogar 3,2-4,8x, mascotas 2,8-4,0x. Hay que distinguir entre ROAS reportado por Google Ads (suele estar inflado entre 25 y 45% por sobreatribución de PMax a search brand y a remarketing dinámico que ya iba a convertir) y ROAS real medido con MMM o blended MER. El benchmark sectorial que cita Foundry CRO sitúa el ROAS medio de PMax para eCommerce entre 3,5x y 5x reportados, pero la conversación útil con un cliente nunca es sobre ROAS reportado: es sobre incremental. Si PMax sube tu MER blended cuando lo activas, está aportando volumen real; si solo sube el ROAS reportado de Google sin mover el MER, está canibalizando."
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cómo se mide si Performance Max está canibalizando Search brand y remarketing?",
-    a: "Con tres comprobaciones operativas. (1) Brand search test: pausar 7-14 días la campaña Search Brand pura mientras PMax sigue activa y comparar conversiones de marca; si PMax no las recoge en el mismo volumen, está dejándolas escapar. (2) Comparar el % de conversiones que PMax atribuye a 'New customers' (segmento que Google muestra en el reporte de Insights) frente al % medio de la cuenta: si el % de new customers en PMax es menor que el % medio del resto de campañas, PMax está cosechando warm. (3) Activar el reporte de 'Asset group performance by channel' (sólo accesible desde 2024 con account script o Looker conector) para ver qué % del spend va a Search vs YouTube vs Display vs Discover; si más del 60% va a Search/Shopping y la cuenta ya tenía Search brand + Standard Shopping cubriendo eso, hay solapamiento. La regla operativa que aplicamos: PMax debe sumar al MER blended un mínimo de 0,2 puntos en 60 días. Si no lo hace, el incremental es cero y el ROAS reportado es ilusorio."
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Qué cambios trae Performance Max en 2026 que afectan a un eCommerce D2C?",
-    a: "Cuatro cambios relevantes que ya están en producción para cuentas en España. (1) Channel-level reporting: Google ha abierto reporte por canal dentro de PMax (Search, Shopping, YouTube, Display, Discover, Gmail), lo que permite por fin saber dónde se gasta el presupuesto. (2) Brand exclusions a nivel de campaña: ahora se pueden excluir marcas competidoras y términos de marca propia más finamente, evitando canibalización con Search Brand. (3) Asset group testing nativo: la opción de A/B test de asset groups dentro de la misma campaña sin tener que duplicarla. (4) Integración con Google Analytics 4 para cohortes: PMax ahora puede optimizar a una conversión basada en LTV/AOV de GA4, no solo a la conversión inmediata, lo que cambia el juego para D2C con suscripción o repetición alta. La consecuencia operativa: lo que en 2024 era una caja negra hoy se puede auditar y trocear, pero la mayoría de agencias siguen sin abrir el reporte por canal porque obliga a tomar decisiones incómodas (apagar el canal que no rinde)."
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
-  {
-    q: "¿Es mejor Performance Max o Standard Shopping para un eCommerce D2C en 2026?",
-    a: "Depende del volumen, del catálogo y de la madurez del feed. La estrategia que mejor rendimiento da en cuentas D2C españolas en 2026 es la híbrida: Standard Shopping para los SKUs core de mayor margen y rotación (control total, datos transparentes, exclusión por search query), y Performance Max para descubrimiento sobre el resto del catálogo y para activar canales que Standard Shopping no toca (YouTube, Discover). Search Engine Journal y los datos de cuentas que hemos optimizado lo confirman: el modelo híbrido supera al PMax-only en 15-30% de ROAS incremental cuando el catálogo tiene más de 80 SKUs activos. En catálogos pequeños (menos de 20 SKUs) Standard Shopping pierde sentido y PMax con feed bien estructurado y custom labels por margen funciona mejor. La regla práctica: si puedes nombrar cuáles son tus 5-10 SKUs hero, sepáralos en Standard Shopping con bid manual; el resto a PMax."
-  },
-  {
-    q: "¿Cómo se prepara el feed de Google Merchant Center para que Performance Max funcione bien?",
-    a: "El feed es el 70% del rendimiento de PMax. Cinco intervenciones obligatorias antes de activar la campaña. (1) Limpieza de disapprovals: el feed debe estar al 100% aprobado en GMC; cualquier producto bloqueado se queda fuera de la subasta y desbalancea el aprendizaje. (2) GTIN, MPN y brand correctos en cada producto (Google penaliza fuertemente productos sin GTIN en categorías regulables). (3) Custom labels por margen y por rotación: etiquetar productos como custom_label_0=margen_alto, custom_label_1=top_seller, custom_label_2=stock_bajo permite crear asset groups segmentados con ROAS objetivo distinto. (4) Imágenes optimizadas (1:1 mínimo 800x800px con producto centrado y fondo limpio para evitar penalización de ML). (5) Atributos enriquecidos: color, size, gender, age_group, material — Google los usa como señales de matching y elevan el CTR en Shopping un 15-25% según datos públicos de Google. Sin estos cinco puntos, PMax aprende sobre datos sucios y la cuenta tarda 60-90 días en estabilizarse."
-  }
 ];
 
-const PerformanceMaxEcommerceD2CCuandoUsarPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Performance Max para D2C: cuándo activarla y cómo medir si funciona en 2026"
-    description="Guía operativa para activar Performance Max en un eCommerce D2C en España: condiciones mínimas (30+ conversiones/mes, feed limpio, base Search activa), cómo detectar canibalización con Search Brand y remarketing, ROAS objetivo por sector, novedades 2026 (channel-level reporting, brand exclusions, GA4 cohorts), modelo híbrido Standard Shopping + PMax, preparación de feed Merchant Center y enfoque DayByDay."
-    slug="performance-max-ecommerce-d2c-cuando-usar"
-    datePublished="2026-05-08"
-    dateModified="2026-05-08"
-    readingTime="12 min"
-    category="Google Ads"
-    keywords={[
-      "performance max ecommerce d2c",
-      "performance max cuando activar",
-      "performance max españa 2026",
-      "pmax vs standard shopping",
-      "performance max canibalización search brand",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">Performance Max para un eCommerce D2C en España no es plug-and-play</strong>: activarla sin volumen, sin feed limpio y sin entender qué canibaliza es la forma más rápida de inflar el ROAS reportado en Google Ads mientras el MER blended de la cuenta no se mueve. En 2026 PMax ya no es una caja negra absoluta —Google ha abierto channel-level reporting, brand exclusions y testing nativo de asset groups—, pero la mayoría de cuentas que auditamos siguen activándola en el momento equivocado y sin las condiciones mínimas. Esta guía es el protocolo que usamos en DayByDay para decidir cuándo abrir Performance Max, cómo medir si está aportando incremental real y cuándo apagarla.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es Performance Max para un eCommerce D2C</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">Performance Max</strong> es el formato automatizado de Google Ads que combina en una única campaña los inventarios de Search, Shopping, YouTube, Display, Discover y Gmail, optimizando con machine learning hacia un objetivo de conversión definido (Maximize Conversion Value con ROAS objetivo es el setup estándar para eCommerce D2C). El operador entrega assets (imágenes, vídeos, headlines, descriptions), feed de productos y señales de audiencia; Google decide en qué canal, a qué subasta y a qué usuario se sirve cada impresión.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      <a href="https://www.searchenginejournal.com/performance-max-for-ecommerce-the-hybrid-strategy-thats-actually-working/571885/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Según Search Engine Journal, la estrategia híbrida (Standard Shopping para SKUs core + Performance Max para el resto) es la que mejor rinde para eCommerce en 2026</a>, superando al PMax-only en transparencia y permitiendo control granular donde el margen lo justifica. El consenso del sector es claro: PMax funciona como parte de un portfolio multi-campaña, no como solución única.
-    </p>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
-      <p className="text-white font-bold text-sm mb-2">📊 Dato de referencia</p>
-      <p className="text-white/70 text-sm leading-relaxed">
-        Según <a href="https://foundrycro.com/blog/roas-benchmarks-by-industry-2026/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">los benchmarks 2026 publicados por Foundry CRO</a>, Performance Max promedia un ROAS de 3,5x a 5x reportado para eCommerce, mientras que las campañas de Search puro promedian 5,17x. La diferencia no significa que PMax sea peor: significa que PMax incluye discovery y prospecting que Search puro no toca, y que hay que mirar el ROAS incremental sobre la mezcla, no el ROAS aislado de cada campaña.
-      </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Las 3 condiciones obligatorias antes de activar Performance Max</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Activar PMax sin cumplir estas tres condiciones es la causa nº1 de cuentas D2C españolas que llegan a DayByDay con CPA disparado y ROAS reportado que no cuadra con el cierre de Shopify:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Condición</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Umbral mínimo</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Riesgo si no se cumple</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Cómo verificar</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c: "Volumen de conversión", u: ">30 conv/mes sostenidas 3 meses", r: "Aprendizaje infinito + CPA inflado +40-80%", v: "Reporte de conversiones Google Ads últimos 90 días" },
-            { c: "Feed Merchant Center", u: "100% aprobado, GTIN, custom labels", r: "Aprendizaje sobre datos sucios + 60-90d de inestabilidad", v: "GMC > Diagnostics + Products tab" },
-            { c: "Search Brand + non-brand activa", u: "Mínimo 4 semanas con datos de conversión", r: "PMax canibaliza brand sin baseline para detectarlo", v: "Search terms report últimos 30 días" },
-            { c: "Tracking GA4 + Enhanced Conversions", u: "Enhanced Conversions activado, eventos completos", r: "Optimización ciega, ROAS reportado falso", v: "GA4 DebugView + Conversion Action diagnostic" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.u}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.r}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.v}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Más detalle sobre cómo combinar Google Ads y Meta Ads en una D2C en la <Link to="/blog/combinar-google-ads-meta-ads-d2c" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de combinación Google Ads + Meta Ads para D2C</Link> y cómo se compara con Meta Ads en presupuesto en <Link to="/blog/performance-max-vs-meta-ads-espana" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Performance Max vs Meta Ads en España</Link>.
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo medir si Performance Max está canibalizando o aportando incremental</h2>
-    <ol className="space-y-3 mb-6 list-decimal pl-5">
+    <div className="space-y-3 mb-8">
       {[
-        "Brand search test (semana 1-2 tras activar PMax): pausar 7-14 días la campaña Search Brand pura mientras PMax sigue activa. Si las conversiones de marca caen >25% en ese periodo, PMax no está recogiéndolas y solo está reportando lo que Search Brand habría capturado igual.",
-        "Channel-level reporting: abrir el reporte por canal dentro de PMax (Search, Shopping, YouTube, Display, Discover) y validar el % de spend por canal. Si más del 60% va a Search+Shopping y la cuenta ya tenía Search Brand + Standard Shopping cubriendo eso, hay solapamiento estructural y conviene aplicar brand exclusions o reducir presupuesto PMax.",
-        "% New Customers en PMax vs cuenta: revisar el segmento 'New Customer' que Google muestra en Insights. Si el % de new customers en PMax es menor al % medio del resto de campañas, PMax está cosechando warm que ya iba a convertir.",
-        "MER blended antes vs después: medir el MER blended (revenue total / spend total Meta+Google+TikTok) los 30 días previos a activar PMax y los 30 días posteriores. Subida ≥0,2 puntos = incremental real. Plano o bajada = canibalización pura.",
-        "Search query report de PMax: con script de Google Ads se pueden extraer las search queries que activan PMax. Si las top 20 son términos de marca propia, hay que activar brand exclusions inmediatamente.",
-        "Holdout geo (cuentas grandes >30K€/mes Google): apagar PMax en una región (Madrid o Cataluña) durante 30 días y comparar caída de revenue total con la región control. Es el método más limpio para medir incremental real, sin atribución.",
-      ].map((item) => (
-        <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
-      ))}
-    </ol>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Modelo híbrido: Standard Shopping + Performance Max</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La estructura que mejor rendimiento da en cuentas D2C españolas con catálogo &gt;80 SKUs activos:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Bloque</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">% spend Google Ads</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Cobertura</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">ROAS objetivo</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { b: "Search Brand", p: "10-15%", c: "Términos marca propia + variantes", r: "8-15x" },
-            { b: "Search non-brand", p: "15-25%", c: "Categoría + producto genérico", r: "2,5-4,0x" },
-            { b: "Standard Shopping (hero SKUs)", p: "20-30%", c: "Top 5-15 SKUs por margen y rotación", r: "4-6x" },
-            { b: "Performance Max (long tail)", p: "30-45%", c: "Resto catálogo + YouTube/Discover", r: "3-5x" },
-            { b: "Remarketing dinámico (Display)", p: "5-10%", c: "Visitas 14-30d + AddToCart", r: "5-8x" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.b}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.p}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.r}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      <a href="https://www.storegrowers.com/performance-max-campaigns/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Store Growers en su análisis 2026 de Performance Max para eCommerce</a> coincide en que la activación con bid muy agresivo desde el día 1 reduce volumen de conversión hasta un 50%. La regla operativa: arrancar con ROAS target conservador (-15% sobre objetivo final), dejar 4 semanas de aprendizaje y subir gradualmente el target en incrementos de 0,3-0,5 puntos cada 14 días.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Novedades Performance Max 2026 que cambian el juego</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Channel-level reporting nativo: Google ha abierto el reporte por canal dentro de cada campaña PMax. Por fin se puede saber qué % del spend va a Search vs Shopping vs YouTube vs Display vs Discover sin scripts externos.",
-        "Brand exclusions a nivel de campaña: ahora se pueden excluir marcas competidoras y términos de marca propia más finamente, evitando canibalización con Search Brand sin tener que apagar PMax.",
-        "Asset group A/B testing nativo: opción de testar variantes de asset group dentro de la misma campaña sin duplicarla; reduce inflación de aprendizaje.",
-        "Integración GA4 + LTV cohorts: PMax puede optimizar a un evento de conversión basado en LTV/AOV de GA4, no solo a la conversión inmediata. Cambio crítico para D2C con suscripción o repetición alta.",
-        "Demand Gen overlap reporting: Google ahora reporta solapamiento entre PMax y Demand Gen, permitiendo decidir qué campaña apagar si están compitiendo en la misma audiencia.",
-        "Customer Match priorización: las listas Customer Match suben en peso dentro del algoritmo PMax — sincronizar Klaviyo/Shopify customers con Google Ads pasa de nice-to-have a obligatorio.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Más contexto sobre cómo elegir entre Google y Meta para un D2C en <Link to="/blog/meta-ads-vs-google-ads" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Ads vs Google Ads para eCommerce</Link>.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay</h2>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Diagnóstico previo a activar PMax: auditamos volumen de conversión últimos 90 días, salud del feed Merchant Center (disapprovals, GTIN, custom labels), baseline Search Brand + non-brand y tracking GA4+Enhanced Conversions. Si una de las cuatro condiciones no se cumple, NO activamos PMax — preparamos la base primero.",
-        "Estructura híbrida desde el día 1: separamos hero SKUs (top 5-15 por margen) en Standard Shopping con bid manual, dejamos PMax solo para el resto del catálogo y discovery. Ningún cliente nuestro corre PMax-only salvo en catálogos <20 SKUs.",
-        "Implementación Pablo + Jorge en paralelo: Pablo cierra la estrategia de campañas, asset groups y ROAS targets; Jorge configura la integración Shopify→GA4 con Enhanced Conversions, sincronización Customer Match desde Klaviyo, dashboard Looker Studio con MER blended cruzando Meta + Google + TikTok y script Google Ads para extraer search query report de PMax (no expuesto en UI).",
-        "Brand search test obligatorio en semana 2: pausamos Search Brand 10-14 días para medir si PMax recoge marca o solo la canibaliza. Decisión basada en datos, no en intuición.",
-        "Reporting MER-first, no ROAS-first: el dashboard que ve el cliente cada lunes muestra MER blended por canal y por semana, con anotaciones de cambios; el ROAS reportado de Google Ads se muestra en segundo plano porque sabemos que sobreatribuye 25-45%.",
-        "Holdout geo trimestral en cuentas >30K€/mes Google: apagamos PMax en una región (típicamente Cataluña o Madrid) durante 30 días para medir incremental real sin depender de la atribución de plataforma.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      DayByDay Consulting fue fundada por Pablo Santirsó y opera como un partnership con Jorge González (CTO). Pablo (founder · paid media) lidera la estrategia de campañas Google Ads, asset groups y decisiones de ROAS target; Jorge (CTO · automation) lidera Enhanced Conversions, Customer Match Klaviyo↔Google, scripts Google Ads para reporting que la UI no expone, y dashboard Looker con MER blended. Donde otras agencias separan paid Google de tracking server-side entre dos proveedores que rara vez se hablan, en DayByDay las decisiones de qué señales pasar a Customer Match, qué canal apagar dentro de PMax y qué SKUs separar en Standard Shopping se cierran en la misma reunión. El cliente habla con los dos socios desde la primera reunión: sin account managers, sin handoffs, sin perfiles junior.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu cuenta está lista para Performance Max o te está canibalizando?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos volumen de conversión, salud del feed Merchant Center, baseline Search Brand, tracking GA4+Enhanced Conversions y % de spend PMax que va a Search vs Shopping vs YouTube. Te decimos si activar, si reestructurar a híbrido o si pausar.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/performance-max-vs-meta-ads-espana" className="text-white font-semibold hover:text-white/80">
-          Performance Max vs Meta Ads en España: cuál escoger para D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Comparativa de Performance Max y Meta Ads en presupuesto, atribución y rendimiento real</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/combinar-google-ads-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
-          Cómo combinar Google Ads y Meta Ads para escalar un D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Distribución óptima de presupuesto entre Google y Meta según madurez de cuenta</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/meta-ads-vs-google-ads" className="text-white font-semibold hover:text-white/80">
-          Meta Ads vs Google Ads para eCommerce: cuál encaja con cada D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Diferencias estructurales entre Meta Ads y Google Ads para eCommerce D2C</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/modelos-atribucion-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
-          Modelos de atribución para D2C: last-click, data-driven y MMM →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo PMax sobreatribuye 25-45% y por qué medir con MER blended es obligatorio</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/smart-bidding-google-ads-d2c" className="text-white font-semibold hover:text-white/80">
-          Smart Bidding en Google Ads para D2C: cuándo confiar y cuándo intervenir →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">PMax es 100% Smart Bidding obligatorio — protocolo de intervención sin romper el learning phase.</p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default PerformanceMaxEcommerceD2CCuandoUsarPage;
+export default BuenROASNichosPage;

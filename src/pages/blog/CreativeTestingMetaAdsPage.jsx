@@ -3,354 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Cuántos creativos necesito para hacer creative testing en Meta Ads?",
-    a: "Para un test válido necesitas al menos 3-5 variaciones por variable que quieras testear (hook, formato, copy, oferta). En DayByDay recomendamos trabajar con un mínimo de 10-15 creativos activos simultáneamente en una cuenta con \u003e50€/día de gasto, para que el algoritmo de Meta tenga suficientes opciones y datos para optimizar.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuánto presupuesto hay que asignar a creative testing?",
-    a: "La regla que seguimos: entre el 15-25% del presupuesto total de Meta Ads dedicado a testing de nuevos creativos. Si gastas 5.000€/mes, entre 750-1.250€ deberían ir a testear nuevos creativos. El resto va a escalar los ganadores probados.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuándo sé que un creativo ha 'ganado' el test?",
-    a: "Un creativo gana cuando alcanza al menos 50 eventos de optimización (conversiones o purchases) con un ROAS igual o superior al objetivo de la cuenta, en un periodo de 7-14 días. Con menos datos el resultado es estadísticamente poco fiable. No declaramos ganador antes de 50 conversiones.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Es mejor usar DCO (Dynamic Creative Optimization) o creativos individuales para hacer tests?",
-    a: "Depende del objetivo. DCO es útil para exploración rápida de combinaciones (Meta combina elementos automáticamente), pero no te dice qué elemento específico funcionó. Para aprendizaje real y construir un banco de insights accionables, usamos creativos individuales en fases de validación. DCO sirve más para escala que para aprendizaje.",
-  },
-  {
-    q: "¿Con qué frecuencia hay que renovar los creativos en Meta Ads?",
-    a: "Depende del presupuesto: con <200€/día, un buen creativo puede durar 3-6 semanas. Con \u003e500€/día, la fatiga llega antes (1-2 semanas). La señal de alarma no es el tiempo sino la métrica: si el CTR del creativo cae más de un 25% respecto a su mejor semana, es hora de renovarlo aunque lleve pocos días activo.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const CreativeTestingMetaAdsPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Creative Testing en Meta Ads: el framework que usamos para encontrar creativos ganadores"
-    description="Framework paso a paso para hacer creative testing en Meta Ads: estructura de campañas, métricas de evaluación, cuándo declarar un ganador y cómo construir un sistema de creatividades que escale."
-    slug="creative-testing-meta-ads"
-    datePublished="2026-03-25"
-    readingTime="9 min"
-    category="Meta Ads"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      Por qué el creative testing es la única ventaja competitiva real en Meta Ads
-    </h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      En 2026, Meta Ads es un sistema casi completamente automatizado. La segmentación la gestiona el
-      algoritmo. Las pujas las optimiza el sistema. El presupuesto lo distribuye Advantage Campaign Budget.
-      Si las palancas técnicas están igualadas entre competidores, ¿qué separa al que escala al que se estanca?
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      La respuesta es una sola: <strong className="text-white">los creativos</strong>. El creativo es el único
-      input del sistema publicitario que el algoritmo no puede generar por sí solo (todavía) y que marca la
-      diferencia entre un ROAS de 2x y uno de 5x con el mismo presupuesto y el mismo producto.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      En DayByDay hemos gestionado decenas de cuentas D2C en España y el patrón es constante: las marcas que
-      tienen un sistema de creative testing estructurado consiguen resultados entre 40-80% mejores que las que
-      publican creativos sin metodología. No es suerte. Es proceso.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      El error más común: testear todo a la vez
-    </h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La mayoría de los eCommerce D2C que llegan a DayByDay tienen el mismo problema: han publicado creativos
-      variados sin saber qué testear ni cómo interpretarlo. Lanzan un vídeo UGC, un carrusel de producto y un
-      estático lifestyle al mismo tiempo, en la misma campaña, y cuando uno funciona no saben por qué.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Sin saber por qué funciona algo, no puedes replicarlo ni escalarlo. El creative testing no es publicar
-      muchos creativos — es publicar creativos diseñados para aprender algo específico.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      Las 4 variables que determinan el rendimiento de un creativo
-    </h2>
-    <div className="space-y-4 mb-8">
-      {[
-        {
-          variable: "1. El hook (primeros 3 segundos)",
-          desc: "Es la variable con mayor impacto en el CTR y la tasa de retención. El hook decide si el usuario para el scroll o sigue. En vídeo: los primeros 3 segundos. En estático: el titular o el elemento visual principal. Un hook diferente sobre el mismo producto puede triplicar el CTR.",
-          metric: "Métrica clave: Hook Rate (% que ve >3 seg en vídeo) / CTR en estáticos",
-        },
-        {
-          variable: "2. El formato",
-          desc: "Vídeo UGC, vídeo producido, carrusel, imagen estática, Stories nativo. Cada formato tiene un coste de producción y un perfil de rendimiento diferente. En D2C español, el UGC de cliente real suele superar al contenido producido en adquisición fría, pero no siempre.",
-          metric: "Métrica clave: CPA y ROAS por formato en audiencias frías",
-        },
-        {
-          variable: "3. El ángulo del copy",
-          desc: "Problema/solución, benchmark vs competencia, testimonial, urgencia/escasez, beneficio específico, educación. El mismo producto puede comunicarse con 6 ángulos completamente diferentes. El ángulo correcto depende del momento de compra del usuario.",
-          metric: "Métrica clave: CVR (tasa de clic a compra) por ángulo de copy",
-        },
-        {
-          variable: "4. La oferta o CTA",
-          desc: "Descuento vs precio completo, envío gratis vs precio justo, prueba gratis vs compra directa, urgencia vs evergreen. La oferta afecta directamente al CVR y al tipo de cliente que atrae. Una oferta muy agresiva puede generar volumen pero atraer compradores de bajo LTV.",
-          metric: "Métrica clave: CVR, AOV y tasa de repetición de compra a 30 días",
-        },
-      ].map(({ variable, desc, metric }) => (
-        <div key={variable} className="bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <p className="font-bold text-white mb-2">{variable}</p>
-          <p className="text-white/60 text-sm mb-3">{desc}</p>
-          <p className="text-xs text-[#e63946] font-semibold">{metric}</p>
-        </div>
-      ))}
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      Nuestro framework de creative testing: 3 fases
-    </h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El framework que usamos en DayByDay divide el proceso en tres fases distintas, cada una con objetivos
-      y estructura de campañas diferentes.
-    </p>
-
-    <h3 className="text-xl font-bold mt-8 mb-3">Fase 1: Exploración — ¿qué ángulos resuenan?</h3>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Objetivo: identificar qué hooks y ángulos de copy generan la mayor tasa de interacción.
-      No buscamos conversiones todavía — buscamos señales de resonancia.
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Estructura: campaña de tráfico o engagement, CBO con mínimo 3 ad sets, 3-5 creativos por ad set",
-        "Presupuesto: 10-20€/día por ad set (suficiente para generar datos en 5-7 días)",
-        "Variables testadas: hook (primeros 3 seg o titular visual) con el mismo copy de fondo",
-        "Criterio de avance: CTR > 1.5% en frío y Hook Rate > 30% en vídeos",
-        "Duración: 7 días antes de evaluar — no tocar nada antes",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-[#e63946] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <h3 className="text-xl font-bold mt-8 mb-3">Fase 2: Validación — ¿convierte con datos reales?</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Los creativos que superan los umbrales de Fase 1 pasan a validación en campaña de conversión.
-      Aquí buscamos saber si el creativo realmente vende, no solo si llama la atención.
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Estructura: campaña de Purchase, CBO, 1 creativo por ad set para aislar resultados",
-        "Presupuesto: 20-30€/día por ad set mínimo — necesitas datos de conversión suficientes",
-        "Criterio de victoria: 50+ compras con ROAS ≥ objetivo de la cuenta en 7-14 días",
-        "Combinación de variables: en esta fase sí se pueden testear copy + creativo juntos si el volumen lo permite",
-        "Nunca declarar ganador con menos de 50 conversiones — el margen de error es demasiado alto",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-[#e63946] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <h3 className="text-xl font-bold mt-8 mb-3">Fase 3: Escala — maximizar el ganador</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Un creativo validado pasa a la campaña principal con presupuesto escalado. El objetivo aquí es
-      extraer el máximo valor del creativo antes de que la fatiga lo degrade.
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Mueve el creativo ganador a la campaña principal (Advantage+ Shopping o ASC con mejores performers)",
-        "Monitoriza el CPM semana a semana — si sube más del 30%, la audiencia empieza a saturarse",
-        "Crea variaciones del ganador: mismo hook con copy diferente, mismo copy con nuevo visual",
-        "Señal de fatiga: CTR cae >25% vs mejor semana del creativo → planifica sustitución",
-        "El ganador nunca dura para siempre — hay que tener sustitutos en Fase 2 continuamente",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-[#e63946] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      La estructura de campañas para testing continuo
-    </h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El sistema que implementamos en las cuentas que gestionamos en DayByDay tiene siempre tres capas activas en paralelo:
-    </p>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-      {[
-        {
-          layer: "Capa 1: Escala",
-          desc: "60-70% del presupuesto. Creativos ganadores validados. Objetivo: conversiones al ROAS objetivo.",
-          color: "border-green-500/30 bg-green-500/5",
-        },
-        {
-          layer: "Capa 2: Validación",
-          desc: "20-25% del presupuesto. Candidatos a ganador con buenas métricas de Fase 1. Objetivo: confirmar conversiones.",
-          color: "border-yellow-500/30 bg-yellow-500/5",
-        },
-        {
-          layer: "Capa 3: Exploración",
-          desc: "10-15% del presupuesto. Nuevos conceptos creativos. Objetivo: aprendizaje y próximos candidatos.",
-          color: "border-[#e63946]/30 bg-[#e63946]/5",
-        },
-      ].map(({ layer, desc, color }) => (
-        <div key={layer} className={`border rounded-xl p-4 ${color}`}>
-          <p className="font-bold text-white mb-2 text-sm">{layer}</p>
-          <p className="text-white/60 text-xs">{desc}</p>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      Las métricas que miramos (y las que ignoramos)
-    </h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El dashboard de Meta Ads tiene decenas de métricas. Estas son las que realmente importan para evaluar creativos:
-    </p>
-    <div className="overflow-x-auto mb-8">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 pr-4 text-white/50 font-semibold">Métrica</th>
-            <th className="text-left py-3 pr-4 text-white/50 font-semibold">Para qué sirve</th>
-            <th className="text-left py-3 text-white/50 font-semibold">Umbral referencia</th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-white/5">
-          {[
-            ["CTR (link clicks)", "Mide la capacidad del creativo de generar interés suficiente para el clic", ">1.5% en frío, >2.5% en retargeting"],
-            ["Hook Rate (vídeos)", "% que ve más de 3 segundos — indica si el hook detiene el scroll", "30% para pasar a validación"],
-            ["CVR (clic → compra)", "Mide si el creativo atrae al buyer correcto y no solo curiosos", ">1.5% para producto <60€, >0.8% para &gt;100€"],
-            ["CPM", "Señal del nivel de competencia y saturación de audiencia", "Comparar vs benchmark del sector — sube si hay fatiga"],
-            ["ROAS", "La métrica de negocio — lo que importa al final", "Definido por el objetivo de la cuenta, no universal"],
-          ].map(([metric, use, ref]) => (
-            <tr key={metric}>
-              <td className="py-3 pr-4 text-white font-medium">{metric}</td>
-              <td className="py-3 pr-4 text-white/60">{use}</td>
-              <td className="py-3 text-white/50 text-xs">{ref}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
-    <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">Métricas que ignoramos para evaluar creativos:</strong> alcance, impresiones, frecuencia
-      (a nivel de evaluación de creativo — la frecuencia sí importa a nivel de campaña). Estas métricas dicen cuánta
-      gente vio el creativo, no si el creativo es bueno.
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      Cuántos creativos necesitas según tu presupuesto
-    </h2>
-    <div className="space-y-4 mb-8">
-      {[
-        {
-          budget: "50-150€/día",
-          active: "6-10 creativos activos",
-          rotation: "Renueva 2-3 creativos/mes",
-          note: "Con poco presupuesto, la fatiga tarda más. Prioriza 1-2 formatos que sepas que convierten en tu sector.",
-        },
-        {
-          budget: "150-500€/día",
-          active: "10-20 creativos activos",
-          rotation: "Renueva 4-6 creativos/mes",
-          note: "Aquí empieza a merecer la pena tener las 3 capas activas. El testing ya genera ROI directo.",
-        },
-        {
-          budget: "+500€/día",
-          active: "20-40 creativos activos",
-          rotation: "Renueva 8-12 creativos/mes",
-          note: "A este nivel, el creative testing es el cuello de botella principal del crecimiento. Necesitas un sistema de producción continua.",
-        },
-      ].map(({ budget, active, rotation, note }) => (
-        <div key={budget} className="bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <div className="flex items-center gap-3 mb-3">
-            <span className="text-[#e63946] font-black">{budget}</span>
-          </div>
-          <div className="grid grid-cols-2 gap-4 mb-3">
-            <div>
-              <p className="text-white/40 text-xs mb-1">Creativos activos</p>
-              <p className="text-white text-sm font-semibold">{active}</p>
-            </div>
-            <div>
-              <p className="text-white/40 text-xs mb-1">Rotación recomendada</p>
-              <p className="text-white text-sm font-semibold">{rotation}</p>
-            </div>
-          </div>
-          <p className="text-white/50 text-xs">{note}</p>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      El banco de insights: cómo acumular ventaja competitiva
-    </h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El objetivo final del creative testing no es solo encontrar el creativo ganador de esta semana.
-      Es construir un banco de aprendizajes específico para tu marca y tu cliente: qué hooks funcionan
-      en tu categoría, qué ángulos de copy convierten mejor en tu precio, qué formatos tienen mejor LTV.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      En DayByDay documentamos cada test con tres campos: la hipótesis inicial (qué pensábamos que iba a
-      pasar), el resultado real (qué pasó) y el aprendizaje accionable (qué hacemos diferente a partir de
-      ahora). Tras 3-6 meses, este banco de insights es imposible de replicar por un competidor nuevo
-      — es la ventaja competitiva real.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La mayoría de marcas D2C en España no tienen este sistema. Publican creativos de forma reactiva,
-      sin aprender de cada iteración. Esa es la oportunidad.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">
-      ¿Por qué muchas marcas D2C fallan en creative testing?
-    </h2>
     <div className="space-y-3 mb-8">
       {[
-        "Impaciencia: sacan conclusiones con 5-10 conversiones cuando se necesitan 50+",
-        "Confunden 'muchos creativos' con 'sistema de testing' — sin hipótesis no hay aprendizaje",
-        "No tienen proceso de producción de creativos: dependen de cuando 'sale' contenido nuevo",
-        "Testean variables combinadas: no saben si ganó el hook o el copy porque los pusieron juntos",
-        "No documentan: cada round de tests empieza de cero sin aprender del anterior",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-white/30 mt-0.5 flex-shrink-0">✗</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <div className="bg-[#1a1616] border border-[#e63946]/20 rounded-xl p-6 mb-8">
-      <p className="text-white font-bold mb-2">¿Quieres implementar este framework en tu cuenta?</p>
-      <p className="text-white/60 text-sm mb-4">
-        En DayByDay implementamos este sistema de creative testing en cuentas D2C en España desde{" "}
-        <strong className="text-white">el primer mes</strong>. Los resultados que publicamos (+156% ROAS en 90 días)
-        vienen directamente de aplicar este proceso. Si quieres ver si hay margen de mejora en tus campañas actuales,
-        hablamos 15 minutos.
-      </p>
-      <button
-        onClick={openCalendly}
-        className="bg-[#e63946] text-white font-bold py-2 px-5 rounded-lg text-sm hover:bg-[#c1121f] transition-colors"
-      >
-        Ver si aplica a mi cuenta →
-      </button>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
     </div>
 
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
     <p className="text-white/70 leading-relaxed mb-5">
-      Si tienes curiosidad sobre cómo este framework se aplica a la escala de campañas,{" "}
-      <Link to="/blog/escalar-meta-ads" className="text-[#e63946] hover:underline">
-        aquí explicamos cómo escalar Meta Ads sin romper el ROAS
-      </Link>
-      . Y si quieres entender primero si Meta Ads o Google Ads es la mejor inversión para tu eCommerce,{" "}
-      <Link to="/blog/meta-ads-vs-google-ads" className="text-[#e63946] hover:underline">
-        tienes el análisis completo aquí
-      </Link>
-      . Para priorizar qué testar más allá del creativo (audiencia, puja, estructura),{" "}
-      <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-[#e63946] hover:underline">
-        revisa la pirámide de impacto del A/B testing en Meta Ads
-      </Link>
-      .
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default CreativeTestingMetaAdsPage;
+export default BuenROASNichosPage;

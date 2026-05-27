@@ -1,197 +1,147 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
-import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
-    q: "¿Cuánto se puede subir el presupuesto de Meta Ads sin romper el ROAS?",
-    a: "La regla segura es no superar el 20-30% de subida en una misma semana. Subidas superiores al 30% sacan a las campañas de la fase de aprendizaje y el algoritmo necesita entre 7-14 días para recalibrarse, lo que provoca caídas temporales del ROAS. Si necesitas escalar más rápido, hazlo en pasos del 20-25% con al menos 5-7 días de estabilización entre subidas.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Qué hacer si el ROAS cae al escalar Meta Ads?",
-    a: "Depende de la magnitud de la caída. Una caída de hasta el 15% en los 5-7 días post-subida es normal y el ROAS suele recuperarse solo — no toques nada. Si la caída supera el 20% y se mantiene más de 10 días, reduce el presupuesto al nivel anterior, espera que el ROAS se estabilice y vuelve a intentar la subida de forma más gradual. Si el ROAS cae más del 30%, es señal de un problema subyacente: tracking, fatiga creativa o saturación de audiencia.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuánto tiempo tarda el algoritmo de Meta en estabilizarse tras una subida de presupuesto?",
-    a: "Entre 5 y 14 días, dependiendo de la magnitud de la subida y del volumen de conversiones de la cuenta. Cuentas con más de 50 conversiones semanales se estabilizan más rápido (5-7 días). Cuentas con pocas conversiones pueden tardar hasta 14 días. Durante ese período, no hagas más cambios: cada modificación reinicia el aprendizaje y alarga el período de inestabilidad.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cuándo está lista mi cuenta de Meta Ads para escalar?",
-    a: "Tu cuenta está lista para escalar si cumple tres condiciones: (1) el ROAS lleva al menos 3 semanas estable por encima de tu objetivo, (2) tienes un pipeline de al menos 6-8 creatividades nuevas por mes para mantener el ritmo de la escala, y (3) el tracking es correcto (match rate superior al 80% en Events Manager). Intentar escalar sin estas bases destruye el ROAS y desperdicia presupuesto.",
-  },
-  {
-    q: "¿Escalar con Advantage+ Shopping protege mejor el ROAS que las campañas manuales?",
-    a: "Sí, en la mayoría de cuentas de ecommerce. Advantage+ Shopping Campaigns (ASC) redistribuye el presupuesto automáticamente entre prospecting y retargeting según la demanda real, lo que amortigua mejor las fluctuaciones de ROAS al escalar. Con campañas manuales, al subir el presupuesto en prospecting sin ajustar retargeting, el equilibrio se rompe y el ROAS cae más. Meta recomienda ASC como formato primario para ecommerce precisamente por su estabilidad en escala.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Cómo escalar campañas Meta Ads sin que se rompa el ROAS"
-    description="Protocolo para escalar Meta Ads sin perder rentabilidad: umbrales de decisión, reglas de subida de presupuesto, señales de alarma y el sistema que usamos en DayByDay para escalar de 5K a 80K€/mes sin sacrificar ROAS."
-    slug="escalar-campanas-meta-ads-sin-romper-roas"
-    datePublished="2026-03-25"
-    dateModified="2026-03-25"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
     readingTime="8 min"
-    category="Meta Ads"
-    keywords={["escalar campañas meta ads", "escalar meta ads sin romper roas", "cómo escalar meta ads", "protocolo escala meta ads", "subir presupuesto meta ads"]}
+    category="Paid Media"
     faqs={faqs}
-    relatedPosts={relatedPostsData["escalar-campanas-meta-ads-sin-romper-roas"] || []}openCalendly={openCalendly}
+    openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El problema con <strong className="text-white">escalar campañas de Meta Ads</strong> no es técnico — es que la mayoría de los ecommerces lo hacen sin un protocolo claro. Suben el presupuesto demasiado rápido, el ROAS cae, entran en pánico y vuelven al presupuesto inicial. El resultado es una cuenta estancada donde nunca se puede crecer sin perder rentabilidad.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Este artículo recoge el protocolo que usamos en DayByDay para llevar cuentas de 5.000€/mes a 80.000€/mes sin que el ROAS caiga por debajo del objetivo. No es teoría: son las reglas concretas que seguimos en cada subida de presupuesto, con los umbrales exactos de decisión.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Por qué el ROAS se rompe al escalar</h2>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El algoritmo de Meta aprende con datos. Cuando subes el presupuesto de golpe, el sistema tiene que recalibrar todo su modelo de optimización con el nuevo volumen de gasto. Durante ese período de recalibración — que Meta llama "fase de aprendizaje" — las campañas rinden peor. Si la subida es demasiado grande, la recalibración puede tardar hasta 14 días.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El segundo problema es la saturación: con más presupuesto, el sistema tiene que impactar a más personas en el mismo tiempo. Si la audiencia es pequeña, el CPM sube porque hay más competencia por las mismas impresiones. La frecuencia se dispara, los creativos se fatigan más rápido y el ROAS cae incluso aunque el algoritmo esté funcionando bien.
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Los prerequisitos antes de escalar</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Intentar escalar una cuenta que no está lista es la causa número uno de ROAS destruido. Antes de subir presupuesto, verifica estos tres requisitos:
-    </p>
-    <div className="space-y-4 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          num: "1",
-          req: "ROAS estable ≥3 semanas",
-          desc: "El ROAS debe llevar al menos 3 semanas por encima de tu objetivo sin caídas significativas. Si el ROAS fluctúa mucho semana a semana, el problema no es falta de presupuesto — hay algo que arreglar primero.",
-        },
-        {
-          num: "2",
-          req: "Tracking correcto (match rate 80%)",
-          desc: "Verifica en Meta Events Manager que el match rate de tus eventos de compra está por encima del 80% y que no hay duplicaciones. Un tracking roto hace que el algoritmo optimice con datos incorrectos y el ROAS se destruye al escalar.",
-        },
-        {
-          num: "3",
-          req: "Pipeline de creatividades activo",
-          desc: "Necesitas al menos 6-8 creatividades nuevas por mes para mantener el rendimiento al escalar. A más presupuesto, más rápido se fatigan los creativos. Sin un sistema de producción activo, el ROAS cae a las 2-3 semanas de la subida.",
-        },
-      ].map(({ num, req, desc }) => (
-        <div key={num} className="bg-[#1a1616] border border-white/8 rounded-xl p-4 flex gap-4">
-          <div className="w-8 h-8 rounded-full bg-[#de0015]/20 border border-[#de0015]/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <span className="text-[#de0015] font-bold text-sm">{num}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
           </div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
           <div>
-            <p className="font-semibold text-white text-sm mb-1">{req}</p>
-            <p className="text-white/55 text-sm">{desc}</p>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
           </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Tabla de decisión: cuánto subir y cuándo parar</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Esta es la tabla que usamos internamente en DayByDay. Define exactamente cuánto presupuesto subir, cuánto tiempo esperar y qué hacer según el comportamiento del ROAS tras la subida:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Subida de presupuesto</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Caída de ROAS tolerable</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Días de espera</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Acción si el ROAS no se recupera</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { subida: "≤20%", caida: "Hasta -10%", dias: "5-7 días", accion: "Continuar — caída normal de aprendizaje" },
-            { subida: "20-30%", caida: "Hasta -15%", dias: "7-10 días", accion: "Monitorizar — si persiste, mantener 7 días más" },
-            { subida: "30-50%", caida: "Hasta -20%", dias: "10-14 días", accion: "Reducir al 80% del presupuesto actual y esperar" },
-            { subida: "50%", caida: "No recomendable", dias: "—", accion: "Dividir en 2 subidas de ≤25% con 2 semanas entre ellas" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-medium">{row.subida}</td>
-              <td className={`py-3 px-3 ${i === 3 ? "text-red-400" : "text-white/70"}`}>{row.caida}</td>
-              <td className="py-3 px-3 text-white/60">{row.dias}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.accion}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/50 text-xs mb-6">
-      Fuente: datos internos DayByDay Consulting — análisis de 40+ cuentas de ecommerce D2C en España con inversiones entre 5.000€ y 80.000€/mes.
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">La regla de los 7 días: no toques nada</h2>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
     <p className="text-white/70 leading-relaxed mb-4">
-      El error más frecuente después de una subida de presupuesto es hacer más cambios cuando el ROAS cae los primeros días. Cambiar pujas, pausar conjuntos o modificar audiencias mientras el algoritmo está recalibrando lo empeora — cada cambio reinicia el aprendizaje.
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
     </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      La regla es simple: tras cualquier subida de presupuesto superior al 20%, no hagas ningún otro cambio significativo durante 7 días. Deja que el algoritmo procese los nuevos datos. Si en el día 7 el ROAS sigue por debajo del objetivo más del 15%, entonces sí actúas — pero no antes.
-    </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-3">Cambios que reinician el aprendizaje (evitar durante 7 días tras subida)</p>
-      <div className="space-y-2">
-        {[
-          "Cambiar la estrategia de puja o el objetivo de optimización",
-          "Modificar las audiencias o añadir nuevas exclusiones",
-          "Pausar conjuntos de anuncios activos o cambiar su presupuesto",
-          "Añadir o eliminar creatividades de conjuntos activos",
-          "Cambiar el evento de conversión objetivo",
-        ].map((item) => (
-          <div key={item} className="flex items-start gap-2 text-white/55 text-sm">
-            <span className="text-red-400 mt-0.5 flex-shrink-0">✗</span>
-            <span>{item}</span>
-          </div>
-        ))}
-      </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Advantage+ Shopping: la estructura que mejor protege el ROAS en escala</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      En campañas manuales, al subir el presupuesto de prospecting sin ajustar retargeting, el equilibrio entre audiencias frías y calientes se rompe y el ROAS cae. <strong className="text-white">Advantage+ Shopping Campaigns (ASC)</strong> resuelve esto gestionando automáticamente la distribución del presupuesto en tiempo real.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Según la documentación oficial de <a href="https://www.facebook.com/business/help/1986556321743605" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Business Help sobre Advantage+ Shopping</a>, estas campañas usan señales de comportamiento de toda la cuenta para optimizar la distribución del gasto entre usuarios nuevos y compradores anteriores. El resultado práctico: al escalar el presupuesto, el ROAS es más estable porque el algoritmo puede redistribuir hacia donde hay más oportunidades de conversión.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      En las cuentas que hemos migrado a ASC antes de escalar, la caída de ROAS post-subida ha sido un 35-40% menor que en cuentas con estructura manual equivalente.
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Métricas a monitorizar durante la escala</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      No basta con mirar el ROAS. Estas son las métricas que revisamos diariamente durante los 10-14 días posteriores a cualquier subida de presupuesto relevante:
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        { metrica: "ROAS (ventana 7 días)", umbral: "No debe caer >15% respecto a la semana anterior", señal: "Si cae &gt;20%, aplicar protocolo de recuperación" },
-        { metrica: "CPM", umbral: "Subida de hasta +20% es normal al escalar", señal: "Si sube 30%, hay saturación de audiencia o aumento de competencia" },
-        { metrica: "Frecuencia (audiencias frías)", umbral: "Mantener por debajo de 2,5 en los últimos 7 días", señal: "Si supera 3, necesitas más audiencia o nuevos creativos urgente" },
-        { metrica: "CTR del creativo", umbral: "No debe caer >25% respecto al promedio histórico", señal: "Si cae más, el creativo está en fatiga — rotar" },
-        { metrica: "Tasa de conversión post-clic", umbral: "Debe mantenerse estable al escalar", señal: "Si cae, el problema no está en Meta sino en la landing o el checkout" },
-      ].map(({ metrica, umbral, señal }) => (
-        <div key={metrica} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-white text-sm mb-1">{metrica}</p>
-          <p className="text-white/55 text-sm mb-1"><span className="text-green-400">Normal:</span> {umbral}</p>
-          <p className="text-white/40 text-xs"><span className="text-red-400">Alarma:</span> {señal}</p>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: de 8.000€/mes a 45.000€/mes en 5 meses</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Un ecommerce D2C de suplementos llegó a nosotros con un ROAS de 3,1x pero incapaz de superar los 8.000€/mes de inversión sin que el ROAS se destruyera. Cada vez que intentaban escalar, el ROAS caía por debajo del punto de equilibrio en menos de dos semanas.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El diagnóstico reveló tres problemas: tracking con duplicaciones en el evento de compra (ROAS real era 2,4x, no 3,1x), estructura con 12 conjuntos de anuncios con presupuesto insuficiente para aprender, y cero sistema de producción de creatividades.
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
     </p>
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
       <div className="grid grid-cols-2 gap-4">
         {[
-          { label: "Inversión mes 1 (post-diagnóstico)", value: "8.000 €/mes" },
-          { label: "Inversión mes 5", value: "45.000 €/mes" },
-          { label: "ROAS mes 1 (real, post-fix tracking)", value: "2,4x" },
-          { label: "ROAS mes 5", value: "3,8x" },
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
         ].map(({ label, value }) => (
           <div key={label}>
             <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
@@ -201,123 +151,30 @@ const EscalarCampanasMetaAdsSinRomperROASPage = ({ openCalendly }) => (
       </div>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      El proceso: arreglamos el tracking primero, consolidamos a 2 campañas ASC, pusimos en marcha un ciclo de 8-10 creatividades nuevas por mes y aplicamos el protocolo de subida del 20-25% cada 2 semanas. En 5 meses, multiplicamos la inversión por 5,6x con un ROAS 58% más alto que el punto de partida.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La clave no fue hacer algo especial al escalar — fue tener las bases en orden antes de intentarlo. Puedes ver el detalle completo del proceso de diagnóstico en nuestro artículo sobre <a href="https://www.facebook.com/business/help/562949378025779" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">la calidad de los eventos en Meta Events Manager</a>.
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay la fase de escala</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Cuando gestionamos una cuenta en fase de escala, seguimos un proceso de revisión semanal con cuatro momentos fijos:
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
     </p>
-    <div className="space-y-3 mb-8">
-      {[
-        { dia: "Lunes", accion: "Revisión de métricas semanales vs objetivos de ROAS, CPM y frecuencia" },
-        { dia: "Miércoles", accion: "Decisión de subida: ¿cumple los requisitos para la siguiente subida del 20-25%?" },
-        { dia: "Jueves", accion: "Introducción de nuevas creatividades (si la frecuencia media supera 2,5)" },
-        { dia: "Viernes", accion: "Report al cliente con estado de la escala y proyección del mes siguiente" },
-      ].map(({ dia, accion }) => (
-        <div key={dia} className="flex gap-4 bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <div className="text-[#de0015] font-bold text-sm w-20 flex-shrink-0">{dia}</div>
-          <div className="text-white/60 text-sm">{accion}</div>
-        </div>
-      ))}
-    </div>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu cuenta lleva meses sin poder escalar sin romper el ROAS?</p>
-      <p className="text-white/50 text-sm mb-4">Diagnosticamos el problema en 48h — tracking, estructura o creatividades. Sin coste ni compromiso.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar diagnóstico gratuito →
-      </button>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/black-friday-meta-ads-d2c-preparacion" className="text-white font-semibold hover:text-white/80">
-          Black Friday Meta Ads para D2C: preparar Q4 con 90 días de antelación →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo aplicar el protocolo de escala con regla 7 días al peak BF (250-400% presupuesto en 11 días)</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/presupuesto-minimo-meta-ads-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Presupuesto mínimo Meta Ads: ¿cuánto necesito invertir? →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Suelo operativo por debajo del cual ningún protocolo de escalado funciona porque el algoritmo no estabiliza</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
-          Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">La fórmula y la calculadora para fijar el presupuesto Meta antes de aplicar el protocolo de subidas del 20-30%</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" className="text-white font-semibold hover:text-white/80">
-          [PILAR] Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Sistema completo en 5 fases — la visión estratégica que enmarca la táctica de subir presupuesto</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white font-semibold hover:text-white/80">
-          Cómo mejorar el ROAS en Meta Ads: 7 palancas reales →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Las causas raíz del ROAS bajo y el orden correcto para atacarlas antes de escalar</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-meta-ads" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar Meta Ads de 100€ a 1.000€/día →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Guía completa de escala vertical y horizontal con Advantage+ Shopping</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cbo-vs-abo-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
-          CBO vs ABO en Meta Ads 2026: qué estructura usar para escalar D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">La decisión estructural previa al protocolo de escala y cómo repartir spend entre CBO, ABO y ASC</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/automatizaciones-reglas-meta-ads-manager" className="text-white font-semibold hover:text-white/80">
-          Automatizaciones y reglas en Meta Ads Manager para escalar →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo automatizar las subidas +15-20% sin romper el aprendizaje del algoritmo</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white font-semibold hover:text-white/80">
-          Benchmark ROAS por sector en España 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Saber si tu ROAS objetivo es realista antes de planificar la escala</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/checklist-auditoria-campanas-paid-media" className="text-white font-semibold hover:text-white/80">
-          Checklist para auditar tus campañas de paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Verificar que tracking, estructura y creatividades están listos antes de escalar</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/audiencias-lookalike-meta-alta-calidad" className="text-white font-semibold hover:text-white/80">
-          Audiencias lookalike en Meta de alta calidad: guía 2026 D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo evitar saturar lookalikes al subir presupuesto y qué stack mantener al escalar</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
-          Advantage+ Shopping: cuándo usarlo y cuándo no →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo estructura ASC la distribución presupuesto/audiencia y por qué protege mejor el ROAS en fase de escala</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-white font-semibold hover:text-white/80">
-          A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Antes de escalar, prioriza tests por impacto: pirámide en 7 niveles del creativo a la estructura</p>
-      </div>
-    </div>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default EscalarCampanasMetaAdsSinRomperROASPage;
+export default BuenROASNichosPage;

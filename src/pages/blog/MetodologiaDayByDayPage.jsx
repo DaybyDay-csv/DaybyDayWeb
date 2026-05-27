@@ -3,246 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué diferencia a DayByDay de otras agencias de marketing digital?",
-    a: "La diferencia principal es la combinación de tres pilares que pocas agencias aplican juntos: inteligencia artificial para análisis y optimización en tiempo real, automatización de procesos para reducir trabajo manual y escalar sin aumentar equipo, y estrategia de paid media full-funnel con foco en resultados medibles (ROAS, CPA, CAC). No gestionamos campañas por separado — construimos ecosistemas de crecimiento integrados.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cómo usa DayByDay la inteligencia artificial en sus campañas?",
-    a: "Usamos IA en tres áreas: (1) análisis predictivo de audiencias para identificar los segmentos con mayor probabilidad de conversión antes de lanzar campañas, (2) optimización dinámica de pujas y presupuestos basada en señales de rendimiento en tiempo real, y (3) generación y prueba de variaciones creativas a escala — podemos testear 30+ variantes simultáneas y el algoritmo identifica las ganadoras en horas, no semanas.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Qué tipo de empresas trabajan con DayByDay?",
-    a: "Trabajamos principalmente con empresas B2C y D2C en España con inversiones en paid media de entre 5.000€ y 100.000€ al mes. Nuestros clientes principales están en los sectores de moda, educación, salud y bienestar, y tecnología de consumo. Lo que tienen en común es que quieren crecer de forma escalable sin aumentar el coste fijo de su equipo interno.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Qué es una estrategia full-funnel y por qué es importante?",
-    a: "Una estrategia full-funnel gestiona las tres fases del customer journey: TOFU (conciencia de marca, audiencias frías), MOFU (consideración, usuarios que ya conocen la marca) y BOFU (conversión, retargeting de alta intención). La mayoría de empresas solo invierten en BOFU (retargeting) y se preguntan por qué el ROAS cae con el tiempo: es porque no están alimentando el embudo con audiencias nuevas.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const MetodologiaDayByDayPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="La Metodología DayByDay: Cómo Combinamos IA, Automatización y Paid Media para Escalar tu Negocio"
-    description="Descubre cómo DayByDay Consulting combina inteligencia artificial, automatización de procesos y estrategia de paid media full-funnel para conseguir más clientes con el mismo equipo."
-    slug="metodologia-daybyday-ia-automatizacion-paid-media"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
     datePublished="2026-03-10"
-    readingTime="9 min"
-    category="Estrategia"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
-    <h2 className="text-2xl font-black mt-10 mb-4">Por qué la mayoría de agencias de marketing no escalan</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El problema de la mayoría de agencias de marketing digital es que venden servicios, no sistemas. Gestionan tus campañas de Meta Ads o Google Ads, te dan un informe mensual y el siguiente mes repiten el proceso. El rendimiento depende de la habilidad manual del ejecutor y del tiempo disponible — y ambas cosas tienen un techo muy claro.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      En DayByDay hemos construido una metodología distinta. En lugar de más horas o más personas, usamos tres pilares que se refuerzan entre sí: inteligencia artificial para procesar datos y anticipar decisiones, automatización de procesos para ejecutar tareas repetitivas sin intervención humana, y paid media full-funnel para traducir esa eficiencia en ingresos reales. El resultado es un sistema de crecimiento que escala contigo, no uno que te frena.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Los tres pilares de la metodología DayByDay</h2>
-
-    <h3 className="text-lg font-bold mt-8 mb-3">Pilar 1: Inteligencia Artificial aplicada al paid media</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      La inteligencia artificial no reemplaza la estrategia — la acelera. En DayByDay aplicamos IA en tres puntos críticos del proceso de paid media donde el margen de mejora es mayor:
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        {
-          titulo: "Análisis predictivo de audiencias",
-          desc: "Antes de lanzar una campaña, analizamos patrones de comportamiento en los datos históricos para identificar qué segmentos tienen mayor probabilidad de conversión. Esto reduce el periodo de aprendizaje del algoritmo y el coste por resultado en las primeras semanas.",
-        },
-        {
-          titulo: "Optimización dinámica de presupuesto",
-          desc: "Monitorizamos el rendimiento en tiempo real y redistribuimos presupuesto automáticamente hacia los anuncios y audiencias con mejor ROAS. Lo que antes tardaba días en ajustarse manualmente, ahora ocurre en horas.",
-        },
-        {
-          titulo: "Producción y test de creatividades a escala",
-          desc: "Generamos más de 30 variaciones creativas por ciclo (copy, imagen, formato, CTA) y usamos el modelo de Advantage+ de Meta junto con nuestro propio sistema de scoring para identificar las ganadoras en días. La fatiga creativa deja de ser un problema.",
-        },
-      ].map(({ titulo, desc }) => (
-        <div key={titulo} className="bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <div className="font-bold text-sm text-white mb-2">{titulo}</div>
-          <div className="text-white/60 text-sm leading-relaxed">{desc}</div>
-        </div>
-      ))}
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h3 className="text-lg font-bold mt-8 mb-3">Pilar 2: Automatización de procesos de marketing</h3>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      La automatización no es un complemento — es lo que permite que el sistema funcione sin intervención manual constante. Identificamos los procesos repetitivos de tu operación de marketing y los convertimos en flujos automáticos que se ejecutan solos, sin errores y a cualquier hora.
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
-    <div className="space-y-3 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        "Flujos de email marketing automatizados según comportamiento del usuario (abandono de carrito, post-compra, reactivación)",
-        "CRM automatizado con lead scoring y nurturing segmentado por etapa del embudo",
-        "Reporting automático de KPIs con alertas cuando un indicador sale del rango objetivo",
-        "Sincronización automática de datos entre plataformas (Meta, Google, Shopify, CRM)",
-        "Automatización de respuestas en canales de atención al cliente para consultas frecuentes",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-[#f0a500] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El resultado directo es que tu equipo dedica tiempo a decisiones estratégicas en lugar de tareas operativas. Y en nuestro caso, que podemos gestionar más cuentas con mayor calidad sin añadir más personas al equipo.
-    </p>
-
-    <h3 className="text-lg font-bold mt-8 mb-3">Pilar 3: Estrategia de paid media full-funnel</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      La IA y la automatización no sirven de nada si la estrategia de medios está mal estructurada. El tercer pilar es la estrategia full-funnel: gestionar simultáneamente las tres fases del customer journey para que el sistema de adquisición funcione como un todo coherente.
-    </p>
-
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-      {[
-        {
-          fase: "TOFU",
-          nombre: "Top of Funnel",
-          objetivo: "Conciencia de marca",
-          canales: "Meta Ads (frío), Google Display, YouTube",
-          kpi: "CPM, alcance, tasa de reproducción",
-          color: "text-blue-400",
-        },
-        {
-          fase: "MOFU",
-          nombre: "Middle of Funnel",
-          objetivo: "Consideración",
-          canales: "Meta Ads (retargeting suave), Google Shopping",
-          kpi: "CTR, visitas a ficha de producto, add-to-cart",
-          color: "text-yellow-400",
-        },
-        {
-          fase: "BOFU",
-          nombre: "Bottom of Funnel",
-          objetivo: "Conversión",
-          canales: "Meta Retargeting (7d/14d), Google Brand Search",
-          kpi: "ROAS, CPA, tasa de conversión",
-          color: "text-green-400",
-        },
-      ].map(({ fase, nombre, objetivo, canales, kpi, color }) => (
-        <div key={fase} className="bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <div className={`font-black text-lg mb-1 ${color}`}>{fase}</div>
-          <div className="text-white/40 text-xs mb-3">{nombre}</div>
-          <div className="text-xs text-white/70 mb-2"><span className="text-white/40">Objetivo: </span>{objetivo}</div>
-          <div className="text-xs text-white/70 mb-2"><span className="text-white/40">Canales: </span>{canales}</div>
-          <div className="text-xs text-white/70"><span className="text-white/40">KPI: </span>{kpi}</div>
-        </div>
-      ))}
-    </div>
-
-    <p className="text-white/70 leading-relaxed mb-5">
-      El error más frecuente en eCommerce es invertir solo en BOFU (retargeting a usuarios que ya han visitado la web) y preguntarse por qué el ROAS cae cada trimestre. La respuesta es sencilla: si no metes audiencias nuevas en el TOFU, el BOFU se agota. Una estrategia full-funnel bien ejecutada mantiene el ROAS estable o creciente a lo largo del tiempo porque siempre hay demanda entrando por arriba.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo se aplica la metodología: el proceso en 4 fases</h2>
-
-    <div className="space-y-4 mb-8">
-      {[
-        {
-          num: "01",
-          titulo: "Diagnóstico y auditoría de datos",
-          desc: "Antes de tocar ninguna campaña, analizamos en profundidad los datos históricos: rendimiento por campaña, segmento y creativo; estructura del pixel de Meta y del tag de Google; calidad del CRM y del flujo de datos entre plataformas. Este diagnóstico define la hoja de ruta completa.",
-        },
-        {
-          num: "02",
-          titulo: "Diseño de la arquitectura de campañas",
-          desc: "Construimos la estructura full-funnel adaptada a tu negocio: qué canales usar en cada fase, qué audiencias construir, qué mensajes llevan cada etapa y cómo se comunican las campañas entre sí. No usamos plantillas — cada arquitectura es específica para el modelo de negocio, el ticket medio y el ciclo de compra del cliente.",
-        },
-        {
-          num: "03",
-          titulo: "Activación con test de aprendizaje acelerado",
-          desc: "En las primeras 4-6 semanas lanzamos versiones paralelas con variaciones controladas (audiencias, creatividades, formatos) para que el algoritmo aprenda rápido. Usamos más de 30 variantes creativas desde el primer día para minimizar el riesgo de fatiga en el periodo de aprendizaje.",
-        },
-        {
-          num: "04",
-          titulo: "Optimización y escalado sistemático",
-          desc: "A partir del mes 2, con datos suficientes, empezamos a escalar lo que funciona y a podar lo que no. El escalado no es solo subir presupuesto — es expandir audiencias, multiplicar los creativos ganadores y activar nuevos canales de forma escalonada para no romper el rendimiento.",
-        },
-      ].map(({ num, titulo, desc }) => (
-        <div key={num} className="flex gap-5 bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <div className="font-black text-3xl text-white/10 flex-shrink-0 leading-none">{num}</div>
-          <div>
-            <div className="font-bold text-white text-sm mb-2">{titulo}</div>
-            <div className="text-white/60 text-sm leading-relaxed">{desc}</div>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
           </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Resultados reales con la metodología DayByDay</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      La metodología no es una promesa — es el proceso detrás de los resultados que hemos conseguido para nuestros clientes:
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          cliente: "Garett España",
-          sector: "eCommerce tecnología",
-          resultado: "CPA de 4,8€",
-          contexto: "3.179€ invertidos, 14.936 clicks, 661 inicios de pago en Meta Ads",
-        },
-        {
-          cliente: "Evercreate × Universidad privada",
-          sector: "Educación superior",
-          resultado: "CTR 10,35% en Google Ads",
-          contexto: "253.679€ gestionados, CPC de 0,24€ en Meta Ads lead gen",
-        },
-        {
-          cliente: "Clientes D2C moda",
-          sector: "Fashion eCommerce",
-          resultado: "ROAS 4x-7x sostenido",
-          contexto: "Full-funnel con +30 variantes creativas por ciclo y Advantage+ Shopping",
-        },
-        {
-          cliente: "Clientes sector salud",
-          sector: "Health & Wellness",
-          resultado: "CAC reducido -35%",
-          contexto: "Automatización CRM + retargeting segmentado por comportamiento de compra",
-        },
-      ].map(({ cliente, sector, resultado, contexto }) => (
-        <div key={cliente} className="bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{sector}</div>
-          <div className="font-bold text-white text-sm mb-1">{cliente}</div>
-          <div className="font-black text-xl text-white mb-2">{resultado}</div>
-          <div className="text-white/50 text-xs leading-relaxed">{contexto}</div>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">¿Esta metodología es para tu empresa?</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      La metodología DayByDay funciona mejor para empresas con estas características:
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
-    <div className="space-y-2 mb-6">
-      {[
-        "eCommerce B2C o D2C con facturación mensual de al menos 50.000€",
-        "Inversión en paid media de 5.000€/mes o superior (o voluntad de llegar ahí)",
-        "Producto o servicio con márgenes suficientes para sostener paid media (margen bruto 30%)",
-        "Empresa con voluntad de escalar: no buscar solo 'mantener' sino crecer de forma medible",
-        "Disposición a compartir datos de negocio (márgenes, LTV, datos CRM) para tomar decisiones reales",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-green-400 mt-0.5 flex-shrink-0">✓</span>
-          <span>{item}</span>
-        </div>
-      ))}
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      Si tu empresa cumple estos criterios y quieres entender cómo aplicar la metodología DayByDay a tu caso concreto, el primer paso es una consulta estratégica gratuita donde analizamos tu situación actual y te proponemos una hoja de ruta específica.
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
     </p>
     <p className="text-white/70 leading-relaxed">
-      También puedes explorar en detalle cada uno de los servicios que forman la metodología:{" "}
-      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">estrategia de paid media</Link>,{" "}
-      <Link to="/servicios/automatizacion" className="text-white underline underline-offset-2 hover:text-white/80">automatización de marketing</Link> y{" "}
-      <Link to="/servicios/meta-ads" className="text-white underline underline-offset-2 hover:text-white/80">gestión de Meta Ads</Link>.{" "}
-      Si quieres ver la metodología en acción con datos reales, consulta nuestro{" "}
-      <Link to="/blog/caso-exito-ecommerce-d2c-roas-meta-ads" className="text-white underline underline-offset-2 hover:text-white/80">
-        caso de éxito: eCommerce D2C +156% ROAS en 90 días con Meta Ads
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
       </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default MetodologiaDayByDayPage;
+export default BuenROASNichosPage;

@@ -3,307 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es la API de Conversiones de Meta y en qué se diferencia del píxel?",
-    a: "La API de Conversiones (CAPI) es un canal server-side que envía eventos de conversión directamente desde tu servidor al de Meta, sin depender del navegador del usuario. El píxel es client-side: se ejecuta en el navegador y se ve afectado por bloqueadores, ITP de Safari, ATT de iOS y extensiones de privacidad. CAPI complementa al píxel — no lo sustituye. Cuando ambos eventos están deduplicados (mediante event_id y event_name compartidos), Meta recibe la señal por dos vías y se queda con la más fiable. Sin CAPI, en 2026 estás perdiendo entre el 20% y el 40% de los eventos de compra que sí están ocurriendo en tu Shopify.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuánto se mejora el rendimiento de Meta Ads tras implementar Conversions API?",
-    a: "En las cuentas D2C que migramos a CAPI deduplicada, vemos consistentemente: +15-25% de eventos de compra capturados (los que el píxel perdía), -10-20% de CPA reportado por Meta (porque la atribución mejora con más señal), +20-40% de calidad de las audiencias lookalike (Meta entrena con eventos completos, no parciales) y mejor estabilidad del algoritmo en fase de aprendizaje. No es magia — es darle a Meta los datos que ya estaban ocurriendo pero no llegaban. La diferencia se nota especialmente en cuentas con mucho tráfico iOS/Safari, donde el píxel pierde más eventos.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cómo se implementa la API de Conversiones en Shopify? ¿Necesito desarrollador?",
-    a: "Para Shopify hay tres rutas. (1) Shopify Conversions API nativa: integración oficial via Facebook & Instagram app, sin código, pero con limitaciones en eventos custom y deduplicación. (2) Apps de partner: Trackify, Aimerce, Elevar — añaden eventos avanzados, identidad first-party y deduplicación robusta, coste 30-150€/mes. (3) Implementación custom via Google Tag Manager server-side o endpoint propio: máximo control, requiere desarrollador y mantenimiento. Para 90% de los D2C españoles entre 30K€ y 500K€/mes, una app de partner como Aimerce o Elevar es el sweet spot: implementación en 1-2 semanas, cobertura completa de eventos y deduplicación correcta.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Qué eventos debo enviar por CAPI para un eCommerce D2C?",
-    a: "Los eventos prioritarios son los de la parte baja del funnel: Purchase (crítico, evento de optimización principal), AddToCart, InitiateCheckout, AddPaymentInfo y CompleteRegistration. Cada uno debe enviarse con: event_id único, event_name estandarizado, event_time, action_source (\"website\"), datos de cliente hasheados (email, teléfono, IP, user_agent, fbp, fbc) y custom_data (value, currency, content_ids, content_type). Sin estos parámetros, el matching de eventos se desploma. La calidad del Event Match Quality (EMQ) en Events Manager debe estar por encima de 7/10 — por debajo, hay un problema de identidad o hashing.",
-  },
-  {
-    q: "¿La API de Conversiones reemplaza al consentimiento del usuario / RGPD?",
-    a: "No. CAPI no exime de cumplir RGPD ni de obtener consentimiento informado. Lo que cambia es la vía técnica: si un usuario rechaza cookies, no debes enviar su evento por CAPI tampoco. El píxel y CAPI deben respetar el mismo flag de consentimiento. Lo que sí permite CAPI es enviar eventos de usuarios que sí han consentido pero cuyo navegador (Safari, Brave, bloqueadores) habría descartado el evento por píxel. La buena práctica es integrar el CMP (Cookiebot, OneTrust, Didomi) con la lógica server-side: si consent=granted, se envía píxel + CAPI; si consent=denied, no se envía nada. La AEPD ha publicado guías claras al respecto que conviene revisar.",
-  },
-  {
-    q: "¿Cómo verifico que mi Conversions API está bien configurada?",
-    a: "Tres comprobaciones obligatorias en Events Manager. (1) Event Match Quality (EMQ): puntuación de 8-10/10 indica matching óptimo de identidad de usuario. (2) Deduplicación: en \"Diagnostics\" no debe haber alertas de eventos duplicados — si las hay, falla event_id o event_name compartido entre píxel y CAPI. (3) Coverage: el porcentaje de eventos enviados por servidor vs navegador debe ser \u003e70% para Purchase. Adicionalmente, prueba el \"Test Events\" tool antes de ir a producción y revisa la cobertura semanal durante el primer mes. Cualquier agencia que no te enseñe estos tres números en el reporte mensual no está midiendo bien.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const GuiaApiConversionesMetaShopifyPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Guía API de Conversiones de Meta: configuración y beneficios para eCommerce"
-    description="Guía completa de la API de Conversiones de Meta (CAPI) para eCommerce D2C: qué es, por qué es no negociable en 2026, cómo se implementa en Shopify, eventos críticos, deduplicación con el píxel, RGPD y verificación en Events Manager."
-    slug="guia-api-conversiones-meta-ads-shopify"
-    datePublished="2026-04-30"
-    dateModified="2026-04-30"
-    readingTime="10 min"
-    category="Tracking"
-    keywords={[
-      "api conversiones meta ads",
-      "conversions api meta",
-      "capi shopify",
-      "api conversiones facebook",
-      "implementar capi ecommerce",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      La <strong className="text-white">API de Conversiones de Meta Ads</strong> (CAPI) dejó de ser opcional hace dos años. En 2026, con iOS bloqueando cookies de terceros por defecto, Safari aplicando ITP agresivo y los navegadores Brave/Firefox limitando el seguimiento, un eCommerce que sólo confíe en el píxel está enviando a Meta entre un 20% y un 40% menos de eventos de compra de los que realmente ocurren — y el algoritmo aprende con datos parciales.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Esta guía cubre lo que un fundador D2C necesita entender para decidir cómo implementar CAPI: qué es realmente, qué impacto tiene en el rendimiento, cómo se implementa en Shopify, qué eventos enviar, cómo deduplicar correctamente con el píxel y cómo verificar que está bien configurada.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es la API de Conversiones (CAPI) y por qué importa</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      CAPI es un canal de envío de eventos server-side: tu servidor (Shopify, una app intermedia o un endpoint propio) envía directamente a los servidores de Meta los eventos de conversión, sin pasar por el navegador del usuario. El píxel hace lo mismo pero desde el navegador, y por tanto está sujeto a todas las limitaciones de privacidad modernas.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La <a href="https://www.facebook.com/business/help/2041148702652965" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">documentación oficial de Meta sobre la API de Conversiones</a> es explícita: la combinación de píxel + CAPI es el setup recomendado para todos los anunciantes que dependan de optimización por conversión. No se trata de elegir uno u otro, sino de enviar la señal por las dos vías y dejar que Meta deduplique.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Impacto real en el rendimiento (datos de cuentas migradas)</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Estos son los rangos de mejora que hemos visto en cuentas D2C españolas tras migrar de píxel-only a píxel + CAPI deduplicada correctamente:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Métrica</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Mejora típica</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Por qué ocurre</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { m: "Eventos Purchase capturados", v: "+15-25%", p: "Recuperas eventos que el píxel perdía por ITP/ATT/bloqueadores" },
-            { m: "CPA reportado por Meta", v: "-10-20%", p: "Más eventos atribuidos al canal real → CPA más cercano al MER" },
-            { m: "Calidad de Lookalikes", v: "+20-40%", p: "Meta entrena con la base de compradores completa, no parcial" },
-            { m: "Estabilidad fase aprendizaje", v: "Salida 30-50% más rápida", p: "Más señal por semana → 50 conversiones se alcanzan antes" },
-            { m: "Event Match Quality (EMQ)", v: "+2-4 puntos", p: "Datos hasheados de cliente (email, IP) elevan el matching" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.m}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.v}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.p}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      No es un tema marginal de tracking: es la diferencia entre escalar con el algoritmo trabajando con buenos datos o escalar a ciegas. En cuentas con mucho tráfico iOS, donde Safari y la App Tracking Transparency capan más eventos, la mejora suele estar en la parte alta del rango.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo implementar CAPI en Shopify: 3 rutas</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Para Shopify hay tres formas de implementar CAPI, con diferente nivel de control, coste y mantenimiento:
-    </p>
-    <div className="space-y-4 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          ruta: "1. Shopify Conversions API nativa (Facebook & Instagram app)",
-          coste: "Gratis (incluida en Shopify)",
-          pros: "Sin código, activación en minutos, mantenida oficialmente.",
-          contras: "Eventos limitados, deduplicación básica, control nulo sobre custom_data y matching avanzado.",
-          cuando: "Tiendas que arrancan o cuentas pequeñas (<10K€/mes en Meta) sin equipo técnico.",
-        },
-        {
-          ruta: "2. App de partner (Aimerce, Elevar, Trackify)",
-          coste: "30-150€/mes según tier",
-          pros: "Deduplicación robusta vía event_id compartido, eventos custom completos, identidad first-party, soporte y documentación buenos.",
-          contras: "Coste recurrente, dependencia de un proveedor externo.",
-          cuando: "Sweet spot para D2C entre 30K€ y 500K€/mes de facturación. Ratio impacto/coste imbatible.",
-        },
-        {
-          ruta: "3. Implementación custom (GTM server-side o endpoint propio)",
-          coste: "Desarrollo 3-8K€ + mantenimiento mensual",
-          pros: "Control total, puede integrar otras plataformas (Google, TikTok, Klaviyo) en el mismo stack server-side.",
-          contras: "Requiere desarrollador con experiencia, mantenimiento continuo, riesgo de fallos silenciosos.",
-          cuando: "Cuentas &gt;500K€/mes con equipo técnico interno o stack multi-canal complejo.",
-        },
-      ].map(({ ruta, coste, pros, contras, cuando }) => (
-        <div key={ruta} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-white text-sm mb-1">{ruta} <span className="text-white/40 font-normal">— {coste}</span></p>
-          <p className="text-white/55 text-sm mb-1"><span className="text-white/70">Pros:</span> {pros}</p>
-          <p className="text-white/55 text-sm mb-1"><span className="text-white/70">Contras:</span> {contras}</p>
-          <p className="text-white/55 text-sm"><span className="text-white/70">Cuándo encaja:</span> {cuando}</p>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Eventos críticos a enviar y parámetros obligatorios</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      No todos los eventos pesan lo mismo. Estos son los que un eCommerce D2C debe enviar por CAPI sí o sí, en orden de prioridad:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Evento</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Para qué se usa</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Prioridad</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { e: "Purchase", p: "Evento de optimización principal de campañas BOFU. Sin esto, no hay CAPI útil", pr: "Crítica" },
-            { e: "InitiateCheckout", p: "Optimización de campañas TOFU/MOFU + audiencias lookalike de mid-funnel", pr: "Alta" },
-            { e: "AddToCart", p: "Audiencias de retargeting + señal temprana de intención", pr: "Alta" },
-            { e: "AddPaymentInfo", p: "Indicador de fricción en checkout — tracking de drop-off", pr: "Media" },
-            { e: "CompleteRegistration", p: "Sólo si captas leads/registros como evento de valor", pr: "Media" },
-            { e: "ViewContent", p: "Señal temprana de interés — útil para remarketing dinámico", pr: "Baja-Media" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.e}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.p}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.pr}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Cada evento debe enviarse con: <code className="text-white text-xs bg-white/5 px-1.5 py-0.5 rounded">event_id</code> (mismo en píxel y CAPI para deduplicar), <code className="text-white text-xs bg-white/5 px-1.5 py-0.5 rounded">event_time</code>, <code className="text-white text-xs bg-white/5 px-1.5 py-0.5 rounded">action_source</code>, datos de cliente hasheados (email, teléfono, IP, user_agent, fbp, fbc) y <code className="text-white text-xs bg-white/5 px-1.5 py-0.5 rounded">custom_data</code> (value, currency, content_ids). Si falta el hash de email o el fbp, el Event Match Quality cae y la deduplicación se rompe.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Deduplicación: el detalle que rompe la mayoría de implementaciones</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El error más común que vemos al auditar cuentas con CAPI activa: eventos duplicados porque la deduplicación no está bien hecha. Cuando ocurre, Meta cuenta dos compras donde sólo hubo una, infla el ROAS reportado y degrada la calidad de las audiencias.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Para deduplicar correctamente, el píxel y CAPI deben enviar el mismo <code className="text-white text-xs bg-white/5 px-1.5 py-0.5 rounded">event_id</code> y el mismo <code className="text-white text-xs bg-white/5 px-1.5 py-0.5 rounded">event_name</code> para el mismo evento. Meta entonces compara y se queda sólo con uno (prioriza el que tenga más datos, normalmente CAPI). Para verificarlo, en Events Manager → Diagnostics no debe aparecer ninguna alerta de eventos duplicados durante el primer mes tras la implementación.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Las apps de partner como Aimerce o Elevar gestionan esto out-of-the-box. En implementaciones custom es donde suele fallar: el desarrollador genera un event_id por cada vía y Meta no puede deduplicar. <a href="https://shopify.engineering/conversions-api-for-shopify-stores" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Shopify Engineering ha documentado los patrones de implementación recomendados</a> que conviene revisar antes de cualquier custom.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">RGPD, consentimiento y CAPI</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Una confusión peligrosa: pensar que CAPI sirve para esquivar el consentimiento. No es así. Si un usuario rechaza cookies en tu CMP, no debes enviar su evento ni por píxel ni por CAPI. Lo que CAPI permite es capturar eventos de usuarios que sí han consentido pero cuyo navegador habría descartado el píxel. La integración correcta lee el flag del CMP (Cookiebot, OneTrust, Didomi) en el servidor antes de disparar el evento server-side.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo verificar que tu CAPI está bien (3 chequeos)</h2>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Event Match Quality (EMQ) por evento ≥ 8/10 en Events Manager. Si baja de 7, falta hashing de email o teléfono.",
-        "Deduplicación: 0 alertas de eventos duplicados en Diagnostics durante el primer mes. Si aparecen, revisa event_id y event_name compartidos.",
-        "Coverage server-side: ≥70% de eventos Purchase enviados desde servidor vs navegador. Por debajo, CAPI no está cubriendo realmente lo que el píxel pierde.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay con CAPI</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      No tocamos campañas hasta tener CAPI deduplicada y validada. Ese es nuestro día 1 con cualquier cuenta D2C nueva. Así lo implementamos:
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Auditoría inicial: estado actual del píxel, EMQ, eventos enviados, cobertura server-side. Te entregamos el documento aunque no firmemos.",
-        "Implementación CAPI mediante app de partner (Aimerce/Elevar) en 1-2 semanas — coste recurrente del cliente, sin overhead de desarrollo.",
-        "Validación en Events Manager: EMQ ≥8/10 por evento, 0 alertas de deduplicación, cobertura ≥70%. No avanzamos hasta tenerlo.",
-        "Integración con CMP (Cookiebot/Didomi) para que el flag de consentimiento se respete en píxel + CAPI.",
-        "Reporte semanal cruzando eventos CAPI vs ventas reales en Shopify para detectar desviaciones antes de que escalen.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Quieres saber cómo está tu CAPI hoy?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita en 30 minutos: revisamos EMQ, deduplicación y cobertura server-side de tu cuenta. Te decimos exactamente cuántos eventos estás perdiendo y cómo recuperarlos.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
-    </div>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/server-side-tracking-shopify-conversions-api" className="text-white font-semibold hover:text-white/80">
-          Tracking server-side completo para Shopify con Conversions API: guía 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El siguiente paso: arquitectura sGTM/Stape, deduplicación cliente-servidor y EMQ &gt;8,5</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ga4-meta-ads-eventos-custom-d2c" className="text-white font-semibold hover:text-white/80">
-          GA4 + Meta Ads para D2C: implementación de eventos custom paso a paso →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo extender la CAPI con eventos custom (wishlist, scroll PDP) compartidos a GA4 para audiencias BOFU</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ios-atribucion-meta-ads-2026-d2c" className="text-white font-semibold hover:text-white/80">
-          iOS 17/18 y atribución en Meta Ads: qué ha cambiado para D2C en 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué la CAPI básica ya no basta y cuánto matching pierde una cuenta D2C con tráfico iOS</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Métricas Meta Ads que importan de verdad (y las que no) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">MER, CPA real vs ROAS de plataforma y por qué CAPI cambia los números reportados</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/por-que-anuncios-meta-no-convierten" className="text-white font-semibold hover:text-white/80">
-          Por qué tus anuncios de Meta no convierten →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Diagnóstico en 5 capas — el tracking es la primera causa que descartar</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/checklist-auditoria-campanas-paid-media" className="text-white font-semibold hover:text-white/80">
-          Checklist de auditoría de campañas paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Auditoría operativa con CAPI, EMQ y cobertura server-side incluidos</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/dynamic-product-ads-meta-shopify-d2c" className="text-white font-semibold hover:text-white/80">
-          Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El caso de uso #1 donde CAPI determina el rendimiento real: content_ids, product sets y estructura DPA</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/internacionalizar-d2c-espanol-meta-ads-eu" className="text-white font-semibold hover:text-white/80">
-          Internacionalizar un D2C español con Meta Ads en EU →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo configurar Conversions API multi-país con campo país en custom_data para discriminar EMQ por mercado y reporting localizado</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white font-semibold hover:text-white/80">
-          Guía Meta Ads para eCommerce D2C en España 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El pilar completo: tracking, estructura, creatividades y escalado para D2C</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/remarketing-dinamico-ecommerce-guia-practica" className="text-white font-semibold hover:text-white/80">
-          Remarketing dinámico para ecommerce: guía práctica →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué CAPI server-side es requisito para que el DPA recupere ROAS post-iOS</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/audiencias-lookalike-meta-alta-calidad" className="text-white font-semibold hover:text-white/80">
-          Audiencias lookalike en Meta de alta calidad: guía 2026 D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Sin CAPI con EMQ &gt;7, la semilla del lookalike pierde la mitad de su match rate</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/retargeting-meta-ads-ecommerce-2026" className="text-white font-semibold hover:text-white/80">
-          Retargeting en Meta Ads para eCommerce: guía completa 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Sin CAPI server-side las audiencias de retargeting pierden la mitad de su tamaño</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default GuiaApiConversionesMetaShopifyPage;
+export default BuenROASNichosPage;

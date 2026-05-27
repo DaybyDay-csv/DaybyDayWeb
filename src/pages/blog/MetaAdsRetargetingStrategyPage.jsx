@@ -1,173 +1,180 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
 
-const MetaRetargetingPage = () => {
-  return (
-    <BlogPostLayout
-      title="El Framework ARCO: La Estrategia de Retargeting Que Multiplicó Por 3.7 Nuestro ROAS En 90 Días"
-      description="Discover the proven 4-step system to turn cold traffic into buyers using Meta's retargeting ecosystem. Concrete numbers, real failures and our exact methodology after managing €2.3M in ad spend."
-      path="/blog/framework-retargeting-meta-ads"
-      datePublished="2024-08-15"
-      readingTime="14 min"
-      category="Paid Media"
-      faqs={[
-        { question: "¿Cuánto tiempo necesito para implementar el framework ARCO?", answer: "Puedes tener lista tu primera campaña optimizada en menos de 4 horas si ya tienes el pixel instalado." },
-        { question: "¿Cuántos productos necesito para hacer retargeting?", answer: "Mínimo 1.500 usuarios en tus audiencias personalizadas para que Meta apruebe los sets de anuncios." },
-        { question: "¿Funciona el retargeting con catálogo de productos?", answer: "Sí, el dynamic retargeting es nuestra carta secreta para e-commerces con +500 SKUs activos." }
-      ]}
-    >
-      <h2 id="epigrafe">EPÍGRAFE</h2>
-      <p>“El 65% de tu presupuesto se gastará en gente que ya te conocía. Mejor ensure que la segunda vez que te vean sea mejor que la primera.”</p>
-      <p>— Gary Vaynerchuk, adaptado al contexto Meta Ads España 2024</p>
+const faqs = [
+  {
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
+  },
+  {
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
+  },
+  {
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
+  },
+];
 
-      <h2 id="escena">ESCENA</h2>
-      <p>Era marzo de 2022. Teníamos 47.000 euros quemándose en una campaña de Meta Ads que delivería un ROAS de 0.81. Cero komma ochenta y uno. Literalmente estavamos perdiendo dinero en cada venta.</p>
-      <p>Nos sentamos en la oficina de Vallecas con Jorge, mi socio CTO, y revisamos los números durante 3 horas seguidas. Teníamos más de 120.000 usuarios en nuestro pixel, pero ninguna estrategia clara para alcanzarlos de nuevo.</p>
-      <p>— «Pablo, el problema no es el producto», me dijo Jorge. «Es que estás mostrando los mismos anúncios a alguien que ya visitó la página 50 veces y todavía le muestras el hero banner de “primera compra”».</p>
-      <p>Aquel viernes por la noche, con pizzas frías y el portátil abierto, nació el primer boceto del sistema ARCO. Tres semanas después, el ROAS_sub3当时的ROAS_sub3当时的ROAS_sub3当时的ROAS_sub3当时的ROAS当时是1.46。90 días después, llegamos a 2.98 ROAS en esa cuenta específica.</p>
-      <p>No era magia. Era un sistema ignorado por la mayoría de agencias en España.</p>
+const BuenROASNichosPage = ({ openCalendly }) => (
+  <BlogPostLayout
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
+    faqs={faqs}
+    openCalendly={openCalendly}
+  >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
 
-      <h2 id="promesa">PROMESA</h2>
-      <p>En este post vas a aprender:</p>
-      <ol>
-        <li><strong>El método ARCO paso a paso:</strong> cómo estructurar tus audiencias de retargeting desde cero absoluto, sin depender de “ públicos similares” que agotan tu base de datos.</li>
-        <li><strong>Cuándo funciona y cuándo NO funciona el retargeting:</strong> El 73% de las cuentas D2C que auditamos tienen audiencias mal segmentadas. Te enseñamos a detectarlo en 15 minutos.</li>
-        <li><strong>Cómo aplicar esta semana:</strong> Tu primer campaign estructurada funcionando en menos de 72 horas. Con los errores típicos que vas a evitar porque ya los cometimos nosotros.</li>
-      </ol>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-      <h2 id="drop-autoridad">DROP AUTORIDAD</h2>
-      <p>Después de gestionar 2.3 millones de euros en spend de Meta Ads con más de 50 marcas D2C españolas, los números son claros:</p>
-      <p>El retargeting representa el 34% del gasto total en las cuentas que generan más de 100k€ anuales, pero genera el 61% de los ingresos.</p>
-      <p>Las campañas de prospecting (audienciasimilar) promedian 1.8 ROAS en nuestros clientes. Las campanhas de retargeting con nuestro framework ARCO promedian 3.7 ROAS.</p>
-      <p>La diferencia: 106% más de retorno por cada euro invertido. Y la mitad del tempo de optimización.</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
 
-      <h2 id="framework">FRAMEWORK ARCO</h2>
-      <p>ARCO significa Secuencia de Reactivación ComercialOptimizada. Son 4 etapas que se alimentan mutuamente y que tienes que ejecutar en orden.</p>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
-      <h3>Paso 1: A - ANALIZA TU BASE DE DATOS</h3>
-      <p><strong>Por qué importa:</strong> No puedes construir sobre cimientosdesconocidos. Si no sabes exactamente quién ha interactuado con tu marca, estás tirando presupuesto.</p>
-      <p><strong>Cómo se hace:</strong> Ve a Meta Business Manager > Administradorde audiencias > Audiencias guardadas. Crea 4 audiencias separadas:</p>
-      <ul>
-        <li>Visitantes de web últimos 180 días (tráfico frío)</li>
-        <li>Interactuados con contenido último 30 días (engagement)</li>
-        <li>Usuarios de tu lista de clientes (purchase)</li>
-        <li>Carritos abandonados últimos 30 días (add to cart sin purchase)</li>
-      </ul>
-      <p><strong>Cifra de error típica:</strong> El 68% de las agencias crean UNA sola audiencia de “todos los visitantes” y esperan resultados. Eso es como poner toda tu facturación en un único producto sin analizar stock. No funciona.</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
 
-      <h3>Paso 2: R - REACTIVA CON SECUENCIA DE CONTENIDO</h3>
-      <p><strong>Por qué importa:</strong> La misma persona necesita ver 7接触 puntos promedio antes de convertir. Si le muestras(el mismo announce una vez, has perdido el 86% de las oportunidades.</p>
-      <p><strong>Cómo se hace:</strong> Crea una sequence de campañas llamadas “Embudo Caliente ARCO”:</p>
-      <ul>
-        <li>Semana 1: Anuncio de prueba social (“3.000 personas han compradon este mes”)</li>
-        <li>Semana 2: Anuncio de urgencia (“Solo quedan 14 unidades en stock”)</li>
-        <li>Semana 3: Anuncio de prueba social con nuevo testimonial</li>
-        <li>Semana 4: Anuncio de salida (“Ultimas 48 horas con descuento”)</li>
-      </ul>
-      <p><strong>Cifra de error típica:</strong> El 82% de las cuentas D2C usan UN solo creativoy rotateannya entre audiencias. La fatigue de anuncios comienza a partir de las 3visualizaciones. Tu CTR baja un 45% después del día 7.</p>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
 
-      <h3>Paso 3: C - CONVIERTE CON FORMATO DINÁMICO</h3>
-      <p><strong>Por qué importa:</strong> Un anuncio genérico tiene un 23% menos de CTR que uncombinación dinámica de producto + precio personalizado basada en el comportamiento del usuario.</p>
-      <p><strong>Cómo se hace:</strong> Activa los catálogos de producto dinámica:</p>
-      <ul>
-        <li>carga tu catálogo en Meta Business Manager</li>
-        <li>Configura “anuncios de productos dinamicos” con el evento “ViewContent” como semilla</li>
-        <li>Añade filtro exclude: “usuarios que han comprado en los últimos 7 días”</li>
-        <li>Configura creativo con precios personalizados usando “{product.price}” en el texto</li>
-      </ul>
-      <p><strong>Cifra de error típica:</strong> El 91% de las tiendas españolas No usan DynamicCreativepara retargeting. Dejan casi 40% de ROAS sobre la mesa simplementeporque “requiere configuración técnica”.</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
 
-      <h3>Paso 4: O - OPTIMIZA CON DATA FEEDBACK LOOP</h3>
-      <p><strong>Por qué importa:</strong> Lo que no mides, no mejoras. El 94% de las cuentasque ejecutan retargeting sin medición específica no saben si están ganando o perdiendo dinero.</p>
-      <p><strong>Cómo se hace:</strong> Configura eventos custom en el pixel:</p>
-      <ul>
-        <li>Evento “retargeting_exposed”: cuando alguien ve 3+ anuncios tus en 7 días</li>
-        <li>Evento “retargeting_converted”: cuando compra después de ver anuncio deretargeting</li>
-        <li>Crea columna personalizada “conversion source” para saber si viene deremarketing o prospecting</li>
-        <li>Compara ROAS entre audiences: coldest vs warmest vs hot</li>
-      </ul>
-      <p><strong>Cifra de error típica:</strong> Sin归因建模, atribuyes todas las ventas a “últimoTouch” y sobreinviertes en audiencias friassobrerreclamando el crédito de las cálidas.</p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
 
-      <h2 id="ejemplo-real">EJEMPLO REAL</h2>
-      <p>Te presento el caso de una marca de suplementos nutricionales española que atendimos en Q3 2023. Llamémosla “NutriSport” (nombre camouflado por NDA).</p>
-      <p><strong>ANTES (mayo 2023):</strong></p>
-      <ul>
-        <li>Gasto mensual en Meta Ads: €23.400</li>
-        <li>ROAS general: 1.42</li>
-        <li>Ticket medio: €67</li>
-        <li>Frecuencia media por usuario: 1.3 veces</li>
-        <li>Estrategia de retargeting: UNA campaña con audience de “website visitors 180 días” y un creativa static</li>
-      </ul>
-      <p><strong>EL PROBLEMA:</strong> Tenían 89.000 usuarios únicos en su pixel pero sologeneraban €5.200 en ventas atribuidas a retargeting. El 78% del presupuesto semanaba en prospecting y solo el 22% en retargeting, cuando la relación óptima según nuestra data es 40/60.</p>
-      <p><strong>IMPLEMENTACIÓN (junio-julio):</strong></p>
-      <p>Aplicamos el framework ARCO completo:</p>
-      <ul>
-        <li>Reestructuramos las audiencias: separamos en 4 grupos (friocaliente, intermedio, caliente, clientes)</li>
-        <li>Creamos secuencia de 4 сообщения por audience</li>
-        <li>Activamos dynamic creative con catálogo de 156 productos</li>
-        <li>Implementamos tracking de “view-through” a 1 día, 7 días, 28 días</li>
-        <li>Incrementamos gasto en retargeting de €5.150 a €13.800 mensuales</li>
-      </ul>
-      <p><strong>DESPUÉS (septiembre 2023):</strong></p>
-      <ul>
-        <li>Gasto total: €31.200 (+33%)</li>
-        <li>Ventas atribuidas a retargeting: €26.840 (+417%)</li>
-        <li>ROAS retargeting: 3.71</li>
-        <li>Ticket medio: €83 (+24%)</li>
-        <li>Frecuencia media: 4.7 veces por usuario (+262%)</li>
-      </ul>
-      <p><strong>RESULTADO FINAL:</strong> Incremento de ROI del 161% en 90 días con lamitad de esfuerzo de optimización. El cliente facturó €312k€ ese trimestre vs €198k€ el anterior.</p>
-      <p>Ahora NutriSport es nuestro caso de estudio interno para nuevos clientes de supplements.</p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
 
-      <h2 id="pro-tip">PRO TIP: El Giro Contraintuitivo</h2>
-      <p>El mayor error que ves en el 99% de las cuentas de retargeting Meta en España? <strong>Excluir demasiado pronto a los compradores.</strong></p>
-      <p>La lógica común dice: “Ya compraron, no les muestres más anuncios”. Pero los datos dicen otra cosa.</p>
-      <p>En 7 de los últimos 12 clientes donde probamos una campaña de “post-purchase” dirigida aclients que habían comprado en los últimos 30 días, el ROAS fue de 4.2—más alto que qualquer campaña Prospecting.</p>
-      <p>Por qué funciona? Porque:</p>
-      <ul>
-        <li>Ya confiaron en ti una vez (menor fricción de venta)</li>
-        <li>Tienes su email y método de pago guardado (menor fricción de procesamiento)</li>
-        <li>Pueden comprar para regalo, repetición, o upsell</li>
-        <li>El coste por mil impresiones es 60% menor que audiencias frías</li>
-      </ul>
-      <p>Claro, no les muestres el mismo producto que ya compraron. Muéstrales:</p>
-      <ul>
-        <li>Productos complementarios (si compró proteina, muéstrale creatina o amino)</li>
-        <li>Descuento para su “segunda compra” (“€15 de descuento porque vuelves”)</li>
-        <li>Nuevo incoming (“lanzamos sabor Vainilla”)</li>
-        <li>Programa de referidos (“€10 por cada amigo que traigas”)</li>
-      </ul>
-      <p>Llamamos a esto “Modelo de Lifetime Value Accelerado”. Y ha sido el diferenciadorprincipal en 4 cuentas que sextuplicaron su valor de cliente en 6 meses.</p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
 
-      <h2 id="action-step">ACTION STEP: Ejecutable Hoy En Menos De 30 Minutos</h2>
-      <p>Vas a hacer esto ahora mismito, mientras lees esto:</p>
-      <p><strong>Paso 1:</strong> Abre Meta Business Manager > Administrador de audiencias</p>
-      <p><strong>Paso 2:</strong> Crea 4 audiencias nuevas siguiendo este formato exacto:</p>
-      <ul>
-        <li>"RETARGETING - Web Visitantes (30 días)" → Tráfico web, últimos 30 días</li>
-        <li>"RETARGETING - Engaged (60 días)" → Engagement, últimos 60 días</li>
-        <li>"RETARGETING - Carritos Abandonados (30 días)" → AddToCart, últimos 30 días</li>
-        <li>"RETARGETING - Compradores (90 días)" → Purchase, últimos 90 días</li>
-      </ul>
-      <p><strong>Paso 3:</strong> Guarda este post y mañana creas la secuencia. Tienes 20minutosmax. Eso es todo.</p>
-      <p>Si tienes dudas sobre si tu pixel está bien instalado, <Link to="/blog/pixel-facebook-setup">revisa nuestra guía de instalación del pixel meta aquí</Link>. Sin pixel, todo lo demás no sirve.</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
 
-      <h2 id="recap">RECAP + CLIFFHANGER</h2>
-      <p><strong>Lo que te llevas:</strong></p>
-      <ul>
-        <li>Framework ARCO completo para estruturar tu sistema de retargeting</li>
-        <li>Método para convertir audiencia fría en clients usando 4 herramientasespecíficas</li>
-        <li>El pro tip de post-purchase que la mayoría ignora</li>
-        <li>Tu primer paso ejecutable HOY</li>
-      </ul>
-      <p><strong>Próximo tema:</strong></p>
-      <p>La próxima semana vamos a entrar en profundidad en el <Link to="/blog/facebook-ads-catalog-dynamic-ads">Cómo-configurar-Dynamic-Ads-para-tu-e-commerce</Link>: el sistema que hicimos funcionar para 3 marcas de fashion y generó en promedio un 47% más de ventas con el mismo presupuesto.</p>
-      <p>Si quieres que auditemos tu cuenta y te mostremos exactamente dónde está tu money left on the table con tu retargeting actual, <Link to="/consultoria-daybyday">habla con nuestro equipo aquí</Link>.</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
+  </BlogPostLayout>
+);
 
-      <p>Nos vemos en el siguiente post.</p>
-    </BlogPostLayout>
-  );
-};
-
-export default MetaRetargetingPage;
+export default BuenROASNichosPage;

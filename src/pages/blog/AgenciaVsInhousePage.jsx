@@ -1,168 +1,180 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
-import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
-    q: "¿Es mejor contratar una agencia o un equipo interno de marketing?",
-    a: "Depende de la fase del negocio. Para empresas en fase de crecimiento con presupuesto publicitario mensual inferior a 20.000€, una agencia especializada suele tener mejor coste-efectividad que un equipo interno. Para empresas con inversiones superiores y necesidad de control total sobre la estrategia, un equipo mixto (equipo interno + agencia especializada) suele ser la opción óptima.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuánto cuesta un equipo interno de marketing vs una agencia?",
-    a: "Un equipo interno básico con un performance manager, un especialista en Meta Ads y un creativo cuesta entre 8.000-15.000€/mes en salarios brutos. Una agencia especializada para el mismo trabajo cuesta entre 2.000-5.000€/mes. La diferencia es significativa, pero el equipo interno ofrece mayor alineación con la marca y exclusividad.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Qué ventaja tiene usar IA en marketing frente a los métodos tradicionales?",
-    a: "La IA permite análisis de datos en tiempo real, personalización a escala, optimización automática de campañas y producción de contenido más rápida. Las agencias nativas en IA como DayByDay combinan la estrategia humana con herramientas de IA para ofrecer resultados más rápidos y con menor coste operativo que las agencias tradicionales.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const AgenciaVsInhousePage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Agencia vs In-House vs IA: el desglose honesto de costes y resultados"
-    description="¿Contratas una agencia de marketing, construyes un equipo interno o usas IA? Comparativa honesta de costes, ventajas y desventajas de cada opción para que tomes la decisión correcta."
-    slug="agencia-vs-inhouse-vs-ia"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
     datePublished="2026-03-10"
-    readingTime="7 min"
-    category="Estrategia"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
-    relatedPosts={relatedPostsData["agencia-vs-inhouse"] || []}
     openCalendly={openCalendly}
   >
-    <h2 className="text-2xl font-black mt-10 mb-4">La pregunta que más nos hacen los fundadores</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      Cuando una empresa alcanza cierto volumen, la pregunta es inevitable: ¿contrato una agencia de marketing, construyo un equipo interno o uso herramientas de IA para hacerlo yo? No hay una respuesta universal, pero sí hay factores concretos que determinan qué opción tiene más sentido en cada situación.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Este análisis está basado en nuestra experiencia auditando decenas de empresas y en los costes reales del mercado español en 2026.
-    </p>
-            {link_para}
-            
-
-    <h2 className="text-2xl font-black mt-10 mb-4">El coste real de cada opción</h2>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">Equipo interno (In-House)</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Construir un equipo de marketing interno parece la opción más controlada, pero el coste total es frecuentemente subestimado.
-    </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-5">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-3">Coste mensual estimado — equipo básico</p>
-      <div className="space-y-2 text-sm">
-        {[
-          { rol: "Performance Manager (Meta + Google)", salario: "3.500-5.000 €/mes bruto" },
-          { rol: "Creativo / Diseñador", salario: "2.500-3.500 €/mes bruto" },
-          { rol: "Especialista SEO/Contenidos", salario: "2.000-3.000 €/mes bruto" },
-          { rol: "Herramientas y software", salario: "500-1.000 €/mes" },
-          { rol: "TOTAL", salario: "8.500-12.500 €/mes" },
-        ].map(({ rol, salario }) => (
-          <div key={rol} className="flex justify-between">
-            <span className={`text-white/65 ${rol === "TOTAL" ? "font-bold text-white" : ""}`}>{rol}</span>
-            <span className={`${rol === "TOTAL" ? "font-bold text-white" : "text-white/40"}`}>{salario}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-4">
-      A esto hay que añadir tiempo de onboarding (3-6 meses hasta rendimiento pleno), riesgo de rotación, coste de selección y curva de aprendizaje. El equipo interno tiene sentido cuando el volumen de trabajo justifica la dedicación completa de varios perfiles.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">Agencia de marketing tradicional</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Las agencias tradicionales cobran honorarios de gestión (porcentaje de la inversión publicitaria o tarifa fija) más la inversión en medios. Sus ventajas son la especialización y la velocidad de arranque; sus desventajas, la falta de exclusividad y la rotación de cuentas.
-    </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-5">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-3">Estructura de costes agencia tradicional</p>
-      <div className="space-y-2 text-sm">
-        {[
-          { concepto: "Fee de gestión mensual", coste: "1.500-4.000 €/mes" },
-          { concepto: "Porcentaje sobre inversión", coste: "10-20% del presupuesto" },
-          { concepto: "Producción creativa", coste: "Variable (a veces incluido)" },
-          { concepto: "TOTAL para 5.000€/mes en ads", coste: "~2.500-3.500 €/mes" },
-        ].map(({ concepto, coste }) => (
-          <div key={concepto} className="flex justify-between">
-            <span className={`text-white/65 ${concepto.startsWith("TOTAL") ? "font-bold text-white" : ""}`}>{concepto}</span>
-            <span className={`${concepto.startsWith("TOTAL") ? "font-bold text-white" : "text-white/40"}`}>{coste}</span>
-          </div>
-        ))}
-      </div>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">Agencia nativa en IA (el modelo DayByDay)</h3>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Las agencias que han integrado IA en su operativa pueden ofrecer más por menos: análisis de datos en tiempo real, producción creativa más rápida, optimización algorítmica y automatización de la parte operativa. El coste es similar o inferior al de una agencia tradicional, con mayor capacidad de escala.
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-5">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-3">Qué incluye un modelo de agencia AI-native</p>
-      <div className="space-y-2 text-sm text-white/65">
-        {[
-          "Gestión de paid media (Meta Ads + Google Ads) con optimización algorítmica",
-          "Producción creativa asistida por IA (mayor volumen, menor coste)",
-          "Automatización de nurturing y seguimiento de leads",
-          "Reportes automáticos en tiempo real",
-          "Estrategia y consultoría humana en cada fase",
-        ].map((item) => (
-          <div key={item} className="flex items-start gap-2">
-            <span className="text-green-400">✓</span>
-            <span>{item}</span>
-          </div>
-        ))}
-      </div>
-    </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Comparativa directa: cuándo elegir cada opción</h2>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          opcion: "Equipo In-House",
-          cuando: "Inversión en ads >30.000€/mes, necesitas control total de la estrategia, tienes recursos para onboarding largo.",
-          noQuando: "Estás en fase de crecimiento, presupuesto limitado o no tienes tiempo para gestionar un equipo.",
-        },
-        {
-          opcion: "Agencia Tradicional",
-          cuando: "Necesitas velocidad de arranque, tu inversión es media (5.000-20.000€/mes) y prefieres un contrato flexible.",
-          noQuando: "Buscas exclusividad, tienes necesidades muy específicas o quieres integración profunda con tu negocio.",
-        },
-        {
-          opcion: "Agencia AI-Native",
-          cuando: "Quieres los resultados de un equipo senior con la agilidad de una agencia moderna. Inversión entre 3.000-25.000€/mes.",
-          noQuando: "Necesitas un equipo completamente interno o tu negocio requiere presencia física constante.",
-        },
-      ].map(({ opcion, cuando, noQuando }) => (
-        <div key={opcion} className="bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <p className="font-bold text-white mb-3">{opcion}</p>
-          <div className="space-y-2 text-sm">
-            <div className="flex items-start gap-2 text-green-400">
-              <span className="flex-shrink-0">✓ Elige esto si:</span>
-              <span className="text-white/60">{cuando}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
             </div>
-            <div className="flex items-start gap-2 text-red-400/70">
-              <span className="flex-shrink-0">✗ No es ideal si:</span>
-              <span className="text-white/60">{noQuando}</span>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
             </div>
           </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">El modelo híbrido: la opción más frecuente a escala</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      La mayoría de empresas que superan cierto volumen acaban adoptando un modelo mixto: un responsable interno de marketing (o CMO) que marca la estrategia y la visión de marca, combinado con una agencia especializada para la ejecución de paid media, automatización y producción de contenido.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Este modelo combina lo mejor de ambos mundos: conocimiento profundo del negocio (interno) con especialización técnica y economías de escala (agencia).
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
     <p className="text-white/70 leading-relaxed">
-      Si estás evaluando qué modelo tiene más sentido para tu empresa, puedes{" "}
-      <Link to="/como-trabajamos" className="text-white underline underline-offset-2 hover:text-white/80">
-        conocer cómo trabajamos en DayByDay
-      </Link>{" "}
-      o consultar nuestros{" "}
-      <Link to="/resultados" className="text-white underline underline-offset-2 hover:text-white/80">
-        resultados y casos de éxito
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
       </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default AgenciaVsInhousePage;
+export default BuenROASNichosPage;

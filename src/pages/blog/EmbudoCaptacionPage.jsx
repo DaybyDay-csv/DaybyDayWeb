@@ -3,155 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es un embudo de captación de clientes automatizado?",
-    a: "Un embudo de captación automatizado es un sistema que guía a un lead desde el primer contacto con tu marca hasta la conversión en cliente, con la mayor parte del proceso funcionando de forma automática: anuncios, landing pages, emails de nurturing, lead scoring y notificaciones al equipo de ventas. El objetivo es captar y cualificar leads sin intervención manual constante.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuánto tiempo tarda en funcionar un embudo de captación?",
-    a: "Un embudo básico puede estar funcionando en 2-4 semanas. El período de optimización real son los primeros 2-3 meses, donde ajustas los mensajes, los tiempos de las secuencias y el umbral de escalado a ventas en función de los datos reales de comportamiento de los leads.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Qué tasa de conversión es normal en un embudo de captación?",
-    a: "Las tasas varían mucho según el sector y el precio del servicio. En negocios B2B de servicios, una tasa de conversión de lead a llamada del 10-20% es razonable. De llamada a cliente, el 20-40% es un buen benchmark para servicios de consultoría. El embudo automatizado suele mejorar estas tasas porque reduce el tiempo de respuesta y personaliza la comunicación.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const EmbudoCaptacionPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Cómo construir un embudo de captación de clientes automatizado — Guía práctica"
-    description="Aprende a construir un sistema de captación de clientes que funciona 24/7: anuncios, landing page, secuencia de emails, lead scoring y CRM conectado. Paso a paso con herramientas reales."
-    slug="embudo-captacion-clientes"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
     datePublished="2026-03-10"
     readingTime="8 min"
-    category="Automatización"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es un embudo de captación y por qué necesitas automatizarlo</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      Un embudo de captación de clientes es el recorrido que hace un desconocido desde que descubre tu marca hasta que se convierte en cliente. Sin automatización, cada paso de ese recorrido requiere intervención manual: responder al lead, enviar información, hacer seguimiento, calificar si vale la pena y cerrar la venta.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      La automatización no reemplaza a los humanos en las partes que requieren criterio y empatía — el cierre de ventas, la negociación, la propuesta personalizada. Pero sí automatiza todo lo que es repetitivo: la captación, la cualificación inicial, el nurturing y el seguimiento sistemático.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Las cuatro fases de un embudo de captación automatizado</h2>
-    <div className="space-y-4 mb-6">
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
+
+    <div className="space-y-3 mb-8">
       {[
-        {
-          fase: "Fase 1 — Atracción",
-          desc: "Publicidad de pago (Meta Ads, Google Ads) o contenido orgánico (SEO, redes sociales) que lleva tráfico cualificado a tu landing page de captación.",
-        },
-        {
-          fase: "Fase 2 — Conversión",
-          desc: "La landing page convierte visitantes en leads. Un formulario con 3-5 campos (nombre, email, empresa/sector, presupuesto) es suficiente para la mayoría de negocios de servicios.",
-        },
-        {
-          fase: "Fase 3 — Nurturing",
-          desc: "Secuencia de emails automáticos que educa al lead, genera confianza y lo acerca a la decisión de compra antes de que hable con el equipo de ventas.",
-        },
-        {
-          fase: "Fase 4 — Conversión a cliente",
-          desc: "El lead cualificado (alto lead score) recibe una llamada del equipo de ventas o agenda directamente una reunión. El CRM gestiona el seguimiento post-llamada.",
-        },
-      ].map(({ fase, desc }) => (
-        <div key={fase} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-bold text-white text-sm mb-1">{fase}</p>
-          <p className="text-white/60 text-sm">{desc}</p>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo construir la landing page de captación</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      La landing page es el corazón del embudo. Su único objetivo es convertir visitantes en leads. Cada elemento debe estar al servicio de esa conversión.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
-    <div className="space-y-3 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        { elemento: "Titular", desc: "Propuesta de valor clara en una frase. No describas lo que haces — describe el resultado que consiguen." },
-        { elemento: "Subtítulo", desc: "Elimina la mayor objeción en 1-2 líneas. '¿Cuánto tarda?' / '¿Cuánto cuesta?' / '¿Funciona para mi sector?'" },
-        { elemento: "Prueba social", desc: "3 métricas de resultados reales (ROAS, CPA, leads) o logos de clientes reconocibles. Cuanto más específicos, mejor." },
-        { elemento: "Formulario", desc: "3-5 campos máximo. Nombre, email y una pregunta de cualificación (sector, inversión actual, objetivo). Menos campos = más leads; más campos = leads mejor cualificados." },
-        { elemento: "CTA", desc: "'Agendar llamada gratuita' o 'Obtener auditoría gratuita' funcionan mejor que 'Contáctanos' o 'Enviar'." },
-      ].map(({ elemento, desc }) => (
-        <div key={elemento} className="flex items-start gap-3 text-sm">
-          <span className="font-bold text-white w-28 flex-shrink-0">{elemento}</span>
-          <span className="text-white/60">{desc}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">La secuencia de nurturing: de lead frío a cliente listo para comprar</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Una vez que el lead entra en el CRM, la secuencia de nurturing automatizada toma el control. El objetivo es educarlo y generar confianza antes de que el equipo de ventas entre en acción.
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-5">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-3">Secuencia de nurturing recomendada (7 emails / 14 días)</p>
-      <div className="space-y-2 text-sm text-white/65">
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
         {[
-          { dia: "Día 0", email: "Bienvenida + qué esperar. Fija expectativas y confirma que recibiste su solicitud." },
-          { dia: "Día 2", email: "Caso de estudio relevante para su sector con métricas específicas." },
-          { dia: "Día 4", email: "Artículo educativo o guía que resuelve un problema común de su perfil." },
-          { dia: "Día 6", email: "FAQ — las 3 preguntas más frecuentes que hace alguien como él/ella." },
-          { dia: "Día 8", email: "Testimonios en vídeo o citas de clientes similares." },
-          { dia: "Día 11", email: "Propuesta de valor directa + CTA a agendar llamada." },
-          { dia: "Día 14", email: "Último intento — urgencia suave + CTA final." },
-        ].map(({ dia, email }) => (
-          <div key={dia} className="flex items-start gap-3">
-            <span className="text-[#de0015] font-bold w-12 flex-shrink-0">{dia}</span>
-            <span>{email}</span>
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
           </div>
         ))}
       </div>
     </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Lead scoring: cómo saber cuándo llamar a un lead</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El lead scoring asigna puntuaciones automáticas a cada lead según su comportamiento. Cuando alcanza un umbral (por ejemplo, 80 puntos), el CRM notifica automáticamente al comercial para que le llame.
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
     </p>
-    <div className="space-y-2 mb-5">
-      {[
-        { accion: "Rellena el formulario", puntos: "+20 pts" },
-        { accion: "Abre el primer email", puntos: "+5 pts" },
-        { accion: "Hace clic en un enlace del email", puntos: "+10 pts" },
-        { accion: "Visita la página de precios", puntos: "+15 pts" },
-        { accion: "Visita la web más de 3 veces", puntos: "+10 pts" },
-        { accion: "No abre ningún email en 7 días", puntos: "-10 pts (entra en reactivación)" },
-      ].map(({ accion, puntos }) => (
-        <div key={accion} className="flex justify-between items-center bg-[#1a1616] border border-white/8 rounded-xl px-4 py-2">
-          <span className="text-white/65 text-sm">{accion}</span>
-          <span className={`font-bold text-sm ${puntos.startsWith("-") ? "text-red-400/80" : "text-green-400"}`}>{puntos}</span>
-        </div>
-      ))}
-    </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Herramientas para implementar el embudo</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        { herramienta: "GoHighLevel", uso: "CRM + landing pages + email + SMS + lead scoring. La opción más completa para negocios de servicios." },
-        { herramienta: "HubSpot (gratuito)", uso: "CRM básico + formularios + emails. Buena opción de inicio para equipos pequeños." },
-        { herramienta: "Klaviyo + Shopify", uso: "Para eCommerce. Automatización de email con integración nativa de datos de compra." },
-        { herramienta: "Calendly / Cal.com", uso: "Para automatizar la reserva de llamadas directamente desde el email de nurturing." },
-      ].map(({ herramienta, uso }) => (
-        <div key={herramienta} className="flex items-start gap-3 text-sm">
-          <span className="font-bold text-white w-36 flex-shrink-0">{herramienta}</span>
-          <span className="text-white/60">{uso}</span>
-        </div>
-      ))}
-    </div>
-
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
     <p className="text-white/70 leading-relaxed">
-      Si quieres implementar este sistema en tu negocio, consulta nuestro{" "}
-      <Link to="/servicios/captacion-clientes" className="text-white underline underline-offset-2 hover:text-white/80">
-        servicio de captación de clientes
-      </Link>{" "}
-      o lee sobre{" "}
-      <Link to="/blog/automatizacion-marketing-que-es" className="text-white underline underline-offset-2 hover:text-white/80">
-        automatización de marketing
-      </Link>{" "}
-      para entender el sistema completo.
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default EmbudoCaptacionPage;
+export default BuenROASNichosPage;

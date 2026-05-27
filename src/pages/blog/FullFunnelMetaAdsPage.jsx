@@ -3,172 +3,145 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es una estrategia full-funnel en Meta Ads?",
-    a: "Una estrategia full-funnel en Meta Ads significa gestionar la publicidad en las tres fases del proceso de compra: TOFU (captación de audiencia fría nueva), MOFU (consideración y retargeting intermedio) y BOFU (conversión de los usuarios más cercanos a comprar). Cada fase usa formatos, audiencias y objetivos de campaña distintos.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuánto presupuesto necesito para hacer full-funnel en Meta Ads?",
-    a: "Para una estrategia full-funnel efectiva en Meta Ads recomendamos un mínimo de 1.500€/mes de inversión publicitaria. La distribución orientativa es 60-70% en prospección (TOFU), 20-25% en retargeting MOFU y 10-15% en BOFU. Con menos presupuesto, el algoritmo no tiene suficientes datos para optimizar cada fase correctamente.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuánto tiempo tarda en funcionar una estrategia full-funnel?",
-    a: "Los primeros resultados del funnel completo se ven entre la semana 3 y 6, una vez que las campañas de prospección han acumulado suficiente tráfico para alimentar el retargeting. El sistema alcanza su rendimiento óptimo entre el mes 2 y 3, cuando todos los segmentos tienen datos suficientes para que el algoritmo optimice bien.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const FullFunnelMetaAdsPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Estrategia Full-Funnel de Meta Ads para marcas D2C — Guía completa"
-    description="Aprende a estructurar tus campañas de Meta Ads en tres fases (TOFU, MOFU, BOFU) para captar audiencia fría, cultivarla y convertirla en clientes. Guía completa con ejemplos reales."
-    slug="estrategia-full-funnel-meta-ads-d2c"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
     datePublished="2026-03-10"
     readingTime="8 min"
-    category="Meta Ads"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es el funnel de ventas en Meta Ads y por qué importa</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      La mayoría de anunciantes en Meta Ads cometen el mismo error: lanzar anuncios de conversión directa a audiencias frías y esperar ventas. El problema es que un usuario que no conoce tu marca no está listo para comprar. Necesita pasar por varias fases antes de convertir.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Una estrategia full-funnel organiza tus campañas de Meta Ads para acompañar al usuario en cada etapa: desde que descubre tu marca hasta que compra y repite. Es la diferencia entre quemar presupuesto y construir un sistema de adquisición predecible.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
-            {link_para}
-            
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-3">Las tres fases del funnel</p>
-      <div className="space-y-2">
-        {[
-          { fase: "TOFU", nombre: "Top of Funnel", desc: "Captación — audiencias frías que no conocen tu marca" },
-          { fase: "MOFU", nombre: "Middle of Funnel", desc: "Consideración — usuarios que han interactuado pero no han comprado" },
-          { fase: "BOFU", nombre: "Bottom of Funnel", desc: "Conversión — usuarios con alta intención de compra" },
-        ].map(({ fase, nombre, desc }) => (
-          <div key={fase} className="flex items-start gap-3 text-sm">
-            <span className="font-mono text-[#de0015] font-bold w-14 flex-shrink-0">{fase}</span>
+
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
-              <span className="text-white font-semibold">{nombre}: </span>
-              <span className="text-white/60">{desc}</span>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">TOFU: cómo captar audiencia fría con Meta Ads</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El TOFU es la fase de descubrimiento. El objetivo no es vender, sino conseguir que usuarios que no te conocen interactúen con tu marca por primera vez. En Meta Ads, el TOFU funciona mejor con contenido que genera curiosidad o emoción, no con anuncios de producto directo.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">Formatos más efectivos para TOFU</h3>
-    <div className="space-y-3 mb-6">
-      {[
-        { formato: "Vídeo corto (15-30s)", uso: "Genera reconocimiento de marca rápido. CTR más alto que imagen estática en audiencias frías." },
-        { formato: "Carrusel de problema/solución", uso: "Educa al usuario sobre su problema antes de presentar tu solución. Excelente para marcas nuevas." },
-        { formato: "UGC (contenido de usuario)", uso: "La forma más efectiva de generar confianza inicial. El algoritmo de Meta lo favorece por su apariencia orgánica." },
-        { formato: "Reels y Stories nativas", uso: "Integración perfecta con el feed orgánico. Menor fricción y menor CPM." },
-      ].map(({ formato, uso }) => (
-        <div key={formato} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-white text-sm mb-1">{formato}</p>
-          <p className="text-white/55 text-sm">{uso}</p>
         </div>
       ))}
     </div>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">Segmentación TOFU: qué funciona en 2026</h3>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      La segmentación por intereses ha perdido precisión tras los cambios de iOS y las restricciones de datos. En 2026, las audiencias que mejor funcionan en TOFU son:
-    </p>
-    <div className="space-y-2 mb-5">
-      {[
-        "Advantage+ Audience (dejar que el algoritmo explore sin restricciones de intereses)",
-        "Lookalike 1-3% de compradores de los últimos 180 días",
-        "Lookalike 1-3% de visitantes de producto con tiempo >30s",
-        "Audiencias amplias por país + edad sin segmentación adicional (funciona mejor de lo esperado)",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">MOFU: retargeting inteligente para usuarios tibios</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El MOFU es la fase más subestimada del funnel. Aquí trabajas con usuarios que ya te conocen pero no han comprado: visitantes de tu web, personas que vieron tus vídeos, interactuaron con tus posts o guardaron tus anuncios. Están más cerca de comprar que la audiencia fría, pero todavía necesitan un empujón.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">Segmentos MOFU más rentables</h3>
-    <div className="grid grid-cols-1 gap-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        { segmento: "Vistas de vídeo 50-75%", ventana: "30 días", mensaje: "Presenta el producto con más detalle. Ya mostraron interés." },
-        { segmento: "Visitantes web sin compra", ventana: "14 días", mensaje: "Recordatorio de marca + oferta de prueba o garantía." },
-        { segmento: "Add to Cart sin compra", ventana: "7 días", mensaje: "Urgencia y eliminación de objeciones. Oferta temporal si es posible." },
-        { segmento: "Engagement Instagram/Facebook", ventana: "60 días", mensaje: "Social proof y contenido educativo. Aún en fase de consideración." },
-      ].map(({ segmento, ventana, mensaje }) => (
-        <div key={segmento} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <div className="flex justify-between items-center mb-1">
-            <p className="font-semibold text-white text-sm">{segmento}</p>
-            <span className="text-white/30 text-xs">{ventana}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
           </div>
-          <p className="text-white/55 text-sm">{mensaje}</p>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">BOFU: convertir a los usuarios más cercanos a comprar</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El BOFU es donde ocurren las ventas. Aquí te diriges a usuarios que iniciaron el proceso de compra pero no lo terminaron: quienes añadieron al carrito, iniciaron el checkout, o compraron hace más de 90 días y puedes reactivar.
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">Tácticas BOFU de alta conversión</h3>
-    <div className="space-y-3 mb-6">
-      {[
-        "Dynamic Product Ads (DPA): muestra exactamente el producto que vio el usuario",
-        "Carrito abandonado con urgencia temporal: descuento o envío gratis con límite de 24-48h",
-        "Testimonios específicos del producto que visitaron: reduce la objeción de incertidumbre",
-        "Garantías y políticas de devolución: elimina el riesgo percibido en el momento de decisión",
-        "Cross-sell post-compra: a compradores de los últimos 30 días con productos complementarios",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-green-400 mt-0.5 flex-shrink-0">✓</span>
-          <span>{item}</span>
-        </div>
-      ))}
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo distribuir el presupuesto en el funnel</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Una pregunta habitual: ¿cuánto presupuesto poner en cada fase? No hay una fórmula universal, pero estos son los rangos que usamos como punto de partida según el volumen mensual de inversión:
-    </p>
-    <div className="grid grid-cols-3 gap-3 mb-6">
-      {[
-        { fase: "TOFU", pct: "60-70%", color: "text-blue-400", desc: "Prospección fría" },
-        { fase: "MOFU", pct: "20-25%", color: "text-yellow-400", desc: "Retargeting tibio" },
-        { fase: "BOFU", pct: "10-15%", color: "text-green-400", desc: "Conversión directa" },
-      ].map(({ fase, pct, color, desc }) => (
-        <div key={fase} className="bg-[#1a1616] border border-white/8 rounded-xl p-4 text-center">
-          <div className="text-white/40 text-xs mb-1">{fase}</div>
-          <div className={`font-bold text-lg ${color}`}>{pct}</div>
-          <div className="text-white/40 text-xs mt-1">{desc}</div>
-        </div>
-      ))}
-    </div>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
     <p className="text-white/70 leading-relaxed mb-5">
-      A medida que el TOFU genera más tráfico y datos, el MOFU y el BOFU se vuelven más eficientes. El ratio cambia con el tiempo: en los primeros meses el TOFU necesita más inversión; en marcas más maduras, el MOFU y BOFU pueden representar hasta un 40% del gasto total.
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: full-funnel en marca D2C de moda con Advantage+</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Una marca española de ropa D2C llegó a DayByDay con campañas centradas únicamente en conversión directa. Su ROAS estaba estancado en 1.8x y el CPA no bajaba de 35€. Reestructuramos su cuenta con una estrategia full-funnel completa.
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
     </p>
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
       <div className="grid grid-cols-2 gap-4">
         {[
-          { label: "ROAS antes", value: "1,8x" },
-          { label: "ROAS después (mes 3)", value: "4,2x" },
-          { label: "CPA antes", value: "35 €" },
-          { label: "CPA después", value: "14 €" },
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
         ].map(({ label, value }) => (
           <div key={label}>
             <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
@@ -178,42 +151,30 @@ const FullFunnelMetaAdsPage = ({ openCalendly }) => (
       </div>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      La clave fue tres cambios simultáneos: mover la prospección a Advantage+ Shopping, separar el retargeting por ventanas de tiempo (7 días vs 30 días con mensajes distintos), y producir UGC específico para cada fase del funnel. Si quieres aplicar esta estrategia en tu negocio, consulta nuestro{" "}
-      <Link to="/servicios/meta-ads" className="text-white underline underline-offset-2 hover:text-white/80">
-        servicio de gestión de Meta Ads
-      </Link>{" "}
-      o nuestro servicio de{" "}
-      <Link to="/servicios/ecommerce" className="text-white underline underline-offset-2 hover:text-white/80">
-        crecimiento para eCommerce
-      </Link>.
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Los errores más comunes al implementar un funnel en Meta Ads</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        { error: "Solapamiento de audiencias", solucion: "Exclusión activa — excluir en BOFU a compradores recientes y en MOFU a los segmentos de BOFU" },
-        { error: "Mismo creativo en todo el funnel", solucion: "Mensajes distintos por fase: inspiración en TOFU, información en MOFU, urgencia en BOFU" },
-        { error: "Presupuesto insuficiente en TOFU", solucion: "Sin tráfico nuevo el funnel se seca. El TOFU alimenta las otras dos fases" },
-        { error: "No excluir compradores recientes", solucion: "Excluir compradores de los últimos 30 días para no gastar en quien ya convirtió" },
-        { error: "Ventanas de retargeting demasiado largas", solucion: "Usar ventanas cortas (7-14 días) para BOFU. Los usuarios calientes pierden intención rápido" },
-      ].map(({ error, solucion }) => (
-        <div key={error} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-red-400 text-sm mb-1">✗ {error}</p>
-          <p className="text-white/55 text-sm">→ {solucion}</p>
-        </div>
-      ))}
-    </div>
-
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
     <p className="text-white/70 leading-relaxed">
-      Si quieres entender mejor los términos usados en este artículo, visita nuestro{" "}
-      <Link to="/glosario" className="text-white underline underline-offset-2 hover:text-white/80">
-        glosario de marketing digital
-      </Link>. Para una visión completa de cómo estructurar y escalar Meta Ads en tu ecommerce D2C, lee la{" "}
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
       <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
-        guía completa de Meta Ads para ecommerce en España 2026
-      </Link>. Y si prefieres que gestionemos tu estrategia full-funnel directamente, agenda una llamada estratégica gratuita con nuestro equipo.
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default FullFunnelMetaAdsPage;
+export default BuenROASNichosPage;

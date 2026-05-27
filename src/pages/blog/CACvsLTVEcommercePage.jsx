@@ -1,319 +1,180 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
-import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
-    q: "¿Qué es la relación LTV/CAC y por qué se usa para saber si un D2C es escalable?",
-    a: "El LTV/CAC mide cuánto vale un cliente a lo largo de su vida (Lifetime Value) frente a lo que cuesta adquirirlo (Customer Acquisition Cost). En eCommerce D2C español, el umbral operativo de salud es 3:1 — por cada euro invertido en adquisición se recuperan tres en margen bruto a lo largo del ciclo de vida del cliente. Por debajo de 2:1, el negocio paga adquisición con caja propia y no tiene margen para reinvertir; por encima de 4:1, normalmente está infrainvirtiendo y dejando crecimiento sobre la mesa. Para escalar Meta Ads sin romper rentabilidad, este ratio importa más que el ROAS de plataforma, porque el ROAS no contabiliza ni recompras ni costes reales del producto.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cómo se calcula el LTV de un eCommerce D2C de forma realista?",
-    a: "La fórmula simple es: AOV × Margen bruto × Número medio de compras por cliente en una ventana fija (12 o 24 meses). En D2C el error más común es usar LTV teórico 'a vida' — para escalar adquisición con seguridad se trabaja con LTV a 90 o 180 días, que es el dinero que el cliente realmente devuelve dentro de un ciclo de caja útil. Por ejemplo, si tu AOV es 65€, margen bruto 60% y un cliente compra de media 1,8 veces en 180 días, el LTV-180d es 65 × 0,60 × 1,8 = 70,2€. Ese es el techo real para tu CAC, no el LTV teórico a 24 meses que tarda dos años en cobrarse.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuál es un CAC bueno para un eCommerce D2C en España?",
-    a: "No existe un CAC bueno absoluto — depende del LTV, el margen y el ciclo de caja. La regla operativa que aplicamos en DayByDay: el CAC máximo aceptable es LTV-180d × 0,40-0,50. Si tu LTV-180d es 70€, el CAC tope viable es 28-35€ para mantener un ratio LTV/CAC de 2,5-3,5x con caja sana. En sectores con recompra alta (suplementos, belleza, alimentación) se puede tensar más; en moda o producto único de ticket alto, el CAC tiene que ser más conservador porque la repetición es menor. La pregunta correcta nunca es '¿es alto?' sino '¿lo recupera el LTV antes de que se rompa la caja?'.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Por qué el ROAS no es suficiente para saber si mi D2C escala?",
-    a: "El ROAS de plataforma sobreestima entre un 20% y un 35% en cuentas D2C españolas en 2026 — atribuye conversiones que ya iban a ocurrir y no descuenta coste de mercancía, envío, devoluciones ni gastos de operación. Tres cuentas con ROAS 3 pueden tener una rentable y dos perdiendo dinero según margen y recurrencia. Para escalar, las métricas que mandan son CAC real (gasto en ads / clientes nuevos), nCPA (CPA solo de nuevos clientes excluyendo retargeting), MER (revenue total / inversión en marketing) y LTV/CAC. El ROAS sirve para gestionar puja y creatividades dentro de la cuenta, no para tomar decisiones de inversión sobre el negocio.",
-  },
-  {
-    q: "¿Qué payback period es razonable en un eCommerce D2C antes de meterle más gasolina?",
-    a: "El payback period es el tiempo que tarda un cliente en devolver lo que costó adquirirlo en margen bruto. En D2C español saludable está entre 60 y 120 días con un objetivo razonable de <90 días si el negocio se autofinancia. Por encima de 180 días la operación necesita capital externo o ralentizar adquisición. Cómo calcularlo: divide CAC entre el margen bruto generado por cliente al mes. Ejemplo, CAC 30€ y un cliente deja 12€ de margen al mes → payback 2,5 meses. Antes de subir presupuesto un 30% o más, este número tiene que estar bajo control — si no, la siguiente ronda de escala te asfixia el cash flow.",
-  },
-  {
-    q: "¿Cómo se mejora el ratio LTV/CAC sin bajar el ritmo de adquisición?",
-    a: "Hay dos palancas y se trabajan en paralelo. La primera es subir LTV: aumentar AOV con bundles y cross-sell, activar email/WhatsApp para empujar segunda compra dentro de los primeros 30 días, lanzar suscripciones cuando el producto lo permita, y mejorar la experiencia post-compra para subir tasa de recompra. La segunda es bajar CAC: mejorar tracking server-side (recupera 15-25% de conversiones perdidas por iOS), separar adquisición de retargeting para ver el CAC real, refinar audiencias con lookalikes sobre top 10% LTV, y subir el ratio de creativos ganadores con un sistema de testing serio. Subir LTV un 20% y bajar CAC un 15% multiplica el ratio sin tocar la inversión.",
-  },
-  {
-    q: "¿Cuál es la diferencia entre CAC blended y CAC por canal, y cuál usar para escalar?",
-    a: "CAC blended es la inversión total de marketing dividida entre clientes nuevos totales (incluye Meta Ads, Google Ads, contenido, email, orgánico). CAC por canal aísla cada fuente. Para tomar decisiones de negocio (¿podemos meter más gasolina al mes que viene?) manda el blended, porque es el coste real de adquirir un cliente sumando todo. Para optimizar dentro de un canal manda el CAC por canal — pero hay que descontar el efecto de retargeting y considerar que Meta Ads suele atribuirse conversiones que vienen de orgánico. La regla práctica: planifica con CAC blended, gestiona con CAC por canal, y vigila el ratio entre ambos para detectar cuándo un canal infla su rendimiento aparente.",
-  },
-  {
-    q: "¿Cuándo deja de ser escalable un D2C aunque el ROAS parezca bueno?",
-    a: "Cuando el LTV/CAC se acerca a 2:1 y la frecuencia de recompra cae por debajo del histórico, aunque el ROAS de Meta siga en 2,5-3. Señales tempranas: el nCPA sube semana a semana sin que aumente la inversión, el MER cae por debajo de 2,5, y el payback period supera los 150 días. En ese punto seguir metiendo gasolina destruye caja, no escala. Lo que toca es congelar inversión adicional, auditar tracking, separar adquisición de retargeting con métricas limpias y trabajar LTV antes de volver a abrir el grifo. Escalar sin estas métricas es la forma más cara de descubrir que no eras escalable.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const CACvsLTVEcommercePage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="CAC vs LTV: la métrica que define si tu D2C es escalable"
-    description="Cómo calcular CAC y LTV de forma realista en un eCommerce D2C, qué ratio LTV/CAC indica que el negocio escala, payback period razonable y palancas concretas para mejorarlo sin frenar adquisición. Con tabla de benchmarks por sector y errores que destruyen caja."
-    slug="cac-vs-ltv-ecommerce-escalable"
-    datePublished="2026-04-28"
-    dateModified="2026-04-28"
-    readingTime="9 min"
-    category="Estrategia"
-    keywords={["cac ltv ecommerce", "ltv cac d2c", "customer acquisition cost ecommerce", "lifetime value d2c", "payback period ecommerce"]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
-    relatedPosts={relatedPostsData["cac-vs-ltv-ecommerce-escalable"] || []}openCalendly={openCalendly}
+    openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">La relación CAC/LTV es la métrica que decide si un eCommerce D2C es escalable o solo parece rentable</strong>. Hemos auditado decenas de cuentas con ROAS de plataforma por encima de 3 que estaban perdiendo dinero — y otras con ROAS 2 que escalaban con caja sana. La diferencia siempre estuvo en el mismo sitio: cuánto cuesta de verdad un cliente nuevo y cuánto devuelve antes de que la caja se rompa.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Este artículo es la guía práctica que damos a los founders D2C que llegan a DayByDay queriendo subir presupuesto. Sin este cálculo bien hecho, escalar Meta Ads no es crecimiento: es acelerar una pérdida. Con él, las decisiones de inversión dejan de depender del feeling y pasan a ser matemáticas.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué son CAC y LTV y por qué se miran juntos</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      <strong className="text-white">CAC (Customer Acquisition Cost)</strong> es lo que te cuesta conseguir un cliente nuevo: inversión total de marketing dividida entre clientes nuevos en un periodo. <strong className="text-white">LTV (Lifetime Value)</strong> es el margen bruto que ese cliente devuelve a lo largo de su relación con la marca. La pregunta de fondo es simple: ¿cuánto pagas por una factura y cuánto te genera esa factura antes de que cierre la caja del mes?
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Según el <a href="https://www.shopify.com/blog/customer-lifetime-value" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">benchmark de Shopify para D2C</a>, los eCommerce que escalan de forma sostenida mantienen un LTV/CAC entre 3:1 y 4:1 en ventana de 12 meses. Por debajo, queman caja; por encima, suelen estar dejando crecimiento sobre la mesa. Es el rango donde el negocio se autofinancia y deja margen para reinvertir en operaciones, equipo y nueva oferta.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular el LTV sin engañarte</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El error clásico es trabajar con LTV teórico a vida — un número que tarda 24 meses en cobrarse y no sirve para decidir si subir presupuesto el mes que viene. Para escalar adquisición con seguridad usamos LTV a 90 y 180 días: el dinero que el cliente devuelve dentro de un ciclo de caja útil.
-    </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
-      <p className="text-white font-semibold mb-2">Fórmula operativa de LTV-180d</p>
-      <p className="text-white/70 text-sm mb-3 font-mono">LTV-180d = AOV × Margen bruto × Compras medias en 180 días</p>
-      <p className="text-white/55 text-sm">Ejemplo D2C suplementos: AOV 55€ × Margen 65% × 2,1 compras/180d = 75,7€ de LTV-180d. Ese es el techo para fijar el CAC máximo aceptable, no un número a 24 meses.</p>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Para que el LTV refleje la realidad y no la ilusión, descuenta del margen bruto: coste de mercancía, envío, devoluciones (entre 4% y 15% según sector) y procesado de pago. El LTV "limpio" es lo que de verdad puedes reinvertir en adquirir el siguiente cliente sin endeudarte.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular el CAC real (no el que muestra Meta)</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El CAC que importa no es el que aparece en el dashboard de Meta. Es el CAC blended: toda la inversión de marketing del periodo dividida entre clientes nuevos del periodo. Incluye Meta Ads, Google Ads, herramientas, agencia o freelancer, contenido pagado y cualquier coste atribuible a adquisición.
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Métrica</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Qué mide</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Cuándo usarla</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c: "CAC blended", s: "Inversión total marketing / clientes nuevos totales", f: "Decisiones de negocio y presupuesto global" },
-            { c: "CAC por canal", s: "Gasto del canal / clientes nuevos atribuidos", f: "Optimización dentro de cada canal" },
-            { c: "nCPA (CPA new customer)", s: "Gasto Meta / clientes nuevos (sin retargeting)", f: "Saber el coste real de adquirir cliente frío" },
-            { c: "MER", s: "Revenue total / inversión total en marketing", f: "Métrica de verdad para Q4 y picos de venta" },
-            { c: "ROAS plataforma", s: "Revenue atribuido / gasto en plataforma", f: "Gestión interna de puja y creativo" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/70 text-xs">{row.f}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      En cuentas D2C españolas auditadas en 2026, el CAC blended suele ser entre un 30% y un 60% mayor que el CPA reportado por Meta. Tomar decisiones con el CPA de plataforma es la forma más rápida de escalar una pérdida.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">El ratio LTV/CAC: qué significa cada nivel</h2>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Ratio LTV/CAC</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Diagnóstico</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Acción recomendada</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c: "<1:1", s: "Pierdes dinero con cada cliente nuevo", f: "Frenar adquisición. Auditar tracking, márgenes y propuesta de valor" },
-            { c: "1:1 — 2:1", s: "Apenas cubres adquisición, sin margen para operación", f: "Mantener inversión. Trabajar LTV (recompra, AOV) antes de escalar" },
-            { c: "2:1 — 3:1", s: "Zona límite, sostenible solo con caja propia", f: "Optimizar embudo y tracking server-side. Reducir CAC en 15-20%" },
-            { c: "3:1 — 4:1", s: "Saludable. El negocio se autofinancia y deja margen", f: "Escalar adquisición de forma controlada (+20-30% mensual)" },
-            { c: ">4:1", s: "Probablemente infrainvertido", f: "Aumentar inversión y testar canales nuevos. Hay crecimiento dejado en la mesa" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/70 text-xs">{row.f}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Payback period: el límite que la caja no perdona</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El payback period es el tiempo que tarda un cliente en devolver en margen bruto lo que costó adquirirlo. Es el límite real para subir el grifo de Meta Ads — si tu payback es 200 días pero tu proveedor cobra a 60, no importa que el LTV/CAC sea 3:1: la caja se rompe antes.
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Según los benchmarks de <a href="https://www.thinkwithgoogle.com/marketing-strategies/data-and-measurement/customer-lifetime-value/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Think with Google sobre LTV en retail</a>, los D2C europeos que escalan de forma sostenible mantienen un payback &lt;90 días. Cómo calcularlo:
-    </p>
-    <div className="space-y-3 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        "Calcula el margen bruto medio que un cliente genera al mes (no en su primera compra — en media mensual del primer trimestre).",
-        "Divide CAC entre ese margen mensual. Resultado: payback en meses.",
-        "Si el payback es <60 días, puedes acelerar adquisición. Entre 60 y 120 días, mantén ritmo. Entre 120 y 180, optimiza antes de escalar. >180 días, congela y revisa.",
-        "Cruza el payback con el ciclo de cobro de proveedores y plataformas. Si proveedores cobran a 30 días y tu payback es 90, necesitas colchón de caja de al menos 60 días.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Palancas reales para mejorar el ratio LTV/CAC</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Mejorar el ratio se trabaja por dos lados: subir LTV y bajar CAC. Atacar los dos en paralelo multiplica el efecto sin necesidad de subir presupuesto.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
-    <div className="space-y-4 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        {
-          num: "1",
-          titulo: "Activar segunda compra dentro de los primeros 30 días",
-          desc: "Email + WhatsApp con flujo post-compra, oferta calibrada al producto comprado y plazo realista. Subir tasa de segunda compra del 18% al 28% sube LTV-180d entre un 20% y un 35% sin tocar adquisición.",
-        },
-        {
-          num: "2",
-          titulo: "Subir AOV con bundles y cross-sell",
-          desc: "Bundles temáticos en página de producto, cross-sell en checkout y umbrales de envío gratis calibrados al ticket. Subir AOV un 15% en un D2C con margen 60% sube LTV en proporción directa.",
-        },
-        {
-          num: "3",
-          titulo: "Implementar tracking server-side (Conversions API)",
-          desc: "Recupera entre un 15% y un 25% de conversiones perdidas por iOS y mejora la calidad de optimización de Meta. Efecto neto: el mismo gasto trae más clientes nuevos y baja el CAC real un 10-20%.",
-        },
-        {
-          num: "4",
-          titulo: "Separar adquisición de retargeting",
-          desc: "Mezclar TOFU y retargeting en la misma campaña infla el ROAS y oculta que el frío no funciona. Separados, ves el nCPA real y puedes subir el creative testing en TOFU sin tocar el retargeting que ya rinde.",
-        },
-        {
-          num: "5",
-          titulo: "Lookalikes sobre top 10% LTV, no sobre Purchase total",
-          desc: "Una audiencia LAL al 1% sobre tus 1.000 mejores clientes (LTV alto + recompra) bate sistemáticamente a un LAL al 5% sobre toda la base de compradores. Mejora la calidad del cliente nuevo y baja el CAC ajustado por LTV.",
-        },
-      ].map(({ num, titulo, desc }) => (
-        <div key={num} className="bg-[#1a1616] border border-white/8 rounded-xl p-4 flex gap-4">
-          <div className="w-8 h-8 rounded-full bg-[#de0015]/20 border border-[#de0015]/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <span className="text-[#de0015] font-bold text-sm">{num}</span>
-          </div>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
           <div>
-            <p className="font-semibold text-white text-sm mb-1">{titulo}</p>
-            <p className="text-white/55 text-sm">{desc}</p>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
           </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay un análisis CAC/LTV</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Antes de proponer cualquier subida de presupuesto a un cliente nuevo, este es el bloque de análisis que ejecutamos en la primera semana:
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Día 1 — Extracción de datos brutos: pedidos de Shopify de los últimos 12 meses con clasificación cliente nuevo / recurrente, CSV de gastos de marketing por canal, costes de mercancía y devoluciones.",
-        "Día 2 — Cálculo de LTV-90d y LTV-180d por cohorte mensual. Detectamos si la recompra está estable, mejorando o cayendo — y si hay sectores del catálogo con LTV mucho mayor que el medio.",
-        "Día 3 — Cálculo de CAC blended, nCPA y MER mensuales en ventana de 6 meses. Cruzamos con la inversión por canal para identificar qué canal tiene el mejor LTV/CAC ajustado.",
-        "Día 4 — Payback period real considerando ciclo de cobro de proveedores. Resultado: cuánta gasolina puede meter el negocio sin tensar caja.",
-        "Día 5 — Roadmap 90 días: dos palancas para subir LTV (recompra + AOV), dos para bajar CAC (tracking + estructura) y plan de inversión escalonado con KPIs semanales.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      En el 70% de las cuentas D2C que llegan a DayByDay, el LTV/CAC real es entre un 20% y un 40% peor que el que calculaba el founder con datos parciales. La buena noticia: trabajando en paralelo recompra, tracking y estructura, en 90 días suele recuperarse el rango 3:1 sin necesidad de bajar inversión.
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
     </p>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Quieres saber tu LTV/CAC real antes de subir presupuesto?</p>
-      <p className="text-white/50 text-sm mb-4">Auditamos gratis tu CAC blended, nCPA, LTV-180d y payback period. Te decimos si tu D2C escala con caja sana o si necesita trabajar LTV antes de meter más gasolina.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar análisis gratuito →
-      </button>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/adquisicion-vs-retencion-paid-media-d2c" className="text-white font-semibold hover:text-white/80">
-          Adquisición vs retención: cómo separar presupuestos de paid media en D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Splits por madurez de marca y por qué el CAC blended esconde la economía real del negocio</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Margen de contribución vs ROAS: la métrica que media buyers olvidan →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo derivar el CAC objetivo desde el margen de contribución y por qué el ROAS in-platform engaña</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
-          CAC blended vs CAC por canal: qué métrica usar para escalar →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué el CAC plataforma y el CAC financiero nunca cuadran y cuál usar para cada decisión</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/email-marketing-meta-ads-ltv-d2c" className="text-white font-semibold hover:text-white/80">
-          Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Los 5 flujos email obligatorios que disparan la segunda compra y elevan LTV sobre el CAC Meta</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/estrategia-full-funnel-d2c" className="text-white font-semibold hover:text-white/80">
-          Estrategia full funnel D2C: del frío al cliente recurrente →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo la capa de retención (email + WhatsApp) dilata el LTV y permite seguir subiendo CAC sin romper unit economics</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
-          Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Aplica tu LTV y margen en la calculadora para obtener CAC objetivo y presupuesto Meta recomendado</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/aumentar-aov-ecommerce-d2c-palancas" className="text-white font-semibold hover:text-white/80">
-          Cómo subir el AOV en D2C: 7 palancas reales →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Subir el AOV es la palanca que más rápido eleva el LTV y baja el ratio CAC/LTV sin tocar el spend</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/suscripciones-ecommerce-ltv-cac-d2c" className="text-white font-semibold hover:text-white/80">
-          Suscripciones en D2C: cómo cambia el cálculo de LTV y CAC objetivo →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué la suscripción convierte el LTV en contractual y permite subir el CAC objetivo permitido +30-80%</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El sistema completo de validación de hipótesis, MER, nCPA y LTV/CAC para escalar sin romper rentabilidad</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Métricas Meta Ads que importan de verdad (y las que no) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">MER, nCPA y CPA real frente al ROAS de plataforma: las métricas que mandan en decisiones de inversión</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white font-semibold hover:text-white/80">
-          Benchmark ROAS por sector en España 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Tabla comparativa de 10 sectores D2C españoles para contextualizar tu LTV/CAC frente a la media</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar campañas Meta Ads sin romper el ROAS →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Protocolo de subida de presupuesto basado en payback period y nCPA, no en ROAS de plataforma</p>
-      </div>
-    </div>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default CACvsLTVEcommercePage;
+export default BuenROASNichosPage;

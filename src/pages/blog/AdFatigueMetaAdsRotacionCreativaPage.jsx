@@ -3,255 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es el ad fatigue en Meta Ads y por qué importa para un eCommerce D2C?",
-    a: "Ad fatigue es el desgaste creativo que sufre un anuncio cuando la audiencia objetivo lo ve demasiadas veces y deja de reaccionar: cae el CTR, sube el CPM, baja el hook rate y el CPA se dispara aunque el algoritmo siga gastando presupuesto. En Meta Ads sucede más rápido que en otros canales porque los usuarios consumen feeds verticales con sesiones de 8-12 minutos en Instagram y Facebook varias veces al día, según Meta Business. Para un D2C en España la consecuencia es directa: una creatividad cansada quema budget sin generar pedidos y arrastra al ad set entero al modo aprendizaje cuando la pausas mal. Detectar el fatigue antes de que se manifieste en el CPA es la diferencia entre rotar con margen y rotar bajo presión con pérdida de spend ya quemado."
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuáles son las señales tempranas que indican que una creatividad de Meta Ads se ha cansado?",
-    a: "Las cuatro señales tempranas que monitorizamos en DayByDay antes de que se vea en el CPA: (1) Frecuencia \u003e2,2 en prospecti\u003eg y >4,0 en retargeting 7 días, mientras el CTR cae más del 25% respecto a su pico inicial. (2) Hook Rate (vistas 3s/impresiones) cae por debajo del 22-25% cuand\u003e arrancó >32%. (3) CPM sube +20% en 7 días sin cambio de audiencia ni de puja. (4) Coste por add-to-cart sube +30% mientras el CTR del primer click se mantiene — el usuario clica por inercia pero ya no compra. Cuando se cumplen al menos dos señales simultáneamente, la creatividad ya está fatigada y queda 3-7 días antes de que el CPA salte 35-60%."
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuánto tiempo aguanta una creatividad de Meta Ads antes de fatigarse en D2C España?",
-    a: "Depende del tamaño de la audiencia, el presupuesto diario y el formato. Cifras observadas en cuentas D2C España 2026: en prospecting con audiencias amplias (\u003e500K-1M) una creatividad winner aguanta 30-60 días antes de fatigarse; en audiencias medias (100-500K) 21-35 días; en retargeting 7-30 días el ciclo se acorta a 10-21 días por la frecuencia alta intrínseca. UGC con cara y voz suele sostener más tiempo (+30-50%) que estáticos sin contexto humano, y los Reels verticales se queman más rápido en feed orgánico saturado que los anuncios con sub-titulado descriptivo. Cuentas con g\u003esto >30K€/mes en una sola creatividad pueden ver fatiga en 7-14 días por cobertura masiva de la audiencia. La regla operativa: nunca dejar una creatividad\u003esostener >35% del spend del ad set más de 14 días sin variante de reserva produciéndose."
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cómo debe ser el protocolo de rotación creativa para evitar el ad fatigue?",
-    a: "El protocolo en DayByDay parte de un calendario semanal, no de reaccionar a un CPA roto. (1) Pipeline creativo constante: producir 4-8 variantes nuevas al mes con nano/micro creators (80-200€/creative) o equipo interno, taggeadas por ángulo. (2) Slot fijo en el ad set: 4-6 creatividades activas con presupuesto distribuido por la propia campaña (CBO o Advantage+ Shopping). (3) Refresco escalonado: cada lunes introducir 1-2 variantes nuevas y pausar las que cumplan 2 señales de fatigue. (4) Periodo de aprendizaje protegido: no rotar más del 30% del creative del ad set en una semana para no resetear el aprendizaje. (5) Retiro suave: pausar creative fatigada manteniendo ad set activo con variantes alternativas — si pausas todo el ad set, el reaprendizaje cuesta 7-10 días de spend ineficiente. La cadencia ideal es 'siempre testando, nunca apagando'."
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
-  {
-    q: "¿Qué métricas hay que monitorizar a diario para detectar ad fatigue antes que el CPA?",
-    a: "El dashboard mínimo viable en DayByDay para detectar fatigue antes de que dañe el CPA incluye 6 métricas por creative a 3 ventanas (1d, 3d, 7d): Hook Rate (vistas 3s / impresiones), Hold Rate (vistas 15s / vistas 3s, indica si el mensaje sostiene atención), CTR outbound (no link-click engagement), Frecuencia, CPM y CTR-to-CPA ratio (CTR alto + CPA alto = clicks inerciales). Alerta automática cuando dos métricas pasan umbral simultáneo (Hook Rate <22%, Frecuencia \u003e2,5, CPM +20% rolling 7d). La revisión humana se hace 2-3 veces por semana sobre el creative-level report; el dashboard solo dispara las alertas. Esto evita el típico patrón de mirar solo CPA semanal y darse cuenta del fatigue cuando ya quemó 5-10 días de spend."
-  },
-  {
-    q: "¿Cuándo refrescar una creatividad ganadora vs cuándo retirarla definitivamente?",
-    a: "Una creatividad ganadora con histórico \u003e30 dí\u003es y >50 compras documentadas raramente se 'mata' del todo: se descansa. Diferencia entre refresh y retiro definitivo: refresh significa pausar 14-30 días manteniendo el ad set vivo y volverla a activar con audiencia ligeramente distinta (LAL nueva, exclusión de últimos 30 días vistos) — esto regenera el rendimiento en el 40-60% de casos según el ángulo. Retiro definitivo aplica cuando 3+ refreshes consecutivos no recuperan el Hook Rate inicial, lo que suele indicar saturación del ángulo en el mercado, no solo de la creatividad. Para evitar perder un winner identificado, en DayByDay producimos 'versiones 2.0' de la creatividad ganadora cambiando hook (primeros 2s), hablante o setting visual pero manteniendo el ángulo de mensaje — extiende la vida útil del concepto 60-120 días extra."
-  },
-  {
-    q: "¿Cómo afecta Advantage+ Shopping (ASC) al ad fatigue y al protocolo de rotación?",
-    a: "Advantage+ Shopping cambia el protocolo en dos sentidos. (1) Sube el umbral de creatividades por campaña: ASC funciona mejor con 8-15 anuncios activos para que el algoritmo tenga margen de mezcla creativa; con menos de 6 la campaña reduce su capacidad de respuesta al desgaste de un creative individual. (2) El fatigue se manifiesta más a nivel de cuenta que a nivel de creative: ASC mezcla automáticamente los anuncios y reasigna spend, así que una creatividad fatigada pesa menos en el CPA agregado pero sigue consumiendo presupuesto sin ROI. La métrica clave en ASC pasa a ser 'aportación marginal por creative' (revenue atribuible por anuncio dividido por spend) y la cadencia de refresco se mantiene: 1-2 creatividades nuevas/semana, retirar las que tras 14 días no superen el percentil 50 de la campaña. Sin pipeline creativo continuo, ASC pierde rentabilidad rápido."
-  }
 ];
 
-const AdFatigueMetaAdsRotacionCreativaPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Ad fatigue en Meta Ads: señales tempranas y protocolo de rotación creativa"
-    description="Guía operativa para detectar y prevenir ad fatigue en Meta Ads para eCommerce D2C España: definición y por qué importa, 4 señales tempranas (frecuencia, Hook Rate, CPM, coste add-to-cart) antes de que el CPA salte, ciclo de vida típico por tamaño de audiencia y formato (prospecting 30-60d, audiencias medias 21-35d, retargeting 10-21d), 6 métricas a monitorizar a diario por creative (Hook Rate, Hold Rate, CTR outbound, Frecuencia, CPM, CTR-to-CPA ratio), protocolo de rotación escalonada sin romper el aprendizaje (4-6 creatividades activas, refresco semanal 1-2 variantes, máximo 30% del creative renovado/semana), diferencia entre refresh y retiro definitivo, versiones 2.0 del ángulo ganador para extender 60-120d, impacto de Advantage+ Shopping en el protocolo (8-15 creatividades mínimas) y enfoque DayByDay Pablo+Jorge con dashboard automatizado de alertas."
-    slug="ad-fatigue-meta-ads-rotacion-creativa"
-    datePublished="2026-05-12"
-    dateModified="2026-05-12"
-    readingTime="10 min"
-    category="Creatividades"
-    keywords={[
-      "ad fatigue meta ads",
-      "rotación creativa meta ads",
-      "frecuencia anuncios facebook ads",
-      "refresh creatividades meta ads",
-      "fatigue audiencia paid social",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">El ad fatigue en Meta Ads es la causa silenciosa por la que cuentas D2C con buen ROAS empiezan a perder rentabilidad sin cambiar nada</strong>. La creatividad que rindió 4,2x ROAS durante 5 semanas se cansa, el CPM sube, el Hook Rate baja, el CPA se dispara y el founder asume que "Meta ya no funciona" cuando lo que ha pasado es que la audiencia disponible ya vio el anuncio demasiadas veces. En cuentas D2C España con presupuestos 5K-50K€/mes, el ad fatigue es responsable del 30-45% de las caídas de rendimiento mensuales según nuestra base de auditorías. La buena noticia: es detectable a 5-7 días vista con 4 señales tempranas y prevenible con un protocolo de rotación creativa que no requiere doblar el equipo. En esta guía repasamos cómo identificarlo antes de que dañe el CPA, qué métricas monitorizar a diario y cómo estructurar el refresh sin romper el aprendizaje del algoritmo.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es ad fatigue y por qué se manifiesta tan rápido en Meta Ads</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">Ad fatigue</strong> es el deterioro progresivo del rendimiento de un anuncio cuando la audiencia objetivo lo ha visto suficientes veces como para dejar de reaccionar. En Meta Ads el ciclo es más corto que en otros canales porque la sesión media de Instagram en España es alta (33-45 minutos al día según <a href="https://datareportal.com/reports/digital-2025-spain" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">DataReportal Digital 2025 Spain</a>) y el feed quema impresiones rápido. Un usuario que abre Instagram 6-8 veces al día puede acumular 8-15 impresiones de un mismo anuncio en una semana si la campaña tiene presupuesto alto sobre una audiencia limitada.
-    </p>
-            {link_para}
-            
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
-      <p className="text-white font-bold text-sm mb-2">📊 Dato de referencia</p>
-      <p className="text-white/70 text-sm leading-relaxed">
-        Según <a href="https://www.facebook.com/business/help/229311094776616" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Business</a>, el rendimiento de un anuncio empieza a degradarse de forma medible cuando la frecuencia supera 2,0 en prospecting 7 días, y el efecto es más severo en audiencias menores de 2M usuarios. En cuentas D2C España auditadas por DayByDay (2024-2026), el 38% de las caídas mensuales 20% en ROAS están directamente vinculadas a fatigue creativo no detectado a tiempo.
-      </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">4 señales tempranas de fatigue antes de que el CPA se rompa</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El error frecuente es esperar a ver el CPA disparado para reaccionar. Cuando el CPA salta, ya hay 5-10 días de spend gastados con rendimiento decreciente. Las cuatro señales que adelantan 5-7 días al CPA:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Señal</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Umbral alerta</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Margen vs CPA</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { s: "Frecuencia (prospecting 7d)", t: ">2,2 (>4,0 en retargeting)", e: "5-7 días" },
-            { s: "Hook Rate (3s views / impr)", t: "<22-25% cuando arrancó >32%", e: "3-5 días" },
-            { s: "CPM rolling 7d", t: "+20% sin cambio audiencia/puja", e: "4-6 días" },
-            { s: "Coste por add-to-cart", t: "+30% con CTR estable (click inercial)", e: "2-4 días" },
-            { s: "Hold Rate (15s/3s views)", t: "<35% cuando arrancó 50%", e: "3-5 días" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.t}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.e}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Regla operativa: cuando se cumplen 2 señales simultáneamente sobre la misma creatividad, la fatiga está confirmada y queda margen para rotar sin que se vea en el reporting mensual del cliente. Si esperas a la tercera señal o al salto de CPA, ya estás reaccionando con spend perdido.
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Ciclo de vida típico de una creatividad por audiencia y formato</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Cifras observadas en cuentas D2C España 2026 con presupuestos 5-50K€/mes:
-    </p>
-    <ul className="space-y-2 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Prospecting con audiencias amplias (500K-1M): winner aguanta 30-60 días antes de fatigarse.",
-        "Audiencias medias (100-500K) o LAL 1-3%: ciclo 21-35 días.",
-        "Retargeting 7-30 días (catálogo, web visitors): ciclo 10-21 días por frecuencia alta intrínseca.",
-        "Retargeting 30-180d y reactivación: ciclo 14-28 días, pero con frecuencias 6-12 que serían fatiga en prospecting.",
-        "Advantage+ Shopping (ASC) con 8-15 creatividades: el fatigue individual pesa menos, pero el ciclo del concepto creativo se mantiene en 30-45 días.",
-        "UGC con cara y voz: extiende vida útil +30-50% vs estáticos sin contexto humano.",
-        "Reels verticales 9-25s: ciclo similar a estáticos pero CPM más volátil — alertas por CPM son más útiles en este formato.",
-      ].map((item) => (
-        <li key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Protocolo de rotación creativa que no rompe el aprendizaje</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El error más caro al rotar creatividades es resetear el aprendizaje del ad set. Pausar todas las creatividades activas a la vez tira al ad set a modo aprendizaje 7-10 días con CPA inflado. El protocolo correcto en DayByDay sigue 5 reglas:
-    </p>
-    <ol className="space-y-3 mb-6 list-decimal pl-5">
-      {[
-        "Pipeline creativo constante: 4-8 variantes nuevas al mes producidas con nano/micro creators (80-200€/creative) o equipo interno. Taggeadas por ángulo en swipe file. Esto convierte el refresh en flujo, no en emergencia.",
-        "Slot fijo en el ad set: 4-6 creatividades activas con presupuesto distribuido por la propia campaña (CBO o Advantage+ Shopping). Permite que el algoritmo redistribuya spend al detectar caída antes de pausar manualmente.",
-        "Refresco escalonado semanal: cada lunes introducir 1-2 variantes nuevas en el ad set y pausar las que cumplan 2 señales de fatigue. Nunca rotar más del 30% del creative en una semana para no resetear aprendizaje.",
-        "Retiro suave de la fatigada: pausar solo la creatividad fatigada manteniendo ad set vivo. Si pausas todo el ad set, el reaprendizaje cuesta 7-10 días de spend ineficiente y el CPA reportable mes a mes empeora.",
-        "Versión 2.0 del winner antes de retirarlo: producir variante con hook nuevo (primeros 2s), hablante distinto o setting visual diferente manteniendo el ángulo de mensaje. Extiende vida del concepto 60-120 días extra.",
-      ].map((item) => (
-        <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
-      ))}
-    </ol>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Para entender cómo estructurar el pipeline de testing creativo previo y qué ángulos priorizar, ver la <Link to="/blog/creative-testing-meta-ads" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de creative testing en Meta Ads</Link> y el <Link to="/blog/meta-ads-library-analisis-competencia" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">análisis de competencia en Meta Ads Library</Link> para extraer ángulos longevos del mercado.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Dashboard de monitorización: 6 métricas a 3 ventanas</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El dashboard mínimo viable para detectar fatigue antes de que dañe el CPA, según el equipo de <a href="https://www.shopify.com/blog/advertising-frequency" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Shopify Plus creative strategy</a>, debe incluir métricas por creative-level a tres ventanas (1d, 3d, 7d):
-    </p>
-    <ul className="space-y-2 mb-6">
-      {[
-        "Hook Rate (vistas 3s / impresiones): mide si el primer segundo retiene. Alerta <22% en formatos vídeo.",
-        "Hold Rate (vistas 15s / vistas 3s): mide si el mensaje sostiene. Alerta <35% si arrancó 50%.",
-        "CTR outbound (click al destino, no engagement social): filtra clicks inerciales. Alerta caída >25%.",
-        "Frecuencia rolling 7d: alerta >2,2 prospecting / >4,0 retargeting.",
-        "CPM rolling 7d: alerta +20% sin cambio de audiencia ni puja.",
-        "CTR-to-CPA ratio: CTR alto + CPA alto = clicks inerciales sin intención. Señal de fatigue avanzada.",
-      ].map((item) => (
-        <li key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La revisión humana se hace 2-3 veces por semana sobre el creative-level report; el dashboard dispara las alertas automáticas. Esto evita el patrón típico de revisar CPA semanal y darse cuenta del fatigue cuando ya quemó 5-10 días de spend.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Errores frecuentes al gestionar ad fatigue</h2>
-    <ol className="space-y-3 mb-6 list-decimal pl-5">
-      {[
-        "Esperar al salto de CPA para rotar. Cuando el CPA se ve, hay 5-10 días de spend ineficiente ya gastados. Rotar por señales tempranas, no por daño consumado.",
-        "Pausar todo el ad set en vez de la creatividad fatigada concreta: resetea aprendizaje 7-10 días.",
-        "Producir variantes a destiempo: cuando el winner se cansa, no hay pipeline. Producción reactiva = 14-21 días entre detección y reemplazo. La producción debe ser semanal, no por incendio.",
-        "Confundir frecuencia alta con fatigue automático: una creatividad de retargeting con frecuencia 7 que mantiene CTR y CPA es señal de que funciona, no de que se cansa. Frecuencia siempre cruzada con Hook Rate y CTR.",
-        "Rotar creatividades winner sin probar versión 2.0 del ángulo. Se pierde un concepto validado por no producir 1-2 variantes con hook nuevo.",
-        "Ignorar Hold Rate: mirar solo Hook Rate enseña qué creatividades cogen atención pero no cuáles sostienen el mensaje hasta el CTA. Ambas métricas son obligatorias.",
-        "Rotar más del 30% del creative en una semana 'para refrescar la cuenta': resetea aprendizaje del ad set y dispara CPA durante 5-10 días.",
-      ].map((item) => (
-        <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
-      ))}
-    </ol>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Onboarding incluye auditoría creative-level del histórico 90 días: Pablo identifica winners cansados sin retirar, creatividades zombi consumiendo spend con frecuencia >3 y CPA inflado, y ángulos saturados sin variante en pipeline. Punto de partida documentado para construir refresh plan ad-hoc.",
-        "Pipeline creativo constante: producción mensual de 4-8 variantes nuevas con nano/micro creators (80-200€/creative), taggeadas por ángulo y formato en swipe file. La producción es flujo semanal, no respuesta a emergencia.",
-        "Cadencia operativa: cada lunes revisión creative-level 30 min + introducción de 1-2 variantes nuevas + pausa de creatividades con 2 señales de fatigue confirmadas. Reporting interno con métricas por anuncio, no solo por campaña.",
-        "Solución ad-hoc Pablo + Jorge: una cuenta de cosmética D2C 22K€/mes pidió detectar fatigue antes de que se viera en el CPA semanal. Jorge montó un dashboard custom Looker Studio conectado a la API de Meta Marketing + GA4 que cruza Hook Rate, Hold Rate, Frecuencia, CPM y CTR-to-CPA por creative a 3 ventanas (1d/3d/7d) y dispara alerta Slack cuando dos métricas pasan umbral simultáneo. Pablo recibe la alerta y decide rotar antes de que el CPA salte. Pasó de detectar fatigue post-mortem a anticipar 5-7 días — ROAS mensual estabilizado en 3,8-4,1x sin saltos de -25% mes a mes.",
-        "Versión 2.0 sistemática: cualquier creatividad winner con >30 días activa entra automáticamente al pipeline de 'variante de mantenimiento' antes de fatigarse — 1-2 versiones con hook distinto, hablante diferente o setting alterno. Extiende vida del concepto 60-120 días extra sin re-investigar ángulo.",
-        "Caso real: cuenta D2C suplementos 18K€/mes llegó con 3 creatividades activas y frecuencia 4,2 en prospecting. CPA pasó de 24€ a 41€ en 3 semanas (+71%) sin que el cliente lo detectara porque revisaba reporting mensual. Implementamos slot 6 creatividades + producción semanal + dashboard alertas. En 60 días: CPA bajó a 22€, frecuencia controlada <2,4 prospecting y 0 saltos mensuales >15% en CPA agregado.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      DayByDay Consulting fue fundada por Pablo Santirsó y opera como un partnership con Jorge González (CTO). Pablo (founder · paid media) lidera la auditoría creative-level, el protocolo de rotación y la decisión semanal de qué pausar y qué introducir; Jorge (CTO · automation) lidera el dashboard custom Looker Studio + alertas Slack vía API de Meta Marketing y la integración con el pipeline de producción de variantes. Donde otras agencias detectan fatigue cuando ya saltó el CPA, en DayByDay Pablo y Jorge anticipan con 5-7 días de margen. El cliente habla con los dos socios desde la primera reunión: sin account managers, sin handoffs, sin perfiles junior.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu CPA salta cada 4-6 semanas sin razón aparente?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos tu creative-level report últimos 90 días, identificamos creatividades con fatigue oculto y entregamos plan de rotación con cadencia semanal y métricas de alerta.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/framework-hipotesis-creatividades-meta-ads" className="text-white font-semibold hover:text-white/80">
-          Framework de hipótesis creativas Meta Ads: cómo briefar antes de gastar en producción →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo alimentar el pipeline con hipótesis testables en lugar de "haz un UGC" para que cada variante salga del horno con métrica de éxito</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/creative-testing-meta-ads" className="text-white font-semibold hover:text-white/80">
-          Creative testing en Meta Ads: framework paso a paso →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo estructurar pipeline de testing previo para no quedarte sin variantes cuando llega el fatigue</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/meta-ads-library-analisis-competencia" className="text-white font-semibold hover:text-white/80">
-          Análisis de competencia en Meta Ads Library →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Extraer ángulos longevos del mercado para alimentar el pipeline creativo sin partir de cero</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ugc-meta-ads" className="text-white font-semibold hover:text-white/80">
-          UGC en Meta Ads: cómo producir contenido que rinde →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Formato que más extiende vida útil de la creatividad y permite producción semanal a bajo coste</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
-          Advantage+ Shopping: cuándo usarlo y cuándo no →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo ASC cambia el protocolo de rotación y por qué necesita 8-15 creatividades activas</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/partnership-ads-meta-ugc-creators-d2c" className="text-white font-semibold hover:text-white/80">
-          Partnership Ads en Meta para D2C con cuentas de creators →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo escalar UGC con creators distintos para multiplicar variantes y diferir el fatigue por audiencia</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default AdFatigueMetaAdsRotacionCreativaPage;
+export default BuenROASNichosPage;

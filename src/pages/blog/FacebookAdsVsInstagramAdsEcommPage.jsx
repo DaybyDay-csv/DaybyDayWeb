@@ -1,312 +1,180 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
 
-const FacebookAdsVsInstagramAdsEcommPage = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Facebook Ads vs Instagram Ads para Ecommerce: Guía Completa 2024",
-    "description": "Análisis detallado de qué plataforma publicitaria es mejor para tu tienda online. Rendimiento, costes y estrategias específicas para ecommerce en España.",
-    "author": {
-      "@type": "Organization",
-      "name": "DayByDay Consulting"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "DayByDay Consulting",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "/logo.png"
-      }
-    }
-  };
+const faqs = [
+  {
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
+  },
+  {
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
+  },
+  {
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
+  },
+];
 
-  const faqs = [
-    {
-      question: "¿Qué plataforma es mejor para vender online: Facebook o Instagram?",
-      answer: "Depende de tu producto y audiencia objetivo. Facebook Ads ofrece mayor alcance y mejores opciones de segmentación detallada, ideal para productos con buyer persona definido. Instagram Ads funciona mejor para marcas visuales lifestyle y públicos jóvenes. La recomendación estratégica es testar ambas plataformas independientemente y optimizar según ROAS."
-    },
-    {
-      question: "¿Cuánto cuesta anunciarse en Facebook vs Instagram?",
-      answer: "Los CPM (coste por mil impresiones) varía según sector y época del año. En España, el CPM medio de Facebook oscila entre 3-8€, mientras que Instagram está entre 5-12€. Sin embargo, el coste por результа not depende solo de la plataforma sino de la calidad del creative, segmentación y relevancia del producto. En ecommerce fashion, Instagram suele tener menor coste por compra directa."
-    },
-    {
-      question: "¿Puedo usar los mismos anuncios en ambas plataformas?",
-      answer: "Técnicamente sí, pero no es recomendable para optimización máxima. Cada plataforma tiene formatos nativos distintos: Facebook prioriza News Feed y Marketplace, mientras Instagram destaca en Stories y Reels. Las creatividades deberían adaptarse al contexto de uso. Lo óptimo es crear sets de anuncios separados y analizar rendimiento independientepara tomar decisiones de presupuesto informadas."
-    },
-    {
-      question: "¿Cómo empiezo a medir el ROI de mis campañas en redes sociales?",
-      answer: "Implementa el píxel de Meta en tu web ecommerce configurando los eventos de conversión relevantes (Purchase, AddToCart, InitiateCheckout). Configura Attribution Window en 7 días click + 1 día vista para atribución precisa. Usa el Attribution Editor para comparar canales. Establece ACOS objetivo por categoría de producto y crea reportes semanales con dashboarding automático via Facebook Ads Manager integrado."
-    }
-  ];
+const BuenROASNichosPage = ({ openCalendly }) => (
+  <BlogPostLayout
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
+    faqs={faqs}
+    openCalendly={openCalendly}
+  >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
 
-  return (
-    <>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      <BlogPostLayout
-        title="Facebook Ads vs Instagram Ads para Ecommerce: Guía Estratégica Completa"
-        description="Descubre qué plataforma publicitaria genera más ventas para tu tienda online. Análisis comparativo de costes, formatos y estrategias de optimización."
-        slug="facebook-ads-vs-instagram-ads-ecommerce"
-        datePublished="2024-01-15"
-        readingTime="8 min"
-        category="Paid Media"
-        faqs={faqs}
-      >
-        <p className="intro-paragraph">
-          Esta guía asume que ya tienes claro que necesitas invertir en publicidad de pago para escalar tu ecommerce, 
-          pero te enfrentas a una decisión crítica: ¿dedicas tu presupuesto a Facebook Ads o a Instagram Ads? Ambas plataformas 
-          pertenecen al mismo ecosistema Meta, comparten interfaz de gestión y parecen ofrecer resultados similares. Sin embargo, 
-          las diferencias sutiles en comportamientos de usuario, formatos disponibles y algoritmos de entrega pueden representar 
-          diferencias de miles de euros en tu cuenta de resultados al año. En este artículo desgranamos las características 
-          de cada plataforma con datos actualizados y estrategias específicas para ecommerce en España.
-        </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-        <h2 id="fundamentos-plataformas">Fundamentos Técnicos: Cómo Funciona Cada Plataforma</h2>
-        
-        <h3 id="arquitectura-facebook">Arquitectura Publicitaria de Facebook</h3>
-        <p>
-          Facebook Ads opera dentro de un ecosistema donde el usuario tiene una intención de exploración más activa. Los usuarios 
-          acceden a Facebook principalmente para conectar con amigos, consumir contenido de grupos y mantenerse informados sobre noticias 
-          y tendencias. Esta dinámica crea un contexto publicitario donde los anuncios compiten directamente por atención con contenido 
-          orgánico personal y de páginas seguidas. El algoritmo de Facebookevalúa relevance score basándose en indicadores de engagement 
-          inicial como tiempo de visualización, interacciones y taux de guardado.
-        </p>
-        <p>
-          La arquitectura de campañas permite segmentaciones extremadamente precisas mediante Custom Audiences basadas en pixel events, 
-          Lookalike Audiences del 1% al 10% de parecido, y segmentaciones geográficas con radio específico. El sistema Advantage+ Shopping 
-          Campaigns representa la última evolución para automatizar optimización en商务部, aunque controla menos variables que 
-          estructura manual. Para ecommerce con catálogos grandes, el product catalog feed integration permite dinamics ads que 
-          muestran productos específicos según comportamiento de navegación del usuario.
-        </p>
-        <p>
-          Los formatos disponibles incluyen Image Ads, Video Ads, Collection Ads especialmente diseñados para showcase de producto, 
-          y Playable Ads para interacción previa. El carousel permite hasta 10 tarjetas con precios y descripciones, ideal para mostrar 
-          gamas de productos o alternativas. Stories en Facebook alcanza menor uso pero ofrece menor saturación publicitaria actualmente. 
-          El cost per acquisition varía significativamente por vertical: productos de impulse compra funcionan mejor en Facebook 
-          por la baja barrera de atención requerida.
-        </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
 
-        <h3 id="arquitectura-instagram">Arquitectura Publicitaria de Instagram</h3>
-        <p>
-          Instagram Ads se ejecuta en una plataforma diseñada originalmente para consumo visual de contenido lifestyle. Los usuarios acceden 
-          con mentalidad exploratoria y estética, buscando inspiración visual y descubrimiento de tendencias. Este contexto cambia radicalmente 
-          cómo perciben los anuncios: un formato interruptivo en Facebook puede sentirse nativo en Instagram si mantiene coherencia visual y 
-          editorial con el contenido orgánico del feed. La competencia publicitaria ha aumentado exponencialmente desde 2020, con marcas 
-          invirtiendo masivamente en formato Stories y Reels.
-        </p>
-        <p>
-          La segmentación en Instagram shares Facebook's audience network, lo que significa acceso a las mismas capacidades de 
-          target granular. Sin embargo, el comportamiento de compra difiere: usuarios en Instagram tienden a descubrió marcas 
-          primero en esta plataforma y posteriormente investigar en web externa. Este buyer journey requiere estratégias 
-          de retargeting cross-platform específicas. Instagram Shopping integration permite taggear productos diretamente 
-          en posts, creando experiencia de compra nativa sin salir del app, reduciendo friction significativamente.
-        </p>
-        <p>
-          Los formatos nativos incluyen Photo Ads (feed único), Video Ads (hasta 60 segundos), Stories Ads (pantalla completa 9:16), 
-          Reels Ads (formato curto emergente), y Collection Ads para experiencias inmersivas. La calidad creativaimporta exponencialmente 
-          más en Instagram: estándares visuales son elevados y публика reject Ads que no alcanzan benchmark estético. La importancia de 
-          consistencia de marca visual no puede subestimarse: usuarios Instagram discriminan duramente contra contenido que parece 
-         一眼 publicidad tradicional.
-        </p>
-
-        <h2 id="comparativa-rendimiento">Comparativa de Rendimiento: Datos y Métricas Clave</h2>
-        
-        <h3 id="metricas-coste">Análisis de Costes por Sector</h3>
-        <p>
-          Los datos de costes varían significativamente por vertical de produto y estacionalidad. En España durante peak season 
-          (Noviembre-Diciembre), CPC medio en Facebook Ads para ecommerce fashion se sitúa entre 0.50-1.20€, mientras Instagram 
-          puede oscilar 0.80-1.80€ dependiendo del formato. Sin embargo, estas cifras superficiales esconden realidades complejas: 
-          Instagram часто presenta mayor conversion rate para marcas con fuerte presencia orgánica previa, porque los usuarios 
-          llegan con familiarity de marca que reduce barreras de confianza inicial.
-        </p>
-        <p>
-          El análisis de Lifetime Value muestra patrones diferenciados惊人. Usuarios que convierten desde Instagram típicamente 
-          apresentam mayor valor avg order y repeat purchase rate en meses posteriores, especialmente en categorias lifestyle. 
-          Esto sugiere que Instagram genera clientes con mayor affinity hacia la marca, mientras Facebook proporciona volume más 
-          eficiente para productos con ciclo de decisión corto. La estrategia óptima frecuentemente involucra usar Facebook para 
-          prospeccionar nuevos clientes y Instagram para fortalecer relación pós-compra.
-        </p>
-        <p>
-          Para nuevos ecommerce sin data histórica, la recomendación es comenzar con test budget igualado en ambas plataformas durante 
-          14-21 días mínimo para generar dati significativos. Establecer KPIs diferentes por plataforma reflete different strengths: 
-          en Facebook priorizar CPA y ROAS directo, en Instagram aceptar CPA marginalmente superior mientras se mide brand lift y 
-          engagement metrics que prédicen future customer value. Esta aproximación previene decisionес shortsighted basada em CPA 
-          inmediato ignorando lifetime value.
-        </p>
-
-        <h3 id="metricas-engagement">Métricas de Engagement y Consideración</h3>
-        <p>
-          El engagement rate médio en Instagram Ads (likes + comments + saves + shares divided by impressions) supera 
-          2-3x los níveis de Facebook en contenido similar. Esta metric refleja diferente naturaleza de platform usage: 
-          Instagram users están más dispuestos a interactuar porque el formato encourages active consumption versus passive 
-          scroll de Facebook. Saves especially son indicadores valiosos para ecommerce porque señalan intención futura de compra, 
-          no satisfacción inmediata.
-        </p>
-        <p>
-          Sin embargo, engagement doesn't always correlate directamente con revenue. Un anuncio puede generar miles de 
-          likes y shares sin traducir en ventas measurable si falta clear call-to-action o si el público attracted es 
-          incorrecto para el producto. La clave está en diseñar journeys que capturen engagement y lo направляют hacia 
-          conversión: usar Instagram para brand building y consideración, Facebook para captura de demanda pronta. La integración 
-          de ambos en full funnel strategy maximiza resultados aggregate.
-        </p>
-        <p>
-          El concepto de platform affinity merece atención estrategica khusus. Usuarios desarrollan relaciones emocionales 
-          diferentes con cada plataforma based en use cases personales. Instagram users tiende a ser más jóvenes, urban, 
-          con mayor exposición a tendencias internacionales. Facebook skew邝 hacia demographics mayores y públicos más establecidos. 
-          Comprender estas diferencias permite evitar desperdício de budget en audiencias que probabilísticamente no 
-          converterán independientemente de qualidade de creativo.
-        </p>
-
-        <h2 id="estrategias-optimizacion"> Estrategías de Optimización por Tipo de Ecommerce</h2>
-        
-        <h3 id="estrategia-fashion">Ecommerce Fashion y Lifestyle</h3>
-        <p>
-          El sector fashion apresenta uma das dinâmicas más favorables para Instagram Ads. La naturaleza inherentemente 
-          visual de fashion productos se alinea perfectamente com o formato de feed curated de Instagram. Marcas que 
-          logran establecer aesthetic coherence entre orgánico y increíbl contenido paid generan mejores resultados 
-          porque la línea entre advertise and storytelling becomes conmemprise. El video content, especialmente user-generated 
-          content auténticos, outperforma static product shots significantly.
-        </p>
-        <p>
-          La estrategia recomendada начинает estabelecendo forte presença orgánico prévia durante 30-60 dias antes de investir 
-          significativamente en paid. Durante esta fase, identificar qué contenido genera orgánicos engagement y replicar ese 
-          estilo em creative paid. Usar hashtag strategy e collaborations con micro-influencers para construir audiences 
-          qualificadas antes de запустить campañas mayores. El retargeting de video viewers al 25% o más de visualización permite 
-          alcanzar Warm audiences con mensajes personalizados.
-        </p>
-        <p>
-          Para fashion con múltiples colecciones, estruturar campaigns by collection y crear dedicated landing pages por 
-          categoría. Dynamic Product Ads outperform cuando el catálogo имеет variaciones de disponibilidad y precio, ya que muestran 
-          productos específicos que el usuário browsing recently. La integración con Instagram Shopping tagging transforma 
-          entire profile em storefront, reduciendo el steps necessários para purchase. Métricas a pérdese: take rate de Shopping 
-          tags y conversion attributioncross-platform.
-        </p>
-
-        <h3 id="estrategia-electronica">Electrónica y Productos de Alta involvement</h3>
-        <p>
-          Productos electrónicos y de alto involvement presentan dinámicas different porque require mayor investigación 
-          pré-compra. Facebook Ads ofrece ventajas significativas aquí porque usuários tienen más probabilidad de buscar 
-          información detalhada, leer reviews, y comparar opciones todas disponíveleasily en formato article o web externo. 
-          Instagram para esta categoría funciona mejor para brand awareness y consideration que para conversion direta.
-        </p>
-        <p>
-          La estrategia должна incluir content que addressespecific objections de buyers potenciales: comparison videos, detailed 
-          reviews, usage tutorials. Estos contenidos reducen perceived risk y build confidence necessário para transaction. 
-          Facebook's longer-form video capabilities (hasta 240 minutos) permiten deep dives que Instagram's constraints de 60 segundos non 
-          facilitan. El размещение de link en bio stories con swipe-up funciona pero introduce friction comparado a native shopping 
-          flows.
-        </p>
-        <p>
-          Segmentación en electronics requiere precision elevada debido a alto values médios por transacción. Lookalike audiences 
-          basados en purchase events (no slo website visitors) generan customers de mejor qualidade. Retargeting sequences 
-          deben estar calibrados específicamente: primário offer useful information (specs comparison), sekunder focus on social 
-          proof (reviews, testimonials), terciary引入 urgency (limited stock, warranty expiration). La frecuencia de exposure required 
-          para conversión típicamente excede lo necesario para categorías de bajo involvement.
-        </p>
-
-        <h2 id="implementacion-practica">Implementación Práctica: Setup y Gestión Diaria</h2>
-        
-        <h3 id="setup-pixel">Configuración Técnica Essential</h3>
-        <p>
-          Sin implementación técnica robusta, cualquier estrategia de paid media operará con ceguera analítica que impede optimización 
-          efectivas. El Meta Pixel debe implementarse con todos los event standard además de custom events específicos de tu 
-          ecommerce. El evento Purchase debe incluir transaction value parameters para que el algoritmo pueda optimizes toward revenue, 
-          no only conversions count. Standard Events como ViewContent, AddToCart, InitiateCheckout proporcionan datos para construir 
-          understanding completo del customer journey.
-        </p>
-        <p>
-          La проверка de pixel functioning regularmente usando Tag Assistant o Facebook's own Event Test Tool esencial 
-          para troubleshooting proactivo. Muchos problemas de rendimiento campaign derivan de tracking issues no detectados hasta 
-          que el daño conversional ya está hecho. Configurar alertsAutomated para drops significativos en events tracking 
-          permite respuesta rápida. El server-side API implementation mejora data reliability especialmente con privacy updates 
-         影响 browser-level tracking.
-        </p>
-        <p>
-          Además del pixel, implementar Conversions API (CAPI) bridging permite mantener accuracy de medición dado Third-party 
-          cookie phase-out y iOS 14.5 impacto. CAPI sends eventos directamente from server-side, bypassing browser 
-          limitations. Para GDPR compliance em España, asegurar clear consent mechanism y documentation de purposes 
-          for audience building. Las audiencias basadas en datos próprios (first-party) serán crecientemente valiosas como 
-          third-party signals degrade.
-        </p>
-
-        <h3 id="estructura-campañas">Estructura de Campañas Recomendada</h3>
-        <p>
-          La estrutura de account define los límites de optimización posibles. La melhor práctica começar small con muchas campañas 
-          reduce la eficiencia operacional y aumenta complejidad senza justificación. La recommended starting structure include tres niveles: 
-          Prospecting campaigns targeting cold audiences, retargeting campaigns para warm audiences (website visitors, engaged 
-          usuarios), y CLV campaigns para existing customers. Nestedad sets dentro de cada campaña permiten testing granular sin 
-          proliferación excesiva de estructuras.
-        </p>
-        <p>
-          Para prospecting, comenzar con Interest-based audiences inicialmente para generar data real tentang who actually converts. 
-          Tras 100+ conversiones, expandir to Lookalike audiences basados en purchasers. La progresión típica es: Broad + 
-          interests -> Purchasers Lookalike 1% -> Purchasers Lookalike 2-3% -> Expanded interests basados en convertidores reais. 
-          Mantener separatead sets para measurement limpio defore moving a broader targeting.
-        </p>
-        <p>
-          Inside cada ad set, probar múltiplas creatividades simultáneamente (mínimo 3-4 por ad set) con rotation set a "Don't include 
-          ad that finished learning phase within last 7 days" para permitir algoritmo complete optimization cycle. Analizar creative 
-          performance individuales (no ad set level!) para identificar winners. El Creative Insights muestran quais 
-          elementos visuales y copy específicos generan results superiores. Document these learnings for future creative 
-          development.
-        </p>
-
-        <h2 id="errores-comunes">Errores Comunes y Cómo Evitarlos</h2>
-        
-        <p>
-          El error más frecuente en ecommerce paid media es optimizar exclusivamente para click-through-rate. CTR alto con 
-          conversión baja señala creatividad atractiva pero irrelevante para audience objective. El algoritmo aprende錯誤 
-          signals quando se optimiza por CTR, acumulando traffic inappropriate que depois hard to convert later. Siempre optimizar 
-          towards conversion events relevantes for business objetivo: para Awareness阶段use Traffic o Engagement, para 
-          Consideration阶段use Messages o Video Views, para Conversion阶段use Purchases or Leads.
-        </p>
-        <p>
-          Second-common mistakeinvolucra no esperar enough learning phase antes de fazer juícios sobre campaign performance. 
-          El algoritmo requiere entre 15-25 conversiones por ad set antesde confiable data. Apagar campañas prematuramente 
-          prevent learning accumulation y often resulta en missing winning opportunities that just needed more time. 
-          Minimum 7 días con spend relevante antes de decisions, preferiblemente 14 dias.
-        </p>
-        <p>
-          Tercer error critical es ignore creatives' relevance post-launch. Ad Relevance Diagnostics fornece datos valiosos sobre 
-          quality score por ad. Low relevance scores (below 5) indicated problems with targeting, creative, o landing page 
-          experience. Regular review (daily para active campaigns) permite identificação temprana de issues předpo they impact 
-          performance significantly. Creatives that stop performing often recoveryable con tweaks menores a copy or visuals.
-        </p>
-
-        <h2 id="conclusion">Conclusión: Integrando Estrategias</h2>
-        <p>
-          La elección entre Facebook ads e Instagram ads no tiene por qué ser mutual exclusivede. La estratégia más efectiva para 
-          la mayoría de ecommerce implica usar ambas plataformas como parte de un funnel integrado donde cada una cumple funcão 
-          específica basada en fortalezas inherentes. Instagram excela en la parte superior del embudo para generación de 
-          conciencia de marca y consideración, especialmente en categorías visual-dependent onde el lifestyle positioning importa. 
-          Facebook funciona mejor para captura de demanda inmediata y retargeting donde las decisión de compra está nearer 
-          completion.
-        </p>
-        <p>
-          El éxito sostenidorequiere testing continuo, patience con Learning Phases, y disiplinapara actuar sobre datos 
-          reales versus assunçõespreconcebidas. Las métricas vanitycomo likes y seguidores significan poco sin traducción a 
-          revenue. Implementar proper tracking desde el principio es inversiones que retorna múltiplos throughout toda 
-          la vida de la cuenta. Y sobre todo, recordar que ninguna plataforma magic solve fundamental producto o mercado 
-          fitproblems: paid traffic amplifica lo que ya funciona, pero no puede crear product-market fitpor sí sola.
-        </p>
-
-        <div className="cta-box" style={{ backgroundColor: '#f5f5f5', padding: '30px', borderRadius: '8px', marginTop: '40px' }}>
-          <h3 style={{ marginTop: 0 }}>¿Listo para optimizar tus campañas?</h3>
-          <p>Si quieres profunditzar más allá de esta guía y desarrollar una estrategia personalizada para tu ecommerce, 
-          podemos hacer una auditors gratuita de tu cuenta actual. En DayByDay Consulting somos especialistas en Paid 
-          Media para ecommerce en España y conocemos los nuances específicos del mercado español.</p>
-          <p>Como agencia acreditada por Meta Partners, temos acesso a recursos y herramientas que nos permiten optimizar 
-          campañas más allá de lo estándar público. Our equipo ha gestionado más de 50 cuentas de ecommerce en diversos 
-          verticales en España.</p>
-          <Link to="/contacto" style={{ display: 'inline-block', backgroundColor: '#ff6b35', color: 'white', padding: '15px 30px', borderRadius: '5px', textDecoration: 'none', fontWeight: 'bold', marginTop: '10px' }}>
-            SolicitarAuditoría Gratuita
-          </Link>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
+      ))}
+    </div>
 
-      </BlogPostLayout>
-    </>
-  );
-};
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
 
-export default FacebookAdsVsInstagramAdsEcommPage;
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
+  </BlogPostLayout>
+);
+
+export default BuenROASNichosPage;

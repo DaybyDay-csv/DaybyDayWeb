@@ -3,291 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es mejor para un eCommerce D2C en España: Performance Max o Meta Ads?",
-    a: "No es un mejor absoluto, es una pregunta de fase y rol. Meta Ads (Facebook + Instagram) gana en demand generation: lleva tu marca a usuarios que aún no te buscan, mediante creatividad y segmentación por intereses. Performance Max (PMax) gana en demand capture: cosecha intención existente en Search, Shopping, YouTube, Discover y Display de Google. Para un D2C que está empezando, Meta es prioritario porque sin demanda no hay nada que cosechar. Para un D2C consolidado con tráfico de marca y categorías muy buscadas, PMax aporta incremental real. La respuesta correcta para la mayoría de cuentas entre 30K y 500K€/mes es: ambos, pero con roles distintos y presupuestos distintos.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuánto presupuesto mínimo necesito para que Performance Max funcione en España?",
-    a: "El umbral mínimo realista para PMax es 30-50€/día por campaña (≈900-1.500€/mes), y eso asumiendo que tienes feed de Shopping bien configurado. Por debajo, el algoritmo no recibe suficiente señal para optimizar y termina sirviendo en placements de baja calidad (Display y Search Partners). Meta Ads, en cambio, puede arrancar con 20-30€/día por conjunto de anuncios y empezar a producir aprendizaje útil más rápido. Si tu presupuesto total es <2K€/mes, prioriza Meta. Entre 2K€ y 5K€/mes, considera Search clásico antes que PMax. A partir de 5K€/mes ya tiene sentido testar PMax con un control claro.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Performance Max canibaliza el tráfico de marca y mis otras campañas de Google?",
-    a: "Sí, casi siempre, y es el error más común al lanzar PMax. Por defecto, PMax también puja por tu marca (búsquedas con tu nombre), inflando el ROAS reportado con conversiones que ya tenías de SEO orgánico o Search de marca. Para evitarlo: (1) excluye términos de marca a nivel de cuenta vía formulario de Google, (2) mantén una campaña Search de marca dedicada con CPC bajo y prioridad alta, (3) revisa el Brand Lift y el ROAS sin marca como métrica real. Sin esta higiene, PMax parece milagroso en la planilla y ridículo en el banco.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cómo se compara el CPA y ROAS entre Performance Max y Meta Ads en eCommerce D2C?",
-    a: "En cuentas D2C españolas que gestionamos, los rangos típicos por ticket medio (40-80€) son: Meta Ads BOFU (retargeting + Advantage+) suele dar ROAS 3-5x con un CPA 18-30€ — pero captura intención que no existía antes; Meta Ads TOFU (públicos fríos) baja a ROAS 1,5-2,5x; Performance Max bien configurado y con marca excluida da ROAS 4-7x con CPA 12-22€, pero con un techo claro: depende del volumen de búsqueda real de tu producto. Si comparas el ROAS plano sin entender el rol, Meta TOFU 'pierde' siempre. Por eso la métrica que importa es el MER (revenue total / spend total) y la incrementalidad medida con experimentos de geo o pausas controladas, no el ROAS por canal.",
-  },
-  {
-    q: "¿Puedo sustituir Performance Max por Meta Ads o al revés?",
-    a: "Técnicamente sí, estratégicamente casi nunca. Si sólo tienes Meta y desactivas, pierdes la cosecha de marca y de búsqueda categórica que Google capta a CPA bajo — eso son ventas que estabas teniendo prácticamente regaladas. Si sólo tienes PMax y desactivas Meta, pierdes el motor de demand creation: en 30-60 días el volumen de Search de marca cae porque nadie nuevo te descubre. Los D2C que escalan de forma sostenible operan los dos canales con MER blended como KPI, no ROAS por canal. La excepción real son productos commodity con altísima intención de búsqueda (electrodomésticos, recambios) donde Google domina, o productos puramente de impulso visual (moda, joyería) donde Meta tiene más palancas.",
-  },
-  {
-    q: "¿Performance Max sirve para servicios o sólo para eCommerce con feed de productos?",
-    a: "Sirve para ambos, pero la palanca cambia. Para eCommerce con feed de Shopping, PMax explota Shopping listings y es donde más rinde — el feed es el activo crítico. Para servicios o lead gen (sin feed), PMax usa los assets que le subes (textos, imágenes, vídeo) y se apoya más en Search y Display. En lead gen el rendimiento de PMax es más errático porque la calidad del lead es difícil de pasar al algoritmo: hay que enviar conversiones offline cualificadas (compras, ventas cerradas) por Google Ads API o uploads, no leads sin filtrar. Sin esa señal de calidad, PMax aprende a generar volumen barato pero con leads que no convierten.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const PerformanceMaxVsMetaAdsEspanaPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Performance Max vs Meta Ads: ¿cuál funciona mejor en España? (2026)"
-    description="Comparativa operativa Performance Max vs Meta Ads para eCommerce D2C en España: rol real de cada canal, cuándo usar cada uno, presupuesto mínimo, CPA y ROAS reales por fase, errores frecuentes (canibalización de marca) y estrategia combinada con MER blended."
-    slug="performance-max-vs-meta-ads-espana"
-    datePublished="2026-05-01"
-    dateModified="2026-05-01"
-    readingTime="10 min"
-    category="Estrategia"
-    keywords={[
-      "performance max vs meta ads",
-      "performance max vs meta ads espana",
-      "google ads vs meta ads ecommerce",
-      "pmax ecommerce d2c",
-      "comparativa performance max meta",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">Performance Max vs Meta Ads en España</strong> no es la pregunta correcta para un eCommerce D2C en 2026 — la pregunta correcta es qué rol juega cada uno en tu mix y cómo medirlos juntos. Aún así, la comparación sigue apareciendo cada semana en discoveries con founders que están eligiendo dónde poner el primer euro o por qué su ROAS se ha desplomado al activar PMax.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Esta guía resuelve eso: qué hace bien cada canal, dónde fallan los dos, qué CPA y ROAS reales vemos en cuentas D2C españolas, cuánto presupuesto mínimo necesita PMax para funcionar, los errores que matan el ROAS reportado (sí, hablamos de canibalización de marca) y cómo decidir el mix correcto según fase de madurez.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">El rol real de cada canal (no son sustitutos)</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      La confusión empieza aquí: comparar dos canales que técnicamente son complementarios. Meta Ads opera principalmente en demand generation; Performance Max en demand capture. Saltarse esta distinción lleva a decisiones malas.
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Dimensión</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Meta Ads</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Performance Max</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { d: "Función principal", m: "Crear demanda, descubrimiento", p: "Capturar demanda existente" },
-            { d: "Trigger del usuario", m: "Interés/contexto en feed", p: "Búsqueda activa o intención" },
-            { d: "Placements", m: "Feed, Reels, Stories, Audience Network", p: "Search, Shopping, YouTube, Display, Discover, Gmail" },
-            { d: "Activo crítico", m: "Creatividad (vídeo + imagen)", p: "Feed de productos + assets" },
-            { d: "Curva de aprendizaje", m: "Rápida (días con creatividad nueva)", p: "Lenta (2-4 semanas para estabilizar)" },
-            { d: "Visibilidad de datos", m: "Media (ad set, ad)", p: "Baja (caja negra por canal)" },
-            { d: "Mejor caso de uso", m: "Producto visual, ticket 30-150€, marca emergente", p: "Producto buscado, feed limpio, marca con volumen" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.d}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.m}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.p}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La <a href="https://support.google.com/google-ads/answer/10724817" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">documentación oficial de Google sobre Performance Max</a> es clara en que su valor está en optimizar a través de los inventarios de Google con un sólo objetivo de conversión — no fue diseñado para reemplazar a Meta, sino para reemplazar al stack manual de Search + Shopping + Display dentro del ecosistema Google.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Presupuesto mínimo realista por canal en España</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Este es el dato que más founders ignoran al planificar mix. PMax tiene un suelo de inversión por debajo del cual el algoritmo no encuentra señal y termina enviando tráfico basura.
-    </p>
-    <div className="space-y-4 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          fase: "Hasta 2.000€/mes total",
-          mix: "100% Meta Ads (Advantage+ Shopping + retargeting básico)",
-          razon: "PMax por debajo de 30€/día no aprende. Search clásico de marca + Meta es el mejor uso del euro.",
-        },
-        {
-          fase: "2.000-5.000€/mes total",
-          mix: "70% Meta + 20% Search marca/categoría + 10% retargeting Google",
-          razon: "Sigue sin haber suficiente para PMax. Search manual con keywords de alta intención cosecha mejor.",
-        },
-        {
-          fase: "5.000-15.000€/mes total",
-          mix: "60% Meta + 25% PMax (con marca excluida) + 15% Search categoría",
-          razon: "Punto de entrada real para PMax. Hay volumen para que aprenda y diversificación útil.",
-        },
-        {
-          fase: "15.000-50.000€/mes total",
-          mix: "55% Meta + 30% PMax + 10% Search + 5% YouTube/Demand Gen",
-          razon: "Cuenta madura. PMax pesa más pero Meta sigue siendo motor de demand creation imprescindible.",
-        },
-        {
-          fase: ">50.000€/mes total",
-          mix: "50% Meta + 30% PMax + 10% Search + 10% experimentos (TikTok, Demand Gen)",
-          razon: "Diversificación de canal y experimentos de incrementalidad como prioridad operativa.",
-        },
-      ].map(({ fase, mix, razon }) => (
-        <div key={fase} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-white text-sm mb-1">{fase}</p>
-          <p className="text-white/70 text-sm mb-1"><span className="text-white/40">Mix recomendado:</span> {mix}</p>
-          <p className="text-white/55 text-sm"><span className="text-white/40">Por qué:</span> {razon}</p>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">CPA y ROAS reales por canal (D2C español, ticket 40-80€)</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Datos agregados de cuentas D2C que gestionamos en sectores moda, belleza, suplementos y hogar. Ticket medio entre 40-80€, margen bruto 60-75%, después de iOS 17 y con CAPI deduplicada.
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Canal / Estructura</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">CPA típico</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">ROAS reportado</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Rol</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c: "Meta Advantage+ Shopping", cpa: "18-26€", r: "3-5x", rol: "BOFU/MOFU, motor principal" },
-            { c: "Meta TOFU (público frío)", cpa: "28-45€", r: "1,5-2,5x", rol: "Demand creation, alimenta el resto" },
-            { c: "Meta Retargeting", cpa: "12-20€", r: "5-9x", rol: "Cosecha de visitantes, techo bajo" },
-            { c: "PMax (marca excluida)", cpa: "12-22€", r: "4-7x", rol: "Captura Google, complementario a Meta" },
-            { c: "PMax (marca incluida)", cpa: "6-12€", r: "8-15x", rol: "Falsa señal — canibaliza orgánico" },
-            { c: "Search marca", cpa: "3-8€", r: "10-25x", rol: "Defensiva, casi gratis si tienes SEO" },
-            { c: "Search categoría", cpa: "20-40€", r: "2,5-4x", rol: "Cosecha intención no-marca" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.cpa}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.r}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.rol}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Mirar este cuadro y concluir "PMax con marca incluida es lo mejor" es exactamente el error que mata el negocio. Ese ROAS de 8-15x está cosechando ventas que ya tenías por SEO orgánico o por la demanda que crearon Meta y otras palancas — no es incremental. La medición correcta es MER blended y test de incrementalidad por geo o pausa.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">El error que mata PMax: la canibalización de marca</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Es el problema más frecuente que encontramos al auditar cuentas con PMax activo. Por defecto, PMax puja también por términos que contienen el nombre de tu marca, mostrándose en búsquedas como "<em>tu_marca</em>" o "<em>tu_marca + producto</em>". Esas búsquedas iban a convertir igualmente vía SEO orgánico o Search clásico — pero ahora se atribuyen a PMax con un CPA artificialmente bajo.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Resultado: el ROAS de PMax parece milagroso en el panel de Google Ads, mientras el MER total no sube o incluso baja. Cómo cortarlo:
-    </p>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Solicita exclusión de marca a nivel de cuenta vía formulario de soporte de Google Ads (lleva 2-5 días).",
-        "Activa una campaña Search de marca dedicada con CPC bajo, prioridad de campaña alta y match phrase/exact de tu marca.",
-        "Revisa los términos de búsqueda en el reporte de Insights de PMax mensualmente: si aparecen variantes de marca, sigue habiendo fuga.",
-        "Mide el ROAS sin marca: spend PMax / (revenue total - revenue Search marca) para ver el coste real de la captura no-marca.",
-        "Test de incrementalidad cada 6-9 meses: pausa PMax durante 2 semanas en una región y mide caída real de ventas vs proyección.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Estructura combinada que funciona en D2C</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      No es una respuesta única, pero el patrón que repetimos en cuentas que escalan sin romper unit economics:
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Capa</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Canal / Campaña</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Objetivo</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c: "Defensa de marca", ca: "Google Search marca + (opcional) Meta marca", o: "Proteger SEO orgánico, evitar pujas competencia" },
-            { c: "Cosecha intención", ca: "PMax con marca excluida + Search categoría", o: "Capturar búsquedas no-marca de alta intención" },
-            { c: "Cosecha visual", ca: "Meta Advantage+ Shopping + retargeting", o: "Convertir visitantes y públicos calientes" },
-            { c: "Demand creation", ca: "Meta TOFU + creativos UGC + (opcional) TikTok", o: "Generar demanda nueva con creatividad" },
-            { c: "Aprendizaje", ca: "Tests de creatividad y públicos en Meta", o: "Alimentar el motor de demand creation" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.ca}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.o}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      Las recomendaciones de <a href="https://www.thinkwithgoogle.com/intl/es-es/marketing-strategies/automation/performance-max-best-practices/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Think with Google sobre buenas prácticas de Performance Max</a> insisten en alimentar el algoritmo con feed limpio, assets diversos y suficiente señal de conversión — confirma lo que vemos: PMax no es plug-and-play, requiere foundation técnica antes de dar resultado.
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo decidimos en DayByDay entre PMax y Meta para una cuenta nueva</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      No empezamos por la pregunta "¿activamos PMax o no?". Empezamos por revisar tres cosas:
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
     </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Volumen de búsqueda real: si Google Keyword Planner muestra <500 búsquedas/mes para tu categoría, PMax tiene poco que cosechar y Meta es prioritario.",
-        "Estado del feed: si Google Merchant Center tiene >5% de productos rechazados o sin imagen optimizada, no se enciende PMax hasta arreglar el feed.",
-        "Presupuesto y madurez: por debajo de 5K€/mes tota,l PMax no aporta — Search manual + Meta rinden mejor por euro.",
-        "Atribución actual: si MER es la métrica norte y CAPI está deduplicada, podemos medir incrementalidad de PMax con un test geo. Sin eso, no hay decisión informada.",
-        "Marca: si hay >300 búsquedas/mes de marca, exclusión de marca en PMax es no negociable desde el día 1.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Quieres saber qué mix Meta + PMax tiene sentido en tu cuenta?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos tu volumen real, feed, atribución y MER para decirte exactamente dónde poner cada euro y qué ROAS realista esperar.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/performance-max-ecommerce-d2c-cuando-usar" className="text-white font-semibold hover:text-white/80">
-          Performance Max para D2C: cuándo activarla y cómo medir si funciona →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">3 condiciones obligatorias antes de activar PMax y 6 métodos para detectar canibalización</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/combinar-google-ads-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
-          Cómo combinar Google Ads y Meta Ads en una estrategia D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Distribución de presupuesto por fase, doble atribución y MER blended</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/meta-ads-vs-google-ads" className="text-white font-semibold hover:text-white/80">
-          Meta Ads vs Google Ads: ¿cuál elegir según tu negocio? →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Comparativa amplia de plataformas con pros, contras y casos de uso</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
-          Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El equivalente en Meta a PMax: ventajas, riesgos y protocolo de transición</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Métricas Meta Ads que importan de verdad (y las que no) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">MER blended, ROAS reportado vs real y por qué la atribución por canal engaña</p>
-      </div>
-    </div>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default PerformanceMaxVsMetaAdsEspanaPage;
+export default BuenROASNichosPage;

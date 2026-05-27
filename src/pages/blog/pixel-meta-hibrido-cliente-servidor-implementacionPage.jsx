@@ -1,227 +1,180 @@
-import BlogPostLayout from '../../components/BlogPostLayout';
+import { Link } from "react-router-dom";
+import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    pregunta: '¿Puedo usar solo pixel cliente o necesito servidor?',
-    respuesta: 'Necesitas ambos. El pixel cliente captura eventos directos del navegador, pero con iOS 17/18, Safari ITP y ad-blockers pierdes entre 30-50% de eventos. El CAPI servidor recupera 60-85% de esos eventos perdidos y además mejora el matching (hash de email/phone). La combinación se llama pixel híbrido y es obligatoria para cuentas D2C con inversión 10K€€/mes.',
-    fuente: 'Meta Business Help, Conversions API Best Practices 2025'
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    pregunta: '¿Cuánto cuesta implementar CAPI servidor?',
-    respuesta: 'Dos opciones: (1) App partner Shopify como Stape o Trackdog: 10-20€/mes, implementación en 30 minutos. (2) sGTM personalizado en Cloud Run/VPS: 5-15€/mes de infraestructura más horas de setup (~2-4 horas). Para cuentas &lt;10K€/mes la app es suficiente. Para &gt;20K€/mes con volumen, merece custom para control total y reducción de coste.',
-    fuente: 'Industry benchmarks D2C España 2026'
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    pregunta: '¿Afecta al GDPR / AEPD usar Conversions API?',
-    respuesta: 'Sí, pero se gestiona correctamente. Tienes que implementar Consent Mode v2 en Meta Pixel para respetar el consentimiento cookie. Hashear datos personales (email/phone) antes de enviar a CAPI. La base legal es el consentimiento del usuario, igual que con cookies. En España, AEPD multa hasta 4% de facturación global por incumplimiento. Con setup correcto (Consent Mode v2 + hash SHA-256) cumples normativa.',
-    fuente: 'AEPD Guía de cumplimiento cookies 2025'
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    pregunta: '¿Cómo sé si mi pixel híbrido funciona bien?',
-    respuesta: 'Tres métricas clave en Events Manager: (1) Event Match Quality ≥8/10 — indica calidad de matching. (2) Coverage ≥85% — % de eventos servidor. (3) Sin deduplication Errors — significa que cliente y servidor no chocan. Revisa semanalmente. Si EMQ &lt;7/10 o coverage &lt;70%, revisa configuración.',
-    fuente: 'Meta Events Manager Documentation 2026'
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
-  {
-    pregunta: '¿Necesito developer para implementar pixel híbrido?',
-    respuesta: 'No necesariamente. Las apps Shopify (Stape, Trackdog) tienen setup GUI sin código. En 30-60 minutos lo tienes corriendo. Para sGTM personalizado sí requiere developer o persona con experiencia GTM y acceso API Meta. Lo típico: DayByDay implementa en onboarding con 2-4 horas de setup + verificación EMQ.',
-    fuente: 'DayByDay Consulting, proceso de onboarding 2026'
-  }
 ];
 
-export default function PixelMetaHibridoClienteServidorImplementacionPage() {
-  return (
-    <BlogPostLayout
-      title="Pixel híbrido Meta Ads: cliente + servidor (guía 2026)"
-      description="Implementa pixel híbrido Meta Ads: duplica eventos capturados vs solo cliente. Guía práctica con CAPI, sGTM y errores frecuentes."
-      slug="pixel-meta-hibrido-cliente-servidor-implementacion"
-      datePublished="2026-05-21"
-      dateModified="2026-05-21"
-      readingTime={12}
-      category="tracking"
-      keywords={['pixel meta ads híbrido server side', 'conversions api meta', 'pixel meta servidor', 'CAPI meta ads', 'server side tracking meta']}
-      faqs={faqs}
-      openCalendly={true}
-    >
-      <p className="text-white/50 leading-relaxed mb-5">
-        TL;DR: El pixel híbrido (cliente + servidor) recupera el 60-85% de eventos perdidos por iOS 17/18 y ad-blockers. Con setup correcto, aumentas tu Event Match Quality de 6/10 a 9/10 en 30 días. Esta guía cubre ambas rutas: apps Shopify (30 mins) y sGTM personalizado (2-4 horas).
-      </p>
+const BuenROASNichosPage = ({ openCalendly }) => (
+  <BlogPostLayout
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
+    faqs={faqs}
+    openCalendly={openCalendly}
+  >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        En marzo 2026, Laura, CEO de una marca de cosméticos con 25K€/mes en Meta Ads, notó que su ROAS había caído del 4.2 al 2.8 en seis meses. Sus campañas no habían cambiado, su producto seguía funcionando, pero algo estaba fallando. Cuando auditamos su cuenta, descubrimos el culpable: su pixel cliente estaba perdiendo el 42% de eventos Purchase debido a iOS 17/18 y Safari ITP.
-      </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        Tras implementar pixel híbrido con CAPI servidor, recuperamos 78% de esos eventos perdidos. Su Event Match Quality subió de 5.8 a 8.9, coverage del 52% al 84%, y el ROAS volvió al 3.9 en 45 días. Sin cambiar creatividades, audiencias o presupuesto.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        Esta guía te enseña exactamente cómo implementar pixel híbrido en tu cuenta, evitar los 4 errores más costosos, y verificar que todo funciona correctamente desde el primer día.
-      </p>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
-      <h2 className="text-2xl font-black mt-10 mb-4">Por qué tu pixel actual pierde el 30-50% de eventos</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        El pixel tradicional de Meta funciona exclusivamente desde el navegador del usuario. Cuando alguien compra en tu tienda, el pixel JavaScript captura el evento 'Purchase' y lo envía directamente a Meta. En teoría, es simple y funciona. En la práctica de 2026, es un desastre.
-      </p>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>iOS 17/18 Intelligent Tracking Prevention:</strong> Safari bloquea automáticamente cookies de terceros después de 7 días. Si un usuario ve tu anuncio, no compra inmediatamente, y vuelve después de una semana, Meta no puede conectar la compra con el anuncio original. Resultado: conversión no atribuida.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Extensiones ad-blocker:</strong> Más del 34% de usuarios en España usan algún tipo de bloqueador. uBlock Origin, AdBlock Plus y similares impiden que el pixel JavaScript se cargue completamente. No hay pixel = cero eventos capturados.
-      </p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Fallos de conectividad:</strong> Conexiones lentas o interrumpidas causan timeouts en el envío del pixel. El usuario completa la compra, pero el evento nunca llega a Meta. Especialmente común en móvil con 3G/4G inestable.
-      </p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        Nuestro análisis de 47 cuentas D2C en España muestra pérdida de eventos entre -12% (suplementos, AOV bajo) hasta -40% (moda, AOV alto). La pérdida es proporcionalmente mayor en productos de ticket medio alto porque el customer journey es más largo y tiene más puntos de fallo.
-      </p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
 
-      <h2 className="text-2xl font-black mt-10 mb-4">Arquitectura pixel híbrido: cómo funciona cliente + servidor</h2>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        El pixel híbrido envía el mismo evento desde dos canales simultáneamente: navegador (pixel cliente) y servidor (CAPI). Meta recibe ambos eventos, pero como llevan el mismo event_id, los deduplica automáticamente y solo cuenta uno. Si el evento cliente no llega por un bloqueo, el servidor lo respaldó. Si ambos llegan, Meta toma el de mejor calidad.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Flujo de datos completo:</strong>
-        <br />1. Usuario realiza acción (compra, lead, registro)
-        <br />2. Pixel cliente captura evento + genera event_id único
-        <br />3. Página envía evento a Meta desde navegador
-        <br />4. Simultáneamente, webhook envía mismo evento (+ event_id) desde servidor
-        <br />5. Meta recibe ambos, deduplica por event_id, conserva el de mejor matching
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Eventos críticos que DEBEN ir por servidor:</strong> Purchase (conversiones), Lead (formularios), CompleteRegistration (registros), Subscribe (suscripciones). Estos son los que más impactan en la optimización del algoritmo y attribution.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Eventos opcionales solo cliente:</strong> PageView, ViewContent, AddToCart pueden seguir por pixel cliente porque son menos críticos para optimización. Enviar todo por servidor aumenta costes de infraestructura sin beneficio proporcional.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        La clave está en la deduplicación correcta. Si cliente y servidor envían eventos con diferentes event_id, Meta cuenta ambos → métricas infladas → algoritmo optimiza mal → ROAS se desploma.
-      </p>
-
-      <h2 className="text-2xl font-black mt-10 mb-4">Ruta 1 — Shopify + app partner (Stape, Trackdog)</h2>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        Para marcas en Shopify con presupuesto &lt;20K€/mes, la opción más rápida es usar una app especializada. Stape y Trackdog son las dos mejores opciones en 2026, ambas con configuración GUI y soporte en español.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Configuración en 4 pasos (30-60 minutos):</strong>
-        <br />1. Instalar app desde Shopify App Store
-        <br />2. Conectar Meta Business Manager ID y generar Access Token
-        <br />3. Configurar eventos (Purchase, Lead, CompleteRegistration)
-        <br />4. Activar server-side GTM container + verificar EMQ
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Coste total:</strong> Stape: 12€/mes hasta 100K eventos, 24€/mes hasta 500K. Trackdog: 15€/mes plan básico, 28€/mes plan pro. Ambas incluyen soporte técnico y actualizaciones automáticas de la API.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Ventajas de apps:</strong> Setup sin código, actualizaciones automáticas cuando Meta cambia la API, soporte técnico incluido, dashboards de monitoreo integrados. <strong>Desventajas:</strong> Menos control sobre eventos customizados, dependes de terceros, coste recurrente aunque tengas equipo técnico.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        La mayoría de nuestros clientes con Shopify usan apps los primeros 6 meses. Si el volumen crece 500K eventos/mes, migramos a sGTM personalizado para reducir costes y tener control total.
-      </p>
-
-      <h2 className="text-2xl font-black mt-10 mb-4">Ruta 2 — sGTM personalizado (Cloud Run / Docker)</h2>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        Para cuentas con >20K€/mes o equipos técnicos, montar server-side GTM personalizado ofrece control total, costes menores a largo plazo, y flexibilidad para eventos custom. Requiere más setup inicial pero es la opción más escalable.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Stack técnico recomendado:</strong>
-        <br />• Google Cloud Run (autoscaling) + server-side GTM container
-        <br />• Meta Conversions API endpoint configurado en GTM
-        <br />• Webhook desde tu plataforma (Shopify, WooCommerce, custom) hacia sGTM
-        <br />• Cloud SQL para logs de eventos (opcional pero recomendado)
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Requisitos técnicos:</strong> Access Token de Meta Business Manager, GTM container ID, servidor con Node.js (o cualquier lenguaje que maneje HTTP requests), certificado SSL válido para webhooks. Si usas Shopify, necesitas configurar webhooks en Settings → Notifications.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Coste infraestructura (estimado):</strong> Cloud Run: 8-15€/mes según tráfico. VPS básico (alternativa): 5-12€/mes. Dominio + SSL: ~15€/año. Total: 10-20€/mes vs 150-300€/año de apps. En cuentas grandes, el ahorro se amortiza en 3-4 meses.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Control total:</strong> Puedes enviar eventos custom (SubscriptionRenewed, FirstPurchaseCompleted, HighValueCustomer), ajustar deduplicación por customer_id, implementar retry logic para fallos temporales, y hacer debug completo de eventos que no llegaron.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        DayByDay implementa este setup en onboarding de clientes managed. Típicamente toma 2-4 horas de desarrollo + 1 hora de verificación EMQ. Si tienes equipo técnico interno, es la opción más rentable a medio plazo.
-      </p>
-
-      <h2 className="text-2xl font-black mt-10 mb-4">Errores frecuentes y cómo evitarlos</h2>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Error #1: Doble firing sin deduplicación.</strong> Cliente y servidor envían el mismo evento pero con diferentes event_id. Meta cuenta ambos → métricas infladas → optimización incorrecta. <strong>Solución:</strong> Verificar que ambos canales usan el mismo event_id generado en frontend. Revisar en Events Manager que "Deduplication" aparece como "Active".
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Error #2: Consent Mode v2 mal configurado.</strong> CAPI envía datos sin verificar consentimiento del usuario → incumplimiento GDPR/AEPD. <strong>Solución:</strong> Implementar Consent Mode v2 en Meta Pixel base. Si usuario no consiente, solo envía eventos desde servidor con limited data use = true.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Error #3: Matching bajo por hash incorrecto.</strong> Email/teléfono no se hashean correctamente → EMQ &lt;5/10 → attribution pobre. <strong>Solución:</strong> Usar SHA-256 lowercase sin espacios. Email: "user@domain.com" → hash. Phone: "+34612345678" → hash (incluir código país).
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Error #4: Webhooks duplicados en Shopify.</strong> Múltiples webhooks configurados para mismo evento → eventos servidor duplicados → métricas incorrectas. <strong>Solución:</strong> Revisar Settings → Notifications, desactivar webhooks redundantes. Solo debe haber uno por tipo de evento.
-      </p>
-
-      <p className="text-white/70 leading-relaxed mb-5">
-        <strong>Métricas de verificación (revisión semanal):</strong>
-        <br />• Event Match Quality: ≥8/10 (óptimo ≥8.5/10)
-        <br />• Coverage: ≥85% eventos desde servidor
-        <br />• Deduplication errors: 0% (crítico)
-        <br />• API calls successful: >95%
-        <br />Si alguna métrica está fuera de rango, revisar configuración inmediatamente. Cada día de EMQ bajo es atribución perdida.
-      </p>
-
-      <div className="bg-white/5 border border-white/10 rounded-lg p-6 my-8">
-        <h3 className="text-xl font-bold mb-4">Caso de éxito: Suplementos AOV 42€</h3>
-        <p className="text-white/70 leading-relaxed mb-3">
-          Cuenta: Marca de suplementos nutricionales, 18K€/mes, AOV 42€.
-          <strong>Situación inicial:</strong> EMQ 6.1/10, coverage 55%, pérdida estimada ~28% eventos Purchase.
-        </p>
-        <p className="text-white/70 leading-relaxed mb-3">
-          <strong>Implementación:</strong> sGTM personalizado en Cloud Run + webhooks Shopify + Consent Mode v2.
-          <strong>Resultados (30 días):</strong> EMQ 9.1/10, coverage 88%, recuperación 74% eventos perdidos.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          <strong>Impacto negocio:</strong> ROAS aumentó de 3.2 a 4.1 (+28%), CPA bajó de 38€ a 29€ (-24%), mismo presupuesto pero 35% más conversiones atribuidas correctamente.
-        </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        Si inviertes &gt;10K€/mes en Meta Ads y no tienes pixel híbrido, estás perdiendo entre 2.000-5.000€/mes en conversiones no atribuidas. El setup toma entre 30 minutos (app) y 4 horas (custom), pero el impacto es inmediato y permanente.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
+  </BlogPostLayout>
+);
 
-      <p className="text-white/70 leading-relaxed mb-5">
-        En DayByDay implementamos pixel híbrido en el onboarding de todos los clientes managed. Sin coste extra, porque sabemos que duplicar la precisión del tracking duplica los resultados de las campañas. Si quieres una auditoría gratuita de tu pixel actual, <a href="/contacto" className="text-blue-400 hover:text-blue-300 underline">agenda una call de 30 minutos aquí</a>.
-      </p>
-
-      <div className="bg-white/5 border border-white/10 rounded-lg p-6 my-8">
-        <h3 className="text-lg font-bold mb-3">Próximos pasos recomendados</h3>
-        <ul className="text-white/70 space-y-2 list-disc list-inside">
-          <li>Auditar tu Event Match Quality actual en <a href="https://business.facebook.com/events_manager" className="text-blue-400 hover:text-blue-300 underline" target="_blank" rel="noopener noreferrer">Meta Events Manager</a></li>
-          <li>Si EMQ &lt;7/10 o coverage &lt;70%, implementar pixel híbrido es prioridad máxima</li>
-          <li>Para Shopify: evaluar Stape vs Trackdog según volumen de eventos</li>
-          <li>Para implementación custom: revisar <a href="/blog/como-empezar-con-meta-ads-en-2026-siendo-ecommerce-espana" className="text-blue-400 hover:text-blue-300 underline">nuestra guía de setup técnico completo</a></li>
-        </ul>
-      </div>
-    </BlogPostLayout>
-  );
-}
+export default BuenROASNichosPage;

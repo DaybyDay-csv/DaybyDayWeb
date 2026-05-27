@@ -3,283 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Cuánto invierten las empresas D2C españolas en paid media en 2026?",
-    a: "Según los datos de campañas gestionadas desde DayByDay Consulting, las empresas D2C españolas con facturación de 500K€-2M€ al año invierten entre el 12% y el 22% de su facturación en paid media digital. Las empresas que crecen más rápido (\u003e30% YoY) tienden a invertir en el rango del 18-25%, priorizando Meta Ads como canal principal y Google Shopping como segundo canal.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuál es el ROAS promedio en eCommerce D2C en España en 2026?",
-    a: "El ROAS promedio en campañas de conversión de Meta Ads para eCommerce D2C en España en 2026 está entre 3,2x y 4,8x en sectores como moda, salud y hogar. Google Shopping ofrece ROAS superiores (4x-7x) al capturar demanda activa, pero con CPCs más altos. El ROAS real de negocio, calculado sobre los datos de Shopify (no sobre los reportados por Meta o Google), suele ser un 20-35% inferior al reportado por las plataformas debido a las diferencias en modelos de atribución.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Está subiendo el CPM en Meta Ads en España en 2026?",
-    a: "Sí. El CPM medio en Meta Ads España ha subido aproximadamente un 18-25% entre 2024 y 2026 en sectores competitivos como moda y belleza. Los factores principales son el mayor número de anunciantes compitiendo en la plataforma y la reducción del inventario premium (usuarios que bloquean anuncios o pasan más tiempo en Reels que en Feed). La respuesta más efectiva no es reducir la inversión sino mejorar la calidad del creativo para mantener el CTR y compensar la subida de CPM.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Qué canales de paid media funcionan mejor para D2C en España en 2026?",
-    a: "Para eCommerce D2C en España en 2026, la combinación más efectiva es: Meta Ads (Facebook + Instagram) para prospección y construcción de audiencias (TOFU/MOFU), Google Shopping (incluyendo Performance Max) para captura de demanda activa (BOFU), y TikTok Ads como tercer canal para marcas con producto visual y audiencia menor de 35 años. Email marketing automatizado y WhatsApp Business para retención y reactivación complementan el mix de paid media.",
-  },
-  {
-    q: "¿Vale la pena invertir en TikTok Ads para D2C en España?",
-    a: "TikTok Ads tiene un CPM significativamente más bajo que Meta Ads (60-70% inferior en nichos de moda, belleza y lifestyle) y una tasa de engagement superior en formatos de vídeo corto. Sin embargo, la intención de compra en TikTok es más baja que en Instagram, por lo que el ROAS directo es inferior. La estrategia más efectiva es usar TikTok como canal de TOFU (conciencia de marca, coste por impresión bajo) y cerrar la venta con retargeting en Meta o Google.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const EstadoPaidMediaD2CEspana2026Page = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Estado del Paid Media D2C en España 2026: Benchmarks, Tendencias y Datos Reales"
-    description="Informe anual de DayByDay Consulting sobre el estado del paid media en eCommerce D2C español en 2026: CPMs, ROAS por sector, canales dominantes, tendencias de IA y datos originales de campañas gestionadas."
-    slug="estado-paid-media-d2c-espana-2026"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
     datePublished="2026-03-10"
-    dateModified="2026-03-10"
-    readingTime="12 min"
-    category="Investigación"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
+
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Nota metodológica</p>
-      <p className="text-white/70 text-sm leading-relaxed">
-        Este informe está elaborado por DayByDay Consulting a partir de datos agregados y anonimizados de campañas gestionadas entre enero de 2025 y febrero de 2026, complementados con datos públicos de Meta, Google, IAB Spain y Statista España. Los datos de campañas son representativos del mercado eCommerce D2C español con ticket medio de 30-150€.
-      </p>
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Resumen ejecutivo</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El paid media D2C en España en 2026 está en un punto de inflexión. Los CPMs siguen subiendo, la competencia en plataformas maduras como Meta Ads se intensifica y la atribución se complica con los cambios en cookies de terceros. Al mismo tiempo, la inteligencia artificial integrada en las propias plataformas (Advantage+ de Meta, Performance Max de Google) está cambiando radicalmente cómo se gestionan las campañas.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Las marcas que están creciendo más rápido en 2026 no son las que tienen más presupuesto — son las que han adaptado su estrategia creativa, su estructura de datos y su ecosistema de automatización a la nueva realidad del paid media algorítmico.
-    </p>
-
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-      {[
-        { label: "CPM medio Meta Ads España (moda)", value: "+22%", sub: "vs 2024" },
-        { label: "ROAS promedio Meta Ads D2C", value: "3,2x–4,8x", sub: "sectores principales" },
-        { label: "Inversión paid media / facturación (D2C growth)", value: "18-25%", sub: "empresas 30% YoY" },
-        { label: "Discrepancia ROAS plataforma vs negocio real", value: "20-35%", sub: "Meta sobreatribuye" },
-      ].map(({ label, value, sub }) => (
-        <div key={label} className="bg-[#1a1616] border border-white/8 rounded-xl p-4 text-center">
-          <div className="font-black text-xl text-white mb-1">{value}</div>
-          <div className="text-white/40 text-xs mb-1">{sub}</div>
-          <div className="text-white/60 text-[10px] leading-tight">{label}</div>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">1. La evolución de los CPMs en España: 2023–2026</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El coste por mil impresiones (CPM) es el indicador más sensible del nivel de competencia en una plataforma de paid media. Cuanto más anunciantes compiten por las mismas impresiones, más sube el CPM. En España, la tendencia de los últimos tres años es clara:
-    </p>
-
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left text-white/40 font-normal py-2 pr-4">Sector</th>
-            <th className="text-right text-white/40 font-normal py-2 px-3">CPM 2023</th>
-            <th className="text-right text-white/40 font-normal py-2 px-3">CPM 2024</th>
-            <th className="text-right text-white/40 font-normal py-2 px-3">CPM 2026</th>
-            <th className="text-right text-white/40 font-normal py-2 pl-3">Variación</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { sector: "Moda y accesorios", c23: "6,2€", c24: "7,8€", c26: "9,5€", var: "+53%", varColor: "text-red-400" },
-            { sector: "Belleza y cosmética", c23: "5,8€", c24: "7,2€", c26: "8,9€", var: "+53%", varColor: "text-red-400" },
-            { sector: "Salud y bienestar", c23: "7,1€", c24: "8,5€", c26: "10,2€", var: "+44%", varColor: "text-orange-400" },
-            { sector: "Hogar y decoración", c23: "5,1€", c24: "6,3€", c26: "7,4€", var: "+45%", varColor: "text-orange-400" },
-            { sector: "Mascotas", c23: "4,8€", c24: "5,9€", c26: "6,8€", var: "+42%", varColor: "text-orange-400" },
-            { sector: "Electrónica", c23: "8,3€", c24: "9,6€", c26: "11,1€", var: "+34%", varColor: "text-yellow-400" },
-            { sector: "Alimentación D2C", c23: "4,2€", c24: "5,1€", c26: "5,8€", var: "+38%", varColor: "text-yellow-400" },
-          ].map(({ sector, c23, c24, c26, var: variacion, varColor }) => (
-            <tr key={sector} className="border-b border-white/5">
-              <td className="py-2.5 pr-4 text-white/70">{sector}</td>
-              <td className="py-2.5 px-3 text-right text-white/50">{c23}</td>
-              <td className="py-2.5 px-3 text-right text-white/50">{c24}</td>
-              <td className="py-2.5 px-3 text-right text-white font-semibold">{c26}</td>
-              <td className={`py-2.5 pl-3 text-right font-bold ${varColor}`}>{variacion}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La subida de CPMs no significa que Meta Ads sea menos rentable — significa que la eficiencia del creativo es más importante que nunca. Con un CPM de 9,5€ en moda, necesitas un CTR de al menos 1,5-2% para mantener un CPC razonable. Y para conseguir ese CTR, necesitas creatividades que realmente paren el scroll y conecten con la audiencia en el primer segundo.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">2. ROAS por sector: benchmarks reales del mercado español</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Estos datos corresponden a ROAS reportados por Meta Ads (7 días clic + 1 día view), que sistemáticamente sobreatribuyen entre un 20-35% respecto al ROAS real calculado sobre datos de Shopify o WooCommerce. Al analizar tus propias campañas, aplica siempre el factor de corrección comparando los ingresos que reporta Meta con los que ves realmente en tu plataforma de eCommerce.
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
     <div className="space-y-3 mb-8">
       {[
-        { sector: "Moda y accesorios", meta: "3,5x–6x", google: "5x–9x", tiktok: "2x–3,5x", tendencia: "estable" },
-        { sector: "Belleza y cosmética", meta: "4x–7x", google: "5x–10x", tiktok: "2,5x–4x", tendencia: "creciendo" },
-        { sector: "Salud y bienestar", meta: "3x–5x", google: "4x–7x", tiktok: "1,5x–3x", tendencia: "estable" },
-        { sector: "Hogar y decoración", meta: "3,5x–7x", google: "5x–9x", tiktok: "N/A", tendencia: "estable" },
-        { sector: "Mascotas", meta: "3x–6x", google: "4,5x–8x", tiktok: "2x–3x", tendencia: "creciendo" },
-        { sector: "Electrónica", meta: "5x–10x", google: "8x–14x", tiktok: "N/A", tendencia: "bajando" },
-        { sector: "Alimentación D2C", meta: "3x–5x", google: "4x–7x", tiktok: "1,5x–2,5x", tendencia: "estable" },
-      ].map(({ sector, meta, google, tiktok, tendencia }) => (
-        <div key={sector} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <div className="font-bold text-sm text-white w-40">{sector}</div>
-            <div className="flex gap-4 text-xs">
-              <div><span className="text-white/40">Meta: </span><span className="text-white font-semibold">{meta}</span></div>
-              <div><span className="text-white/40">Google: </span><span className="text-white font-semibold">{google}</span></div>
-              <div><span className="text-white/40">TikTok: </span><span className="text-white/60">{tiktok}</span></div>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
             </div>
-            <div className={`text-xs px-2 py-0.5 rounded-full border ${
-              tendencia === "creciendo" ? "text-green-400 border-green-400/30" :
-              tendencia === "bajando" ? "text-red-400 border-red-400/30" :
-              "text-white/40 border-white/10"
-            }`}>{tendencia}</div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
           </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">3. El impacto de la IA en la gestión de campañas: 2026</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      La gran transformación del paid media en los últimos dos años no ha sido el cambio de plataformas — ha sido la integración profunda de la IA en los propios sistemas de las plataformas. Advantage+ Shopping de Meta y Performance Max de Google han pasado de ser opciones experimentales a ser los formatos dominantes en eCommerce.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">Advantage+ Shopping en España: datos de rendimiento</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      En las cuentas que gestionamos, Advantage+ Shopping supera consistentemente a las campañas de conversión manuales en términos de ROAS cuando se combina con:
-    </p>
-    <div className="space-y-2 mb-5">
+    <div className="space-y-3 mb-8">
       {[
-        "Catálogo de productos completamente optimizado (imágenes de alta calidad, títulos descriptivos, precios actualizados)",
-        "Pixel de Meta correctamente configurado con eventos de compra verificados",
-        "Mínimo de 30-50 compras semanales para que el algoritmo tenga señal suficiente",
-        "Biblioteca de creatividades amplia (mínimo 20-30 activos: imágenes, vídeos, copy)",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-[#f0a500] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La principal desventaja de Advantage+ es la falta de control sobre la segmentación. El algoritmo decide a quién mostrar los anuncios, lo que puede llevar a capturar retargeting que ya habrías conseguido con campañas separadas, inflando el ROAS reportado. Recomendamos mantener campañas de retargeting separadas y usar Advantage+ exclusivamente para prospección fría.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">Performance Max: oportunidades y riesgos en 2026</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Performance Max (PMax) gestiona todos los canales de Google simultáneamente (Shopping, Search, Display, YouTube, Gmail, Discover). En España, PMax está ganando cuota de presupuesto rápidamente, pero con matices importantes:
-    </p>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-      <div className="bg-[#1a1616] border border-green-400/20 rounded-xl p-4">
-        <div className="text-green-400 text-xs font-bold mb-2 uppercase tracking-wider">Ventajas PMax</div>
-        <div className="space-y-1.5 text-xs text-white/60">
-          <div>→ Mayor alcance con un solo tipo de campaña</div>
-          <div>→ Optimización automática entre canales</div>
-          <div>→ Mejor rendimiento en Shopping que las campañas manuales</div>
-          <div>→ Idóneo para cuentas con catálogo grande</div>
-        </div>
-      </div>
-      <div className="bg-[#1a1616] border border-red-400/20 rounded-xl p-4">
-        <div className="text-red-400 text-xs font-bold mb-2 uppercase tracking-wider">Riesgos PMax</div>
-        <div className="space-y-1.5 text-xs text-white/60">
-          <div>→ Canibaliza tráfico de Brand Search (cuidado con exclusiones)</div>
-          <div>→ Poca visibilidad sobre dónde se gastan los clics</div>
-          <div>→ El ROAS reportado puede incluir conversiones que ya tenías</div>
-          <div>→ Requiere señales de conversión sólidas para funcionar bien</div>
-        </div>
-      </div>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">4. Atribución: el problema que nadie resuelve del todo</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      La atribución de ventas en un entorno multicanal es uno de los mayores retos del paid media moderno. En 2026, con las restricciones de cookies de terceros en Safari y Firefox (y Chrome en proceso), la atribución se ha vuelto todavía más complicada.
-    </p>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-5">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-3">El problema de la sobre-atribución</p>
-      <p className="text-white/70 text-sm leading-relaxed mb-3">
-        Si un usuario ve un anuncio de Instagram (Meta atribuye la venta), hace clic en un anuncio de Google Shopping 3 días después (Google atribuye la venta) y compra directamente el día 5 (Google Analytics registra la conversión como "directo"), tienes tres plataformas atribuyéndose la misma venta.
-      </p>
-      <p className="text-white/70 text-sm leading-relaxed">
-        El ROAS real de negocio es único: los ingresos que ves en Shopify divididos entre lo que gastaste en publicidad en total. Eso es lo que manda.
-      </p>
-    </div>
-
-    <p className="text-white/70 leading-relaxed mb-4">
-      La solución más pragmática que usamos en DayByDay es una mezcla de herramientas:
-    </p>
-    <div className="space-y-2 mb-6">
-      {[
-        "MER (Marketing Efficiency Ratio): ingresos totales ÷ inversión publicitaria total — la métrica de negocio más honesta",
-        "Triple Whale o Northbeam para atribución probabilística multicanal",
-        "Compara mensualmente los datos de Shopify con los reportados por Meta y Google — el delta te dice cuánto están sobreatribuyendo",
-        "Encuestas post-compra ('¿Cómo nos conociste?') para datos cualitativos de first-party",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-[#f0a500] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">5. Tendencias que definirán el paid media D2C en España en 2026</h2>
-
-    <div className="space-y-4 mb-8">
-      {[
-        {
-          num: "01",
-          titulo: "Creatividad como ventaja competitiva principal",
-          desc: "Con la IA optimizando automáticamente pujas y distribución de presupuesto, la creatividad del anuncio es la última variable de diferenciación real. Las marcas que producen más variantes creativas de mayor calidad tienen ROAS sistemáticamente superiores. No es talento — es proceso y velocidad de producción.",
-        },
-        {
-          num: "02",
-          titulo: "First-party data como activo estratégico",
-          desc: "Con la reducción progresiva de las cookies de terceros, los datos de primera parte (email, teléfono, comportamiento en web) son el activo más valioso para la segmentación. Las marcas que construyen su base de datos propia son las más resistentes a los cambios de plataformas.",
-        },
-        {
-          num: "03",
-          titulo: "TikTok como canal de crecimiento para marcas con producto visual",
-          desc: "TikTok Ads ofrece CPMs un 60-70% más bajos que Meta en nichos de moda, belleza y lifestyle. La conversión directa es más baja, pero el coste de construir audiencias y notoriedad de marca es significativamente inferior. Las marcas que lo están aprovechando usan TikTok para TOFU y Meta + Google para conversión.",
-        },
-        {
-          num: "04",
-          titulo: "Automatización del ciclo de vida del cliente",
-          desc: "El retorno sobre la inversión en paid media mejora drásticamente cuando el LTV (Lifetime Value) del cliente sube. La forma más efectiva de subir el LTV es automatizar la relación post-compra: email flows, WhatsApp para recompra, programas de fidelización automatizados. Reducir el CAC es importante, pero aumentar el LTV tiene un impacto aún mayor en la economía del negocio.",
-        },
-        {
-          num: "05",
-          titulo: "Consolidación de campañas y señales de conversión",
-          desc: "Menos campañas con más presupuesto por campaña funcionan mejor que muchas campañas fragmentadas en 2026. El algoritmo necesita volumen de señales para optimizar bien. Consolidar y simplificar la estructura de campañas es una de las intervenciones más impactantes que hacemos en las cuentas nuevas que auditamos.",
-        },
-      ].map(({ num, titulo, desc }) => (
-        <div key={num} className="flex gap-5 bg-[#1a1616] border border-white/8 rounded-xl p-5">
-          <div className="font-black text-3xl text-white/10 flex-shrink-0 leading-none">{num}</div>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
           <div>
-            <div className="font-bold text-white text-sm mb-2">{titulo}</div>
-            <div className="text-white/60 text-sm leading-relaxed">{desc}</div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
           </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Conclusiones y próximos pasos</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El paid media D2C en España en 2026 es más competitivo y más complejo que hace tres años. Los CPMs suben, la atribución es más difícil y las plataformas exigen más datos de calidad para que sus algoritmos funcionen bien. Pero las herramientas disponibles — IA, automatización, datos de primera parte — también son más potentes que nunca.
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
     <p className="text-white/70 leading-relaxed mb-5">
-      Las marcas que están ganando son las que han construido sistemas: sistemas de producción creativa, sistemas de datos de primera parte, sistemas de automatización del ciclo de vida del cliente. No dependen de un canal ni de un presupuesto concreto — tienen una máquina de adquisición que escala con ellos.
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
     </p>
     <p className="text-white/70 leading-relaxed">
-      Si quieres analizar cómo está funcionando tu paid media en relación con estos benchmarks, puedes consultar nuestra{" "}
-      <Link to="/como-trabajamos" className="text-white underline underline-offset-2 hover:text-white/80">metodología de trabajo</Link>{" "}
-      o explorar los{" "}
-      <Link to="/resultados" className="text-white underline underline-offset-2 hover:text-white/80">resultados reales que hemos conseguido</Link>{" "}
-      con empresas D2C españolas. También puedes leer nuestra guía sobre{" "}
-      <Link to="/blog/buen-roas-por-nicho-benchmarks-2026" className="text-white underline underline-offset-2 hover:text-white/80">benchmarks de ROAS por nicho</Link>{" "}
-      para comparar el rendimiento de tus campañas con la media del sector.
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default EstadoPaidMediaD2CEspana2026Page;
+export default BuenROASNichosPage;

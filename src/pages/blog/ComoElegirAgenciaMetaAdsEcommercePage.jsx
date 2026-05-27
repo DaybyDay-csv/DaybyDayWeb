@@ -3,275 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué hace que una agencia sea la mejor para Meta Ads en eCommerce en España?",
-    a: "Tres cosas: especialización exclusiva en D2C/eCommerce (no agencias full-service que tocan B2B, locales y D2C a la vez), capacidad técnica real (Conversions API server-side, atribución cruzada con Shopify/WooCommerce, motor de creatividades con tests semanales) y honestidad operativa (te enseñan la estructura de campañas, cruzan ROAS de plataforma con MER y ventas reales, te dan acceso al Business Manager bajo tu propiedad). Una agencia que en la primera reunión no habla de tracking, atribución y creatividad sino sólo de ROAS prometido es señal de que no domina la parte técnica que mueve la aguja en 2026.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cómo comparo dos agencias de Meta Ads que dicen tener resultados parecidos?",
-    a: "Pide tres cosas a cada una: 1) Caso de éxito en tu sector con métricas verificables — ingresos, MER blended, CAC y crecimiento mes a mes (no sólo capturas de ROAS de plataforma). 2) Acceso de lectura a un Business Manager activo con cuentas similares a la tuya en tamaño y categoría. 3) Una auditoría escrita de tu cuenta actual antes de firmar — no un PDF genérico sino observaciones concretas sobre tu píxel, estructura, creatividades y atribución. La que pueda hacer las tres es la que realmente sabe lo que está haciendo. La que se niega o se pone vaga es la que vende humo.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Las agencias grandes son mejores que las boutique para un eCommerce D2C?",
-    a: "Para un D2C que factura entre 30K€ y 1M€/mes, casi nunca. Las agencias grandes tienen procesos sólidos pero los D2C suelen acabar gestionados por juniors con plantillas, mientras los seniors se reservan para cuentas top. Las boutiques especializadas en D2C suelen dar acceso directo a un senior que ha gestionado decenas de cuentas similares. La excepción son D2C ya consolidados (\u003e2M€/mes) que necesitan integración multi-canal compleja, equipo creativo interno y operativa internacional. Por debajo de eso, una boutique D2C-pure suele rendir mejor porque entiende exactamente tu tipo de cuenta.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cuánto tiempo necesito para evaluar si una agencia de Meta Ads es realmente la mejor para mi eCommerce?",
-    a: "El primer mes es de diagnóstico, configuración y entrada en aprendizaje — no se evalúa por resultados, sino por calidad del setup (tracking server-side, estructura de campañas, primeras creatividades). El mes 2 ya empiezas a ver señales: estabilidad del CAC, cadencia de tests creativos, comunicación semanal. La evaluación real seria es a partir del mes 3 con MER blended sostenido y crecimiento de ingresos. Cualquier agencia que prometa resultados definitivos en 30 días está siendo deshonesta sobre cómo funciona el algoritmo de Meta y la fase de aprendizaje.",
-  },
-  {
-    q: "¿Cuál es el coste medio de una agencia de Meta Ads para eCommerce en España?",
-    a: "Los modelos típicos en 2026 para eCommerce son: fee fijo (1.000-2.500€/mes para cuentas hasta 20K€/mes de inversión), porcentaje sobre la inversión (10-15% en cuentas 20-100K€/mes) o híbrido fee + bonus por performance. Por debajo de 1.000€/mes es casi imposible que una agencia te dé senior dedicado y testing creativo serio — suelen ser plantillas y juniors. Por encima de 3.500€/mes en una cuenta pequeña es desproporcionado salvo que incluya producción creativa pesada. Lo importante no es el precio absoluto sino el coste relativo: el fee debería costar entre el 5% y el 12% del impacto incremental real generado.",
-  },
-  {
-    q: "¿Qué señales me dicen que una agencia de Meta Ads NO es buena opción para mi eCommerce?",
-    a: "Banderas rojas claras: (1) reportan sólo el ROAS de plataforma sin cruzarlo con ingresos reales de tu Shopify; (2) no tienen Conversions API configurada o no la mencionan en la auditoría inicial; (3) no muestran un calendario semanal de tests creativos; (4) gestionan tu cuenta desde su propio Business Manager en vez de desde el tuyo; (5) prometen ROAS específicos antes de auditar tu cuenta; (6) cobran fee bajo y subcontratan a freelancers sin trazabilidad; (7) no tienen casos de éxito en tu sector o se niegan a presentártelos. Cualquiera de estas señales por sí sola es motivo para descartar — combinadas, garantizan problemas en 90 días.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const ComoElegirAgenciaMetaAdsEcommercePage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Cómo elegir la mejor agencia de Meta Ads para tu eCommerce en España"
-    description="Guía operativa para identificar la mejor agencia de Meta Ads para un eCommerce D2C en España: criterios técnicos, scorecard comparativo, modelos de pricing, banderas rojas y cómo evaluar resultados reales en los primeros 90 días."
-    slug="como-elegir-agencia-meta-ads-ecommerce"
-    datePublished="2026-04-30"
-    dateModified="2026-04-30"
-    readingTime="9 min"
-    category="Agencias"
-    keywords={[
-      "mejor agencia meta ads ecommerce españa",
-      "mejor agencia meta ads",
-      "como elegir agencia meta ads ecommerce",
-      "agencia meta ads ecommerce españa",
-      "elegir agencia facebook ads ecommerce",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      Encontrar la <strong className="text-white">mejor agencia de Meta Ads para un eCommerce en España</strong> no es elegir la que más promete ni la que tiene la web más impactante. Es identificar a la que domina la parte técnica (tracking, atribución, estructura), tiene un motor real de creatividades y entiende cómo funciona un D2C — porque gestionar Meta Ads para una marca de moda con ticket medio de 80€ no se parece en nada a hacerlo para una clínica dental.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Este artículo es la metodología que usamos cuando un fundador nos pide ayuda para evaluar a otra agencia (o a nosotros mismos): qué criterios pesan de verdad, qué scorecard usar para comparar dos propuestas, qué modelo de pricing tiene sentido en cada fase y qué señales delatan a las agencias que viven de prometer ROAS y subcontratar a juniors.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
-            {link_para}
-            
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Los 6 criterios que definen a la mejor agencia para tu eCommerce</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      No todos los criterios pesan lo mismo. En 2026, con iOS limitando atribución y los costes de adquisición subiendo cada año, estos son los 6 criterios que de verdad mueven el rendimiento — ordenados por impacto real:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Criterio</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Por qué importa</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Peso</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c: "Especialización D2C exclusiva", p: "Una agencia que también gestiona B2B, locales y leadgen no domina los matices D2C: feeds, catálogos, full-funnel con retención", w: "Alto" },
-            { c: "Tracking server-side (CAPI) y atribución", p: "Sin Conversions API deduplicada, Meta optimiza a ciegas y reporta un ROAS 20-40% inflado vs ventas reales", w: "Alto" },
-            { c: "Motor de creatividades sistemático", p: "El creativo es el factor #1 de rendimiento en 2026 — más que audiencias o pujas. Sin testing semanal estructurado, no se escala", w: "Alto" },
-            { c: "Acceso directo a un senior", p: "Los D2C entre 30K€ y 1M€/mes necesitan decisiones rápidas — gestor que entiende el negocio, no juniors con plantillas", w: "Medio-Alto" },
-            { c: "Casos de éxito verificables en tu sector", p: "Capturas de ROAS no valen — ingresos, MER blended y crecimiento mes a mes en cuentas similares a la tuya", w: "Medio" },
-            { c: "Modelo de pricing alineado", p: "Fee fijo + bonus por performance suele ser más sano que % sobre inversión — incentiva eficiencia, no gasto", w: "Medio" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.p}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.w}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La <a href="https://www.facebook.com/business/help/2041148702652965" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">documentación oficial de Meta sobre la API de Conversiones</a> deja claro por qué el tracking server-side ya no es opcional: sin él, una parte significativa de los eventos de compra se pierde en navegadores con prevención de seguimiento.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Scorecard para comparar dos agencias en una hoja</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Cuando un fundador tiene dos propuestas encima de la mesa, este es el scorecard operativo que usamos para forzar una comparación honesta — no por marketing sino por capacidad real:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Pregunta</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Respuesta sana</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Bandera roja</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { q: "¿Qué % de tu cartera son eCommerce D2C?", s: "70% o exclusivo D2C", r: "Mezcla con leadgen, locales, B2B" },
-            { q: "¿Implementáis CAPI server-side desde el día 1?", s: "Sí, con auditoría previa de eventos", r: "‘Está incluida en el píxel’ o evasivas" },
-            { q: "¿Cuántos tests creativos lanzáis a la semana?", s: "5-15 con plan documentado", r: "‘Cuando hace falta’ / sin cadencia" },
-            { q: "¿Con qué herramienta cruzáis ROAS plataforma vs ventas reales?", s: "Shopify/Triple Whale/Northbeam o panel propio con post-purchase survey", r: "Sólo el ROAS de Ads Manager" },
-            { q: "¿Quién gestionará mi cuenta semana a semana?", s: "Senior con nombre y experiencia documentada", r: "‘El equipo’ sin nombrar persona" },
-            { q: "¿Sobre qué Business Manager se opera?", s: "Sobre el del cliente; agencia como socio", r: "Sobre el de la agencia" },
-            { q: "¿Cuál es vuestra cláusula de salida?", s: "30 días aviso, datos y assets se devuelven", r: "Permanencia 12 meses, IP creativa retenida" },
-            { q: "¿Podéis enseñarme un caso real de mi sector?", s: "Sí, con ingresos y MER blended", r: "Capturas sueltas de ROAS sin contexto" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.q}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.r}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Si la agencia que estás evaluando responde sana en 6 de 8 preguntas, está dentro del rango realmente competente. Por debajo de 5 es señal de que estás mirando una agencia generalista o un equipo sin la madurez técnica que requiere un D2C en 2026.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Modelos de pricing y cuándo tiene sentido cada uno</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      No hay un modelo universalmente mejor. Lo que importa es que esté alineado con la fase de tu eCommerce:
-    </p>
-    <div className="space-y-4 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          modelo: "Fee fijo mensual",
-          rango: "1.000-2.500€/mes para cuentas hasta 20K€/mes de inversión",
-          cuando: "Marcas en validación o crecimiento estable. Predecible para ambos lados, no penaliza meses de menor inversión.",
-        },
-        {
-          modelo: "Porcentaje sobre la inversión",
-          rango: "10-15% en cuentas 20-100K€/mes",
-          cuando: "Cuentas en escalado activo. Permite a la agencia dedicar más recursos cuando creces. Riesgo: incentiva subir presupuesto incluso cuando no es óptimo.",
-        },
-        {
-          modelo: "Fee fijo + bonus por performance",
-          rango: "Fee 1.500-3.000€ + bonus 5-15% sobre incremental",
-          cuando: "Marcas con datos sólidos y baseline claro. Modelo más sano: alinea incentivos a resultados reales (MER blended, ingresos incrementales) sin presionar a gastar más.",
-        },
-        {
-          modelo: "% sobre revenue (paga por ROAS)",
-          rango: "8-12% del revenue paid",
-          cuando: "Casi siempre mala señal. Suele venir con cláusulas de atribución infladas. Funciona en pocos casos muy específicos con tracking robusto y baseline pre-acordado.",
-        },
-      ].map(({ modelo, rango, cuando }) => (
-        <div key={modelo} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-white text-sm mb-1">{modelo} <span className="text-white/40 font-normal">— {rango}</span></p>
-          <p className="text-white/55 text-sm">{cuando}</p>
-        </div>
-      ))}
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La <a href="https://www.iabspain.es/estudio/estudio-de-inversion-publicitaria-en-espana-2024/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">IAB Spain</a> publica los estándares de inversión y modelos de fee que usa la industria publicitaria española — útil como referencia para no salirse de mercado en ninguna dirección.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Banderas rojas que descartan a una agencia automáticamente</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Promete un ROAS específico (‘te garantizamos 4x’) antes de auditar tu cuenta — imposible saberlo sin ver tracking, creatividades y producto.",
-        "Reporta sólo el ROAS de Ads Manager y no cruza con ingresos reales de Shopify/WooCommerce — significa que viven del ROAS inflado, no del impacto real.",
-        "Gestiona tu cuenta desde su propio Business Manager en vez del tuyo — pierdes el activo cuando cambies de agencia.",
-        "No tiene Conversions API server-side configurada o se niega a explicar su setup técnico — en 2026 es no-negociable.",
-        "No muestra un proceso documentado de testing creativo (calendario, hooks, variantes, resultados) — la creatividad es lo que mueve la aguja, sin proceso es ruido.",
-        "Permanencia de 12 meses con cláusulas duras de salida — las agencias buenas no necesitan retenerte legalmente, te retienen por resultados.",
-        "Casos de éxito en sectores muy distintos al tuyo (B2B, locales, leadgen) — eCommerce D2C tiene matices que no se aprenden gestionando otras categorías.",
-        "Equipo de cuenta cambia cada pocos meses o subcontrata sin transparencia — pierdes contexto y la curva de aprendizaje empieza de cero.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo evaluar resultados en los primeros 90 días</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Las agencias buenas no tienen miedo de un calendario claro de evaluación. Este es el ritmo que recomendamos firmar al inicio para no llegar al mes 6 sin saber si funciona:
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
-    <div className="space-y-4 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        {
-          fase: "Días 0-30 — Diagnóstico y setup",
-          que: "Auditoría completa: píxel, CAPI, estructura, audiencias, creatividades. Reseteo de campañas que no aportan, configuración de tracking server-side, primer batch de creatividades. KPI: calidad del setup, no resultados.",
-        },
-        {
-          fase: "Días 30-60 — Aprendizaje del algoritmo",
-          que: "Las campañas necesitan 50-100 conversiones semanales para salir de la fase de aprendizaje. KPI: estabilidad del CAC, frecuencia de tests creativos, comunicación semanal con datos.",
-        },
-        {
-          fase: "Días 60-90 — Resultados estables",
-          que: "Aquí ya se evalúa de verdad. KPI: MER blended, CAC vs baseline, crecimiento de ingresos paid mes a mes, % de creatividades nuevas que escalan vs total testeado.",
-        },
-      ].map(({ fase, que }) => (
-        <div key={fase} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-white text-sm mb-1">{fase}</p>
-          <p className="text-white/55 text-sm">{que}</p>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      Si al día 90 el MER blended no se ha estabilizado mejor que tu baseline pre-agencia, es momento de una conversación honesta: o el setup no es suficiente, o la cuenta tenía un techo más bajo del que se asumía. Las agencias buenas tienen esa conversación de forma proactiva — las malas la evitan hasta que las despides.
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay y por qué encajamos con D2C</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      No somos para todo el mundo. El perfil de cliente con el que damos los mejores resultados es muy concreto: eCommerce D2C españoles entre 30K€ y 500K€/mes de facturación, sin Amazon como canal principal, con producto físico y margen sano para invertir en paid. Si encajas con eso, así trabajamos:
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
     </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Onboarding de 2 semanas con auditoría escrita: tracking, atribución, estructura, creatividades. Te quedas con el documento aunque no firmemos.",
-        "CAPI server-side y deduplicación obligatorias antes de tocar campañas — si no podemos implementarla, no aceptamos la cuenta.",
-        "Acceso directo a Pablo (founder) en cada llamada estratégica + gestor senior dedicado a tu cuenta semana a semana.",
-        "Motor de creatividades con cadencia documentada: 8-15 variantes a la semana, post-mortem semanal de qué funciona y por qué.",
-        "Reporte semanal cruzando ROAS de Meta con ingresos reales de Shopify/WooCommerce y MER blended — nunca vendemos el ROAS de plataforma como verdad.",
-        "Sin permanencia. Mes a mes desde el día 1. Si no aportamos en 90 días, te ayudamos a moverte sin fricción.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Quieres comparar tu agencia actual con este scorecard?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita en 30 minutos: revisamos tracking, estructura, creatividades y atribución de tu cuenta — y te decimos honestamente si tu agencia está rindiendo o regalando dinero.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/elegir-agencia-anuncios-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
-          Cómo elegir una agencia de anuncios en Meta Ads para tu marca D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Habilidades técnicas que debe tener una agencia de Meta Ads y cómo validar su nivel real</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/senales-agencia-publicidad-no-rinde" className="text-white font-semibold hover:text-white/80">
-          Señales de que tu agencia de publicidad no está rindiendo →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Las banderas rojas que delatan a una agencia que no está aportando — antes del mes 6</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/checklist-auditoria-campanas-paid-media" className="text-white font-semibold hover:text-white/80">
-          Checklist de auditoría de campañas paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Auditoría operativa para revisar el trabajo de cualquier agencia con datos en mano</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cuanto-cuesta-agencia-paid-media-espana-precios-2026" className="text-white font-semibold hover:text-white/80">
-          Cuánto cuesta una agencia de paid media en España (precios 2026) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Modelos de pricing detallados y cuándo cada uno tiene sentido para un D2C</p>
-      </div>
-    </div>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default ComoElegirAgenciaMetaAdsEcommercePage;
+export default BuenROASNichosPage;

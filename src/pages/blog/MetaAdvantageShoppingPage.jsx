@@ -1,366 +1,180 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
 
-const MetaAdvantageShoppingPage = () => {
-  return (
-    <BlogPostLayout
-      title="Meta Advantage+ Shopping: Guía Completa para Maximizar ROAS en 2024"
-      description="Framework ARCO: cómo estructurar campañas Advantage+ Shopping que generan más ventas con menos presupuesto. 50 marcas D2C testadas."
-      path="/blog/meta-advantage-shopping-guia-completa"
-      datePublished="2024-03-15"
-      readingTime="18 min"
-      category="Paid Media"
-      faqs={[
-        {
-          question: "¿Cuánto tiempo tardo en ver resultados con Advantage+ Shopping?",
-          answer: "Las primeras 72 horas son de aprendizaje. A partir del día 4 ves datos estables. Nosotros vemos ROAS consistente desde la segunda semana."
-        },
-        {
-          question: "¿Advantage+ Shopping sirve para todos los productos?",
-          answer: "No. Catalogo con menos de 20 productos activos tiene problemas de aprendizaje. Mínimo 50 productos para que el algoritmo trabaje bien."
-        },
-        {
-          question: "¿Puedo usar Advantage+ Shopping con pixel solo sin catálogo?",
-          answer: "Meta está forzando el uso de catálogo. Pixel only funciona en campañas old school, pero Advantage+ requiere catalogo obligatorio."
-        }
-      ]}
-    >
-      {/* EPÍGRAFE */}
-      <section className="epigraph">
-        <blockquote className="border-l-4 border-red-600 pl-6 italic text-gray-600 mb-8">
-          "El algoritmo de Meta no es tu enemigo. Es tu mayor vendedor si le das las armas correctas."
-          <footer className="not-italic mt-2 text-sm text-gray-500">— Pablo Santirsó, tras perder 14.000€ en 2019 por no entender Advantage+</footer>
-        </blockquote>
-      </section>
+const faqs = [
+  {
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
+  },
+  {
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
+  },
+  {
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
+  },
+];
 
-      {/* ESCENA */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">El día que perdí 14.000€ por no entender el algoritmo</h2>
-        
-        <div className="bg-gray-50 p-8 rounded-lg mb-6">
-          <p className="text-lg leading-relaxed mb-4">
-            Era marzo de 2019. Tenía una cuenta de supplements D2C con 180.000€ gastados en Meta. 
-            El cliente me dice: <em>"Pablo, estamos igual que hace 6 meses. No crece el ROAS."</em>
-          </p>
-          <p className="text-lg leading-relaxed mb-4">
-            Yo seguía gestionando campañas manuales. Pujas manual, audiencias manual, creatives manual.
-            Todo el day myself haciendo lo que un algoritmo hacía mejor gratis.
-          </p>
-          <p className="text-lg leading-relaxed mb-4">
-            ESA NOCHE me senté con Jorge (nuestro CTO) y nos pusimos a analizar qué estaba pasando.
-            Abrimos el Ads Manager y vimos algo que llevaba meses ignorando: <strong>"Optimización" = Advantage+ Shopping"</strong>.
-          </p>
-          <p className="text-lg leading-relaxed">
-            <strong>Jorge me dijo:</strong> "Para esto necesitas configurar bien el catálogo. ¿Lo has hecho?"<br/>
-            <strong>Mi respuesta:</strong> *silencio*...
-          </p>
-          <p className="text-xl font-bold text-red-600 mt-6">
-            No había configurado NADA. Tenía el producto en el pixel, pero no tenía catálogo oficial.
-          </p>
-        </div>
-      </section>
+const BuenROASNichosPage = ({ openCalendly }) => (
+  <BlogPostLayout
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
+    faqs={faqs}
+    openCalendly={openCalendly}
+  >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
 
-      {/* PROMESA */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Lo que vas a aprender hoy:</h2>
-        
-        <ol className="list-decimal list-inside space-y-4 text-lg">
-          <li className="pl-2">
-            <strong>El método ARCO completo</strong>: 4 pasos para configurar Advantage+ Shopping desde cero en menos de 2 horas
-          </li>
-          <li className="pl-2">
-            <strong>Cuándo Advantage+ te va a funcionar</strong> y cuándo vas a tirar dinero (spoiler: no funciona con catálogos pequeños)
-          </li>
-          <li className="pl-2">
-            <strong>Cómo aplicarlo esta semana</strong>: ejecutable real con checklist de 17 puntos
-          </li>
-        </ol>
-      </section>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-      {/* DROP AUTORIDAD */}
-      <section className="mb-12 bg-red-50 p-8 rounded-lg">
-        <h2 className="text-3xl font-bold mb-6">Las cifras que nadie te cuenta</h2>
-        
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="text-center">
-            <p className="text-5xl font-bold text-red-600">47%</p>
-            <p className="text-gray-600 mt-2">de mejora media en ROAS cuando migramos campañas manuales a Advantage+ Shopping</p>
-          </div>
-          <div className="text-center">
-            <p className="text-5xl font-bold text-red-600">23</p>
-            <p className="text-gray-600 mt-2">díasde aprendizaje necesarios antes de optimizar nada en Advantage+</p>
-          </div>
-          <div className="text-center">
-            <p className="text-5xl font-bold text-red-600">14.000€</p>
-            <p className="text-gray-600 mt-2">fue lo que perdí ese año por no configurar bien el catálogo - error que ves 8 de cada 10 cuentas</p>
-          </div>
-        </div>
-        
-        <p className="text-center text-lg mt-8 italic text-gray-500">
-          Datos de 53 cuentas D2C gestionadas entre 2020-2024. Muestra real, no caso cherry-picked.
-        </p>
-      </section>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
 
-      {/* FRAMEWORK ARCO */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Framework ARCO: Advantage+ Shopping en 4 pasos</h2>
-        
-        <div className="space-y-8">
-          {/* A - Arma el Catálogo */}
-          <div className="border-l-4 border-blue-600 pl-6 py-2">
-            <h3 className="text-2xl font-bold mb-4">A - Arma el Catálogo (这一步错了，后面全废)</h3>
-            
-            <p className="text-lg mb-4">
-              Advantage+ Shopping SIN catálogo bien configurado es como conducir sin ruedas.
-              Meta necesita tus productos organizados para mostrar los anuncios correctos a las personas correctas.
-            </p>
-            
-            <div className="bg-yellow-50 p-6 rounded-lg mb-4">
-              <p className="font-bold mb-2">⚠️ Error típico #1:</p>
-              <p className="text-gray-700">
-                Subir catálogo con feeds desactualizados. Si tienes 50 productos peroonly 30 tienen stock,
-                Meta sigue subastando productos sin inventario. TuROAS baja porque el usuario no puede comprar.
-              </p>
-            </div>
-            
-            <p className="text-lg mb-4"><strong>Cómo se hace:</strong></p>
-            <ol className="list-decimal list-inside space-y-2 text-gray-700">
-              <li>Ve a Meta Business Manager → Catálogos → Crear catálogo</li>
-              <li>Conecta tu pixel o integra con Shopify/WooCommerce/PrestaShop</li>
-              <li>Sube el product feed (CSV o integración API)</li>
-              <li>Configura atributos obligatorios: id, title, price, availability, image_url</li>
-              <li>Automatiza actualización cada 6 horas máximo (stock cambia rápido en D2C)</li>
-            </ol>
-            
-            <p className="text-lg font-bold text-red-600 mt-4">
-              Cifra clave: Catálogo con menos de 50 productos activos = Advantage+ no tiene suficiente señal para aprender.
-            </p>
-          </div>
-          
-          {/* R - Configura la Audiencia */}
-          <div className="border-l-4 border-blue-600 pl-6 py-2">
-            <h3 className="text-2xl font-bold mb-4">R - Reconfigura la Audiencia (énfasis en broad targeting)</h3>
-            
-            <p className="text-lg mb-4">
-              Advantage+ funciona MEJOR con audiencias amplias. No le digas a Meta a quién vender.
-              Déjale que el algoritmo lo averigüe basándose en quienes convierten.
-            </p>
-            
-            <div className="bg-yellow-50 p-6 rounded-lg mb-4">
-              <p className="font-bold mb-2">⚠️ Error típico #2:</p>
-              <p className="text-gray-700">
-                Usar audiencias muy específicas (interests + comportamientos). Esto limita la capacidad
-                de aprendizaje del algoritmo. Advantage+ está diseñado para encontrar sus propios clientes.
-              </p>
-            </div>
-            
-            <p className="text-lg mb-4"><strong>Cómo se hace:</strong></p>
-            <ol className="list-decimal list-inside space-y-2 text-gray-700">
-              <li>En conjunto de anuncios: NO uses interests custom audience en Advantage+ Shopping</li>
-              <li>Usa "Audience network expansion" ACTIVADO</li>
-              <li>Solo usa exclusión deaudiences (ej: ya compraron) o custom audiences warm</li>
-              <li>Duración del remarketing: 28 días para audiencias basadas en pixel</li>
-            </ol>
-            
-            <p className="text-lg font-bold text-red-600 mt-4">
-              Cifra clave: Campañas Advantage+ con audiencias >1M de personas rinden 34% mejor que audiencias segmentadas.
-            </p>
-          </div>
-          
-          {/* C - Crea los Creatives */}
-          <div className="border-l-4 border-blue-600 pl-6 py-2">
-            <h3 className="text-2xl font-bold mb-4">C - Crea los Creatives (no uses las fotos de la web)</h3>
-            
-            <p className="text-lg mb-4">
-              Los creative determinansi Meta puede ofrecer o no tu producto. 
-              Advantage+ toma imágenes de tu catálogo, así que SI son importantes.
-            </p>
-            
-            <div className="bg-yellow-50 p-6 rounded-lg mb-4">
-              <p className="font-bold mb-2">⚠️ Error típico #3:</p>
-              <p className="text-gray-700">
-                Usar fotos de producto tipo catálogo (fondo blanco, producto solo).
-                Eso funcionaba en 2017. Ahora Meta prefierelife-style, uso del producto, emociones.
-              </p>
-            </div>
-            
-            <p className="text-lg mb-4"><strong>Cómo se hace:</strong></p>
-            <ol className="list-decimal list-inside space-y-2 text-gray-700">
-              <li>Sube mínimo 5 imágenes por producto: 3 lifestyle + 2 producto puro</li>
-              <li>Las imágenes deben tener formato 1:1 (1080x1080) Y formato 9:16 (1080x1920) para Reels</li>
-              <li>Añade texto superpuesto en creativo: precio destacado, descuento, prueba gratuita</li>
-              <li>Crea minimum 15 headlines variations por producto</li>
-            </ol>
-            
-            <p className="text-lg font-bold text-red-600 mt-4">
-              Cifra clave: Productos con 20+ images en catalogue tienen 2.3x más impressions que productos con 3-5 images.
-            </p>
-          </div>
-          
-          {/* O - Optimiza la Puja */}
-          <div className="border-l-4 border-blue-600 pl-6 py-2">
-            <h3 className="text-2xl font-bold mb-4">O - Optimiza laPuja (déjale tiempo al algoritmo)</h3>
-            
-            <p className="text-lg mb-4">
-              Advantage+ usa "puja automática" con objetivo de costo. Esto significa que Meta ajusta la puja
-              automáticamente para obtener la mayor cantidad de conversions al menor costo posible.
-            </p>
-            
-            <div className="bg-yellow-50 p-6 rounded-lg mb-4">
-              <p className="font-bold mb-2">⚠️ Error típico #4:</p>
-              <p className="text-gray-700">
-                Bajar el cost target demasiado pronto. Si pones "costo por resultado = 10€" pero tu media real es 25€,
-                Meta no puede subastar y tu campaña no aprende nada.
-              </p>
-            </div>
-            
-            <p className="text-lg mb-4"><strong>Cómo se hace:</strong></p>
-            <ol className="list-decimal list-inside space-y-2 text-gray-700">
-              <li>Semana 1-2: Usa " lowest cost" dejar que aprenda sin restricciones</li>
-              <li>Semana 3-4: Cambia a "cost cap" con valor 30% mayor a tu CPC medio histórico</li>
-              <li>Semana 5+: Ajusta gradualmente hacia tu objetivo real</li>
-              <li>NUNCA modifiques puja durante período de aprendizaje (primeros 7 días)</li>
-            </ol>
-            
-            <p className="text-lg font-bold text-red-600 mt-4">
-              Cifra clave: Campañas tocadas durante learning phase tienen 67% peor rendimiento que las dejadas静的.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* EJEMPLO REAL */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Caso real: Supplement brand con 340% improvement en ROAS</h2>
-        
-        <div className="bg-gray-900 text-white p-8 rounded-lg">
-          <h3 className="text-2xl font-bold mb-4 text-red-400">Caso: NutricionSports.es (marca de suplementación deportiva)</h3>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-6">
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
-              <p className="font-bold text-gray-400 mb-2">ANTES (campaña manual):</p>
-              <ul className="space-y-2">
-                <li><strong>Gasto mensual:</strong> 12.000€</li>
-                <li><strong>Revenue:</strong> 31.200€</li>
-                <li><strong>ROAS:</strong> 2.6</li>
-                <li><strong>CPC medio:</strong> 1.84€</li>
-                <li><strong>Conversiones:</strong> 890/mes</li>
-              </ul>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
             </div>
-            <div>
-              <p className="font-bold text-green-400 mb-2">DESPUÉS ( Advantage+shopping):</p>
-              <ul className="space-y-2">
-                <li><strong>Gasto mensual:</strong> 12.000€ (mismo)</li>
-                <li><strong>Revenue:</strong> 107.880€</li>
-                <li><strong>ROAS:</strong> 8.99</li>
-                <li><strong>CPC medio:</strong> 0.62€</li>
-                <li><strong>Conversiones:</strong> 2.340/mes</li>
-              </ul>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
             </div>
           </div>
-          
-          <div className="border-t border-gray-700 pt-6">
-            <p className="font-bold mb-2">⏱️ Timeline:</p>
-            <ul className="space-y-2 text-gray-300">
-              <li><strong>Día 1-7:</strong> Configuramos catálogo con 78 productos, subimos 400+ imágenes tot</li>
-              <li><strong>Día 8-14:</strong> Learning phase. ROAS 2.1 (Meta aprendía)</li>
-              <li><strong>Día 15-21:</strong> Primer ROAS estable: 5.4</li>
-              <li><strong>Día 22-30:</strong> Escalamos budget +50%. ROAS se mantuvo en 8.99</li>
-            </ul>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
           </div>
-          
-          <p className="text-xl font-bold text-red-400 mt-6">
-            Nota: Tardamos 14 días en VER resultados. En el camino, el cliente estuvo a punto de matar la campaña.
-            14 días sin ver métricas boas. Esa paciencia salvó 77.000€ anuales.
-          </p>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
-      </section>
+      ))}
+    </div>
 
-      {/* PRO TIP */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Pro Tip: Lo que solo descubres después de 10 cuentas</h2>
-        
-        <div className="bg-purple-50 p-8 rounded-lg border-l-4 border-purple-600">
-          <p className="text-xl mb-4">
-            <strong>Ventana de atribución: cámbiala a 7 días en lugar de 28 días.</strong>
-          </p>
-          <p className="text-lg mb-4">
-            Por defecto, Meta attribuye conversiones en 28 días post-click.
-            Esto inflates fake numbers. Advantage+ se ve Worse de lo que es.
-          </p>
-          <p className="text-lg">
-            Quando cambias a 7 días, ves numbers reales Immediate y puedes Optimizar MAÁS rápido.
-            Nuestra cuenta con ventana 7 días tuvo un 23% de mejora en ROAS reported porque 
-            optimizamos basándonos en datos sooner.
-          </p>
-        </div>
-      </section>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
 
-      {/* ACTION STEP */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Tu primer paso Executable Hoy (&lt;30min)</h2>
-        
-        <div className="bg-green-50 p-8 rounded-lg">
-          <p className="text-xl font-bold mb-4">Checklist ARCO - paso 0: Audita tu catalogo existente</p>
-          
-          <ol className="list-decimal list-inside space-y-3 text-lg">
-            <li>Ve a <a href="https://business.facebook.com/" target="_blank" rel="noopener" className="text-blue-600 underline">Meta Business Manager</a> → Catálogos</li>
-            <li>Cuenta cuántos productos tienesDados: <input type="number" placeholder="número" className="border p-2 ml-2 w-24 inline" /></li>
-            <li>Revisa si tienes +50 productos con stock disponibleActual</li>
-            <li>Verifica que cada producto tenga mínimo 3 imgs cargadas</li>
-            <li>Si tienes menos de 50 productos O menos de 3 imgs por producto → <strong>tu Advantage+ no funcionará bien</strong></li>
-          </ol>
-          
-          <p className="text-lg font-bold mt-6 text-red-600">
-            ⚠️ Si no pasas este test, NO montes Advantage+ Shopping todavía. Arregla el catálogo primero.
-          </p>
-        </div>
-      </section>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
 
-      {/* RECAP Y CLIFFHANGER */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Recap + siguiente nivel</h2>
-        
-        <div className="bg-gray-100 p-8 rounded-lg">
-          <h3 className="text-xl font-bold mb-4">Lo que te llevas:</h3>
-          <ul className="list-disc list-inside space-y-2 text-lg mb-6">
-            <li>Advantage+ no magia: necesita catálogo correcto para funcionar</li>
-            <li>Framework ARCO: Armas → audiencias → creativa → puja</li>
-            <li>Mínmo 50 productos y 3 imágenes por producto requisito mandatory</li>
-            <li>Tiempo de aprendizaje: 14 días mínimo before optimizar anything</li>
-            <li>Pro tip: usa ventana de atribución de 7 días para datos reais</li>
-          </ul>
-          
-          <h3 className="text-xl font-bold mb-4 text-red-600">Próximo nivel:</h3>
-          <p className="text-lg">
-            La próxima semana te enseño cómo escalar Advantage+ Shopping sin que el ROAS brome.
-            Multiplicador de budget sin matar el rendimientoclinical tricks que funcionan con catálogo +100 SKUs.
-          </p>
-          
-          <div className="mt-8">
-            <Link to="/blog/escalar-advantage-shopping-budget-roas" className="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-red-700 transition">
-              Ver artigo completo →
-            </Link>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
 
-      {/* CTAs NATURALES */}
-      <section className="mb-12 border-t pt-8">
-        <div className="bg-blue-900 text-white p-8 rounded-lg text-center">
-          <h3 className="text-2xl font-bold mb-4">¿Tu cuenta no pasa el test ARCO?</h3>
-          <p className="text-lg mb-6">
-            Hacemos audit gratuito de tu configuração Advantage+ Shopping. Te dijmos exactamente qué falla y cómo arreglarlo.
-          </p>
-          <Link to="/contacto" className="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-red-700 transition">
-            Solicitar audit gratuito
-          </Link>
-        </div>
-      </section>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
+  </BlogPostLayout>
+);
 
-    </BlogPostLayout>
-  );
-};
-
-export default MetaAdvantageShoppingPage;
+export default BuenROASNichosPage;

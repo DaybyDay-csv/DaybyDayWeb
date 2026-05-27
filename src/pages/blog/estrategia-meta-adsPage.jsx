@@ -2,83 +2,179 @@ import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
-  { q: "¿Cuál es el presupuesto mínimo recomendado para comenzar con Meta Ads?", a: "El presupuesto mínimo recomendado depende de tus objetivos y del país donde estés anunciando. Para campañas de conversión en mercados LATAM, se recomienda iniciar con al menos $5-10 USD diarios por conjunto de anuncios. Lo importante es que tengas suficiente presupuesto para que el algoritmo aprenda y alcance resultados statisticos significativos en unos 7-14 días." },
-  { q: "¿Cuánto tiempo debo esperar para optimizar mis campañas de Meta Ads?", a: "Debes esperar entre 7 y 14 días antes de tomar decisiones de optimización significativas. El algoritmo de Meta necesita tiempo para aprender y encontrar a tu audiencia objetivo. Durante este período, evita realizar cambios drásticos que puedan perjudicar el aprendizaje del sistema. Después de las primeras dos semanas, podrás identificar patrones claros y empezar a optimizar basándote en datos reales." },
-  { q: "¿Es mejor crear una sola campaña con múltiples conjuntos de anuncios o varias campañas separadas?", a: "Depende de tu estructura de objetivos y segmentación. Si todos tus conjuntos de anuncios tienen el mismo objetivo (por ejemplo, conversiones) y puedes mantener un presupuesto consolidado, una sola campaña con múltiples conjuntos te permitirá gestionar el gasto más eficientemente. Sin embargo, si tus objetivos son diferentes (awareness vs conversión) o necesitas presupuestos independientes por segmento, es mejor usar campañas separadas. Lo ideal es testar ambas aproximaciones para ver cuál funciona mejor para tu negocio." }
+  {
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
+  },
+  {
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
+  },
+  {
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
+  },
 ];
 
-const EstrategiaMetaAdsPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Estrategia Meta Ads: Guía Completa para Potenciar tus Campañas en Facebook e Instagram"
-    description="Aprende a crear una estrategiaMeta Ads efectiva para tu negocio D2C. Descubre cómo estructurar campañas, segmen tar audiencias, optimizar presupuestos y maximizar tu ROAS."
-    path="/blog/estrategia-meta-ads"
-    publishDate="2025-01-15"
-    author="Pablo Santirsó"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
+    openCalendly={openCalendly}
   >
-    <section>
-      <h2>Introducción</h2>
-      <p>En el competitivo mundo del marketing digital actual, dominar la estrategia Meta Ads se ha convertido en una habilidad fundamental para cualquier negocio D2C que busque escalar sus ventas online. Facebook e Instagram juntos representan más de 3 mil millones de usuarios activos mensuales, lo que convierte a estas plataformas en un escaparate irresistible para marcas que quieren conectar con su audiencia ideal.</p>
-      <p>Sin embargo, lanzar anuncios sin una estrategia clara es como navegar sin mapa: puedes gastar recursos valiosos sin obtener resultados significativos. En esta guía completa, te mostraremos paso a paso cómo estructurar, ejecutar y optimizar tus campañas de Meta Ads para maximizar tu retorno sobre la inversión publicitaria y escalar tu negocio de manera sostenible.</p>
-    </section>
-    
-    <section>
-      <h2>Fundamentos de una Estrategia Meta Ads Exitosa</h2>
-      <p>Antes de sumergirte en la creación de campañas, es crucial entender los pilares fundamentales que sostienen toda estrategia Meta Ads rentable. El primer pilar es la claridad en el objetivo: debes definir exactamente qué quieres lograr (ventas, leads, tráfico, engagement) antes de configurar cualquier anuncio.</p>
-      <p>El segundo pilar es conocer profundamente a tu audiencia objetivo. Meta ofrece herramientas sofisticadas de segmentación que van desde audiencias lookalike basadas en tus clientes existentes, hasta audiencias personalizadas que han interactuado previamente con tu marca. Entender cómo funcionan estas segmentaciones te permettra optimizar tu gasto publicitario significativamente.</p>
-      <p>El tercer pilar es la creatividad. En un entorno donde los usuarios son bombardeados con miles de mensajes diarios,tus creatividades necesitan destacar y captar la atención en cuestión de segundos. Esto significa que debes invertir tiempo y recursos en criar contenido visual y copy que resuene con tu audiencia.</p>
-      <p>Un cuarto elemento crítico es la estructura de seguimiento adecuada. Sin un pixel de Meta correctamente implementado y eventos bien configurados,no podrás medir el verdadero rendimiento de tus campañas ni optimizar basado en datos reales. Asegúrate de que tu <Link to="/blog/ TrackingPixelMetaAds">tracking pixel</Link> esté capturing todos los eventos relevantes para tu negocio.</p>
-    </section>
-    
-    <section>
-      <h2>Estructura de Campañas: Cómo Organizar tus Meta Ads</h2>
-      <p>La estructura de tus campañas en Meta Ads sigue una jerarquía clara: campaña, conjunto de anuncios y anuncios individuales. Dominar esta jerarquía es esencial para tener control granular sobre tu gasto y rendimiento.</p>
-      <p>A nivel de campaña, defines tu objetivo de negocio (conversiones,トラfico, reconocimiento de marca, etc.) y estableces el tipo de facturación y presupuesto global. A nivel de conjunto de anuncios, determinas quién verá tus anuncios mediante segmentación geográfica, demográfica y por intereses. Finalmente, a nivel de anuncio individual, creas las creatividades específicas que visualizarán los usuarios.</p>
-      <p>Una práctica recomendada es separar tus audiencias por etapas del embudo de conversión. Por ejemplo,puedes crea runa campaña de generación de demanda enfocada en audiencias frías (nuevas personas que aún no conocen tu marca), otra campaña de consideración para audiencias tibias (que ya han mostrado interés pero no han convertido), y finalmente una campaña de retargeting para audiencias cálidas que han interacted directamente con tu sitio web o app.</p>
-      <p>Para optimizar esta estructura, es fundamental experimentar con diferentes segmentaciones y creatives. Te invito a leer nuestra guía sobre <Link to="/blog/ABTestingMetaAdsQueTestarPrimero">A/B testing en Meta Ads</Link> para aprender qué elementos testear primero y cómo interpretar los resultados de tus experimentos.</p>
-    </section>
-    
-    <section>
-      <h2>Gestión del Presupuesto y Pujas en Meta Ads</h2>
-      <p>La gestión eficiente del presupuesto es uno de los aspectos más críticos para la rentabilidad de tus campañas Meta Ads. Meta ofrece verschiedene opciones de presupuesto y estrategias de puja que pueden impactar significativamente tu costo por adquisición.</p>
-      <p>Puedes optar por presupuestos diarios (que gastan una cantidad específica cada día) o presupuestos vitalicios (que distribuyen un monto total a lo largo de la duración de la campaña). Para la mayoría de negocios D2C, especialmente aquellos que buscan generar ventas consistencyes,los presupuestos diarios con puja automática suelen ser la mejor opción inicial.</p>
-      <p>Respecto a las estrategias de puja, Meta ofrece opciones que van desde pagos más bajos posibles (para maximizar el volumen) hasta Objetivos de costo (para mantener un CPA específico). La recomendación es comenzar con puja automática para dejar que el algoritmo optimise,y una vez que tienes datos suficientes,transicionar a estrategias más avanzadas basadas en tu objetivo de rentabilidad.</p>
-      <p>Un error común es no asignar suficiente presupuesto para que las campañas puedan aprender. Cuando el presupuesto es demasiado bajo,el algoritmo no tiene suficientes datos para optimizar efectivamente,lo que resulta en costos más altos y peor rendimiento. como regla general,asegúrate de que cada conjunto de anuncios reciba al menos 50 conversiones al mes para que el algoritmo pueda aprender efectivamente.</p>
-    </section>
-    
-    <section>
-      <h2>Combatiendo la Fatiga de Anuncios y Manteniendo la Frescura Creativa</h2>
-      <p>Uno de los mayores desafíos en Meta Ads es la fatiga de anuncios: cuando tu audiencia ve las mismas creatividades repetidamente,el rendimiento disminuye drásticamente. Esto ocurre porque los usuarios desarrollan "ceguera publicitaria"y dejan de prestar atención a anuncios que ya han visto多次 veces.</p>
-      <p>Para combatir este problema, necesitas implementar una estrategia de rotación creativa activa. Esto significa crear múltiples variaciones de anuncios (diferentes imágenes,videos,y copy) y establecer un sistema de renovación regular. Se recomienda introducir nuevas creatividades cada 2-4 semanas,o antes si notas una caída significativa en el rendimiento.</p>
-      <p>Además de la rotación,es importante diversificar tus formatos creativa. Meta ofrece múltiples formatos como carruseles,colecciones,videos cortos,y stories. Cada formato tiene diferentes comportamientos de compromiso y puede resonar de manera distinta con diferentes segmentos de tu audiencia.</p>
-      <p>Para profundizar en técnicas avanzadas de rotación creativa,te recomiendo leer nuestro artículo especializado sobre <Link to="/blog/AdFatigueMetaAdsRotacionCreativa">cómo combater la fatiga de anuncios en Meta Ads</Link>. Esta guía incluye estrategias específicas y calendarios recomendados para la actualización de tus creatividades.</p>
-    </section>
-    
-    <section>
-      <h2>Adquisición vs Retención: Equilibrando tu Inversión en Paid Media</h2>
-      <p>Una decisión estratégica crítica que muchos negocios D2C enfrentan es cómo distribuir su presupuesto entre adquisición de nuevos clientes y retención de clientes existentes. Ambas partes del embudo son fundamentales para el crecimiento sostenible de tu negocio.</p>
-      <p>La adquisición de nuevos clientes típicamente tiene costos más altos (CAC) pero es esencial para la escala y el crecimiento del negocio. El retargeting y las campañas de retención指向 a usuarios que ya han comprado o interactuado con tu marca,y generalmente tienen costos más bajos y tasas de conversión más altas.</p>
-      <p>La proporción ideal entre adquisición y retención varía según la madurez de tu negocio y tu sector específico. Los negocios en crecimiento rápido pueden beneficiarse de pérdurar más presupuesto en adquisición (60-70%), mientras que negocios más establecidos pueden equilibrar mejor (50-50%) o incluso inclinar hacia retención si tienen altos costos de adquisición.</p>
-      <p>Para negocios D2C en etapas tempranas,el enfoque debe estar principalmente en adquisición hasta alcanzar una base de clientes suficiente. Una vez que tienes un base de clientes recurrente,puedes implementar estrategias de Lifetime Value maximization mediante email marketing,programas de fidelización,y remarketing personalizado.</p>
-      <p>Te recomiendo explorar nuestra guía sobre <Link to="/blog/AdquisicionVsRetencionPaidMediaD2c">adquisición vs retención enPaid Media para negocios D2C</Link> para obtener una perspectiva más detallada sobre cómo equilibrar tu inversión según tu etapa de crecimiento.</p>
-    </section>
-    
-    <section>
-      <h2>Métricas Clave y Optimización Basada en Datos</h2>
-      <p>Para tener éxito con Meta Ads,necesitas monitoreo constante de métricas relevantes y la disposición de optimizaciones basadas en datos. Las métricas principales que debes seguimiento incluyen:Costo por Resultado (CPA),Retorno sobre Gasto Publicitario (ROAS),Frecuencia,Tasa de Clics (CTR),y Costo por Mil Impresiones (CPM).</p>
-      <p>El ROAS es quizás la métrica más importante para negocios D2C,ya que te indica directamente cuánto ganas por cada dólar invertido en publicidad. Un ROAS saludable depende de tu margen de beneficio,pero como regla general,busca un ROAS de al menos 2:1 para que tu negocio sea sostenible considerando todos los demás costos operativos.</p>
-      <p>La optimización debe basarse siempre en datos estadísticamente significativos. Un error común es toma rdecisiones precipitadas después de ver resultados iniciales que pueden ser simplemente ruido estadístico. Siempre espera a tener al menos 50-100 eventos de conversión por segmento antes de hacer juicios definitivos sobre el rendimiento.</p>
-      <p>Finalmente,implementa una rutina de optimización semanal o quincenal donde revises el rendimiento de tus campañashaces ajustes basados en tendencias de datos. Esto puede incluir pausar creativos de bajo rendimiento,aumentar presupuesto para los de mejor rendimiento,o ajustar segmentaciones que no están convirtiendo efectivamente.</p>
-    </section>
-    
-    <section>
-      <h2>Conclusión</h2>
-      <p>Dominar la estrategia Meta Ads requiere comprensión profunda de la plataforma,experimentación constante,y un compromiso con la optimización basada en datos. Los fundamentos que hemos cubierto en esta guía (estructura de campañas,gestión de presupuesto,rotación creativa,y métricas clave) te proporcionarán una base sólida para construir campañas rentables.</p>
-      <p>Recuerda que el éxito en Meta Ads no viene de la noche a la mañana. Se requiere paciencia,prueba y error,y aprendizaje continuo. Pero con la estrategia correcta y la ejecución disciplinada,puedes construir un motor de crecimiento sostenible que escale tu negocio D2C significativamente.</p>
-      <p>Si estás listo para llevar tu estrategia Meta Ads al siguiente nivel,te invitamos a agendar una llamada gratuita con nuestro equipo de expertos. Analizaremos tu situación actual,identificaremos oportunidades de mejora,yte proporcionaremos un plan de acción personalizado para optimizar tus campañas.</p>
-      <p>¿_LISTO PARA EMPEZAR? <button onClick={openCalendly}>Agenda tu Consultoría Gratuita</button> y descubre cómo podemos ayudarte a maximizar tu retorno sobre la inversión publicitaria con estrategias probadas específicamente para negocios D2C.</p>
-    </section>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
+
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default EstrategiaMetaAdsPage;
+export default BuenROASNichosPage;

@@ -3,287 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es la Meta Ads Library y qué se puede ver de la competencia?",
-    a: "La Meta Ads Library (anteriormente Facebook Ad Library) es la base de datos pública oficial de Meta que muestra todos los anuncios activos en Facebook, Instagram, Messenger y Audience Network. Es gratuita, no requiere login y está disponible en facebook.com/ads/library. Para anuncios comerciales (eCommerce, marca, producto) muestra: creatividad completa (imagen, vídeo, carrusel, copy), formato, plataformas donde se ejecuta, primer día activo y fecha actual, ID único de cada anuncio y página advertisera. Para anuncios políticos, electorales o de issues sociales añade país, rango de impresiones, rango de gasto y datos demográficos del alcance (edad, género, geografía). Para D2C en España la utilidad real es ver qué creatividades lleva activas semanas o meses la competencia — las que sobreviven al test inicial — y qué ángulos están funcionando en el mercado sin necesidad de espiar herramientas de pago. La librería se actualiza en tiempo real cada vez que un anuncio se publica o pausa."
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cómo identificar las creatividades ganadoras de un competidor en Meta Ads Library?",
-    a: "El método que aplicamos en DayByDay para detectar creatividades ganadoras: (1) Filtrar por país (España) y categoría (Todos los anuncios) en la página del competidor. (2) Ordenar por fecha de primera publicación y aislar los anuncios con más de 30-45 días activos — un anuncio rara vez sobrevive más de 3-4 semanas si no rinde, así que los longevos son señal fuerte de ROAS positivo. (3) Detectar variantes: anuncios con mismo copy y diferente creative o viceversa indican que el competidor está testando esa hipótesis y la mantiene. (4) Mapear el patrón: hook visual, primer mensaje, propuesta de valor, formato (UGC vs estático vs Reels), y duración del vídeo. (5) Cruzar con búsquedas activas: si una creatividad lleva 60+ días, la marca pauta en 2-3 países y la replicas en formatos múltiples, es casi seguro winner. Las marcas D2C españolas que vale la pena auditar como referencia incluyen Hawkers, Singularu, Freshly Cosmetics y Lookiero por volumen de testeo continuo."
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Es legal y ético analizar las creatividades de la competencia en Meta Ads Library?",
-    a: "Sí, es completamente legal porque la Meta Ads Library es información pública creada por Meta precisamente para transparencia publicitaria (obligación derivada del Digital Services Act europeo y del Honest Ads Act estadounidense). Acceder, descargar capturas, registrar IDs de anuncio y analizar tendencias creativas no infringe ningún término de servicio de Meta ni propiedad intelectual. Lo que no es legal: reproducir literalmente una creatividad protegida por copyright (foto del producto del competidor, voz de un actor contratado, música con derechos) o suplantar la marca. Lo recomendable operativamente: extraer la estructura (hook+propuesta+prueba+CTA), los ángulos de mensaje y los formatos que rinden, pero crear material propio con tu producto, modelos, voz de marca y música licenciada. En España y la UE el AEPD y el Digital Services Act respaldan este uso siempre que sea para investigación competitiva."
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Qué herramientas externas complementan Meta Ads Library para análisis de competencia?",
-    a: "Meta Ads Library cubre la pieza esencial gratuita pero limita en agregación de datos. Herramientas complementarias útiles para auditoría profunda en D2C: Foreplay (gestor de swipe file con tagging por ángulo, formato y vertical, planes desde 49$/mes), Atria (similar a Foreplay con análisis IA del copy), AdSpy y BigSpy (databases más amplias con búsqueda por keyword del copy y descarga del vídeo, planes 99-149$/mes), Minea (especializada en TikTok+Meta con métricas estimadas de engagement). Para análisis de landing page del competidor: SimilarWeb (tráfico estimado), Wappalyzer (stack tech), PageSpeed Insights (performance). En DayByDay solemos combinar Meta Ads Library (gratis, datos oficiales) + Foreplay (organización del swipe file por hipótesis) + captura manual con timestamps. Las herramientas premium tienen sentido si manejas \u003e5 cuentas o testas creatividades nuevas cada semana; con 1-2 cuentas el ecosistema gratuito más capturas semanales basta."
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
-  {
-    q: "¿Cuántos competidores hay que monitorizar y con qué frecuencia revisar la Meta Ads Library?",
-    a: "La regla operativa que usamos: 4-6 competidores directos (mismo nicho, mismo país, modelo D2C similar) más 3-5 referentes internacionales (marcas top del vertical en US/UK que innovan antes y marcan tendencia). Frecuencia mínima: revisión semanal de 30-45 minutos con foco en altas y bajas (creatividades nuevas y pausadas), revisión profunda mensual con tagging completo en swipe file y revisión estratégica trimestral con análisis de patrones (qué ángulos saturan, qué formatos rinden, qué ofertas se imponen). Más frecuencia genera ruido sin valor extra; menos frecuencia hace que llegues tarde a tendencias creativas que ya están en pico. Datos de cuentas D2C España: las marcas activas pautan entre 8 y 35 creatividades simultáneas según volumen, con un ratio típico 1 ganadora cada 5-8 testadas, por lo que monitorizar bien 5-6 competidores te da acceso a 40-200 hipótesis testadas mensualmente sin gastar un euro propio."
-  },
-  {
-    q: "¿Qué patrones de creatividad ganadora destacan en D2C España en 2026?",
-    a: "Patrones observados al auditar 100+ cuentas D2C españolas activas en Meta Ads Library a inicios de 2026: (1) UGC con cara y voz on-camera mantiene supremacía en moda, belleza y suplementos — la persona habla 6-15 segundos primer plano con problema/solución directo. (2) Reels verticales 9:16 de 9-25 segundos rinden 30-50% mejor que feed cuadrado en captación nueva. (3) Hook en segundos 0-2 con texto grande superpuesto (\"¿Por qué nadie te dijo esto?\" o cifra concreta) sigue siendo el filtro determinante. (4) Estáticos con producto + número grande (\"63% menos azúcar\", \"-40% solo este finde\") rinden mejor en BOFU y retargeting que en captación nueva. (5) Carruseles 3-5 slides con narrativa secuencial superan al carrusel catálogo en consideración. (6) Vídeo testimonial cliente real 20-40s con sub-titulado mejora conversion rate post-click vs vídeo branded actor. (7) Anti-patrón: animaciones MotionGraphics+música cinematográfica casi nunca duran más de 14 días activas en cuentas D2C — Meta penaliza la baja personalización."
-  },
-  {
-    q: "¿Cómo convertir el análisis de Meta Ads Library en hipótesis de testing para tu cuenta?",
-    a: "El error típico es copiar la creatividad ganadora del competidor: el algoritmo de Meta penaliza repeticiones del mercado y la diferenciación de marca se pierde. El método correcto en DayByDay: (1) Extraer el ángulo de mensaje (no la creatividad). Ejemplo: si el competidor lleva 3 meses con \"-25% azúcar\" y rinde, el ángulo es \"comparativa nutricional\", no el copy literal. (2) Formular hipótesis propia: \"Si nuestro público responde a comparativa nutricional, un UGC de nuestra fundadora explicando 3 ingredientes que no llevamos vs marca líder dará >2,5x CTR\". (3) Producir 3-4 variantes propias del ángulo con producto, modelo y voz de marca diferenciados. (4) Lanzar test con presupuesto controlado (200-400€/variante mínimo) durante 5-7 días con 1.500-3.000 impresiones/variante. (5) Decidir según ranking de hook rate (>3s/impresiones), CTR, CPA y % new customers. La conversión es: ángulo del competidor → hipótesis tuya → creatividad propia → test medido. Saltarse cualquier paso convierte el análisis en piratería estética sin ROI."
-  }
 ];
 
-const MetaAdsLibraryAnalisisCompetenciaPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Análisis de competencia en Meta Ads Library: cómo extraer creatividades ganadoras"
-    description="Guía operativa para usar Meta Ads Library en eCommerce D2C España: qué es y qué se ve gratis de la competencia, método para detectar creatividades ganadoras (filtros, longevidad >30-45 días, variantes, patrones), legalidad y ética del análisis competitivo, herramientas complementarias (Foreplay, AdSpy, Minea), cuántos competidores monitorizar y frecuencia (semanal/mensual/trimestral), patrones de creatividad ganadora D2C España 2026 (UGC voz, Reels 9-25s, hooks 0-2s, anti-patrones MotionGraphics) y cómo convertir el análisis en hipótesis testables sin copiar al competidor. Enfoque DayByDay Pablo + Jorge con swipe file estructurado por ángulo y testing controlado."
-    slug="meta-ads-library-analisis-competencia"
-    datePublished="2026-05-11"
-    dateModified="2026-05-11"
-    readingTime="11 min"
-    category="Creatividades"
-    keywords={[
-      "meta ads library competencia",
-      "analizar creatividades competencia meta ads",
-      "facebook ad library ecommerce",
-      "espiar anuncios meta competidor",
-      "swipe file meta ads d2c",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">El análisis de competencia en Meta Ads Library es la fuente gratuita más infrautilizada por los media buyers D2C en España</strong>. La librería pública oficial de Meta permite ver, sin login y sin coste, todas las creatividades activas de cualquier marca en Facebook, Instagram, Messenger y Audience Network: copy, vídeo, imagen, formato, día de primera publicación y plataformas donde se ejecuta. Bien usada, una sesión semanal de 30-45 minutos revela qué ángulos están rindiendo en el mercado, qué creatividades llevan meses activas (señal fuerte de ROAS positivo) y qué hipótesis testar en tu cuenta sin gastar un euro propio. Mal usada, se convierte en piratería estética: copiar la creatividad ganadora del competidor genera penalización algorítmica y dilución de marca. En esta guía repasamos el método operativo completo: cómo identificar winners, qué herramientas complementan la librería, cuántos competidores monitorizar y cómo convertir el análisis en hipótesis testables.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es Meta Ads Library y qué información expone de cualquier marca</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">Meta Ads Library</strong> es la base de datos pública oficial de Meta disponible en <a href="https://www.facebook.com/ads/library" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">facebook.com/ads/library</a>, creada en 2019 como respuesta al escándalo Cambridge Analytica y reforzada en 2023-2024 por el Digital Services Act europeo. Para cualquier anuncio comercial activo en España, la librería muestra: la creatividad completa (imagen, vídeo, carrusel, copy primario y descripción), el formato, las plataformas donde se publica (Facebook feed, Instagram feed, Reels, Stories, Messenger, Audience Network), la fecha de primera publicación, el ID único del anuncio y la página advertisera con su histórico completo.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Para anuncios sobre política, elecciones o issues sociales añade rangos de impresiones, rangos de gasto y demografía del alcance — pero esa capa no aplica al 99% de cuentas D2C. Para nuestro caso operativo el valor está en lo que sí muestra siempre: la creatividad, la longevidad y el patrón de testing. La librería se actualiza en tiempo real cada vez que un anuncio se publica o pausa.
-    </p>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
-      <p className="text-white font-bold text-sm mb-2">📊 Dato de referencia</p>
-      <p className="text-white/70 text-sm leading-relaxed">
-        Según el <a href="https://transparency.meta.com/policies/ad-standards/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Meta Transparency Report</a>, en 2024 más de 12 millones de anuncios activos pasaron por la librería en Europa y la media de cuentas D2C eCommerce españolas con presencia continua mantiene entre 8 y 35 creatividades simultáneas activas, con un ratio típico de 1 ganadora consolidada (>30 días activa) por cada 5-8 testadas inicialmente.
-      </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo identificar creatividades ganadoras: método paso a paso</h2>
-    <ol className="space-y-3 mb-6 list-decimal pl-5">
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
+
+    <div className="space-y-3 mb-8">
       {[
-        "Abrir Meta Ads Library, fijar país (España) y categoría \"Todos los anuncios\". Buscar la marca competidora por nombre exacto de la Página. Verificar que sea la cuenta oficial (verificada o con seguidores coherentes).",
-        "Ordenar por fecha de primera publicación. Aislar las creatividades con más de 30-45 días activas. Un anuncio rara vez sobrevive 3-4 semanas si no rinde — los longevos son señal fuerte de ROAS positivo y product-market fit del mensaje.",
-        "Detectar variantes activas en paralelo: anuncios con mismo copy y distinto creative (o viceversa) indican test estructural. Si el competidor mantiene 2-3 variantes longevas del mismo ángulo, el ángulo funciona.",
-        "Mapear el patrón ganador: hook visual en segundos 0-2, primer mensaje del copy, propuesta de valor (oferta, beneficio, transformación), formato (UGC voz, estático con número grande, Reels narrativos, carrusel secuencial), duración del vídeo.",
-        "Validar con cobertura multi-país: si la creatividad se replica en 2-3 países (España + Italia + Francia, por ejemplo) y mantiene >60 días en cada uno, es casi seguro winner con ROAS positivo confirmado.",
-        "Documentar en swipe file estructurado: timestamp captura, marca, día primera publicación, formato, ángulo, hook visual, copy primario, propuesta, hipótesis testable derivada.",
-      ].map((item) => (
-        <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
-      ))}
-    </ol>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Herramientas complementarias: gratis vs premium</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Meta Ads Library cubre la pieza esencial gratuita pero limita en agregación de datos, búsqueda por keyword del copy, descarga directa del vídeo y tagging colaborativo. Comparativa de las opciones más relevantes para cuentas D2C en 2026:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Herramienta</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Coste</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Mejor para</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Limitación</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { s: "Meta Ads Library (oficial)", t: "Gratis", e: "Datos puros, IDs, longevidad", p: "No descarga vídeo ni agrega por copy" },
-            { s: "Foreplay", t: "49-149$/mes", e: "Swipe file con tagging por ángulo y formato", p: "Sin métricas estimadas de gasto" },
-            { s: "Atria", t: "39-99$/mes", e: "Análisis IA del copy y temas", p: "Cobertura D2C España media" },
-            { s: "AdSpy", t: "149$/mes", e: "Búsqueda por keyword del copy, vídeos descargables", p: "Caro para 1-2 cuentas" },
-            { s: "BigSpy", t: "99$/mes", e: "Base global amplia multi-canal", p: "UI menos pulida, ruido alto" },
-            { s: "Minea", t: "49-99$/mes", e: "TikTok + Meta con engagement estimado", p: "Sesgada a producto winning D2C global" },
-            { s: "SimilarWeb (landing)", t: "Gratis-249$/mes", e: "Tráfico estimado del competidor", p: "Solo dominios con tráfico relevante" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.t}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.e}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.p}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Regla operativa: con 1-2 cuentas D2C, Meta Ads Library + captura manual + carpeta Notion estructurada basta. Con 3+ cuentas o pipeline de testing semanal, añade Foreplay para organización por hipótesis. AdSpy y BigSpy solo justifican coste si tu pipeline produce 8-12 creatividades nuevas/semana o vendes a clientes (agencia).
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cuántos competidores monitorizar y con qué cadencia</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La densidad de monitorización óptima en D2C España: 4-6 competidores directos (mismo nicho, mismo país, modelo D2C similar, banda de inversión comparable) más 3-5 referentes internacionales (marcas top del vertical en US/UK que innovan antes y suelen marcar la tendencia que llega a España 4-8 meses después). Marcas D2C españolas que auditar como referencia activa según vertical:
-    </p>
-    <ul className="space-y-2 mb-6">
-      {[
-        "Moda: Hawkers, Singularu, Sepiia, Mans Concept Menswear, Charanga (catálogo amplio + testing continuo).",
-        "Belleza/skincare: Freshly Cosmetics, Laconicum, La Saponaria, Florence by Mills (campañas constantes en Meta + Instagram).",
-        "Suplementos: HSN, Foodspring, Nooz, Bulevip, Drasanvi (testing continuo de ángulos + UGC nativo).",
-        "Hogar: Atrápalo, Pikolin Home, Tediber España, Maisons du Monde España (campañas estacionales fuertes).",
-        "Alimentación premium: La Vida Verde, Holaluz, Naked & Sated, Sin Gluten (claim nutricional + UGC).",
-        "Mascotas: Tiendanimal, Maskokotas, Kiwoko (estructura híbrida online/retail con testing visual activo).",
-      ].map((item) => (
-        <li key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Cadencia recomendada: revisión semanal 30-45 min (altas y bajas), revisión profunda mensual con tagging completo en swipe file (90 min), revisión estratégica trimestral con análisis de patrones (saturación de ángulos, formatos en alza, ofertas dominantes). Más frecuencia genera ruido sin valor extra.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Patrones de creatividad ganadora D2C España 2026</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Patrones observados al auditar 100+ cuentas D2C españolas activas en Meta Ads Library a inicios de 2026:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Patrón</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Funciona en</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Estado 2026</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { s: "UGC con cara y voz on-camera 6-15s", t: "Moda, belleza, suplementos, alimentación", p: "Dominante (50-65% creatividades winner)" },
-            { s: "Reels verticales 9-25s con sub-titulado", t: "Captación nueva todos los verticales", p: "+30-50% rendimiento vs feed cuadrado" },
-            { s: "Hook texto superpuesto seg 0-2", t: "Filtro determinante en todos los formatos", p: "Standard de mercado, no opcional" },
-            { s: "Estático con número grande (-40%, 63% menos)", t: "BOFU y retargeting con oferta dura", p: "Funciona, no escala captación fría" },
-            { s: "Carrusel 3-5 slides narrativa secuencial", t: "Consideración + categorías técnicas", p: "Recuperando volumen en cuentas grandes" },
-            { s: "Testimonial cliente real 20-40s sub-titulado", t: "Belleza, suplementos, salud", p: "Sube CR post-click +15-25% vs actor" },
-            { s: "MotionGraphics + música cinematográfica", t: "Casi nunca", p: "Anti-patrón: <14 días activos típico" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.t}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.p}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo convertir el análisis en hipótesis testables sin copiar al competidor</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El error más caro: copiar la creatividad ganadora literalmente. El algoritmo de Meta penaliza repeticiones de mercado, las audiencias detectan la copia y la diferenciación de marca se evapora. Según el equipo de <a href="https://www.shopify.com/blog/creative-strategy" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Shopify Creative Strategy</a>, las marcas D2C que escalan sin techo creativo trabajan con ángulos prestados pero ejecución propia, nunca con creatividades clonadas. El método correcto en DayByDay:
-    </p>
-    <ol className="space-y-3 mb-6 list-decimal pl-5">
-      {[
-        "Extraer el ángulo de mensaje, no la creatividad. Si el competidor lleva 3 meses con \"-25% azúcar vs líder\", el ángulo es \"comparativa nutricional\", no el copy literal ni el plano específico.",
-        "Formular hipótesis propia: \"Si nuestro público responde a comparativa nutricional, un UGC de nuestra fundadora explicando 3 ingredientes que no llevamos vs marca líder dará >2,5x CTR\". Hipótesis cuantificable y falsable.",
-        "Producir 3-4 variantes del ángulo con producto, modelo, voz de marca y estética diferenciados. La creatividad debe ser claramente tuya — un usuario de Meta que ve el anuncio del competidor y el tuyo debe percibirlos como marcas distintas.",
-        "Lanzar test con presupuesto controlado: 200-400€/variante mínimo durante 5-7 días para llegar a 1.500-3.000 impresiones/variante y poder decidir con significancia razonable.",
-        "Decidir según ranking compuesto: hook rate (>3s/impresiones) como filtro inicial, CTR como filtro secundario, CPA y % new customers como decisión final. Anular variantes que no superan el hook rate del competidor referencia.",
-        "Iterar el ángulo ganador: si el ángulo funciona, producir 5-8 variantes más durante el mes siguiente con producto/escenario/hook distintos. Si no funciona, abandonar y testar el siguiente ángulo del swipe file.",
-      ].map((item) => (
-        <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
-      ))}
-    </ol>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Para entender cómo estructurar el A/B testing completo y qué variables priorizar antes de gastar, ver la <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de A/B testing en Meta Ads</Link> y el <Link to="/blog/creative-testing-meta-ads" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">framework de creative testing paso a paso</Link>.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Errores frecuentes al usar Meta Ads Library</h2>
-    <ol className="space-y-3 mb-6 list-decimal pl-5">
-      {[
-        "Copiar la creatividad ganadora literal: penalización algorítmica + dilución de marca + audiencia desconfiada. La librería es para extraer ángulos, no creatividades terminadas.",
-        "Confundir longevidad con éxito absoluto. Una creatividad activa 60 días puede ser winner global o simplemente parte del catálogo siempre encendido por una marca enterprise con budget alto sin medir por creative. Validar con presencia multi-país y variantes.",
-        "Monitorizar 15+ competidores sin estructura: la cantidad genera ruido y bloquea la decisión. 4-6 directos + 3-5 internacionales es el rango operativo.",
-        "Auditar competidores irrelevantes (marcas con modelo de negocio distinto, ticket distinto, geografía distinta) y derivar hipótesis falsas para tu cuenta. Filtrar competencia real por banda de inversión y catálogo similar antes de estudiarla.",
-        "Documentar sin tagging por ángulo: capturas dispersas en Drive sin etiqueta. Sin tagging por hipótesis testable el swipe file no se puede consultar en momento de briefing.",
-        "Revisar la librería justo antes de producir una nueva creatividad y dejarse arrastrar por el último ángulo visto. La librería se revisa con cadencia estructurada (semanal/mensual) y se consulta el swipe file en briefing, no la librería en vivo.",
-        "Ignorar fecha de primera publicación: una creatividad publicada hace 5 días no es señal de winner, es señal de test inicial. Filtrar por longevidad mínima 30 días para tomar decisiones.",
-      ].map((item) => (
-        <li key={item} className="text-white/60 text-sm leading-relaxed">{item}</li>
-      ))}
-    </ol>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Onboarding arranca con auditoría competitiva estructurada: Pablo identifica 4-6 competidores directos y 3-5 referentes internacionales según vertical y banda de inversión real del cliente; revisa Meta Ads Library de cada uno y construye swipe file inicial taggeado por ángulo, formato y longevidad. Sin esta foto inicial, lanzar creatividades es jugar a ciegas el primer mes.",
-        "Cadencia semanal: 30-45 min revisión de altas/bajas en Meta Ads Library de los 8-11 competidores definidos. Documentación en swipe file Notion con timestamp, formato y ángulo. Toda variante longeva >30 días pasa a hipótesis testable.",
-        "Cadencia mensual: revisión profunda 90 min con tagging completo + extracción de 4-6 hipótesis testables priorizadas por encaje con propuesta de valor del cliente y producibilidad (presupuesto creative). Las hipótesis se discuten conjuntamente con el cliente antes de producir.",
-        "Producción de creatividades propias: 4-8 variantes/mes del ángulo prestado con producto, modelo, voz y estética propios del cliente. Coste típico 80-250€/creative según formato (UGC nano-creator vs estático interno vs Reels editado). Solución ad-hoc Pablo + Jorge: una cuenta de suplementos pidió escalar testing creativo sin subir budget de agencia; Jorge montó un workflow n8n que cada lunes scrapea los nuevos anuncios de los 6 competidores definidos, los clasifica con un agente IA por ángulo y los manda a Slack con captura y hipótesis pre-generada. Pablo solo revisa los 4-5 winners para incorporarlos al swipe file. Reduce 80% del tiempo manual y la cuenta testa 12-15 variantes/mes en vez de 5-6.",
-        "Reporting mensual con métricas creativas: hook rate por variante, CTR por ángulo, CPA por formato, ranking ganador del mes y comparación contra benchmark del competidor de referencia. Decisiones basadas en cuadro completo, no en intuición.",
-        "Caso real: cuenta D2C cosmética en España llegó con 3 creatividades activas y CPA 38€. Auditamos 5 competidores en Meta Ads Library, extrajimos 6 ángulos longevos no usados por el cliente (UGC fundadora hablando ingredientes, comparativa antes/después con sub-titulado, testimonial cliente >35 años, Reels rutina 25s). Lanzamos 8 variantes en 30 días con producción nano-creator (180€/creative). En 60 días: 4 variantes superaron CPA 26€ y se consolidaron como evergreen, CPA blended pasó de 38€ a 24€ (-37%) manteniendo volumen.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      DayByDay Consulting fue fundada por Pablo Santirsó y opera como un partnership con Jorge González (CTO). Pablo (founder · paid media) lidera la auditoría competitiva, el swipe file estructurado y la estrategia creativa derivada; Jorge (CTO · automation) lidera la automatización del scraping de Meta Ads Library con agentes IA, el tagging asistido por modelo de lenguaje y la integración del swipe file con el sistema de briefing del cliente. Donde otras agencias paid media externalizan el análisis competitivo a un junior o lo saltan directamente, en DayByDay Pablo y Jorge convierten la librería pública en un sistema de inteligencia continua. El cliente habla con los dos socios desde la primera reunión: sin account managers, sin handoffs, sin perfiles junior.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Quieres ver qué creatividades llevan meses ganando en tu nicho?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría competitiva gratuita 30 min: identificamos 4-6 competidores directos, extraemos creatividades longevas de Meta Ads Library y entregamos swipe file inicial con 4-6 hipótesis testables priorizadas para tu cuenta D2C.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/framework-hipotesis-creatividades-meta-ads" className="text-white font-semibold hover:text-white/80">
-          Framework de hipótesis creativas Meta Ads: cómo briefar antes de gastar en producción →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo convertir un ángulo extraído de la competencia en hipótesis falsable medible antes de producir</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/creative-testing-meta-ads" className="text-white font-semibold hover:text-white/80">
-          Creative testing en Meta Ads: framework paso a paso →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo estructurar el testing creativo con hipótesis previa y presupuesto controlado</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-white font-semibold hover:text-white/80">
-          A/B testing en Meta Ads: qué testar primero →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Variables prioritarias y orden operativo de testing para maximizar aprendizaje</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ugc-meta-ads" className="text-white font-semibold hover:text-white/80">
-          UGC en Meta Ads: cómo producir contenido que rinde →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Formato dominante en D2C 2026 y cómo trabajar con nano/micro creators</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/por-que-anuncios-meta-no-convierten" className="text-white font-semibold hover:text-white/80">
-          Por qué tus anuncios de Meta no convierten →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Diagnóstico en 5 capas para detectar dónde está el problema antes de cambiar creatividad</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ad-fatigue-meta-ads-rotacion-creativa" className="text-white font-semibold hover:text-white/80">
-          Ad fatigue en Meta Ads: señales tempranas y protocolo de rotación creativa →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo convertir el pipeline de ángulos extraídos en flujo de rotación semanal sin romper aprendizaje</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default MetaAdsLibraryAnalisisCompetenciaPage;
+export default BuenROASNichosPage;

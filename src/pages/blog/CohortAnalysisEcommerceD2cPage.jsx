@@ -1,246 +1,180 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
-import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
-    q: "¿Qué es exactamente un cohort analysis en eCommerce D2C?",
-    a: "Cohort analysis es una técnica que agrupa clientes según un evento común — habitualmente el mes de su primera compra — y sigue su comportamiento (recompra, gasto acumulado, retención) en el tiempo. En lugar de mirar la métrica agregada del negocio (que mezcla clientes nuevos y antiguos y oculta tendencias), miras cómo se comporta cada cohorte de adquisición. Es la única forma fiable de saber si los clientes nuevos de hoy son mejores, iguales o peores que los de hace 12 meses — y por tanto, si tu D2C realmente está mejorando o solo está creciendo en facturación pero degradándose en calidad."
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Qué métricas se miden en un cohort analysis para D2C?",
-    a: "Las cuatro críticas: (1) tasa de recompra a 30/60/90/180/365 días — qué % de la cohorte vuelve a comprar; (2) LTV acumulado por cohorte en cada hito temporal; (3) frecuencia de compra (pedidos por cliente acumulados); (4) AOV de la cohorte vs cohortes anteriores. La quinta opcional pero potente: payback period — cuántos meses tarda una cohorte en cubrir su CAC. En cuentas que auditamos, el simple cruce de payback period vs CAC blended detecta más del 60% de los problemas de escalado antes de que aparezcan en la cuenta de resultados."
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuántas cohortes mínimas necesito para que el análisis sea útil?",
-    a: "Mínimo 6 cohortes mensuales con \u003e50 clientes cada una para detectar tendencias con cierta solidez. Con 12 cohortes ya puedes ver estacionalidad anual y diferenciar entre cohortes Q4 (Black Friday, peor calidad) y cohortes Q1-Q3 (mejor calidad). Por debajo de 50 clientes/cohorte el ruido estadístico hace que cualquier curva de retención sea poco fiable; en ese caso conviene agrupar en cohortes trimestrales en lugar de mensuales hasta tener volumen."
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cómo detecto que mi D2C está degradándose con cohortes aunque la facturación crezca?",
-    a: "Tres patrones rojos típicos: (1) la tasa de recompra a 90 días de las cohortes recientes es inferior a las cohortes de hace 12 meses — significa que los clientes nuevos son peores; (2) el LTV a 6 meses de cohortes nuevas baja mientras el CAC sube — payback se alarga; (3) las cohortes adquiridas durante picos de spend (sales, BFCM) tienen retención significativamente peor que las orgánicas — el escalado paid está trayendo peor cliente. Si ves los tres, estás escalando facturación a costa de margen futuro, aunque el dashboard mensual diga lo contrario."
-  },
-  {
-    q: "¿Sirven Shopify Analytics o GA4 para hacer cohort analysis serio?",
-    a: "Para algo básico, sí. Shopify Analytics tiene reportes de retención por cohorte de adquisición y GA4 ofrece informe de cohortes de retención. Para análisis serio en D2C \u003e100K€/mes ambos se quedan cortos: Shopify mezcla canales y no permite cruzar con CAC; GA4 mide visitas, no clientes. La realidad práctica es que la mayoría de D2C medianos hace cohort analysis en hojas (PostgreSQL/BigQuery + Looker o Sheets) o usa herramientas específicas como Triple Whale, Lifetimely o Polar Analytics — todas tienen vista de cohortes nativa cruzada con spend de marketing."
-  },
-  {
-    q: "¿Qué payback period es bueno en eCommerce D2C español?",
-    a: "Depende mucho de margen y recurrencia, pero rangos saludables que vemos: en consumibles (suplementos, café, cosmética con recompra alta) un payback de 2-4 meses es saludable, 6 meses es el límite aceptable. En moda y hogar 4-8 meses. En ticket alto/un solo uso, payback debe ser <1 pedido — el primer pedido tiene que cubrir CAC. Por encima de esos rangos, escalar significa quemar caja: cada nuevo cliente exige financiación durante meses antes de generar margen positivo, y eso solo es viable si hay capital de inversión asegurado."
-  },
-  {
-    q: "¿Cómo cruzo cohort analysis con decisiones de paid media?",
-    a: "Tres palancas concretas: (1) si una cohorte adquirida vía un canal concreto (ej. TikTok Ads) tiene retención significativamente peor que la media, ese canal está trayendo tráfico de peor calidad aunque el CAC plataforma parezca bueno — hay que reasignar presupuesto; (2) si las cohortes BFCM son peores, conviene reducir descuentos agresivos o filtrar audiencias para evitar cazadores de oferta; (3) la curva de LTV por cohorte permite calcular un ROAS objetivo realista — si tu LTV a 12 meses es 180€ con margen 40% y quieres payback en 6 meses, el ROAS objetivo de primer pedido se deriva de esos números, no de un benchmark genérico de internet."
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const CohortAnalysisEcommerceD2cPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Cohort analysis para eCommerce D2C: la métrica que predice si tu negocio escala"
-    description="Cómo usar cohort analysis para detectar si tu D2C está escalando con clientes de calidad o degradándose: métricas clave (retención, LTV acumulado, payback), número mínimo de cohortes para ser fiables, patrones que delatan un escalado tóxico, herramientas reales (Shopify, Triple Whale, Lifetimely) y cómo cruzar cohortes con decisiones de paid media."
-    slug="cohort-analysis-ecommerce-d2c"
-    datePublished="2026-05-04"
-    dateModified="2026-05-04"
-    readingTime="10 min"
-    category="Métricas"
-    keywords={[
-      "cohort analysis ecommerce",
-      "cohort analysis d2c",
-      "retencion cohortes ecommerce",
-      "payback period d2c",
-      "ltv por cohorte",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
-    relatedPosts={relatedPostsData["cohort-analysis-ecommerce-d2c"] || []}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El <strong className="text-white">cohort analysis</strong> es la métrica que más D2C ignoran y la que mejor predice si un eCommerce está escalando bien o quemando caja en silencio. Mientras el dashboard mensual celebra crecimiento de facturación, las cohortes pueden estar diciéndote que los clientes nuevos repiten menos, gastan menos y tardan más en cubrir su CAC. La facturación crece, el negocio empeora — y en 6-12 meses lo nota la cuenta de resultados.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      En esta guía explicamos cómo montar un cohort analysis útil para eCommerce D2C, qué métricas medir, qué patrones avisan de problemas y cómo cruzarlo con decisiones de paid media para escalar sin romper el negocio.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué mide cada tipo de cohorte y para qué sirve</h2>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Tipo de cohorte</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Qué mide</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Decisión que habilita</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { a: "Cohorte mensual de adquisición", b: "Retención y LTV acumulado por mes de primera compra", c: "Detectar si el cliente nuevo está mejorando o degradándose" },
-            { a: "Cohorte por canal", b: "Calidad del cliente que trae cada canal de paid", c: "Reasignar presupuesto entre Meta, Google, TikTok según LTV real" },
-            { a: "Cohorte por campaña/creatividad", b: "Calidad del cliente que captura cada anuncio", c: "Pausar creativos que traen tráfico barato pero no recompra" },
-            { a: "Cohorte por producto de entrada", b: "LTV en función del primer SKU comprado", c: "Decidir qué producto destacar en paid como puerta de entrada" },
-            { a: "Cohorte por descuento aplicado", b: "Retención de quien entra con cupón vs sin cupón", c: "Calibrar política de descuentos sin destruir margen futuro" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.a}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.b}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.c}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La mayoría de D2C españoles solo mira la primera (cohorte mensual). Las cuatro siguientes son las que diferencian la operativa de un media buyer senior: permiten decisiones de inversión basadas en LTV real, no en CAC plataforma. <a href="https://www.shopify.com/blog/cohort-analysis" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Shopify documenta el reporte de cohortes nativo</a> y conviene tenerlo activado siempre como mínimo común.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Las 4 métricas que toda cohorte D2C debe medir</h2>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Tasa de recompra acumulada a 30 / 60 / 90 / 180 / 365 días: % de la cohorte que ha hecho una segunda compra antes de cada hito. Es el primer indicador de si el producto y el cliente encajan.",
-        "LTV acumulado por cohorte: gasto medio acumulado por cliente en cada hito temporal. Permite comparar cohortes entre sí y proyectar LTV final cuando aún no han pasado 12 meses.",
-        "Frecuencia de pedidos: pedidos medios por cliente acumulados. En productos con recompra alta (suplementos, café), una caída de 0,3 a 0,2 pedidos a los 90 días es una alarma temprana antes de que el LTV se hunda.",
-        "Payback period: cuántos meses tarda la cohorte en generar margen acumulado igual al CAC blended con el que se adquirió. Es la métrica financiera real de salud del escalado — si crece mes a mes, estás escalando contra tu propio cash flow.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Patrones rojos: cuándo el cohort analysis avisa de problemas</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Recompra a 90 días bajando 3 meses seguidos: las últimas cohortes repiten menos que las anteriores. Casi siempre significa que el escalado de paid está trayendo cliente menos cualificado — pasa cuando se sube presupuesto sin tocar segmentación o creatividad.",
-        "LTV de cohortes BFCM (noviembre/diciembre) <70% del LTV de cohortes Q1-Q3: el cliente cazaoportunidades no recompra. Si tu spend Q4 representa >40% del año, esto deforma todo el modelo financiero.",
-        "Payback period creciendo mientras CAC se mantiene: el problema no es que sea más caro adquirir, es que el cliente nuevo retiene peor. Subida de CPMs no lo explica.",
-        "Cohortes de un canal con LTV muy inferior al resto a 6 meses: ese canal trae visita barata pero no cliente real. Pasa con frecuencia en TikTok Ads y campañas Advantage+ Shopping mal configuradas.",
-        "Frecuencia de pedido cayendo sin caída paralela en AOV: clientes compran una vez y no vuelven. Producto correcto, expectativa equivocada — habitualmente por discordancia entre el creativo y la experiencia post-compra.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Payback period saludable por tipo de D2C español</h2>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Tipo producto</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Payback saludable</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Límite aceptable</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Señal de alarma</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { t: "Suplementos / café / consumibles", p: "2-4 meses", l: "6 meses", s: ">8 meses" },
-            { t: "Cosmética con recompra", p: "3-5 meses", l: "7 meses", s: ">9 meses" },
-            { t: "Moda D2C", p: "4-6 meses", l: "9 meses", s: ">12 meses" },
-            { t: "Hogar / decoración", p: "Primer pedido", l: "2 pedidos", s: "Más de 12 meses" },
-            { t: "Ticket alto / único uso", p: "Primer pedido (margen >CAC)", l: "Primer pedido", s: "CAC > margen primer pedido" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.t}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.p}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.l}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.s}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Estos rangos los derivamos de cuentas D2C españolas que auditamos en sectores moda, suplementos, cosmética y hogar. Coinciden razonablemente con benchmarks internacionales que publica <a href="https://www.klaviyo.com/blog/customer-lifetime-value-benchmarks" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Klaviyo en su informe de LTV por industria</a>, ajustando margen y AOV al mercado español.
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay</h2>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Cohort dashboard mensual cruzado con CAC blended por cohorte: misma vista combina retención, LTV acumulado y payback period sobre el CAC con el que se adquirió esa cohorte. Sin esto, los datos sueltos no producen decisiones.",
-        "Cohortes por canal y campaña en cuentas con >2 canales activos: Meta, Google, TikTok, orgánico y email. Es la única forma de descubrir que un canal con CAC bajo está trayendo cliente con LTV un 40% inferior — pasa más de lo que parece.",
-        "Revisión trimestral de cohortes BFCM vs cohortes orgánicas Q2-Q3: si el gap supera el 30%, recalibramos política de descuentos y filtros de audiencia para Q4 siguiente.",
-        "Proyección de LTV a 12 meses desde cohortes de 90 días: con datos de 3 meses se puede estimar LTV final con error <15% si la cohorte tiene volumen suficiente. Permite tomar decisiones de inversión sin esperar un año entero.",
-        "Reglas de escalado paid derivadas del payback objetivo: si el cliente quiere payback ≤6 meses, el ROAS objetivo de primera compra se calcula desde ahí — no desde benchmarks genéricos. Esto evita escalar facturación con CAC que el negocio no puede aguantar.",
-        "Herramientas: BigQuery + Looker Studio para cuentas &gt;50K€/mes, o Triple Whale / Lifetimely para escalas menores. Shopify Analytics para validar cifras pero no como fuente única de verdad.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu D2C crece en facturación pero no sabes si las cohortes mejoran?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos tus cohortes de adquisición de los últimos 12 meses y detectamos si el escalado está trayendo cliente de calidad o degradando el negocio.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/adquisicion-vs-retencion-paid-media-d2c" className="text-white font-semibold hover:text-white/80">
-          Adquisición vs retención: cómo separar presupuestos de paid media en D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El bucket que aplica directamente la lectura cohorte para decidir cuándo recortar adquisición y meter más en retención</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cac-blended-vs-cac-canal-ecommerce" className="text-white font-semibold hover:text-white/80">
-          CAC blended vs CAC por canal: qué métrica usar para escalar un D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El CAC que se cruza con cohortes para calcular payback period real</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/email-marketing-meta-ads-ltv-d2c" className="text-white font-semibold hover:text-white/80">
-          Email marketing + Meta Ads: cómo combinar paid y owned para escalar LTV →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo los flujos email construyen el LTV que las cohortes proyectan</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
-          CAC vs LTV: cómo construir un eCommerce escalable →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Marco completo CAC:LTV con LTV proyectado desde cohortes</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/suscripciones-ecommerce-ltv-cac-d2c" className="text-white font-semibold hover:text-white/80">
-          Suscripciones en D2C: cómo cambia LTV y CAC objetivo →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cálculo de churn por cohorte y LTV contractual en cuentas con suscripción</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar un eCommerce D2C de 100K€ a 1M€ con paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo las cohortes evitan escalar facturación a costa de margen futuro</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Métricas de Meta Ads que importan en eCommerce →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Métricas plataforma que se cruzan con cohortes para decisiones de escalado</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/modelos-atribucion-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
-          Modelos de atribución para D2C: last-click, data-driven y MMM explicados →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El modelo que asigna a cada cohorte el canal de adquisición correcto</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/marketing-mix-modeling-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
-          Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo MMM valida el LTV agregado por canal sin depender de cookies</p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default CohortAnalysisEcommerceD2cPage;
+export default BuenROASNichosPage;

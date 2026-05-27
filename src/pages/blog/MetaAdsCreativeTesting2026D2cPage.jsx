@@ -1,239 +1,180 @@
+import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
 
-const MetaAdsCreativeTesting2026D2cPage = () => {
-  const article = {
-    title: "Meta Ads Creative Testing 2026: cómo testear 20 creatividades sin perder dinero",
-    slug: "meta-ads-creative-testing-2026-d2c",
-    description:
-      "Sistema de testing de creatividades Meta Ads para ecommerce D2C España. Aprende a validar 20 variantes con presupuesto controlado y decidir cuál escala.",
-    datePublished: "2026-05-20",
-    category: "Creative",
-    keywords:
-      "meta ads creative testing, testing creatividades, UGC ads, hook rate",
-    readingTime: "7 min",
-    cluster: "creative-ugc",
-  };
+const faqs = [
+  {
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
+  },
+  {
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
+  },
+  {
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
+  },
+];
 
-  const faqs = [
-    {
-      question: "¿Cuántas creatividades necesito para un test válido?",
-      answer:
-        "Mínimo 3-5 por set. Con menos, no hay señal estadística. Lo ideal son 10-15 variaciones activas simultáneamente para que el algoritmo de Meta tenga opciones diversas.",
-    },
-    {
-      question: "¿Cuánto presupuesto por creatividad durante la fase de validación?",
-      answer:
-        "Entre 5€ y 10€ diarios por creatividad. Si inviertes menos, el algoritmo no tiene datos suficientes para aprender y el test da resultados falsos.",
-    },
-    {
-      question: "¿Cuándo puedo decidir si una creatividad escala o se pausa?",
-      answer:
-        "Cuando alcance 50-100 conversiones únicas y una frecuencia mínima de 3-4. Con menos datos, estás tirando dinero al escalar algo que aún no ha demostrado nada.",
-    },
-  ];
+const BuenROASNichosPage = ({ openCalendly }) => (
+  <BlogPostLayout
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
+    faqs={faqs}
+    openCalendly={openCalendly}
+  >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
 
-  return (
-    <BlogPostLayout
-      title={article.title}
-      slug={article.slug}
-      description={article.description}
-      datePublished={article.datePublished}
-      category={article.category}
-      keywords={article.keywords}
-      readingTime={article.readingTime}
-      cluster={article.cluster}
-      faqs={faqs}
-    >
-      <h2>1. Por qué la mayoría de tests de creatividad fallan</h2>
-      <p>
-        La mayoría de ecommerce D2C en Españatestean creatividades con un
-        approach intuitivo: lanzan 2-3 versiones, esperan una semana y escalan
-        la que mejor ROAS muestra. Este método falla por tres razones concretas.
-      </p>
-      <p>
-        Primera: el tamaño de muestra es demasiado pequeño. Con solo 2-3
-        variaciones, la diferencia de rendimiento puede ser ruido estadístico,
-        no señal real. Meta necesita miles de impresiones para que el algoritmo
-        optimice correctamente.
-      </p>
-      <p>
-        Segunda: no aíslan las variables. Mezclar cambios de formato, offer, hook
-        y CTA en la misma creatividad impide saber qué elemento ha funcionado. Si
-        la versión A gana a la B, no tienes ni idea de si fue el hook, el color
-        o la oferta.
-      </p>
-      <p>
-        Tercera: paran el test demasiado pronto. La creatividad que gana la
-        primera semana no necesariamente gana a las 4 semanas. El ciclo de
-        decisión de compra en moda, belleza o suplementos puede ser de 7-14
-        días.
-      </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-      <h2>2. El framework de 3 fases: validación, expansión, escalado</h2>
-      <p>
-        El sistema que usamos con clientes D2C se divide en tres fases con reglas
-        claras de transición entre ellas.
-      </p>
-      <p>
-        <strong>Fase 1 — Validación (semanas 1-2):</strong> Se lanzan 15-20
-        creatividades simultáneamente con presupuesto limitado. El objetivo no es
-        vender, es identificar qué elementos resuenan con la audiencia. Aquí se
-        miden hook rate y CTR, no ROAS.
-      </p>
-      <p>
-        <strong>Fase 2 — Expansión (semanas 3-4):</strong> Las 3-5 mejores
-        creatividades de la fase 1 se replican con variaciones de offer y formato.
-        Se incrementa el presupuesto por creatividad. El objetivo es confirmar que
-        el rendimiento se mantiene con más inversión.
-      </p>
-      <p>
-        <strong>Fase 3 — Escalado (semana 5+):</strong> Las 1-2 creatividades
-        ganadoras reciben el grueso del presupuesto. Se eliminan las que no
-        superaron los umbrales. Solo se introducen nuevas variaciones cuando las
-        ganadoras empiezan a fatiga.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
 
-      <h2>3. Cómo estructurar los sets de prueba: formato, offer, hook, CTA</h2>
-      <p>
-        Cada creatividad tiene cuatro capas que deben testarse de forma aislada
-        para poder interpretar los resultados correctamente.
-      </p>
-      <p>
-        <strong>Formato:</strong> Reels 15-30s, carrusel de imágenes, Stories,
-        formato estático. En 2026, los Reels de formato corto con subtítulos
-        dominan en belleza y moda. Los carruseles funcionan mejor en supplements y
-        hogar.
-      </p>
-      <p>
-        <strong>Offer:</strong> Descuento porcentual, bundle, envío gratis,
-        regalo con compra, precio de lanzamiento. Testa siempre al menos dos
-        niveles de agresividad de oferta para entender la sensibilidad al precio
-        de tu audiencia.
-      </p>
-      <p>
-        <strong>Hook:</strong> El primer 1-3 segundos lo deciden todo. UGC real
-        con persona hablando a cámara, before/after, close-up de producto,
-        situación relatable del día a día. Evita intros lentas: si el hook no
-        engancha en 1.5 segundos, el usuario ya ha scrolleado.
-      </p>
-      <p>
-        <strong>CTA:</strong> Comprar ahora, Descubre la colección, Ver oferta,
-        Añadir. Los CTA directos funcionan en audiencias frías; los soft CTA
-        (Descubre, Explora) funcionan mejor en remarketing.
-      </p>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
-      <h2>4. Budget allocation: cuánto invertir por creatividad</h2>
-      <p>
-        La regla general: durante la fase de validación, cada creatividad recibe
-        entre 5€ y 10€ diarios. Con un presupuesto total de prueba de 2.000€ al
-        mes, puedes mantener 10-15 creatividades activas simultáneamente.
-      </p>
-      <p>
-        Si tu presupuesto mensual en Meta es inferior a 3.000€, no intentes
-       testear 20 creatividades a la vez. Prioriza 8-10 y enfócate en variar bien
-        los hooks, que es donde está el 80% de la diferencia de rendimiento.
-      </p>
-      <p>
-        En la fase de expansión, las ganadoras reciben 2-3x el presupuesto de
-        las que se quedan en prueba. Nunca escalares una creatividad antes de que
-        tenga 50+ conversiones únicas: hasta ese punto, el ROAS Reported está
-        distorsionado por la atribución.
-      </p>
-      <p>
-        En la fase de escalado, la creatividad ganadora puede recibir entre el
-        40% y el 60% del presupuesto total de la campaña, con 1-2备用 creatives
-        manteniendo el 20% para evitar fatiga.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
 
-      <h2>5. Métricas que importan: hook rate, CTR, CPM, frecuencia antes de juzgar</h2>
-      <p>
-        La métrica que casi nadie mide pero que más predice el rendimiento futuro
-        es el <strong>hook rate</strong>: el porcentaje de usuarios que ven más de
-        3 segundos del video. Si tu hook rate es inferior al 25%, la creatividad
-        tiene un problema de concepto, no de targeting ni de oferta.
-      </p>
-      <p>
-        <strong>CTR (Click Through Rate):</strong> Un CTR del 1-2% en feed es
-        aceptable para D2C. Por encima del 3% indica una creatividad
-        excepcional. Si estás por debajo del 0.8%, hay fricción en el hook o en
-        la propuesta.
-      </p>
-      <p>
-        <strong>CPM:</strong> Si tu CPM sube pero el CTR se mantiene, tu
-        creatividad está generando fatiga de frecuencia, no un problema de
-        relevancia. Cuando la frecuencia supera 4-5 en audiencias frías, pausa la
-        creatividad y reemplázala con una variación aunque tenga buen ROAS: ya
-        estás erosionando la frecuencia futura.
-      </p>
-      <p>
-        <strong>Regla de la frecuencia:</strong> No juzgues una creatividad hasta
-        que su frecuencia sea mínimo 3. Una creatividad con frecuencia 1.2 puede
-        estar mostrando el anuncio solo a los early adopters más cálidos y dar
-        números irrepetibles a escala.
-      </p>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
 
-      <h2>6. Ejemplo: ecommerce moda D2C con 15K€/mes en Meta</h2>
-      <p>
-        Cliente real del sector moda femenina D2C. Inversión: 15.000€/mes en Meta.
-        Producto: ropa de mujer entre 40€ y 120€. Ticket medio 85€. Objetivo:
-        maximizar ROAS manteniendo frecuencia de pedidos.
-      </p>
-      <p>
-        <strong>Semanas 1-2 — Validación:</strong> 18 creatividades activas.
-        Distribución: 8 UGC con chica real hablando a cámara (formato Reel
-        15-25s), 4 before/after de styling, 3 carruseles de producto con lifestyle,
-        3 estaticos con promoción directa. Presupuesto: 8€/día por creatividad.
-        Total en prueba: 144€/día.
-      </p>
-      <p>
-        <strong>Resultado de validación:</strong> Los UGC con persona real
-        hablando de su situación (trabajo remoto, plans de finde, outfit del día)
-        registraron hook rate del 38-45%. Los estáticos con modelo profesional
-        alcanzaron 18-22%. Los before/after: 28%.
-      </p>
-      <p>
-        <strong>Semanas 3-4 — Expansión:</strong> Se tomó el top 3 UGC y se
-        replicaron con dos offers distintas: descuento 15% vs. envío gratis.
-        También se varió el CTA (comprar ahora vs. ver colección). Budget por
-        creatividad subio a 20€/día.
-      </p>
-      <p>
-        <strong>Semana 5+ — Escalado:</strong> La creativa winner: UGC real con
-        persona relatable + oferta de envío gratis + CTA directo. ROAS 4.8x a
-        frecuencia 4. Se destinó el 55% del presupuesto (8.250€/mes) a esta
-        creativa, con 2 variaciones de backup recibiendo el 15% cada una para
-        mantener diversidad.
-      </p>
-      <p>
-        <strong>Resultado final:</strong> ROAS medio del mes: 4.2x (vs. 2.9x
-        anterior con el approach de 2-3 creatividades). Coste por pedido:
-        reducido un 31%. Frecuencia de compra: 2.3 pedidos por cliente en 90
-        días.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
 
-      <h2>7. Conclusión: testing مستمر es la ventaja competitiva</h2>
-      <p>
-        La ventaja competitiva en Meta Ads para D2C no está en el producto ni en
-        el presupuesto. Está en el sistema de testing. El ecommerce que testea 20
-        creatividades al mes tiene más señal que el que testea 3. Y esa señal se
-        traduce en mejor optimización del algoritmo, menor CPM efectivo y más
-        pedidos por euro invertido.
-      </p>
-      <p>
-        El error más caro que vemos es clientes que encuentran una creativa que
-        funciona y la mantienen durante 6 meses sin iterar. Meta penaliza la
-        fatiga: tu CPM sube, tu CTR baja y tu ROAS se erosiona. La creativa que
-        ganaba en enero está perdiendo dinero en abril.
-      </p>
-      <p>
-        Instala el sistema de tres fases desde hoy. Empieza con 8 creatividades
-        si no tienes presupuesto para 20. Mide hook rate. Respeta la frecuencia
-        mínima antes de juzgar. Y cuando una creativa ganadora lleve 4 semanas con
-        frecuencia superior a 5, introduce una nueva variación para reemplazar la
-        fatiga antes de que te cueste dinero.
-      </p>
-    </BlogPostLayout>
-  );
-};
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
 
-export default MetaAdsCreativeTesting2026D2cPage;
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
+  </BlogPostLayout>
+);
+
+export default BuenROASNichosPage;

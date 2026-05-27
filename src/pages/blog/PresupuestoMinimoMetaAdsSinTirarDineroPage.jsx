@@ -3,159 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Cuál es el presupuesto mínimo real para empezar Meta Ads?",
-    a: "150€/mes (5€/día). Con eso Meta aprende lo básico. No necesitas 3.000€/mes para probar. Lo que sí necesitas es paciencia: 30 días minimum. Con menos de 30 días no hay datos fiables.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuántas ventas necesito para saber si mi producto funciona en Meta?",
-    a: "Mínimo 15 ventas en 30 días. Con menos, es ruido estadístico. Si no llegas a 15, el problema puede ser: (1) producto no tiene tracción, (2) creativa mala, (3) audiencia equivocada. Revisa estas 3 cosas antes de culpar a Meta.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Qué hago si el ROAS está por debajo de 1.5x?",
-    a: "Antes de matar la campaña, cambia 2 cosas: (1) Audienia —si estás usando intereses muy amplios, estrecha; si muy estrecho, amplía a lookalike. (2) Creatividad —menos descripción, más hook en los primeros 3 segundos. Una buena creatividad puede multiplcar ROAS por 3x con el mismo presupuesto.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Puedo probar con menos de 150€?",
-    a: "Técnicamente 5€/día es el mínimo de Meta. Menos de eso y el algoritmo no tiene datos para aprender. Recomendamos 150€/mes como punto de partida razonable. Si no tienes ni eso, mejor ahorra y espera a tener el presupuesto antes de entrar.",
-  },
-  {
-    q: "¿Cuánto tarda Meta en aprender?",
-    a: "48-72 horas el algoritmo sale del learning phase. Pero para ты tener datos статистически significativos necesitas 7-14 días mínimo. No midas antes de 2 semanas. Muchos apagan campañas a los 3 días pq 'no funciona' cuando el algoritmo apenas empezó.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const PresupuestoMinimoMetaAdsPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Presupuesto mínimo Meta Ads sin tirar dinero: Guía práctica 2026"
-    description="Cuál es el presupuesto mínimo para Meta Ads sin tirar dinero. Guía práctica para ecommerce D2C España. No necesitas 10K€ para empezar - con 150€/mes puedes validar tu producto."
-    slug="presupuesto-minimo-meta-ads-sin-tirar-dinero"
-    datePublished="2026-05-26"
-    dateModified="2026-05-26"
-    readingTime="6 min"
-    category="Estrategia"
-    keywords={[
-      "presupuesto meta ads",
-      "cuanto invertir meta ads",
-      "presupuesto minimo meta ads",
-      "empezar meta ads",
-      "meta ads ecommerce espana",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
+    openCalendly={openCalendly}
   >
-    <h2 style={{marginTop: '2rem'}}>Epígrafe</h2>
-    <blockquote className="callout">
-      <p>"No gastes 5.000€ donde bastan 500€. Eso aprendí después de tirar 12.000€ en 3 meses." — Feb 2025</p>
-    </blockquote>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
 
-    <h2>Escena de apertura</h2>
-    <p>Era febrero de 2025. Un cliente de supplements me mandaba un WhatsApp a las 11 de la noche:</p>
-    <p><em>"Oye Pablo, mi agencia me dice que necesito invertir 3.000€/mes mínimo para que Meta funcione. Es eso cierto?"</em></p>
-    <p>Le pedí su cuenta. Llevaba 4 meses gastando 2.400€/mes. Habia generado 4 ventas. CAC: 600€. Cada venta le costaba 600€ en publicidad. El margen del producto era 80€.</p>
-    <p><strong>"Le estás perdiendo 520€ por venta. Con ese gasto, el negocio te sale a pérdida."</strong></p>
-    <p>Silencio en el chat. Luego escribió: <em>"Entonces qué hago?"</em></p>
-    <p>Le contesté: <strong>"Lo que te voy a contar abajo."</strong></p>
-
-    <h2>Al final de este post vas a saber:</h2>
-    <ol>
-      <li>Cuánto necesitas真正的 mínimosin tirardinero en Meta Ads</li>
-      <li>Por qué más presupuesto no siempre significa más ventas</li>
-      <li>Cómoprobar tu producto con 50个欧盟 antes de escalar</li>
-    </ol>
-
-    <h2>Drop de autoridad</h2>
-    <p>En 2024 gestioné 2.3M€ en gasto Meta parados clientes D2C España. <strong>El 68% de las cuentas que llegaban veníngastando demasiado pronto. Sin habervalidado el producto.</strong></p>
-    <p>La mayoría habrían ahorrado 8.000€ si hubieran hecho lo que te explico ahora.</p>
-
-    <h2>El framework (5 pasos)</h2>
-    <h3>Paso 1: Valida con 150€/mes primero</h3>
-    <p>No hace falta más. Establece presupuesto diario de 5€/día. Meta necesita 48-72 horas para aprender. Deja correr 30 días.</p>
-
-    <h3>Paso 2: Mide 3 métricas only</h3>
-    <ul>
-      <li><strong>ROAS</strong>: Ingresos / Gasto. Quiéreessaber mínimo 2x.</li>
-      <li><strong>CAC</strong>: Coste por adquisición. Nolohagas complejo. Divide lo gastado por las ventas.</li>
-      <li><strong>CPL</strong> (Coste por lead): Si vendes enwhatsapp, calcula cuántote cuesta cada mensaje.</li>
-    </ul>
-
-    <h3>Paso 3: Si ROAS &gt; 2x, duplica poco a poco</h3>
-    <p>Sube un 20% cada semana. No msdel doble de golpe. Meta re-optimiza y puedesperder lo que ganaste.</p>
-
-    <h3>Paso 4: Si ROAS &lt; 1.5x tras 30 días, revisa esto antes de matar la campaña</h3>
-    <ul>
-      <li><strong>El producto</strong>: Estás probando too few products? Recomiienda mínimo 3 creatividades diferentes.</li>
-      <li><strong>Audiencia</strong>: Estás muy amplio o muy Estrecho? Empieza con interés específico + purchase behavior.</li>
-    </ul>
-
-    <h3>Paso 5: Escala solo cuando tengas 15+ conversiones en 30 días</h3>
-    <p>Con menos datos, no hay patrón confiabl. Stats = ruido.</p>
-
-    <h2>Ejemplo real con números</h2>
-    <p><strong>Caso:</strong> Supplement nutricional, nicho beauty.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Métrica</th>
-          <th>Antes (agencia)</th>
-          <th>Después (DayByDay)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Presupuesto mes</td>
-          <td>2.400€</td>
-          <td>300€</td>
-        </tr>
-        <tr>
-          <td>Ventas</td>
-          <td>4</td>
-          <td>23</td>
-        </tr>
-        <tr>
-          <td>ROAS</td>
-          <td>0.8x</td>
-          <td>3.2x</td>
-        </tr>
-        <tr>
-          <td>CAC</td>
-          <td>600€</td>
-          <td>13€</td>
-        </tr>
-      </tbody>
-    </table>
-    <p><strong>Ingresaron lo mismo con 8x menos gasto.</strong></p>
-
-    <h2>Pro tip contraintuitivo</h2>
-    <p><strong>El problema no es cuánto gastas. Es cuálesson las creatividades que provas.</strong></p>
-    <p>Una buena creatividad puede dar ROAS 5x. Una mala puede dar 0.5x con el mismo presupuesto.</p>
-    <p>Invierte más tiempo en crear 3-5 anuncios diferentes que en aumentar presupuesto.</p>
-
-    <h2>Action step</h2>
-    <ol>
-      <li>Abre tu Administrador de Anuncios. Haz una lista de tus 5 mejores productos o categorías hoy.</li>
-      <li>Define un presupuesto de prueba: 5€/día = 150€/mes.</li>
-      <li>Corre 30 días. Mide ROAS. Si está por debajo de 2x, cambia audience o creatividad. No subas presupuesto.</li>
-      <li>En 30 días sabrás si tu producto funciona en Meta. Sin haber invertido más de 150€.</li>
-    </ol>
-
-    <h2>Recap</h2>
-    <ul>
-      <li>✅ Mínimo: 150€/mes (5€/día)</li>
-      <li>✅ Solo 3 métricas: ROAS, CAC, CPL</li>
-      <li>✅ Escalar después de 15+ ventas</li>
-      <li>✅ Más creatividad antes de más presupuesto</li>
-    </ul>
-
-    <hr/>
-    <p className="callout">La próxima semana te cuento cómo saber si tu problema es el producto o la audiencia. Stay tuned.</p>
-
-    <div style={{marginTop: '2rem', padding: '1.5rem', background: '#f5f5f5', borderRadius: '8px'}}>
-      <h3>¿Necesitas ayuda con tu cuenta?</h3>
-      <p>Si quieres que revisemos tu cuenta Meta Ads yte digamos qué está fallando, agenda una llamada de diagnóstico:</p>
-      <button className="btn btn-primary" onClick={() => openCalendly?.()}>
-        Agendar Diagnóstico Gratis
-      </button>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default PresupuestoMinimoMetaAdsPage;
+export default BuenROASNichosPage;

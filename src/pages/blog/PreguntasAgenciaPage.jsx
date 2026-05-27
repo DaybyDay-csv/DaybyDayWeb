@@ -3,118 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Cómo sé si una agencia de paid media es buena?",
-    a: "Una buena agencia de paid media puede mostrar casos de estudio con métricas reales (ROAS, CPA, inversión), explica su metodología con claridad, tiene acceso directo a tu cuenta publicitaria (no trabaja en cuentas propias), y te ofrece reportes transparentes con los datos brutos de las plataformas.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuánto debería cobrar una agencia por gestionar Meta Ads?",
-    a: "El modelo más habitual es una tarifa fija mensual más porcentaje de la inversión. Para inversiones entre 3.000-10.000€/mes, una tarifa de 1.500-3.000€/mes de gestión más un 10-15% sobre la inversión es razonable en el mercado español. Ten cuidado con agencias que cobran solo porcentaje — tienen incentivo para gastar más, no para gastar mejor.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿En cuánto tiempo debería ver resultados con una agencia de publicidad?",
-    a: "Los primeros resultados medibles (datos de campaña, primeras conversiones) deberían aparecer en las primeras 2-4 semanas. Un ROAS o CPA estable y optimizado normalmente se alcanza entre el mes 2 y 3, cuando el algoritmo ha acumulado suficientes datos y las primeras rondas de optimización se han aplicado.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const PreguntasAgenciaPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="10 preguntas que debes hacer antes de contratar una agencia de paid media"
-    description="Antes de firmar con una agencia de Meta Ads o paid media, estas son las 10 preguntas que separan una buena agencia de una que te va a hacer perder tiempo y dinero."
-    slug="preguntas-contratar-agencia-paid-media"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
     datePublished="2026-03-10"
-    readingTime="6 min"
-    category="Estrategia"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
-    <h2 className="text-2xl font-black mt-10 mb-4">Por qué elegir mal una agencia de publicidad sale muy caro</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      Contratar la agencia equivocada no solo cuesta el fee mensual. Cuesta el presupuesto publicitario gestionado mal durante meses, el coste de oportunidad de no haber tenido los resultados que podías haber tenido, y el tiempo perdido en cambiar de agencia y empezar de cero con el algoritmo.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Estas 10 preguntas están diseñadas para separar con rapidez las agencias que saben lo que hacen de las que no. Hazte estas preguntas antes de cualquier reunión.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Las 10 preguntas clave</h2>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">1. ¿Trabajáis en mi cuenta publicitaria o en una cuenta de agencia propia?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Respuesta correcta: trabajan en tu cuenta. Si la agencia gestiona los anuncios en una cuenta propia, cuando termines la relación perderás todos los datos históricos, el pixel entrenado y los públicos acumulados. Es uno de los mayores red flags en el sector.
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h3 className="text-lg font-bold mt-6 mb-3">2. ¿Podéis mostrarme 2-3 casos de éxito con métricas reales?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Cualquier agencia competente tiene resultados que puede enseñar. Busca casos con tu mismo modelo de negocio (B2C, B2B, eCommerce, servicios) e inversión similar. Si los casos son vagos ("mejoramos el ROAS") sin números concretos, es una señal de alerta.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">3. ¿Quién va a gestionar mi cuenta día a día?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Muchas agencias venden el expertise de sus socios senior y luego asignan la cuenta a un junior con poca experiencia. Pregunta el nombre de la persona que gestionará tu cuenta, su experiencia y cuántas cuentas gestiona simultáneamente. Más de 8-10 cuentas por gestor suele significar poca atención.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">4. ¿Cómo es vuestra estructura de reporting? ¿Qué métricas seguís?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Respuesta correcta: reportes semanales o quincenales con métricas de negocio (ROAS, CPA, ingresos atribuidos) no solo métricas de vanidad (impresiones, alcance, CTR). Si el reporte es un PDF bonito sin datos brutos, pregunta si puedes acceder directamente a la plataforma.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">5. ¿Qué estrategia usáis para los creativos? ¿Los producís vosotros?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El creativo es el factor diferencial en Meta Ads. Una agencia que no tiene capacidad de producción creativa interna o una metodología clara de testing es una agencia que solo gestiona presupuesto, no que optimiza. Pregunta cuántas variaciones de creatividades producen por mes y cómo las testean.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">6. ¿Cuánto tiempo os comprometéis a trabajar antes de ver primeros resultados?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Respuesta honesta: 4-6 semanas para primeros datos útiles, 2-3 meses para resultados estables y optimizados. Si una agencia te promete resultados en la primera semana o garantiza ROAS específicos antes de ver la cuenta, desconfía.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">7. ¿Cómo gestionáis el período de aprendizaje del algoritmo?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Una agencia que entiende el algoritmo sabe que hacer muchos cambios en las primeras semanas reinicia el aprendizaje y penaliza el rendimiento. Pregunta qué cambios hacen durante la fase de aprendizaje y cuánto tiempo la respetan antes de optimizar.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">8. ¿Cómo es vuestra estructura de precios y qué está incluido?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Pide que te expliquen exactamente qué incluye el fee: gestión de campaña, producción creativa, copywriting, informes, consultoría estratégica. Las sorpresas en la factura (costes por creatividades extra, reuniones de estrategia aparte) son frecuentes con agencias poco transparentes.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">9. ¿Cuál es la duración mínima del contrato y cuáles son las condiciones de salida?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Los contratos de 12 meses con penalización por salida anticipada son una señal de que la agencia no confía en sus propios resultados. Lo razonable es un compromiso inicial de 3 meses (tiempo mínimo para ver resultados reales) con preaviso de 30 días después.
-    </p>
-
-    <h3 className="text-lg font-bold mt-6 mb-3">10. ¿Usáis IA o herramientas avanzadas de optimización en vuestra gestión?</h3>
-    <p className="text-white/70 leading-relaxed mb-5">
-      En 2026, las agencias que no han integrado IA en su flujo de trabajo (análisis de datos, producción de contenido, optimización de pujas) están compitiendo con herramientas de hace cinco años. No es solo sobre usar IA — es sobre cómo la usan para mejorar tus resultados específicamente.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Red flags que deberían hacerte salir de la reunión</h2>
-    <div className="space-y-2 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Garantizan resultados específicos antes de auditar tu cuenta",
-        "No pueden mostrar acceso a tus cuentas publicitarias directamente",
-        "No tienen casos de éxito con métricas verificables",
-        "Cobran solo porcentaje de la inversión (incentivo de gastar más, no mejor)",
-        "No explican qué hace exactamente su equipo mes a mes",
-        "Prometen 'viralidad' o resultados en redes sociales sin publicidad",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-red-400 mt-0.5 flex-shrink-0">✗</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
     <p className="text-white/70 leading-relaxed">
-      Si quieres ver cómo respondemos nosotros a estas preguntas, consulta{" "}
-      <Link to="/como-trabajamos" className="text-white underline underline-offset-2 hover:text-white/80">
-        cómo trabajamos en DayByDay
-      </Link>{" "}
-      o revisa nuestros{" "}
-      <Link to="/resultados" className="text-white underline underline-offset-2 hover:text-white/80">
-        casos de éxito con métricas reales
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
       </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default PreguntasAgenciaPage;
+export default BuenROASNichosPage;

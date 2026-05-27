@@ -3,154 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué CPA es bueno en Meta Ads para eCommerce?",
-    a: "Un CPA 'bueno' depende de tu margen bruto y del ticket medio de tu producto. Como referencia, el CPA debería ser inferior al 30-40% del valor del pedido para que la campaña sea rentable. En nuestros proyectos de eCommerce B2C hemos conseguido CPAs de 4,8€ en productos de moda y accesorios, aunque en sectores con tickets más altos el CPA puede estar en 20-80€ y seguir siendo rentable.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿El CPA y el CAC son lo mismo?",
-    a: "No. El CPA (Coste por Adquisición) mide el coste de conseguir una conversión específica dentro de una plataforma publicitaria (una compra, un lead). El CAC (Customer Acquisition Cost) es más amplio: incluye todos los costes de marketing y ventas, no solo los publicitarios. El CAC es el indicador real de cuánto cuesta conseguir un cliente nuevo para el negocio.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuánto tarda en bajar el CPA en Meta Ads?",
-    a: "Con una estrategia bien estructurada, el CPA empieza a mejorar a partir de las 2-3 primeras semanas (período de aprendizaje del algoritmo). La optimización más significativa ocurre entre el mes 1 y el mes 3, cuando hay suficientes datos para que Meta optimice bien las pujas y las audiencias. Mantener el CPA estable a largo plazo requiere renovación continua de creatividades.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const CPAPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Cómo reducir el CPA en Meta Ads para eCommerce — Guía paso a paso"
-    description="El CPA (Coste por Adquisición) es la métrica que determina si tus campañas de Meta Ads son rentables. Te explicamos las causas más comunes de un CPA alto y las acciones concretas para reducirlo."
-    slug="como-reducir-cpa-ecommerce"
-    datePublished="2026-03-08"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
     readingTime="8 min"
-    category="Meta Ads"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
-    <p className="text-white/70 leading-relaxed mb-6 text-base border-l-2 border-white/20 pl-4 italic">
-      Un CPA alto es el problema más común en las cuentas de Meta Ads que auditamos. La mayoría de las veces no es un problema de presupuesto sino de estructura, creatividades o optimización del funnel. Aquí están las causas reales y cómo arreglarlas.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es el CPA y por qué importa</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      El CPA (Coste por Adquisición) es el coste medio que pagas para conseguir una conversión — en eCommerce, una compra. Se calcula dividiendo el gasto total en publicidad entre el número de ventas obtenidas.
-    </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-5">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula del CPA</p>
-      <p className="font-mono text-white text-sm">CPA = Gasto publicitario ÷ Número de conversiones</p>
-      <p className="text-white/50 text-xs mt-2">Ejemplo: 3.000€ invertidos ÷ 625 compras = CPA de 4,8€</p>
-    </div>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El CPA no es bueno o malo de forma absoluta. Un CPA de 50€ puede ser excelente si vendes sofás de 800€, pero ruinoso si vendes camisetas de 30€. Lo que importa es la relación entre el CPA y el margen bruto de cada venta.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Las 6 causas más comunes de CPA alto en Meta Ads</h2>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-    <h3 className="text-lg font-bold mt-7 mb-3">1. Fatiga creativa no detectada</h3>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Cuando los mismos anuncios llevan semanas activos, la frecuencia sube, el CTR cae y Meta necesita más impresiones para conseguir cada clic. El CPA escala de forma silenciosa. Revisa la frecuencia en Ads Manager: si supera 3-4 en 7 días, es hora de renovar creatividades.
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h3 className="text-lg font-bold mt-7 mb-3">2. Estructura de campañas fragmentada</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Tener 15 campañas pequeñas con 20€/día cada una impide que Meta acumule suficientes datos por campaña para optimizar correctamente. El algoritmo necesita mínimo 50 eventos de optimización por semana por campaña para salir del aprendizaje. Consolidar el presupuesto en menos campañas con más inversión individual mejora el CPA de forma significativa.
-    </p>
-
-    <h3 className="text-lg font-bold mt-7 mb-3">3. Audiencias demasiado pequeñas o solapadas</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Las audiencias muy pequeñas (+500K personas en España) se agotan rápido y el CPM sube porque Meta ya ha impactado a casi todos sus miembros. Las audiencias solapadas entre conjuntos de anuncios hacen que Meta compita contra sí mismo en la misma subasta. Usa el Inspector de Solapamiento de Audiencias para detectarlo.
-    </p>
-
-    <h3 className="text-lg font-bold mt-7 mb-3">4. Landing page que no convierte</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Si el anuncio es bueno pero la ficha de producto o la landing page no convierte, el CPA sube aunque el CTR sea excelente. Los puntos críticos son: tiempo de carga superior a 3 segundos, descripción del producto poco convincente, ausencia de prueba social (reviews) y fricción en el proceso de pago (demasiados pasos, pocas opciones de pago).
-    </p>
-
-    <h3 className="text-lg font-bold mt-7 mb-3">5. Presupuesto mal distribuido entre frío y retargeting</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Un error frecuente es invertir demasiado en prospección fría y muy poco en retargeting. Los usuarios que ya visitaron tu web o añadieron al carrito tienen tasas de conversión 5-10 veces superiores a la audiencia fría. Destinar un 20-30% del presupuesto a retargeting de 7-14 días suele reducir el CPA global del conjunto de la cuenta.
-    </p>
-
-    <h3 className="text-lg font-bold mt-7 mb-3">6. Píxel mal configurado o con pérdida de señal</h3>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Si el píxel de Meta no registra correctamente todos los eventos de compra (por bloqueadores de anuncios, problemas de iOS o errores de implementación), Meta no tiene los datos reales para optimizar y busca conversiones de forma ineficiente. Activa la API de Conversiones (CAPI) del lado del servidor para recuperar señal perdida — es el paso más impactante en cualquier cuenta de eCommerce en 2026.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Plan de acción para reducir el CPA paso a paso</h2>
-    <div className="space-y-4 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          paso: "Semana 1",
-          accion: "Diagnóstico",
-          detalle: "Auditar la cuenta: frecuencia, solapamiento de audiencias, cobertura del píxel. Identificar las campañas con CPA más alto y analizar por qué.",
-        },
-        {
-          paso: "Semana 2",
-          accion: "Quick wins",
-          detalle: "Desactivar creatividades con frecuencia >3. Consolidar campañas pequeñas. Activar CAPI si no está activa. Añadir retargeting de 7 días si no existe.",
-        },
-        {
-          paso: "Semana 3-4",
-          accion: "Nuevas creatividades",
-          detalle: "Producir 6-10 variaciones nuevas (al menos 3 formatos diferentes). Testear con un 20% del presupuesto antes de escalar.",
-        },
-        {
-          paso: "Mes 2",
-          accion: "Escalado",
-          detalle: "Escalar los conjuntos de anuncios ganadores subiendo el presupuesto máximo un 20% cada 3 días. Activar Advantage+ Shopping para prospección fría.",
-        },
-      ].map(({ paso, accion, detalle }) => (
-        <div key={paso} className="bg-[#1a1616] border border-white/8 rounded-xl p-5 flex gap-4">
-          <div className="text-xs font-bold uppercase tracking-wider text-white/30 w-20 flex-shrink-0">{paso}</div>
-          <div>
-            <div className="font-bold text-sm mb-1">{accion}</div>
-            <p className="text-white/60 text-xs leading-relaxed">{detalle}</p>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
           </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">El papel del CRO en la reducción del CPA</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El CPA no depende solo de Meta Ads. La tasa de conversión de tu tienda online es igual de importante. Si tu Shopify convierte al 1,5% y consigues subirlo al 2,5%, tu CPA cae un 40% sin tocar ni un euro de presupuesto publicitario.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
-    <div className="space-y-3 mb-5">
+
+    <div className="space-y-3 mb-8">
       {[
-        "Velocidad de carga — cada segundo extra reduce la conversión un 7%",
-        "Imágenes de producto de alta calidad con múltiples ángulos",
-        "Reseñas de clientes visibles en la ficha de producto",
-        "Checkout simplificado — eliminar pasos innecesarios",
-        "Apple Pay y Google Pay — reducen la fricción en mobile",
-        "Urgencia y escasez real — stock limitado, ofertas con cuenta atrás",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-3 text-sm text-white/70">
-          <span className="text-yellow-400 mt-0.5 flex-shrink-0">↑</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: CPA de 4,8€ en Garett España</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Garett España es un eCommerce B2C de accesorios tecnológicos. Al auditarles, encontramos: creatividades con frecuencia alta, presupuesto fragmentado en demasiadas campañas y píxel sin CAPI activo. En 6 semanas, aplicando el plan de acción descrito arriba, conseguimos estos resultados:
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
-    <div className="grid grid-cols-2 gap-4 mb-5">
-      {[
-        { label: "CPA conseguido", value: "4,8 €", highlight: true },
-        { label: "Clicks totales", value: "14.936" },
-        { label: "Inicios de pago", value: "661" },
-        { label: "Inversión total", value: "3.179 €" },
-      ].map(({ label, value, highlight }) => (
-        <div key={label} className={`bg-[#1a1616] border rounded-xl p-4 ${highlight ? "border-white/20" : "border-white/8"}`}>
-          <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
-          <div className={`font-bold text-lg ${highlight ? "text-white" : "text-white/80"}`}>{value}</div>
-        </div>
-      ))}
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
     <p className="text-white/70 leading-relaxed">
-      Si quieres que auditemos tu cuenta de Meta Ads y te digamos exactamente qué está subiendo tu CPA, consulta nuestro <Link to="/servicios/meta-ads" className="text-white underline underline-offset-2 hover:text-white/80">servicio de gestión de Meta Ads</Link> o <Link to="/servicios/ecommerce" className="text-white underline underline-offset-2 hover:text-white/80">nuestro servicio para eCommerce</Link>.
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
     </p>
   </BlogPostLayout>
 );
 
-export default CPAPage;
+export default BuenROASNichosPage;

@@ -3,204 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es un media buyer?",
-    a: "Un media buyer es el profesional que gestiona la compra y optimización de espacios publicitarios de pago: Meta Ads, Google Ads, TikTok Ads y otros canales. Se encarga de que cada euro invertido genere el máximo retorno posible, combinando estrategia, análisis de datos y conocimiento profundo de las plataformas.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Qué diferencia hay entre un media buyer y un community manager?",
-    a: "El media buyer gestiona publicidad de pago (campañas, presupuestos, optimización de ROAS), mientras que el community manager gestiona la presencia orgánica y la comunidad en redes sociales. Son perfiles complementarios pero muy distintos: el media buyer trabaja con dinero y métricas de retorno; el CM trabaja con contenido y engagement.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuándo necesita mi ecommerce contratar un media buyer?",
-    a: "Cuando inviertes más de 3.000€/mes en publicidad de pago y los resultados no mejoran de forma consistente, o cuando quieres escalar sin que el ROAS caiga. También cuando tu equipo interno no tiene la especialización técnica en plataformas como Meta o Google para gestionar campañas complejas con múltiples audiencias.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cuánto cobra un media buyer en España?",
-    a: "Un media buyer freelance en España cobra entre 1.500€ y 4.500€/mes según experiencia y volumen de inversión gestionada. Las agencias especializadas cobran entre 800€ y 3.000€/mes en fee fijo o un porcentaje de la inversión (habitualmente 10-20%). Los perfiles senior con historial demostrable pueden superar los 5.000€/mes.",
-  },
-  {
-    q: "¿Qué habilidades debe tener un buen media buyer para ecommerce?",
-    a: "Dominio técnico de Meta Ads y Google Ads (estructura de campañas, pujas, audiencias), capacidad de análisis de datos (ROAS, CPA, LTV, MER), conocimiento del ecommerce D2C (funnel de ventas, ticket medio, márgenes), experiencia con creatividades y UGC, y mentalidad de test constante. La IA y la automatización son un plus cada vez más importante.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const QueEsUnMediaBuyerPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Qué es un media buyer: rol, funciones y cuándo contratar uno"
-    description="Descubre qué es un media buyer, qué funciones tiene, cómo se diferencia de otros perfiles de marketing y cuándo tu ecommerce D2C necesita contratar uno. Guía completa 2026."
-    slug="que-es-un-media-buyer"
-    datePublished="2026-03-12"
-    dateModified="2026-03-12"
-    readingTime="7 min"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
     category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
-    <p className="text-white/70 leading-relaxed mb-6">
-      Un <strong>media buyer</strong> es el profesional especializado en comprar y optimizar espacios publicitarios de pago para maximizar el retorno de cada euro invertido. En el contexto del ecommerce D2C español, este perfil se ha convertido en una pieza clave para marcas que quieren escalar sin quemar presupuesto. Aquí te explicamos exactamente qué hace, qué habilidades necesita y cómo diferenciarlo de otros perfiles.
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
     <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
-      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Dato clave</p>
-            {link_para}
-            
-      <p className="text-white/70 text-sm leading-relaxed">
-        España es el 5º mercado de publicidad digital en Europa con 6.211 millones de euros invertidos en 2025, un crecimiento del +11,2% respecto al año anterior. La demanda de media buyers especializados en D2C no ha parado de crecer desde 2022.
-      </p>
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué hace exactamente un media buyer</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El trabajo de un media buyer va mucho más allá de "poner anuncios". Es un perfil técnico-estratégico que combina análisis de datos, conocimiento profundo de plataformas y visión de negocio. Sus responsabilidades principales incluyen:
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
-    <ul className="space-y-2 mb-8">
+
+    <div className="space-y-3 mb-8">
       {[
-        "Planificar la estrategia de canales: dónde invertir (Meta, Google, TikTok, Pinterest) y con qué distribución de presupuesto",
-        "Crear y estructurar campañas: arquitectura de cuentas, conjuntos de anuncios, segmentación de audiencias",
-        "Gestionar las pujas: estrategias de bidding automático vs manual, optimización del CPA objetivo",
-        "Analizar y optimizar resultados: ROAS, CPA, CTR, frecuencia, coste por resultado",
-        "Testear creatividades: A/B testing de copies, imágenes, vídeos y formatos",
-        "Reportar y comunicar: dashboards con métricas claras para el cliente o dirección",
-        "Escalar lo que funciona sin romper el ROAS al subir inversión",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-green-400 flex-shrink-0 mt-0.5">✓</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
       ))}
-    </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Media buyer vs otros perfiles de marketing digital</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      La confusión entre perfiles es habitual, especialmente en equipos pequeños donde una persona acaba haciendo de todo. Esta tabla aclara las diferencias clave:
-    </p>
-    <div className="overflow-x-auto mb-8">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide">Perfil</th>
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide">Qué gestiona</th>
-            <th className="text-left py-3 text-white/40 font-semibold text-xs uppercase tracking-wide">Métrica principal</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            ["Media Buyer", "Publicidad de pago (Meta, Google, TikTok)", "ROAS / CPA / MER"],
-            ["Community Manager", "Presencia orgánica en redes sociales", "Engagement / Alcance"],
-            ["SEO Specialist", "Posicionamiento orgánico en buscadores", "Tráfico orgánico / Rankings"],
-            ["Growth Hacker", "Experimentos de crecimiento multicanal", "CAC / LTV / Conversión"],
-            ["Traffic Manager", "Todo el tráfico web (pago + orgánico)", "Tráfico total / ROAS global"],
-          ].map(([perfil, gestion, metrica]) => (
-            <tr key={perfil} className="border-b border-white/5">
-              <td className="py-3 pr-4 text-white/80 font-medium">{perfil}</td>
-              <td className="py-3 pr-4 text-white/50">{gestion}</td>
-              <td className="py-3 text-white/50">{metrica}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Media buyer freelance vs agencia de paid media: qué elegir</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Esta es una de las decisiones más importantes para un founder D2C. Ambas opciones tienen ventajas reales, pero dependen del volumen de inversión, la complejidad de los canales y el nivel de soporte que necesitas.
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide">Criterio</th>
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide">Media buyer freelance</th>
-            <th className="text-left py-3 text-white/40 font-semibold text-xs uppercase tracking-wide">Agencia paid media</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            ["Precio", "1.500€–4.500€/mes", "800€–3.000€/mes + gestión"],
-            ["Disponibilidad", "Limitada (suele llevar varios clientes)", "Equipo dedicado"],
-            ["Especialización D2C", "Depende del perfil", "Alta en agencias especializadas"],
-            ["Escalabilidad", "Limitada por capacidad del individuo", "Alta — más recursos al crecer"],
-            ["Riesgo", "Alto si se va o enferma", "Bajo — continuidad garantizada"],
-          ].map(([criterio, freelance, agencia]) => (
-            <tr key={criterio} className="border-b border-white/5">
-              <td className="py-3 pr-4 text-white/80 font-medium">{criterio}</td>
-              <td className="py-3 pr-4 text-white/50">{freelance}</td>
-              <td className="py-3 text-white/50">{agencia}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-6">
-      Para saber cuánto invierte normalmente una agencia de paid media o cuánto cobra un media buyer, puedes consultar{" "}
-      <a
-        href="https://www.iabspain.es/wp-content/uploads/2025/02/InformeInversion_publicidadDigital_IABSpain_2024.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#de0015] hover:text-red-400 underline"
-      >
-        el estudio de inversión publicitaria de IAB Spain
-      </a>
-      {" "}como referencia del mercado español.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Señales de que necesitas un media buyer (o cambiarlo)</h2>
-    <ul className="space-y-2 mb-8">
+    <div className="space-y-3 mb-8">
       {[
-        "Tu ROAS lleva más de 2 meses estancado o bajando sin explicación clara",
-        "Estás invirtiendo más de 3.000€/mes y no tienes un reporte claro de resultados",
-        "Nadie en tu equipo sabe explicar por qué una campaña funciona o no",
-        "Llevas meses sin hacer un test A/B de creatividades",
-        "El CPA está subiendo mes a mes y nadie tiene un plan para reducirlo",
-        "Tu agencia actual no te da acceso directo a un perfil senior",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-[#de0015] flex-shrink-0 mt-0.5">⚠</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
       ))}
-    </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      En DayByDay actuamos como el media buyer externo de tu ecommerce D2C. Trabajamos exclusivamente con marcas D2C, lo que significa que conocemos los benchmarks reales de tu sector: los ROAS medios por nicho en España, los CPAs típicos según el ticket medio, y las estrategias de escala que funcionan sin quemar el presupuesto.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-6">
-      Nuestro modelo es diferente al de una agencia tradicional: acceso directo al perfil senior que gestiona tus campañas, reporting semanal con métricas reales (no vanity metrics) y metodología propia de IA + automatización. Puedes ver en detalle{" "}
-      <Link to="/como-trabajamos" className="text-[#de0015] hover:text-red-400 underline">
-        cómo trabajamos
-      </Link>{" "}
-      antes de hablar con nosotros.
-    </p>
-
-    <div className="bg-[#1a1616] border border-white/10 rounded-2xl p-6 mb-8 text-center">
-      <p className="text-white/60 text-sm mb-4">
-        ¿Quieres saber si tu ecommerce necesita un media buyer especializado o estás pagando de más por resultados mediocres?
-      </p>
-      <button
-        onClick={openCalendly}
-        className="bg-[#de0015] hover:bg-red-600 text-white font-bold text-sm px-6 py-3 rounded-xl transition-colors"
-      >
-        Auditoría gratuita →
-      </button>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <ul className="space-y-2 mb-4">
-      {[
-        ["/blog/media-buyer-vs-agencia-ecommerce-d2c", "Media buyer vs agencia de publicidad: qué necesita tu D2C"],
-        ["/blog/cuanto-cobra-media-buyer-freelance-espana", "Cuánto cobra un media buyer freelance en España en 2026"],
-        ["/blog/preguntas-contratar-agencia-paid-media", "10 preguntas que debes hacer antes de contratar una agencia de paid media"],
-        ["/blog/checklist-auditoria-campanas-paid-media", "Checklist para auditar tus campañas de paid media"],
-      ].map(([to, label]) => (
-        <li key={to}>
-          <Link to={to} className="text-[#de0015] hover:text-red-400 text-sm underline">
-            {label}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default QueEsUnMediaBuyerPage;
+export default BuenROASNichosPage;

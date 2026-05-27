@@ -3,264 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué diferencia hay entre CAC blended y CAC por canal?",
-    a: "CAC blended (o blended CAC) divide todo el gasto de marketing del periodo entre todos los clientes nuevos del mismo periodo, sin distinguir canal. CAC por canal, en cambio, intenta atribuir cada cliente al canal que lo trajo (Meta, Google, email, orgánico) usando el modelo de atribución de la plataforma o el del CRM. El blended es resistente al ruido de atribución y refleja la realidad financiera del negocio; el CAC por canal es útil para decisiones de asignación de presupuesto pero depende totalmente del modelo de atribución elegido y suele inflar al canal con más cookies (last-click)."
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuál de los dos CAC se usa para escalar un D2C?",
-    a: "Para decisiones de escalado a nivel negocio (cuánto puedo invertir en marketing manteniendo márgenes) se usa el CAC blended comparado contra el LTV blended. Para decisiones tácticas dentro de cada canal (subir/bajar presupuesto en un ad set, pausar una campaña Google) se usa el CAC del canal con la métrica que ofrece la plataforma. La regla práctica que aplicamos: la dirección del negocio mira blended; el media buyer mira por canal. Mezclarlos genera decisiones contradictorias — el media buyer sube presupuesto porque su CAC en plataforma es bueno, mientras el blended se dispara porque el incremental real es bajo."
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Por qué mi CAC por canal es mucho mejor que el CAC blended?",
-    a: "Casi siempre por dos motivos: (1) atribución last-click duplica conversiones — Meta y Google se apuntan la misma venta porque ambos tocaron al usuario; (2) hay tráfico orgánico, recurrente o de marca que las plataformas se atribuyen pero que habría convertido igual sin pagar. El gap típico que vemos en cuentas D2C españolas es 30-60%: si la suma de CAC por canal da 25€ pero el blended da 38€, sobra atribución en algún sitio. El blended no miente; las plataformas sí."
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cómo calculo el CAC blended correctamente?",
-    a: "Fórmula: (gasto total marketing del periodo + costes herramientas + fees agencia) / clientes nuevos del periodo. Cliente nuevo = primera compra histórica, no primera compra del mes. Periodo mínimo recomendado 30 días para amortiguar ciclo de conversión; en tickets altos (\u003e200€) usar 60-90 días. Excluye del numerador costes que no generan adquisición (retención, CRM puro). Excluye del denominador a clientes recurrentes — si los cuentas, infla el resultado y rompe la comparación con LTV de primer pedido."
-  },
-  {
-    q: "¿Qué relación CAC blended / LTV es saludable en eCommerce D2C?",
-    a: "Depende del horizonte de LTV considerado. Con LTV a 12 meses, el ratio LTV:CAC blended sano para escalar D2C en España está en 3:1 mínimo — por debajo cuesta crecer sin comerse el margen. En productos de recompra alta (suplementos, café, cosmética) puede aceptarse 2:1 a 12 meses si LTV a 24 meses sube a 4-5:1. En productos de un solo uso (regalo, electrónica) el ratio debe medirse contra margen de la primera venta, no LTV proyectado, y conviene exigir CAC blended ≤60% del margen bruto del primer pedido."
-  },
-  {
-    q: "¿Vale la pena montar Marketing Mix Modeling para resolver el CAC por canal?",
-    a: "Sí cuando el negocio supera ~50K€/mes de spend total y hay \u003e2 canales relevantes. Por debajo, MMM es un cañonazo para matar mosca: el coste de implementarlo y mantenerlo no se recupera en eficiencia. Antes que MMM, en cuentas medianas funciona muy bien combinar tres lecturas paralelas: CAC blended (verdad financiera), CAC plataforma (decisión táctica) y geo lift o holdout tests trimestrales para medir incrementalidad real de un canal concreto. Esa triangulación cubre el 80% de las decisiones que tomaría un MMM sin la complejidad."
-  },
-  {
-    q: "¿Cómo afecta iOS y la pérdida de cookies al CAC por canal?",
-    a: "Mucho, y desigual. Meta sufrió más que Google porque dependía más de la cookie cross-site, pero ambos han recuperado parte vía modeled conversions y CAPI/Enhanced Conversions. El efecto neto: el CAC por canal que reportan las plataformas hoy mezcla conversiones reales con conversiones modeladas estadísticamente — fiabilidad menor que pre-2021. Por eso el blended ha ganado peso: no depende de cookies, mide outputs (clientes nuevos) contra inputs (gasto total) sin atribución. En cuentas D2C medianas, mirar solo CAC plataforma en 2026 es ir ciego."
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const CacBlendedVsCacCanalEcommercePage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="CAC blended vs CAC por canal: qué métrica usar para escalar un D2C"
-    description="Diferencias entre CAC blended y CAC por canal en eCommerce D2C: cuándo usar cada uno, cómo calcularlos sin inflar resultados, ratios LTV:CAC saludables, por qué la suma de CAC por canal no cuadra con el blended y cuándo merece la pena saltar a Marketing Mix Modeling."
-    slug="cac-blended-vs-cac-canal-ecommerce"
-    datePublished="2026-05-04"
-    dateModified="2026-05-04"
-    readingTime="9 min"
-    category="Métricas"
-    keywords={[
-      "cac blended ecommerce",
-      "cac por canal d2c",
-      "blended cac vs platform cac",
-      "ltv cac ratio ecommerce",
-      "metricas escalado d2c",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El <strong className="text-white">CAC blended</strong> es la métrica que más fricción genera entre dirección y media buyer en un D2C. La plataforma dice que el CAC en Meta está en 22€, el de Google en 18€, y la dirección mira el dashboard financiero y ve un CAC real de 41€. ¿Quién miente? Ninguno. Están midiendo cosas distintas — y entender la diferencia es lo que separa a los D2C que escalan rentables de los que escalan facturación pero hunden margen.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      En esta guía explicamos qué mide cada CAC, cuándo usar uno u otro, cómo calcularlos sin inflar el dato y qué ratios LTV:CAC son realistas en eCommerce D2C español en 2026.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
-            {link_para}
-            
 
-    <h2 className="text-2xl font-black mt-10 mb-4">CAC blended vs CAC por canal: en qué se diferencian</h2>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Aspecto</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">CAC blended</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">CAC por canal</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { a: "Cómo se calcula", b: "Gasto total marketing / clientes nuevos totales", c: "Gasto canal / conversiones atribuidas al canal" },
-            { a: "Depende de atribución", b: "No", c: "Totalmente — last-click, data-driven o modelo CRM" },
-            { a: "Refleja realidad financiera", b: "Sí (es lo que cuadra con P&L)", c: "Aproximación — suele optimismo plataforma" },
-            { a: "Útil para", b: "Decisiones de inversión total y ratios LTV:CAC", c: "Decisiones tácticas dentro del canal" },
-            { a: "Sufre con iOS y cookies", b: "Cero", c: "Mucho — ahora con modeled conversions" },
-            { a: "Quién la usa", b: "CFO, founder, head of growth", c: "Media buyer, performance manager" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.a}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.b}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.c}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La <a href="https://www.shopify.com/blog/customer-acquisition-cost" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de Shopify sobre CAC</a> insiste en lo mismo: el CAC blended es la única métrica que cuadra con el negocio real. Todo lo demás son aproximaciones útiles para tomar decisiones tácticas.
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Por qué la suma de CAC por canal nunca cuadra con el blended</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Caso real recurrente en cuentas que auditamos: el CFO ve CAC blended de 38€ y la suma ponderada de CAC por canal da 25€. Gap del 52%. Las causas habituales:
-    </p>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Doble atribución entre plataformas: Meta cuenta una venta porque hizo last-click después de ver un anuncio; Google la cuenta porque el usuario buscó la marca tras ver Meta. Ambos suman, el negocio solo cobra una vez.",
-        "Conversiones modeladas: Meta y Google reportan conversiones que no se han observado, las estiman estadísticamente. En 2026 el % modelado puede llegar al 25-35% en cuentas D2C sin CAPI o Enhanced Conversions correctamente configurados.",
-        "Tráfico orgánico/marca contado como pago: el usuario buscaba 'marca + producto' y Google Ads se atribuye la venta porque pujó por su propia marca. Esa venta habría sucedido sin spend.",
-        "Recurrentes mezclados con nuevos: si el denominador de CAC plataforma incluye recompras, el CAC sale artificialmente bajo. El blended bien calculado solo cuenta clientes nuevos.",
-        "Costes ocultos no asignados: fees de agencia, herramientas (Triple Whale, Northbeam, Klaviyo), influencer pagado fuera de plataforma. El blended los recoge, el CAC por canal los ignora.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular el CAC blended sin inflarlo ni desinflarlo</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Fórmula correcta:
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6 text-white/80 text-sm leading-relaxed">
-      <strong className="text-white">CAC blended</strong> = (gasto Meta + gasto Google + otros pagados + fees agencia + herramientas adquisición + influencer/PR pagado) / clientes nuevos del periodo
-    </div>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Reglas de cálculo que evitan errores típicos:
-    </p>
-    <div className="space-y-3 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        "Cliente nuevo = primera compra de su historial, no primera compra del mes. Usa el order_number = 1 del CRM o Shopify, no el filtro 'new customers' de la plataforma.",
-        "Periodo mínimo 30 días. Tickets >200€ o ciclo de decisión largo: usa 60-90 días para amortiguar el delay entre clic y compra.",
-        "Excluye del numerador costes de retención puros: email marketing transaccional, costes CRM solo para recurrentes, programa de referidos sobre compradores existentes.",
-        "Incluye en el numerador todo gasto que toca usuario nuevo: fees de agencia paid media, herramientas de adquisición (no las de retención), gasto en creatividad si es atribuible.",
-        "Si tienes orgánico fuerte y quieres aislar el CAC de pago, calcula CAC pagado blended = (gasto pagado total) / (clientes nuevos llegados por canales pagados). Necesitas atribución mínima decente para hacerlo, pero es más útil que el CAC blended global cuando >40% del tráfico es orgánico.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Ratios LTV:CAC blended saludables en D2C español 2026</h2>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Tipo producto</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">LTV horizonte</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Ratio mínimo escalable</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Ratio sano</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { t: "Suplementos / café / consumibles recurrentes", l: "12 meses", m: "2,5:1", s: "4:1" },
-            { t: "Cosmética / cuidado personal", l: "12 meses", m: "3:1", s: "4-5:1" },
-            { t: "Moda D2C", l: "12 meses", m: "3:1", s: "4:1" },
-            { t: "Ticket alto / hogar / electrónica", l: "Primer pedido (margen)", m: "CAC ≤60% margen bruto", s: "CAC ≤40% margen bruto" },
-            { t: "Producto de un solo uso (regalo)", l: "Primer pedido", m: "CAC ≤50% margen", s: "CAC ≤30% margen" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.t}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.l}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.m}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.s}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
     </div>
     <p className="text-white/70 leading-relaxed mb-5">
-      El benchmark clásico LTV:CAC 3:1 que circula en blogs anglosajones (popularizado por <a href="https://www.klipfolio.com/resources/kpi-examples/saas/customer-lifetime-value-to-customer-acquisition-ratio" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Klipfolio y otros</a>) viene de SaaS — en eCommerce D2C español hay que ajustarlo a recurrencia y margen real, no aplicarlo plano.
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos en DayByDay</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Dashboard único con tres CAC en paralelo: blended (financiero), CAC por canal según plataforma y CAC pagado blended (gasto pagado / clientes nuevos vía pago). Ver los tres elimina discusiones eternas sobre 'cuál es el real'.",
-        "Definición compartida con el cliente: qué entra en numerador, qué entra en denominador, qué periodo. Sin esto, cada vez que sube alguien nuevo al equipo se vuelve a discutir el dato.",
-        "Revisión mensual de gap blended vs suma plataforma: si crece más del 60%, hay problema de atribución (CAPI mal, marca pujada por Google, exceso modeled). Lo investigamos antes de tomar decisiones de presupuesto.",
-        "Decisiones de escalado a nivel negocio sobre CAC blended + LTV a 12m. Decisiones tácticas dentro de Meta/Google sobre métricas plataforma con ROAS objetivo derivado del blended.",
-        "Holdout o geo-lift trimestral en cuentas >30K€/mes spend: apagamos un canal en una región durante 2-4 semanas para medir incrementalidad real. Es la única forma rigurosa de saber qué pasaría sin ese canal.",
-        "MMM solo cuando spend supera 50K€/mes y hay >2 canales relevantes. Por debajo, la triangulación blended + plataforma + holdouts cubre el 80% de decisiones sin la complejidad.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu CAC plataforma y tu CAC financiero no cuadran?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos cómo calculas CAC blended, qué atribución usas y dónde está el gap real entre lo que dice la plataforma y lo que cuadra en P&L.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/dashboard-paid-media-founder-d2c" className="text-white font-semibold hover:text-white/80">
-          Dashboard de paid media: qué métricas debe ver un founder D2C cada lunes →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Las 3 capas del dashboard del founder con MER blended y CAC adquisición específico como métricas north star</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/adquisicion-vs-retencion-paid-media-d2c" className="text-white font-semibold hover:text-white/80">
-          Adquisición vs retención: cómo separar presupuestos de paid media en D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo separar el CAC blended en bucket adquisición y bucket retención para tomar decisiones de spend con margen</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Margen de contribución vs ROAS: la métrica que media buyers olvidan →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué el ROAS in-platform engaña y cómo derivar el CAC objetivo desde el margen de contribución</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
-          CAC vs LTV: cómo construir un eCommerce escalable →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Marco completo para usar la relación CAC:LTV en decisiones de inversión y precio</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/incrementality-testing-meta-ads-d2c" className="text-white font-semibold hover:text-white/80">
-          Incrementality testing en Meta Ads: cómo medir el lift real →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El test causal que detecta cuánto del gap MER vs ROAS por canal es sobreatribución</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white font-semibold hover:text-white/80">
-          Benchmark ROAS por sector en España 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo derivar tu ROAS objetivo desde el CAC blended y márgenes reales del sector</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Métricas de Meta Ads que importan en eCommerce →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Qué mirar dentro de la plataforma cuando ya tienes el CAC blended bajo control</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/checklist-auditoria-campanas-paid-media" className="text-white font-semibold hover:text-white/80">
-          Checklist para auditar campañas de paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo detectar problemas de atribución que inflan el CAC plataforma frente al blended</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/modelos-atribucion-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
-          Modelos de atribución para D2C: last-click, data-driven y MMM explicados →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué el CAC por canal nunca cuadra: el modelo de atribución que hay detrás</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/marketing-mix-modeling-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
-          Marketing Mix Modeling (MMM) para D2C: cuándo aplicarlo y qué resuelve →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cuándo MMM cierra el gap entre CAC blended y CAC por canal en cuentas grandes</p>
-      </div>
-    </div>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default CacBlendedVsCacCanalEcommercePage;
+export default BuenROASNichosPage;

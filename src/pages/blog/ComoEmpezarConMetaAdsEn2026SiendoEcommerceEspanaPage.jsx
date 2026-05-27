@@ -1,143 +1,180 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
-import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
-    q: "¿CBO o ABO en 2026? La decisión que cambia tu ROAS en eCommerce español",
-    a: "En 2026, el 65-70% del spend en cuentas Meta Ads españolas 10K€€/mes opera ya en CBO o Advantage+ Shopping, frente a solo un 5-15% que sigue con ABO estructurado. Sin embargo, la decisión correcta depende de tu fase de scaling: si estás en 0-10K€/mes de spend, ABO te da control granular que necesitas para aprender. Si ya estás en 10K€+ con histórico de 90+ días, CBO/Advantage+ típicamente supera al ABO en eficiencia en un 17% de media según datos internos de Meta. La clave está en cuándo hacer el cambio — anticiparlo destruye rendimiento."
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuándo CBO destruye tu rendimiento y cómo detectarlo antes de perder presupuesto?",
-    a: "CBO destruye rendimiento cuando: (1) tienes menos de 5-7 productos activos en el catálogo — Advantage+ Shopping necesita volumen para aprender; (2) el histórico de la cuenta es menos de 45 días — el algoritmo no tiene datos suficientes; (3) tienes audiencias exclusions muy agresivas que fragmentan el pool; (4) el presupuesto diario es menos de 3 veces tu CPA objetivo, forzando al algoritmo a optimizar por volumen en vez de valor. Señales de alerta: CPA sube &gt;20% en semana 2-3 del campaign, frecuencia sube sin conversión, ROAS cae en vez de mejorar. Monitoriza semana a semana: si no ves mejora en CPM y frecuencia en semana 3, pausa y revierte a ABO."
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Qué cuentas D2C en España deberían seguir usando ABO en lugar de CBO?",
-    a: "Las cuentas que deben mantener ABO en 2026 son: (1) D2C con menos de 500 pedidos/mes — el algoritmo de CBO no tiene suficiente señal; (2) marcas con catálogo muy pequeño (menos de 8 SKUs activos) o productos estacionales con rotación baja; (3) cuentas nuevas (<60 días) que aún están construyendo históricos de conversión; (4) equipos que necesitan control granular sobre bid strategies por product category; (5) accounts con múltiples eventos de micro-conversión donde el valor del cliente varía mucho por audiencia. En España, el segmento moda deportiva y beleza tienen suficiente volumen para CBO. Supplements y alimentación premium mejor con ABO hasta alcanzar masa crítica."
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Meta Advantage+ Shopping es CBO o ABO? La respuesta que confunde a muchos gestores",
-    a: "Advantage+ Shopping es un CBO híbrido — el algoritmo decide la composición de audiencia y segmentation automáticamente, pero tú sigues configurando el presupuesto y el valor de conversión por evento. No es ABO puro porque pierdes control sobre qué audiences se priorizan. No es CBO puro porque puedes establecer ROAS target y constraints que ABO tradicional no permite. En la práctica, Advantage+ Shopping es la evolución de CBO diseñada para récproca: aprende de tus mejores clientes y busca audiencias similares automáticamente. Si ya usas Advantage+ Shopping con ROAS target activo, estás en el setup más avanzado disponible para eCommerce en 2026."
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
-  {
-    q: "¿Merece la pena migrar de ABO a CBO si ya tienes campañas rentables?",
-    a: "Migrar de ABO a CBO con campañas ya rentables es el error más caro en Meta Ads en 2026. Si tienes un ROAS estable 3x con ABO estructurado, la regla es: nunca migrar en caliente. La estrategia correcta es crear un CBO paralelo con budget del 20% del spend de tu ABO winner y darle 30 días de aprendizaje. Si el CBO paralelo supera al ABO en ROAS durante 3 semanas consecutivas, então puedes escalar el CBO y reducir gradualmente el ABO. Si no supera, cancelas el CBO test y mantienes el ABO. Esto te da datos reales sin arriesgar tu cash flow."
-  }
 ];
 
-const CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="CBO vs ABO Meta Ads 2026: cuál gana en eCommerce España"
-    description="CBO vs ABO Meta Ads 2026: análisis real de cuál strategy gana en eCommerce español. Datos, benchmarks y framework de decisión para escalar sin romper ROAS."
-    slug="cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana"
-    datePublished="2026-05-20"
-    dateModified="2026-05-20"
-    readingTime="9 min"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
     category="Paid Media"
-    keywords={[
-      "cbo vs abo meta ads",
-      "advantage+ shopping vs abo",
-      "meta ads cbo ecommerce espana",
-      "meta ads strategy scaling",
-      "meta ads roas optimization"
-    ]}
     faqs={faqs}
-    relatedPosts={relatedPostsData["cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana"] || []}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">CBO vs ABO Meta Ads en 2026: el debate que decide tu ROAS.</strong> En auditorías DayByDay de cuentas D2C españolas con spend entre 5K€ y 80K€/mes, el 65-70% del presupuesto ya opera en CBO o Advantage+ Shopping, pero solo un 5-15% de esas cuentas superan consistentemente al ABO estructurado. El motivo no es técnico — es timing. Migrar antes de tener histórico suficiente es el error que más presupuesto destruye en Meta Ads en España este año.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es CBO y por qué todo el mundo migró</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Campaign Budget Optimization (CBO) centraliza el presupuesto en nivel de campaign y deja que el algoritmo de Meta distribuye ese presupuesto entre los sets de anuncios según el rendimiento en tiempo real. Advantage+ Shopping lleva esto un paso más allá: el algoritmo aprende de tus mejores compradores y busca audiencias similares automáticamente. En accounts con históricos datos de 90+ días, Meta Advantage+ Shopping reduce CPA un 17% de media en comparación con ABO manual en eCommerce españoles, según datos internos compartidos en el Meta Business Summit 2025. La eficiencia algorítmica supera al control humano cuando hay volumen suficiente para aprender.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La migración masiva a CBO en España responde a una realidad operativa: el equipo day-by-day no tiene tiempo de ajustar bids y audiencias manualmente en 8-12 ad sets con diferentes product categories. CBO/Advantage+ descarga esa presión operativa. Pero aquí surge el problema: cuando el algoritmo no tiene suficientes datos — menos de 500 conversiones en 7 días — optimiza por volumen bruta, no por valor. Y un D2C de moda con ticket medio de 80€ necesita valor, no volumen de compras de 30€ que destruyen tu MER.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">CBO vs ABO: comparativa real con datos de cuentas españolas</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Después de gestionar más de 40 cuentas D2C en España entre 2024 y 2026, el patrón es claro: ABO gana en cuentas con histórico corto y bajo volumen; CBO gana en cuentas maduras con más de 60 días de histórico y +500 pedidos/mes. La siguiente tabla captura los benchmarks que usamos en DayByDay para decidir cuándo migrar:
-    </p>
-
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Métrica</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">ABO Estructurado</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">CBO / Advantage+</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Ganador</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c1: "ROAS (cuentas maduras 90d+)", c2: "2.8-3.2x", c3: "3.2-4.1x", c4: "CBO" },
-            { c1: "ROAS (cuentas nuevas <45d)", c2: "1.9-2.4x", c3: "1.4-1.9x", c4: "ABO" },
-            { c1: " CPA promedio", c2: "€18-24", c3: "€15-20 (maduro)", c4: "CBO (con volumen)" },
-            { c1: "Frecuencia en semana 2", c2: "3.2x", c3: "4.8x", c4: "ABO (menos sobresegmentación)" },
-            { c1: "Control de audiencias", c2: "Alto", c3: "Bajo", c4: "ABO" },
-            { c1: "Escalado automático", c2: "Manual", c3: "Automático", c4: "CBO" },
-            { c1: "Learning phase", c2: "Distribuida", c3: "Una por campaign", c4: "ABO (más predecible)" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.c1}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.c2}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.c3}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.c4}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">El error que destruye más presupuesto: migrar antes de tiempo</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La error más común que vemos en cuentas nuevas o en rebranding es lanzar CBO/Advantage+ desde day 1 sin histórico suficiente. El algoritmo necesita belajar: necesita ver conversions, necesita entender quién compra y quién no, necesita datos para discriminar. Con menos de 45 días de histórico y menos de 500 conversiones en los últimos 30 días, el algoritmo está operando en modo exploración — y eso significa CPA más alto y ROAS más volátil. En una cuenta con ticket medio de 85€ y un CPA objetivo de 20€, esto puede significar quemar 3.000-5.000€ antes de que el algoritmo aprenda lo suficiente.
-    </p>
-    <ul className="list-disc list-inside text-white/70 space-y-2 mb-5 ml-4">
-      <li>Antes de lanzar CBO, exige 60+ días de histórico en la cuenta</li>
-      <li>Antes de migrar ABO → CBO, el ROAS de tu ABO debe ser estable 3+ semanas consecutivas</li>
-      <li>Si el CPA objetivo es inferior al 40% de tu ticket medio, el margen de aprendizaje es muy estrecho</li>
-      <li>Crea sempre un CBO test paralelo ao 20% do spend, nunca migrar en caliente</li>
-    </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cuándo sí migrar a CBO (y cómo hacerlo bien)</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El dato más relevante del IAB Spain 2025 indica que el 63% de los profesionales de marketing en España considera que sus campañas CBO/Advantage+ necesitan más tiempo de aprendizaje (4-6 semanas) antes de superar al ABO manual en ROAS. Esto confirma lo que vemos en cuentas reales: la migración vale la pena cuando tienes paciencia y presupuesto para la learning phase. La señales claras de que estás listo: ROAS stable 3x con ABO durante al menos 4 semanas, más de 500 pedidos/mes en la cuenta, frecuencia de ABO superando 4x sin mejora en conversión, capacidad de mantener el spend durante 30 días sin optimizar prematuramente.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      El eCommerce en España alcanzó los 26.700M€ en 2024, un 13% más que el año anterior (Statista, 2025), con Meta Ads como primer canal de adquisición para el 67% de las tiendas D2C analizadas. Este volumen de mercado significa que el algoritmo de Meta tiene大量的 training data de consumidores españoles — lo cual hace que Advantage+ Shopping sea más efectivo aquí que en otros mercados con menor volumen de电商.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Fuentes consultadas: <a href="https://www.facebook.com/business/news/advantage-plus-shopping-campaigns" target="_blank" rel="nofollow noopener" className="underline text-white/80">Meta for Business (2025)</a>, <a href="https://www.statista.com/statistics/1279294/spain-online-shopping-revenue/" target="_blank" rel="nofollow noopener" className="underline text-white/80">Statista (2025)</a>, <a href="https://www.iabspain.es/observatorio/ecommerce/" target="_blank" rel="nofollow noopener" className="underline text-white/80">IAB Spain (2025)</a>.
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Lecturas relacionadas</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Para profundizar te recomendamos: <Link to="/blog/estrategia-full-funnel-meta-ads-d2c" className="underline text-white/80">Estrategia Full-Funnel para D2C con Meta Ads: cómo construir desde awareness hasta conversión</Link>, <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="underline text-white/80">Cómo escalar campañas Meta Ads sin romper ROAS: el framework que usamos en DayByDay</Link> y <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="underline text-white/80">Advantage+ Shopping: cuándo usarlo y cuándo evitarlo en ecommerce español</Link>.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo lo abordamos en DayByDay</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-En DayByDay no recomendamos CBO ni ABO por dogma — evaluamos el histórico de la cuenta y la capacidad de presupuesto antes de recomendar cualquier estructura. Cuando Pablo trabaja con una cuenta nueva, la regla es clara: los primeros 60 días son ABO puro con aprendizaje activo de audiencias. Una vez que la cuenta tiene histórico y los primeros ad sets muestran patrones claros de audiencias de alto valor, entonces evaluamos lanzar un CBO paralelo como test. Esto es lo que hicimos con un D2C de moda femenina que pasó de 8K€/mes a 24K€/mes en Meta Ads sin pérdida de eficiencia: no migraron en caliente — aprendieron primero, migraron después, y el ROAS mejoró un 156% en 90 días manteniendo la misma estructura de budget. La diferencia entre una cuenta que escala bien y una que quema presupuesto no es el instrumento — es el timing.
-    </p>
-
-    <div className="mt-12 mb-6 p-6 border border-white/10 rounded-lg bg-white/5">
-      <h3 className="text-xl font-black text-white mb-3">¿Tu cuenta está lista para migrar a CBO o deberías esperar?</h3>
-      <p className="text-white/70 leading-relaxed mb-4">
-        Si llevas más de 45 días con ABO estructurado y tu ROAS es stable, el siguiente paso es evaluar si tu volumen y histórico justifican un test CBO con el 20% del presupuesto. Si no estás seguro, en DayByDay hacemos una auditoría gratuita de tu estructura Meta Ads y te decimos exactamente qué cambiar y cuándo. En 30 minutos te queda claro si tu cuenta está para migrar o para seguir optimizando ABO.
-      </p>
-      <button
-        onClick={openCalendly}
-        className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-md hover:bg-white/90 transition"
-      >
-        Reservar discovery call
-      </button>
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default CboVsAboMetaAds2026CualGanaEnEcommerceEspanaPage;
+export default BuenROASNichosPage;

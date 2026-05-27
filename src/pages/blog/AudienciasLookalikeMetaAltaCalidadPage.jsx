@@ -3,255 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Siguen funcionando las audiencias lookalike en Meta Ads en 2026?",
-    a: "Sí, pero solo si la audiencia semilla es de calidad y los eventos están bien medidos vía CAPI server-side. Sin CAPI con EMQ \u003e7, el match rate de la lista semilla cae al 50-65% y Meta construye el lookalike sobre datos parciales — el resultado es un público que se parece más a 'cualquier comprador online' que a tu cliente real. Con semilla limpia y eventos de alta calidad, los lookalikes 1-3% siguen siendo una de las palancas de prospecting con mejor coste por adquisición que vemos en cuentas D2C españolas. Lo que ha cambiado no es su rendimiento, sino la importancia de la base técnica.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Qué tamaño mínimo necesita la audiencia semilla para crear un lookalike de calidad?",
-    a: "Mínimo operativo: 1.000-2.000 personas en la semilla, ideal 5.000-10.000. Por debajo de 1.000 Meta sigue construyendo el público pero el algoritmo no tiene suficientes patrones para generar un lookalike estable — verás CPA volátil semana a semana. Si tu cuenta tiene <1.000 compradores, la mejor opción es lookalike sobre AddToCart 90d o ViewContent + tiempo en página \u003e60s, no compradores. Si superas 10.000, no hace falta más: a partir de ahí el algoritmo no mejora la calidad del modelo, solo amplía el rango.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Qué porcentaje (1%, 3%, 5%, 10%) es mejor para un lookalike en eCommerce D2C?",
-    a: "Regla operativa por tamaño de cuenta: cuentas <10K€/mes en Meta empiezan con lookalike 3-5% para tener volumen suficiente sin fragmentar. Cuentas 10-50K€/mes pueden trabajar 1-3% como audiencia core de prospecting + 5-10% como respaldo de escala. Cuentas \u003e50K€/mes se benefician más de un stack: 1% para máxima similitud, 3% para escala estable, 5-10% solo cuando el 1-3% empieza a saturar. El error frecuente es asumir que '1% siempre rinde mejor': en cuentas pequeñas el 1% es un público demasiado estrecho y entra y sale del aprendizaje constantemente.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Lookalike sobre compradores o sobre otra fuente?",
-    a: "Depende del volumen de eventos. Jerarquía de calidad de semillas en orden descendente: (1) compradores con LTV alto/clientes recurrentes — la mejor semilla, pero requiere ≥1.000 personas; (2) compradores totales 180d — semilla por defecto si tienes volumen; (3) AddToCart 90d sin compra — útil cuando compradores <1.000; (4) Visitantes con tiempo en página \u003e60s — TOFU adicional; (5) suscriptores email comprometidos vía Customer File — semilla limpia que muchas cuentas ignoran. Lo que NO funciona como semilla: visitantes web 30d sin filtro de calidad (incluye rebote y bots), engagement IG genérico, y leads sin cualificación.",
-  },
-  {
-    q: "¿Cuántas audiencias lookalike debo tener activas simultáneamente?",
-    a: "Tres o cuatro como máximo, con función diferenciada. Estructura que rinde en cuentas D2C: (1) lookalike 1-3% compradores LTV alto (core prospecting BOFU-MOFU), (2) lookalike 3-5% AddToCart 90d (volumen MOFU), (3) lookalike 5-10% engagement IG/FB 365d (TOFU de bajo coste), (4) opcional: lookalike sobre lista de email de marca para campañas de lanzamiento. Más allá fragmentas el aprendizaje y ningún ad set sale de learning phase. El error clásico es crear 8-10 lookalikes por intuición y dejarlos competir entre sí — el algoritmo no sabe a cuál servir y el CPA se desestabiliza.",
-  },
-  {
-    q: "¿Excluyo a clientes y visitantes recientes de mis lookalike audiences?",
-    a: "Casi siempre sí. Sin exclusiones, el lookalike incluye personas que ya están en tu pixel — lo que infla el ROAS reportado con compras que iban a pasar igual vía retargeting. Exclusiones obligatorias: (1) compradores 180d, (2) carrito + ViewContent 30d, (3) suscriptores email recientes 60d. Excepción: si tu funnel es de adquisición pura sin overlap con remarketing (lanzamiento de producto nuevo, expansión geográfica), puedes desactivar exclusiones temporalmente. En operación normal, sin exclusiones cruzadas el reporte de prospecting roba revenue al retargeting y la atribución pierde sentido.",
-  },
-  {
-    q: "¿Cuándo dejan de funcionar los lookalikes y qué los sustituye?",
-    a: "Dejan de funcionar cuando: (1) la semilla deja de actualizarse — un lookalike de compradores 180d con ventana cerrada se vuelve obsoleto en 60-90 días; (2) la cuenta supera ~70K€/mes en Meta y el público disponible se satura — ahí el frequency sube y el CPA marginal se dispara; (3) Advantage+ Shopping Campaign con 'audience expansion' empieza a canibalizar el volumen del lookalike. Lo que los sustituye en cuentas grandes: Advantage+ Shopping con catálogo bien optimizado + listas Customer File enriquecidas + interés agregado broad. En cuentas <30K€/mes, los lookalikes siguen siendo la palanca más eficiente de prospecting.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const AudienciasLookalikeMetaAltaCalidadPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Audiencias lookalike en Meta de alta calidad: guía 2026 D2C"
-    description="Cómo crear audiencias lookalike de alta calidad en Meta Ads para eCommerce D2C: jerarquía de semillas (compradores LTV alto, AddToCart, engagement), tamaño semilla mínimo, qué porcentaje (1-10%) usar según tamaño de cuenta, exclusiones obligatorias y cuándo Advantage+ los sustituye."
-    slug="audiencias-lookalike-meta-alta-calidad"
-    datePublished="2026-05-02"
-    dateModified="2026-05-02"
-    readingTime="9 min"
-    category="Estrategia"
-    keywords={[
-      "audiencias lookalike meta",
-      "lookalike facebook ads",
-      "lookalike audience ecommerce",
-      "audiencias similares meta ads",
-      "lookalike d2c españa",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      Las <strong className="text-white">audiencias lookalike en Meta</strong> siguen siendo, en 2026, una de las palancas más eficientes de prospecting para eCommerce D2C — pero solo cuando la semilla es de calidad y los eventos están medidos vía CAPI server-side. La mayoría de cuentas que auditamos tienen 6-10 lookalikes activos compitiendo entre sí, semillas obsoletas y exclusiones rotas. El resultado: prospecting que canibaliza retargeting y un ROAS reportado que no corresponde con el revenue incremental real.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Esta guía cubre cómo elegir la semilla, qué tamaño y porcentaje usar según tu cuenta, cómo construir un stack de 3-4 lookalikes que no se canibalicen, y cuándo Advantage+ Shopping Campaign los sustituye en cuentas grandes.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es realmente una audiencia lookalike en 2026</h2>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Un lookalike no es "personas parecidas a tus clientes" en abstracto: es un modelo estadístico que Meta construye a partir de las señales de tu semilla y proyecta sobre el inventario disponible en un país. La calidad final depende de tres variables, en este orden:
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
-    <div className="space-y-3 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        "Calidad de la semilla — qué evento de conversión define a la persona y qué match rate tienen los eventos en tu cuenta (vía píxel + CAPI server-side).",
-        "Tamaño de la semilla — por debajo de 1.000 personas Meta no tiene suficientes patrones; entre 5.000 y 10.000 es el rango ideal.",
-        "Frescura — una semilla de compradores con ventana cerrada (no se actualiza) se vuelve obsoleta en 60-90 días y el lookalike empieza a degradarse aunque el dashboard no lo avise.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La <a href="https://www.facebook.com/business/help/164749007013531" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">documentación oficial de Meta sobre lookalike audiences</a> recoge las fuentes válidas y los rangos %; lo que no recoge es cuáles funcionan en D2C español. Por eso la jerarquía siguiente.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Jerarquía de semillas: cuál usar según tu volumen</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Ordenadas de mayor a menor calidad de la señal. Si la primera no tiene volumen suficiente, baja al siguiente nivel:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Semilla</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Volumen mín.</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Calidad</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Cuándo usarla</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { s: "Compradores LTV alto (top 25%)", v: "1.000+", c: "★★★★★", u: "Cuenta con 3.000+ compradores y datos de LTV en Shopify/Klaviyo" },
-            { s: "Compradores 180d", v: "1.000+", c: "★★★★", u: "Semilla por defecto en cuentas con volumen estable" },
-            { s: "AddToCart 90d sin compra", v: "2.000+", c: "★★★", u: "Compradores <1.000 — sustituye temporalmente" },
-            { s: "Customer File (email/tel hash)", v: "1.000+", c: "★★★★", u: "Lista de email de calidad sincronizada con Meta" },
-            { s: "Visitantes web tiempo >60s 30d", v: "5.000+", c: "★★", u: "TOFU adicional, complementa otras semillas" },
-            { s: "Engagement IG/FB 365d", v: "5.000+", c: "★★", u: "Cuenta con marca consolidada en redes — TOFU bajo coste" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.v}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.u}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La semilla de compradores LTV alto es la diferencia entre un lookalike que escala y uno que se queda en CPA medio. Construirla requiere tener LTV calculado por cliente — algo que la <a href="https://www.shopify.com/blog/customer-lifetime-value" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">guía de Shopify sobre Customer Lifetime Value</a> explica bien. Si tu Shopify ya tiene Klaviyo o un CRM enchufado, exportar el top 25% por revenue total es trivial; la inversión de tiempo se devuelve a los 30 días en CPA de prospecting.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué porcentaje (1%, 3%, 5%, 10%) elegir</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Decisión por tamaño de cuenta y objetivo. La regla "1% siempre es mejor" es falsa en cuentas pequeñas — fragmenta tanto el público que el ad set no estabiliza CPA.
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Spend Meta/mes</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">% recomendado</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Estructura típica</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { s: "<10K€", p: "3-5%", e: "1 lookalike core 3% sobre compradores 180d" },
-            { s: "10-30K€", p: "1-3% + 5%", e: "1% compradores LTV + 3% compradores 180d + 5% AddToCart 90d (respaldo)" },
-            { s: "30-70K€", p: "1% + 3% + 5-10%", e: "Stack de 3 lookalikes diferenciados con exclusiones cruzadas" },
-            { s: ">70K€", p: "Mix + Advantage+", e: "Lookalike 1% LTV alto como semilla + Advantage+ Shopping para escala" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.s}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.p}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.e}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Lectura crítica: en cuentas pequeñas el 1% es un público demasiado estrecho — el ad set entra y sale del aprendizaje, gasta presupuesto sin estabilizar CPA. Empezar con 3-5% y bajar al 1% cuando el volumen lo permita es la secuencia que mejor escala.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Exclusiones cruzadas obligatorias</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Sin exclusiones, el lookalike incluye personas que ya están en tu pixel y el ROAS reportado de prospecting se infla con compras que iban a pasar igual vía retargeting. Exclusiones operativas en cada ad set lookalike:
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Compradores 180d (custom audience desde evento Purchase) — evita pagar por reactivar a quien volvía igual.",
-        "AddToCart + ViewContent 30d — separa demanda existente de demanda nueva, esencial para que prospecting y retargeting no canibalicen.",
-        "Suscriptores email recientes 60d (vía Customer File sincronizado) — clientes que están recibiendo email + paid duplican coste sin incremento.",
-        "Visitantes web 30d (opcional, según overlap con MOFU) — solo si tu retargeting ya cubre toda la franja.",
-        "Empleados / IPs internas / dominios de prueba — el ruido de internal traffic distorsiona la semilla y el lookalike resultante.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Errores frecuentes que matan el lookalike</h2>
-    <div className="space-y-3 mb-6">
-      {[
-        "Crear lookalike sobre 'visitantes web 30d' sin filtro de calidad: incluye rebotes, bots y tráfico de redes que no convierte. Resultado: público amplio que no se parece a tu cliente real.",
-        "Semilla con <1.000 personas — Meta sigue construyendo el público pero el modelo es inestable, CPA volátil semana a semana.",
-        "No actualizar la semilla: una lista cerrada se obsolece a los 60-90 días. Toda semilla operativa debe ser dinámica (custom audience con ventana móvil), no estática.",
-        "Activar 6-10 lookalikes simultáneos por intuición. El algoritmo fragmenta el aprendizaje y ningún ad set estabiliza CPA. Tres o cuatro máximo, con función diferenciada.",
-        "Sin CAPI server-side: el match rate de la semilla cae al 50-65%. El lookalike se construye sobre datos parciales y rinde un 30-40% peor que con CAPI bien implementada.",
-        "No excluir compradores: el prospecting reporta un ROAS inflado, retargeting se queda sin presupuesto, escala se rompe.",
-        "Confundir Advantage+ Audience (audience expansion) con lookalike: son cosas distintas. Advantage+ ignora parte de tus targeting hints, el lookalike no.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cuándo Advantage+ sustituye al lookalike</h2>
-    <p className="text-white/70 leading-relaxed mb-5">
-      A partir de ~70K€/mes de spend en Meta, Advantage+ Shopping Campaign con catálogo bien optimizado + Customer File enriquecida suele rendir mejor que un stack de lookalikes — el algoritmo tiene suficiente volumen para reasignar dinámicamente entre intereses, broad y similares sin necesidad de targeting hints rígidos. Por debajo de ese volumen, el lookalike sigue siendo la palanca de prospecting más eficiente, especialmente combinado con un retargeting limpio. La transición no es binaria: en cuentas 50-100K€/mes habitualmente conviven Advantage+ Shopping con un ad set lookalike 1% LTV alto que actúa como "sembrador" de señal de calidad para el algoritmo.
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos los lookalikes en DayByDay</h2>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Auditoría previa de eventos píxel + CAPI: sin EMQ >7 en Purchase y AddToCart no creamos lookalikes. La base técnica primero.",
-        "Construcción de la semilla LTV alto cuando hay datos disponibles (Klaviyo, Shopify CRM, datos de cliente). Top 25% por revenue total exportado a Customer File.",
-        "Stack inicial de 3 lookalikes con función diferenciada (1% LTV / 3% compradores / 5-10% engagement) y exclusiones cruzadas explícitas.",
-        "Refresco mensual de semilla: ventana móvil 180d para compradores, 90d para AddToCart. Nunca semillas estáticas.",
-        "Test de % en escalada: empezar 3-5%, bajar al 1% cuando el ad set tiene 50+ conversiones/semana estables.",
-        "Revisión semanal de overlap entre lookalikes y retargeting con Audience Insights — si el solapamiento >25% revisamos exclusiones antes de tocar puja o creativo.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tus lookalikes en Meta están construidos sobre la semilla correcta?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos calidad de eventos píxel + CAPI, semillas, exclusiones y stack de prospecting para detectar si tu lookalike está canibalizando retargeting.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/retargeting-meta-ads-ecommerce-2026" className="text-white font-semibold hover:text-white/80">
-          Retargeting en Meta Ads para eCommerce: guía completa 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">La cara complementaria: cómo separar prospecting (lookalike) de retargeting con exclusiones limpias</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/guia-api-conversiones-meta-ads-shopify" className="text-white font-semibold hover:text-white/80">
-          Guía API de Conversiones de Meta para eCommerce →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Sin CAPI server-side bien hecho, la semilla del lookalike pierde la mitad de su match rate</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
-          Advantage+ Shopping Campaign: cuándo usarlo y cuándo no →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">A partir de ~70K€/mes Advantage+ empieza a competir con el lookalike — cuándo migrar</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar campañas Meta Ads sin romper el ROAS →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo escalar lookalikes sin saturar el público y disparar el frequency</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/ab-testing-meta-ads-que-testar-primero" className="text-white font-semibold hover:text-white/80">
-          A/B testing en Meta Ads: qué testar primero para maximizar aprendizaje →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cuándo testar audiencias y lookalikes vs cuándo el creativo aún manda — pirámide de impacto</p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default AudienciasLookalikeMetaAltaCalidadPage;
+export default BuenROASNichosPage;

@@ -3,267 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Cuáles son las métricas más importantes en Meta Ads para ecommerce?",
-    a: "Para ecommerce, las métricas que realmente importan son: ROAS real de negocio (ingresos totales / inversión publicitaria), CPA (coste por compra), MER (Marketing Efficiency Ratio = ingresos totales / gasto total en marketing) y CPNC (coste por nuevo cliente). El CTR y el CPM son métricas auxiliares útiles para diagnosticar problemas, no para evaluar si las campañas funcionan. El ROAS que reporta Meta sobreestima entre un 20-35% respecto al ROAS real.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Qué es el MER y por qué importa más que el ROAS?",
-    a: "El MER (Marketing Efficiency Ratio) es el ratio entre los ingresos totales del negocio y el gasto total en publicidad. A diferencia del ROAS de plataforma, el MER no depende de ventanas de atribución ni de modelos de atribución — solo mira la caja. Si el MER sube cuando subes la inversión en Meta Ads, las campañas están funcionando. Si baja, algo falla. Es la métrica que recomendamos para tomar decisiones de escala porque no puede ser manipulada por el algoritmo.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Por qué el ROAS de Meta Ads no es fiable?",
-    a: "El ROAS que reporta Meta Ads Manager sobreestima el rendimiento real por tres razones: atribuye conversiones a anuncios que no fueron el último contacto antes de la compra (ventana de atribución de 7 días post-clic + 1 día post-view), cuenta a compradores que habrían comprado igualmente sin ver el anuncio, y puede duplicar conversiones si el píxel y la API de Conversiones no están configurados correctamente. La discrepancia típica en cuentas D2C españolas es del 20-35%.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Qué CTR es bueno en Meta Ads para ecommerce?",
-    a: "El CTR por sí solo no dice nada sobre si las campañas funcionan o no. Un CTR del 3% con un ROAS de 1,5x es peor que un CTR del 0,8% con un ROAS de 4x. Dicho esto, como referencia para D2C en España en 2026: CTR inferior al 0,8% en frío suele indicar problemas de creatividad o audiencia; CTR superior al 2,5% en frío suele indicar buena resonancia. Pero nunca optimices por CTR — optimiza por coste por compra.",
-  },
-  {
-    q: "¿Qué métricas de Meta Ads son una pérdida de tiempo?",
-    a: "Las métricas que no deberían informar decisiones de negocio son: alcance (no es objetivo, es consecuencia del presupuesto), frecuencia (mirarla en exceso genera paranoia sin datos suficientes para actuar), puntuación de relevancia (retirada por Meta en 2019, sustituida por métricas de diagnóstico sin peso en optimización real), y resultados en objetivos de conciencia (impresiones, visitas a perfil) si tu objetivo es vender.",
-  },
-  {
-    q: "¿Con qué frecuencia hay que revisar las métricas de Meta Ads?",
-    a: "La cadencia correcta depende de la métrica: ROAS de plataforma y CPA → revisar semanalmente, no diariamente (las fluctuaciones de 24-48h no son significativas). MER → revisar semanalmente con los datos del negocio. CTR y CPM → revisar cuando haya caída de rendimiento, no como rutina diaria. Cambios en campañas → esperar mínimo 7 días antes de evaluar, para que el algoritmo salga de la fase de aprendizaje.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const MetricasMetaAdsPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Métricas Meta Ads que importan de verdad (y las que no)"
-    description="Guía práctica sobre qué métricas de Meta Ads usar para tomar decisiones en ecommerce D2C: ROAS real vs ROAS de plataforma, MER, CPA, CTR y cuáles ignorar para no optimizar hacia los KPIs equivocados."
-    slug="metricas-meta-ads-importantes-ecommerce"
-    datePublished="2026-04-07"
-    dateModified="2026-04-07"
-    readingTime="6 min"
-    category="Meta Ads"
-    keywords={["métricas meta ads", "métricas meta ads importantes", "kpis meta ads ecommerce", "mer marketing efficiency ratio", "roas meta ads fiable"]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      <strong className="text-white">Las métricas de Meta Ads que importan de verdad</strong> no son las que el Ads Manager pone en primera fila. En la mayoría de cuentas D2C que auditamos, los gestores toman decisiones basándose en el ROAS de plataforma, el CTR o el alcance — métricas que, sin contexto, pueden llevar a optimizar campañas que en realidad están destruyendo margen.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Este artículo recoge qué métricas usamos en DayByDay para evaluar si una cuenta funciona de verdad, cuáles son trampa y con qué frecuencia hay que mirarlas para no tomar decisiones con datos incompletos.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">El problema con las métricas por defecto de Meta</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Meta Ads Manager está optimizado para que los anunciantes vean sus campañas con el mejor rendimiento posible. Eso no significa que mienta — significa que las métricas por defecto responden a la pregunta "¿qué hicieron mis anuncios según Meta?" en lugar de "¿están generando negocio real mis anuncios?".
-    </p>
-    <p className="text-white/70 leading-relaxed mb-5">
-      La discrepancia más común: el ROAS que reporta Meta sobreestima el rendimiento real entre un 20-35% en cuentas D2C españolas, según los datos que manejamos de nuestros clientes. Esto ocurre porque Meta usa ventanas de atribución amplias (7 días post-clic + 1 día post-view por defecto) y atribuye conversiones que habrían ocurrido igualmente sin el anuncio.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Tabla: qué métricas importan y para qué</h2>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Métrica</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Sirve para</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">No sirve para</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Prioridad</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { metrica: "MER (Marketing Efficiency Ratio)", sirve: "Decisiones de escala y presupuesto global", noSirve: "Comparar campañas individuales", prioridad: "⭐⭐⭐⭐⭐" },
-            { metrica: "CPA (coste por compra real)", sirve: "Evaluar rentabilidad de campañas", noSirve: "Comparar entre sectores sin contexto de margen", prioridad: "⭐⭐⭐⭐⭐" },
-            { metrica: "ROAS de plataforma (Meta)", sirve: "Diagnóstico relativo entre campañas", noSirve: "Tomar decisiones absolutas de rentabilidad", prioridad: "⭐⭐⭐" },
-            { metrica: "CTR (click-through rate)", sirve: "Diagnóstico de creatividades y audiencias", noSirve: "Evaluar si las campañas generan negocio", prioridad: "⭐⭐" },
-            { metrica: "CPM (coste por mil impresiones)", sirve: "Detectar saturación de audiencia o competencia estacional", noSirve: "Comparar entre campañas de distinto objetivo", prioridad: "⭐⭐" },
-            { metrica: "CPNC (coste por nuevo cliente)", sirve: "Medir eficiencia de captación pura", noSirve: "Evaluar campañas de retargeting", prioridad: "⭐⭐⭐⭐" },
-            { metrica: "Frecuencia", sirve: "Detectar fatiga publicitaria en audiencias pequeñas", noSirve: "Tomar decisiones sin mirar la tendencia temporal", prioridad: "⭐" },
-            { metrica: "Alcance", sirve: "Auditorías de cobertura de audiencia", noSirve: "Evaluar resultados de negocio", prioridad: "⭐" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.metrica}</td>
-              <td className="py-3 px-3 text-white/60 text-xs">{row.sirve}</td>
-              <td className="py-3 px-3 text-white/40 text-xs">{row.noSirve}</td>
-              <td className="py-3 px-3 text-white/70 text-xs">{row.prioridad}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Las 3 métricas que usamos para evaluar si una cuenta funciona</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
 
-    <div className="space-y-4 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        {
-          num: "1",
-          titulo: "MER — Marketing Efficiency Ratio",
-          desc: "El MER es la métrica más honesta que existe: ingresos totales del negocio dividido entre gasto total en publicidad. No depende de atribución, no puede ser inflado por ventanas de conversión y refleja el impacto real en caja. Fórmula: MER = Ingresos totales / Inversión total en paid media. Si el MER es 4, cada euro invertido en publicidad genera 4€ de ingreso. Cuando escalamos una cuenta, miramos si el MER sube, se mantiene o baja — esa es la única señal que necesitamos para saber si el incremento de presupuesto está funcionando.",
-        },
-        {
-          num: "2",
-          titulo: "CPA real (no el de Meta)",
-          desc: "El CPA de Meta Ads Manager incluye conversiones atribuidas con ventanas amplias que sobreestiman su contribución. El CPA real que miramos nosotros sale de dividir la inversión en Meta entre las compras registradas en Shopify o en el servidor (vía API de Conversiones), no las que reporta Meta. La diferencia media en cuentas D2C es del 20-35%. Operar con el CPA de plataforma sin cruzarlo con los datos del negocio es tomar decisiones con información incompleta.",
-        },
-        {
-          num: "3",
-          titulo: "CPNC — Coste por Nuevo Cliente",
-          desc: "En ecommerce D2C, la pregunta relevante no es solo cuánto cuesta una compra — es cuánto cuesta conseguir un cliente que no ha comprado antes. El CPNC requiere que el CRM o el sistema de pedidos identifique si el comprador es nuevo o recurrente. Meta puede dar una aproximación con la configuración de Advantage+ Shopping, pero el dato limpio viene del backend. Si el CPNC está por encima del LTV esperado en los primeros 90 días, la estrategia de captación no es rentable independientemente del ROAS de plataforma.",
-        },
-      ].map(({ num, titulo, desc }) => (
-        <div key={num} className="bg-[#1a1616] border border-white/8 rounded-xl p-4 flex gap-4">
-          <div className="w-8 h-8 rounded-full bg-[#de0015]/20 border border-[#de0015]/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <span className="text-[#de0015] font-bold text-sm">{num}</span>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
           </div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
           <div>
-            <p className="font-semibold text-white text-sm mb-1">{titulo}</p>
-            <p className="text-white/55 text-sm">{desc}</p>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
           </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Métricas de diagnóstico: útiles cuando algo falla</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      El CTR y el CPM no son métricas de negocio, pero sí son útiles para diagnosticar por qué el rendimiento ha caído. Así las usamos:
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
     </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "CTR cae de forma sostenida (&gt;20% en 2 semanas) → señal de fatiga creativa. Prioridad: producir nuevas creatividades antes de tocar presupuesto o audiencias.",
-        "CPM sube de forma brusca sin cambios en la cuenta → señal de presión competitiva estacional (rebajas, Black Friday, Navidad) o aumento de competencia en el sector. Acción: revisar el calendario y valorar ajustar presupuesto temporalmente.",
-        "CTR alto + CPA alto → la creatividad engancha pero la landing no convierte. El problema está fuera de Meta Ads, no dentro.",
-        "CTR bajo + CPA bajo → audiencia poco interesada pero que convierte bien la poca que llega. Suele indicar una audiencia muy cualificada con bajo volumen — ideal para escalar con lookalikes.",
-        "Frecuencia >3 en menos de 30 días en audiencias <50.000 personas → riesgo real de saturación. Ampliar audiencia o rotar creatividades.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Con qué frecuencia revisar cada métrica</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Uno de los errores más comunes en la gestión de Meta Ads es revisar los resultados cada día. Los algoritmos de Meta necesitan al menos 7 días para estabilizarse después de cualquier cambio. Revisar antes genera decisiones precipitadas que interrumpen el aprendizaje y empeoran los resultados. Esta es la cadencia que seguimos:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Métrica</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Frecuencia de revisión</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Cuándo actuar</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { metrica: "MER", frecuencia: "Semanal", actuar: "Si baja >10% dos semanas consecutivas" },
-            { metrica: "CPA real (Shopify vs Meta)", frecuencia: "Semanal", actuar: "Si divergencia supera el 40% respecto a período anterior" },
-            { metrica: "ROAS plataforma", frecuencia: "Semanal", actuar: "Comparar tendencia, no valor absoluto aislado" },
-            { metrica: "CPNC", frecuencia: "Mensual", actuar: "Si supera el LTV proyectado a 90 días" },
-            { metrica: "CTR y CPM", frecuencia: "Al detectar caída de CPA/ROAS", actuar: "Como diagnóstico, no como alarma autónoma" },
-            { metrica: "Frecuencia", frecuencia: "Quincenal en audiencias <100K", actuar: "Si supera 3-4 en menos de 30 días" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.metrica}</td>
-              <td className="py-3 px-3 text-white/70 text-xs">{row.frecuencia}</td>
-              <td className="py-3 px-3 text-white/50 text-xs">{row.actuar}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo medimos el rendimiento en DayByDay</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      En todas las cuentas que gestionamos, el reporting semanal incluye tres números: MER del período, CPA real cruzado con Shopify y CPNC cuando el volumen de datos es suficiente. El ROAS de Meta Ads Manager aparece como referencia de tendencia, no como criterio de decisión.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Para que el CPA real sea fiable, implementamos siempre la <a href="https://developers.facebook.com/docs/marketing-api/conversions-api" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">API de Conversiones de Meta</a> correctamente configurada desde el servidor, no solo el píxel de navegador. Esto reduce la discrepancia de atribución y da al algoritmo señales de conversión más precisas, lo que mejora directamente la calidad de la optimización.
-    </p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
     <p className="text-white/70 leading-relaxed mb-5">
-      El informe de <a href="https://www.iabspain.es/wp-content/uploads/2024-Estudio-Inversion-Publicitaria-en-Medios-Digitales-IAB.pdf" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">IAB Spain sobre inversión publicitaria digital 2024</a> documenta que la fragmentación de los modelos de atribución es uno de los principales retos del sector — precisamente porque cada plataforma atribuye conversiones con criterios propios, el MER como métrica agnóstica de plataforma es cada vez más relevante.
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
     </p>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu reporting actual refleja el rendimiento real de tus campañas?</p>
-      <p className="text-white/50 text-sm mb-4">Revisamos tu estructura de métricas y configuración de atribución — y te decimos qué cambiar para tomar mejores decisiones.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" className="text-white font-semibold hover:text-white/80">
-          [PILAR] Cómo escalar un eCommerce D2C de 100K a 1M€ con paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo cruzamos MER, nCPA y LTV/CAC en cuentas en fase de escala — el sistema completo</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
-          CAC vs LTV: la métrica que define si tu D2C es escalable →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El ratio LTV/CAC, payback period y por qué el ROAS de plataforma no es suficiente para decidir inversión</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cuanto-invertir-meta-ads-calculadora" className="text-white font-semibold hover:text-white/80">
-          Cuánto invertir en Meta Ads según tu ticket y margen (con calculadora) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Calculadora que traduce las métricas reales (LTV, margen, ratio) en presupuesto Meta concreto y CAC objetivo</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white font-semibold hover:text-white/80">
-          Cómo mejorar el ROAS en Meta Ads: 7 palancas reales →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Qué tocar primero cuando el ROAS real no está donde debería estar</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white font-semibold hover:text-white/80">
-          Benchmark ROAS por sector en España 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Los rangos de ROAS real esperables por industria para contextualizar tus métricas</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar campañas Meta Ads sin romper el ROAS →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Qué métricas vigilar específicamente durante una fase de escala de presupuesto</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/checklist-auditoria-campanas-paid-media" className="text-white font-semibold hover:text-white/80">
-          Checklist para auditar tus campañas de paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El proceso completo para diagnosticar qué está fallando usando las métricas correctas</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/por-que-anuncios-meta-no-convierten" className="text-white font-semibold hover:text-white/80">
-          Por qué tus anuncios de Meta no convierten (y cómo solucionarlo) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Las 5 capas a auditar (tracking, landing, audiencia, creatividad, estructura) cuando las métricas dicen que algo va mal</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/guia-api-conversiones-meta-ads-shopify" className="text-white font-semibold hover:text-white/80">
-          Guía API de Conversiones de Meta (CAPI) en Shopify →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué CAPI cambia los números reportados (eventos, CPA, EMQ) y cómo verificar que está bien configurada</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/remarketing-dinamico-ecommerce-guia-practica" className="text-white font-semibold hover:text-white/80">
-          Remarketing dinámico para ecommerce: guía práctica →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué el ROAS del DPA aislado engaña sin mirar MER blended y métricas de incrementalidad</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/modelos-atribucion-ecommerce-d2c" className="text-white font-semibold hover:text-white/80">
-          Modelos de atribución para D2C: last-click, data-driven y MMM explicados →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El modelo detrás de cada métrica plataforma: por qué Meta sobreatribuye 20-35%</p>
-      </div>
-    </div>
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default MetricasMetaAdsPage;
+export default BuenROASNichosPage;

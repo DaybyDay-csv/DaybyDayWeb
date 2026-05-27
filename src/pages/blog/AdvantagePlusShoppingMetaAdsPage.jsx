@@ -1,264 +1,180 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
 
-const AdvantagePlusShoppingMetaAdsPage = ({ openCalendly }) => (
+const faqs = [
+  {
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
+  },
+  {
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
+  },
+  {
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
+  },
+  {
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
+  },
+];
+
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Advantage+ Shopping en Meta Ads: Guía Completa 2026"
-    description="Framework honesta para decidir cuándo usar Advantage+ Shopping y cuándo configurar manualmente. Incluye tabla de decisión, configuración paso a paso y casos donde NO deberías usarlo."
-    slug="advantage-plus-shopping-cuando-usarlo-no"
-    datePublished="2026-05-24"
-    readingTime="12 min"
-    category="Meta Ads"
-    faqs={[
-      {
-        q: "¿Qué es Advantage+ Shopping en Meta Ads?",
-        a: "Advantage+ Shopping es el sistema automatizado de campañas de shopping de Meta que utiliza inteligencia artificial para optimizar la selección de productos, ubicaciones y audiencias automáticamente."
-      },
-      {
-        q: "¿Cómo configurar Advantage+ Shopping en Meta Business Manager?",
-        a: "Para configurar una campaña Advantage+, accede a Meta Business Manager, selecciona Campaña, elige el objetivo Ventas al catálogo y activa Advantage+ Shopping. Necesitas tener un catálogo de productos conectado a tu pixel Meta."
-      },
-      {
-        q: "¿Cuál es la diferencia entre Advantage+ Shopping y campañas manuales?",
-        a: "A diferencia de las campañas manuales donde configuras manualmente audiencias, placements y presupuestos, Advantage+ automatiza todo el proceso gracias a su inteligencia artificial, resultando en mayor eficiencia y mejor escalabilidad."
-      },
-      {
-        q: "¿Cuánto puede mejorar el ROAS con Advantage+ Shopping?",
-        a: "Las marcas D2C pueden experimentar mejoras del 20-40% en ROAS comparado con campañas manuales, dependiendo de la calidad del catálogo, pixel tracking y presupuesto disponible."
-      }
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
+    faqs={faqs}
     openCalendly={openCalendly}
   >
-    <section>
-      <h2>Por qué Advantage+ Shopping está transformando el ecommerce español</h2>
-      <p className="text-white/70 leading-relaxed mb-5">
-        En el panorama actual del marketing digital español, las marcas D2C enfrentan un desafío crítico: cómo destacar en un ecosistema publicitario cada vez más competitivo y fragmentado. Meta, con sus más de 3 mil millones de usuarios activos mensuales, representa una oportunidad sin precedentes para alcanzar a clientes potenciales, pero la complejidad de sus herramientas publicitarias tradicionales ha generado barreras significativas para muchos anunciantes.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Las campañas convencionales de shopping en Meta requieren una configuración exhaustiva: definición manual de audiencias, selección cuidadosa de ubicaciones, creación de múltiples conjuntos de anuncios y optimización constante basada en datos. Este enfoque, aunque ofrece control, demanda recursos especializados y tiempo considerable que muchas marcas D2C, especialmente startups con equipos limitados, simplemente no pueden permitirse.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Aquí es donde Advantage+ Shopping emerge como una solución transformadora. Esta herramienta, evolucionada de las antiguas campañas de Compras de Meta, integra la potencia de la inteligencia artificial para automatizar procesos que antes requerían horas de gestión manual. Según datos de <a href="https://www.facebook.com/business/help/218790428881155" target="_blank" rel="noopener" className="text-white underline underline-offset-2 hover:text-white/80">Meta Business Help Center</a>, las campañas Advantage+ Shopping han demostrado incrementos significativos en rendimiento para anunciantes de todos los tamaños.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Si ya estás ejecutando campañas manuales y quieres entender el debate completo entre enfoques automatizados vs manuales, tienes que leer nuestra guía de <Link to="/blog/cbo-vs-abo-meta-ads-2026-cual-gana-en-ecommerce-espana" className="text-white underline underline-offset-2 hover:text-white/80">CBO vs ABO: cuál gana en ecommerce España</Link> donde analizamos datos reales con diferentes estructuras de campaign.
-      </p>
-    </section>
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
+    </p>
 
-    <section>
-      <h2>¿Qué son exactamente las campañas Advantage+ Shopping?</h2>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Advantage+ Shopping representa la siguiente generación de publicidad de comercio electrónico dentro del ecosistema Meta. A diferencia de las campañas tradicionales de catálogo de productos, este formato aprovecha aprendizaje automático e inteligencia artificial para optimizar prácticamente todos los aspectos de la campaña de manera autónoma.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        En esencia, cuando creas una campaña Advantage+ Shopping, proporcionas a Meta tu catálogo de productos y defines tu presupuesto. A partir de esa información, los algoritmos de Meta ejecutan automáticamente las siguientes funciones críticas:
-      </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
+    </div>
 
-      <h3 className="text-lg font-bold mt-6 mb-3">Selección dinámica de productos</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        El sistema mostrará a cada usuario individual productos basándose en su comportamiento previo, preferencias inferidas y patrones de compra similares. Esto significa que dos usuarios diferentes pueden ver anuncios completamente distintos de tu mismo catálogo, personalizados para maximizar la probabilidad de conversión.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
 
-      <h3 className="text-lg font-bold mt-6 mb-3">Optimización de ubicaciones automática</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        El sistema determina automáticamente dónde se mostrarán tus anuncios para obtener el mejor rendimiento. Ya sea Instagram Explore, Facebook Feed, Stories, Audience Network o Messenger, el sistema distribuye tu presupuesto de manera inteligente para maximizar resultados dentro del presupuesto establecido.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Segmentación automática de audiencias</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Los algoritmos analizan millones de señales en tiempo real para identificar a los usuarios con mayor probabilidad de realizar una compra. Esto incluye su historial de navegación, interacciones anteriores con tu página, datos demográficos y comportamentales.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Generación automática de creatividades</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        El sistema genera automáticamente múltiples variaciones de tus anuncios, combinando diferentes imágenes, títulos y descripciones para determinar qué combinaciones generan mejores resultados con diferentes audiencias.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Según la documentación oficial de <a href="https://www.facebook.com/business/marketing-integrations" target="_blank" rel="noopener" className="text-white underline underline-offset-2 hover:text-white/80">Meta for Business</a>, este enfoque ha demostrado generar mejores resultados porque los algoritmos pueden tomar decisiones en tiempo real basadas en datos actualizados.
-      </p>
-    </section>
-
-    <section>
-      <h2>Beneficios concretos para marcas D2C en España</h2>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Reducción significativa del coste por adquisición</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Las campañas tradicionales frecuentemente gastan presupuesto en impresiones que no convergen, audiencias demasiado amplias o placements ineficientes. Advantage+ Shopping aborda estos problemas mediante su aprendizaje continuo.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Para un D2C de moda español promedio, esto puede traducirse en una reducción del coste por compra (CPA) de entre el 15% y 30% según el sector y la madurez de la cuenta publicitaria. Esta eficiencia no viene gratuitamente; requiere setup correcto y paciencia para permitir que los algoritmos aprendan.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Escalabilidad sin complejidad creciente</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Un desafío constante para marcas D2C en crecimiento es mantener el rendimiento mientras se aumenta el presupuesto publicitario. Con campañas tradicionales, duplicar el presupuesto frecuentemente resulta en rendimientos decrecientes debido a la fatiga de audiencia.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Advantage+ Shopping resuelve esto porque su capacidad para encontrar nuevas audiencias automáticamente permite escalar sin degradar el ROAS de manera significativa. Esto es especialmente valioso durante temporadas altas como Black Friday, Navidad o rebajas.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Si quieres profundizar en estrategias de escalado sin romper ROAS, tenemos una guía específica: <Link to="/blog/escalar-campanas-meta-ads-sin-romper-roas" className="text-white underline underline-offset-2 hover:text-white/80">cómo escalar campañas Meta Ads sin romper ROAS</Link> con técnicas que funcionan tanto para Advantage+ como para campañas manuales.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Tiempo recuperado para estrategia</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Para equipos pequeños o agencias con múltiples clientes, el tiempo invertido en gestión campaign manual puede representar horas significativas que podrían dedicarse a otras actividades de mayor valor. Advantage+ Shopping reduce drásticamente el tiempo necesario para configuración inicial y mantenimiento continuo.
-      </p>
-    </section>
-
-    <section>
-      <h2>Configuración paso a paso de Advantage+ Shopping</h2>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Requisitos previos</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Antes de comenzar, asegúrate de cumplir con los siguientes requisitos: tener una cuenta de Meta Business activa y verificada, un catálogo de productos conectado a tu cuenta de Meta Business Manager, el pixel de Meta instalado correctamente en tu sitio web para rastrear conversiones, y un presupuesto mínimo recomendado de 50 euros diarios para permitir que los algoritmos tengan suficiente margen para aprender y optimizar.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Crear el catálogo de productos</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Desde Meta Business Manager, navega a Catálogos y selecciona Crear catálogo. Elige la opción apropiada según tu tipo de negocio. Si tienes una tienda online Shopify o similar, la sincronización automática es la mejor opción. Para otros casos, puedes hacer upload manual de archivos CSV o usar la API de Meta.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        La calidad de tu catálogo impacta directamente en el rendimiento de Advantage+. Asegúrate de que cada producto tenga imágenes de alta resolución (mínimo 1200x628 píxeles), títulos claros y descriptivos, descripciones precisas, precios actualizados y disponibilidad correcta.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Según la <a href="https://help.shopify.com/en/manual/sell-online/online-sales-channels/facebook" target="_blank" rel="noopener" className="text-white underline underline-offset-2 hover:text-white/80">documentación de Shopify</a>, los catálogos sincronizados automáticamente tienden a mantener mejor precisión de precios y stock, lo que resulta en menos anuncios de productos agotados mostrados a usuarios.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Configurar la campaña Advantage+</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Desde Gestor de Anuncios de Meta, selecciona Crear campaña y elige el objetivo Ventas del catálogo de productos. Verás la opción de activar Advantage+ Shopping campaign, debes asegurarte de marcarla.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        A continuación, define tu presupuesto diario o total y programaciones deseadas. Recomendamos comenzar con presupuestos moderados para permitir que los algoritmos aprendan antes de escalar. Selecciona las ubicaciones automáticas, que es lo óptimo para Advantage+.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Establecer eventos de conversión</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Define qué constituye una conversión para tu negocio. Puede ser una compra completada, un add to cart, un initiate checkout, o cualquier otro evento significativo. Esta configuración es crítica porque le dice a Meta qué optimizar.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Para Advantage+ Shopping, la optimización por Purchases es lo ideal una vez tienes suficientes conversiones (mínimo 20-30 por semana). Si estás comenzando y aún no tienes volumen suficiente, considera optimizar por Add to Cart o View Content como eventos intermedios que eventualmente lleven hacia compras.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Paso 4: Lanzamiento y monitoreo inicial</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Lanza la campaña y establece expectativas realistas. Durante los primeros 7-14 días, los algoritmos están en fase de aprendizaje y los resultados pueden ser inconsistentes. Es importante resistir la tentación de realizar cambios drásticos durante este período inicial.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Métricas clave a monitorear durante esta fase: costo por resultado (CPA), cantidad de resultados, frecuencia de anuncio (para evitar sobreexposición), y distribución de gastos por placement. No te alarmes si ves fluctuaciones significativas; es normal durante el aprendizaje.
-      </p>
-    </section>
-
-    <section>
-      <h2>Estrategias de optimización avanzada</h2>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Estructura de catálogo para mejor rendimiento</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        La forma en que organizas tu catálogo impacta directamente en los resultados. Recomendamos crear segmentos lógicos basados en categorías de producto, precio o margen. Esto permite que, eventualmente, puedas crear campañas separadas para diferentes líneas de producto con estrategias específicas.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Advantage+ priorizará automáticamente productos con mejor rendimiento histórico, así que asegúrate de que tus bestsellers tengan inventario disponible y precios competitivos.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Gestión de presupuestos y pujas</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Para nuevos campaigns, comienza con un presupuesto diario modesto (20-30€) y aumenta gradualmente una vez observes resultados positivos consistentes. Un error común es asignar presupuestos demasiado altos al inicio, lo que puede resultar en aprendizaje ineficiente por parte de los algoritmos.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Respecto a pujas, la gestión automática de Advantage+ es generalmente óptima. Sin embargo, puedes establecer límites máximo de puja si necesitas controlar costes extremos en momentos específicos.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Creatividades que convierten</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Aunque Advantage+ genera variaciones automáticamente, proporcionar inputs de calidad acelera el éxito. Recomendamos mantener un banco de creatividades diverso incluyendo: imágenes de producto limpio sobre fondo blanco (múltiples ángulos), imágenes lifestyle mostrando el producto en uso contextual, videos cortos demostrando el producto o testimoniales, y creatividades con texto overlay destacando ofertas o propuestas de valor únicas.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Actualiza regularmente tus creatividades (cada 4-6 semanas) para evitar fatiga y mantener relevancia. Añadir nuevas creatividades al pool puede reactivar campaigns que muestran signos de rendimientos decrecientes.
-      </p>
-    </section>
-
-    <section>
-      <h2>Errores comunes y cómo evitarlos</h2>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Error 1: Expectativas irrealistas de resultados inmediatos</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Muchos marketers esperan resultados inmediatos con Advantage+ Shopping. Sin embargo, como con cualquier sistema de machine learning, el algoritmo necesita tiempo para aprender y optimizar. Intentar evaluar el rendimiento durante los primeros 7-14 días típicamente lleva a cambios prematuros de campaign que obstaculizan el éxito a largo plazo.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Solución: Establece expectativas claras internamente. Dedica un período mínimo de aprendizaje de 2-3 semanas antes de hacer evaluaciones críticas de rendimiento. Durante este tiempo, enfócate en asegurar que el tracking esté funcionando correctamente y que la campaña está recibiendo impresiones.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Error 2: Catálogos desactualizados o de baja calidad</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Otro error común es tratar el feed de catálogo como algo de "configurar y olvidar". Productos con precios incorrectos, niveles de stock equivocados, o calidad de imagen deficiente impactan directamente el rendimiento publicitario. Advantage+ usa datos del catálogo para cada aspecto de la publicidad.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Solución: Implementa procesos regulares de auditoría de catálogo. Verifica que los precios coincidan con tu website, las imágenes cumplan los estándares de Meta, y el inventario esté actualizado. Considera establecer alertas automáticas para discrepancias significativas.
-      </p>
-
-      <h3 className="text-lg font-bold mt-6 mb-3">Error 3: Cambios frecuentes y prematuros</h3>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Algunos marketers constantemente ajustan campaigns basándose en fluctuaciones diarias. Esta intervención evita que los algoritmos aprendan correctamente y logren rendimiento óptimo. El sistema necesita patrones de datos consistentes para hacer predicciones precisas.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Solución: Establece reglas claras para cuándo hacer cambios. Solo modifica campaign settings basándote en tendencias consistentes, no anomalías. Documenta cambios realizados y su impacto para construir conocimiento institucional con el tiempo.
-      </p>
-    </section>
-
-    <section>
-      <h2>Tabla comparativa: Advantage+ vs Campañas Manuales</h2>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-6">
-        <div className="space-y-4">
-          <div className="flex justify-between items-start border-b border-white/10 pb-3">
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
-              <span className="text-white font-bold">Control de audiencias</span>
-              <p className="text-white/50 text-xs mt-1"> Advantage+: automático / Manual: manual</p>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
             </div>
-            <span className="text-green-400 font-mono text-sm">Ventaja Manual</span>
-          </div>
-          <div className="flex justify-between items-start border-b border-white/10 pb-3">
-            <div>
-              <span className="text-white font-bold">Tiempo de gestión</span>
-              <p className="text-white/50 text-xs mt-1"> Advantage+: bajo / Manual: alto</p>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
             </div>
-            <span className="text-green-400 font-mono text-sm">Ventaja Advantage+</span>
-          </div>
-          <div className="flex justify-between items-start border-b border-white/10 pb-3">
-            <div>
-              <span className="text-white font-bold">Velocidad de aprendizaje</span>
-              <p className="text-white/50 text-xs mt-1"> Advantage+: rápida / Manual: lenta</p>
-            </div>
-            <span className="text-green-400 font-mono text-sm">Ventaja Advantage+</span>
-          </div>
-          <div className="flex justify-between items-start">
-            <div>
-              <span className="text-white font-bold">Escalabilidad</span>
-              <p className="text-white/50 text-xs mt-1"> Advantage+: alta / Manual: limitada</p>
-            </div>
-            <span className="text-green-400 font-mono text-sm">Ventaja Advantage+</span>
           </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
 
-    <section>
-      <h2>Conclusión</h2>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Advantage+ Shopping representa una evolución fundamental en cómo las marcas D2C pueden abordar la publicidad en Meta. Su combinación de inteligencia artificial, automatización inteligente y optimización continua lo convierte en un aliado poderoso para marcas que buscan escalar sin incrementar proporcionalmente los costes operativos.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Para marcas D2C españolas que compiten en un mercado cada vez más complejo, adoptar Advantage+ no es simplemente una mejora táctica, sino una decisión estratégica que puede determinar la capacidad de crecimiento sostenible del negocio.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        El momento de actuar es ahora. A medida que más competidores adoptan estas tecnologías, los early adopters ganan ventaja significativa que se vuelve progresivamente más difícil de cerrar. No esperes a que tu competencia te supere.
-      </p>
-      <p className="text-white/70 leading-relaxed mb-5">
-        Si quieres explorar cómo podemos ayudarte a desbloquear el potencial de tus campañas de comercio electrónico en Meta, <Link to="/?book=call" className="text-white underline underline-offset-2 hover:text-white/80">reserva una llamada de discovery</Link> y charlemos sobre cómo podemos impulsar tu crecimiento.
-      </p>
-    </section>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default AdvantagePlusShoppingMetaAdsPage;
+export default BuenROASNichosPage;

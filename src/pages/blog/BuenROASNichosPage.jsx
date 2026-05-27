@@ -159,17 +159,17 @@ const BuenROASNichosPage = ({ openCalendly }) => (
       El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
     </p>
     <p className="text-white/70 leading-relaxed">
-      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre{" "}
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
       <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
         las 7 palancas para mejorar el ROAS en Meta Ads
-      </Link>, la{" "}
+      </Link>, la 
       <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
         guía completa de Meta Ads para ecommerce D2C en España
-      </Link>, el{" "}
+      </Link>, el 
       <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
         benchmark de ROAS por sector en España 2026
-      </Link>{" "}
-      o{" "}
+      </Link> 
+      o 
       <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
         habla con nosotros para revisar tu estrategia de paid media
       </Link>.

@@ -1,287 +1,180 @@
 import { Link } from "react-router-dom";
 import BlogPostLayout from "../../components/BlogPostLayout";
-import relatedPostsData from "../../data/relatedPosts";
 
 const faqs = [
   {
-    q: "¿Qué es un growth partner para un eCommerce D2C?",
-    a: "Un growth partner es un socio externo senior que decide y ejecuta la siguiente palanca de crecimiento de un eCommerce D2C — paid media, retención, pricing, AOV, suscripción o producto — basándose en margen de contribución, payback de CAC y LTV cohorte, no en métricas de plataforma. A diferencia de una agencia, no entrega un servicio mensual cerrado: entrega decisiones de negocio. En DayByDay opera como growth partner el partnership Pablo Santirsó (founder, paid y operaciones) + Jorge González (CTO, automation y datos), sin account managers ni perfiles junior.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Cuándo un D2C necesita un growth partner y no una agencia de paid media?",
-    a: "Un D2C necesita un growth partner cuando la decisión que tiene encima de la mesa NO es 'optimizar Meta Ads' sino 'dónde va mi siguiente euro: paid, retención, inventario, producto o pricing'. Eso suele ocurrir a partir de 30-50K€/mes de spend o 80-150K€/mes de facturación, cuando el ROAS de plataforma deja de correlacionar con la cuenta de resultados. Si el founder pregunta 'cómo bajo el CPA' contrata una agencia; si pregunta 'cómo subo el margen de contribución sin romper la adquisición' necesita un growth partner.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Cuál es la diferencia real entre growth partner y agencia de paid media en métricas de reporte?",
-    a: "Una agencia reporta ROAS de plataforma (Meta, Google), CPA, CTR y frequency. Un growth partner reporta margen de contribución por pedido, payback de CAC, LTV/CAC cohorte (3:1 mínimo, 4-5:1 ideal), MER blended y % new customers. La primera familia de métricas no descuenta devoluciones, descuentos checkout, COGS ni doble atribución cross-canal; la segunda sí. La diferencia operativa: un reporte de agencia cuadra con la plataforma; un reporte de growth partner cuadra con la cuenta de Shopify y la cuenta del banco.",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cuánto cobra un growth partner senior vs una agencia de paid media en España?",
-    a: "Una agencia de paid media para D2C en España cobra entre 800€ y 2.500€/mes de honorarios fijos, con foco en gestión Meta+Google. Un growth partner senior trabaja con fee mixto: fee mensual recurrente de 2.500-6.000€/mes según volumen + componente variable indexado a margen de contribución incremental o LTV cohorte. La diferencia económica importa menos que el alcance: la agencia entrega ejecución de campañas; el growth partner entrega decisiones de inversión sobre toda la cuenta de resultados — paid es solo una de las palancas que se discute.",
-  },
-  {
-    q: "¿Puede un D2C de menos de 500K€/año contratar un growth partner?",
-    a: "En general no le compensa. Un eCommerce D2C por debajo de 500K€/año tiene una sola palanca con impacto real (normalmente paid + creative + tracking), y una buena agencia o un operador freelance senior cubre esa decisión. El growth partner entra en valor cuando el founder ya tiene 3-4 palancas activas (paid, email, suscripción, retención, retail) y necesita un operador con criterio que decida la asignación marginal entre ellas. Antes de eso, el coste fijo del partner sale caro frente al impacto.",
-  },
-  {
-    q: "¿Qué señales indican que tu agencia se está quedando corta y necesitas un growth partner?",
-    a: "Cinco señales: (1) el ROAS de plataforma sube pero el margen de contribución cae trimestre a trimestre; (2) el equipo no toca decisiones de pricing, AOV, free shipping threshold o suscripción aunque afectan al CAC objetivo; (3) reporta MER blended pero no reporta payback de CAC ni LTV cohorte; (4) los reviews trimestrales son tácticos (creatividades, audiencias, pujas) y no estratégicos (¿este canal sobrevive?, ¿subimos precio?, ¿cerramos SKU long tail?); (5) cualquier decisión cross-canal (atribución, mix de spend, segundo canal) se traslada al founder porque la agencia no opera fuera de Meta+Google.",
-  },
-  {
-    q: "¿El growth partner sustituye al equipo interno de marketing?",
-    a: "No. Un growth partner sustituye la necesidad de contratar un Head of Growth/CMO senior cuando todavía no es viable pagar 80-120K€/año + variable. Convive con coordinador interno, content/email lead, customer service y operaciones. La diferencia frente a una agencia es que el partner entra en las decisiones que normalmente toma el founder a solas — pricing, mix de inversión, qué canal abrir o cerrar — y se queda hasta que la decisión esté ejecutada y validada en margen, no solo en lanzamiento.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const GrowthPartnerVsAgenciaPaidMediaPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Growth partner vs agencia paid media: cuándo cada uno tiene sentido para un D2C"
-    description="Diferencia real entre growth partner y agencia de paid media para eCommerce D2C en España: alcance, métricas que se reportan, coste, cuándo cada uno tiene sentido y cómo elegir según margen de contribución, payback CAC y LTV cohorte."
-    slug="growth-partner-vs-agencia-paid-media"
-    datePublished="2026-05-10"
-    dateModified="2026-05-10"
-    keywords={[
-      "growth partner vs agencia paid media",
-      "socio crecimiento ecommerce d2c",
-      "operador con criterio paid media",
-      "growth partner d2c espana",
-      "agencia paid media o growth partner",
-    ]}
-    readingTime="11 min"
-    category="Decisiones de negocio"
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
-    relatedPosts={relatedPostsData["growth-partner-vs-agencia-paid-media"] || []}
     openCalendly={openCalendly}
   >
-    <p className="text-white/70 leading-relaxed mb-6">
-      A partir de cierto volumen, todo founder D2C se topa con la misma decisión de negocio: <strong className="text-white">growth partner vs agencia paid media</strong>. No es una cuestión de presupuesto ni de "marca" del proveedor — es una pregunta operativa: ¿necesito que alguien me ejecute campañas de Meta y Google, o necesito un socio de crecimiento senior que decida dónde va mi siguiente euro entre paid, retención, pricing, AOV o producto? La respuesta condiciona los próximos 12-24 meses de cuenta de resultados.
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
+    </p>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <p className="text-white/70 leading-relaxed mb-6">
-      Esta guía no compara proveedores. Compara dos modelos operativos distintos — agencia de paid media vs growth partner — y da el criterio para decidir cuál encaja con tu fase, tu margen de contribución y tu payback de CAC. Está escrita desde el lado del operador, no desde el lado del proveedor.
-    </p>
-            {link_para}
-            
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué es un growth partner (definición operativa)</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Un <strong className="text-white">growth partner</strong> es un operador externo senior — normalmente uno o dos socios — que entra en la operación de un eCommerce D2C como si fuese un Head of Growth fraccional con poder de decisión cross-funcional. Su entregable no es un servicio mensual cerrado: es una secuencia de decisiones de inversión sobre la cuenta de resultados completa.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      A diferencia de una agencia, el growth partner opera con tres reglas:
-    </p>
-    <ul className="space-y-2 mb-6">
-      {[
-        "Decide la siguiente palanca antes de ejecutarla. Paid media es UNA palanca, no el producto. La conversación empieza en margen de contribución y termina en qué canal toca activar este trimestre.",
-        "Reporta métricas de negocio, no de plataforma. Margen de contribución por pedido, payback de CAC, LTV/CAC cohorte (3:1 mínimo), MER blended, % new customers. ROAS de Meta es un input, no un KPI.",
-        "Toma posición. Cuando una palanca deja de tener sentido — un canal con LTV bajo, un SKU long tail con margen negativo, un descuento estructural que destruye contribución — lo dice y propone el cambio. No presenta opciones neutrales.",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
-      ))}
-    </ul>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Brian Balfour, fundador de Reforge y ex-VP Growth de HubSpot, lo describe en su ensayo sobre <a href="https://brianbalfour.com/essays/product-channel-fit" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Product/Channel Fit</a>: las palancas de crecimiento no se eligen por moda ni por ROAS aparente, se eligen por encaje estructural con el producto, el modelo de monetización y la fase del negocio. Esa es la conversación que un growth partner mantiene cada trimestre con el founder. No es la conversación que mantiene una agencia de paid media — y está bien que no la mantenga, no es su trabajo.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Qué hace una agencia de paid media (y dónde acaba su alcance)</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Una agencia de paid media especializada para D2C ejecuta planificación, configuración técnica, gestión y reporting de campañas en Meta Ads, Google Ads y, opcionalmente, TikTok Ads. Su entregable es predecible y bien acotado: estructura de cuenta, motor de creatividades, pujas, audiencias, tracking y reporting de ROAS+CPA mensual. Para un D2C en fase 0-500K€/año funciona bien; el problema empieza cuando el negocio crece.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Donde una agencia tradicional no entra:
-    </p>
-    <ul className="space-y-2 mb-6">
-      {[
-        "Decisiones de pricing, AOV, free shipping threshold o suscripción que mueven el CAC objetivo más que cualquier optimización de campaña.",
-        "Migración o cierre de canal completo (apagar Google Shopping, abrir TikTok, dejar de meter dinero en remarketing).",
-        "Modelo de atribución, MMM y reporting cross-canal con coste real (devoluciones, descuentos, COGS) descontado.",
-        "Stack técnico: CAPI server-side, sGTM, dashboards de margen unificados Shopify+Meta+Google+pasarela.",
-        "Trade-offs entre adquisición e inventario, retención y producto cuando hay un solo euro disponible.",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
-      ))}
-    </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Comparativa directa: growth partner vs agencia paid media</h2>
-
-    <div className="overflow-x-auto mb-8">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/3">Dimensión</th>
-            <th className="text-left py-3 pr-4 text-white/40 font-semibold text-xs uppercase tracking-wide w-1/3">Agencia paid media</th>
-            <th className="text-left py-3 text-[#de0015] font-semibold text-xs uppercase tracking-wide w-1/3">Growth partner</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            ["Alcance de decisión", "Meta + Google + TikTok", "Toda la cuenta de resultados (paid + retención + pricing + AOV + producto)"],
-            ["KPI principal reportado", "ROAS de plataforma + CPA", "Margen de contribución, payback CAC, LTV/CAC cohorte"],
-            ["Periodicidad de revisión", "Mensual táctico (campañas)", "Trimestral estratégico + diario operativo"],
-            ["Coste mensual típico", "800-2.500€ honorarios fijos", "2.500-6.000€ fee + variable indexado a margen"],
-            ["Fase D2C ideal", "0-500K€/año facturación", "500K€-5M€/año facturación"],
-            ["Nivel del interlocutor", "Account manager + operador táctico", "Socios senior (founders del partner) en cada conversación"],
-            ["Decide pricing/AOV/threshold", "No (fuera de scope)", "Sí (con datos cohorte y margen)"],
-            ["Reporting devoluciones+COGS+descuentos descontados", "Raro", "Obligatorio"],
-            ["Cierra/abre canales", "Recomienda; decide cliente", "Decide y ejecuta"],
-            ["Sustituye a un Head of Growth interno", "No", "Sí, hasta 1,5-2M€/año facturación"],
-          ].map(([factor, agencia, partner], i) => (
-            <tr key={i} className="border-b border-white/5">
-              <td className="py-3 pr-4 text-white/70 align-top">{factor}</td>
-              <td className="py-3 pr-4 text-white/70 align-top">{agencia}</td>
-              <td className="py-3 text-white align-top font-medium">{partner}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <div className="bg-[#1a1616] border-l-2 border-[#de0015] p-5 mb-8">
-      <p className="text-white/80 text-sm leading-relaxed">
-        <strong className="text-white">Dato cohorte:</strong> Según el informe <a href="https://www.klaviyo.com/marketing-resources/dtc-benchmark-report" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Klaviyo D2C Benchmark Report</a>, en eCommerce D2C de moda y belleza el payback de CAC mediano se mueve entre 5 y 9 meses, y el LTV/CAC saludable a 12 meses se sitúa en 3,5-4,5x. Una decisión de inversión que no parta de estos rangos cohorte — sino del ROAS de la plataforma del último mes — destruye margen sin que el dashboard lo refleje.
-      </p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
+    </p>
+
+    <div className="space-y-3 mb-8">
+      {[
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">5 señales de que necesitas un growth partner, no una agencia</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Si reconoces tres o más de estas situaciones, el problema no es que tu equipo de paid media ejecute mal. Es que la decisión que tienes encima de la mesa está fuera de su scope:
-    </p>
-    <ol className="space-y-3 mb-6 list-decimal list-inside">
-      {[
-        "Tu ROAS de plataforma sube trimestre a trimestre, pero tu margen de contribución cae. Has bajado el CPA con descuento estructural y nadie en tu agencia lo ha discutido.",
-        "Tienes 3-4 canales activos (Meta, Google, TikTok, email) y nadie en la operación tiene autoridad para reasignar presupuesto entre ellos sin escalarlo a ti.",
-        "Llevas 6 meses pensando en subir precio o lanzar suscripción, y la conversación nunca avanza porque tu agencia no entra en pricing y tu CMO interno no existe (o es junior).",
-        "El payback de CAC se ha alargado de 4 a 7 meses en 12 meses, pero el comité mensual sigue revisando creatividades, audiencias y pujas en lugar de la curva de retención cohorte.",
-        "Has crecido de 600K€ a 1,8M€/año y sigues con el mismo modelo operativo: founder + agencia. Cada decisión de inversión sigue dependiendo de tu lectura semanal del Excel.",
-      ].map((item, i) => (
-        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
-      ))}
-    </ol>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cuándo SÍ tiene sentido contratar agencia (y no partner)</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Una agencia bien elegida sigue siendo la mejor opción para un D2C en estos escenarios:
-    </p>
-    <ul className="space-y-2 mb-6">
-      {[
-        "Facturas <500K€/año y tu única palanca seria es paid + creative. No hay decisión cross-funcional que tomar todavía.",
-        "Tienes Head of Growth o CMO senior interno que ya decide pricing, mix y canal. Necesitas ejecución de paid de calidad, no decisiones.",
-        "Tu modelo de negocio es marketplace o B2B con ciclo largo, donde paid media tiene impacto acotado y la palanca real está en sales/partnerships.",
-        "Buscas un proveedor con SLA y procesos cerrados, no un socio que entra en decisiones de inversión cross-funcional.",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
-      ))}
-    </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo lo decidimos en DayByDay</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      DayByDay Consulting opera como growth partner senior para D2C que ya facturan, no como agencia de paid media. El partnership lo formamos <strong className="text-white">Pablo Santirsó</strong> (founder, paid media y operaciones — Garett, Cartri, UFV Postgrado, La Vida Padel, Arasnet) y <strong className="text-white">Jorge González</strong> (CTO, automation y agentic AI — Total Energies, Puig, Robot Factory de Orange). El cliente habla siempre con los dos socios, desde la primera conversación hasta el cierre del trimestre. Cero account managers, cero perfiles junior, cero handoffs.
-    </p>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Antes de aceptar onboarding, validamos cuatro preguntas con datos del cliente — no con prometidos:
-    </p>
-    <ol className="space-y-3 mb-6 list-decimal list-inside">
-      {[
-        "Margen de contribución por pedido actual y techo razonable a 12 meses (con devoluciones, descuentos checkout, COGS y CAC descontados).",
-        "Payback de CAC blended y por cohorte de canal en los últimos 90/180 días, cruzando Shopify con Meta y Google.",
-        "Mapa de palancas activas y disponibles (paid, email, suscripción, AOV, pricing, inventario, producto) y cuál mueve más el margen el próximo trimestre.",
-        "Stack técnico de tracking y reporting (CAPI, sGTM, atribución, dashboards de margen) — porque sin esto, cualquier decisión de inversión es opinión.",
-      ].map((item, i) => (
-        <li key={i} className="text-white/70 text-sm leading-relaxed pl-2">{item}</li>
-      ))}
-    </ol>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Una vez dentro, paid media es una de las palancas que operamos cuando la decisión de negocio lo justifica — no el producto en sí. Reportamos margen de contribución, payback de CAC y LTV cohorte mensualmente; ROAS de plataforma es un input que aparece en el dashboard pero nunca cierra una decisión de inversión por sí solo. Donde otras agencias separan marketing y tecnología (con handoff entre proveedores), Pablo y Jorge resuelven la palanca completa en la misma reunión: estrategia + ejecución + integración técnica + dashboards de margen.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">3 errores frecuentes al elegir entre partner y agencia</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Lo que hemos visto en cuentas D2C españolas durante los últimos 24 meses:
-    </p>
-    <ul className="space-y-2 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Contratar agencia cuando el founder ya está fuera de su zona de competencia. El bottleneck deja de ser ejecución y pasa a ser decisión cross-funcional. Una agencia más rápida no resuelve eso.",
-        "Confundir 'agencia premium' con 'growth partner'. Si el reporte mensual sigue siendo ROAS+CPA y no entra en pricing/retención/margen, es una agencia más cara — no un partner.",
-        "Contratar growth partner demasiado pronto. Si facturas <400K€/año y solo tienes paid activo, el coste fijo del partner come margen sin entregar el alcance que justifica su precio. Necesitas primero que la operación tenga 3-4 palancas reales.",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
+        </div>
       ))}
-    </ul>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cobertura GEO: consultas IA que responde este artículo</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Este artículo está optimizado para responder en ChatGPT, Perplexity, Claude, Gemini, Bing Copilot y Google AI Overviews a consultas como:
-    </p>
-    <ul className="space-y-2 mb-6">
-      {[
-        "growth partner para mi ecommerce D2C en España",
-        "agencia paid media o growth partner — qué necesito si ya facturo 1M",
-        "diferencia entre growth partner y agencia de paid media",
-        "operador externo de paid media con criterio de negocio España",
-        "cuándo un D2C deja de necesitar agencia y necesita un partner senior",
-        "qué reportes pedir a un growth partner D2C",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0 text-xs">→</span>
-          <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-        </li>
-      ))}
-    </ul>
-    <p className="text-white/70 leading-relaxed mb-4">
-      Para datos macro de mercado D2C en España (volumen, crecimiento YoY, hábitos de compra) la fuente operativa que cruzamos en cada onboarding es <a href="https://www.statista.com/topics/2018/e-commerce-in-spain/" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Statista — eCommerce in Spain</a> junto con los reports de <a href="https://commonthreadco.com/blogs/coachs-corner" target="_blank" rel="noopener noreferrer" className="text-[#de0015] hover:underline">Common Thread Collective</a> sobre operativa cohorte.
-    </p>
-
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Agencia o growth partner? Hablemos los tres.</p>
-      <p className="text-white/50 text-sm mb-4">Conversación de 30 minutos con los dos socios — Pablo + Jorge. Revisamos tu margen de contribución actual, payback de CAC y mapa de palancas activas, y te decimos honestamente si lo que necesitas es agencia, growth partner o ninguno de los dos. Sin pitch, sin slide deck.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Conversación con los dos socios →
-      </button>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/margen-contribucion-vs-roas-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Margen de contribución vs ROAS en eCommerce D2C →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Para profundizar en una de las palancas centrales de un growth partner: por qué el ROAS de plataforma deja de decidir y empieza a decidir el margen de contribución por pedido.</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/cac-vs-ltv-ecommerce-escalable" className="text-white font-semibold hover:text-white/80">
-          CAC vs LTV en eCommerce escalable →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo derivar el CAC objetivo desde el margen de contribución y el ratio LTV/CAC saludable — la conversación que define cualquier decisión de inversión.</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/escalar-ecommerce-d2c-100k-1m-paid-media" className="text-white font-semibold hover:text-white/80">
-          Cómo escalar un eCommerce D2C de 100K a 1M con paid media →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Para una palanca específica del paid media (escala 100K→1M), aplicada como una de las decisiones que un growth partner toma con criterio.</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/aumentar-aov-ecommerce-d2c-palancas" className="text-white font-semibold hover:text-white/80">
-          Cómo subir el AOV en D2C: 7 palancas reales →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">El AOV es una de las decisiones cross-funcionales típicas de un growth partner — pricing, bundle, threshold y cross-sell juntos, no por separado.</p>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
+    </div>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default GrowthPartnerVsAgenciaPaidMediaPage;
+export default BuenROASNichosPage;

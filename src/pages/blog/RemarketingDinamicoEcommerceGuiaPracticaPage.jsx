@@ -3,277 +3,178 @@ import BlogPostLayout from "../../components/BlogPostLayout";
 
 const faqs = [
   {
-    q: "¿Qué es el remarketing dinámico y en qué se diferencia del retargeting normal?",
-    a: "El remarketing dinámico (DPA en Meta, Dynamic Remarketing en Google) muestra automáticamente a cada usuario los productos exactos que vio, añadió al carrito o miró en categorías relacionadas, en lugar de un creativo genérico. El retargeting estándar enseña el mismo anuncio a todo el público que visitó el sitio. La diferencia operativa es enorme: el dinámico requiere un catálogo de productos sincronizado y eventos detallados (ViewContent, AddToCart, Purchase con product_id), pero a cambio multiplica el CTR 2-3x y baja el CPA 30-50% en cuentas D2C con catálogo \u003e50 SKUs. Si tu eCommerce tiene catálogo de 5 productos no compensa el setup; a partir de 30-40 SKUs es la palanca BOFU más rentable.",
+    q: "¿Cuál es un buen ROAS para Meta Ads en 2026?",
+    a: "Un ROAS de 3x-4x es el mínimo rentable para la mayoría de eCommerce con márgenes del 30-40%. En sectores como moda o accesorios, un ROAS saludable está entre 4x y 7x. En electrónica, donde los márgenes son más ajustados, se necesita un ROAS de 6x-10x para ser rentable. Lo más importante no es el benchmark sectorial sino conocer tu propio punto de equilibrio.",
   },
   {
-    q: "¿Qué necesito para arrancar remarketing dinámico en Meta Ads?",
-    a: "Cuatro piezas mínimas: (1) Catálogo en Meta Commerce Manager sincronizado vía feed (Shopify, WooCommerce, BigCommerce tienen integración nativa) o feed CSV/XML actualizado al menos cada 24h; (2) Píxel + API de Conversiones enviando eventos ViewContent, AddToCart, InitiateCheckout y Purchase con parámetros content_ids y content_type='product'; (3) Catálogo verificado y conectado al ad account; (4) Audiencia dinámica creada (visitantes 14-30 días, carrito 7-14 días, compradores 30-90 días). Sin estas cuatro piezas el algoritmo no puede emparejar usuario con producto. La mayoría de errores que auditamos vienen de catálogos con \u003e10% de productos rechazados o de ViewContent mal disparado en colecciones en lugar de PDPs.",
+    q: "¿Qué ROAS se considera bueno en Google Ads?",
+    a: "En Google Ads Search, un ROAS de 4x-6x es habitual en eCommerce generalista, aunque sectores como viajes o electrodomésticos con márgenes bajos necesitan 8x-12x. Performance Max suele ofrecer ROAS más altos que las campañas manuales al optimizar todos los canales a la vez, pero con menos control sobre el desglose por placement.",
   },
   {
-    q: "¿Qué ventanas de retargeting funcionan mejor para D2C en España?",
-    a: "Depende del ticket y del ciclo de decisión. Para tickets <40€ (impulso): ViewContent 7 días + AddToCart 3 días + Purchase 60-90 días. Para tickets 40-150€ (consideración media): ViewContent 14 días + AddToCart 7 días + Purchase 90-180 días. Para tickets \u003e150€ (alta consideración: muebles, joyería, electrónica): ViewContent 30 días + AddToCart 14 días + Purchase 180 días. Más allá de esas ventanas la frecuencia se dispara y el ROAS cae sin convertir. Excluye siempre los compradores recientes de la audiencia de carrito, salvo que estés haciendo cross-sell con catálogo distinto (accesorio del producto comprado).",
+    q: "¿Cómo calculo el ROAS mínimo para mi negocio?",
+    a: "La fórmula es: ROAS mínimo = 1 ÷ margen bruto. Si tu margen es del 35%, tu ROAS de equilibrio es 1 ÷ 0,35 = 2,86x. Pero ese ROAS solo cubre el coste del producto. Para cubrir también los costes fijos (almacén, equipo, herramientas), necesitas un ROAS objetivo un 50-80% superior al de equilibrio.",
   },
   {
-    q: "¿Cuánto presupuesto debo asignar al remarketing dinámico vs prospecting?",
-    a: "Regla operativa que aplicamos en cuentas D2C: el remarketing dinámico no debería superar el 15-25% del spend total de Meta. Si supera el 30%, normalmente significa que el prospecting está infraalimentado y estás cosechando demanda existente sin crear nueva — el ROAS reportado sube pero el revenue total se estanca. La distribución típica que rinde mejor es 70-75% prospecting/Advantage+ + 15-20% remarketing dinámico + 5-10% retargeting clásico (engagement, vídeo views). Cuando una cuenta se queda atrapada en 'el remarketing es lo único rentable', el problema casi siempre está arriba del funnel, no en BOFU.",
-  },
-  {
-    q: "¿El remarketing dinámico todavía funciona después de iOS 17 y la pérdida de cookies?",
-    a: "Sí, pero requiere infraestructura técnica que antes era opcional. Sin API de Conversiones server-side bien implementada, el match rate de eventos cae al 50-65% y el algoritmo no consigue mapear usuario con producto visto en una proporción que mate la rentabilidad. Con CAPI server-side + parámetros enriquecidos (email hash, phone hash, user_agent, fbc/fbp), el match rate sube al 85-95% y el remarketing dinámico recupera prácticamente el rendimiento pre-iOS 14. La diferencia de ROAS entre una cuenta con CAPI básica vs CAPI server-side completa que vemos es de 1,8x a 4x en el mismo público. Sin esa base, no merece la pena ni encender remarketing dinámico.",
-  },
-  {
-    q: "¿Cómo evito la fatiga publicitaria en remarketing dinámico?",
-    a: "El remarketing dinámico tiene fatiga más rápida que prospecting porque el público es pequeño. Tres palancas: (1) rota la plantilla creativa (carrusel, colección, vídeo dinámico, single image dinámico) cada 3-4 semanas; (2) usa el creativo dinámico de Meta — distintos textos, headlines y CTAs sobre el mismo feed — para multiplicar combinaciones automáticamente; (3) controla la frecuencia: si supera 4-5 impresiones/semana en la audiencia de carrito 7d, baja la puja o reduce el público. Indicador clave: si el CPA del DPA sube \u003e25% en 14 días sin cambios externos, casi siempre es fatiga creativa. Cambiar la plantilla suele recuperar el rendimiento en 5-7 días.",
+    q: "¿Por qué mi ROAS es diferente en Meta Ads y en Google Analytics?",
+    a: "Las discrepancias entre plataformas son normales. Meta atribuye conversiones a ventanas de 7 días tras el clic o 1 día tras la visualización, mientras que Google Analytics puede usar atribución last-click. Esto genera diferencias del 20-40%. El ROAS real de negocio se calcula con los datos de tu plataforma de eCommerce (Shopify, WooCommerce), no con las cifras de cada plataforma de forma aislada.",
   },
 ];
 
-const RemarketingDinamicoEcommerceGuiaPracticaPage = ({ openCalendly }) => (
+const BuenROASNichosPage = ({ openCalendly }) => (
   <BlogPostLayout
-    title="Remarketing dinámico para ecommerce: guía práctica (2026)"
-    description="Guía operativa de remarketing dinámico para eCommerce D2C: qué es y cuándo merece la pena, requisitos técnicos en Meta y Google, ventanas óptimas por ticket, distribución de presupuesto vs prospecting, plantillas creativas que rinden y cómo evitar fatiga. Con tabla de KPIs reales."
-    slug="remarketing-dinamico-ecommerce-guia-practica"
-    datePublished="2026-05-01"
-    dateModified="2026-05-01"
-    readingTime="9 min"
-    category="Estrategia"
-    keywords={[
-      "remarketing dinámico ecommerce",
-      "remarketing dinámico meta ads",
-      "dpa meta ads",
-      "retargeting catálogo productos",
-      "dynamic ads ecommerce d2c",
-    ]}
+    title="¿Qué es un buen ROAS? Benchmarks por nicho para Meta Ads y Google Ads en 2026"
+    description="Descubre cuál es un ROAS bueno para tu sector en 2026. Benchmarks reales de ROAS por nicho en Meta Ads y Google Ads: moda, eCommerce, salud, servicios y más."
+    slug="buen-roas-por-nicho-benchmarks-2026"
+    datePublished="2026-03-10"
+    readingTime="8 min"
+    category="Paid Media"
     faqs={faqs}
     openCalendly={openCalendly}
   >
+    <h2 className="text-2xl font-black mt-10 mb-4">¿Por qué el ROAS varía tanto por nicho?</h2>
     <p className="text-white/70 leading-relaxed mb-5">
-      El <strong className="text-white">remarketing dinámico para ecommerce</strong> sigue siendo, en 2026, la palanca BOFU más rentable de un D2C bien montado — y la peor configurada en la mayoría de cuentas que auditamos. La diferencia entre un DPA que rinde 6-9x ROAS y uno que da 2x está casi siempre en la base técnica (catálogo, eventos, CAPI), no en el creativo.
+      El ROAS (Return on Ad Spend) no tiene un valor universalmente "bueno". Un ROAS de 3x puede ser extraordinario en un negocio de software con márgenes del 80%, pero absolutamente insuficiente para un eCommerce de electrónica con márgenes del 8%. La clave está en entender que el ROAS es solo rentable en relación con tu margen bruto y tu estructura de costes.
     </p>
     <p className="text-white/70 leading-relaxed mb-5">
-      Esta guía resuelve qué necesitas para arrancarlo bien, qué ventanas y exclusiones aplicar según tu ticket, qué porcentaje del presupuesto debe ir a remarketing dinámico vs prospecting, qué plantillas creativas funcionan después de iOS 17 y cómo controlar la fatiga sin pausar la campaña.
-    </p>
-            {link_para}
-            
-
-    <h2 className="text-2xl font-black mt-10 mb-4">¿Cuándo merece la pena el remarketing dinámico?</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      No todos los D2C deberían encenderlo desde el día 1. Las condiciones reales para que rinda:
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Catálogo con >30-40 SKUs activos. Por debajo, el creativo dinámico no aporta sobre un retargeting estático bien hecho.",
-        "Tráfico mensual >8.000 sesiones únicas. Audiencias dinámicas de <1.000 usuarios queman frecuencia en 5 días.",
-        "Píxel + API de Conversiones server-side con match rate 80%. Sin esto, el algoritmo no puede emparejar usuario y producto.",
-        "Feed sincronizado al menos cada 24h, con <5% de productos rechazados en Commerce Manager / Merchant Center.",
-        "Tiempo medio entre primera visita y compra >24h (si es <12h ya conviertes con retargeting de 1-3 días, no necesitas DPA).",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Si fallas en 2 o más de estos puntos, el ROI de implementar bien el remarketing dinámico está por encima del de mantener un retargeting estándar. Es la primera deuda técnica a pagar.
+      Sin embargo, los benchmarks sectoriales son útiles para saber si tus campañas están muy por encima o muy por debajo de la media del mercado. Si tu competencia consigue un ROAS de 5x y tú llevas meses en 2x, hay un problema estructural en tu estrategia, no solo en los márgenes.
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Setup técnico mínimo en Meta Ads</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      La <a href="https://www.facebook.com/business/help/1612355914396453" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">documentación oficial de Meta sobre anuncios dinámicos</a> exige un setup que mucha gente da por hecho y nunca verifica. El protocolo que aplicamos:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Componente</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Mínimo aceptable</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Ideal D2C escalable</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { c: "Catálogo (Commerce Manager)", m: "Feed CSV/XML actualizado cada 24h", i: "Integración nativa Shopify/Woo + sync horaria" },
-            { c: "Píxel ViewContent", m: "Disparado en PDP con content_ids", i: "Disparado solo en PDPs reales, no en colecciones" },
-            { c: "Píxel AddToCart / InitiateCheckout", m: "Con product_id y value", i: "Con product_id, value, currency, num_items, contents[]" },
-            { c: "Píxel Purchase", m: "Con value y currency", i: "+content_ids, num_items, order_id, customer email hash" },
-            { c: "API de Conversiones (CAPI)", m: "Eventos básicos server-side", i: "Server-side completo con dedup + EMQ >7" },
-            { c: "Audiencias dinámicas", m: "Visitantes 30d + carrito 14d", i: "Segmentadas por ticket/categoría/intención" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.c}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.m}</td>
-              <td className="py-3 px-3 text-white/55 text-xs">{row.i}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-8">
+      <p className="text-white/40 text-xs uppercase tracking-wider mb-2">Fórmula esencial</p>
+      <p className="font-mono text-white text-sm">ROAS mínimo rentable = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Ejemplo: margen del 35% → ROAS de equilibrio = 2,86x</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Ventanas de retargeting óptimas por ticket</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Meta Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Una de las decisiones que más impacto tiene y casi nadie ajusta. Estas son las ventanas que usamos en cuentas D2C españolas según ticket medio (AOV) y ciclo de decisión real:
+      Estos benchmarks se basan en datos agregados de campañas gestionadas en DayByDay y datos públicos del mercado español. Son rangos orientativos para Meta Ads (Facebook + Instagram) en campañas de conversión:
     </p>
-    <div className="space-y-4 mb-6">
+
+    <div className="space-y-3 mb-8">
       {[
-        {
-          ticket: "Ticket <40€ (impulso, suplementos, snacks, accesorios)",
-          ventanas: "ViewContent 7d · AddToCart 3d · Purchase 60-90d",
-          razon: "Decisión rápida. Más allá de 7 días la intención cae y la frecuencia mata el ROAS.",
-        },
-        {
-          ticket: "Ticket 40-150€ (moda, belleza, hogar pequeño)",
-          ventanas: "ViewContent 14d · AddToCart 7d · Purchase 90-180d",
-          razon: "Punto dulce del DPA en España. Ventana suficiente para volver tras comparar.",
-        },
-        {
-          ticket: "Ticket 150-500€ (electrónica, deporte, hogar grande)",
-          ventanas: "ViewContent 30d · AddToCart 14d · Purchase 180d",
-          razon: "Ciclo de decisión largo. Acompañamiento creativo con prueba social y vídeo.",
-        },
-        {
-          ticket: "Ticket >500€ (muebles, joyería, productos premium)",
-          ventanas: "ViewContent 60d · AddToCart 30d · Purchase 365d",
-          razon: "Volumen pequeño obliga a ventanas largas. Prioridad: cross-sell tras compra.",
-        },
-      ].map(({ ticket, ventanas, razon }) => (
-        <div key={ticket} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-          <p className="font-semibold text-white text-sm mb-1">{ticket}</p>
-          <p className="text-white/70 text-sm mb-1"><span className="text-white/40">Ventanas:</span> {ventanas}</p>
-          <p className="text-white/55 text-sm"><span className="text-white/40">Por qué:</span> {razon}</p>
+        { nicho: "Moda y accesorios", roas: "3x – 6x", margen: "45-60%", nota: "Alta variación según ticket medio" },
+        { nicho: "Belleza y cosmética", roas: "4x – 7x", margen: "50-70%", nota: "Fuerte impacto del creativo en CTR" },
+        { nicho: "Salud y bienestar / suplementos", roas: "3x – 5x", margen: "40-60%", nota: "Restricciones de Meta en copy médico" },
+        { nicho: "Hogar y decoración", roas: "4x – 8x", margen: "40-55%", nota: "Ciclo de consideración largo" },
+        { nicho: "Electrónica y tecnología", roas: "6x – 12x", margen: "8-20%", nota: "Márgenes ajustados exigen ROAS alto" },
+        { nicho: "Alimentación y gourmet", roas: "3x – 5x", margen: "35-50%", nota: "Ticket bajo, volumen clave" },
+        { nicho: "Juguetes e infantil", roas: "4x – 7x", margen: "40-55%", nota: "Muy estacional (Q4 crítico)" },
+        { nicho: "Mascotas", roas: "3x – 6x", margen: "40-55%", nota: "Alta fidelización → LTV alto" },
+        { nicho: "Deporte y outdoor", roas: "3x – 5x", margen: "35-50%", nota: "Audiencia aficionada muy segmentable" },
+        { nicho: "Servicios (lead gen B2C)", roas: "N/A – se mide CPL", margen: "—", nota: "El ROAS no aplica, usar CAC/CPL" },
+      ].map(({ nicho, roas, margen, nota }) => (
+        <div key={nicho} className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="font-bold text-sm text-white">{nicho}</div>
+              <div className="text-white/40 text-xs mt-0.5">{nota}</div>
+            </div>
+            <div className="flex gap-4 flex-shrink-0">
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">ROAS objetivo</div>
+                <div className="font-bold text-white text-sm">{roas}</div>
+              </div>
+              <div className="text-right">
+                <div className="text-white/40 text-[10px] uppercase tracking-wider">Margen típico</div>
+                <div className="font-bold text-white/70 text-sm">{margen}</div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">CPA y ROAS reales del remarketing dinámico (D2C España)</h2>
+    <h2 className="text-2xl font-black mt-10 mb-4">Benchmarks de ROAS por nicho en Google Ads 2026</h2>
     <p className="text-white/70 leading-relaxed mb-4">
-      Datos agregados de cuentas D2C que gestionamos con CAPI server-side, ticket 40-120€ y catálogo 100-1.500 SKUs. Tras la consolidación post-iOS:
-    </p>
-    <div className="overflow-x-auto mb-6">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="border-b border-white/10">
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">Audiencia DPA</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">CTR</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">CPA</th>
-            <th className="text-left py-3 px-3 text-white/40 font-medium text-xs uppercase tracking-wider">ROAS</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            { a: "AddToCart 7d (excl. compradores)", ctr: "2,5-4,5%", cpa: "10-18€", r: "6-12x" },
-            { a: "ViewContent 14d (excl. ATC y compra)", ctr: "1,5-2,8%", cpa: "18-30€", r: "3,5-6x" },
-            { a: "Compradores 90d (cross-sell)", ctr: "2,0-3,5%", cpa: "14-22€", r: "4-7x" },
-            { a: "Broad DPA (top X% público amplio)", ctr: "1,2-2,0%", cpa: "22-38€", r: "2-3,5x" },
-            { a: "Carrito abandonado <24h", ctr: "3,5-6,0%", cpa: "8-14€", r: "8-15x" },
-          ].map((row, i) => (
-            <tr key={i} className="border-b border-white/5 hover:bg-white/2">
-              <td className="py-3 px-3 text-white font-semibold text-xs">{row.a}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.ctr}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.cpa}</td>
-              <td className="py-3 px-3 text-white font-medium text-xs">{row.r}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Cuidado con leer este cuadro y concluir "concentro todo en carrito 24h". Ese ROAS de 8-15x es real pero el público es pequeñísimo (cientos de usuarios/día en una cuenta media). Saturar esa audiencia con presupuesto la quema en 48h. La regla es: cosechar lo evidente con presupuesto justo, alimentar prospecting arriba.
+      Google Ads (Shopping + Search) suele ofrecer ROAS superiores a Meta en eCommerce porque captura demanda activa — el usuario ya está buscando el producto. Sin embargo, los CPCs son más altos, lo que afecta a la rentabilidad total:
     </p>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Plantillas creativas que rinden en DPA</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      No todos los formatos dinámicos rinden igual. El orden que vemos en cuentas que escalan:
-    </p>
-    <div className="space-y-3 mb-6">
+    <div className="space-y-3 mb-8">
       {[
-        "Carrusel dinámico con producto + precio + reseña corta superpuesta. Best-seller absoluto en BOFU 7-14d.",
-        "Colección dinámica (Collection Ad) con vídeo cabecera de marca + grid de productos vistos. Eleva CTR 25-40% vs single image.",
-        "Vídeo dinámico (Dynamic Video Ad) con plantilla que inserta producto y precio sobre B-roll. Rinde mejor en ViewContent 14-30d.",
-        "Single image dinámico con overlay de envío gratis o descuento condicionado. Útil para reactivar carrito >7d.",
-        "Anuncio de catálogo + UGC: combinar feed con creativo UGC mejora CPA 15-25% en categorías de moda y belleza.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-    <p className="text-white/70 leading-relaxed mb-5">
-      Las pautas que <a href="https://www.shopify.com/blog/dynamic-product-ads" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 hover:decoration-white transition-colors">Shopify recoge sobre Dynamic Product Ads</a> coinciden con lo que vemos: el feed limpio + creatividad iterada cada 3-4 semanas es lo que mantiene el rendimiento por encima del benchmark de la categoría.
-    </p>
-
-    <h2 className="text-2xl font-black mt-10 mb-4">Cómo trabajamos el remarketing dinámico en DayByDay</h2>
-    <p className="text-white/70 leading-relaxed mb-4">
-      No empezamos por "creamos el DPA y a correr". Antes de encender la campaña aplicamos este protocolo:
-    </p>
-    <div className="space-y-3 mb-6">
-      {[
-        "Auditoría del feed: productos rechazados, imágenes <500px, precios desactualizados, falta de GTIN. Sin feed limpio no hay DPA.",
-        "Verificación de eventos píxel + CAPI: ViewContent solo en PDP, AddToCart con product_id correcto, deduplicación dedup_key activa. EMQ objetivo >7.",
-        "Segmentación de catálogos: separar best-sellers, novedades y stock saturado en catálogos lógicos para tener control de puja por línea.",
-        "Diseño de audiencias por ticket: ATC corto (3-7d), VC medio (14d), compradores cross-sell (90d) — siempre con exclusiones cruzadas.",
-        "Creativo bracket: 3 plantillas distintas en testing simultáneo (carrusel, colección, vídeo) para detectar fatiga antes de que mate la campaña.",
-        "Revisión semanal de frecuencia + sustitución creativa antes de superar 4-5 impresiones/semana en cualquier ad set.",
-      ].map((item) => (
-        <div key={item} className="flex items-start gap-2 text-white/60 text-sm">
-          <span className="text-[#de0015] mt-0.5 flex-shrink-0">→</span>
-          <span>{item}</span>
+        { nicho: "Moda y accesorios", roas: "5x – 9x", canal: "Shopping + Brand Search" },
+        { nicho: "Belleza y cosmética", roas: "5x – 10x", canal: "Shopping + Performance Max" },
+        { nicho: "Electrónica", roas: "8x – 15x", canal: "Shopping prioritario" },
+        { nicho: "Hogar y decoración", roas: "5x – 10x", canal: "Shopping + Display remarketing" },
+        { nicho: "Mascotas", roas: "5x – 8x", canal: "Shopping + marca" },
+        { nicho: "Alimentación (online)", roas: "4x – 7x", canal: "Shopping + remarketing Display" },
+        { nicho: "Servicios (lead gen)", roas: "N/A – CPL", canal: "Search puro" },
+        { nicho: "Educación (lead gen)", roas: "N/A – CPL", canal: "Search + Display Remarketing" },
+      ].map(({ nicho, roas, canal }) => (
+        <div key={nicho} className="flex items-center justify-between bg-[#1a1616] border border-white/8 rounded-xl p-4 gap-4">
+          <div>
+            <div className="font-bold text-sm text-white">{nicho}</div>
+            <div className="text-white/40 text-xs mt-0.5">{canal}</div>
+          </div>
+          <div className="font-bold text-white text-sm flex-shrink-0">{roas}</div>
         </div>
       ))}
     </div>
 
-    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-8 text-center">
-      <p className="font-bold text-white text-lg mb-2">¿Tu remarketing dinámico está rindiendo lo que debería?</p>
-      <p className="text-white/50 text-sm mb-4">Auditoría gratuita 30 min: revisamos catálogo, eventos píxel + CAPI, audiencias y creativo para detectar las fugas que están matando tu ROAS de DPA.</p>
-      <button
-        onClick={openCalendly}
-        className="bg-white text-black font-bold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
-      >
-        Solicitar auditoría gratuita →
-      </button>
+    <h2 className="text-2xl font-black mt-10 mb-4">Cómo calcular tu ROAS objetivo real</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Antes de compararte con benchmarks del sector, necesitas calcular tu propio ROAS objetivo. Estos son los tres pasos:
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 1: Calcula tu margen bruto medio</h3>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Margen bruto = (Precio de venta – Coste del producto) ÷ Precio de venta × 100. Si vendes un producto a 100€ que te cuesta 40€, tu margen es del 60%. Si tienes muchos SKUs, usa el margen medio ponderado por ventas.
+    </p>
+
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 2: Calcula el ROAS de equilibrio</h3>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-5 mb-4">
+      <p className="font-mono text-white text-sm">ROAS equilibrio = 1 ÷ margen bruto</p>
+      <p className="text-white/50 text-xs mt-2">Con margen 60%: 1 ÷ 0,60 = 1,67x — cualquier ROAS por encima de ese punto cubre el coste del producto</p>
     </div>
 
-    <h2 className="text-2xl font-black mt-10 mb-4">Artículos relacionados</h2>
-    <div className="space-y-3">
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/dynamic-product-ads-meta-shopify-d2c" className="text-white font-semibold hover:text-white/80">
-          Dynamic Product Ads en Meta para Shopify: guía técnica D2C 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Configuración técnica completa de DPA: catálogo, CAPI, product sets segmentados y feeds Shopify</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/retargeting-meta-ads-ecommerce-2026" className="text-white font-semibold hover:text-white/80">
-          Retargeting en Meta Ads para eCommerce: guía completa 2026 →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">La escalera completa de retargeting (no solo dinámico) y cómo combinarla con DPA</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/guia-api-conversiones-meta-ads-shopify" className="text-white font-semibold hover:text-white/80">
-          Guía API de Conversiones de Meta para eCommerce →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Sin CAPI server-side el remarketing dinámico pierde 30-50% del match rate</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/advantage-plus-shopping-cuando-usarlo-no" className="text-white font-semibold hover:text-white/80">
-          Advantage+ Shopping en Meta Ads: cuándo usarlo y cuándo no →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Cómo conviven Advantage+ y DPA sin solaparse y matar audiencias</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/creative-testing-meta-ads" className="text-white font-semibold hover:text-white/80">
-          Cómo hacer creative testing en Meta Ads →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Protocolo para rotar plantillas dinámicas y evitar la fatiga publicitaria</p>
-      </div>
-      <div className="bg-[#1a1616] border border-white/8 rounded-xl p-4">
-        <Link to="/blog/metricas-meta-ads-importantes-ecommerce" className="text-white font-semibold hover:text-white/80">
-          Métricas Meta Ads que importan de verdad (y las que no) →
-        </Link>
-        <p className="text-white/40 text-xs mt-1">Por qué el ROAS del DPA aislado engaña sin mirar MER blended</p>
+    <h3 className="text-lg font-bold mt-6 mb-3">Paso 3: Añade tus costes fijos al objetivo</h3>
+    <p className="text-white/70 leading-relaxed mb-5">
+      El ROAS de equilibrio solo cubre el coste del producto. Para cubrir también agencia, herramientas, almacén y equipo, necesitas un ROAS objetivo un 60-100% más alto que el de equilibrio. Si tu ROAS de equilibrio es 1,67x, tu objetivo real debería estar en 2,8x-3,5x para generar beneficio neto.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Caso real: ROAS en campaña multicanal Evercreate × Universidad privada</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      Este caso es especial porque no se trata de eCommerce sino de lead gen para educación superior. En este sector el ROAS como métrica no aplica: la clave es el CPL (coste por lead) y el CAC (coste por matrícula).
+    </p>
+    <div className="bg-[#1a1616] border border-white/8 rounded-xl p-6 mb-5">
+      <div className="grid grid-cols-2 gap-4">
+        {[
+          { label: "Inversión total gestionada", value: "253.679 €" },
+          { label: "CTR en Google Ads", value: "10,35%" },
+          { label: "CPC en Meta Ads (lead gen)", value: "0,24 €" },
+          { label: "Clicks en Google", value: "51.600" },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-1">{label}</div>
+            <div className="font-bold text-white">{value}</div>
+          </div>
+        ))}
       </div>
     </div>
+    <p className="text-white/70 leading-relaxed mb-5">
+      Un CTR del 10,35% en Google Ads está muy por encima del benchmark del sector educativo (2-4%). Un CPC de 0,24€ en Meta para lead gen de educación universitaria es un dato excepcional (el benchmark es 1-3€). Este tipo de resultados no se obtienen ajustando pujas: vienen de una estrategia creativa y de segmentación muy precisa.
+    </p>
+
+    <h2 className="text-2xl font-black mt-10 mb-4">Conclusión: ¿cuándo el ROAS es suficiente?</h2>
+    <p className="text-white/70 leading-relaxed mb-4">
+      El ROAS es suficiente cuando supera tu punto de equilibrio más el margen necesario para cubrir costes fijos y generar beneficio neto. En la práctica, para la mayoría de eCommerce en España con márgenes del 30-50%, un ROAS sostenido de 3x-5x en Meta Ads y 5x-8x en Google Shopping indica que las campañas están funcionando bien.
+    </p>
+    <p className="text-white/70 leading-relaxed">
+      Si tu ROAS está por debajo de esos rangos de forma consistente, el problema raramente está en las pujas — está en las creatividades, la estructura de las campañas o la landing page. Consulta nuestra guía sobre 
+      <Link to="/blog/como-mejorar-roas-meta-ads-7-palancas" className="text-white underline underline-offset-2 hover:text-white/80">
+        las 7 palancas para mejorar el ROAS en Meta Ads
+      </Link>, la 
+      <Link to="/blog/guia-meta-ads-ecommerce-d2c-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        guía completa de Meta Ads para ecommerce D2C en España
+      </Link>, el 
+      <Link to="/blog/benchmark-roas-sector-espana-2026" className="text-white underline underline-offset-2 hover:text-white/80">
+        benchmark de ROAS por sector en España 2026
+      </Link> 
+      o 
+      <Link to="/servicios/paid-media" className="text-white underline underline-offset-2 hover:text-white/80">
+        habla con nosotros para revisar tu estrategia de paid media
+      </Link>.
+    </p>
   </BlogPostLayout>
 );
 
-export default RemarketingDinamicoEcommerceGuiaPracticaPage;
+export default BuenROASNichosPage;
