@@ -116,7 +116,8 @@
     "whatsapp-meta-ads-funnel-bofu-d2c",
     "smart-bidding-google-ads-d2c",
     "customer-journey-d2c-primer-impacto-repeticion",
-    "cuando-escalar-campanas-meta-ads"
+    "cuando-escalar-campanas-meta-ads",
+    "None"
   ],
   "phases": [
     {
@@ -1012,11 +1013,11 @@
   "tasks": [
     {
       "id": "TEST01",
-      "status": "research",
+      "status": "published",
       "cluster": "metricas-avanzadas",
       "title": "KPIs ecommerce D2C: los 7 que de verdad importan en 2026",
       "keyword": "kpis ecommerce d2c",
-      "slug": null,
+      "slug": "None",
       "words": 1500,
       "intent": "MOFU",
       "priority": "high",
