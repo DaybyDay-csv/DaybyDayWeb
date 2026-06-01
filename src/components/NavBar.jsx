@@ -21,8 +21,10 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
   const logoRef = useRef(null);
   const navRef = useRef(null);
   const navbarRef = useRef(null);
+  const mobileMenuRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState(null);
   const scrollCleanupRef = useRef(null);
   const dropdownTimeoutRef = useRef(null);
 
@@ -48,8 +50,8 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
       if (isMobile) logoRef.current.classList.add("logo-hidden");
       else logoRef.current.classList.remove("logo-hidden");
     }
-    if (navRef.current) navRef.current.classList.add("nav-hidden");
-  }, [isMobile]);
+    if (navRef.current && isHomePage) navRef.current.classList.add("nav-hidden");
+  }, [isMobile, isHomePage]);
 
   useEffect(() => {
     const runAnimations = async () => {
@@ -65,7 +67,6 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
             await navMenuAnimation(navRef.current);
           }
         } else {
-          // Non-home pages: show immediately
           navRef.current.classList.remove("nav-hidden");
           if (logoRef.current) logoHangingAnimation(logoRef.current);
         }
@@ -73,6 +74,34 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
     };
     runAnimations();
   }, [isMobile, isHomePage]);
+
+  // Mobile menu animation
+  useEffect(() => {
+    if (!mobileMenuRef.current) return;
+    if (mobileOpen) {
+      gsap.fromTo(mobileMenuRef.current, 
+        { opacity: 0, y: -20 },
+        { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }
+      );
+    } else {
+      gsap.to(mobileMenuRef.current, { opacity: 0, y: -20, duration: 0.2, ease: "power2.in" });
+    }
+  }, [mobileOpen]);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
+  const toggleMobileDropdown = (name) => {
+    setMobileExpanded(mobileExpanded === name ? null : name);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileOpen(false);
+    setMobileExpanded(null);
+  };
 
   const handleMouseEnter = (dropdown) => {
     if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
@@ -83,10 +112,15 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
     dropdownTimeoutRef.current = setTimeout(() => setActiveDropdown(null), 150);
   };
 
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
   const LogoBlock = () => (
     <div
       className="logo-container"
-      onClick={() => { if (typeof onNavScroll === "function") onNavScroll("inicio"); }}
+      onClick={() => { 
+        closeMobileMenu();
+        if (typeof onNavScroll === "function") onNavScroll("inicio"); 
+      }}
       style={{ cursor: "pointer" }}
     >
       <div className="logo-text" ref={logoRef}>
@@ -102,7 +136,6 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
     </div>
   );
 
-  // Submenu items
   const serviciosItems = [
     { label: "Meta Ads", href: "/servicios/meta-ads", desc: "Gestión y optimización de campañas" },
     { label: "Paid Media", href: "/servicios/paid-media", desc: "Estrategia omnicanal de pago" },
@@ -113,113 +146,242 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
   ];
 
   const masItems = [
-    { label: "Cómo Trabajamos", href: "/como-trabajamos", icon: "process" },
-    { label: "Glosario", href: "/glosario", icon: "book" },
-    { label: "Resultados", href: "/resultados", icon: "chart" },
-    { label: "FAQ", href: "/faq", icon: "help" },
+    { label: "Cómo Trabajamos", href: "/como-trabajamos" },
+    { label: "Glosario", href: "/glosario" },
+    { label: "Resultados", href: "/resultados" },
+    { label: "FAQ", href: "/faq" },
   ];
 
-  return (
-    <nav
-      ref={navbarRef}
-      className={`navbar ${isMobile ? "mobile" : ""}`}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
-        opacity: 0,
-        display: "none",
-      }}
-    >
-      {!isMobile && <LogoBlock />}
+  const navItems = [
+    { label: "Inicio", href: "/", scrollTo: "inicio" },
+    { label: "Servicios", dropdown: "servicios", hasDropdown: true },
+    { label: "Growth Partner", href: "/servicios/growth-partner" },
+    { label: "Más", dropdown: "mas", hasDropdown: true },
+    { label: "Nosotros", href: "/", scrollTo: "nosotros" },
+    { label: "Agenda", href: "/", scrollTo: "agendar", primary: true },
+  ];
 
-      <div
-        className={`nav-container ${isMobile ? "nav-mobile" : ""} nav-hidden`}
-        ref={navRef}
-      >
-        <a href="/" className="nav-link" onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("inicio"); }}>
-          Inicio
-        </a>
-
-        {/* Servicios Dropdown */}
-        {!isMobile && (
-          <div
-            className="nav-dropdown-wrapper"
-            onMouseEnter={() => handleMouseEnter("servicios")}
-            onMouseLeave={handleMouseLeave}
+  // Mobile NavItem component
+  const MobileNavItem = ({ item }) => {
+    const isOpen = mobileExpanded === item.dropdown;
+    
+    if (item.hasDropdown) {
+      const items = item.dropdown === "servicios" ? serviciosItems : masItems;
+      return (
+        <div className="mobile-nav-item">
+          <button 
+            className={`mobile-nav-btn ${isOpen ? "active" : ""}`}
+            onClick={() => toggleMobileDropdown(item.dropdown)}
           >
-            <button className={`nav-link nav-dropdown-trigger ${activeDropdown === "servicios" ? "active" : ""}`}>
-              Servicios
-              <svg className="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-            <div className={`nav-dropdown mega-dropdown ${activeDropdown === "servicios" ? "open" : ""}`}>
-              <div className="mega-dropdown-grid">
-                {serviciosItems.map((item, i) => (
-                  <Link key={i} to={item.href} className="mega-dropdown-item" onClick={() => setActiveDropdown(null)}>
-                    <span className="mega-item-label">{item.label}</span>
-                    <span className="mega-item-desc">{item.desc}</span>
+            <span>{item.label}</span>
+            <svg className={`mobile-arrow ${isOpen ? "open" : ""}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div className={`mobile-submenu ${isOpen ? "open" : ""}`}>
+            {items.map((sub, i) => (
+              <Link 
+                key={i} 
+                to={sub.href} 
+                className="mobile-sublink"
+                onClick={closeMobileMenu}
+              >
+                {sub.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    if (item.primary) {
+      return (
+        <Link 
+          to={item.href || "/"} 
+          className="mobile-nav-btn primary"
+          onClick={(e) => {
+            e.preventDefault();
+            closeMobileMenu();
+            if (typeof onNavScroll === "function") onNavScroll(item.scrollTo);
+          }}
+        >
+          {item.label}
+        </Link>
+      );
+    }
+
+    if (item.scrollTo) {
+      return (
+        <button 
+          className="mobile-nav-btn"
+          onClick={() => {
+            closeMobileMenu();
+            if (typeof onNavScroll === "function") onNavScroll(item.scrollTo);
+          }}
+        >
+          {item.label}
+        </button>
+      );
+    }
+
+    return (
+      <Link 
+        to={item.href} 
+        className="mobile-nav-btn"
+        onClick={closeMobileMenu}
+      >
+        {item.label}
+      </Link>
+    );
+  };
+
+  return (
+    <>
+      <nav
+        ref={navbarRef}
+        className={`navbar ${isMobile ? "mobile" : ""}`}
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1000,
+          opacity: 0,
+          display: "none",
+        }}
+      >
+        {!isMobile && <LogoBlock />}
+
+        <div
+          className={`nav-container ${isMobile ? "nav-mobile" : ""} nav-hidden`}
+          ref={navRef}
+        >
+          <a href="/" className="nav-link" onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("inicio"); }}>
+            Inicio
+          </a>
+
+          {/* Desktop Servicios Dropdown */}
+          {!isMobile && (
+            <div
+              className="nav-dropdown-wrapper"
+              onMouseEnter={() => handleMouseEnter("servicios")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button className={`nav-link nav-dropdown-trigger ${activeDropdown === "servicios" ? "active" : ""}`}>
+                Servicios
+                <svg className="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div className={`nav-dropdown mega-dropdown ${activeDropdown === "servicios" ? "open" : ""}`}>
+                <div className="mega-dropdown-grid">
+                  {serviciosItems.map((item, i) => (
+                    <Link key={i} to={item.href} className="mega-dropdown-item" onClick={() => setActiveDropdown(null)}>
+                      <span className="mega-item-label">{item.label}</span>
+                      <span className="mega-item-desc">{item.desc}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          <Link to="/servicios/growth-partner" className="nav-link">
+            Growth Partner
+          </Link>
+
+          {/* Desktop Más Dropdown */}
+          {!isMobile && (
+            <div
+              className="nav-dropdown-wrapper"
+              onMouseEnter={() => handleMouseEnter("mas")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button className={`nav-link nav-dropdown-trigger ${activeDropdown === "mas" ? "active" : ""}`}>
+                Más
+                <svg className="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div className={`nav-dropdown simple-dropdown ${activeDropdown === "mas" ? "open" : ""}`}>
+                {masItems.map((item, i) => (
+                  <Link key={i} to={item.href} className="dropdown-item" onClick={() => setActiveDropdown(null)}>
+                    {item.label}
                   </Link>
                 ))}
               </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Growth Partner - visible link */}
-        <Link to="/servicios/growth-partner" className="nav-link">
-          Growth Partner
-        </Link>
+          <a href="/" className="nav-link" onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("nosotros"); }}>
+            Nosotros
+          </a>
 
-        {/* Logo en medio solo en móvil */}
-        {isMobile && <LogoBlock />}
-
-        {/* Más Dropdown */}
-        {!isMobile && (
-          <div
-            className="nav-dropdown-wrapper"
-            onMouseEnter={() => handleMouseEnter("mas")}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button className={`nav-link nav-dropdown-trigger ${activeDropdown === "mas" ? "active" : ""}`}>
-              Más
-              <svg className="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
+          {/* Hamburger menu button for mobile */}
+          {isMobile && (
+            <button 
+              className="hamburger-btn"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              <span className={`hamburger-icon ${mobileOpen ? "open" : ""}`}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
             </button>
-            <div className={`nav-dropdown simple-dropdown ${activeDropdown === "mas" ? "open" : ""}`}>
-              {masItems.map((item, i) => (
-                <Link key={i} to={item.href} className="dropdown-item" onClick={() => setActiveDropdown(null)}>
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+          )}
 
-        <a href="/" className="nav-link" onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("nosotros"); }}>
-          Nosotros
-        </a>
+          {!isMobile && (
+            <a
+              href="/"
+              className={`nav-link btn-primary`}
+              onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("agendar"); }}
+            >
+              Agenda una reunión
+            </a>
+          )}
+        </div>
+      </nav>
 
-        <a
-          href="/"
-          className={`nav-link btn-primary`}
-          onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("agendar"); }}
-          style={{
-            padding: isMobile ? "12px 20px" : "",
-            fontSize: isMobile ? "16px" : "",
-            marginTop: isMobile ? "10px" : "",
-            background: isMobile ? "linear-gradient(#ff3131, #d00000)" : "",
-            fontWeight: isMobile ? "bold" : "",
-          }}
+      {/* Mobile Menu Overlay */}
+      {isMobile && (
+        <div 
+          ref={mobileMenuRef}
+          className={`mobile-menu ${mobileOpen ? "open" : ""}`}
+          style={{ display: mobileOpen ? "flex" : "none" }}
         >
-          Agenda una reunión
-        </a>
-      </div>
-    </nav>
+          <div className="mobile-menu-header">
+            <LogoBlock />
+            <button className="hamburger-btn active" onClick={closeMobileMenu}>
+              <span className="hamburger-icon open">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+          </div>
+          <div className="mobile-menu-content">
+            {navItems.map((item, i) => (
+              <MobileNavItem key={i} item={item} />
+            ))}
+          </div>
+          <div className="mobile-menu-footer">
+            <a
+              href="/"
+              className="mobile-cta-btn"
+              onClick={(e) => {
+                e.preventDefault();
+                closeMobileMenu();
+                if (typeof onNavScroll === "function") onNavScroll("agendar");
+              }}
+            >
+              Agenda una reunión
+            </a>
+          </div>
+        </div>
+      )}
+    </>
   );
 });
 
