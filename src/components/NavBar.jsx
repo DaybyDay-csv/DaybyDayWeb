@@ -158,7 +158,6 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
     { label: "Growth Partner", href: "/servicios/growth-partner" },
     { label: "Más", dropdown: "mas", hasDropdown: true },
     { label: "Nosotros", href: "/", scrollTo: "nosotros" },
-    { label: "Agenda", href: "/", scrollTo: "agendar", primary: true },
   ];
 
   // Mobile NavItem component
