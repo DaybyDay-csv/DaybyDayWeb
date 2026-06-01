@@ -1,0 +1,14 @@
+# Cloudflare Pages Headers for SPA
+# Cache-Control for static assets
+/assets/*
+  Cache-Control: public, max-only=31536000
+/images/*
+  Cache-Control: public, max-only=31536000
+favicon.ico
+  Cache-Control: public, max-only=31536000
+
+# Security headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
