@@ -17,7 +17,7 @@ import {
 
 gsap.registerPlugin(ScrollToPlugin);
 
-const NavBar = forwardRef(({ onNavScroll }, ref) => {
+const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
   const logoRef = useRef(null);
   const navRef = useRef(null);
   const navbarRef = useRef(null);
@@ -38,10 +38,10 @@ const NavBar = forwardRef(({ onNavScroll }, ref) => {
   useEffect(() => {
     if (navbarRef.current) {
       if (scrollCleanupRef.current) scrollCleanupRef.current();
-      scrollCleanupRef.current = initNavbarScrollVisibility(navbarRef.current);
+      scrollCleanupRef.current = initNavbarScrollVisibility(navbarRef.current, isHomePage);
     }
     return () => { if (scrollCleanupRef.current) scrollCleanupRef.current(); };
-  }, []);
+  }, [isHomePage]);
 
   useEffect(() => {
     if (logoRef.current) {
@@ -54,17 +54,25 @@ const NavBar = forwardRef(({ onNavScroll }, ref) => {
   useEffect(() => {
     const runAnimations = async () => {
       if (logoRef.current) gsap.set(logoRef.current, { autoAlpha: 1 });
-      if (navRef.current) navRef.current.classList.add("nav-hidden");
-      if (isMobile) {
-        navMenuAnimation(navRef.current);
-        setTimeout(() => logoHangingAnimation(logoRef.current), 200);
-      } else {
-        logoHangingAnimation(logoRef.current);
-        await navMenuAnimation(navRef.current);
+      if (navRef.current) {
+        if (isHomePage) {
+          navRef.current.classList.add("nav-hidden");
+          if (isMobile) {
+            navMenuAnimation(navRef.current);
+            setTimeout(() => logoHangingAnimation(logoRef.current), 200);
+          } else {
+            logoHangingAnimation(logoRef.current);
+            await navMenuAnimation(navRef.current);
+          }
+        } else {
+          // Non-home pages: show immediately
+          navRef.current.classList.remove("nav-hidden");
+          if (logoRef.current) logoHangingAnimation(logoRef.current);
+        }
       }
     };
     runAnimations();
-  }, [isMobile]);
+  }, [isMobile, isHomePage]);
 
   const handleMouseEnter = (dropdown) => {
     if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);

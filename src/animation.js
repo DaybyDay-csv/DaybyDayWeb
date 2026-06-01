@@ -701,19 +701,25 @@ export const btnPrimaryAppearAnimation = (btnRef) => {
   });
 };
 
-export const initNavbarScrollVisibility = (navbarElement) => {
+export const initNavbarScrollVisibility = (navbarElement, isHomePage = true) => {
   if (!navbarElement) return () => {};
+
+  // Non-home pages: always visible, no scroll behavior
+  if (!isHomePage) {
+    gsap.set(navbarElement, { opacity: 1, y: 0, display: "flex" });
+    return () => {};
+  }
 
   let isVisible = false;
   let ticking = false;
   let hasBeenTriggered = false;
   let lastScrollY = window.scrollY;
   let scrollDirection = "up";
-  let scrollThreshold = 10; // Pixels mínimos para detectar scroll significativo
-  let graceTimeout = null; // Timeout para el período de gracia
-  let isInGracePeriod = false; // Flag para controlar el período de gracia
-  let scrollLogicTimeout = null; // Timeout para activar lógica de scroll en móvil
-  let scrollLogicActive = false; // Flag para controlar si la lógica de scroll está activa
+  let scrollThreshold = 10;
+  let graceTimeout = null;
+  let isInGracePeriod = false;
+  let scrollLogicTimeout = null;
+  let scrollLogicActive = false;
 
   const isMobile = window.innerWidth <= 768;
 
