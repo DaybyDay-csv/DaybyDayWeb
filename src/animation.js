@@ -332,16 +332,19 @@ export const sectoresCardsHoverAnimation = (cardRefs) => {
         });
       }
 
-      if (wins.length) {
-        gsap.to(wins, {
-          scale: 1.02,
-          duration: 0.3,
-          stagger: 0.02,
-          ease: "power2.out",
-        });
+      if (wins.length && document.contains(wins[0])) {
+        const validWins = wins;
+        if (validWins) {
+          gsap.to(validWins, {
+            scale: 1.02,
+            duration: 0.3,
+            stagger: 0.02,
+            ease: "power2.out",
+          });
+        }
       }
 
-      if (cta) {
+      if (cta && document.contains(cta)) {
         gsap.to(cta, {
           scale: 1.05,
           duration: 0.3,
@@ -376,7 +379,7 @@ export const sectoresCardsHoverAnimation = (cardRefs) => {
         });
       }
 
-      if (wins.length) {
+      if (wins.length && document.contains(wins[0])) {
         gsap.to(wins, {
           scale: 1,
           duration: 0.3,
@@ -385,7 +388,7 @@ export const sectoresCardsHoverAnimation = (cardRefs) => {
         });
       }
 
-      if (cta) {
+      if (cta && document.contains(cta)) {
         gsap.to(cta, {
           scale: 1,
           duration: 0.3,

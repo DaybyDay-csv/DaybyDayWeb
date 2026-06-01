@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 if (typeof window !== "undefined") {
   const origWarn = console.warn;
   console.warn = (...args) => {
-    if (args[0] && typeof args[0] === "string" && args[0].includes("DBSD: Suppressed")) return;
+    if (args[0] && typeof args[0] === "string" && (args[0].includes("DBSD:") || args[0].includes("GSAP target"))) return;
     origWarn.apply(console, args);
   };
   const origError = console.error;
