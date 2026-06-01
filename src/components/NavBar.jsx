@@ -320,30 +320,13 @@ const NavBar = forwardRef(({ onNavScroll, isHomePage = true }, ref) => {
             Nosotros
           </a>
 
-          {/* Hamburger menu button for mobile */}
-          {isMobile && (
-            <button 
-              className="hamburger-btn"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Toggle menu"
-            >
-              <span className={`hamburger-icon ${mobileOpen ? "open" : ""}`}>
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </button>
-          )}
-
-          {!isMobile && (
-            <a
-              href="/"
-              className={`nav-link btn-primary`}
-              onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("agendar"); }}
-            >
-              Agenda una reunión
-            </a>
-          )}
+          <a
+            href="/"
+            className="nav-link btn-primary"
+            onClick={(e) => { e.preventDefault(); if (typeof onNavScroll === "function") onNavScroll("agendar"); }}
+          >
+            Agenda
+          </a>
         </div>
       </nav>
 
