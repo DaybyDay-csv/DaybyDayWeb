@@ -697,7 +697,7 @@ main {
   }
 
   .navbar .btn-primary {
-    background: linear-gradient(#2a2a2a, #000000) !important;
+    background: linear-gradient(135deg, #ff3131, #d00000) !important;
     color: white !important;
     margin-top: 0;
     font-size: 11px;
@@ -710,14 +710,14 @@ main {
   }
 
   .navbar .btn-primary:hover {
-    background: linear-gradient(#1a1a1a, #000000) !important;
+    background: linear-gradient(135deg, #ff3131, #d00000) !important;
     border-bottom: none !important;
     opacity: 0.9 !important;
     transform: none !important;
   }
 
   .navbar .btn-primary:active {
-    background: linear-gradient(#0a0a0a, #000000) !important;
+    background: linear-gradient(135deg, #ff3131, #d00000) !important;
     border-bottom: none !important;
     box-shadow: none !important;
     transform: none !important;
