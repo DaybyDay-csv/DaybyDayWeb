@@ -290,10 +290,10 @@ const Footer = ({ onAgendarClick }) => {
             marginTop: 8,
             fontWeight: 600,
             color: "#fff",
-            background: "linear-gradient(135deg, #ff3131, #d00000)",
+            background: "linear-gradient(#2a2a2a, #000000)",
             boxShadow: ctaActive
-              ? "0 2px 8px rgba(222,0,21,0.3)"
-              : "0 4px 12px rgba(222,0,21,0.25)",
+              ? "inset 0pt 3pt 2pt -1pt #4a4a4a, 0pt 3pt 4pt -2pt #0000"
+              : "inset 0pt 3pt 2pt -1pt #4a4a4a, 0pt 3pt 4pt -2pt #0009",
             border: "none",
             borderBottom: `${
               ctaHover ? 3 : ctaActive ? 0.5 : 1.5
