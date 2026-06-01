@@ -1,28 +1,55 @@
 import React, { useState, useEffect } from "react";
 
+// Global error suppressor for GSAP/React DOM race conditions
+if (typeof window !== "undefined") {
+  const origError = console.error;
+  console.error = (...args) => {
+    if (args[0] && typeof args[0] === "string" && args[0].includes("removeChild")) {
+      console.warn("DBSD: Suppressed:", args[0]);
+      return;
+    }
+    origError.apply(console, args);
+  };
+  window.onerror = (msg, src, line, col, err) => {
+    if (err?.name === "NotFoundError" || (msg && msg.includes("removeChild"))) {
+      console.warn("DBSD: Suppressed global error:", msg);
+      return true;
+    }
+  };
+}
+
 export default function ErrorBoundary({ children }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Catch unhandled errors BEFORE React can propagate them
     const handler = (e) => {
-      // Filter out GSAP/React DOM sync errors that are not real app errors
+      // Filter out GSAP/React DOM sync errors
       if (e.error?.name === "NotFoundError" || 
           (e.error?.message && e.error.message.includes("removeChild"))) {
+        e.preventDefault();  // Stop propagation to React
+        e.stopPropagation();  // Stop bubbling
         console.warn("DBSD: Suppressed DOM animation error:", e.error?.message);
         return;
       }
       console.error("DBSD: Global error caught:", e.error);
       setError(e.error);
     };
-    window.addEventListener("error", handler);
+    window.addEventListener("error", handler, true);  // useCapture=true
     const unhandled = (e) => {
+      if (e.reason?.name === "NotFoundError" || 
+          (e.reason?.message && e.reason.message.includes("removeChild"))) {
+        e.preventDefault();
+        console.warn("DBSD: Suppressed DOM animation error:", e.reason?.message);
+        return;
+      }
       console.error("DBSD: Unhandled rejection:", e.reason);
       setError(new Error(e.reason?.message || String(e.reason)));
     };
-    window.addEventListener("unhandledrejection", unhandled);
+    window.addEventListener("unhandledrejection", unhandled, true);
     return () => {
-      window.removeEventListener("error", handler);
-      window.removeEventListener("unhandledrejection", unhandled);
+      window.removeEventListener("error", handler, true);
+      window.removeEventListener("unhandledrejection", unhandled, true);
     };
   }, []);
 
