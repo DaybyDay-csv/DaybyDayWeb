@@ -2,19 +2,18 @@ import React, { useState, useEffect } from "react";
 
 // Global error suppressor for GSAP/React DOM race conditions
 if (typeof window !== "undefined") {
+  const origWarn = console.warn;
+  console.warn = (...args) => {
+    if (args[0] && typeof args[0] === "string" && args[0].includes("DBSD: Suppressed")) return;
+    origWarn.apply(console, args);
+  };
   const origError = console.error;
   console.error = (...args) => {
-    if (args[0] && typeof args[0] === "string" && args[0].includes("removeChild")) {
-      console.warn("DBSD: Suppressed:", args[0]);
-      return;
-    }
+    if (args[0] && typeof args[0] === "string" && (args[0].includes("removeChild") || args[0].includes("DBSD:"))) return;
     origError.apply(console, args);
   };
   window.onerror = (msg, src, line, col, err) => {
-    if (err?.name === "NotFoundError" || (msg && msg.includes("removeChild"))) {
-      console.warn("DBSD: Suppressed global error:", msg);
-      return true;
-    }
+    if (err?.name === "NotFoundError" || (msg && msg.includes("removeChild"))) return true;
   };
 }
 
