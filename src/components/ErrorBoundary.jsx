@@ -5,6 +5,12 @@ export default function ErrorBoundary({ children }) {
 
   useEffect(() => {
     const handler = (e) => {
+      // Filter out GSAP/React DOM sync errors that are not real app errors
+      if (e.error?.name === "NotFoundError" || 
+          (e.error?.message && e.error.message.includes("removeChild"))) {
+        console.warn("DBSD: Suppressed DOM animation error:", e.error?.message);
+        return;
+      }
       console.error("DBSD: Global error caught:", e.error);
       setError(e.error);
     };

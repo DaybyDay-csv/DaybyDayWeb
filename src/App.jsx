@@ -212,12 +212,16 @@ const App = () => {
       setIsTransitioning(true);
       ScrollTrigger.getAll().forEach((st) => st.kill());
       gsap.killTweensOf("*");
-      navigate("/");
-      setPendingScroll(section);
+      
+      // Small delay to let GSAP fully clean up before route change
       setTimeout(() => {
-        setIsTransitioning(false);
-        ScrollTrigger.refresh();
-      }, 300);
+        navigate("/");
+        setPendingScroll(section);
+        setTimeout(() => {
+          setIsTransitioning(false);
+          ScrollTrigger.refresh();
+        }, 300);
+      }, 100);
     } else {
       scrollToSection(section);
     }
