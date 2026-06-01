@@ -124,7 +124,7 @@ import EstrategiaMetaAds2026Page from "./pages/blog/estrategia-meta-ads-2026Page
 import MejorarROASMetaAdsPage from "./pages/blog/mejorar-roas-meta-2026Page";
 import RemarketingMetaAdsPage from "./pages/blog/estrategia-remarketing-meta-2026Page";
 import OptimizacionConversionEcommercePage from "./pages/blog/optimizacion-conversion-ecommerce-2026Page";
-importKpisEcommerceD2CPagefrom.pagesblogKpisEcommerceD2CPage
+import KpisEcommerceD2CPage from "./pages/blog/KpisEcommerceD2CPage";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
