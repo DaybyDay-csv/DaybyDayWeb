@@ -192,6 +192,125 @@ main {
   transform: translateY(0pt);
 }
 
+/* === MEGAMENU DROPDOWNS === */
+.nav-dropdown-wrapper {
+  position: relative;
+}
+
+.nav-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  color: #000;
+  padding: 8px 12px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-dropdown-trigger:hover,
+.nav-dropdown-trigger.active {
+  color: #de0015;
+}
+
+.nav-arrow {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown-trigger.active .nav-arrow {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1001;
+  pointer-events: none;
+}
+
+.nav-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Mega Dropdown - Servicios (grid layout) */
+.mega-dropdown {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  padding: 16px;
+  min-width: 480px;
+  margin-top: 12px;
+}
+
+.mega-dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.mega-dropdown-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.mega-dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.mega-item-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2px;
+}
+
+.mega-item-desc {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Simple Dropdown - Más (vertical list) */
+.simple-dropdown {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  padding: 8px;
+  min-width: 180px;
+  margin-top: 8px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+  color: #de0015;
+}
+
 .whatsapp-button {
   position: fixed;
   bottom: 15px;
