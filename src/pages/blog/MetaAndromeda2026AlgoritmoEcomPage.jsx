@@ -6,7 +6,7 @@ const ALGOFrameworkPage = () => {
   const post = {
     title: "ALGO: El Framework Que Está Cambiando el Meta Ads para Ecommerce D2C en España (2026)",
     description: "Después de gestionar más de 12 millones de euros en Meta Ads para marcas D2C españolas, te cuento el framework que funciona con los cambios de algoritmo en 2026. Sin florituras, sin teoría vacía: solo tácticas ejecutables.",
-    path: "/blog/algo-framework-meta-ads-ecommerce-espana-2026",
+    path: "/blog/meta-andromeda-2026-algoritmo-ecommerce-d2c-espana",
     datePublished: "2026-01-15",
     readingTime: 18,
     category: "Meta Ads",

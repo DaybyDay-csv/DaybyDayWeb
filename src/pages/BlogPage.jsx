@@ -5,6 +5,15 @@ import Footer from "../components/Footer";
 const posts = [
         // HERMES_POSTS_START
   {
+    slug: "meta-andromeda-2026-algoritmo-ecommerce-d2c-espana",
+    title: "Meta Andromeda 2026: Lo que cambia en el algoritmo para D2C España",
+    excerpt: "El nuevo sistema de ranking ML de Meta penaliza la creatividad vacía. Analizamos qué funciona y qué mata el ROAS de tu ecommerce D2C en 2026.",
+    category: "Meta Ads",
+    date: "17 Jun 2026",
+    readingTime: "12 min",
+  },
+
+  {
     slug: "",
     title: "",
     excerpt: "",
