@@ -126,6 +126,7 @@ import RemarketingMetaAdsPage from "./pages/blog/estrategia-remarketing-meta-202
 import OptimizacionConversionEcommercePage from "./pages/blog/optimizacion-conversion-ecommerce-2026Page";
 import KpisEcommerceD2CPage from "./pages/blog/KpisEcommerceD2CPage";
 import MetaAndromeda2026AlgoritmoEcomPage from "./pages/blog/MetaAndromeda2026AlgoritmoEcomPage";
+importCundoAbrirUnSegundoMercadoGeogPagefrom.pagesblogCundoAbrirUnSegundoMercadoGeogPage
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
@@ -385,6 +386,7 @@ const App = () => {
         <Route path="/blog/facebook-ads-vs-instagram-ads-ecommerce" element={<FacebookAdsVsInstagramAdsEcommPage openCalendly={openCalendly} />} />
         <Route path="/blog/blog-test-4604" element={<KpisEcommerceD2CPage openCalendly={openCalendly} />} />
         <Route path="/blog/meta-andromeda-2026-algoritmo-ecommerce-d2c-espana" element={<MetaAndromeda2026AlgoritmoEcomPage openCalendly={openCalendly} />} />
+        <Route path="/blog/tu-slug-aqui" element={<CundoAbrirUnSegundoMercadoGeogPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
