@@ -386,7 +386,7 @@ const App = () => {
         <Route path="/blog/facebook-ads-vs-instagram-ads-ecommerce" element={<FacebookAdsVsInstagramAdsEcommPage openCalendly={openCalendly} />} />
         <Route path="/blog/blog-test-4604" element={<KpisEcommerceD2CPage openCalendly={openCalendly} />} />
         <Route path="/blog/meta-andromeda-2026-algoritmo-ecommerce-d2c-espana" element={<MetaAndromeda2026AlgoritmoEcomPage openCalendly={openCalendly} />} />
-        <Route path="/blog/tu-slug-aqui" element={<CundoAbrirUnSegundoMercadoGeogPage openCalendly={openCalendly} />} />
+        <Route path="/blog/cuando-abrir-segundo-mercado-geografico-d2c" element={<CundoAbrirUnSegundoMercadoGeogPage openCalendly={openCalendly} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
