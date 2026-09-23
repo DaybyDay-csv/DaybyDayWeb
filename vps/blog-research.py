@@ -12,7 +12,7 @@ import re
 import sys
 import os
 
-API_KEY = "sk-cp-coe8mqQVc96sCuRUl3su_wFRaMr9lveb9hdg6D9ne4bJHRY-_l-HjYjU9mQwsr2eWVhYtlj86yC3f_m0XjfGGiiQGU4UZx17be_aoVnO7vpC-o3gWHXpL4w"
+API_KEY = os.environ.get("MINIMAX_API_KEY", "")  # redacted (security audit 2026-09-24): estaba pública en este repo
 MODEL = "MiniMax-M2.5"
 
 def log(msg):
